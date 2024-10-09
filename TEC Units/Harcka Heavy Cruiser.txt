@@ -1,0 +1,22 @@
+Harcka Heavy Cruiser
+	Supply: 	14
+	Credits:	550.0
+	Metal:  	165.0
+	Crystal:	55.0
+
+	Movespeed:	650.0
+	Acceleration:	130.0
+
+	Durability:	400.0
+	Armor Strength:	85.0
+
+	Hull Points:	950
+	Armor Points:	900
+	Shield Points:	
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy autocannon         	4.0  	x5    	20.0 	200   	3600 

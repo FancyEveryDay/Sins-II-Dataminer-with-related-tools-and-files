@@ -1,0 +1,27 @@
+Vulkoras Desolator
+	Supply: 	50
+	Credits:	
+	Metal:  	1680.0
+	Crystal:	1320.0
+
+	Movespeed:	570.0
+	Acceleration:	125.00000000000001
+
+	Durability:	500.0
+	Armor Strength:	132.0
+
+	Hull Points:	2960 - 4745
+	Armor Points:	1180 - 2010
+	Shield Points:	1620 - 2760
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy phase missile      	33.3 	x2    	66.6 	600   	6250 
+		beam                     	8.0  	x3    	24.0 	500   	6250 
+		medium wave cannon       	5.0  	x2    	10.0 	180   	6250 
+		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 
+
+	Strike Craft: 1 - 2

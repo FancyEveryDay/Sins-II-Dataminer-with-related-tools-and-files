@@ -1,0 +1,22 @@
+Disciple Vessel
+	Supply: 	4
+	Credits:	200.0
+	Metal:  	35.0
+	Crystal:	
+
+	Movespeed:	900.0
+	Acceleration:	200.0
+
+	Durability:	50.0
+	Armor Strength:	
+
+	Hull Points:	525
+	Armor Points:	
+	Shield Points:	550
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium laser             	8.0  	x1    	8.0  	150   	4800 

@@ -1,0 +1,21 @@
+Temple of Harmony
+	Supply: 	
+	Credits:	
+	Metal:  	75.0
+	Crystal:	125.0
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	600.0
+	Armor Strength:	60.0
+
+	Hull Points:	1750
+	Armor Points:	
+	Shield Points:	1500
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

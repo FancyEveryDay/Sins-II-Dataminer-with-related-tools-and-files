@@ -1,0 +1,28 @@
+Revelation Battlecruiser
+	Supply: 	50
+	Credits:	2000.0
+	Metal:  	600.0
+	Crystal:	750.0
+
+	Movespeed:	625.0
+	Acceleration:	125.0
+
+	Durability:	500.0
+	Armor Strength:	80.0
+
+	Hull Points:	3400 - 4780
+	Armor Points:	480 - 770
+	Shield Points:	3200 - 5130
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy plasma             	6.2  	x2    	12.4 	750   	6250 
+		light missile            	17.6 	x2    	35.2 	0     	8000 
+		heavy laser              	0.0  	x1    	0.0  	0     	30000
+		medium laser             	6.0  	x4    	24.0 	150   	6250 
+		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
+
+	Strike Craft: 1 - 2

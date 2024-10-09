@@ -1,0 +1,22 @@
+Ogrov Torpedo Cruiser
+	Supply: 	12
+	Credits:	625.0
+	Metal:  	180.0
+	Crystal:	200.0
+
+	Movespeed:	550.0
+	Acceleration:	100.0
+
+	Durability:	200.0
+	Armor Strength:	60.0
+
+	Hull Points:	1460
+	Armor Points:	800
+	Shield Points:	
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy torpedo            	10.0 	x1    	10.0 	1000  	12000

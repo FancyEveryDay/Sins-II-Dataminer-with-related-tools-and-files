@@ -1,0 +1,22 @@
+Fighter
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1750.0
+	Acceleration:	350.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	30
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		light laser              	3.2  	x1    	3.2  	50    	2750 

@@ -1,0 +1,28 @@
+Rapture Battlecruiser
+	Supply: 	50
+	Credits:	2000.0
+	Metal:  	600.0
+	Crystal:	750.0
+
+	Movespeed:	625.0
+	Acceleration:	125.0
+
+	Durability:	500.0
+	Armor Strength:	80.0
+
+	Hull Points:	2750 - 4140
+	Armor Points:	715 - 1150
+	Shield Points:	2900 - 4650
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		light missile            	23.5 	x2    	47.0 	0     	8000 
+		heavy plasma             	9.4  	x1    	9.4  	750   	6250 
+		heavy beam               	14.3 	x2    	28.6 	500   	6250 
+		point defense laser      	1.5  	x4    	6.0  	0     	6000 
+		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
+
+	Strike Craft: 1 - 3

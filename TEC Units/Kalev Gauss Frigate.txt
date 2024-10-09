@@ -1,0 +1,22 @@
+Kalev Gauss Frigate
+	Supply: 	7
+	Credits:	450.0
+	Metal:  	60.0
+	Crystal:	75.0
+
+	Movespeed:	650.0
+	Acceleration:	100.0
+
+	Durability:	150.0
+	Armor Strength:	40.0
+
+	Hull Points:	715
+	Armor Points:	610
+	Shield Points:	
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		gauss                    	7.5  	x1    	7.5  	600   	7500 

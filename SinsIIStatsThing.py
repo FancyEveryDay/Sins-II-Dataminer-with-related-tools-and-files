@@ -81,11 +81,17 @@ def createWeaponDict(WeaponList):
     return WeaponsDict
         
 def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = True, outputFile = False):
+    with open("F:\\SteamLibrary\\steamapps\\common\\Sins2\\localized_text\\en.localized_text") as t:
+        inGameText = json.load(t)
+    
     for i in UnitList:
 
         unitName = i[0].split("\\")[-1]
         unitDict = i[1]
         if filter in unitDict:
+
+            try: outputName = inGameText[unitName + "_name"]
+            except: outputName = unitName
 
             #Ship Cost Block
 
@@ -166,10 +172,18 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                         weaponCollection[weapon] = 1
 
             #Ship Carrier Block
+            try: 
+                carrier = unitDict["carrier"]["base_max_squadron_capacity"]
+                try: 
+                    carrier = (f"{int(carrier + unitDict["levels"]["levels"][0]["unit_modifiers"]["additive_values"]["max_squadron_capacity"])} - "
+                    + f"{int(carrier + unitDict["levels"]["levels"][9]["unit_modifiers"]["additive_values"]["max_squadron_capacity"])}")
+                except: pass
+            except: carrier = False
+
             #Ship Abilities Block
 
             if consolePrint == True:
-                print(unitName)
+                print(outputName)
 
                 print(f"\tSupply: \t{unitSupply}")
                 print(f"\tCredits:\t{unitCreditCost}")
@@ -210,10 +224,13 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                     print(f"\t\t{weaponName}\t{weaponDPS}\tx{count}\t{weaponDPS * count}\t{weaponPenetration}\t{weaponRange}")
 
                 print()
+
+                if carrier is not False:
+                    print(f"\tStrike Craft: {carrier}")
             
             if outputFile != False:
-                with open(outputFile + "\\" + unitName + ".txt", "w") as unitFile:
-                    unitFile.write(unitName + "\n")
+                with open(outputFile + "\\" + outputName + ".txt", "w") as unitFile:
+                    unitFile.write(outputName + "\n")
 
                     unitFile.write(f"\tSupply: \t{unitSupply}\n")
                     unitFile.write(f"\tCredits:\t{unitCreditCost}\n")
@@ -251,6 +268,8 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                         
                         unitFile.write(f"\t\t{weaponName:<25}\t{weaponDPS:<5}\tx{count:<5}\t{round(weaponDPS * count,1):<5}\t{weaponPenetration:<6}\t{weaponRange:<5}\n")
 
+                    if carrier is not False:
+                        unitFile.write(f"\n\tStrike Craft: {carrier}\n")
     # necessary weapon entries: "dps", "penitration", "damage", "cooldown duration", "name".split(".")[-1], "range"
     # necessary unit entries: "weapons" (needs a custom function to pull weapon entries), "health" : {"durability, "levels" [{"max_hull_points", "max_armor_points", "armor_strength", "max_shield_points", "shield_burst"}] }
 

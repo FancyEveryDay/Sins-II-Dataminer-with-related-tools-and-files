@@ -1,0 +1,22 @@
+Phase Missile Platform
+	Supply: 	
+	Credits:	
+	Metal:  	240.0
+	Crystal:	120.0
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	600.0
+	Armor Strength:	96.0
+
+	Hull Points:	1440
+	Armor Points:	720
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy phase missile      	40.0 	x1    	40.0 	600   	12000

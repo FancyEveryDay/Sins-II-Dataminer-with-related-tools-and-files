@@ -1,0 +1,29 @@
+Eradica Titan
+	Supply: 	150
+	Credits:	7500.0
+	Metal:  	2500.0
+	Crystal:	3000.0
+
+	Movespeed:	500.0
+	Acceleration:	100.0
+
+	Durability:	750.0
+	Armor Strength:	125.0
+
+	Hull Points:	6750 - 10155
+	Armor Points:	1045 - 1780
+	Shield Points:	7000 - 11225
+	   Shield Burst CD: 60.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy beam               	14.3 	x8    	114.4	500   	8000 
+		point defense laser      	1.5  	x21   	31.5 	0     	6000 
+		heavy plasma             	6.2  	x6    	37.2 	750   	8000 
+		heavy laser              	7.5  	x15   	112.5	250   	8000 
+		light missile            	44.1 	x6    	264.6	0     	12000
+		planet bombing plasma    	9.0  	x1    	9.0  	0     	4000 
+
+	Strike Craft: 3 - 8

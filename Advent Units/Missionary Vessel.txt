@@ -1,0 +1,21 @@
+Missionary Vessel
+	Supply: 	5
+	Credits:	600.0
+	Metal:  	175.0
+	Crystal:	
+
+	Movespeed:	750.0
+	Acceleration:	150.0
+
+	Durability:	150.0
+	Armor Strength:	25.0
+
+	Hull Points:	700
+	Armor Points:	150
+	Shield Points:	725
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	225.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

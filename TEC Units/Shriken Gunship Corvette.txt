@@ -1,0 +1,23 @@
+Shriken Gunship Corvette
+	Supply: 	3
+	Credits:	195.0
+	Metal:  	35.0
+	Crystal:	25.0
+
+	Movespeed:	850.0
+	Acceleration:	425.0
+
+	Durability:	
+	Armor Strength:	5.0
+
+	Hull Points:	235
+	Armor Points:	250
+	Shield Points:	
+	   Shield Burst CD: 15.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		light autocannon         	4.0  	x1    	4.0  	50    	3000 
+		light autocannon         	3.0  	x2    	6.0  	50    	3000 

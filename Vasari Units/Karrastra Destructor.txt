@@ -1,0 +1,22 @@
+Karrastra Destructor
+	Supply: 	9
+	Credits:	
+	Metal:  	210.0
+	Crystal:	165.0
+
+	Movespeed:	570.0
+	Acceleration:	125.00000000000001
+
+	Durability:	180.0
+	Armor Strength:	72.0
+
+	Hull Points:	910
+	Armor Points:	480
+	Shield Points:	510
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		planet bombing beam      	4.5  	x1    	4.5  	0     	3000 

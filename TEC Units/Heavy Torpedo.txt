@@ -1,0 +1,21 @@
+Heavy Torpedo
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1200.0
+	Acceleration:	600.0
+
+	Durability:	
+	Armor Strength:	50.0
+
+	Hull Points:	20
+	Armor Points:	100
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

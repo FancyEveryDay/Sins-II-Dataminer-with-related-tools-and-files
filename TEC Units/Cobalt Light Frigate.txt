@@ -1,0 +1,22 @@
+Cobalt Light Frigate
+	Supply: 	5
+	Credits:	225.0
+	Metal:  	45.0
+	Crystal:	
+
+	Movespeed:	900.0
+	Acceleration:	200.0
+
+	Durability:	50.0
+	Armor Strength:	25.0
+
+	Hull Points:	610
+	Armor Points:	560
+	Shield Points:	
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium autocannon        	9.0  	x1    	9.0  	150   	4800 

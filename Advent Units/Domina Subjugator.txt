@@ -1,0 +1,21 @@
+Domina Subjugator
+	Supply: 	10
+	Credits:	
+	Metal:  	150.0
+	Crystal:	215.0
+
+	Movespeed:	700.0
+	Acceleration:	100.0
+
+	Durability:	150.0
+	Armor Strength:	
+
+	Hull Points:	1450
+	Armor Points:	
+	Shield Points:	1400
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	350.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

@@ -1,0 +1,22 @@
+Laser Defense Platform
+	Supply: 	
+	Credits:	550.0
+	Metal:  	150.0
+	Crystal:	
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	600.0
+	Armor Strength:	80.0
+
+	Hull Points:	850
+	Armor Points:	500
+	Shield Points:	750
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy laser              	7.5  	x5    	37.5 	200   	6000 
