@@ -1,6 +1,6 @@
 # Welcome to FancyEveryDay's Personal Sins of a Solar Empire II Data Tools
 
-This repository contains my personal tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use.
+This repository contains my personal tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use, but some of you technically inclined people may find them useful or inspirational.
 
 The repository currently contains 3 modules, I've also uploaded the latest collection of unit stats files produced by the SinsIIStatsThing.py
 
