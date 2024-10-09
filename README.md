@@ -13,7 +13,7 @@ The repository currently contains 3 modules, I've also uploaded the latest colle
    In order to use it on your machine you'll need to change the address in the getSinsData() function on line 34 to the address of the entities folder for your game.
    If you want it to print out the correct names, the address in the open() function on line 84 needs to be changed to the location of the en.localized_text file for your game.
    
-## 2. SinsIIPatchCOmparison.py
+## 2. SinsIIPatchComparison.py
    
    This module leverages SinsIIStatsThing functions to produce a printout of all the data changes to entities.
    In order to use it you have to copy the entities of a previous patch somewhere you can access them, either while the game is rolled back or before you update.
