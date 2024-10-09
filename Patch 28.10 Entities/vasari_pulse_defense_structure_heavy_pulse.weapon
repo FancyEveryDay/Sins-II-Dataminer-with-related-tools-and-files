@@ -1,0 +1,45 @@
+{
+    "version": 0,
+    "name": "weapon_name.heavy_pulse",
+    "pitch_speed": 36.0,
+    "yaw_speed": 36.0,
+    "pitch_firing_tolerance": 5.0,
+    "yaw_firing_tolerance": 5.0,
+    "range": 6000.0,
+    "cooldown_duration": 5.0,
+    "uniforms_target_filter_id": "common_weapon",
+    "attack_target_type_groups": [
+        "light_flak_corvette"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 60.0,
+    "penetration": 200.0,
+    "tags": [
+        "pulse",
+        "energy"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "firing":
+    {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects":
+    {
+        "burst_pattern": [0.0, 0.1, 0.22, 0.36, 0.52, 0.7],
+        "muzzle_effect": "weapon_heavy_pulse_muzzle",
+        "projectile_travel_effect": "weapon_heavy_pulse_projectile_travel",
+        "hit_hull_effect": "weapon_heavy_pulse_hit_hull",
+        "hit_shield_effect": "weapon_heavy_pulse_hit_shield",
+        "hit_shield_impact_radius_t": 0.366667
+    },
+    "turret":
+    {
+        "type": "gimbal",
+        "gimbal_mesh": "vasari_pulse_defense_structure_pdpulse_barrel_0",
+        "muzzle_positions": [
+            [-25.685835, 42.713524, 62.453682]
+        ]
+    }
+}

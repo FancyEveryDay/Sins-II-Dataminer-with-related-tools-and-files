@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "make_dead_when_no_child_buffs_exist": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_position_operators_on_single_position",
+                "position":
+                {
+                    "position_type": "unit_position",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    }
+                },
+                "position_operators": [
+                {
+                    "operator_type": "create_buff_agent",
+                    "buff_on_agent": "trader_siege_capital_ship_missile_barrage_on_spawner"
+                }]
+            }]
+        }
+    }]
+}

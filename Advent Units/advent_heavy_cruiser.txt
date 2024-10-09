@@ -1,0 +1,22 @@
+advent_heavy_cruiser
+	Supply: 	15
+	Credits:	
+	Metal:  	275.0
+	Crystal:	220.0
+
+	Movespeed:	650.0
+	Acceleration:	100.0
+
+	Durability:	400.0
+	Armor Strength:	50.0
+
+	Hull Points:	1100
+	Armor Points:	350
+	Shield Points:	1050
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		very heavy plasma        	9.4  	x1    	9.4  	1000  	5000 

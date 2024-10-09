@@ -1,0 +1,25 @@
+vasari_carrier_capital_ship
+	Supply: 	50
+	Credits:	
+	Metal:  	1680.0
+	Crystal:	1320.0
+
+	Movespeed:	510.0
+	Acceleration:	125.0
+
+	Durability:	500.0
+	Armor Strength:	108.0
+
+	Hull Points:	4195 - 7140
+	Armor Points:	880 - 1415
+	Shield Points:	1440 - 2310
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		light wave cannon        	8.0  	x2    	16.0 	120   	6250 
+		point defense pulse      	7.5  	x6    	45.0 	0     	6000 
+		heavy phase missile      	20.0 	x1    	20.0 	600   	6250 
+		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 

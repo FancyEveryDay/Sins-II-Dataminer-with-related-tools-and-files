@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_loyalist_exodus_package_on_planet"
+                }]
+            }]
+        }
+    }]
+}

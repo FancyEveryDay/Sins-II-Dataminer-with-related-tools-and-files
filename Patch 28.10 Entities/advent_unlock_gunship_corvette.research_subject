@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_ascension",
+    "field_coord": [1, 2],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 300.0,
+        "metal": 50.0,
+        "crystal": 100.0
+    },
+    "name": "advent_unlock_gunship_corvette_research_subject_name",
+    "name_uppercase": "advent_unlock_gunship_corvette_research_subject_name_uppercase",
+    "description": "advent_unlock_gunship_corvette_research_subject_description",
+    "hud_icon": "advent_gunship_corvette_hud_icon",
+    "tooltip_picture": "advent_gunship_corvette_tooltip_picture"
+}

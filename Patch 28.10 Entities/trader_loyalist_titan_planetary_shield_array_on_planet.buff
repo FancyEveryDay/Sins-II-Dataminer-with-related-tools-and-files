@@ -1,0 +1,7 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "unit_mutations": [
+        "invulnerable"]
+}

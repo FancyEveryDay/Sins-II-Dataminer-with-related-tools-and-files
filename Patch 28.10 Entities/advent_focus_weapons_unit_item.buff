@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "weapon_cooldown_bonus"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_focus_weapons_unit_item_hud_icon",
+        "name": "advent_focus_weapons_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "weapon_cooldown_bonus"
+            }]
+        }]
+    }
+}

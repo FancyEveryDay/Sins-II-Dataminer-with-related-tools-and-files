@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_policy",
+    "field_coord": [2, 7],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "npc_alliance":
+    {
+        "npc_tag": "pirates",
+        "alliance_types": [
+            "share_vision"]
+    },
+    "name": "trader_rebel_pirate_share_vision_research_subject_name",
+    "name_uppercase": "trader_rebel_pirate_share_vision_research_subject_name_uppercase",
+    "description": "trader_rebel_pirate_share_vision_research_subject_description",
+    "hud_icon": "trader_rebel_pirate_share_vision_research_subject_hud_icon",
+    "tooltip_picture": "trader_rebel_pirate_share_vision_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_faction",
+        "research_text_filter_pirate",
+        "research_text_filter_rebel"
+    ]
+}

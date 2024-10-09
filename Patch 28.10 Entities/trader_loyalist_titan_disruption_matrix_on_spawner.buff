@@ -1,0 +1,152 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "disruption_matrix_execution_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "current_spawner",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "target_filter_id": "uniforms_friendly_planets"
+                    }
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "disruption_matrix_normal_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "disruption_matrix_enemy_target_filter"
+                    },
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "disruption_matrix_normal_damage_value",
+                    "penetration_value": "fixed_zero"
+                },
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "disruption_matrix_enemy_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "trader_loyalist_titan_disruption_matrix_on_target",
+                    "initial_float_values": [
+                    {
+                        "float_variable_id": "make_dead_radius",
+                        "value_id": "disruption_matrix_normal_radius_value"
+                    }]
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    },
+                    "target_filter_id": "uniforms_friendly_planets"
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "disruption_matrix_bonus_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "disruption_matrix_enemy_target_filter"
+                    },
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "disruption_matrix_bonus_damage_value",
+                    "penetration_value": "fixed_zero"
+                },
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "disruption_matrix_enemy_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "trader_loyalist_titan_disruption_matrix_on_target",
+                    "initial_float_values": [
+                    {
+                        "float_variable_id": "make_dead_radius",
+                        "value_id": "disruption_matrix_bonus_radius_value"
+                    }]
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "trader_loyalist_titan_disruption_matrix_on_spawner"
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_raider_corvette_pulse_resonance_on_damage_dealer"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_spawned_torpedo",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_raider_corvette_pulse_resonance_on_damage_dealer"
+                }]
+            }]
+        }
+    }]
+}

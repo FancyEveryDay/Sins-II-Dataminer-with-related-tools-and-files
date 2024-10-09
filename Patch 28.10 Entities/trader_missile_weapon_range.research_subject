@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_armament",
+    "field_coord": [5, 5],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 1300.0,
+        "metal": 275.0,
+        "crystal": 375.0
+    },
+    "prerequisites": [
+        ["trader_antimatter_0",
+        "trader_missile_weapon_damage_0"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "range",
+        "value": 0.15,
+        "tags": [
+            "missile"]
+    }],
+    "name": "trader_missile_weapon_range_research_subject_name",
+    "name_uppercase": "trader_missile_weapon_range_research_subject_name_uppercase",
+    "description": "trader_missile_weapon_range_research_subject_description",
+    "hud_icon": "trader_missile_weapon_range_research_subject_hud_icon",
+    "tooltip_picture": "trader_missile_weapon_range_research_subject_tooltip_picture"
+}

@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "phase_tunneling_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet",
+                "star"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "is_in_current_gravity_well"
+                }
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "phase_tunneling_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [480.0]
+        }
+    },
+    {
+        "action_value_id": "phase_tunneling_cooldown_time_value",
+        "action_value":
+        {
+            "values": [600.0]
+        }
+    },
+    {
+        "action_value_id": "phase_tunneling_duration_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "range_value",
+        "action_value":
+        {
+            "values": [36.0]
+        }
+    }]
+}

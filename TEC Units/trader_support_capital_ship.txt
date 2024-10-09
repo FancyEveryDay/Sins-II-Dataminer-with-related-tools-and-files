@@ -1,0 +1,25 @@
+trader_support_capital_ship
+	Supply: 	50
+	Credits:	2500.0
+	Metal:  	850.0
+	Crystal:	600.0
+
+	Movespeed:	650.0
+	Acceleration:	130.0
+
+	Durability:	500.0
+	Armor Strength:	90.0
+
+	Hull Points:	3345 - 5695
+	Armor Points:	1520 - 2140
+	Shield Points:	1150 - 1620
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy missile            	33.3 	x1    	33.3 	600   	15000
+		medium autocannon        	9.0  	x4    	36.0 	150   	6250 
+		point defense autocannon 	4.0  	x4    	16.0 	0     	6000 
+		planet bombing           	5.0  	x1    	5.0  	0     	4000 

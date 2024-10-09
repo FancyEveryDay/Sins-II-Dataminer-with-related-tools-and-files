@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "active_duration": "phase_tunneling_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "make_dead"
+                }]
+            }]
+        }
+    }]
+}

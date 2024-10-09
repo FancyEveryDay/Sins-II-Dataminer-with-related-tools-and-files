@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "uniforms_colonizable_planets"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "colonize_planet"
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

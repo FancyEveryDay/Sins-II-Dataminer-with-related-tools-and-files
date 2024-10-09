@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "advent_icon_of_research_civilian_research_time_modifier"
+    },
+    {
+        "buff_planet_modifier_id": "advent_icon_of_research_military_research_time_modifier"
+    }]
+}

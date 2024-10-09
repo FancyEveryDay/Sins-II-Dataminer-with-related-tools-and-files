@@ -1,0 +1,65 @@
+{
+    "version": 0,
+    "action_data_source": "advent_scout_corvette_scout",
+    "active_actions":
+    {
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "explore"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "composite_and",
+                    "constraints": [
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "has_orders"
+                        }
+                    },
+                    {
+                        "constraint_type": "has_permission",
+                        "permission_type": "can_hyperspace"
+                    },
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "is_in_fleet"
+                        }
+                    }]
+                }
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "advent_scout_corvette_scout_ability_hud_icon",
+        "tooltip_picture": "advent_scout_corvette_scout_ability_tooltip_picture",
+        "name": "advent_scout_corvette_scout_ability_name",
+        "description": "advent_scout_corvette_scout_ability_description",
+        "action": "explore"
+    }
+}

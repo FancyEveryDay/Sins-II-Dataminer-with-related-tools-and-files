@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "solar_gravity_slingshot_star_bonus_hud_icon",
+    "tooltip_icon": "solar_gravity_slingshot_star_bonus_hud_icon",
+    "name": "planet_bonus.solar_gravity_slingshot.name",
+    "description": "planet_bonus.solar_gravity_slingshot.desc",
+    "ability": "solar_gravity_slingshot_star_bonus"
+}

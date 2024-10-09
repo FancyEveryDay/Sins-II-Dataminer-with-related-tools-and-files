@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "trader_scout_corvette_unstoppable_phase_jump",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["trader_unstoppable_phase_jump"]
+        ]
+    ],
+    "passive_actions":
+    {
+        "update_interval": 10.0,
+        "persistant_buff": "trader_scout_corvette_unstoppable_phase_jump"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_scout_corvette_unstoppable_phase_jump_ability_hud_icon",
+        "name": "trader_scout_corvette_unstoppable_phase_jump_ability_name",
+        "description": "trader_scout_corvette_unstoppable_phase_jump_ability_description"
+    }
+}

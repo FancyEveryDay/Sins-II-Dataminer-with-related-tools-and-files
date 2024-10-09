@@ -1,0 +1,37 @@
+{
+    "version": 0,
+    "active_duration": "psionic_scream_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_battle_capital_ship_psionic_scream_buff_small",
+                        "medium_unit": "advent_battle_capital_ship_psionic_scream_buff_medium",
+                        "large_unit": "advent_battle_capital_ship_psionic_scream_buff_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "disable_can_use_active_abilities"
+    ],
+    "gui":
+    {
+        "hud_icon": "advent_battle_psionic_capital_ship_psionic_scream_ability_hud_icon",
+        "name": "advent_battle_psionic_capital_ship_psionic_scream_ability_name",
+        "visibility_scope": "negative"
+    }
+}

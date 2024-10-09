@@ -1,0 +1,23 @@
+trader_missile_battery_frigate
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	120.0
+	Armor Strength:	50.0
+
+	Hull Points:	425
+	Armor Points:	525
+	Shield Points:	250
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium missile           	13.3 	x1    	13.3 	450   	15000
+		point defense autocannon 	2.0  	x2    	4.0  	0     	5000 

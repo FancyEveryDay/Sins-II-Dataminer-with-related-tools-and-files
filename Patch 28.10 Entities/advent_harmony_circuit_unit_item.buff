@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "active_duration": "harmony_circuit_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "harmony_circuit_spell_power_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_harmony_circuit_unit_item_hud_icon",
+        "name": "advent_harmony_circuit_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "harmony_circuit_spell_power_modifier"
+            }]
+        }]
+    }
+}

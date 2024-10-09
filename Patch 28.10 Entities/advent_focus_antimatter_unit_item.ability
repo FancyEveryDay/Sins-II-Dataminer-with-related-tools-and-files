@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "advent_focus_antimatter_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_focus_antimatter_unit_item_on_self"
+    },
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "apply_buff_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.aura_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "focus_antimatter_regeneration_modifier"
+            }]
+        }]
+    }
+}

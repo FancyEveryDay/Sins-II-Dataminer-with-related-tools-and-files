@@ -1,0 +1,21 @@
+advent_scout_corvette
+	Supply: 	2
+	Credits:	75.0
+	Metal:  	
+	Crystal:	25.0
+
+	Movespeed:	1200.0
+	Acceleration:	300.0
+
+	Durability:	50.0
+	Armor Strength:	
+
+	Hull Points:	350
+	Armor Points:	
+	Shield Points:	500
+	   Shield Burst CD: 15.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

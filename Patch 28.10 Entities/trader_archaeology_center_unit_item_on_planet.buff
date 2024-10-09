@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "time_actions": [
+    {
+        "first_action_delay_time_value": "archaeology_center_execution_interval_value",
+        "execution_interval_value": "archaeology_center_execution_interval_value",
+        "action_group":
+        {
+            "actions": []
+        }
+    }]
+}

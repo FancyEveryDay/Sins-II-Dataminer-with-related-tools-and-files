@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "max_armor_points_bonus"
+    },
+    {
+        "buff_unit_modifier_id": "hull_armor_bonus"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_strikecraft_armor_unit_item_hud_icon",
+        "name": "vasari_strikecraft_armor_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "max_armor_points_bonus"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "hull_armor_bonus"
+            }]
+        }]
+    }
+}

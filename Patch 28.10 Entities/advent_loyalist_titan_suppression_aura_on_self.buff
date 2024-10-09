@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "suppression_aura_radius",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "suppression_aura_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "advent_loyalist_titan_suppression_aura_on_target"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "advent_loyalist_titan_suppression_aura_buff_on_self"
+                }
+            }]
+        }
+    }]
+}

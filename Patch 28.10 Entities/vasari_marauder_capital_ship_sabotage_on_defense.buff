@@ -1,0 +1,46 @@
+{
+    "version": 0,
+    "active_duration": "sabotage_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "vasari_marauder_capital_ship_sabotage_on_structure_small",
+                        "medium_unit": "vasari_marauder_capital_ship_sabotage_on_structure_medium",
+                        "large_unit": "vasari_marauder_capital_ship_sabotage_on_structure_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "cooldown_duration"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_marauder_capital_ship_sabotage_ability_hud_icon",
+        "name": "vasari_marauder_capital_ship_sabotage_ability_name",
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "cooldown_duration"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "active_duration": "deliverance_engine_culture_spread_rebel_duration_on_target_value",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_deliverance_engine_culture_spread_rebel_on_planet"
+                }]
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "deliverance_engine_culture_spread_rebel_culture_rate_modifier"
+    }]
+}

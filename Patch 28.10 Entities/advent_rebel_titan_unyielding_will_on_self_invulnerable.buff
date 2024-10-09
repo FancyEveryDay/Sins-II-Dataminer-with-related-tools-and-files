@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "active_duration": "unyielding_will_invulnerable_duration_value",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "above",
+                    "effect": "advent_rebel_titan_unyielding_will_invulnerable_buff"
+                }
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "invulnerable"]
+}

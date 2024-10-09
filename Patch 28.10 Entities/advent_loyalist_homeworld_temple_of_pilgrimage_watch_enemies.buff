@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    },
+                    "target_filter_id": "advent_loyalist_homeworld_colonize_target_filter"
+                },
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "advent_loyalist_homeworld_enemy_unit_count_value",
+                    "comparison_type": "less_than_equal_to",
+                    "value_b": "fixed_zero"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "operators": [
+                {
+                    "operator_type": "colonize_planet"
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_loyalist_homeworld_temple_of_pilgrimage_on_target"
+                }]
+            }]
+        }
+    }]
+}

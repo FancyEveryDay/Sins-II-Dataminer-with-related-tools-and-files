@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "bypass_shields_chance_amount",
+            "damage_amount",
+            "duration_amount",
+            "penetration_amount"
+        ]
+    },
+    "action_values": [
+    {
+        "action_value_id": "damage_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "damage_amount",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "duration_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "duration_amount",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "penetration_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "penetration_amount",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "bypass_shields_chance_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "bypass_shields_chance_amount",
+            "values": [1.0]
+        }
+    }]
+}

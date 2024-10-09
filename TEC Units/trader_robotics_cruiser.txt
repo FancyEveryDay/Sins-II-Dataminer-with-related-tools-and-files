@@ -1,0 +1,21 @@
+trader_robotics_cruiser
+	Supply: 	6
+	Credits:	375.0
+	Metal:  	85.0
+	Crystal:	110.0
+
+	Movespeed:	550.0
+	Acceleration:	100.0
+
+	Durability:	200.0
+	Armor Strength:	20.0
+
+	Hull Points:	1525
+	Armor Points:	675
+	Shield Points:	
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	350.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

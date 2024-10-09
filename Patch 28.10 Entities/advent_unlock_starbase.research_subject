@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_protection",
+    "field_coord": [3, 6],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 125.0,
+        "crystal": 225.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "defense",
+        "count": 1
+    }],
+    "name": "advent_unlock_starbase_research_subject_name",
+    "name_uppercase": "advent_unlock_starbase_research_subject_name_uppercase",
+    "hud_icon": "advent_starbase_hud_icon",
+    "tooltip_picture": "advent_starbase_tooltip_picture"
+}

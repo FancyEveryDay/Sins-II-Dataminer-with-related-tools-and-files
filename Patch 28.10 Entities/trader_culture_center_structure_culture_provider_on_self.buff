@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "culture_provider_culture_rate_modifier"
+    }]
+}

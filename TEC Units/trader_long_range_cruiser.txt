@@ -1,0 +1,22 @@
+trader_long_range_cruiser
+	Supply: 	8
+	Credits:	425.0
+	Metal:  	95.0
+	Crystal:	60.0
+
+	Movespeed:	750.0
+	Acceleration:	125.0
+
+	Durability:	200.0
+	Armor Strength:	60.0
+
+	Hull Points:	800
+	Armor Points:	775
+	Shield Points:	
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium missile           	13.3 	x1    	13.3 	450   	15000

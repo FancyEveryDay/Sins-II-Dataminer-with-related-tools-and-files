@@ -1,0 +1,76 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "active_duration": "duration_value",
+	"disable_collision_displacement_with_first_spawner": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_collision_detected",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_target_filter",
+                "unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "target_filter_id": "common_torpedo_collision"
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "source_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "use_source_weapon_properties": true,
+                    "damage_value": "damage_value",
+                    "penetration_value": "penetration_value",
+                    "bypass_shields_chance_value": "bypass_shields_chance_value"
+                }]
+            },
+            {
+                "action_type": "disable_collision_displacement"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "make_dead",
+                    "collision_unit":
+                    {
+                        "unit_type": "trigger_event_destination"
+                    }
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "apply_damage":
+        {
+            "damage_value": "damage_value",
+            "penetration_value": "penetration_value",
+            "bypass_shields_chance_value": "bypass_shields_chance_value"
+        }
+    }
+}

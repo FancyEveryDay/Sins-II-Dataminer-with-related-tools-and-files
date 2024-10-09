@@ -1,0 +1,21 @@
+advent_crystal_extractor_structure
+	Supply: 	
+	Credits:	250.0
+	Metal:  	
+	Crystal:	50.0
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	600.0
+	Armor Strength:	40.0
+
+	Hull Points:	600
+	Armor Points:	
+	Shield Points:	500
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

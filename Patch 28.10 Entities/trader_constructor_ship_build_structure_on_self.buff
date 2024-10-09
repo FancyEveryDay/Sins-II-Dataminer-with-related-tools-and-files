@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "make_dead_when_no_child_buffs_exist": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_constructor_ship_build_structure_on_structure"
+                }]
+            }]
+        }
+    }]
+}

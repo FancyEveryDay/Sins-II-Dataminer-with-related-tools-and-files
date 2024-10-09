@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "active_duration": "rapid_manufacturing_duration_value",
+    "stacking_limit": "fixed_one",
+    "gui":
+    {
+        "hud_icon": "trader_carrier_capital_ship_rapid_manufacturing_ability_hud_icon",
+        "name": "trader_carrier_capital_ship_rapid_manufacturing_ability_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive"
+    }
+}

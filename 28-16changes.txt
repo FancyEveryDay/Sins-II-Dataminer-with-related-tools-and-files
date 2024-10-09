@@ -1,0 +1,6767 @@
+
+
+# Advent Changes
+
+## Ability Changes
+
+**Colonize**
+	active_actions
+		actions
+			actions
+				0
+					operators
+						0
+							operator_type : apply_buff -> colonize_planet
+
+**Dominating Deliverance**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						label_text : tooltip.ability.random_chance -> tooltip.ability.domination_chance
+
+**Resurrecting Deliverance**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						label_text : tooltip.ability.random_chance -> tooltip.ability.resurrection_chance
+
+**Temple of Assimilation**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						label_text : tooltip.ability.random_chance -> tooltip.ability.conversion_chance
+
+**Temple of Resurrection**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						label_text : tooltip.ability.random_chance -> tooltip.ability.resurrection_chance
+
+## Action_data_source Changes
+
+**Communion**
+	action_values
+		0
+			action_value
+				values
+					0 : 0.008 -> 0.01
+
+**Proselytize**
+	action_values
+		3
+			action_value
+				values
+					0 : 0.012 -> 0.015
+					1 : 0.024 -> 0.03
+					2 : 0.04 -> 0.05
+
+**Shield Blessing**
+	action_values
+		3
+			action_value
+				values
+					0 : 100.0 -> 50.0
+				ratio
+					ratio_values
+						0 : 0.5 -> 0.2
+
+**Unyielding Will**
+	action_values
+		0
+			action_value_id : unyielding_will_ability_cooldown_duration_value -> unyielding_will_passive_cooldown_time_value
+			action_value
+				values
+					0 : -1.0 -> 240.0
+		1
+			action_value_id : unyielding_will_antimatter_restore_rate_value -> unyielding_will_ability_cooldown_duration_value
+			action_value
+				values
+					0 : 1.0 -> -1.0
+				ratio
+					ratio_values
+						0 : 0.01 -> -0.001
+		2
+			action_value_id : unyielding_will_invulnerable_duration_value -> unyielding_will_antimatter_restore_rate_value
+			action_value
+				values
+					0 : 180.0 -> 1.0
+		3
+			action_value_id : unyielding_will_missing_hull_input_value -> unyielding_will_invulnerable_duration_value
+			action_value
+				values
+					0 : 1.0 -> 180.0
+		4
+			action_value_id : unyielding_will_was_invulnerable_value -> unyielding_will_missing_hull_input_value
+			action_value
+				transform_type : current_buff_memory_value -> per_percent_missing_hull_points
+	buff_unit_modifiers
+		0
+			buff_unit_modifier
+				value_behavior : additive -> scalar
+
+## Buff Changes
+
+**Colonize**
+	trigger_event_actions
+		0
+			trigger_event_type : on_buff_started -> on_current_spawner_planet_colonized
+			action_group
+				actions
+					0
+						operators
+							0
+								operator_type : colonize_planet -> increase_planet_track_level
+
+## Unit Changes
+
+**Acolyte Corvette**
+	weapons
+		weapons
+			0
+				light_laser
+					acquire_target_logic : order_target_or_best_target_in_range -> order_target_only
+					effects
+						burst_pattern
+							1 : 0.1 -> 0.05
+							2 : 0.2 -> 0.1
+							3 : 0.4 -> 0.15
+							4 : 0.5 -> 0.2
+							5 : 0.6 -> 0.35
+				yaw_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+				pitch_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+	health
+		levels
+			0
+				max_hull_points : 325.0 -> 450.0
+				max_shield_points : 475.0 -> 300.0
+
+**Assembly Drone**
+	spatial
+		radius : 51.80785 -> 51.912655
+		box
+			center
+				0 : -1e-06 -> 0.0
+				1 : 0.0 -> -0.142559
+				2 : 0.0 -> -0.007109
+			extents
+				0 : 14.996039 -> 15.034445
+				1 : 22.489042 -> 22.502453
+				2 : 49.616219 -> 49.77182
+
+**Bomber**
+	attack
+		attack_pattern
+			weapon_cooldown_percent_to_start_strafe : 0.5 -> 0.65
+	weapons
+		weapons
+			0
+				light_beam
+					cooldown_duration : 10.0 -> 15.0
+					effects
+						hit_shield_impact_radius_t : 0.2294 -> 0.25
+					dps : 5.0 -> 3.3333333333333335
+	health
+		levels
+			0
+				max_hull_points : 90.0 -> 50.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 120.0 -> 60.0
+	strikecraft
+		build_time : 25.0 -> 45.0
+
+**Coronata Titan**
+	weapons
+		weapons
+			0
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			1
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			2
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			3
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			4
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			5
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			6
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			7
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 0.75
+			14
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			15
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			16
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			17
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			18
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			19
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			20
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			21
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			22
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			23
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			24
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			25
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			26
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			27
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			28
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			29
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			30
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			31
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			32
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			33
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			34
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			35
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			36
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			37
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			38
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			39
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			40
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			41
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			42
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+	levels
+		levels
+			0
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 4.0 -> 5.0
+			1
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 6.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.05
+						cooldown_duration : -0.06 -> -0.02
+			2
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 7.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.1
+						cooldown_duration : -0.12 -> -0.04
+			3
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 7.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.15
+						cooldown_duration : -0.18 -> -0.06
+			4
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 6.0 -> 8.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.2
+						cooldown_duration : -0.24 -> -0.08
+			5
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 6.0 -> 8.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.6 -> 0.25
+						cooldown_duration : -0.3 -> -0.1
+			6
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 7.0 -> 9.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.72 -> 0.3
+						cooldown_duration : -0.36 -> -0.12
+			7
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 7.0 -> 9.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.84 -> 0.35
+						cooldown_duration : -0.42 -> -0.14
+			8
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 8.0 -> 10.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.96 -> 0.4
+						cooldown_duration : -0.48 -> -0.16
+			9
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 8.0 -> 10.0
+				weapon_modifiers
+					scalar_values
+						damage : 1.08 -> 0.45
+						cooldown_duration : -0.54 -> -0.18
+
+**Disciple Vessel**
+	physics
+		max_angular_speed : 30.0 -> 35.0
+	weapons
+		weapons
+			0
+				medium_laser
+					damage : 30.0 -> 40.0
+					firing
+						travel_speed : 4000.0 -> 4500.0
+					dps : 6.0 -> 8.0
+	health
+		levels
+			0
+				max_hull_points : 500.0 -> 525.0
+				max_shield_points : 525.0 -> 550.0
+
+**Eradica Titan**
+	weapons
+		weapons
+			0
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			1
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			2
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			3
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			4
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			5
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			6
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			7
+				heavy_beam
+					firing
+						beam_duration : 4.0 -> 3.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.75
+			8
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			9
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			10
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			11
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			12
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			13
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			14
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			15
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			16
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			17
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			18
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			19
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			20
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			21
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			22
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			23
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			24
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			25
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			26
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			27
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			28
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					pitch_firing_tolerance : 1.0 -> 0.75
+					yaw_firing_tolerance : 1.0 -> 0.75
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			29
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			30
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			31
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			32
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			33
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			34
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.9 -> 1.0
+			35
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			36
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			37
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			38
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			39
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			40
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			41
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			42
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			43
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			44
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			45
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			46
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			47
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			48
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+			49
+				heavy_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.4
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.04
+			2
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 4.0 -> 5.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.08
+			3
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 4.0 -> 5.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.12
+			4
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 6.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.16
+			5
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 6.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.2
+			6
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 5.0 -> 7.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.24
+			7
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 6.0 -> 7.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.42 -> 0.28
+			8
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 6.0 -> 8.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.32
+			9
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 6.0 -> 8.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.54 -> 0.36
+
+**Fighter**
+	ai
+		pursuit
+			min_distance_to_target : 250.0 -> 1500.0
+	weapons
+		weapons
+			0
+				light_laser
+					cooldown_duration : 3.0 -> 2.5
+					damage : 12.0 -> 8.0
+					effects
+						hit_shield_impact_radius_t : 0.106667 -> 0.1
+					dps : 4.0 -> 3.2
+	health
+		levels
+			0
+				max_hull_points : 50.0 -> 30.0
+	strikecraft
+		build_time : 20.0 -> 35.0
+
+**Halcyon Carrier**
+	weapons
+		weapons
+			0
+				medium_beam
+					effects
+						hit_shield_impact_radius_t : 0.49 -> 0.5
+			1
+				medium_beam
+					effects
+						hit_shield_impact_radius_t : 0.49 -> 0.5
+			2
+				medium_beam
+					effects
+						hit_shield_impact_radius_t : 0.49 -> 0.5
+			3
+				medium_beam
+					effects
+						hit_shield_impact_radius_t : 0.49 -> 0.5
+			4
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			5
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			6
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			7
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			8
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			9
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			10
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			11
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.015
+						cooldown_duration : -0.03 -> -0.015
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.03
+						cooldown_duration : -0.06 -> -0.03
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.045
+						cooldown_duration : -0.09 -> -0.045
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.06
+						cooldown_duration : -0.12 -> -0.06
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.075
+						cooldown_duration : -0.15 -> -0.075
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.09
+						cooldown_duration : -0.18 -> -0.09
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.14 -> 0.105
+						cooldown_duration : -0.21 -> -0.105
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.12
+						cooldown_duration : -0.24 -> -0.12
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.135
+						cooldown_duration : -0.27 -> -0.135
+
+**Progenitor Mothership**
+	weapons
+		weapons
+			0
+				heavy_plasma
+					effects
+						hit_shield_impact_radius_t : 0.63 -> 1.0
+			1
+				heavy_plasma
+					effects
+						hit_shield_impact_radius_t : 0.63 -> 1.0
+			2
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.075
+					dps : 2.0 -> 1.5
+			3
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.075
+					dps : 2.0 -> 1.5
+			4
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			5
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			6
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			7
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			8
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			9
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+			10
+				medium_laser
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.21 -> 0.25
+	levels
+		levels
+			0
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.2 -> 1.0
+			1
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.45 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.01 -> 0.005
+			2
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.7 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.01
+			3
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.95 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.03 -> 0.015
+			4
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.2 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.02
+			5
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.45 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.05 -> 0.025
+			6
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.7 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+			7
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.95 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.07 -> 0.035
+			8
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 3.2 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+			9
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 3.45 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.09 -> 0.045
+
+**Radiance Battleship**
+	weapons
+		weapons
+			0
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.882 -> 0.75
+			1
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.882 -> 0.75
+			2
+				heavy_plasma
+					effects
+						hit_shield_impact_radius_t : 0.385 -> 1.0
+			5
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			6
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			7
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			8
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			9
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			10
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			11
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			12
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			13
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			14
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			15
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			16
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			17
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			18
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.02
+						cooldown_duration : -0.02 -> -0.015
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+						cooldown_duration : -0.04 -> -0.03
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+						cooldown_duration : -0.06 -> -0.045
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.08
+						cooldown_duration : -0.08 -> -0.06
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.2 -> 0.1
+						cooldown_duration : -0.1 -> -0.075
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.12
+						cooldown_duration : -0.12 -> -0.09
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.28 -> 0.14
+						cooldown_duration : -0.14 -> -0.105
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.32 -> 0.16
+						cooldown_duration : -0.16 -> -0.12
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.18
+						cooldown_duration : -0.18 -> -0.135
+
+**Rapture Battlecruiser**
+	weapons
+		weapons
+			2
+				heavy_plasma
+					effects
+						hit_shield_impact_radius_t : 0.09625 -> 1.0
+			3
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.882 -> 0.75
+			4
+				heavy_beam
+					effects
+						hit_shield_impact_radius_t : 0.882 -> 0.75
+			5
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			6
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			7
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+			8
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.315 -> 0.075
+					dps : 2.0 -> 1.5
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+			3
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.0 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.09
+			4
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.0 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.12
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.15
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.18
+			7
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.0 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.42 -> 0.21
+			8
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.0 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.24
+			9
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.0 -> 3.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.54 -> 0.27
+
+**Revelation Battlecruiser**
+	weapons
+		weapons
+			5
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			6
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			7
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+			8
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 0.36 -> 0.25
+	levels
+		levels
+			0
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.3 -> 1.0
+			1
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.45 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.035
+						cooldown_duration : -0.01 -> -0.005
+			2
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.6 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.07
+						cooldown_duration : -0.02 -> -0.01
+			3
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.75 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.105
+						cooldown_duration : -0.03 -> -0.015
+			4
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 1.9 -> 1.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.32 -> 0.14
+						cooldown_duration : -0.04 -> -0.02
+			5
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.05 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.4 -> 0.175
+						cooldown_duration : -0.05 -> -0.025
+			6
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.2 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.21
+						cooldown_duration : -0.06 -> -0.03
+			7
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.35 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.56 -> 0.245
+						cooldown_duration : -0.07 -> -0.035
+			8
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.5 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.64 -> 0.28
+						cooldown_duration : -0.08 -> -0.04
+			9
+				unit_modifiers
+					additive_values
+						max_squadron_capacity : 2.65 -> 2.0
+				weapon_modifiers
+					scalar_values
+						damage : 0.72 -> 0.315
+						cooldown_duration : -0.09 -> -0.045
+
+**Temple of Harmony**
+	health
+		durability : 500.0 -> 600.0
+
+**Temple of Renewal**
+	spatial
+		radius : 356.073975 -> 355.736694
+		box
+			center
+				1 : 0.118988 -> 0.004669
+			extents
+				0 : 349.464355 -> 349.02417
+				1 : 353.097229 -> 352.652466
+				2 : 350.098907 -> 349.657928
+	build
+		build_radius : 494.666138 -> 494.04306
+
+**Transcencia Starbase**
+	weapons
+		weapons
+			0
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			1
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			2
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			3
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			4
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			5
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			6
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			7
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			8
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			9
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			10
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			11
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			12
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			13
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			14
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			15
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			16
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			17
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			18
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			19
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			20
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			21
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			22
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			23
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			24
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			25
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			26
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			27
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			28
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			29
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			30
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			31
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			32
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			33
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			34
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			35
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			36
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			37
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			38
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			39
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			40
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			41
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			42
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			43
+				medium_laser
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.25
+			44
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			45
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			46
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			47
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			48
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			49
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			50
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			51
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			52
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			53
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			54
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			55
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			56
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			57
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			58
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			59
+				heavy_plasma
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					effects
+						hit_shield_impact_radius_t : 0.973333 -> 1.0
+			60
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			61
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			62
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			63
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			64
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			65
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			66
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			67
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			68
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			69
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			70
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			71
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			72
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			73
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			74
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+			75
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.16 -> 0.075
+					dps : 2.0 -> 1.5
+
+**Vigilis Sentinel**
+	weapons
+		weapons
+			0
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			1
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			2
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			3
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			4
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			5
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			6
+				point_defense_laser
+					pitch_speed : 80.0 -> 90.0
+					yaw_speed : 80.0 -> 90.0
+					cooldown_duration : 1.5 -> 2.0
+					effects
+						hit_shield_impact_radius_t : 0.1275 -> 0.075
+					dps : 2.0 -> 1.5
+			7
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					acquire_target_logic : best_target_in_range -> order_target_or_best_target_in_range
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			8
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					acquire_target_logic : best_target_in_range -> order_target_or_best_target_in_range
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+			9
+				light_laser
+					pitch_speed : 60.0 -> 90.0
+					yaw_speed : 60.0 -> 90.0
+					acquire_target_logic : best_target_in_range -> order_target_or_best_target_in_range
+					effects
+						hit_shield_impact_radius_t : 0.5565 -> 0.2
+	health
+		levels
+			0
+				max_armor_points : 500.0 -> 400.0
+				max_shield_points : 950.0 -> 900.0
+	build
+		price
+			credits : 775.0 -> 655.0
+			metal : 155.0 -> 115.0
+		supply_cost : 12 -> 9
+
+## Unit_skin Changes
+
+**Temple of Renewal**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_name : advent_temple_of_renewal_recharge_shields_activate -> advent_temple_of_renewal_recharge_antimatter_activate
+						alias_binding
+							particle_effect : temple_of_renewal_shield_regeneration -> advent_temple_of_renewal_recharge_antimatter_activate
+					1
+						alias_name : advent_temple_of_renewal_recharge_shields_buff_large -> advent_temple_of_renewal_recharge_antimatter_buff_large
+						alias_binding
+							particle_effect : temple_of_renewal_shield_regeneration_on_large -> advent_temple_of_renewal_recharge_antimatter_on_large
+					2
+						alias_name : advent_temple_of_renewal_recharge_shields_buff_medium -> advent_temple_of_renewal_recharge_antimatter_buff_medium
+						alias_binding
+							particle_effect : temple_of_renewal_shield_regeneration_on_medium -> advent_temple_of_renewal_recharge_antimatter_on_medium
+					3
+						alias_name : advent_temple_of_renewal_recharge_shields_buff_small -> advent_temple_of_renewal_recharge_antimatter_buff_small
+						alias_binding
+							particle_effect : temple_of_renewal_shield_regeneration_on_small -> advent_temple_of_renewal_recharge_antimatter_on_small
+					4
+						alias_name : advent_temple_of_renewal_recharge_antimatter_activate -> advent_temple_of_renewal_recharge_shields_activate
+						alias_binding
+							particle_effect : advent_temple_of_renewal_recharge_antimatter_activate -> temple_of_renewal_shield_regeneration
+					5
+						alias_name : advent_temple_of_renewal_recharge_antimatter_buff_large -> advent_temple_of_renewal_recharge_shields_buff_large
+						alias_binding
+							particle_effect : advent_temple_of_renewal_recharge_antimatter_on_large -> temple_of_renewal_shield_regeneration_on_large
+					6
+						alias_name : advent_temple_of_renewal_recharge_antimatter_buff_medium -> advent_temple_of_renewal_recharge_shields_buff_medium
+						alias_binding
+							particle_effect : advent_temple_of_renewal_recharge_antimatter_on_medium -> temple_of_renewal_shield_regeneration_on_medium
+					7
+						alias_name : advent_temple_of_renewal_recharge_antimatter_buff_small -> advent_temple_of_renewal_recharge_shields_buff_small
+						alias_binding
+							particle_effect : advent_temple_of_renewal_recharge_antimatter_on_small -> temple_of_renewal_shield_regeneration_on_small
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**Pirate Mercenary Base**
+	build_time : 60.0 -> 90.0
+	price
+		credits : 750.0 -> 1250.0
+		metal : 200.0 -> 350.0
+		crystal : 100.0 -> 250.0
+	exotic_price
+		0
+			count : 1 -> 2
+
+## Ability Changes
+
+**Colonize**
+	active_actions
+		actions
+			actions
+				0
+					operators
+						0
+							operator_type : apply_buff -> colonize_planet
+
+**Disruption Matrix**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_or
+
+**Gas Crystalizer**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						rendering_type : single_value -> exotic_income
+
+**High Yield Warheads**
+	active_actions
+		actions
+			actions
+				0
+					radius_value : apply_buff_radius -> high_yield_warheads_radius_value
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_and
+	gui
+		targeting
+			values
+				radius : apply_buff_radius -> high_yield_warheads_radius_value
+		tooltip_line_groups
+			0
+				lines
+					0
+						value_id : apply_buff_radius -> high_yield_warheads_radius_value
+
+**Inspiring Broadcast**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_and
+
+**Missile Guidance Computer**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						rendering_type : buff_weapon_modifier -> single_line
+
+**Safety Override Protocol**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_and
+
+**Shield Surge**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_or
+
+## Action_data_source Changes
+
+**Broadcast**
+	action_values
+		0
+			action_value
+				values
+					0 : 0.008 -> 0.01
+
+**High Yield Warheads**
+	action_values
+		0
+			action_value_id : apply_buff_radius -> high_yield_warheads_radius_value
+
+**Iron Will**
+	action_values
+		0
+			action_value
+				values
+					0 : 0.02 -> 0.002
+
+**Pirate Mercenary Base**
+	action_values
+		3
+			action_value
+				values
+					0 : 2500.0 -> 3000.0
+
+## Buff Changes
+
+**Colonize**
+	trigger_event_actions
+		0
+			trigger_event_type : on_buff_started -> on_current_spawner_planet_colonized
+			action_group
+				actions
+					0
+						operators
+							0
+								operator_type : colonize_planet -> increase_planet_track_level
+
+**trader_siege_capital_ship_missile_barrage_on_target**
+	time_actions
+		0
+			action_group
+				actions
+					0
+						position_operators
+							0
+								operator_type : create_unit -> create_torpedo
+
+## Unit Changes
+
+**Akkan Battlecruiser**
+	weapons
+		weapons
+			0
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.204167 -> 0.25
+			1
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.204167 -> 0.25
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.204167 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.204167 -> 0.25
+			4
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			5
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.01
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.02
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.05
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.14 -> 0.07
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.08
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.09
+
+**Ankylon Titan**
+	weapons
+		weapons
+			0
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			1
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			4
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			5
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			6
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			7
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			8
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			9
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			10
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			11
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			12
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			13
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			14
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			15
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.413333 -> 0.25
+			16
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			17
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			18
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			19
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			20
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			21
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			22
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			23
+				heavy_beam
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.533333 -> 1.0
+			36
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			37
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			38
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			39
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			40
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			41
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			42
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			43
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			44
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			45
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			46
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			47
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			48
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			49
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			50
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			51
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			52
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			53
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.01
+						cooldown_duration : -0.03 -> -0.025
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.02
+						cooldown_duration : -0.06 -> -0.05
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+						cooldown_duration : -0.09 -> -0.075
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+						cooldown_duration : -0.12 -> -0.1
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.05
+						cooldown_duration : -0.15 -> -0.125
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+						cooldown_duration : -0.18 -> -0.15
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.14 -> 0.07
+						cooldown_duration : -0.21 -> -0.175
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.08
+						cooldown_duration : -0.24 -> -0.2
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.09
+						cooldown_duration : -0.27 -> -0.225
+
+**Argonev Starbase**
+	weapons
+		weapons
+			0
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			1
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			4
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			5
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			6
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			7
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			8
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			9
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			10
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			11
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			12
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			13
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			14
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			15
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			16
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			17
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			18
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			19
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			20
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			21
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			22
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			23
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			24
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			25
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			26
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			27
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			28
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			29
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			30
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			31
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.973333 -> 0.25
+			32
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			33
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			34
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			35
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			36
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			37
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			38
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			39
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			40
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			41
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			42
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			43
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			44
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			45
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			46
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			47
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			48
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			49
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			50
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			51
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			52
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			53
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			54
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			55
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			56
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			57
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			58
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			59
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			60
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			61
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			62
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			63
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+
+**Bomber**
+	attack
+		attack_pattern
+			weapon_cooldown_percent_to_start_strafe : 0.6 -> 0.65
+	weapons
+		weapons
+			0
+				light_missile
+					cooldown_duration : 15.0 -> 20.0
+					dps : 8.0 -> 6.0
+				yaw_arc
+					min_angle : -90.0 -> -5.0
+					max_angle : 90.0 -> 5.0
+				pitch_arc
+					min_angle : -90.0 -> -5.0
+					max_angle : 90.0 -> 5.0
+	health
+		levels
+			0
+				max_hull_points : 50.0 -> 30.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 120.0 -> 60.0
+				max_armor_points : 60.0 -> 40.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 120.0 -> 60.0
+	strikecraft
+		build_time : 40.0 -> 50.0
+
+**Cobalt Light Frigate**
+	physics
+		max_angular_speed : 30.0 -> 35.0
+	weapons
+		weapons
+			0
+				medium_autocannon
+					cooldown_duration : 5.5 -> 5.0
+					damage : 40.0 -> 45.0
+					dps : 7.2727272727272725 -> 9.0
+	health
+		levels
+			0
+				max_hull_points : 550.0 -> 610.0
+				max_armor_points : 580.0 -> 560.0
+
+**Crystal Extractor**
+	health
+		durability : 400.0 -> 600.0
+
+**Dunov Battlecruiser**
+	weapons
+		weapons
+			1
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			4
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			5
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			6
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			7
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			8
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.05 -> 0.02
+						cooldown_duration : -0.02 -> -0.015
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.04
+						cooldown_duration : -0.04 -> -0.03
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.15 -> 0.06
+						cooldown_duration : -0.06 -> -0.045
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.2 -> 0.08
+						cooldown_duration : -0.08 -> -0.06
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.25 -> 0.1
+						cooldown_duration : -0.1 -> -0.075
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.12
+						cooldown_duration : -0.12 -> -0.09
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.35 -> 0.14
+						cooldown_duration : -0.14 -> -0.105
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.4 -> 0.16
+						cooldown_duration : -0.16 -> -0.12
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.45 -> 0.18
+						cooldown_duration : -0.18 -> -0.135
+
+**Fighter**
+	ai
+		pursuit
+			min_distance_to_target : 250.0 -> 1500.0
+	weapons
+		weapons
+			0
+				light_autocannon
+					cooldown_duration : 4.0 -> 3.0
+					damage : 20.0 -> 12.0
+					effects
+						hit_shield_impact_radius_t : 0.17 -> 0.1
+					dps : 5.0 -> 4.0
+	health
+		levels
+			0
+				max_hull_points : 30.0 -> 20.0
+				max_armor_points : 35.0 -> 25.0
+	strikecraft
+		build_time : 30.0 -> 40.0
+
+**Garda Flak Frigate**
+	weapons
+		weapons
+			0
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+			1
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+			2
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+			3
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+			4
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 6000.0 -> 5000.0
+					damage : 15.0 -> 10.0
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+					dps : 5.0 -> 3.3333333333333335
+	health
+		levels
+			0
+				max_armor_points : 455.0 -> 480.0
+
+**Hangar Defense**
+	weapons
+		weapons
+			0
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.2 -> 0.05
+					dps : 1.0 -> 2.0
+			1
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.2 -> 0.05
+					dps : 1.0 -> 2.0
+			2
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.2 -> 0.05
+					dps : 1.0 -> 2.0
+			3
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.2 -> 0.05
+					dps : 1.0 -> 2.0
+
+**Harcka Heavy Cruiser**
+	weapons
+		weapons
+			0
+				heavy_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+			1
+				heavy_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+			2
+				heavy_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+			3
+				heavy_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+			4
+				heavy_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+
+**Kol Battleship**
+	weapons
+		weapons
+			0
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			1
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+			4
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+			5
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+			6
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 6250.0 -> 5000.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			7
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 6250.0 -> 5000.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			8
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 6250.0 -> 5000.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.025
+						cooldown_duration : -0.015 -> -0.01
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.05
+						cooldown_duration : -0.03 -> -0.02
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.075
+						cooldown_duration : -0.045 -> -0.03
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.1
+						cooldown_duration : -0.06 -> -0.04
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.125
+						cooldown_duration : -0.075 -> -0.05
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.15
+						cooldown_duration : -0.09 -> -0.06
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.42 -> 0.175
+						cooldown_duration : -0.105 -> -0.07
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.2
+						cooldown_duration : -0.12 -> -0.08
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.54 -> 0.225
+						cooldown_duration : -0.135 -> -0.09
+
+**Large Missile**
+	physics
+		max_linear_speed : 1750.0 -> 2000.0
+		time_to_max_linear_speed : 17.5 -> 10.0
+
+**Marza Dreadnought**
+	weapons
+		weapons
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+			3
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.2625 -> 0.25
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.08
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.12
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.32 -> 0.16
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.4 -> 0.2
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.24
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.56 -> 0.28
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.64 -> 0.32
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.72 -> 0.36
+
+**Medium Missile**
+	physics
+		time_to_max_linear_speed : 14.0 -> 10.0
+
+**Metal Extractor**
+	health
+		durability : 400.0 -> 600.0
+
+**Missile Battery**
+	weapons
+		weapons
+			1
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					uniforms_target_filter_id : strikecraft_and_torpedo_weapon -> common_and_strikecraft_and_torpedo_weapon
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+			2
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 60.0
+					yaw_speed : 75.0 -> 60.0
+					range : 6000.0 -> 5000.0
+					cooldown_duration : 2.0 -> 1.0
+					uniforms_target_filter_id : strikecraft_and_torpedo_weapon -> common_and_strikecraft_and_torpedo_weapon
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.05
+					dps : 1.0 -> 2.0
+
+**Ragnarov Titan**
+	weapons
+		weapons
+			0
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			1
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			2
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			3
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			4
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			5
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			6
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			7
+				gauss
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			8
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			9
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			10
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			11
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			12
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			13
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			14
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			15
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			16
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			17
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			18
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			19
+				gauss
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+					firing
+						travel_speed : 3000.0 -> 4000.0
+			20
+				rail_gun
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+			21
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			22
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			23
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			24
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			25
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			26
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			27
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			28
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			29
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			30
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			31
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			32
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			33
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			34
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			35
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			36
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			37
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			38
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			39
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			40
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			41
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			42
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			43
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+			44
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.810133 -> 0.25
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.025
+						cooldown_duration : -0.015 -> -0.02
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.05
+						cooldown_duration : -0.03 -> -0.04
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.075
+						cooldown_duration : -0.045 -> -0.06
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.32 -> 0.1
+						cooldown_duration : -0.06 -> -0.08
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.4 -> 0.125
+						cooldown_duration : -0.075 -> -0.1
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.15
+						cooldown_duration : -0.09 -> -0.12
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.56 -> 0.175
+						cooldown_duration : -0.105 -> -0.14
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.64 -> 0.2
+						cooldown_duration : -0.12 -> -0.16
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.72 -> 0.225
+						cooldown_duration : -0.135 -> -0.18
+
+**Shriken Gunship Corvette**
+	weapons
+		weapons
+			0
+				light_autocannon
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.1 -> 0.075
+							2 : 0.2 -> 0.15
+							3 : 0.3 -> 0.225
+							4 : 0.4 -> 0.3
+						hit_shield_impact_radius_t : 0.08 -> 0.1
+			1
+				light_autocannon
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.15 -> 0.1
+							2 : 0.3 -> 0.2
+							3 : 0.45 -> 0.3
+						hit_shield_impact_radius_t : 0.197667 -> 0.1
+			2
+				light_autocannon
+					firing
+						travel_speed : 4000.0 -> 5000.0
+					effects
+						burst_pattern
+							1 : 0.15 -> 0.1
+							2 : 0.3 -> 0.2
+							3 : 0.45 -> 0.3
+						hit_shield_impact_radius_t : 0.197667 -> 0.1
+	health
+		levels
+			0
+				max_hull_points : 285.0 -> 235.0
+				max_armor_points : 300.0 -> 250.0
+
+**Sova Carrier**
+	weapons
+		weapons
+			0
+				light_autocannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 6250.0 -> 5000.0
+					acquire_target_logic : order_target_or_best_target_in_range -> best_target_in_range
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.075
+							2 : 0.333333 -> 0.15
+							3 : 0.75 -> 0.225
+							4 : 1.0 -> 0.3
+						hit_shield_impact_radius_t : 0.12 -> 0.1
+			1
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			2
+				medium_autocannon
+					pitch_firing_tolerance : 2.5 -> 1.0
+					yaw_firing_tolerance : 2.5 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.2 -> 0.15
+							2 : 0.4 -> 0.3
+							3 : 0.6 -> 0.45
+							4 : 0.8 -> 0.6
+						hit_shield_impact_radius_t : 0.233333 -> 0.25
+			3
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			4
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			5
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			6
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			7
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			8
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			9
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			10
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+			11
+				point_defense_autocannon
+					pitch_speed : 75.0 -> 100.0
+					yaw_speed : 75.0 -> 100.0
+					effects
+						burst_pattern
+							1 : 0.08 -> 0.05
+							2 : 0.16 -> 0.1
+							3 : 0.24 -> 0.15
+							4 : 0.32 -> 0.2
+							5 : 0.4 -> 0.25
+							6 : 0.48 -> 0.3
+							7 : 0.56 -> 0.35
+						hit_shield_impact_radius_t : 0.066667 -> 0.075
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.01
+						cooldown_duration : -0.03 -> -0.02
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.02
+						cooldown_duration : -0.06 -> -0.04
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+						cooldown_duration : -0.09 -> -0.06
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.04
+						cooldown_duration : -0.12 -> -0.08
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.05
+						cooldown_duration : -0.15 -> -0.1
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+						cooldown_duration : -0.18 -> -0.12
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.14 -> 0.07
+						cooldown_duration : -0.21 -> -0.14
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.08
+						cooldown_duration : -0.24 -> -0.16
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.09
+						cooldown_duration : -0.27 -> -0.18
+
+**Trade Port**
+	culture_provider
+		base_culture_rate : 0.001 -> 0.002
+
+## Unit_skin Changes
+
+**Akkan Battlecruiser**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					15
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					16
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+**Ankylon Titan**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					20
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					21
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+**Dunov Battlecruiser**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					13
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					14
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+**Kol Battleship**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					23
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					24
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+**Novalith Cannon**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_binding
+							particle_effect : ability_orbitalcannontechchargeup -> orbital_cannon_chargeup
+
+**Ragnarov Titan**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					18
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					19
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+**Sova Carrier**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					9
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+					10
+						alias_binding
+							particle_effect : weapon_techcapitalplanetbombing_hit -> nuke
+
+## Research_subject Changes
+
+**trader_commerce_culture**
+	tier : 2 -> 3
+	field_coord
+		0 : 5 -> 6
+	research_time : 300.0 -> 375.0
+	price
+		credits : 1300.0 -> 1900.0
+		metal : 275.0 -> 425.0
+		crystal : 375.0 -> 600.0
+
+**trader_enemy_culture_suppression**
+	planet_modifiers
+		0
+			value : 0.04 -> 0.02
+
+**trader_improve_culture_propagation**
+	prerequisites
+		0
+			0 : trader_trade_port_culture -> trader_commerce_culture
+
+**trader_trade_port_culture**
+	tier : 3 -> 2
+	field_coord
+		0 : 6 -> 5
+	research_time : 375.0 -> 300.0
+	price
+		credits : 1900.0 -> 1300.0
+		metal : 425.0 -> 275.0
+		crystal : 600.0 -> 375.0
+	prerequisites
+		0
+			0 : trader_commerce_culture -> trader_culture_rate_0
+
+## Player Changes
+
+**trader_loyalist**
+	culture
+		planet_track_level_culture_providers
+			0
+				rate : 0.05 -> 0.01
+
+**trader_rebel**
+	culture
+		planet_track_level_culture_providers
+			0
+				rate : 0.05 -> 0.01
+
+
+# Vasari Changes
+
+## Ability Changes
+
+**Colonize**
+	active_actions
+		actions
+			actions
+				0
+					operators
+						0
+							operator_type : apply_buff -> colonize_planet
+
+**Dissever**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_and
+
+**Gravity Pulse**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_or
+
+**Jam Weapons**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_and
+
+**Nano Leech**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_or
+
+**Nano Remit**
+	active_actions
+		auto_cast
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint -> composite_or
+
+**Self-Repairing Armor**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						value_suffix_text : tooltip.per_max_hull_points_postfix -> tooltip.per_max_armor_points_postfix
+
+## Action_data_source Changes
+
+**Xeno Relations**
+	action_values
+		0
+			action_value
+				values
+					0 : 0.008 -> 0.01
+
+## Buff Changes
+
+**Colonize**
+	trigger_event_actions
+		0
+			trigger_event_type : on_buff_started -> on_current_spawner_planet_colonized
+			action_group
+				actions
+					0
+						operators
+							0
+								operator_type : colonize_planet -> increase_planet_track_level
+
+**vasari_colony_capital_ship_subspace_rupture_on_target**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						label_text : tooltip.ability.damage_rate -> tooltip.ability.damage
+						value_id : subspace_rupture_improved_damage_rate_value -> subspace_rupture_normal_damage_rate_value
+
+**vasari_siege_capital_ship_phase_missile_swarm_on_self**
+	time_actions
+		0
+			action_group
+				actions
+					0
+						position_operators
+							0
+								operator_type : create_unit -> create_torpedo
+
+**vasari_stripped_to_the_core_action**
+	trigger_event_actions
+		0
+			action_group
+				actions
+					0
+						action_type : start_buff_effect -> use_unit_operators_on_single_unit
+
+## Unit Changes
+
+**Antorak Marauder**
+	weapons
+		weapons
+			3
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			4
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			5
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			6
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.05 -> 0.018
+						cooldown_duration : -0.03 -> -0.018
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.1 -> 0.036
+						cooldown_duration : -0.06 -> -0.036
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.15 -> 0.054
+						cooldown_duration : -0.09 -> -0.054
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.2 -> 0.072
+						cooldown_duration : -0.12 -> -0.072
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.25 -> 0.09
+						cooldown_duration : -0.15 -> -0.09
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.108
+						cooldown_duration : -0.18 -> -0.108
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.35 -> 0.126
+						cooldown_duration : -0.21 -> -0.126
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.4 -> 0.144
+						cooldown_duration : -0.24 -> -0.144
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.45 -> 0.162
+						cooldown_duration : -0.27 -> -0.162
+
+**Bomber**
+	attack
+		attack_pattern
+			weapon_cooldown_percent_to_start_strafe : 0.5 -> 0.65
+	weapons
+		weapons
+			0
+				light_phase_missile
+					cooldown_duration : 12.0 -> 18.0
+					dps : 8.0 -> 5.333333333333333
+				yaw_arc
+					min_angle : -90.0 -> -5.0
+					max_angle : 90.0 -> 5.0
+				pitch_arc
+					min_angle : -90.0 -> -5.0
+					max_angle : 90.0 -> 5.0
+	health
+		levels
+			0
+				max_hull_points : 90.0 -> 60.0
+	strikecraft
+		build_time : 30.0 -> 90.0
+
+**Jarrasul Evacuator**
+	weapons
+		weapons
+			0
+				light_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			5
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			6
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.006
+						cooldown_duration : -0.02 -> -0.03
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.012
+						cooldown_duration : -0.04 -> -0.06
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.018
+						cooldown_duration : -0.06 -> -0.09
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.024
+						cooldown_duration : -0.08 -> -0.12
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.03
+						cooldown_duration : -0.1 -> -0.15
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.036
+						cooldown_duration : -0.12 -> -0.18
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.42 -> 0.042
+						cooldown_duration : -0.14 -> -0.21
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.048
+						cooldown_duration : -0.16 -> -0.24
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.54 -> 0.054
+						cooldown_duration : -0.18 -> -0.27
+
+**Jarun Migrator**
+	weapons
+		weapons
+			0
+				medium_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			1
+				medium_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+
+**Jikara Navigator**
+	weapons
+		weapons
+			0
+				point_defense_pulse
+					pitch_speed : 60.0 -> 72.0
+					yaw_speed : 60.0 -> 72.0
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 4000.0 -> 3600.0
+					cooldown_duration : 1.5 -> 1.8
+					firing
+						travel_speed : 4200.0 -> 4800.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.03
+					dps : 2.0 -> 1.6666666666666665
+			1
+				point_defense_pulse
+					pitch_speed : 60.0 -> 72.0
+					yaw_speed : 60.0 -> 72.0
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 4000.0 -> 3600.0
+					cooldown_duration : 1.5 -> 1.8
+					firing
+						travel_speed : 4200.0 -> 4800.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.03
+					dps : 2.0 -> 1.6666666666666665
+
+**Kanrak Assailant**
+	weapons
+		weapons
+			0
+				medium_phase_missile
+					burst_pattern
+						1 : 0.96 -> 0.48
+						2 : 1.92 -> 0.96
+
+**Kortovas Oppressor**
+	weapons
+		weapons
+			0
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.69 -> 0.6
+			1
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.69 -> 0.6
+			2
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.69 -> 0.6
+			3
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.69 -> 0.6
+			4
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+
+**Kortul Devastator**
+	weapons
+		weapons
+			0
+				heavy_wave_cannon
+					effects
+						hit_shield_impact_radius_t : 0.462 -> 1.0
+			1
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+			2
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+			3
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+			4
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+			5
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+			6
+				beam
+					effects
+						hit_shield_impact_radius_t : 0.28 -> 0.6
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.03
+						cooldown_duration : -0.015 -> -0.006
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.06
+						cooldown_duration : -0.03 -> -0.012
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.18 -> 0.09
+						cooldown_duration : -0.045 -> -0.018
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.12
+						cooldown_duration : -0.06 -> -0.024
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.3 -> 0.15
+						cooldown_duration : -0.075 -> -0.03
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.18
+						cooldown_duration : -0.09 -> -0.036
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.42 -> 0.21
+						cooldown_duration : -0.105 -> -0.042
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.48 -> 0.24
+						cooldown_duration : -0.12 -> -0.048
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.54 -> 0.27
+						cooldown_duration : -0.135 -> -0.054
+
+**Kultorask Titan**
+	weapons
+		weapons
+			4
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			5
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			6
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			7
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			8
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			9
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			10
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			11
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			12
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			13
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			14
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			15
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			16
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			17
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			18
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			19
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			20
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			21
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			22
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			23
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			24
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			25
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			26
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			27
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			28
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			29
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			30
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			31
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			32
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			33
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			34
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			35
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			44
+				phase_cannon
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.03 -> 0.024
+						cooldown_duration : -0.02 -> -0.018
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.048
+						cooldown_duration : -0.04 -> -0.036
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.09 -> 0.072
+						cooldown_duration : -0.06 -> -0.054
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.096
+						cooldown_duration : -0.08 -> -0.072
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.15 -> 0.12
+						cooldown_duration : -0.1 -> -0.09
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.15 -> 0.144
+						cooldown_duration : -0.12 -> -0.108
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.21 -> 0.168
+						cooldown_duration : -0.14 -> -0.126
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.192
+						cooldown_duration : -0.16 -> -0.144
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.27 -> 0.216
+						cooldown_duration : -0.18 -> -0.162
+
+**Lasurak Transporter**
+	weapons
+		weapons
+			0
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			1
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+
+**Orkulus Starbase**
+	weapons
+		weapons
+			0
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			1
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			2
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			3
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			4
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			5
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			6
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			7
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			8
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			9
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			10
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			11
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			12
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			13
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			14
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			15
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			16
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			17
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			18
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			19
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			20
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			21
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			22
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			23
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			24
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			25
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			26
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			27
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			28
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			29
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			30
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			31
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			32
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			33
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			34
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			35
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			50
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			51
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			52
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			53
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			54
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			55
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			56
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			57
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			58
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			59
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			60
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			61
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			62
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			63
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			64
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			65
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+
+**Pulse Gun Defense**
+	weapons
+		weapons
+			0
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.366667 -> 0.4
+			1
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.366667 -> 0.4
+			2
+				heavy_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 0.366667 -> 0.4
+
+**Ravastra Skirmisher**
+	physics
+		max_angular_speed : 30.0 -> 36.0
+	weapons
+		weapons
+			0
+				medium_pulse
+					damage : 42.0 -> 48.0
+					dps : 10.5 -> 12.0
+
+**Skirantra Carrier**
+	weapons
+		weapons
+			0
+				light_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			1
+				light_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+			2
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			3
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			4
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			5
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			6
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+			7
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.09
+					dps : 6.0 -> 7.5
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.01 -> 0.006
+						cooldown_duration : -0.035 -> -0.024
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.02 -> 0.012
+						cooldown_duration : -0.07 -> -0.048
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.03 -> 0.018
+						cooldown_duration : -0.105 -> -0.072
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.024
+						cooldown_duration : -0.14 -> -0.096
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.05 -> 0.03
+						cooldown_duration : -0.175 -> -0.12
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.06 -> 0.036
+						cooldown_duration : -0.21 -> -0.144
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.07 -> 0.042
+						cooldown_duration : -0.245 -> -0.168
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.048
+						cooldown_duration : -0.28 -> -0.192
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.09 -> 0.054
+						cooldown_duration : -0.315 -> -0.216
+
+**Sulsurak Defensor**
+	ai
+		attack_target_type_groups
+			0 : torpedo_strikecraft_corvette -> corvette
+	weapons
+		weapons
+			0
+				light_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 4000.0 -> 3600.0
+					uniforms_target_filter_id : common_and_strikecraft_weapon -> common_weapon
+					attack_target_type_groups
+						0 : torpedo_strikecraft_corvette -> corvette
+					effects
+						hit_shield_impact_radius_t : 0.12 -> 0.06
+			1
+				light_pulse
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					range : 4000.0 -> 3600.0
+					uniforms_target_filter_id : common_and_strikecraft_weapon -> common_weapon
+					attack_target_type_groups
+						0 : torpedo_strikecraft_corvette -> corvette
+					effects
+						hit_shield_impact_radius_t : 0.12 -> 0.06
+			2
+				point_defense_pulse
+					range : 4000.0 -> 3600.0
+					cooldown_duration : 1.5 -> 1.8
+					firing
+						travel_speed : 4200.0 -> 4800.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.03
+					dps : 2.0 -> 1.6666666666666665
+			3
+				point_defense_pulse
+					range : 4000.0 -> 3600.0
+					cooldown_duration : 1.5 -> 1.8
+					firing
+						travel_speed : 4200.0 -> 4800.0
+					effects
+						hit_shield_impact_radius_t : 0.066667 -> 0.03
+					dps : 2.0 -> 1.6666666666666665
+	health
+		durability : 30.0 -> 0.0
+		levels
+			0
+				max_hull_points : 395.0 -> 335.0
+				max_armor_points : 180.0 -> 120.0
+				max_shield_points : 330.0 -> 270.0
+	build
+		build_time : 14.0 -> 18.0
+
+**Tosurak Raider**
+	weapons
+		weapons
+			0
+				medium_pulse
+					cooldown_duration : 3.0 -> 4.0
+					damage : 12.0 -> 16.0
+				yaw_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+				pitch_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+			1
+				light_phase_missile
+					cooldown_duration : 12.0 -> 18.0
+					acquire_target_logic : order_target_only -> order_target_or_best_target_in_range
+					dps : 4.0 -> 2.6666666666666665
+	health
+		levels
+			0
+				max_hull_points : 465.0 -> 415.0
+				max_armor_points : 180.0 -> 120.0
+				max_shield_points : 275.0 -> 245.0
+	build
+		build_time : 18.0 -> 22.0
+
+**Vorastra Titan**
+	weapons
+		weapons
+			0
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			1
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			2
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			3
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			4
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			5
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			6
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			7
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			8
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			9
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			10
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			11
+				point_defense_pulse
+					pitch_speed : 72.0 -> 132.0
+					yaw_speed : 72.0 -> 132.0
+					cooldown_duration : 1.5 -> 1.2
+					firing
+						travel_speed : 5500.0 -> 5400.0
+					effects
+						hit_shield_impact_radius_t : 0.708333 -> 0.09
+					dps : 6.0 -> 7.5
+			16
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			17
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			18
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			19
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			20
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			21
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			22
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			23
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			24
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			25
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			26
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			27
+				heavy_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						hit_shield_impact_radius_t : 1.0 -> 0.6
+			28
+				phase_cannon
+					uniforms_target_filter_id : common_weapon -> common_weapon_no_corvette_weapon
+			32
+				heavy_wave_cannon
+					effects
+						hit_shield_impact_radius_t : 0.462 -> 1.0
+			33
+				heavy_wave_cannon
+					effects
+						hit_shield_impact_radius_t : 0.462 -> 1.0
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.02 -> -0.012
+			2
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.04 -> -0.024
+			3
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.06 -> -0.036
+			4
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.08 -> -0.048
+			5
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.1 -> -0.06
+			6
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.12 -> -0.072
+			7
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.14 -> -0.084
+			8
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.16 -> -0.096
+			9
+				weapon_modifiers
+					scalar_values
+						cooldown_duration : -0.18 -> -0.108
+
+**Vulkoras Desolator**
+	weapons
+		weapons
+			5
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.36
+							2 : 0.333333 -> 0.72
+							3 : 0.5 -> 1.08
+							4 : 0.666667 -> 1.44
+						hit_shield_impact_radius_t : 0.168 -> 0.21
+			6
+				medium_wave_cannon
+					pitch_firing_tolerance : 5.0 -> 1.0
+					yaw_firing_tolerance : 5.0 -> 1.0
+					effects
+						burst_pattern
+							1 : 0.166667 -> 0.36
+							2 : 0.333333 -> 0.72
+							3 : 0.5 -> 1.08
+							4 : 0.666667 -> 1.44
+						hit_shield_impact_radius_t : 0.168 -> 0.21
+	levels
+		levels
+			1
+				weapon_modifiers
+					scalar_values
+						damage : 0.04 -> 0.036
+			2
+				weapon_modifiers
+					scalar_values
+						damage : 0.08 -> 0.072
+			3
+				weapon_modifiers
+					scalar_values
+						damage : 0.12 -> 0.108
+			4
+				weapon_modifiers
+					scalar_values
+						damage : 0.16 -> 0.144
+			5
+				weapon_modifiers
+					scalar_values
+						damage : 0.2 -> 0.18
+			6
+				weapon_modifiers
+					scalar_values
+						damage : 0.24 -> 0.216
+			7
+				weapon_modifiers
+					scalar_values
+						damage : 0.28 -> 0.252
+			8
+				weapon_modifiers
+					scalar_values
+						damage : 0.32 -> 0.288
+			9
+				weapon_modifiers
+					scalar_values
+						damage : 0.36 -> 0.324
+
+**vasari_phase_missile_large**
+	physics
+		time_to_max_linear_speed : 15.0 -> 12.0
+
+**vasari_phase_missile_medium**
+	physics
+		time_to_max_linear_speed : 15.0 -> 12.0

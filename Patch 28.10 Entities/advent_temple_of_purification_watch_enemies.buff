@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_unoccupied_with_enemy_units",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "temple_of_purification_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "advent_temple_of_purification_on_target"
+                }]
+            }]
+        }
+    }]
+}

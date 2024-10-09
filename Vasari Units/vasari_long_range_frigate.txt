@@ -1,0 +1,22 @@
+vasari_long_range_frigate
+	Supply: 	6
+	Credits:	
+	Metal:  	125.0
+	Crystal:	35.0
+
+	Movespeed:	660.0
+	Acceleration:	200.0
+
+	Durability:	120.0
+	Armor Strength:	48.0
+
+	Hull Points:	795
+	Armor Points:	225
+	Shield Points:	420
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium phase missile     	12.0 	x1    	12.0 	450   	14400

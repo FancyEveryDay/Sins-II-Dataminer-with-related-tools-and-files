@@ -1,0 +1,83 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "cleansing_brilliance_execution_interval_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "cleansing_brilliance_main_damage_rate_value",
+                    "penetration_value": "cleansing_brilliance_main_hull_penetration_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+                "radius_value": "cleansing_brilliance_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "cleansing_brilliance_spread_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "advent_battle_capital_ship_cleansing_brilliance_on_nearby_target"
+                },
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "cleansing_brilliance_spread_target_filter"
+                    },
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effects":
+                    {
+                        "beam_effect": "advent_battle_capital_ship_cleansing_brilliance_nearby_beam",
+                        "hit_hull_effect": "advent_battle_capital_ship_cleansing_brilliance_nearby_hit_hull",
+                        "hit_shield_effect": "advent_battle_capital_ship_cleansing_brilliance_nearby_hit_shield",
+                        "hit_shield_impact_radius_t": 1.0
+                    },
+                    "charge_duration": "fixed_zero",
+                    "beam_duration": "cleansing_brilliance_execution_interval_count_value"
+                }]
+            }]
+        }
+    }]
+}

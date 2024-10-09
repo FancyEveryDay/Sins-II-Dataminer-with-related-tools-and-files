@@ -1,0 +1,54 @@
+{
+    "version": 0,
+    "active_duration": "duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "radius_value",
+                "include_y_axis_in_radius_check": false,
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "magnetic_singularity_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "trader_support_capital_ship_magnetic_singularity_on_target"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "trader_support_magnetic_singularity_buff_on_spawner"
+                }
+            }]
+        }
+    }]
+}

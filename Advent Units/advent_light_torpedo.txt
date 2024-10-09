@@ -1,0 +1,21 @@
+advent_light_torpedo
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1200.0
+	Acceleration:	1500.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	1
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

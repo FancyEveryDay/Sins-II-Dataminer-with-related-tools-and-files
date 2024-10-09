@@ -1,0 +1,241 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 26.353846,
+        "box":
+        {
+            "center": [0.000212, 0.730265, 0.862864],
+            "extents": [10.171913, 6.460828, 25.044489]
+        },
+        "collision_rank": 1
+    },
+    "physics":
+    {
+        "can_move_linear": true,
+        "max_linear_speed": 850.0,
+        "time_to_max_linear_speed": 2.0,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [1.0, 2.0],
+        "can_move_angular": true,
+        "max_angular_speed": 110.0,
+        "time_to_max_angular_speed": 2.2,
+        "max_bank_angle": 35.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 180.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 225.0,
+        "time_to_strafe_max_linear_speed": 3.6,
+        "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace":
+    {
+        "speed": 155000.0,
+        "speed_between_stars": 465000.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move":
+    {
+        "follow_distance": 245.912949
+    },
+    "attack":
+    {
+        "attack_pattern":
+        {
+            "type": "circle_strafe",
+            "alignment":
+            {
+                "type": "yaw",
+                "angle": 90.0,
+                "post_alignment_roll_angle": 90.0,
+                "allow_opposite_angle": false
+            },
+            "angle_range_off_gravity_well_plane": [-45.0, 45.0]
+        }
+    },
+    "ai":
+    {
+        "attack_target_type_groups": [
+            "light"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft"
+        ],
+        "attack_target_type_groups_matching_weapon": "trader_skirmisher_corvette_frigate_light_autocannon",
+        "auto_follow_target_priority": 2.0,
+        "pursuit":
+        {
+            "min_target_speed": 500.0,
+            "min_distance_to_target": 1500.0
+        }
+    },
+    "ai_attack_target":
+    {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "corvette"
+    },
+    "user_interface":
+    {
+        "pip_type": "strikecraft",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true,
+        "can_rotate": true
+    },
+    "weapons":
+    {
+        "weapons": [
+        {
+            "weapon": "trader_skirmisher_corvette_frigate_light_autocannon",
+            "mesh_point": "weapon.0",
+            "weapon_position": [0.003188, -0.408386, 25.979284],
+            "non_turret_muzzle_positions": [
+                [-4.592869, -0.408386, 25.979284],
+                [4.599245, -0.408386, 25.979284]
+            ],
+            "forward": [0.0, 0.0, 1.0],
+            "up": [-0.0, 1.0, -0.0],
+            "yaw_arc":
+            {
+                "min_angle": -5.0,
+                "max_angle": 5.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -5.0,
+                "max_angle": 5.0
+            }
+        },
+        {
+            "weapon": "trader_skirmisher_corvette_frigate_medium_autocannon",
+            "mesh_point": "child.trader_corvette_medturret_mount_0",
+            "weapon_position": [-8.308058, 5.35252, 7.4886],
+            "forward": [0.0, -0.0, 1.0],
+            "up": [-1.0, -0.0, 0.0],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -50.0,
+                "max_angle": 0.0
+            }
+        },
+        {
+            "weapon": "trader_skirmisher_corvette_frigate_medium_autocannon",
+            "mesh_point": "child.trader_corvette_medturret_mount_1",
+            "weapon_position": [8.303783, 5.372248, 7.518245],
+            "forward": [0.0, -0.0, 1.0],
+            "up": [1.0, 0.0, -0.0],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -50.0,
+                "max_angle": 0.0
+            }
+        }],
+        "max_range_weapon_index": 0
+    },
+    "formation":
+    {
+        "leader_priority": 1,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 2,
+                "group": 0
+            }
+        }
+    },
+    "spawn_debris":
+    {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts":
+        {
+            "small_debris": [1, 2]
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.8,
+        "can_ever_be_resurrected": true,
+        "levels": [
+        {
+            "max_hull_points": 285.0,
+            "hull_point_restore_rate": 1.0,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "max_armor_points": 300.0,
+            "armor_point_restore_rate": 0.8,
+            "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "armor_strength": 5.0,
+            "shield_point_restore_rate": 2.0,
+            "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+            "shield_burst_restore":
+            {
+                "cooldown_duration": 15.0,
+                "restore_percentage": 0.5
+            },
+            "experience_given_on_death": 20.0
+        }]
+    },
+    "build":
+    {
+        "build_time": 15.0,
+        "price":
+        {
+            "credits": 195.0,
+            "metal": 35.0,
+            "crystal": 25.0
+        },
+        "prerequisites": [
+            ["trader_unlock_skirmisher_corvette_frigate"]
+        ],
+        "build_kind": "corvette",
+        "supply_cost": 3,
+        "build_group_id": "corvette"
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_shield_points",
+        "value_behavior": "additive",
+        "value": 150.0,
+        "prerequisites": [
+            ["trader_shields_corvette"]
+        ]
+    }],
+    "target_filter_unit_type": "corvette",
+    "tags": [
+        "corvette"
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+    {
+        "skins": [
+            "trader_skirmisher_corvette_frigate"]
+    }],
+    "can_join_fleet": true,
+    "action_effect_size": "small_unit"
+}

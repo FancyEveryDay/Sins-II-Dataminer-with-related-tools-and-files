@@ -1,0 +1,5 @@
+{
+    "version": 0,
+    "active_duration": "buff_duration",
+    "provides_detection": true
+}

@@ -1,0 +1,22 @@
+trader_bomber_strikecraft
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	900.0
+	Acceleration:	125.0
+
+	Durability:	
+	Armor Strength:	20.0
+
+	Hull Points:	30
+	Armor Points:	40
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		light missile            	6.0  	x1    	6.0  	300   	5500 

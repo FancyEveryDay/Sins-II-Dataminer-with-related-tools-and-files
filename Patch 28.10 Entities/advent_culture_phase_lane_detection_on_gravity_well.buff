@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "apply_buff_to_phase_lanes"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_phase_lanes_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            },
+            {
+                "action_id": "apply_buff_to_phase_lanes"
+            }]
+        }
+    }]
+}

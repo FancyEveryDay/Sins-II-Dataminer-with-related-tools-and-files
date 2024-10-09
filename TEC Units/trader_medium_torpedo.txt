@@ -1,0 +1,21 @@
+trader_medium_torpedo
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1750.0
+	Acceleration:	175.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	1
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

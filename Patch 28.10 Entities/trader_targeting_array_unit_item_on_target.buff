@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "apply_buff_radius"
+    },
+    "stacking_limit": "fixed_one",
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "targeting_array_weapon_range_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_targeting_array_unit_item_hud_icon",
+        "name": "trader_targeting_array_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "targeting_array_weapon_range_modifier"
+            }]
+        }]
+    }
+}

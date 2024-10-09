@@ -1,0 +1,21 @@
+vasari_phase_missile_large
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	2100.0
+	Acceleration:	175.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	9
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

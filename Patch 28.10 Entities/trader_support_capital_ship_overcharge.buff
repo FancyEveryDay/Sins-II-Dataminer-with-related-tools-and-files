@@ -1,0 +1,72 @@
+{
+    "version": 0,
+    "active_duration": "duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "trader_support_capital_ship_overcharge"
+                }
+            },
+            {
+                "action_type": "change_ability_is_empowered",
+                "ability":
+                {
+                    "ability_type": "all_abilities",
+                    "unit_with_abilities":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                },
+                "is_empowered": true
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_ability_is_empowered",
+                "ability":
+                {
+                    "ability_type": "all_abilities",
+                    "unit_with_abilities":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                },
+                "is_empowered": false
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "overcharge_antimatter_cost_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_support_capital_ship_overcharge_ability_hud_icon",
+        "name": "trader_support_capital_ship_overcharge_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "overcharge_antimatter_cost_modifier"
+            }]
+        }]
+    }
+}

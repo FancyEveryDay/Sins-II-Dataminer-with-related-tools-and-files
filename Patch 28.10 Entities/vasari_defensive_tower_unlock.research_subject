@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_remnants",
+    "field_coord": [0, 7],
+    "research_time": 60.0,
+    "price":
+    {
+        "metal": 60.0,
+        "crystal": 90.0,
+        "credits": 0.0
+    },
+    "name": "vasari_defensive_tower_unlock_research_subject_name",
+    "name_uppercase": "vasari_defensive_tower_unlock_research_subject_name_uppercase",
+    "hud_icon": "vasari_defensive_tower_unlock_research_subject_hud_icon",
+    "tooltip_picture": "vasari_defensive_tower_unlock_research_subject_tooltip_picture"
+}

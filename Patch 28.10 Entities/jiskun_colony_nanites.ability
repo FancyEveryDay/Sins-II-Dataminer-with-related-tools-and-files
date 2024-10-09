@@ -1,0 +1,94 @@
+{
+    "version": 0,
+    "action_data_source": "jiskun_colony_nanites",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "cooldown_time",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "uniforms_colonizable_planets"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "range_value": "range",
+                "travel_time":
+                {
+                    "travel_time_source": "explicit_time",
+                    "explicit_time_value": "colonize_delay_time"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "jiskun_colony_nanites"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effects":
+                    {
+                        "projectile_travel_effect": "vasari_colony_shuttle",
+                        "projectile_travel_easing_function": "in_out_cubic"
+                    }
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "uniforms_colonizable_planets"
+        ],
+        "range": "range",
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "disabled_if_any_enemy_primary_ship_role_in_gravity_well_exists": "bomb_planet",
+            "target_definitions": [
+            {
+                "target_filter": "uniforms_colonizable_planets"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "jiskun_colony_nanites_hud_icon",
+        "name": "npc_reward.jiskun_colony_nanites.name",
+        "description": "npc_reward.jiskun_colony_nanites.description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.free_mining_track_level",
+                "value_id": "free_mining_track_level",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.free_logistics_track_level",
+                "value_id": "free_logistics_track_level",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

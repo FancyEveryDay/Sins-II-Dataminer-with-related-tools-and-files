@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "trader_colony_capital_ship_mobile_trade_port_trade_import_points_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_colony_capital_ship_mobile_trade_port_ability_hud_icon",
+        "name": "trader_colony_capital_ship_mobile_trade_port_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "trader_colony_capital_ship_mobile_trade_port_trade_import_points_modifier"
+            }]
+        }]
+    }
+}

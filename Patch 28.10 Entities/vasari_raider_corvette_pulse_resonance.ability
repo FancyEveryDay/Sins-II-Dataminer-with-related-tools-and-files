@@ -1,0 +1,58 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_raider_corvette_pulse_resonance",
+    "passive_actions":
+    {
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_raider_corvette_pulse_resonance_on_damage_dealer"
+                }]
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_raider_corvette_pulse_resonance_ability_hud_icon",
+        "tooltip_picture": "vasari_raider_corvette_pulse_resonance_ability_tooltip_picture",
+        "name": "vasari_raider_corvette_pulse_resonance_ability_name",
+        "description": "vasari_raider_corvette_pulse_resonance_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.structure_damage",
+                "value_id": "pulse_resonance_damage_value",
+                "value_float_format": "no_decimal_place_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "pulse_resonance_armor_penetration_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.metal_salvaged",
+                "value_id": "pulse_resonance_metal_value",
+                "value_float_format": "percentage_one_decimal_place"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.crystal_salvaged",
+                "value_id": "pulse_resonance_crystal_value",
+                "value_float_format": "percentage_one_decimal_place"
+            }]
+        }]
+    }
+}

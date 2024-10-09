@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "solar_regeneration_star_bonus_hud_icon",
+    "tooltip_icon": "solar_regeneration_star_bonus_hud_icon",
+    "name": "planet_bonus.solar_regeneration.name",
+    "description": "planet_bonus.solar_regeneration.desc",
+    "ability": "solar_regeneration_star_bonus"
+}

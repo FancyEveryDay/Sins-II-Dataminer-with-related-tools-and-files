@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "trader_defense_structure_culture_resistance_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_defense_structure_culture_resistance_research_subject_hud_icon",
+        "name": "trader_defense_structure_culture_resistance_research_subject_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "trader_defense_structure_culture_resistance_modifier"
+            }]
+        }]
+    }
+}

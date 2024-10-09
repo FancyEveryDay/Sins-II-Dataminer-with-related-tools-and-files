@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "make_dead_on_current_spawner_made_dead": false,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "give_exotics",
+                "player":
+                {
+                    "player_type": "buff_owner_player"
+                },
+                "exotics":
+                {
+                    "exotics_source_type": "unit_build_cost",
+                    "source_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                }
+            }]
+        }
+    }]
+}

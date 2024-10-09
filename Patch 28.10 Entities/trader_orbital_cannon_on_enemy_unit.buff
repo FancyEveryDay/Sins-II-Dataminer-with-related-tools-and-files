@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "active_duration": "trader_orbital_cannon_disable_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_mutations": [
+        "disable_can_use_weapons"
+    ],
+    "gui":
+    {
+        "hud_icon": "trader_orbital_cannon_ability_hud_icon",
+        "name": "trader_orbital_cannon_structure_name",
+        "visibility_scope": "negative"
+    }
+}

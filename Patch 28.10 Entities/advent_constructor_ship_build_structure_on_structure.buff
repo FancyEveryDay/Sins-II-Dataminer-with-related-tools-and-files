@@ -1,0 +1,60 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "constructor_ship_target"
+                }
+            },
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "first_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_constructor_ship_build_structure_effect_0"
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_constructor_ship_build_structure_effect_1"
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_constructor_ship_build_structure_effect_2"
+                }]
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "enable_can_update_build_progress"]
+}

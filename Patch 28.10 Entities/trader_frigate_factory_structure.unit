@@ -1,0 +1,118 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 296.262329,
+        "box":
+        {
+            "center": [0.0, -10.128555, 17.144981],
+            "extents": [168.206421, 140.268066, 237.204071]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "physics":
+    {},
+    "ai":
+    {
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft"]
+    },
+    "ai_attack_target":
+    {
+        "attack_priority": 25.0,
+        "is_always_a_threat": false
+    },
+    "user_interface":
+    {
+        "can_be_controlled_by_selected_planet": true,
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 100,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "factory_structure"
+    },
+    "structure":
+    {
+        "slot_type": "civilian",
+        "slots_required": 1,
+        "roles": [
+            "unit_factory"
+        ],
+        "build_group_id": "civilian"
+    },
+    "formation":
+    {
+        "leader_priority": 3,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 4,
+                "group": 5
+            }
+        }
+    },
+    "spawn_debris":
+    {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts":
+        {
+            "small_debris": [14, 18],
+            "large_debris": [3, 5]
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 3.8,
+        "durability": 600.0,
+        "levels": [
+        {
+            "max_hull_points": 1500.0,
+            "hull_point_restore_rate": 4.0,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "max_armor_points": 500.0,
+            "armor_point_restore_rate": 3.2,
+            "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "armor_strength": 75.0,
+            "experience_given_on_death": 25.0
+        }]
+    },
+    "unit_factory":
+    {
+        "build_kinds": [
+            "corvette",
+            "frigate"
+        ],
+        "default_rally_point_offset": [0.0, 0.0, 2500.0],
+        "base_build_point":
+        {
+            "position": [0.0, 0.0, 1.5e-05],
+            "rotation": [1.0, 0.0, 0.0, 0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+        }
+    },
+    "build":
+    {
+        "build_time": 60.0,
+        "price":
+        {
+            "credits": 750.0,
+            "metal": 150.0,
+            "crystal": 75.0
+        },
+        "build_kind": "structure",
+        "build_radius": 290.790588
+    },
+    "target_filter_unit_type": "structure",
+    "tags": [
+        "structure"
+    ],
+    "virtual_supply_cost": 10,
+    "skin_groups": [
+    {
+        "skins": [
+            "trader_frigate_factory_structure"]
+    }],
+    "action_effect_size": "medium_unit"
+}

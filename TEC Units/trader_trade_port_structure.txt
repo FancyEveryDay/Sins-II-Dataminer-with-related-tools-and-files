@@ -1,0 +1,21 @@
+trader_trade_port_structure
+	Supply: 	
+	Credits:	1250.0
+	Metal:  	250.0
+	Crystal:	150.0
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	600.0
+	Armor Strength:	75.0
+
+	Hull Points:	2500
+	Armor Points:	750
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

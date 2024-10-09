@@ -1,0 +1,21 @@
+advent_envoy_frigate
+	Supply: 	4
+	Credits:	550.0
+	Metal:  	70.0
+	Crystal:	10.0
+
+	Movespeed:	500.0
+	Acceleration:	340.0000544000087
+
+	Durability:	5.0
+	Armor Strength:	5.0
+
+	Hull Points:	955
+	Armor Points:	955
+	Shield Points:	1125
+	   Shield Burst CD: 60.0s
+
+	Antimatter:	225.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

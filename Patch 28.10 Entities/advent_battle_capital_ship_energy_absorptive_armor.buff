@@ -1,0 +1,121 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_zero",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "energy_absorptive_armor_stack_count_value",
+                    "comparison_type": "greater_than",
+                    "value_b": "fixed_zero"
+                },
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "energy_absorptive_armor_stacks_expiry_time_value",
+                    "comparison_type": "less_than",
+                    "value_b": "common_simulation_time_value"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "fixed_zero"
+                }]
+            },
+            {
+                "action_type": "stop_buff_effect"
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "add",
+                    "operand_value": "fixed_one"
+                },
+                {
+                    "operator_type": "min",
+                    "operand_value": "energy_absorptive_armor_max_stack_count_value"
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stacks_expiry_time",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                },
+                {
+                    "operator_type": "add",
+                    "operand_value": "energy_absorptive_armor_stack_duration_value"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "energy_absorptive_armor_stack_count_value",
+                    "comparison_type": "equal_to",
+                    "value_b": "fixed_one"
+                },
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "advent_battle_capital_ship_energy_absorptive_armor_buff"
+                }
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "energy_absorptive_armor_spell_power_modifier"
+    }],
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "energy_absorptive_armor_weapon_cooldown_duration_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_battle_capital_ship_energy_absorptive_armor_ability_hud_icon",
+        "name": "advent_battle_capital_ship_energy_absorptive_armor_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "energy_absorptive_armor_weapon_cooldown_duration_modifier",
+                "is_resolved_value": true
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "energy_absorptive_armor_spell_power_modifier",
+                "is_resolved_value": true
+            }]
+        }]
+    }
+}

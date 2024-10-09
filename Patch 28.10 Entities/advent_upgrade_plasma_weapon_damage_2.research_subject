@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_energy",
+    "field_coord": [7, 7],
+    "research_time": 450.0,
+    "price":
+    {
+        "credits": 1650.0,
+        "metal": 475.0,
+        "crystal": 825.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_plasma_weapon_damage_1"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "plasma"]
+    },
+    {
+        "weapon_type": "planet_bombing",
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "plasma"]
+    }],
+    "name": "advent_upgrade_plasma_weapon_damage_2_research_subject_name",
+    "name_uppercase": "advent_upgrade_plasma_weapon_damage_2_research_subject_name_uppercase",
+    "description": "advent_upgrade_plasma_weapon_damage_2_research_subject_description",
+    "hud_icon": "advent_upgrade_plasma_weapon_damage_2_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_plasma_weapon_damage_2_research_subject_tooltip_picture"
+}

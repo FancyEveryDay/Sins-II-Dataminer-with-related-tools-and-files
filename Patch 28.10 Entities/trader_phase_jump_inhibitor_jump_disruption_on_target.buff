@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "active_duration": "disruption_on_target_duration",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_mutations": [
+        "disable_can_hyperspace",
+        "phase_jump_disruption"
+    ],
+    "are_mutations_finite": false,
+    "gui":
+    {
+        "hud_icon": "trader_phase_jump_inhibitor_jump_disruption_ability_hud_icon",
+        "name": "trader_phase_jump_inhibitor_jump_disruption_ability_name",
+        "is_expire_time_suppressed": true,
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "negative"
+    }
+}

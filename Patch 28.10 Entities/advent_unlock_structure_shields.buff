@@ -1,0 +1,8 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "advent_unlock_structure_shields_max_shields_modifier"
+    }]
+}

@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "antimatter_restore_duration",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "restore_antimatter",
+                    "antimatter_restore_value": "antimatter_restore_rate_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_antimatter_pod_unit_item_buff_small",
+                        "medium_unit": "advent_antimatter_pod_unit_item_buff_medium",
+                        "large_unit": "advent_antimatter_pod_unit_item_buff_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_antimatter_pod_unit_item_hud_icon",
+        "name": "advent_antimatter_pod_unit_item_name",
+        "visibility_scope": "positive"
+    }
+}

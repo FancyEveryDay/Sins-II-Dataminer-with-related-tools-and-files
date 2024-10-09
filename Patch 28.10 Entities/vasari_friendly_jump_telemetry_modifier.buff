@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "vasari_friendly_jump_telemetry_hyperspace_speed_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_friendly_jump_telemetry_buff_hud_icon",
+        "name": "vasari_friendly_jump_telemetry_buff_name",
+        "description": "vasari_friendly_jump_telemetry_buff_description",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "vasari_friendly_jump_telemetry_hyperspace_speed_modifier"
+            }]
+        }]
+    }
+}

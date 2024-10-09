@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_survival",
+    "field_coord": [3, 4],
+    "research_time": 180.0,
+    "price":
+    {
+        "metal": 210.0,
+        "crystal": 270.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_upgrade_hull_armor_0",
+        "vasari_upgrade_hull_point_restore_rate_0"]
+    ],
+    "name": "vasari_unlock_self_repairing_armor_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_self_repairing_armor_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_unlock_self_repairing_armor_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_self_repairing_armor_unit_item_research_subject_tooltip_picture"
+}

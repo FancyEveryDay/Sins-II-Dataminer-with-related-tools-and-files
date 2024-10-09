@@ -1,0 +1,21 @@
+vasari_fabricator_cruiser
+	Supply: 	14
+	Credits:	
+	Metal:  	300.0
+	Crystal:	360.0
+
+	Movespeed:	570.0
+	Acceleration:	125.00000000000001
+
+	Durability:	240.0
+	Armor Strength:	48.0
+
+	Hull Points:	1280
+	Armor Points:	450
+	Shield Points:	430
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

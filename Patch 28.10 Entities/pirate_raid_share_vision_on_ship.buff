@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "try_apply_buff_on_gravity_well"
+            },
+            {
+                "action_id": "try_apply_buff_on_phase_lane"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            },
+            {
+                "action_id": "try_apply_buff_on_gravity_well"
+            },
+            {
+                "action_id": "try_apply_buff_on_phase_lane"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,6 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "unit_mutations": [
+        "enable_can_have_shields_burst_restored"]
+}

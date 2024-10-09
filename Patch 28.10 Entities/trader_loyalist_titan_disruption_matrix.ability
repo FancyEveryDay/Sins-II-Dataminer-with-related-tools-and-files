@@ -1,0 +1,97 @@
+{
+    "version": 0,
+    "action_data_source": "trader_loyalist_titan_disruption_matrix",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4],
+    "active_actions":
+    {
+        "cooldown_time": "disruption_matrix_cooldown_time_value",
+        "antimatter_cost": "disruption_matrix_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_loyalist_titan_disruption_matrix_on_spawner"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_loyalist_titan_disruption_matrix_ability_hud_icon",
+        "name": "trader_loyalist_titan_disruption_matrix_ability_name",
+        "description": "trader_loyalist_titan_disruption_matrix_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "disruption_matrix_normal_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "disruption_matrix_execution_count_value",
+                "value_suffix": "seconds"
+            }]
+        },
+        {
+            "header_text": "tooltip.in_non_friendly_gravity_well_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_rate",
+                "value_id": "disruption_matrix_normal_damage_value",
+                "value_suffix": "per_second"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "disruption_matrix_normal_radius_value"
+            }]
+        },
+        {
+            "header_text": "tooltip.in_friendly_gravity_well_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_rate",
+                "value_id": "disruption_matrix_bonus_damage_value",
+                "value_suffix": "per_second"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "disruption_matrix_bonus_radius_value"
+            }]
+        }]
+    }
+}

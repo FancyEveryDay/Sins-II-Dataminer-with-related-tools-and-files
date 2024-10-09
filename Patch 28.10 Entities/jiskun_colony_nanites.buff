@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "uniforms_colonizable_planets"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "colonize_planet"
+                },
+                {
+                    "operator_type": "increase_planet_track_level",
+                    "planet_track_type": "mining",
+                    "level_count_value": "free_mining_track_level",
+                    "will_offset_development_track_upgrade_price": true,
+                    "ignore_research": true
+                },
+                {
+                    "operator_type": "increase_planet_track_level",
+                    "planet_track_type": "logistics",
+                    "level_count_value": "free_logistics_track_level",
+                    "will_offset_development_track_upgrade_price": true,
+                    "ignore_research": true
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

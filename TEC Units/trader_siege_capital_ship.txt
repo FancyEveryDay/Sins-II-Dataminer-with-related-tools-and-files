@@ -1,0 +1,25 @@
+trader_siege_capital_ship
+	Supply: 	50
+	Credits:	2500.0
+	Metal:  	850.0
+	Crystal:	600.0
+
+	Movespeed:	550.0
+	Acceleration:	100.0
+
+	Durability:	500.0
+	Armor Strength:	90.0
+
+	Hull Points:	4265 - 7685
+	Armor Points:	1220 - 1715
+	Shield Points:	1100 - 1550
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy missile            	50.0 	x1    	50.0 	600   	15000
+		gauss                    	27.0 	x1    	27.0 	600   	13500
+		medium autocannon        	9.0  	x2    	18.0 	150   	6250 
+		planet bombing           	5.0  	x1    	5.0  	0     	4000 

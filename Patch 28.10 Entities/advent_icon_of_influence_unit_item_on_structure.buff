@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "empire_modifiers": [
+    {
+        "buff_empire_modifier_id": "advent_icon_of_influence_recharge_rate_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_icon_of_influence_unit_item_hud_icon",
+        "name": "advent_icon_of_influence_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_empire_modifier",
+                "empire_modifier_id": "advent_icon_of_influence_recharge_rate_modifier"
+            }]
+        }]
+    }
+}

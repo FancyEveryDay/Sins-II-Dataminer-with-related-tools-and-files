@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "action_data_source": "trader_missile_armor",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_missile_armor"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "armor_bonus_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "trader_missile_armor_damage_reduction_label",
+                "value_id": "damage_prevented_value",
+                "value_float_format": "percentage",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

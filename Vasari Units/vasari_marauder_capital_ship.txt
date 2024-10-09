@@ -1,0 +1,26 @@
+vasari_marauder_capital_ship
+	Supply: 	50
+	Credits:	
+	Metal:  	1680.0
+	Crystal:	1320.0
+
+	Movespeed:	570.0
+	Acceleration:	125.00000000000001
+
+	Durability:	500.0
+	Armor Strength:	120.0
+
+	Hull Points:	2680 - 4300
+	Armor Points:	915 - 1470
+	Shield Points:	1865 - 2990
+	   Shield Burst CD: 45.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		beam                     	8.0  	x2    	16.0 	500   	6250 
+		heavy phase missile      	26.7 	x1    	26.7 	600   	6250 
+		medium wave cannon       	5.0  	x2    	10.0 	180   	6250 
+		point defense pulse      	7.5  	x2    	15.0 	0     	6000 
+		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 

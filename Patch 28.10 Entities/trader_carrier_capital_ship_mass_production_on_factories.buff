@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "unit_factory_modifiers": [
+    {
+        "buff_unit_factory_modifier_id": "mass_production_factory_build_time_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_carrier_capital_ship_mass_production_ability_hud_icon",
+        "name": "trader_carrier_capital_ship_mass_production_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_factory_modifier",
+                "unit_factory_modifier_id": "mass_production_factory_build_time_modifier"
+            }]
+        }]
+    }
+}

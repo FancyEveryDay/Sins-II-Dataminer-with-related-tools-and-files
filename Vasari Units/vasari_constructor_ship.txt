@@ -1,0 +1,21 @@
+vasari_constructor_ship
+	Supply: 	
+	Credits:	
+	Metal:  	90.0
+	Crystal:	75.0
+
+	Movespeed:	700.0
+	Acceleration:	339.99992228573205
+
+	Durability:	60.0
+	Armor Strength:	30.0
+
+	Hull Points:	460
+	Armor Points:	300
+	Shield Points:	
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

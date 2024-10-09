@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "ability.0",
+                    "mesh_point_usage": "index",
+                    "mesh_point_index": 2,
+                    "effect": "advent_constructor_ship_build_structure_on_self"
+                }
+            }]
+        }
+    }]
+}

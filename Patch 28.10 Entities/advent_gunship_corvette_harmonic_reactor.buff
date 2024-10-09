@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "make_dead_on_current_spawner_made_dead": false,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_target_filter",
+                "unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "target_filter_id": "harmonic_reactor_target_filter"
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "restore_antimatter",
+                    "antimatter_restore_value": "harmonic_reactor_antimatter_restore_value"
+                }]
+            }]
+        }
+    }]
+}

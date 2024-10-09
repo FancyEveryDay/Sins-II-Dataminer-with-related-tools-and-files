@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_experimental",
+    "field_coord": [2, 10],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["trader_unlock_phase_lane_detector"]
+    ],
+    "name": "trader_unlock_phase_lane_detector_extended_range_research_subject_name",
+    "name_uppercase": "trader_unlock_phase_lane_detector_extended_range_research_subject_name_uppercase",
+    "description": "trader_unlock_phase_lane_detector_extended_range_research_subject_description",
+    "hud_icon": "trader_unlock_phase_lane_detector_extended_range_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_phase_lane_detector_extended_range_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_detect"]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "empire_modifiers": [
+    {
+        "buff_empire_modifier_id": "trader_media_conglomerate_influence_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_media_conglomerate_unit_item_hud_icon",
+        "name": "trader_media_conglomerate_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_empire_modifier",
+                "empire_modifier_id": "trader_media_conglomerate_influence_modifier"
+            }]
+        }]
+    }
+}

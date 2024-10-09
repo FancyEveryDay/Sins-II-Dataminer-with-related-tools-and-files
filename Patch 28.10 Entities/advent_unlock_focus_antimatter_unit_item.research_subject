@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_ascension",
+    "field_coord": [5, 7],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 1050.0,
+        "metal": 275.0,
+        "crystal": 475.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_spell_power_1"]
+    ],
+    "name": "advent_unlock_focus_antimatter_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_focus_antimatter_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_unlock_focus_antimatter_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "advent_unlock_focus_antimatter_unit_item_research_subject_tooltip_picture"
+}

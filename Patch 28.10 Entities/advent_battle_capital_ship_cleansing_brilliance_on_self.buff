@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "make_dead_when_no_child_buffs_exist": true,
+    "make_dead_when_no_child_buffs_exist_delay_time": "cleansing_brilliance_beam_charge_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "bomb",
+                    "effects":
+                    {
+                        "charge_effect": "advent_battle_capital_ship_cleansing_brilliance_main_charge",
+                        "muzzle_effect": "advent_battle_capital_ship_cleansing_brilliance_main_muzzle",
+                        "beam_effect": "advent_battle_capital_ship_cleansing_brilliance_main_beam",
+                        "hit_hull_effect": "advent_battle_capital_ship_cleansing_brilliance_main_hit_hull",
+                        "hit_shield_effect": "advent_battle_capital_ship_cleansing_brilliance_main_hit_shield",
+                        "hit_shield_impact_radius_t": 1.0
+                    },
+                    "charge_duration": "cleansing_brilliance_beam_charge_value",
+                    "beam_duration": "cleansing_brilliance_execution_interval_count_value"
+                }]
+            }]
+        }
+    },
+    {
+        "first_action_delay_time_value": "cleansing_brilliance_beam_charge_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_battle_capital_ship_cleansing_brilliance_on_main_target"
+                }]
+            }]
+        }
+    }]
+}

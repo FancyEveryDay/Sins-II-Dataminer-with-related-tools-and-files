@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "active_duration": "quell_duration_value",
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "above",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_planet_psionic_capital_ship_quell_buff_small",
+                        "medium_unit": "advent_planet_psionic_capital_ship_quell_buff_medium",
+                        "large_unit": "advent_planet_psionic_capital_ship_quell_buff_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "disable_can_hyperspace",
+        "disable_can_update_build_progress",
+        "disable_can_use_active_abilities",
+        "disable_can_use_weapons"
+    ],
+    "gui":
+    {
+        "hud_icon": "advent_planet_psionic_capital_ship_quell_ability_hud_icon",
+        "name": "advent_planet_psionic_capital_ship_quell_ability_name",
+        "visibility_scope": "negative"
+    }
+}

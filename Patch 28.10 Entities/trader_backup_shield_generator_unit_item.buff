@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+    "unit_mutations": [
+        "enable_can_have_shields_burst_restored"]
+}

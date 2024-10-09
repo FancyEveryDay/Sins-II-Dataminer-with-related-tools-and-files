@@ -1,0 +1,73 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "active_duration": "missile_barrage_torpedo_lifetime_value",
+    "disable_collision_displacement_with_first_spawner": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_collision_detected",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_target_filter",
+                "unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "target_filter_id": "common_torpedo_collision"
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "source_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "weapon_tags": [
+                        "missile",
+                        "physical"
+                    ],
+                    "damage_value": "missile_barrage_damage_value",
+                    "penetration_value": "missile_barrage_penetration_value"
+                }]
+            },
+            {
+                "action_type": "disable_collision_displacement"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "make_dead",
+                    "collision_unit":
+                    {
+                        "unit_type": "trigger_event_destination"
+                    }
+                }]
+            }]
+        }
+    }]
+}

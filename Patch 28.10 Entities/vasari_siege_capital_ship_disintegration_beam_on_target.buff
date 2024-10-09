@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "disintegration_beam_execution_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "value_comparison",
+                        "value_a": "disintegration_beam_current_shields_value",
+                        "comparison_type": "less_than_equal_to",
+                        "value_b": "fixed_zero"
+                    },
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "disintegration_beam_hull_damage_rate_value",
+                    "penetration_value": "disintegration_beam_hull_penetration_value"
+                },
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "value_comparison",
+                        "value_a": "disintegration_beam_current_shields_value",
+                        "comparison_type": "greater_than",
+                        "value_b": "fixed_zero"
+                    },
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "disintegration_beam_shield_damage_rate_value",
+                    "penetration_value": "disintegration_beam_hull_penetration_value"
+                }]
+            }]
+        }
+    }]
+}

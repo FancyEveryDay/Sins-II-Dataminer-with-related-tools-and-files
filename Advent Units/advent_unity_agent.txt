@@ -1,0 +1,21 @@
+advent_unity_agent
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	
+	Acceleration:	
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	1
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: 60.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

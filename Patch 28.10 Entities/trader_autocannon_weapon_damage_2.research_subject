@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_armament",
+    "field_coord": [4, 0],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 1150.0,
+        "metal": 225.0,
+        "crystal": 325.0
+    },
+    "prerequisites": [
+        ["trader_autocannon_weapon_damage_1"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "autocannon"]
+    }],
+    "name": "trader_autocannon_weapon_damage_2_research_subject_name",
+    "name_uppercase": "trader_autocannon_weapon_damage_2_research_subject_name_uppercase",
+    "description": "trader_autocannon_weapon_damage_2_research_subject_description",
+    "hud_icon": "trader_autocannon_weapon_damage_2_research_subject_hud_icon",
+    "tooltip_picture": "trader_autocannon_weapon_damage_2_research_subject_tooltip_picture"
+}

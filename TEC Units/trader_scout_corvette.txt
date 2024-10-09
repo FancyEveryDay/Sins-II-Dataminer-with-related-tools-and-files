@@ -1,0 +1,21 @@
+trader_scout_corvette
+	Supply: 	2
+	Credits:	120.0
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1200.0
+	Acceleration:	300.0
+
+	Durability:	50.0
+	Armor Strength:	20.0
+
+	Hull Points:	375
+	Armor Points:	350
+	Shield Points:	
+	   Shield Burst CD: 15.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

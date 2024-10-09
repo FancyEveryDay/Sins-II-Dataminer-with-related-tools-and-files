@@ -1,0 +1,63 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "power_surge_execution_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "shields_only",
+                    "repair_value": "power_surge_shield_restore_rate_bonus_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "vasari_battle_capital_ship_power_surge"
+                }
+            }]
+        }
+    }],
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "cooldown_duration"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_battle_capital_ship_power_surge_ability_hud_icon",
+        "name": "vasari_battle_capital_ship_power_surge_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "cooldown_duration"
+            }]
+        }]
+    }
+}

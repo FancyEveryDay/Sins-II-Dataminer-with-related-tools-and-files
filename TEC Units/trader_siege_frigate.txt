@@ -1,0 +1,22 @@
+trader_siege_frigate
+	Supply: 	6
+	Credits:	450.0
+	Metal:  	60.0
+	Crystal:	75.0
+
+	Movespeed:	650.0
+	Acceleration:	100.0
+
+	Durability:	150.0
+	Armor Strength:	60.0
+
+	Hull Points:	775
+	Armor Points:	550
+	Shield Points:	
+	   Shield Burst CD: 25.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		planet bombing           	3.0  	x1    	3.0  	0     	3000 

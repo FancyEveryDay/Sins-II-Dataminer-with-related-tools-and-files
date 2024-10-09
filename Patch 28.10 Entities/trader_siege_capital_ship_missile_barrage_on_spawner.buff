@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "missile_barrage_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "trader_siege_capital_ship_missile_barrage_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "trader_siege_capital_ship_missile_barrage_on_target"
+                }]
+            },
+            {
+                "action_id": "try_make_buff_dead_if_no_child_buffs"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_parent_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_child_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "try_make_buff_dead_if_no_child_buffs"
+            }]
+        }
+    }]
+}

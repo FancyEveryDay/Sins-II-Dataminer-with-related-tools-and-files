@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "strength_of_the_fallen_radius"
+    },
+    "stacking_limit": "fixed_one"
+}

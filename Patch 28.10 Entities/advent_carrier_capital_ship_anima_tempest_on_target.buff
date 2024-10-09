@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "active_duration": "anima_tempest_duration_value",
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_child_strikecraft_of_unit",
+                "strikecraft_carrier_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_carrier_capital_ship_anima_tempest_on_fighters"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_carrier_capital_ship_anima_tempest_ability_hud_icon",
+        "name": "advent_carrier_capital_ship_anima_tempest_ability_name",
+        "visibility_scope": "negative"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "planetary_shield_array_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "buff_actions": [
+    {
+        "action_id": "try_create_planet_buff",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit":
+            {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well_primary_fixture"
+            },
+            "operators": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "planetary_shield_array_target_filter"
+                },
+                "operator_type": "apply_buff",
+                "buff": "trader_starbase_planetary_shield_array_on_planet"
+            }]
+        }
+    }]
+}

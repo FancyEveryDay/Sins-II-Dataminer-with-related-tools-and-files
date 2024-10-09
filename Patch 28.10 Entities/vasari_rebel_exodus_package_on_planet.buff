@@ -1,0 +1,43 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit": "fixed_one",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_planet_colonized",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "increase_planet_track_level",
+                    "planet_track_type": "logistics",
+                    "will_offset_development_track_upgrade_price": true,
+                    "ignore_research": true
+                },
+                {
+                    "operator_type": "add_unit_item",
+                    "unit_item": "vasari_alliance_consulate"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "first_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_unit_item",
+                    "unit_item": "vasari_rebel_exodus_package"
+                }]
+            }]
+        }
+    }]
+}

@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "gravity_warhead_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "gravity_warhead_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_colony_capital_ship_gravity_warhead_on_target"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "vasari_colony_capital_ship_gravity_warhead_detonate_on_self"
+                    }
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

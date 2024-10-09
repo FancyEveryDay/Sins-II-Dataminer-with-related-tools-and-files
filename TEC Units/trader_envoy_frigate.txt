@@ -1,0 +1,21 @@
+trader_envoy_frigate
+	Supply: 	4
+	Credits:	850.0
+	Metal:  	250.0
+	Crystal:	300.0
+
+	Movespeed:	600.0
+	Acceleration:	250.0
+
+	Durability:	150.0
+	Armor Strength:	20.0
+
+	Hull Points:	875
+	Armor Points:	480
+	Shield Points:	
+	   Shield Burst CD: 20.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "trader_missile_guidance_computer_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_missile_guidance_computer_unit_item_on_self"
+    },
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "missile_guidance_computer_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.aura_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "weapon_damage_modifier"
+            }]
+        }]
+    }
+}

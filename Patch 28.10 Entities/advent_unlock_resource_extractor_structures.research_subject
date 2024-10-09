@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_material",
+    "field_coord": [3, 1],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 125.0,
+        "crystal": 225.0
+    },
+    "name": "advent_unlock_resource_extractor_structures_research_subject_name",
+    "name_uppercase": "advent_unlock_resource_extractor_structures_research_subject_name_uppercase",
+    "hud_icon": "advent_crystal_extractor_structure_hud_icon",
+    "tooltip_picture": "advent_crystal_extractor_structure_tooltip_picture"
+}

@@ -1,0 +1,21 @@
+advent_carrier_cruiser
+	Supply: 	20
+	Credits:	
+	Metal:  	295.0
+	Crystal:	350.0
+
+	Movespeed:	550.0
+	Acceleration:	80.0
+
+	Durability:	150.0
+	Armor Strength:	
+
+	Hull Points:	1650
+	Armor Points:	
+	Shield Points:	1600
+	   Shield Burst CD: 35.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

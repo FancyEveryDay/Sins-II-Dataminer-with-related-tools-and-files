@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_ownership_type": "for_all_players",
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "volatile_nanites_debuff_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "vasari_battle_capital_ship_volatile_nanites_debuff_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_battle_capital_ship_volatile_nanites_on_target"
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

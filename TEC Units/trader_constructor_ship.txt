@@ -1,0 +1,21 @@
+trader_constructor_ship
+	Supply: 	
+	Credits:	200.0
+	Metal:  	50.0
+	Crystal:	50.0
+
+	Movespeed:	700.0
+	Acceleration:	339.99992228573205
+
+	Durability:	50.0
+	Armor Strength:	20.0
+
+	Hull Points:	430
+	Armor Points:	350
+	Shield Points:	
+	   Shield Burst CD: 20.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
