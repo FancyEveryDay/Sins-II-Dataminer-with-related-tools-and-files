@@ -45,7 +45,10 @@ def compareShipDicts(newDict : dict, oldDict : dict):
 
     for i, j in newDict.items():
         print(i)
-        changesDict[i] = recursiveCompare(j, oldDict[i])
+        try:
+            changesDict[i] = recursiveCompare(j, oldDict[i])
+        except:
+            changesDict["[NEW] " + i] = j
         print()
 
     return changesDict
@@ -123,17 +126,17 @@ if __name__ == "__main__":
     with open("F:\SteamLibrary\steamapps\common\Sins2\localized_text\en.localized_text") as t:
         inGameText = json.load(t)
 
-    with open("28-16changes.txt", 'w') as file:
+    with open("1-30-00_changes.txt", 'w') as file:
         pass
 
     raceList = ["advent", "trader", "vasari"]
 
     weaponDict = getSinsDataDict("",".weapon")
-    oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch 28.10 Entities")
+    oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch 28.16 Entities")
     
 
     for race in raceList:
-        with open("28-16changes.txt", 'a') as file:
+        with open("1-30-00_changes.txt", 'a') as file:
             if race == "trader":
                 file.write(f"\n\n# {"TEC"} Changes\n")
             else: file.write(f"\n\n# {race.capitalize()} Changes\n")
@@ -142,7 +145,7 @@ if __name__ == "__main__":
         for obtype in objectTypes:
 
             shipDict = getSinsDataDict(race,f"{obtype}")
-            oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch 28.10 Entities")
+            oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch 28.16 Entities")
 
 
             unitChanges = compareShipDicts(shipDict, oldShipDict)
@@ -163,7 +166,7 @@ if __name__ == "__main__":
 
             ChangesList.append(unitChanges2)
             
-        with open("28-16changes.txt", 'a') as file:
+        with open("1-30-00_changes.txt", 'a') as file:
 
             for i, changes in enumerate(ChangesList):
                 listList = []

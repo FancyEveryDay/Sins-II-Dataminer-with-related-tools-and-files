@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_engineering",
+    "field_coord": [2, 4],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_antimatter",
+        "value_behavior": "scalar",
+        "value": 0.1
+    },
+    {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+    }],
+    "name": "trader_antimatter_0_research_subject_name",
+    "name_uppercase": "trader_antimatter_0_research_subject_name_uppercase",
+    "description": "trader_antimatter_0_research_subject_description",
+    "hud_icon": "trader_antimatter_0_research_subject_hud_icon",
+    "tooltip_icon": "trader_antimatter_0_research_subject_hud_icon",
+    "tooltip_picture": "trader_antimatter_0_research_subject_tooltip_picture"
+}

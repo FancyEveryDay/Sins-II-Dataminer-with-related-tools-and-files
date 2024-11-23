@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_share_vision_hud_icon",
+        "name": "npc_reward.jiskun_share_vision.name",
+        "description": "npc_reward.jiskun_share_vision.description"
+    },
+    "type": "ability",
+    "ability": "jiskun_share_vision"
+}

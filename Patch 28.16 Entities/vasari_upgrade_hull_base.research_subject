@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_survival",
+    "field_coord": [0, 1],
+    "research_time": 60.0,
+    "price":
+    {
+        "metal": 60.0,
+        "crystal": 90.0,
+        "credits": 0.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "hull_point_restore_cooldown_duration_after_damage_taken",
+        "value_behavior": "additive",
+        "value": -60.0
+    }],
+    "name": "vasari_upgrade_hull_base_research_subject_name",
+    "name_uppercase": "vasari_upgrade_hull_base_research_subject_name_uppercase",
+    "description": "vasari_upgrade_hull_base_research_subject_description",
+    "hud_icon": "vasari_upgrade_hull_base_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_hull_base_research_subject_tooltip_picture"
+}

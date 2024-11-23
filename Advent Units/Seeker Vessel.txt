@@ -4,7 +4,7 @@ Seeker Vessel
 	Metal:  	
 	Crystal:	25.0
 
-	Movespeed:	1200.0
+	Movespeed:	1500.0
 	Acceleration:	300.0
 
 	Durability:	50.0

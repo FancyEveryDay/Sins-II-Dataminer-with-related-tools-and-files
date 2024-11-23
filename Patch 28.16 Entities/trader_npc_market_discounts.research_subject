@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_policy",
+    "field_coord": [2, 0],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["trader_upgrade_influence_0"]
+    ],
+    "npc_modifiers": [
+    {
+        "modifier_type": "buy_metal_credits_cost",
+        "value_behavior": "scalar",
+        "value": -0.1
+    },
+    {
+        "modifier_type": "buy_crystal_credits_cost",
+        "value_behavior": "scalar",
+        "value": -0.1
+    }],
+    "name": "trader_npc_market_discounts_research_subject_name",
+    "name_uppercase": "trader_npc_market_discounts_research_subject_name_uppercase",
+    "description": "trader_npc_market_discounts_research_subject_description",
+    "hud_icon": "trader_npc_market_discounts_research_subject_hud_icon",
+    "tooltip_picture": "trader_npc_market_discounts_research_subject_tooltip_picture"
+}

@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "trader_starbase_unit_factory_unit_item_hud_icon",
+    "tooltip_icon": "trader_starbase_unit_factory_unit_item_hud_icon",
+    "name": "trader_starbase_unit_factory_unit_item_name",
+    "description": "trader_starbase_unit_factory_unit_item_description",
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 240.0,
+        "crystal": 240.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        ["trader_unlock_starbase_unit_factory_unit_item"]
+    ],
+    "build_group_id": "utility",
+    "unit_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "values": [-0.25]
+    }],
+    "unit_mutations": [
+        "mobile_unit_factory_enabled"
+    ],
+    "ability_gui_action": "toggle_unit_factory_window"
+}

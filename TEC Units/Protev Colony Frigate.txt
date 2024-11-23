@@ -4,8 +4,8 @@ Protev Colony Frigate
 	Metal:  	150.0
 	Crystal:	150.0
 
-	Movespeed:	750.0
-	Acceleration:	150.0
+	Movespeed:	800.0
+	Acceleration:	200.0
 
 	Durability:	150.0
 	Armor Strength:	20.0

@@ -4,8 +4,8 @@ Disciple Vessel
 	Metal:  	35.0
 	Crystal:	
 
-	Movespeed:	900.0
-	Acceleration:	200.0
+	Movespeed:	1100.0
+	Acceleration:	275.0
 
 	Durability:	50.0
 	Armor Strength:	

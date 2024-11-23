@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "action_data_source": "trader_archaeology_center_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_archaeology_center_unit_item_on_planet"
+    }
+}

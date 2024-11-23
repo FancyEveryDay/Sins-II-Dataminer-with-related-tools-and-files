@@ -4,8 +4,8 @@ Kol Battleship
 	Metal:  	850.0
 	Crystal:	600.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	675.0
+	Acceleration:	90.0
 
 	Durability:	500.0
 	Armor Strength:	120.0

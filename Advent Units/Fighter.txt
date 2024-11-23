@@ -10,7 +10,7 @@ Fighter
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	30
+	Hull Points:	40
 	Armor Points:	
 	Shield Points:	
 	   Shield Burst CD: nans

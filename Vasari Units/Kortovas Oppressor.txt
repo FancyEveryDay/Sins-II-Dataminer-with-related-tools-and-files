@@ -4,7 +4,7 @@ Kortovas Oppressor
 	Metal:  	335.0
 	Crystal:	180.0
 
-	Movespeed:	630.0
+	Movespeed:	720.0
 	Acceleration:	125.0
 
 	Durability:	400.0

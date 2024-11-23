@@ -4,8 +4,8 @@ Ogrov Torpedo Cruiser
 	Metal:  	180.0
 	Crystal:	200.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	625.0
+	Acceleration:	80.0
 
 	Durability:	200.0
 	Armor Strength:	60.0

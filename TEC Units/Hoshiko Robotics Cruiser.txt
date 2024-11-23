@@ -4,8 +4,8 @@ Hoshiko Robotics Cruiser
 	Metal:  	85.0
 	Crystal:	110.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	750.0
+	Acceleration:	150.0
 
 	Durability:	200.0
 	Armor Strength:	20.0

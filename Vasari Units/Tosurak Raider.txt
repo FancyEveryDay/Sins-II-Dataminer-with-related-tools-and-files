@@ -4,8 +4,8 @@ Tosurak Raider
 	Metal:  	75.0
 	Crystal:	45.0
 
-	Movespeed:	810.0
-	Acceleration:	450.0
+	Movespeed:	840.0
+	Acceleration:	420.0
 
 	Durability:	
 	Armor Strength:	18.0

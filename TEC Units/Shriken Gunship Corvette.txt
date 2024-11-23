@@ -4,8 +4,8 @@ Shriken Gunship Corvette
 	Metal:  	35.0
 	Crystal:	25.0
 
-	Movespeed:	850.0
-	Acceleration:	425.0
+	Movespeed:	900.0
+	Acceleration:	400.0
 
 	Durability:	
 	Armor Strength:	5.0

@@ -4,8 +4,8 @@ Acolyte Corvette
 	Metal:  	
 	Crystal:	40.0
 
-	Movespeed:	850.0
-	Acceleration:	425.0
+	Movespeed:	950.0
+	Acceleration:	422.22222222222223
 
 	Durability:	
 	Armor Strength:	

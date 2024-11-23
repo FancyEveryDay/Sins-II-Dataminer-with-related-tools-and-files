@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_material",
+    "field_coord": [4, 4],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "prerequisites": [
+        ["advent_unlock_exotic_factory_structure"]
+    ],
+    "name": "advent_unlock_plasma_furnace_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_plasma_furnace_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_plasma_furnace_unit_item_hud_icon",
+    "tooltip_picture": "advent_plasma_furnace_unit_item_tooltip_picture"
+}

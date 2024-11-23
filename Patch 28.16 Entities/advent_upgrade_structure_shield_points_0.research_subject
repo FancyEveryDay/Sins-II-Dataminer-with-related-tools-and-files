@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_energy",
+    "field_coord": [7, 1],
+    "research_time": 450.0,
+    "price":
+    {
+        "credits": 1650.0,
+        "metal": 475.0,
+        "crystal": 825.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_shield_points_2"]
+    ],
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_shield_points",
+        "value_behavior": "scalar",
+        "value": 0.15,
+        "tags": [
+            "structure",
+            "starbase"]
+    },
+    {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.15,
+        "tags": [
+            "structure",
+            "starbase"]
+    }],
+    "name": "advent_upgrade_structure_shield_points_0_research_subject_name",
+    "name_uppercase": "advent_upgrade_structure_shield_points_0_research_subject_name_uppercase",
+    "description": "advent_upgrade_structure_shield_points_0_research_subject_description",
+    "hud_icon": "advent_upgrade_structure_shield_points_0_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_structure_shield_points_0_research_subject_tooltip_picture"
+}

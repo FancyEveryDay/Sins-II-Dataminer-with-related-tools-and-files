@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "planet"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 777362.497537,
+        "min_camera_distance": 4305.383009,
+        "gui":
+        {
+            "hud_icon": "moon_planet_4_hud_icon",
+            "hud_picture": "moon_planet_hud_picture",
+            "tooltip_icon": "moon_planet_4_tooltip_icon",
+            "name": "moon_planet_name",
+            "description": ""
+        },
+        "planet_mesh":
+        {
+            "mesh": "planet_dwarf_0",
+            "city":
+            {
+                "shader": "planet_city",
+                "city_material": "dwarf_planet_city"
+            }
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "moon_planet_4_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+			"shield_effect": "moon_shield",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "destroy_planet",
+                "alias_binding":
+                {
+                    "particle_effect": "striptothecore_planet_moon",
+                    "sounds": [
+                        "effect_strippedtothecore"]
+                }
+            }]
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "00ffcccc",
+            "intensity": 0.37
+        }
+    }],
+    "gravity_well_props": [
+        "sparse_asteroids",
+        "sparse_clouds"]
+}

@@ -4,8 +4,8 @@ Serevun Overseer
 	Metal:  	220.0
 	Crystal:	350.0
 
-	Movespeed:	630.0
-	Acceleration:	125.0
+	Movespeed:	660.0
+	Acceleration:	150.0
 
 	Durability:	180.0
 	Armor Strength:	72.0

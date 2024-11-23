@@ -4,8 +4,8 @@ Trade Ship
 	Metal:  	
 	Crystal:	
 
-	Movespeed:	500.0
-	Acceleration:	50.0
+	Movespeed:	600.0
+	Acceleration:	80.0
 
 	Durability:	200.0
 	Armor Strength:	20.0

@@ -4,8 +4,8 @@ Vulrak Penetrator
 	Metal:  	420.0
 	Crystal:	375.0
 
-	Movespeed:	510.0
-	Acceleration:	125.0
+	Movespeed:	720.0
+	Acceleration:	100.0
 
 	Durability:	400.0
 	Armor Strength:	120.0

@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_annexation",
+    "field_coord": [8, 4],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 2850.0,
+        "metal": 675.0,
+        "crystal": 950.0
+    },
+    "prerequisites": [
+        ["trader_unlock_gas_harvester_unit_item"]
+    ],
+    "name": "trader_unlock_gas_crystalizer_unit_item_research_subject_name",
+    "name_uppercase": "trader_unlock_gas_crystalizer_unit_item_research_subject_name_uppercase",
+    "hud_icon": "trader_unlock_gas_crystalizer_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_gas_crystalizer_unit_item_research_subject_tooltip_picture"
+}

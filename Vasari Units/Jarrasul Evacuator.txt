@@ -4,8 +4,8 @@ Jarrasul Evacuator
 	Metal:  	1680.0
 	Crystal:	1320.0
 
-	Movespeed:	510.0
-	Acceleration:	125.0
+	Movespeed:	600.0
+	Acceleration:	120.0
 
 	Durability:	500.0
 	Armor Strength:	108.0

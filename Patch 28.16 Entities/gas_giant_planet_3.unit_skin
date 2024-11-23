@@ -1,0 +1,67 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "planet"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1949575.434743,
+        "min_camera_distance": 28347.745361,
+        "gui":
+        {
+            "hud_icon": "gas_giant_planet_3_hud_icon",
+            "hud_picture": "gas_giant_planet_hud_picture",
+            "tooltip_icon": "gas_giant_planet_3_tooltip_icon",
+            "name": "gas_giant_planet_name",
+            "description": ""
+        },
+        "planet_mesh":
+        {
+            "mesh": "planet_gas_1",
+            "corona":
+            {
+                "shader": "planet_corona",
+                "color_texture": "planet_corona_glow_clr",
+                "color": "225B3832",
+                "radius_scalar": 2.3,
+                "basic_constants":
+                {
+                    "emissive_factor": 0.1,
+                    "alpha_ramp_steepness": 0.0,
+                    "alpha_ramp_growth_delay": 1.0
+                }
+            }
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "gas_giant_planet_3_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+			"shield_effect": "gas_giant_shield",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "destroy_planet",
+                "alias_binding":
+                {
+                    "particle_effect": "planet_explosion",
+                    "sounds": [
+                        "effect_strippedtothecore"]
+                }
+            }]
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "7ffff1cc",
+            "intensity": 0.37
+        }
+    }],
+    "gravity_well_props": [
+        "sparse_asteroids",
+        "sparse_clouds"]
+}

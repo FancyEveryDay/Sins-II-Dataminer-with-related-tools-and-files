@@ -4,8 +4,8 @@ Junra Assembler
 	Metal:  	90.0
 	Crystal:	75.0
 
-	Movespeed:	700.0
-	Acceleration:	339.99992228573205
+	Movespeed:	750.0
+	Acceleration:	250.0
 
 	Durability:	60.0
 	Armor Strength:	30.0

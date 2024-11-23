@@ -4,8 +4,8 @@ Iconus Guardian
 	Metal:  	165.0
 	Crystal:	120.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	800.0
+	Acceleration:	160.0
 
 	Durability:	300.0
 	Armor Strength:	50.0

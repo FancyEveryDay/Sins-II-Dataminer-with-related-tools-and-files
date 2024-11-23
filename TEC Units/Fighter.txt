@@ -11,7 +11,7 @@ Fighter
 	Armor Strength:	20.0
 
 	Hull Points:	20
-	Armor Points:	25
+	Armor Points:	30
 	Shield Points:	
 	   Shield Burst CD: nans
 

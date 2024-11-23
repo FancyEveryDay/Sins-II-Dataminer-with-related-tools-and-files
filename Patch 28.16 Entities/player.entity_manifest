@@ -1,0 +1,17 @@
+{
+    "ids": [
+        "advent_loyalist",
+        "advent_rebel",
+        "aluxian_resurgence_npc",
+        "guardian_npc",
+        "jiskun_force_npc",
+        "militia",
+        "pirate_npc",
+        "pranast_united_npc",
+        "trader_loyalist",
+        "trader_rebel",
+        "vasari_loyalist",
+        "vasari_rebel",
+        "viturak_cabal_npc"
+    ]
+}

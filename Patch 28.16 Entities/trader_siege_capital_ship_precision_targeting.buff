@@ -1,0 +1,64 @@
+{
+    "version": 0,
+    "active_duration": "precision_targeting_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "above",
+                    "effect_by_size":
+                    {
+                        "small_unit": "trader_siege_capital_ship_precision_targeting_buff_on_target_small",
+                        "medium_unit": "trader_siege_capital_ship_precision_targeting_buff_on_target_medium",
+                        "large_unit": "trader_siege_capital_ship_precision_targeting_buff_on_target_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_augment_pending_damage_as_destination",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_comparison",
+                    "unit_a":
+                    {
+                        "unit_type": "first_spawner"
+                    },
+                    "unit_b":
+                    {
+                        "unit_type": "trigger_event_source"
+                    }
+                },
+                {
+                    "constraint_type": "damage_has_weapon_tag",
+                    "weapon_tag": "missile"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "augment_damage",
+                "bonus_damage_value": "precision_targeting_bonus_damage_value"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [240.0]
+        }
+    },
+    {
+        "action_value_id": "armor_restore_value",
+        "action_value":
+        {
+            "transform_type": "per_max_armor_points",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [0.36]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "vasari_self_repairing_armor_unit_item_activate_large",
+        "alias_binding":
+        {
+            "particle_effect": "self_repairing_armor_activate_large",
+            "sounds": [
+                "ability_activate_phase_selfrepairingarmor"]
+        }
+    },
+    {
+        "alias_name": "vasari_self_repairing_armor_unit_item_activate_medium",
+        "alias_binding":
+        {
+            "particle_effect": "self_repairing_armor_activate_medium",
+            "sounds": [
+                "ability_activate_phase_selfrepairingarmor"]
+        }
+    },
+    {
+        "alias_name": "vasari_self_repairing_armor_unit_item_activate_small",
+        "alias_binding":
+        {
+            "particle_effect": "self_repairing_armor_activate_small",
+            "sounds": [
+                "ability_activate_phase_selfrepairingarmor"]
+        }
+    }]
+}

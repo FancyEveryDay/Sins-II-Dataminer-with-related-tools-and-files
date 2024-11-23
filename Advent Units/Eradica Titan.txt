@@ -4,7 +4,7 @@ Eradica Titan
 	Metal:  	2500.0
 	Crystal:	3000.0
 
-	Movespeed:	500.0
+	Movespeed:	600.0
 	Acceleration:	100.0
 
 	Durability:	750.0

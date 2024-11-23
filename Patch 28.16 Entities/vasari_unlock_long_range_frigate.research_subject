@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_revival",
+    "field_coord": [3, 1],
+    "research_time": 180.0,
+    "price":
+    {
+        "metal": 210.0,
+        "crystal": 270.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_long_range_frigate_research_subject_name",
+    "name_uppercase": "vasari_unlock_long_range_frigate_research_subject_name_uppercase",
+    "hud_icon": "vasari_long_range_frigate_hud_icon",
+    "tooltip_picture": "vasari_long_range_frigate_tooltip_picture"
+}

@@ -4,8 +4,8 @@ Halcyon Carrier
 	Metal:  	600.0
 	Crystal:	750.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	650.0
+	Acceleration:	80.0
 
 	Durability:	500.0
 	Armor Strength:	80.0

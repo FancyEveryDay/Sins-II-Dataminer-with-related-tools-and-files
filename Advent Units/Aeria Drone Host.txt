@@ -4,7 +4,7 @@ Aeria Drone Host
 	Metal:  	295.0
 	Crystal:	350.0
 
-	Movespeed:	550.0
+	Movespeed:	700.0
 	Acceleration:	80.0
 
 	Durability:	150.0

@@ -4,8 +4,8 @@ Vigilis Sentinel
 	Metal:  	115.0
 	Crystal:	
 
-	Movespeed:	650.0
-	Acceleration:	130.0
+	Movespeed:	775.0
+	Acceleration:	155.0
 
 	Durability:	200.0
 	Armor Strength:	50.0

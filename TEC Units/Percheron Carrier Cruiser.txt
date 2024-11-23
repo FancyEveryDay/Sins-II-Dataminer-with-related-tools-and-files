@@ -4,7 +4,7 @@ Percheron Carrier Cruiser
 	Metal:  	125.0
 	Crystal:	180.0
 
-	Movespeed:	550.0
+	Movespeed:	650.0
 	Acceleration:	80.0
 
 	Durability:	150.0

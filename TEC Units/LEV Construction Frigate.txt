@@ -4,8 +4,8 @@ LEV Construction Frigate
 	Metal:  	50.0
 	Crystal:	50.0
 
-	Movespeed:	700.0
-	Acceleration:	339.99992228573205
+	Movespeed:	750.0
+	Acceleration:	250.0
 
 	Durability:	50.0
 	Armor Strength:	20.0

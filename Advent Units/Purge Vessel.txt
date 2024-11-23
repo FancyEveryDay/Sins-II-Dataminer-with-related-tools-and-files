@@ -4,8 +4,8 @@ Purge Vessel
 	Metal:  	80.0
 	Crystal:	
 
-	Movespeed:	750.0
-	Acceleration:	150.0
+	Movespeed:	700.0
+	Acceleration:	100.0
 
 	Durability:	150.0
 	Armor Strength:	

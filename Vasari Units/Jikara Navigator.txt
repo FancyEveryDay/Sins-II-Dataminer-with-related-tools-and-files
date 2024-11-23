@@ -4,8 +4,8 @@ Jikara Navigator
 	Metal:  	45.0
 	Crystal:	
 
-	Movespeed:	1020.0
-	Acceleration:	340.0
+	Movespeed:	1410.0
+	Acceleration:	300.0
 
 	Durability:	60.0
 	Armor Strength:	24.0

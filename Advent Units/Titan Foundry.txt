@@ -1,19 +1,19 @@
 Titan Foundry
 	Supply: 	
-	Credits:	2000.0
-	Metal:  	725.0
-	Crystal:	275.0
+	Credits:	1750.0
+	Metal:  	
+	Crystal:	750.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	60.0
+	Durability:	600.0
 	Armor Strength:	60.0
 
-	Hull Points:	10125
-	Armor Points:	10125
-	Shield Points:	
-	   Shield Burst CD: 60.0s
+	Hull Points:	4000
+	Armor Points:	
+	Shield Points:	3500
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	
 

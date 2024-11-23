@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_armament",
+    "field_coord": [4, 6],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 1150.0,
+        "metal": 225.0,
+        "crystal": 325.0
+    },
+    "weapon_modifiers": [
+    {
+        "weapon_type": "planet_bombing",
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.15
+    }],
+    "name": "trader_planet_bombing_damage_0_research_subject_name",
+    "name_uppercase": "trader_planet_bombing_damage_0_research_subject_name_uppercase",
+    "description": "trader_planet_bombing_damage_0_research_subject_description",
+    "hud_icon": "trader_planet_bombing_damage_0_research_subject_hud_icon",
+    "tooltip_picture": "trader_planet_bombing_damage_0_research_subject_tooltip_picture"
+}

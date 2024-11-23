@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_material",
+    "field_coord": [2, 2],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 100.0,
+        "crystal": 200.0
+    },
+    "name": "advent_unlock_silent_monastery_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_silent_monastery_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_silent_monastery_unit_item_hud_icon",
+    "tooltip_picture": "advent_silent_monastery_unit_item_tooltip_picture"
+}

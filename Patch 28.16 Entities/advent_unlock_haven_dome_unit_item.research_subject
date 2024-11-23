@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_reclamation",
+    "field_coord": [1, 1],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 300.0,
+        "metal": 50.0,
+        "crystal": 100.0
+    },
+    "name": "advent_unlock_haven_dome_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_haven_dome_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_haven_dome_unit_item_hud_icon",
+    "tooltip_picture": "advent_haven_dome_unit_item_tooltip_picture"
+}

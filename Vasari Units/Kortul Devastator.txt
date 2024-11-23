@@ -4,8 +4,8 @@ Kortul Devastator
 	Metal:  	1680.0
 	Crystal:	1320.0
 
-	Movespeed:	570.0
-	Acceleration:	125.00000000000001
+	Movespeed:	660.0
+	Acceleration:	132.0
 
 	Durability:	500.0
 	Armor Strength:	132.0

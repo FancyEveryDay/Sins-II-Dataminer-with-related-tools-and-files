@@ -4,8 +4,8 @@ Kalev Gauss Frigate
 	Metal:  	60.0
 	Crystal:	75.0
 
-	Movespeed:	650.0
-	Acceleration:	100.0
+	Movespeed:	800.0
+	Acceleration:	200.0
 
 	Durability:	150.0
 	Armor Strength:	40.0

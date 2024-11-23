@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "soul_reclamation_small_unit_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "exemptions": [
+                "is_dead"]
+        }
+    },
+    {
+        "target_filter_id": "soul_reclamation_medium_unit_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "exemptions": [
+                "is_dead"]
+        }
+    },
+    {
+        "target_filter_id": "soul_reclamation_large_unit_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "starbase",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "exemptions": [
+                "is_dead"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "soul_reclamation_small_unit_mana_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "soul_reclamation_medium_unit_mana_value",
+        "action_value":
+        {
+            "values": [3.0]
+        }
+    },
+    {
+        "action_value_id": "soul_reclamation_large_unit_mana_value",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    }]
+}

@@ -4,8 +4,8 @@ Revelation Battlecruiser
 	Metal:  	600.0
 	Crystal:	750.0
 
-	Movespeed:	625.0
-	Acceleration:	125.0
+	Movespeed:	775.0
+	Acceleration:	155.0
 
 	Durability:	500.0
 	Armor Strength:	80.0

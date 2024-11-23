@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_loyalist_exodus_package",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_loyalist_exodus_package_on_ship"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_loyalist_exodus_package_unit_item_hud_icon",
+        "name": "vasari_loyalist_exodus_package_unit_item_name",
+        "description": "vasari_loyalist_exodus_package_unit_item_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.on_colonization_header",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.free_logistics_track_level",
+                "value_id": "fixed_one",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "unit_item_value",
+                "label_text": "tooltip.ability.free_planet_component",
+                "unit_item": "vasari_exodus_debris_reclamation_center"
+            }]
+        }]
+    }
+}

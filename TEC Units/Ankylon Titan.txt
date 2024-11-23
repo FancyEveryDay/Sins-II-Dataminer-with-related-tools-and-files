@@ -4,7 +4,7 @@ Ankylon Titan
 	Metal:  	2900.0
 	Crystal:	1900.0
 
-	Movespeed:	450.0
+	Movespeed:	575.0
 	Acceleration:	80.0
 
 	Durability:	750.0

@@ -4,8 +4,8 @@ Lasurak Transporter
 	Metal:  	265.0
 	Crystal:	325.0
 
-	Movespeed:	510.0
-	Acceleration:	125.0
+	Movespeed:	600.0
+	Acceleration:	80.0
 
 	Durability:	180.0
 	Armor Strength:	72.0

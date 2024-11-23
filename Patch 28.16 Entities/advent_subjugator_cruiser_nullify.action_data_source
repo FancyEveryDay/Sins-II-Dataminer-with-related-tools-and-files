@@ -1,0 +1,90 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "nullify_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "has_antimatter"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "nullify_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "has_antimatter"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "nullify_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [40.0]
+        }
+    },
+    {
+        "action_value_id": "nullify_beam_duration_value",
+        "action_value":
+        {
+            "values": [0.65]
+        }
+    },
+    {
+        "action_value_id": "nullify_cooldown_time_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "nullify_range_value",
+        "action_value":
+        {
+            "values": [7500.0]
+        }
+    },
+    {
+        "action_value_id": "nullify_antimatter_remove_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }]
+}

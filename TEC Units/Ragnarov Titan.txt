@@ -4,8 +4,8 @@ Ragnarov Titan
 	Metal:  	2900.0
 	Crystal:	1900.0
 
-	Movespeed:	450.0
-	Acceleration:	60.0
+	Movespeed:	600.0
+	Acceleration:	100.0
 
 	Durability:	750.0
 	Armor Strength:	120.0

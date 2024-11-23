@@ -4,8 +4,8 @@ Harcka Heavy Cruiser
 	Metal:  	165.0
 	Crystal:	55.0
 
-	Movespeed:	650.0
-	Acceleration:	130.0
+	Movespeed:	800.0
+	Acceleration:	125.0
 
 	Durability:	400.0
 	Armor Strength:	85.0

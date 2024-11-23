@@ -4,8 +4,8 @@ Domina Subjugator
 	Metal:  	150.0
 	Crystal:	215.0
 
-	Movespeed:	700.0
-	Acceleration:	100.0
+	Movespeed:	750.0
+	Acceleration:	125.0
 
 	Durability:	150.0
 	Armor Strength:	

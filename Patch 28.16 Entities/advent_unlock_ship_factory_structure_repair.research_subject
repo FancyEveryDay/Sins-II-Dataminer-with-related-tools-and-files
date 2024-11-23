@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_protection",
+    "field_coord": [2, 5],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 100.0,
+        "crystal": 200.0
+    },
+    "name": "advent_unlock_ship_factory_structure_repair_research_subject_name",
+    "name_uppercase": "advent_unlock_ship_factory_structure_repair_research_subject_name_uppercase",
+    "hud_icon": "advent_ship_factory_structure_repair_ability_hud_icon",
+    "tooltip_picture": "advent_ship_factory_structure_repair_ability_tooltip_picture"
+}

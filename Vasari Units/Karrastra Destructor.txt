@@ -4,8 +4,8 @@ Karrastra Destructor
 	Metal:  	210.0
 	Crystal:	165.0
 
-	Movespeed:	570.0
-	Acceleration:	125.00000000000001
+	Movespeed:	600.0
+	Acceleration:	100.0
 
 	Durability:	180.0
 	Armor Strength:	72.0

@@ -4,8 +4,8 @@ Vorastra Titan
 	Metal:  	5300.0
 	Crystal:	4300.0
 
-	Movespeed:	420.0
-	Acceleration:	70.0
+	Movespeed:	540.0
+	Acceleration:	60.0
 
 	Durability:	750.0
 	Armor Strength:	156.0

@@ -4,8 +4,8 @@ Tempest Vessel
 	Metal:  	65.0
 	Crystal:	80.0
 
-	Movespeed:	750.0
-	Acceleration:	150.0
+	Movespeed:	800.0
+	Acceleration:	125.0
 
 	Durability:	150.0
 	Armor Strength:	

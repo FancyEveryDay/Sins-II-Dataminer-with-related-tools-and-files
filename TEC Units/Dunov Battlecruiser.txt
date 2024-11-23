@@ -4,8 +4,8 @@ Dunov Battlecruiser
 	Metal:  	850.0
 	Crystal:	600.0
 
-	Movespeed:	650.0
-	Acceleration:	130.0
+	Movespeed:	725.0
+	Acceleration:	100.0
 
 	Durability:	500.0
 	Armor Strength:	90.0

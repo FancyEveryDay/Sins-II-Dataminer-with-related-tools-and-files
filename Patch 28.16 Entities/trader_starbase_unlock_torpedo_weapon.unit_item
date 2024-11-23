@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "trader_starbase_unlock_torpedo_weapon_unit_item_hud_icon",
+    "name": "trader_starbase_unlock_torpedo_weapon_unit_item_name",
+    "description": "trader_starbase_unlock_torpedo_weapon_unit_item_description",
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 1500.0,
+        "metal": 640.0,
+        "crystal": 200.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "offense",
+        "count": 2
+    }],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        ["trader_unlock_starbase_unlock_torpedo_weapon_unit_item"]
+    ],
+    "build_group_id": "offense"
+}

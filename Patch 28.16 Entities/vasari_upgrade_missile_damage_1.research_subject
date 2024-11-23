@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_assault",
+    "field_coord": [7, 6],
+    "research_time": 450.0,
+    "price":
+    {
+        "metal": 615.0,
+        "crystal": 870.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_upgrade_missile_damage_0"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.12,
+        "tags": [
+            "phasemissile"]
+    }],
+    "name": "vasari_upgrade_missile_damage_1_research_subject_name",
+    "name_uppercase": "vasari_upgrade_missile_damage_1_research_subject_name_uppercase",
+    "description": "vasari_upgrade_missile_damage_1_research_subject_description",
+    "hud_icon": "vasari_upgrade_missile_damage_1_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_missile_damage_1_research_subject_tooltip_picture"
+}

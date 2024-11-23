@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "friendly_planet",
+        "target_filter":
+        {
+            "ownerships": [
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "max_count_in_gravity_well",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    }]
+}

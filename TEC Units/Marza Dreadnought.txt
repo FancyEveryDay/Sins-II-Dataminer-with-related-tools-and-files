@@ -4,8 +4,8 @@ Marza Dreadnought
 	Metal:  	850.0
 	Crystal:	600.0
 
-	Movespeed:	550.0
-	Acceleration:	100.0
+	Movespeed:	625.0
+	Acceleration:	80.0
 
 	Durability:	500.0
 	Armor Strength:	90.0

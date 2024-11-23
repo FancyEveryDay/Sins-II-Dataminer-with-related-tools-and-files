@@ -1,0 +1,17 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_industry",
+    "field_coord": [1, 5],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 400.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "name": "trader_unlock_trade_port_research_subject_name",
+    "name_uppercase": "trader_unlock_trade_port_research_subject_name_uppercase",
+    "hud_icon": "trader_trade_port_structure_hud_icon"
+}

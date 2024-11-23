@@ -1,11 +1,11 @@
 Exoria Illuminator
 	Supply: 	8
-	Credits:	655.0
-	Metal:  	145.0
+	Credits:	575.0
+	Metal:  	125.0
 	Crystal:	
 
-	Movespeed:	650.0
-	Acceleration:	130.0
+	Movespeed:	800.0
+	Acceleration:	125.0
 
 	Durability:	150.0
 	Armor Strength:	
@@ -19,5 +19,5 @@ Exoria Illuminator
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium beam              	11.2 	x1    	11.2 	400   	8000 
-		medium beam              	5.0  	x2    	10.0 	400   	4000 
+		heavy beam               	12.5 	x1    	12.5 	400   	10000
+		medium beam              	5.0  	x2    	10.0 	400   	5000 

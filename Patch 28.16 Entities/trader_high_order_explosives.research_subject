@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_armament",
+    "field_coord": [9, 0],
+    "research_time": 630.0,
+    "price":
+    {
+        "credits": 3000.0,
+        "metal": 750.0,
+        "crystal": 1050.0
+    },
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "autocannon"]
+    }],
+    "name": "trader_high_order_explosives_research_subject_name",
+    "name_uppercase": "trader_high_order_explosives_research_subject_name_uppercase",
+    "description": "trader_high_order_explosives_research_subject_description",
+    "hud_icon": "trader_high_order_explosives_research_subject_hud_icon",
+    "tooltip_picture": "trader_high_order_explosives_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_faction",
+        "research_text_filter_rebel"]
+}

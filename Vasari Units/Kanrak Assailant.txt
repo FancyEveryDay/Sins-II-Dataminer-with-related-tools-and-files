@@ -4,8 +4,8 @@ Kanrak Assailant
 	Metal:  	125.0
 	Crystal:	35.0
 
-	Movespeed:	660.0
-	Acceleration:	200.0
+	Movespeed:	720.0
+	Acceleration:	144.0
 
 	Durability:	120.0
 	Armor Strength:	48.0

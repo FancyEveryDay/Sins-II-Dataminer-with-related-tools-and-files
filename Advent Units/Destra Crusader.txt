@@ -4,8 +4,8 @@ Destra Crusader
 	Metal:  	275.0
 	Crystal:	220.0
 
-	Movespeed:	650.0
-	Acceleration:	100.0
+	Movespeed:	700.0
+	Acceleration:	80.0
 
 	Durability:	400.0
 	Armor Strength:	50.0

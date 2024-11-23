@@ -4,8 +4,8 @@ Jusotra Fabricator Cruiser
 	Metal:  	300.0
 	Crystal:	360.0
 
-	Movespeed:	570.0
-	Acceleration:	125.00000000000001
+	Movespeed:	660.0
+	Acceleration:	125.0
 
 	Durability:	240.0
 	Armor Strength:	48.0

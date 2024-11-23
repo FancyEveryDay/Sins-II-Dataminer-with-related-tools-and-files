@@ -4,8 +4,8 @@ Missionary Vessel
 	Metal:  	175.0
 	Crystal:	
 
-	Movespeed:	750.0
-	Acceleration:	150.0
+	Movespeed:	800.0
+	Acceleration:	200.0
 
 	Durability:	150.0
 	Armor Strength:	25.0
