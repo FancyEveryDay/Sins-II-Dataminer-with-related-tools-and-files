@@ -1,0 +1,86 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "school_of_evangelists_watch_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "exemptions": [
+                "is_not_explored"]
+        }
+    },
+    {
+        "target_filter_id": "school_of_evangelists_bombing_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_in_dominant_culture",
+                "dominant_culture_player_relationship": "self"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "school_of_evangelists_bombing_damage_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "school_of_evangelists_phase_lane_distance_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    }],
+    "buff_actions": [
+    {
+        "action_id": "school_of_evangelists_apply_on_target_planet_buffs",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_gravity_wells",
+            "gravity_well_origin_unit":
+            {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well_primary_fixture"
+            },
+            "max_jump_distance_value": "school_of_evangelists_phase_lane_distance_value",
+            "operators": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    },
+                    "target_filter_id": "school_of_evangelists_watch_target_filter"
+                },
+                "operator_type": "apply_buff",
+                "buff": "advent_school_of_evangelists_on_target_planet",
+                "destination_unit":
+                {
+                    "unit_type": "operand_destination",
+                    "redirection": "current_gravity_well_primary_fixture"
+                }
+            }]
+        }
+    }]
+}

@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_evangelism",
+    "field_coord": [3, 5],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 125.0,
+        "crystal": 225.0
+    },
+    "prerequisites": [
+        ["advent_unlock_culture_center"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_established_dominant_culture_gravity_wells",
+        "extra_level_prerequisites": [
+            [
+                ["advent_culture_phase_lane_detection_1"]
+            ]
+        ],
+        "action_data_source": "advent_culture_phase_lane_detection",
+        "buff": "advent_culture_phase_lane_detection_on_gravity_well"
+    }],
+    "name": "advent_culture_phase_lane_detection_0_research_subject_name",
+    "name_uppercase": "advent_culture_phase_lane_detection_0_research_subject_name_uppercase",
+    "description": "advent_culture_phase_lane_detection_0_research_subject_description",
+    "hud_icon": "advent_culture_phase_lane_detection_0_research_subject_hud_icon",
+    "tooltip_picture": "advent_culture_phase_lane_detection_0_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_detection"
+    ]
+}

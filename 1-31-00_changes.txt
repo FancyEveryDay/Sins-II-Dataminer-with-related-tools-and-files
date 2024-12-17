@@ -1,0 +1,3143 @@
+
+
+# Advent Changes
+
+## Unit_item Changes
+
+**Antimatter Pod**
+	build_group_id : utility -> consumable
+
+**Cynosural Reservoir**
+	player_modifiers
+		empire_modifiers
+			0
+				value : 75.0 -> 200.0
+
+**Deploy Transcencia Starbase**
+	build_group_id : utility -> consumable
+
+**Plasma Nova Generator**
+	build_group_id : offense -> consumable
+
+**Shield Battery**
+	build_group_id : defense -> consumable
+
+**Shrine of Harmony**
+	planet_type_groups
+		0
+			planet_types
+				6 : swamp -> ship_graveyard
+				7 : terran -> swamp
+				8 : volcanic -> terran
+
+**Shrine of Hostility**
+	planet_type_groups
+		0
+			planet_types
+				6 : swamp -> ship_graveyard
+				7 : terran -> swamp
+				8 : volcanic -> terran
+
+**Silent Monastery**
+	planet_type_groups
+		0
+			planet_types
+				4 : volcanic -> ship_graveyard
+
+**Telepathic Relay**
+	planet_type_groups
+		0
+			planet_types
+				1 : moon -> crystalline
+				2 : pirate_base -> desert
+
+**Temple of Assimilation**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Temple of Purification**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Temple of Resurrection**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Unity Protectorate**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+## Ability Changes
+
+**Clairvoyance**
+	total_required_unity_points
+		1 : 3 -> 2
+		2 : 6 -> 3
+
+**Malice**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					1
+						label_text : tooltip.ability.duration -> tooltip.ability.radius
+						value_id : malice_duration_value -> malice_radius_value
+
+**Proselytize**
+	total_required_unity_points
+		0 : 2 -> 1
+		1 : 5 -> 2
+		2 : 9 -> 3
+
+**Recall**
+	total_required_unity_points
+		0 : 1 -> 2
+		1 : 3 -> 4
+
+**Sanctify**
+	total_required_unity_points
+		1 : 5 -> 4
+		2 : 9 -> 6
+
+**[NEW] Avatar**
+	action_data_source : advent_unity_avatar
+	level_source : unity_ability_level
+	total_required_unity_points
+		2
+		4
+		6
+	active_actions
+		cooldown_time : avatar_cooldown_time_value
+		unity_mana_cost : avatar_unity_mana_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					operators
+							operator_type : apply_buff
+							buff : advent_unity_avatar_on_spawner
+		targeting_type : unit_targeted
+		target_filters
+			avatar_target_filter
+	gui
+		hud_icon : advent_unity_avatar_ability_hud_icon
+		tooltip_picture : advent_unity_avatar_ability_tooltip_picture
+		unity_window_picture : advent_unity_avatar_ability_tooltip_picture
+		name : Avatar
+		description : Channels the psionic might of the Unity into the target capital ship, titan or starbase, improving it's statistics and granting it a beneficial aura.
+		targeting
+			targeting_type : radius
+			values
+				radius : avatar_radius_value
+		tooltip_line_groups
+				header_text : Target:
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : avatar_spell_power_modifier
+				header_text : Aura Effects:
+				lines
+						rendering_type : buff_weapon_modifier
+						weapon_modifier_id : avatar_energy_weapon_damage_modifier
+						rendering_type : single_value
+						label_text : Radius:
+						value_id : avatar_radius_value
+				lines
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : avatar_duration_value
+						value_suffix : seconds
+
+**[NEW] Chastise**
+	action_data_source : advent_unity_chastise
+	level_source : unity_ability_level
+	total_required_unity_points
+		2
+		4
+		6
+	active_actions
+		cooldown_time : chastise_cooldown_time_value
+		unity_mana_cost : chastise_unity_mana_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					operators
+							operator_type : apply_buff
+							buff : advent_unity_chastise_on_gravity_well
+		targeting_type : unit_targeted
+		targeting_ui : pick_gravity_well
+		target_filters
+			chastise_planet_target_filter
+	gui
+		hud_icon : advent_unity_chastise_ability_hud_icon
+		tooltip_picture : advent_unity_chastise_ability_tooltip_picture
+		unity_window_picture : advent_unity_chastise_ability_tooltip_picture
+		name : Chastise
+		description : Telekinetically restrain enemy ships and missiles in the target gravity well.
+		tooltip_line_groups
+				header_text : Enemy Ships in Gravity Well:
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_max_linear_speed_bonus
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_max_angular_speed_bonus
+				header_text : Enemy Missiles in Gravity Well:
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_missile_max_linear_speed_bonus
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_missile_max_angular_speed_bonus
+				lines
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : chastise_execution_count_value
+						value_suffix : seconds
+
+**[NEW] Cleanse**
+	action_data_source : advent_unity_cleanse
+	level_source : unity_ability_level
+	total_required_unity_points
+		1
+		2
+		3
+	active_actions
+		cooldown_time : cleanse_cooldown_time_value
+		unity_mana_cost : cleanse_unity_mana_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_units_in_radius_of_unit
+					radius_origin_unit
+						unit_type : target
+					radius_value : cleanse_radius_value
+					operators_constraint
+						constraint_type : unit_passes_target_filter
+						unit
+							unit_type : operand_destination
+						target_filter_id : cleanse_radius_target_filter
+					operators
+							operator_type : play_point_effect
+							effect_definition
+								binding : action_data_source
+								mesh_point : above
+								effect_by_size
+									small_unit : advent_unity_cleanse_target_small
+									medium_unit : advent_unity_cleanse_target_medium
+									large_unit : advent_unity_cleanse_target_large
+							operator_type : repair_damage
+							affect_type : hull_only
+							repair_value : cleanse_hull_restore_value
+							operator_type : repair_damage
+							affect_type : armor_only
+							repair_value : cleanse_armor_restore_value
+							operator_type : repair_damage
+							affect_type : shields_only
+							repair_value : cleanse_shield_restore_value
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					operators
+							operator_type : play_point_effect
+							effect_definition
+								binding : action_data_source
+								mesh_point : center
+								effect_by_size
+									small_unit : advent_unity_cleanse_buff_on_radius_small
+									medium_unit : advent_unity_cleanse_buff_on_radius_medium
+									large_unit : advent_unity_cleanse_buff_on_radius_large
+							operator_type : make_dead
+		targeting_type : unit_targeted
+		target_filters
+			cleanse_target_filter
+	gui
+		hud_icon : advent_unity_cleanse_ability_hud_icon
+		tooltip_picture : advent_unity_cleanse_ability_tooltip_picture
+		unity_window_picture : advent_unity_cleanse_ability_tooltip_picture
+		name : Cleanse
+		description : Psionically cleanse the corruption from the target, destroying it and allowing nearby units to absorb it's remaining hull, armor and shields.
+		targeting
+			targeting_type : radius
+			values
+				radius : cleanse_radius_value
+		tooltip_line_groups
+				header_text : TARGET WILL BE DESTROYED
+				lines
+				header_text : Nearby Targets Receive:
+				lines
+						rendering_type : single_value
+						label_text : Target Hull Transferred:
+						value_id : cleanse_hull_restore_value
+						value_float_format : percentage
+						ratio_float_format : percentage_with_sign
+						value_color : positive
+						rendering_type : single_value
+						label_text : Target Armor Transferred:
+						value_id : cleanse_armor_restore_value
+						value_float_format : percentage
+						ratio_float_format : percentage_with_sign
+						value_color : positive
+						rendering_type : single_value
+						label_text : Target Shield Transferred:
+						value_id : cleanse_shield_restore_value
+						value_float_format : percentage
+						ratio_float_format : percentage_with_sign
+						value_color : positive
+						rendering_type : single_value
+						label_text : Radius:
+						value_id : cleanse_radius_value
+
+**[NEW] Fury**
+	action_data_source : advent_unity_fury
+	level_source : unity_ability_level
+	total_required_unity_points
+		3
+		6
+		9
+	active_actions
+		cooldown_time : fury_cooldown_time_value
+		unity_mana_cost : fury_unity_mana_cost_value
+		actions
+			actions
+					action_type : use_position_operators_on_single_position
+					position
+						position_type : target_position
+					position_operators
+							operator_type : create_buff_agent
+							buff_on_agent : advent_unity_fury_on_spawner
+		targeting_type : position_targeted
+	gui
+		hud_icon : advent_unity_fury_ability_hud_icon
+		tooltip_picture : advent_unity_fury_ability_tooltip_picture
+		unity_window_picture : advent_unity_fury_ability_tooltip_picture
+		name : Fury
+		description : Creates a storm of psionic energy at the target location, dealing damage over time to all enemy units within it.
+		targeting
+			targeting_type : radius
+			values
+				radius : fury_radius_value
+		tooltip_line_groups
+				header_text : Targets in Radius:
+				lines
+						rendering_type : single_value
+						label_text : Damage Rate:
+						value_id : fury_damage_rate_value
+						value_suffix : per_second
+						value_color : negative
+						visible_if_value_zero
+						rendering_type : single_value
+						label_text : Pierce:
+						value_id : fury_armor_penetration_value
+						value_color : negative
+						rendering_type : single_value
+						label_text : Radius:
+						value_id : fury_radius_value
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : fury_execution_interval_count_value
+						value_suffix : seconds
+
+**[NEW] Resurrection**
+	action_data_source : advent_unity_resurrection
+	level_source : unity_ability_level
+	total_required_unity_points
+		3
+		6
+		9
+	active_actions
+		cooldown_time : resurrection_cooldown_time_value
+		unity_mana_cost : resurrection_unity_mana_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					operators
+							operator_type : apply_buff
+							buff : advent_unity_resurrection_on_gravity_well
+		targeting_type : unit_targeted
+		targeting_ui : pick_gravity_well
+		target_filters
+			resurrection_planet_target_filter
+	gui
+		hud_icon : advent_unity_resurrection_ability_hud_icon
+		tooltip_picture : advent_unity_resurrection_ability_tooltip_picture
+		unity_window_picture : advent_unity_resurrection_ability_tooltip_picture
+		name : Resurrection
+		description : Resurrects some of your destroyed corvettes, frigates and cruisers within the gravity well.
+		tooltip_line_groups
+				header_text : Resurrection at Target Planet:
+				lines
+						rendering_type : single_value
+						label_text : Resurrection Chance:
+						value_id : resurrect_random_chance_value
+						value_float_format : percentage
+						value_suffix : per_second
+						value_color : positive
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : resurrection_execution_count_value
+						value_suffix : seconds
+
+## Action_data_source Changes
+
+**Clairvoyance**
+	action_values
+		0
+			action_value
+				values
+					0 : 25.0 -> 75.0
+					2 : 150.0 -> 75.0
+		1
+			action_value
+				values
+					1 : 20.0 -> 30.0
+					2 : 10.0 -> 30.0
+		2
+			action_value
+				values
+					1 : 120.0 -> 90.0
+					2 : 300.0 -> 180.0
+
+**Malice**
+	action_values
+		3
+			action_value
+				values
+					0 : 2500.0 -> 3000.0
+		4
+			action_value
+				values
+					0 : 6500.0 -> 8000.0
+		5
+			action_value
+				values
+					0 : 0.2 -> 0.03
+
+**Proselytize**
+	action_values
+		0
+			action_value
+				values
+					0 : 50.0 -> 75.0
+					1 : 125.0 -> 75.0
+					2 : 250.0 -> 75.0
+		1
+			action_value
+				values
+					0 : 300.0 -> 120.0
+					1 : 240.0 -> 120.0
+					2 : 180.0 -> 120.0
+		2
+			action_value
+				values
+					1 : 120.0 -> 90.0
+					2 : 180.0 -> 90.0
+		3
+			action_value
+				values
+					0 : 0.015 -> 0.03
+					1 : 0.03 -> 0.06
+					2 : 0.05 -> 0.09
+
+**Recall**
+	action_values
+		0
+			action_value
+				values
+					0 : 25.0 -> 200.0
+					1 : 75.0 -> 200.0
+					2 : 150.0 -> 200.0
+		1
+			action_value
+				values
+					1 : 40.0 -> 60.0
+					2 : 20.0 -> 60.0
+		2
+			action_value
+				values
+					0 : 45.0 -> 30.0
+					2 : 15.0 -> 30.0
+
+**Sanctify**
+	action_values
+		0
+			action_value
+				values
+					0 : 50.0 -> 300.0
+					1 : 125.0 -> 300.0
+					2 : 250.0 -> 300.0
+		1
+			action_value
+				values
+					0 : 300.0 -> 90.0
+					1 : 210.0 -> 90.0
+					2 : 120.0 -> 90.0
+		2
+			action_value
+				values
+					1 : 45.0 -> 30.0
+					2 : 60.0 -> 30.0
+		3
+			action_value
+				values
+					0 : 50.0 -> 0.01
+					1 : 100.0 -> 0.02
+					2 : 150.0 -> 0.03
+
+**Temple of Resurrection**
+	action_values
+		2
+			action_value
+				values
+					0 : 0.1 -> 0.2
+
+**Unyielding Will**
+	action_values
+		0
+			action_value
+				values
+					0 : 240.0 -> 300.0
+		3
+			action_value
+				values
+					0 : 180.0 -> 90.0
+
+**[NEW] Avatar**
+	level_count : 3
+	target_filters
+			target_filter_id : avatar_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					starbase
+					titan
+				ownerships
+					self
+			target_filter_id : avatar_aura_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					starbase
+					structure
+					titan
+				ownerships
+					friendly
+				constraints
+						constraint_type : has_weapon
+	action_values
+			action_value_id : avatar_unity_mana_cost_value
+			action_value
+				values
+					200.0
+					200.0
+					200.0
+			action_value_id : avatar_cooldown_time_value
+			action_value
+				values
+					30.0
+					30.0
+					30.0
+			action_value_id : avatar_duration_value
+			action_value
+				values
+					60.0
+					60.0
+					60.0
+			action_value_id : avatar_radius_value
+			action_value
+				values
+					5000.0
+					6500.0
+					8000.0
+			action_value_id : avatar_energy_weapon_damage_bonus_value
+			action_value
+				values
+					0.1
+					0.2
+					0.3
+			action_value_id : avatar_spell_power_bonus_value
+			action_value
+				values
+					50.0
+					75.0
+					100.0
+	buff_unit_modifiers
+			buff_unit_modifier_id : avatar_spell_power_modifier
+			buff_unit_modifier
+				modifier_type : spell_power
+				value_behavior : additive
+				value_id : avatar_spell_power_bonus_value
+	buff_weapon_modifiers
+			buff_weapon_modifier_id : avatar_energy_weapon_damage_modifier
+			buff_weapon_modifier
+				modifier_type : damage
+				value_behavior : scalar
+				value_id : avatar_energy_weapon_damage_bonus_value
+				tags
+					energy
+	effect_alias_bindings
+			alias_name : advent_unity_avatar_buff_on_spawner
+			alias_binding
+				particle_effect : avatar_ability_cast
+			alias_name : advent_unity_avatar_buff_on_target_large
+			alias_binding
+				particle_effect : avatar_status_on_titan
+			alias_name : advent_unity_avatar_buff_on_target_medium
+			alias_binding
+				particle_effect : avatar_status_on_capital
+			alias_name : advent_unity_avatar_buff_on_target_small
+			alias_binding
+				particle_effect : avatar_status_on_small
+
+**[NEW] Chastise**
+	level_count : 3
+	target_filters
+			target_filter_id : chastise_planet_target_filter
+			target_filter
+				unit_types
+					planet
+					star
+				ownerships
+					enemy
+					friendly
+					none
+			target_filter_id : chastise_ship_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					strikecraft
+					titan
+				ownerships
+					enemy
+			target_filter_id : chastise_missile_target_filter
+			target_filter
+				unit_types
+					torpedo
+				ownerships
+					enemy
+	action_values
+			action_value_id : chastise_unity_mana_cost_value
+			action_value
+				values
+					150.0
+					150.0
+					150.0
+			action_value_id : chastise_cooldown_time_value
+			action_value
+				values
+					120.0
+					120.0
+					120.0
+			action_value_id : chastise_execution_count_value
+			action_value
+				values
+					60.0
+					60.0
+					60.0
+			action_value_id : max_linear_speed_bonus_scalar
+			action_value
+				values
+					-0.3
+					-0.45
+					-0.6
+			action_value_id : max_angular_speed_bonus_scalar
+			action_value
+				values
+					-0.15
+					-0.225
+					-0.3
+			action_value_id : missile_max_linear_speed_bonus_scalar
+			action_value
+				values
+					-0.6
+					-0.9
+					-1.2
+			action_value_id : missile_max_angular_speed_bonus_scalar
+			action_value
+				values
+					-0.3
+					-0.45
+					-0.6
+	buff_unit_modifiers
+			buff_unit_modifier_id : chastise_max_linear_speed_bonus
+			buff_unit_modifier
+				modifier_type : max_linear_speed
+				value_behavior : scalar
+				value_id : max_linear_speed_bonus_scalar
+			buff_unit_modifier_id : chastise_max_angular_speed_bonus
+			buff_unit_modifier
+				modifier_type : max_angular_speed
+				value_behavior : scalar
+				value_id : max_angular_speed_bonus_scalar
+			buff_unit_modifier_id : chastise_missile_max_linear_speed_bonus
+			buff_unit_modifier
+				modifier_type : max_linear_speed
+				value_behavior : scalar
+				value_id : missile_max_linear_speed_bonus_scalar
+			buff_unit_modifier_id : chastise_missile_max_angular_speed_bonus
+			buff_unit_modifier
+				modifier_type : max_angular_speed
+				value_behavior : scalar
+				value_id : missile_max_angular_speed_bonus_scalar
+	effect_alias_bindings
+			alias_name : advent_unity_chastise_on_planet_buff_large
+			alias_binding
+				particle_effect : advent_chastise_duration_gas_giat_var
+			alias_name : advent_unity_chastise_on_planet_buff_medium
+			alias_binding
+				particle_effect : advent_chastise_duration
+			alias_name : advent_unity_chastise_on_planet_buff_small
+			alias_binding
+				particle_effect : advent_chastise_duration
+			alias_name : advent_unity_chastise_on_ship_buff_large
+			alias_binding
+				particle_effect : advent_chastise_status_large
+			alias_name : advent_unity_chastise_on_ship_buff_medium
+			alias_binding
+				particle_effect : advent_chastise_status_medium
+			alias_name : advent_unity_chastise_on_ship_buff_small
+			alias_binding
+				particle_effect : advent_chastise_status_small
+
+**[NEW] Cleanse**
+	level_count : 3
+	target_filters
+			target_filter_id : cleanse_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					starbase
+					structure
+				ownerships
+					self
+			target_filter_id : cleanse_radius_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					starbase
+					structure
+					titan
+				ownerships
+					friendly
+	action_values
+			action_value_id : cleanse_unity_mana_cost_value
+			action_value
+				values
+					100.0
+					100.0
+					100.0
+			action_value_id : cleanse_cooldown_time_value
+			action_value
+				values
+					30.0
+					30.0
+					30.0
+			action_value_id : cleanse_radius_value
+			action_value
+				values
+					5000.0
+					6500.0
+					8000.0
+			action_value_id : cleanse_hull_restore_value
+			action_value
+				transform_type : per_current_hull_points
+				transform_unit
+					unit_type : target
+				values
+					0.3
+					0.6
+					0.9
+			action_value_id : cleanse_armor_restore_value
+			action_value
+				transform_type : per_current_armor_points
+				transform_unit
+					unit_type : target
+				values
+					0.3
+					0.6
+					0.9
+			action_value_id : cleanse_shield_restore_value
+			action_value
+				transform_type : per_current_shield_points
+				transform_unit
+					unit_type : target
+				values
+					0.3
+					0.6
+					0.9
+	effect_alias_bindings
+			alias_name : advent_unity_cleanse_target_large
+			alias_binding
+				particle_effect : advent_cleanse_healing_large
+			alias_name : advent_unity_cleanse_target_medium
+			alias_binding
+				particle_effect : advent_cleanse_healing_medium
+			alias_name : advent_unity_cleanse_target_small
+			alias_binding
+				particle_effect : advent_cleanse_healing_small
+			alias_name : advent_unity_cleanse_buff_on_radius_large
+			alias_binding
+				particle_effect : cleanse_on_target_large
+			alias_name : advent_unity_cleanse_buff_on_radius_medium
+			alias_binding
+				particle_effect : cleanse_on_target_medium
+			alias_name : advent_unity_cleanse_buff_on_radius_small
+			alias_binding
+				particle_effect : cleanse_on_target_small
+
+**[NEW] Fury**
+	level_count : 3
+	target_filters
+			target_filter_id : fury_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					starbase
+					structure
+					titan
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_not
+						constraint
+							constraint_type : has_buff
+							buff : advent_unity_fury_on_target
+	action_values
+			action_value_id : fury_unity_mana_cost_value
+			action_value
+				values
+					300.0
+					300.0
+					300.0
+			action_value_id : fury_cooldown_time_value
+			action_value
+				values
+					120.0
+					120.0
+					120.0
+			action_value_id : fury_execution_interval_count_value
+			action_value
+				values
+					30.0
+					45.0
+					60.0
+			action_value_id : fury_damage_rate_value
+			action_value
+				values
+					15.0
+					20.0
+					25.0
+			action_value_id : fury_armor_penetration_value
+			action_value
+				values
+					500.0
+					500.0
+					500.0
+			action_value_id : fury_radius_value
+			action_value
+				values
+					4500.0
+					4500.0
+					4500.0
+	effect_alias_bindings
+			alias_name : advent_unity_fury_area_effect
+			alias_binding
+				particle_effect : advent_unit_ability_fury
+			alias_name : advent_unity_fury_detonate
+			alias_binding
+				particle_effect : advent_unit_ability_fury_activation
+			alias_name : advent_unity_fury_on_target_large
+			alias_binding
+				particle_effect : advent_unit_ability_fury_status_large
+			alias_name : advent_unity_fury_on_target_medium
+			alias_binding
+				particle_effect : advent_unit_ability_fury_status_medium
+			alias_name : advent_unity_fury_on_target_small
+			alias_binding
+				particle_effect : advent_unit_ability_fury_status_small
+
+**[NEW] Resurrection**
+	level_count : 3
+	target_filters
+			target_filter_id : resurrection_planet_target_filter
+			target_filter
+				unit_types
+					planet
+					star
+				ownerships
+					enemy
+					friendly
+					none
+	action_values
+			action_value_id : resurrection_unity_mana_cost_value
+			action_value
+				values
+					1000.0
+					1000.0
+					1000.0
+			action_value_id : resurrection_cooldown_time_value
+			action_value
+				values
+					60.0
+					60.0
+					60.0
+			action_value_id : resurrect_random_chance_value
+			action_value
+				values
+					0.03
+					0.06
+					0.09
+			action_value_id : resurrection_execution_count_value
+			action_value
+				values
+					15.0
+					15.0
+					15.0
+	effect_alias_bindings
+			alias_name : advent_unity_resurrection_on_planet_buff_large
+			alias_binding
+				particle_effect : advent_resurrection_duration_gas_giant_var
+			alias_name : advent_unity_resurrection_on_planet_buff_medium
+			alias_binding
+				particle_effect : advent_resurrection_duration
+			alias_name : advent_unity_resurrection_on_planet_buff_small
+			alias_binding
+				particle_effect : advent_resurrection_duration
+			alias_name : advent_unity_resurrection_buff_large
+			alias_binding
+				particle_effect : advent_resurrection_large
+			alias_name : advent_unity_resurrection_buff_medium
+			alias_binding
+				particle_effect : advent_resurrection_medium
+			alias_name : advent_unity_resurrection_buff_small
+			alias_binding
+				particle_effect : advent_resurrection_small
+
+**advent_soul_reclamation**
+	target_filters
+		1
+			target_filter
+				unit_types
+					0 : capital_ship -> starbase
+		2
+			target_filter
+				unit_types
+					0 : starbase -> titan
+	action_values
+		0
+			action_value
+				values
+					0 : 1.0 -> 5.0
+		1
+			action_value
+				values
+					0 : 3.0 -> 100.0
+		2
+			action_value
+				values
+					0 : 5.0 -> 300.0
+
+## Buff Changes
+
+**[NEW] advent_unity_avatar_on_spawner**
+	active_duration : avatar_duration_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_radius_of_unit
+						radius_origin_unit
+							unit_type : current_spawner
+						radius_value : avatar_radius_value
+						operators
+								constraint
+									constraint_type : unit_passes_target_filter
+									unit
+										unit_type : operand_destination
+									target_filter_id : avatar_aura_target_filter
+								operator_type : apply_buff
+								buff : advent_unity_avatar_on_target
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect : advent_unity_avatar_buff_on_spawner
+	unit_modifiers
+			buff_unit_modifier_id : avatar_spell_power_modifier
+	gui
+		hud_icon : trader_colony_capital_ship_inspiring_broadcast_ability_hud_icon
+		name : Avatar
+		is_visible_within_unit_tooltip
+		visibility_scope : positive
+		tooltip_line_groups
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : avatar_spell_power_modifier
+
+**[NEW] advent_unity_avatar_on_target**
+	make_dead_on_parent_buff_made_dead
+	make_dead_on_distance_to_parent_buff_exceeded
+		distance : avatar_radius_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : preserve_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						constraint
+							constraint_type : composite_not
+							constraint
+								constraint_type : unit_comparison
+								unit_a
+									unit_type : current_spawner
+								unit_b
+									unit_type : previous_spawner
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect_by_size
+								small_unit : advent_unity_avatar_buff_on_target_small
+								medium_unit : advent_unity_avatar_buff_on_target_medium
+								large_unit : advent_unity_avatar_buff_on_target_large
+	weapon_modifiers
+			buff_weapon_modifier_id : avatar_energy_weapon_damage_modifier
+	gui
+		hud_icon : trader_colony_capital_ship_inspiring_broadcast_ability_hud_icon
+		name : Avatar Aura
+		visibility_scope : positive
+		tooltip_line_groups
+				lines
+						rendering_type : buff_weapon_modifier
+						weapon_modifier_id : avatar_energy_weapon_damage_modifier
+
+**[NEW] advent_unity_chastise_on_gravity_well**
+	active_duration : chastise_execution_count_value
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_gravity_well_of_unit
+						gravity_well_origin_unit
+							unit_type : current_spawner
+						operators
+								constraint
+									constraint_type : unit_passes_target_filter
+									unit
+										unit_type : operand_destination
+									target_filter_id : chastise_ship_target_filter
+								operator_type : apply_buff
+								buff : advent_unity_chastise_on_target
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_gravity_well_of_unit
+						gravity_well_origin_unit
+							unit_type : current_spawner
+						operators
+								constraint
+									constraint_type : unit_passes_target_filter
+									unit
+										unit_type : operand_destination
+									target_filter_id : chastise_missile_target_filter
+								operator_type : apply_buff
+								buff : advent_unity_chastise_on_target_missile
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect_by_size
+								small_unit : advent_unity_chastise_on_planet_buff_small
+								medium_unit : advent_unity_chastise_on_planet_buff_medium
+								large_unit : advent_unity_chastise_on_planet_buff_large
+	gui
+		hud_icon : advent_unity_recall_ability_hud_icon
+		name : Chastise
+		is_visible_within_unit_tooltip
+
+**[NEW] advent_unity_chastise_on_target**
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	make_dead_on_parent_buff_made_dead
+	make_dead_on_current_spawner_ownership_changed_from_buff_ownership
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect_by_size
+								small_unit : advent_unity_chastise_on_ship_buff_small
+								medium_unit : advent_unity_chastise_on_ship_buff_medium
+								large_unit : advent_unity_chastise_on_ship_buff_large
+			trigger_event_type : on_current_spawner_current_gravity_well_changed
+			action_group
+				actions
+						action_type : make_buff_dead
+	unit_modifiers
+			buff_unit_modifier_id : chastise_max_linear_speed_bonus
+			buff_unit_modifier_id : chastise_max_angular_speed_bonus
+	gui
+		hud_icon : advent_unity_recall_ability_hud_icon
+		name : Chastise
+		is_visible_within_unit_tooltip
+		visibility_scope : negative
+		tooltip_line_groups
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_max_linear_speed_bonus
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_max_angular_speed_bonus
+
+**[NEW] advent_unity_chastise_on_target_missile**
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	make_dead_on_parent_buff_made_dead
+	make_dead_on_current_spawner_ownership_changed_from_buff_ownership
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	unit_modifiers
+			buff_unit_modifier_id : chastise_missile_max_linear_speed_bonus
+			buff_unit_modifier_id : chastise_missile_max_angular_speed_bonus
+	gui
+		hud_icon : advent_unity_recall_ability_hud_icon
+		name : Chastise
+		is_visible_within_unit_tooltip
+		visibility_scope : negative
+		tooltip_line_groups
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_missile_max_linear_speed_bonus
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : chastise_missile_max_angular_speed_bonus
+
+**[NEW] advent_unity_fury_on_spawner**
+	active_duration : fury_execution_interval_count_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_radius_of_unit
+						radius_origin_unit
+							unit_type : current_spawner
+						radius_value : fury_radius_value
+						operators
+								constraint
+									constraint_type : unit_passes_target_filter
+									unit
+										unit_type : operand_destination
+									target_filter_id : fury_target_filter
+								operator_type : apply_buff
+								buff : advent_unity_fury_on_target
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect : advent_unity_fury_area_effect
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : play_point_effect
+								effect_definition
+									binding : action_data_source
+									mesh_point : center
+									effect : advent_unity_fury_detonate
+
+**[NEW] advent_unity_fury_on_target**
+	make_dead_on_parent_buff_made_dead
+	make_dead_on_distance_to_parent_buff_exceeded
+		distance : fury_radius_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : preserve_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : apply_damage
+								damage_source : ability
+								damage_affect_type : hull_and_armor_and_shields
+								damage_value : fury_damage_rate_value
+								penetration_value : fury_armor_penetration_value
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect_by_size
+								small_unit : advent_unity_fury_on_target_small
+								medium_unit : advent_unity_fury_on_target_medium
+								large_unit : advent_unity_fury_on_target_large
+	gui
+		hud_icon : vasari_colony_capital_ship_subspace_rupture_ability_hud_icon
+		name : Fury
+		visibility_scope : negative
+		tooltip_line_groups
+				lines
+						rendering_type : single_value
+						label_text : Damage Rate:
+						value_id : fury_damage_rate_value
+						value_color : negative
+						value_suffix : per_second
+
+**[NEW] advent_unity_resurrection_on_gravity_well**
+	active_duration : resurrection_execution_count_value
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : resurrect_units_in_gravity_well_of_unit
+						gravity_well_origin_unit
+							unit_type : current_spawner
+						dead_units_player
+							player_type : unit_owner
+							owned_unit
+								unit_type : first_spawner
+						resurrection_constraint
+							constraint_type : random_chance
+							chance_value : resurrect_random_chance_value
+						unit_types_to_resurrect
+							corvette
+							cruiser
+							frigate
+						buff_on_resurrected_units : advent_unity_resurrection_on_target
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : center
+							effect_by_size
+								small_unit : advent_unity_resurrection_on_planet_buff_small
+								medium_unit : advent_unity_resurrection_on_planet_buff_medium
+								large_unit : advent_unity_resurrection_on_planet_buff_large
+	gui
+		hud_icon : advent_unity_recall_ability_hud_icon
+		name : Resurrection
+		is_visible_within_unit_tooltip
+
+**[NEW] advent_unity_resurrection_on_target**
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : play_point_effect
+								effect_definition
+									binding : action_data_source
+									mesh_point : center
+									effect_by_size
+										small_unit : advent_unity_resurrection_buff_small
+										medium_unit : advent_unity_resurrection_buff_medium
+										large_unit : advent_unity_resurrection_buff_large
+	gui
+		hud_icon : advent_colony_capital_ship_rebirth_ability_hud_icon
+		name : Resurrected Ship
+		description : This ship was resurrected by the Unity.
+		is_visible_within_unit_tooltip
+
+## Unit Changes
+
+**[NEW] advent_debris_fixture**
+	spatial
+		radius : 66.002083
+		box
+			center
+				-8e-06
+				0.0
+				2e-06
+			extents
+				24.537697
+				14.574421
+				60.131332
+	gravity_well_fixture
+		inner_move_distance : 4000.0
+		axis_rotation_speed
+			2.0
+			3.0
+		axis_tilt_angle
+			0.0
+			90.0
+		chance_of_retrograde_axis_rotation_direction : 0.5
+	target_filter_unit_type : planet
+	skin_groups
+			skins
+				advent_starbase_debris_front
+				advent_starbase_debris_mid
+				advent_starbase_debris_back
+				advent_loyalist_titan_debris_front
+				advent_loyalist_titan_debris_mid_0
+				advent_loyalist_titan_debris_mid_1
+				advent_loyalist_titan_debris_back
+				advent_rebel_titan_debris_front
+				advent_rebel_titan_debris_mid_0
+				advent_rebel_titan_debris_mid_1
+				advent_rebel_titan_debris_back
+	action_effect_size : small_unit
+
+**[NEW] advent_unity_agent_loyalist**
+	spatial
+	user_interface
+		under_cursor_type : sphere
+	health
+		release_time_after_death : 60.0
+		levels
+				max_hull_points : 1.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.2
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				shield_point_restore_rate : 1.9
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 60.0
+					restore_percentage : 0.5
+	target_filter_unit_type : untargetable
+	abilities
+			abilities
+				advent_unity_clairvoyance
+				advent_unity_proselytize
+				advent_unity_chastise
+				advent_unity_avatar
+				advent_unity_fury
+	skin_groups
+			skins
+				unity_agent
+	action_effect_size : medium_unit
+
+**[NEW] advent_unity_agent_rebel**
+	spatial
+	user_interface
+		under_cursor_type : sphere
+	health
+		release_time_after_death : 60.0
+		levels
+				max_hull_points : 1.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.2
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				shield_point_restore_rate : 1.9
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 60.0
+					restore_percentage : 0.5
+	target_filter_unit_type : untargetable
+	abilities
+			abilities
+				advent_unity_clairvoyance
+				advent_unity_cleanse
+				advent_unity_recall
+				advent_unity_sanctify
+				advent_unity_resurrection
+	skin_groups
+			skins
+				unity_agent
+	action_effect_size : medium_unit
+
+## Unit_skin Changes
+
+**Assembly Drone**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+						scared
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+						smug
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+					order_issued
+						neutral
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+						scared
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+						smug
+							0 : frigate_techconstruction_ongeneralorderissued_0 -> ui_onselection_psi_construction_frigate
+
+**Beam Defense Platform**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalbeamdefense_onselection_0 -> ui_onselection_psi_beam_defense
+						scared
+							0 : planetmodule_psiorbitalbeamdefense_onselection_0 -> ui_onselection_psi_beam_defense
+
+**Deliverance Engine**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalcannon_onselection_0 -> ui_onselection_psi_deliverance_engine
+						scared
+							0 : planetmodule_psiorbitalcannon_onselection_0 -> ui_onselection_psi_deliverance_engine
+
+**Hangar Defense**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalhangardefense_onselection_0 -> ui_onselection_psi_hangar_defense
+						scared
+							0 : planetmodule_psiorbitalhangardefense_onselection_0 -> ui_onselection_psi_hangar_defense
+
+**Laser Defense Platform**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : advent_laser_defense_structure_on_selection_0 -> ui_onselection_psi_laser_defense
+						scared
+							0 : advent_laser_defense_structure_on_selection_0 -> ui_onselection_psi_laser_defense
+
+**Rapture Battlecruiser**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_binding
+							sounds
+								0 : weapon_genericfire -> ambient_loop_psi_vertigo
+					1
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vertigo
+					2
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vertigo
+					3
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vertigo
+					22
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_malice
+					23
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_malice
+					24
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_malice
+					25
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_malice
+					26
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_malice
+					36
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_vengeance
+					37
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vengeance
+					38
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vengeance
+					39
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ambient_loop_psi_vengeance
+
+**Temple of Harmony**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalcombatlaboratory_onselection_0 -> ui_onselection_psi_temple_of_harmony
+						scared
+							0 : planetmodule_psiorbitalcombatlaboratory_onselection_0 -> ui_onselection_psi_temple_of_harmony
+
+**Temple of Hostility**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalcombatlaboratory_onselection_0 -> ui_onselection_psi_temple_of_hostility
+						scared
+							0 : planetmodule_psiorbitalcombatlaboratory_onselection_0 -> ui_onselection_psi_temple_of_hostility
+
+**Temple of Renewal**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : planetmodule_psiorbitalantimatterrecharger_onselection_0 -> ui_onselection_psi_temple_of_renewal
+						scared
+							0 : planetmodule_psiorbitalantimatterrecharger_onselection_0 -> ui_onselection_psi_temple_of_renewal
+
+**Temple of Unity**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : ui_onselection_tech_civilian_research_lab -> ui_onselection_psi_temple_of_unity
+						scared
+							0 : ui_onselection_tech_civilian_research_lab -> ui_onselection_psi_temple_of_unity
+
+**Titan Foundry**
+	skin_stages
+		0
+			gui
+				hud_icon : advent_rebel_titan_factory_structure_hud_icon -> advent_titan_factory_hud_icon
+				hud_monochrome_icon : advent_rebel_titan_factory_structure_main_view_icon -> advent_titan_factory_structure_main_view_icon
+			main_view_icon
+				icon : advent_rebel_titan_factory_structure_main_view_icon -> advent_titan_factory_structure_main_view_icon
+
+## Research_subject Changes
+
+**[NEW] advent_loyalist_clarity_of_purpose**
+	domain : civilian
+	tier : 1
+	field : civilian_evangelism
+	field_coord
+		3
+		8
+	research_time : 180.0
+	price
+		credits : 600.0
+		metal : 125.0
+		crystal : 225.0
+	prerequisites
+			advent_upgrade_culture_rate_0
+	name : Clarity of Purpose
+	name_uppercase : CLARITY OF PURPOSE
+	description : Righteous purpose suffuses the Unity, driving the crews of it's warships to ever greater feats of psionic might.
+	hud_icon : advent_loyalist_clarity_of_purpose_research_subject_hud_icon
+	tooltip_picture : advent_loyalist_clarity_of_purpose_research_subject_tooltip_picture
+
+**[NEW] advent_loyalist_global_unity**
+	domain : civilian
+	tier : 2
+	field : civilian_evangelism
+	field_coord
+		5
+		2
+	research_time : 300.0
+	price
+		credits : 1050.0
+		metal : 275.0
+		crystal : 475.0
+	prerequisites
+			advent_unlock_improved_culture_propagation
+	name : Global Unity
+	name_uppercase : GLOBAL UNITY
+	description : Harmony within your faction causes culture to spread automatically from worlds with sufficiently developed research.
+	hud_icon : advent_loyalist_global_unity_research_subject_hud_icon
+	tooltip_picture : advent_loyalist_global_unity_research_subject_tooltip_picture
+
+**[NEW] advent_rebel_loot_collection**
+	domain : military
+	field : military_protection
+	field_coord
+		0
+		3
+	research_time : 60.0
+	price
+		credits : 200.0
+		metal : 25.0
+		crystal : 75.0
+	unit_modifiers
+			modifier_type : loot_collection_duration
+			value_behavior : scalar
+			value : -1.5
+	name : Rite of Reclamation
+	name_uppercase : RITE OF RECLAMATION
+	description : Telepathic and Telekinetic adepts work together to rapidly sift through the wreckage of battle, guiding the souls of the ling and the dead alike to the Unity.
+	hud_icon : advent_rebel_loot_collection_research_subject_hud_icon
+	tooltip_picture : advent_rebel_loot_collection_research_subject_tooltip_picture
+	extra_text_filter_strings
+		loot
+
+**[NEW] advent_upgrade_culture_allegiance**
+	domain : civilian
+	tier : 3
+	field : civilian_evangelism
+	field_coord
+		6
+		8
+	research_time : 375.0
+	price
+		credits : 1500.0
+		metal : 425.0
+		crystal : 775.0
+	prerequisites
+			advent_upgrade_culture_rate_2
+	name : Allure of the Unity
+	name_uppercase : ALLURE OF THE UNITY
+	description : Entices a greater portion of your planets' population to join the Unity.
+	hud_icon : advent_upgrade_culture_allegiance_research_subject_hud_icon
+	tooltip_picture : advent_upgrade_culture_allegiance_research_subject_tooltip_picture
+
+**advent_capital_ship_starting_level_0**
+	extra_text_filter_strings
+		0 : research_text_filter_experience -> research_text_filter_capital_ship
+		1 : research_text_filter_capital_ship -> research_text_filter_experience
+
+**advent_capital_ship_starting_level_1**
+	extra_text_filter_strings
+		0 : research_text_filter_experience -> research_text_filter_capital_ship
+		1 : research_text_filter_capital_ship -> research_text_filter_experience
+
+**advent_culture_phase_lane_detection_0**
+	field_coord
+		0 : 3 -> 2
+		1 : 5 -> 7
+	research_time : 180.0 -> 135.0
+	price
+		credits : 600.0 -> 450.0
+		metal : 125.0 -> 100.0
+		crystal : 225.0 -> 200.0
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_upgrade_culture_rate_0
+
+**advent_culture_phase_lane_detection_1**
+	tier : 3 -> 2
+	field_coord
+		0 : 6 -> 5
+		1 : 5 -> 7
+	research_time : 375.0 -> 300.0
+	price
+		credits : 1500.0 -> 1050.0
+		metal : 425.0 -> 275.0
+		crystal : 775.0 -> 475.0
+
+**advent_enemy_culture_suppression_0**
+	field_coord
+		1 : 3 -> 4
+
+**advent_enemy_culture_suppression_1**
+	field_coord
+		1 : 3 -> 4
+
+**advent_loyalist_acclimatization_of_will**
+	field_coord
+		0 : 4 -> 5
+		1 : 7 -> 8
+	research_time : 240.0 -> 300.0
+	price
+		credits : 900.0 -> 1050.0
+		metal : 225.0 -> 275.0
+		crystal : 425.0 -> 475.0
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_unity_mana_1
+
+**advent_passive_experience**
+	field_coord
+		1 : 7 -> 6
+
+**advent_planet_culture_resistance**
+	field_coord
+		1 : 3 -> 4
+
+**advent_soul_reclamation**
+	tier : 3 -> 2
+	field_coord
+		0 : 6 -> 4
+		1 : 7 -> 8
+	research_time : 375.0 -> 240.0
+	price
+		credits : 1500.0 -> 900.0
+		metal : 425.0 -> 225.0
+		crystal : 775.0 -> 425.0
+	prerequisites
+		0
+			0 : advent_unity_mana_2 -> advent_unity_mana_0
+
+**advent_unity_mana_0**
+	tier : 0 -> 1
+	field_coord
+		0 : 1 -> 2
+	research_time : 90.0 -> 135.0
+	price
+		credits : 300.0 -> 450.0
+		metal : 50.0 -> 100.0
+		crystal : 100.0 -> 200.0
+	empire_modifiers
+		0
+			modifier_type : unity_points -> unity_max_mana_points
+			value : 1.0 -> 50.0
+		1
+			modifier_type : unity_max_mana_points -> unity_mana_restore_rate
+			value : 50.0 -> 0.5
+
+**advent_unity_mana_1**
+	tier : 1 -> 2
+	field_coord
+		0 : 3 -> 4
+		1 : 8 -> 9
+	research_time : 180.0 -> 240.0
+	price
+		credits : 600.0 -> 900.0
+		metal : 125.0 -> 225.0
+		crystal : 225.0 -> 425.0
+	prerequisites
+		0
+			0 : advent_unlock_unity_structure -> advent_unity_mana_0
+	empire_modifiers
+		0
+			value : 50.0 -> 100.0
+		1
+			value : 0.25 -> 0.5
+	windfall
+		mana_given : 25.0 -> 50.0
+
+**advent_unity_mana_2**
+	tier : 2 -> 3
+	field_coord
+		0 : 5 -> 6
+		1 : 8 -> 9
+	research_time : 300.0 -> 375.0
+	price
+		credits : 1050.0 -> 1500.0
+		metal : 275.0 -> 425.0
+		crystal : 475.0 -> 775.0
+
+**advent_unity_mana_3**
+	field_coord
+		1 : 8 -> 9
+	empire_modifiers
+		0
+			value : 100.0 -> 250.0
+		1
+			value : 0.5 -> 1.0
+	windfall
+		mana_given : 50.0 -> 125.0
+
+**advent_unlock_all_culture_known**
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_upgrade_culture_rate_1
+
+**advent_unlock_culture_center**
+	field_coord
+		0 : 1 -> 0
+		1 : 2 -> 5
+	research_time : 90.0 -> 60.0
+	price
+		credits : 300.0 -> 200.0
+		metal : 50.0 -> 25.0
+		crystal : 100.0 -> 75.0
+
+**advent_unlock_culture_crystal**
+	field_coord
+		1 : 4 -> 3
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_upgrade_culture_rate_0
+
+**advent_unlock_culture_improve_regeneration**
+	field_coord
+		1 : 7 -> 8
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_upgrade_culture_rate_0
+	extra_text_filter_strings
+		0 : research_text_filter_hull -> research_text_filter_regeneration
+		1 : research_text_filter_armor -> research_text_filter_shield
+
+**advent_unlock_deliverance_engine_structure**
+	field_coord
+		1 : 1 -> 5
+	prerequisites
+		0
+			0 : advent_upgrade_culture_rate_1 -> advent_upgrade_culture_rate_2
+
+**advent_unlock_deliverance_engine_structure_loyalist_ability**
+	field_coord
+		1 : 1 -> 5
+
+**advent_unlock_deliverance_engine_structure_rebel_ability**
+	field_coord
+		1 : 1 -> 5
+
+**advent_unlock_detection_with_culture**
+	field_coord
+		0 : 5 -> 4
+	research_time : 300.0 -> 240.0
+	price
+		credits : 1050.0 -> 900.0
+		metal : 275.0 -> 225.0
+		crystal : 475.0 -> 425.0
+
+**advent_unlock_heathen_quarter_unit_item**
+	prerequisites
+		0
+			0 : advent_upgrade_culture_rate_1 -> advent_upgrade_influence_1
+
+**advent_unlock_hyperspace_between_stars**
+	extra_text_filter_strings
+		0 : research_text_filter_star -> research_text_filter_hyperspace
+		1 : research_text_filter_jump -> research_text_filter_interstar
+		2 : research_text_filter_hyperspace -> research_text_filter_jump
+		3 : research_text_filter_interstar -> research_text_filter_phase
+		4 : research_text_filter_phase -> research_text_filter_star
+
+**advent_unlock_improved_culture_propagation**
+	field_coord
+		1 : 7 -> 2
+	prerequisites
+		0
+			0 : advent_unlock_culture_center -> advent_upgrade_culture_rate_0
+
+**advent_unlock_telepathic_relay_unit_item**
+	field_coord
+		0 : 3 -> 2
+	research_time : 180.0 -> 135.0
+	price
+		credits : 600.0 -> 450.0
+		metal : 125.0 -> 100.0
+		crystal : 225.0 -> 200.0
+	prerequisites
+		0
+			0 : advent_upgrade_culture_rate_0 -> advent_upgrade_influence_0
+
+**advent_unlock_unity_structure**
+	tier : 1 -> 0
+	field_coord
+		0 : 2 -> 1
+	research_time : 135.0 -> 90.0
+	price
+		credits : 450.0 -> 300.0
+		metal : 100.0 -> 50.0
+		crystal : 200.0 -> 100.0
+
+**advent_upgrade_culture_crystal_0**
+	field_coord
+		0 : 5 -> 4
+		1 : 4 -> 3
+	research_time : 300.0 -> 240.0
+	price
+		credits : 1050.0 -> 900.0
+		metal : 275.0 -> 225.0
+		crystal : 475.0 -> 425.0
+
+**advent_upgrade_culture_crystal_1**
+	field_coord
+		0 : 7 -> 6
+		1 : 4 -> 3
+	research_time : 450.0 -> 375.0
+	price
+		credits : 1650.0 -> 1500.0
+		metal : 475.0 -> 425.0
+		crystal : 825.0 -> 775.0
+
+**advent_upgrade_culture_rate_0**
+	tier : 1 -> 0
+	field_coord
+		0 : 2 -> 1
+		1 : 2 -> 5
+	research_time : 135.0 -> 90.0
+	price
+		credits : 450.0 -> 300.0
+		metal : 100.0 -> 50.0
+		crystal : 200.0 -> 100.0
+
+**advent_upgrade_culture_rate_1**
+	tier : 2 -> 1
+	field_coord
+		0 : 4 -> 2
+		1 : 2 -> 5
+	research_time : 240.0 -> 135.0
+	price
+		credits : 900.0 -> 450.0
+		metal : 225.0 -> 100.0
+		crystal : 425.0 -> 200.0
+	prerequisites
+		0
+			0 : advent_planet_culture_resistance -> advent_upgrade_culture_rate_0
+
+**advent_upgrade_culture_rate_2**
+	tier : 3 -> 2
+	field_coord
+		0 : 6 -> 5
+		1 : 2 -> 5
+	research_time : 375.0 -> 300.0
+	price
+		credits : 1500.0 -> 1050.0
+		metal : 425.0 -> 275.0
+		crystal : 775.0 -> 475.0
+
+**advent_upgrade_deliverance_engine_structure_loyalist_ability**
+	field_coord
+		1 : 1 -> 5
+
+**advent_upgrade_deliverance_engine_structure_rebel_ability**
+	field_coord
+		1 : 1 -> 5
+
+## Player Changes
+
+**advent_loyalist**
+	research
+		research_subjects
+			8 : advent_loyalist_acclimatization_of_will -> advent_loyalist_clarity_of_purpose
+			9 : advent_max_supply_0 -> advent_loyalist_acclimatization_of_will
+			10 : advent_max_supply_1 -> advent_loyalist_global_unity
+			11 : advent_max_supply_2 -> advent_max_supply_0
+			12 : advent_max_supply_3 -> advent_max_supply_1
+			13 : advent_max_supply_4 -> advent_max_supply_2
+			14 : advent_meteoroid_control -> advent_max_supply_3
+			15 : advent_passive_experience -> advent_max_supply_4
+			16 : advent_planet_culture_resistance -> advent_meteoroid_control
+			17 : advent_temple_of_renewal_structure_antimatter_restore_rate -> advent_passive_experience
+			18 : advent_unity_mana_0 -> advent_planet_culture_resistance
+			19 : advent_unity_mana_1 -> advent_temple_of_renewal_structure_antimatter_restore_rate
+			20 : advent_unity_mana_2 -> advent_unity_mana_0
+			21 : advent_unity_mana_3 -> advent_unity_mana_1
+			22 : advent_unity_points_0 -> advent_unity_mana_2
+			23 : advent_unity_points_1 -> advent_unity_mana_3
+			112 : advent_upgrade_culture_crystal_0 -> advent_upgrade_culture_allegiance
+			113 : advent_upgrade_culture_crystal_1 -> advent_upgrade_culture_crystal_0
+			114 : advent_upgrade_culture_rate_0 -> advent_upgrade_culture_crystal_1
+			115 : advent_upgrade_culture_rate_1 -> advent_upgrade_culture_rate_0
+			116 : advent_upgrade_culture_rate_2 -> advent_upgrade_culture_rate_1
+			117 : advent_upgrade_deliverance_engine_structure_loyalist_ability -> advent_upgrade_culture_rate_2
+			118 : advent_upgrade_desert_planets_0 -> advent_upgrade_deliverance_engine_structure_loyalist_ability
+			119 : advent_upgrade_desert_planets_1 -> advent_upgrade_desert_planets_0
+			120 : advent_upgrade_energy_booster_unit_item -> advent_upgrade_desert_planets_1
+			121 : advent_upgrade_ferrous_biosphere -> advent_upgrade_energy_booster_unit_item
+			122 : advent_upgrade_home_planet -> advent_upgrade_ferrous_biosphere
+			123 : advent_upgrade_hull_points_0 -> advent_upgrade_home_planet
+			124 : advent_upgrade_hull_points_1 -> advent_upgrade_hull_points_0
+			125 : advent_upgrade_hull_points_2 -> advent_upgrade_hull_points_1
+			126 : advent_upgrade_ice_biosphere -> advent_upgrade_hull_points_2
+			127 : advent_upgrade_influence_0 -> advent_upgrade_ice_biosphere
+			128 : advent_upgrade_influence_1 -> advent_upgrade_influence_0
+			129 : advent_upgrade_influence_2 -> advent_upgrade_influence_1
+			130 : advent_upgrade_laser_weapon_damage_0 -> advent_upgrade_influence_2
+			131 : advent_upgrade_laser_weapon_damage_1 -> advent_upgrade_laser_weapon_damage_0
+			132 : advent_upgrade_laser_weapon_damage_2 -> advent_upgrade_laser_weapon_damage_1
+			133 : advent_upgrade_metal_extraction_0 -> advent_upgrade_laser_weapon_damage_2
+			134 : advent_upgrade_metal_extraction_1 -> advent_upgrade_metal_extraction_0
+			135 : advent_upgrade_metal_extraction_2 -> advent_upgrade_metal_extraction_1
+			136 : advent_upgrade_missile_weapon_damage_0 -> advent_upgrade_metal_extraction_2
+			137 : advent_upgrade_missile_weapon_damage_1 -> advent_upgrade_missile_weapon_damage_0
+			138 : advent_upgrade_missile_weapon_damage_2 -> advent_upgrade_missile_weapon_damage_1
+			139 : advent_upgrade_missile_weapon_targeting -> advent_upgrade_missile_weapon_damage_2
+			140 : advent_upgrade_oceanic_biosphere -> advent_upgrade_missile_weapon_targeting
+			141 : advent_upgrade_orbital_extraction_crystal_0 -> advent_upgrade_oceanic_biosphere
+			142 : advent_upgrade_orbital_extraction_crystal_1 -> advent_upgrade_orbital_extraction_crystal_0
+			143 : advent_upgrade_orbital_extraction_metal_0 -> advent_upgrade_orbital_extraction_crystal_1
+			144 : advent_upgrade_orbital_extraction_metal_1 -> advent_upgrade_orbital_extraction_metal_0
+			145 : advent_upgrade_planet_bombing_defense -> advent_upgrade_orbital_extraction_metal_1
+			146 : advent_upgrade_planet_max_military_structure_slots -> advent_upgrade_planet_bombing_defense
+			147 : advent_upgrade_plasma_booster_unit_item -> advent_upgrade_planet_max_military_structure_slots
+			148 : advent_upgrade_plasma_weapon_cooldown -> advent_upgrade_plasma_booster_unit_item
+			149 : advent_upgrade_plasma_weapon_damage_0 -> advent_upgrade_plasma_weapon_cooldown
+			150 : advent_upgrade_plasma_weapon_damage_1 -> advent_upgrade_plasma_weapon_damage_0
+			151 : advent_upgrade_plasma_weapon_damage_2 -> advent_upgrade_plasma_weapon_damage_1
+			152 : advent_upgrade_research_rate -> advent_upgrade_plasma_weapon_damage_2
+			153 : advent_upgrade_shield_burst_restore_0 -> advent_upgrade_research_rate
+			154 : advent_upgrade_shield_burst_restore_1 -> advent_upgrade_shield_burst_restore_0
+			155 : advent_upgrade_shield_points_0 -> advent_upgrade_shield_burst_restore_1
+			156 : advent_upgrade_shield_points_1 -> advent_upgrade_shield_points_0
+			157 : advent_upgrade_shield_points_2 -> advent_upgrade_shield_points_1
+			158 : advent_upgrade_shield_points_3 -> advent_upgrade_shield_points_2
+			159 : advent_upgrade_spell_power_0 -> advent_upgrade_shield_points_3
+			160 : advent_upgrade_spell_power_1 -> advent_upgrade_spell_power_0
+			161 : advent_upgrade_spell_power_2 -> advent_upgrade_spell_power_1
+			162 : advent_upgrade_starbase_culture_unit_item -> advent_upgrade_spell_power_2
+			163 : advent_upgrade_structure_shield_points_0 -> advent_upgrade_starbase_culture_unit_item
+			164 : advent_upgrade_structure_shield_points_1 -> advent_upgrade_structure_shield_points_0
+			165 : advent_upgrade_surveying_track -> advent_upgrade_structure_shield_points_1
+			166 : advent_upgrade_swamp_biosphere -> advent_upgrade_surveying_track
+			167 : advent_upgrade_synchronous_shield_unit_item -> advent_upgrade_swamp_biosphere
+			168 : advent_upgrade_terran_planets_0 -> advent_upgrade_synchronous_shield_unit_item
+			169 : advent_upgrade_tithe_collector_unit_item_0 -> advent_upgrade_terran_planets_0
+			170 : advent_upgrade_tithe_collector_unit_item_1 -> advent_upgrade_tithe_collector_unit_item_0
+			171 : advent_upgrade_volcanic_biosphere -> advent_upgrade_tithe_collector_unit_item_1
+		faction_research_subjects
+			4 : advent_unlock_culture_improve_weapon_damage -> advent_loyalist_global_unity
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 5 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 5 -> 4
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+				commerce
+					1
+						credits_income_rate : 1.8 -> 1.2
+					2
+						credits_income_rate : 4.2 -> 2.7
+			max_unity_provider_count : 4 -> 1
+		9
+			planet_type : terran -> swamp
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+			max_unity_provider_count : 5 -> 4
+		10
+			planet_type : volcanic -> terran
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+					3
+						max_planet_component_slots : 3 -> 4
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						metal_income_rate : 2.16 -> 1.44
+			max_unity_provider_count : 2 -> 5
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						structure_builder_count : 2 -> 3
+				commerce
+					1
+						credits_income_rate : 1.2 -> 1.8
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48
+			max_unity_provider_count : 1 -> 2
+	culture
+		empire_modifiers
+			0
+				values
+					0
+						value : 5.0 -> 15.0
+			1
+				values
+					0
+						value : 0.05 -> 0.1
+	unity
+		base_max_mana : 0.0 -> 1000.0
+		base_mana_restore_rate : 0.0 -> 0.5
+		unity_agent : advent_unity_agent -> advent_unity_agent_loyalist
+
+**advent_rebel**
+	research
+		research_subjects
+			16 : advent_soul_reclamation -> advent_rebel_loot_collection
+			17 : advent_temple_of_renewal_structure_antimatter_restore_rate -> advent_soul_reclamation
+			18 : advent_unity_mana_0 -> advent_temple_of_renewal_structure_antimatter_restore_rate
+			19 : advent_unity_mana_1 -> advent_unity_mana_0
+			20 : advent_unity_mana_2 -> advent_unity_mana_1
+			21 : advent_unity_mana_3 -> advent_unity_mana_2
+			22 : advent_unity_points_0 -> advent_unity_mana_3
+			23 : advent_unity_points_1 -> advent_unlock_all_culture_known
+			24 : advent_unlock_all_culture_known -> advent_unlock_build_ultimate_exotic
+			25 : advent_unlock_build_ultimate_exotic -> advent_unlock_carrier_cruiser
+			26 : advent_unlock_carrier_cruiser -> advent_unlock_crystalline_biosphere
+			27 : advent_unlock_crystalline_biosphere -> advent_unlock_culture_center
+			28 : advent_unlock_culture_center -> advent_unlock_culture_crystal
+			29 : advent_unlock_culture_crystal -> advent_unlock_culture_improve_regeneration
+			30 : advent_unlock_culture_improve_regeneration -> advent_unlock_cynosural_reservoir_unit_item
+			31 : advent_unlock_cynosural_reservoir_unit_item -> advent_unlock_defense_cruiser
+			32 : advent_unlock_defense_cruiser -> advent_unlock_deliverance_engine_structure
+			33 : advent_unlock_deliverance_engine_structure -> advent_unlock_deliverance_engine_structure_rebel_ability
+			34 : advent_unlock_deliverance_engine_structure_rebel_ability -> advent_unlock_deploy_starbase_unit_item
+			35 : advent_unlock_deploy_starbase_unit_item -> advent_unlock_detection_with_culture
+			36 : advent_unlock_detection_with_culture -> advent_unlock_empyrean_city_unit_item
+			37 : advent_unlock_empyrean_city_unit_item -> advent_unlock_energy_booster_unit_item
+			38 : advent_unlock_energy_booster_unit_item -> advent_unlock_essence_reservoir_unit_item
+			39 : advent_unlock_essence_reservoir_unit_item -> advent_unlock_exotic_factory_structure
+			40 : advent_unlock_exotic_factory_structure -> advent_unlock_ferrous_biosphere
+			41 : advent_unlock_ferrous_biosphere -> advent_unlock_focus_antimatter_unit_item
+			42 : advent_unlock_focus_antimatter_unit_item -> advent_unlock_focus_armor_unit_item
+			43 : advent_unlock_focus_armor_unit_item -> advent_unlock_focus_weapons_unit_item
+			44 : advent_unlock_focus_weapons_unit_item -> advent_unlock_gas_giant_biosphere
+			45 : advent_unlock_gas_giant_biosphere -> advent_unlock_guardian_cruiser
+			46 : advent_unlock_guardian_cruiser -> advent_unlock_guardian_cruiser_renewal_ability
+			47 : advent_unlock_guardian_cruiser_renewal_ability -> advent_unlock_guiding_mentor_unit_item
+			48 : advent_unlock_guiding_mentor_unit_item -> advent_unlock_gunship_corvette
+			49 : advent_unlock_gunship_corvette -> advent_unlock_hangar_defense_structure
+			50 : advent_unlock_hangar_defense_structure -> advent_unlock_harmony_circuit_unit_item
+			51 : advent_unlock_harmony_circuit_unit_item -> advent_unlock_haven_dome_unit_item
+			52 : advent_unlock_haven_dome_unit_item -> advent_unlock_heathen_quarter_unit_item
+			53 : advent_unlock_heathen_quarter_unit_item -> advent_unlock_heavy_cruiser
+			54 : advent_unlock_heavy_cruiser -> advent_unlock_hyperspace_between_stars
+			55 : advent_unlock_hyperspace_between_stars -> advent_unlock_ice_biosphere
+			56 : advent_unlock_ice_biosphere -> advent_unlock_laminate_forge_unit_item
+			57 : advent_unlock_laminate_forge_unit_item -> advent_unlock_long_range_cruiser
+			58 : advent_unlock_long_range_cruiser -> advent_unlock_missile_frigate
+			59 : advent_unlock_missile_frigate -> advent_unlock_neuroaugment_center_unit_item
+			60 : advent_unlock_neuroaugment_center_unit_item -> advent_unlock_neuropsion_purifier_unit_item
+			61 : advent_unlock_neuropsion_purifier_unit_item -> advent_unlock_oceanic_biosphere
+			62 : advent_unlock_oceanic_biosphere -> advent_unlock_phase_jump_inhibitor_structure
+			63 : advent_unlock_phase_jump_inhibitor_structure -> advent_unlock_plasma_booster_unit_item
+			64 : advent_unlock_plasma_booster_unit_item -> advent_unlock_plasma_furnace_unit_item
+			65 : advent_unlock_plasma_furnace_unit_item -> advent_unlock_psicredit_mint_unit_item
+			66 : advent_unlock_psicredit_mint_unit_item -> advent_unlock_psionic_dynamo_unit_item
+			67 : advent_unlock_psionic_dynamo_unit_item -> advent_unlock_rebel_titan
+			68 : advent_unlock_rebel_titan -> advent_unlock_resource_extractor_structures
+			69 : advent_unlock_resource_extractor_structures -> advent_unlock_sanctuary_spire_unit_item
+			70 : advent_unlock_sanctuary_spire_unit_item -> advent_unlock_scout_corvette_lingering_presence_ability
+			71 : advent_unlock_scout_corvette_lingering_presence_ability -> advent_unlock_shield_burst_restore
+			72 : advent_unlock_shield_burst_restore -> advent_unlock_ship_factory_structure_repair
+			73 : advent_unlock_ship_factory_structure_repair -> advent_unlock_siege_frigate
+			74 : advent_unlock_siege_frigate -> advent_unlock_silent_monastery_unit_item
+			75 : advent_unlock_silent_monastery_unit_item -> advent_unlock_starbase
+			76 : advent_unlock_starbase -> advent_unlock_starbase_culture_unit_item
+			77 : advent_unlock_starbase_culture_unit_item -> advent_unlock_starbase_planetary_shield_array_unit_item
+			78 : advent_unlock_starbase_planetary_shield_array_unit_item -> advent_unlock_starbase_unlock_missile_weapon_unit_item
+			79 : advent_unlock_starbase_unlock_missile_weapon_unit_item -> advent_unlock_starbase_unlock_plasma_weapon_unit_item
+			80 : advent_unlock_starbase_unlock_plasma_weapon_unit_item -> advent_unlock_starbase_zealous_labor_unit_item
+			81 : advent_unlock_starbase_zealous_labor_unit_item -> advent_unlock_subjugator_cruiser
+			82 : advent_unlock_subjugator_cruiser -> advent_unlock_subjugator_cruiser_nullify_ability
+			83 : advent_unlock_subjugator_cruiser_nullify_ability -> advent_unlock_swamp_biosphere
+			84 : advent_unlock_swamp_biosphere -> advent_unlock_synchronous_shield_unit_item
+			85 : advent_unlock_synchronous_shield_unit_item -> advent_unlock_telepathic_relay_unit_item
+			86 : advent_unlock_telepathic_relay_unit_item -> advent_unlock_temple_of_purification_unit_item
+			87 : advent_unlock_temple_of_purification_unit_item -> advent_unlock_temple_of_renewal_structure
+			88 : advent_unlock_temple_of_renewal_structure -> advent_unlock_temple_of_renewal_structure_recharge_shields_ability
+			89 : advent_unlock_temple_of_renewal_structure_recharge_shields_ability -> advent_unlock_temple_of_resurrection_unit_item
+			90 : advent_unlock_temple_of_resurrection_unit_item -> advent_unlock_tithe_collector_unit_item
+			91 : advent_unlock_tithe_collector_unit_item -> advent_unlock_tranquil_refuge_unit_item
+			92 : advent_unlock_tranquil_refuge_unit_item -> advent_unlock_unity_protectorate_unit_item
+			93 : advent_unlock_unity_protectorate_unit_item -> advent_unlock_unity_structure
+			94 : advent_unlock_unity_structure -> advent_unlock_volcanic_biosphere
+			95 : advent_unlock_volcanic_biosphere -> advent_unlock_wormhole_travel
+			96 : advent_unlock_wormhole_travel -> advent_unstoppable_phase_jump
+			97 : advent_unstoppable_phase_jump -> advent_upgrade_antimatter_0
+			98 : advent_upgrade_antimatter_0 -> advent_upgrade_antimatter_1
+			99 : advent_upgrade_antimatter_1 -> advent_upgrade_antimatter_2
+			100 : advent_upgrade_antimatter_2 -> advent_upgrade_armor_0
+			101 : advent_upgrade_armor_0 -> advent_upgrade_armor_1
+			102 : advent_upgrade_armor_1 -> advent_upgrade_armor_2
+			103 : advent_upgrade_armor_2 -> advent_upgrade_beam_weapon_damage_0
+			104 : advent_upgrade_beam_weapon_damage_0 -> advent_upgrade_beam_weapon_damage_1
+			105 : advent_upgrade_beam_weapon_damage_1 -> advent_upgrade_beam_weapon_damage_2
+			106 : advent_upgrade_beam_weapon_damage_2 -> advent_upgrade_beam_weapon_range
+			107 : advent_upgrade_beam_weapon_range -> advent_upgrade_crystal_extraction_0
+			108 : advent_upgrade_crystal_extraction_0 -> advent_upgrade_crystal_extraction_1
+			109 : advent_upgrade_crystal_extraction_1 -> advent_upgrade_crystal_extraction_2
+			110 : advent_upgrade_crystal_extraction_2 -> advent_upgrade_crystalline_biosphere
+			111 : advent_upgrade_crystalline_biosphere -> advent_upgrade_culture_allegiance
+		faction_research_subjects
+			3 : advent_soul_reclamation -> advent_rebel_loot_collection
+			4 : advent_unlock_essence_reservoir_unit_item -> advent_soul_reclamation
+			5 : advent_unlock_culture_improve_regeneration -> advent_unlock_essence_reservoir_unit_item
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 5 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 5 -> 4
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+				commerce
+					1
+						credits_income_rate : 1.8 -> 1.2
+					2
+						credits_income_rate : 4.2 -> 2.7
+			max_unity_provider_count : 4 -> 1
+		9
+			planet_type : terran -> swamp
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+			max_unity_provider_count : 5 -> 4
+		10
+			planet_type : volcanic -> terran
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+					3
+						max_planet_component_slots : 3 -> 4
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						metal_income_rate : 2.16 -> 1.44
+			max_unity_provider_count : 2 -> 5
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						structure_builder_count : 2 -> 3
+				commerce
+					1
+						credits_income_rate : 1.2 -> 1.8
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48
+			max_unity_provider_count : 1 -> 2
+	culture
+		friendly_unit_modifiers
+			0
+				modifier_type : shield_point_restore_rate -> shield_point_restore_cooldown_duration_after_damage_taken
+				value_behavior : scalar -> additive
+				values
+					0
+						value : 1.0 -> -20.0
+	unity
+		base_max_mana : 0.0 -> 1000.0
+		base_mana_restore_rate : 0.0 -> 0.5
+		unity_agent : advent_unity_agent -> advent_unity_agent_rebel
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**Armor Patch Kit**
+	build_group_id : defense -> consumable
+
+**Center for Human Doctrine**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Deploy Argonev Starbase**
+	build_group_id : utility -> consumable
+
+**Fulfillment Warehouse**
+	planet_type_groups
+		0
+			planet_types
+				7 : swamp -> ship_graveyard
+				8 : terran -> swamp
+				9 : volcanic -> terran
+				10 : pirate_base -> volcanic
+
+**Home Guard Outpost**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Media Conglomerate**
+	planet_type_groups
+		0
+			planet_types
+				7 : swamp -> ship_graveyard
+				8 : terran -> swamp
+				9 : volcanic -> terran
+
+**Munitions Plant**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Radiation Bomb**
+	build_group_id : offense -> consumable
+
+**trader_loyalist_garrison_recruitment_center**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+## Unit Changes
+
+**[NEW] trader_debris_fixture**
+	spatial
+		radius : 66.002083
+		box
+			center
+				-8e-06
+				0.0
+				2e-06
+			extents
+				24.537697
+				14.574421
+				60.131332
+	gravity_well_fixture
+		inner_move_distance : 4000.0
+		axis_rotation_speed
+			2.0
+			3.0
+		axis_tilt_angle
+			0.0
+			90.0
+		chance_of_retrograde_axis_rotation_direction : 0.5
+	target_filter_unit_type : planet
+	skin_groups
+			skins
+				trader_starbase_debris_front
+				trader_starbase_debris_mid
+				trader_starbase_debris_back
+				trader_loyalist_titan_debris_front
+				trader_loyalist_titan_debris_mid
+				trader_loyalist_titan_debris_back
+				trader_rebel_titan_debris_front
+				trader_rebel_titan_debris_mid_0
+				trader_rebel_titan_debris_mid_1
+				trader_rebel_titan_debris_back
+	action_effect_size : small_unit
+
+## Unit_skin Changes
+
+**Military Research Station**
+	skin_stages
+		0
+			sounds
+				dialogue
+					selected
+						neutral
+							0 : ui_onselection_tech_civilian_research_lab -> ui_onselection_tech_military_research_lab
+						scared
+							0 : ui_onselection_tech_civilian_research_lab -> ui_onselection_tech_military_research_lab
+
+## Research_subject Changes
+
+**trader_capital_ship_starting_level_0**
+	extra_text_filter_strings
+		0 : research_text_filter_experience -> research_text_filter_capital_ship
+		1 : research_text_filter_capital_ship -> research_text_filter_experience
+
+**trader_capital_ship_starting_level_1**
+	extra_text_filter_strings
+		0 : research_text_filter_experience -> research_text_filter_capital_ship
+		1 : research_text_filter_capital_ship -> research_text_filter_experience
+
+**trader_labor_negotiations**
+	extra_text_filter_strings
+		1 : research_text_filter_frigate -> research_text_filter_cruiser
+		2 : research_text_filter_cruiser -> research_text_filter_frigate
+
+**trader_structure_hull**
+	extra_text_filter_strings
+		0 : research_text_filter_faction -> research_text_filter_armor
+		1 : research_text_filter_loyalist -> research_text_filter_faction
+		3 : research_text_filter_armor -> research_text_filter_loyalist
+
+**trader_unit_factory_build_rate**
+	extra_text_filter_strings
+		1 : research_text_filter_frigate -> research_text_filter_cruiser
+		2 : research_text_filter_cruiser -> research_text_filter_frigate
+
+**trader_unlock_gas_crystalizer_unit_item**
+	extra_text_filter_strings
+		0 : research_text_filter_exotic -> research_text_filter_andvar
+		1 : research_text_filter_andvar -> research_text_filter_exotic
+
+**trader_unlock_home_guard_outpost_unit_item**
+	extra_text_filter_strings
+		0 : research_text_filter_faction -> research_text_filter_defense
+		1 : research_text_filter_loyalist -> research_text_filter_faction
+		2 : research_text_filter_defense -> research_text_filter_loyalist
+
+**trader_unlock_hyperspace_between_stars**
+	extra_text_filter_strings
+		0 : research_text_filter_star -> research_text_filter_hyperspace
+		1 : research_text_filter_jump -> research_text_filter_interstar
+		2 : research_text_filter_hyperspace -> research_text_filter_jump
+		3 : research_text_filter_interstar -> research_text_filter_phase
+		4 : research_text_filter_phase -> research_text_filter_star
+
+## Player Changes
+
+**trader_loyalist**
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 5 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 5 -> 4
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+				commerce
+					1
+						credits_income_rate : 1.8 -> 1.2
+					2
+						credits_income_rate : 4.2 -> 2.7
+		9
+			planet_type : terran -> swamp
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+		10
+			planet_type : volcanic -> terran
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+					3
+						max_planet_component_slots : 3 -> 4
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						metal_income_rate : 2.16 -> 1.44
+			trade_capacity_levels
+				0
+					export_points
+						metal : 2 -> 1
+				1
+					export_points
+						metal : 2 -> 1
+				2
+					export_points
+						metal : 2 -> 1
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						structure_builder_count : 2 -> 3
+				commerce
+					1
+						credits_income_rate : 1.2 -> 1.8
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48
+			trade_capacity_levels
+				0
+					export_points
+						credits : 3 -> 1
+	garrison
+		units
+			random_units
+				0
+					weight : 50.0 -> 30.0
+				4
+					weight : 50.0 -> 20.0
+				5
+					weight : 10.0 -> 30.0
+
+**trader_rebel**
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 5 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 5 -> 4
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+				commerce
+					1
+						credits_income_rate : 1.8 -> 1.2
+					2
+						credits_income_rate : 4.2 -> 2.7
+		9
+			planet_type : terran -> swamp
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+		10
+			planet_type : volcanic -> terran
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+					3
+						max_planet_component_slots : 3 -> 4
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						metal_income_rate : 2.16 -> 1.44
+			trade_capacity_levels
+				0
+					export_points
+						metal : 2 -> 1
+				1
+					export_points
+						metal : 2 -> 1
+				2
+					export_points
+						metal : 2 -> 1
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						structure_builder_count : 2 -> 3
+				commerce
+					1
+						credits_income_rate : 1.2 -> 1.8
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48
+			trade_capacity_levels
+				0
+					export_points
+						credits : 3 -> 1
+
+
+# Vasari Changes
+
+## Unit_item Changes
+
+**Administrative Uplink**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Core Stripper**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Dark Fleet Tower**
+	planet_type_groups
+		0
+			planet_types
+				8 : swamp -> ship_graveyard
+				9 : terran -> swamp
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Debris Reclamation Center**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Defensive Uplink**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Deploy Orkulus Starbase**
+	build_group_id : utility -> consumable
+
+**Indoctrination Center**
+	planet_type_groups
+		0
+			planet_types
+				9 : swamp -> ship_graveyard
+				10 : terran -> swamp
+				11 : volcanic -> terran
+
+**Labor Camp**
+	planet_type_groups
+		0
+			planet_types
+				8 : terran -> ship_graveyard
+				9 : volcanic -> terran
+				10 : pirate_base -> volcanic
+
+**Lirtra Adjunct Lab**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Matter Hypercompiler**
+	planet_type_groups
+		0
+			planet_types
+				9 : terran -> ship_graveyard
+				10 : volcanic -> terran
+				11 : pirate_base -> volcanic
+
+**Nano Attack Swarm**
+	build_group_id : offense -> consumable
+
+**Nano Catalyzer Swarm**
+	build_group_id : utility -> consumable
+
+**Nano Repair Swarm**
+	build_group_id : defense -> consumable
+
+## Unit Changes
+
+**[NEW] vasari_debris_fixture**
+	spatial
+		radius : 66.002083
+		box
+			center
+				-8e-06
+				0.0
+				2e-06
+			extents
+				24.537697
+				14.574421
+				60.131332
+	gravity_well_fixture
+		inner_move_distance : 4000.0
+		axis_rotation_speed
+			2.0
+			3.0
+		axis_tilt_angle
+			0.0
+			90.0
+		chance_of_retrograde_axis_rotation_direction : 0.5
+	target_filter_unit_type : planet
+	skin_groups
+			skins
+				vasari_starbase_debris_front_0
+				vasari_starbase_debris_front_1
+				vasari_starbase_debris_mid
+				vasari_starbase_debris_back
+				vasari_loyalist_titan_debris_front
+				vasari_loyalist_titan_debris_mid_0
+				vasari_loyalist_titan_debris_mid_1
+				vasari_loyalist_titan_debris_back
+				vasari_rebel_titan_debris_front_0
+				vasari_rebel_titan_debris_front_1
+				vasari_rebel_titan_debris_mid
+				vasari_rebel_titan_debris_back
+	action_effect_size : small_unit
+
+## Research_subject Changes
+
+**vasari_unlock_hyperspace_between_stars**
+	extra_text_filter_strings
+		0 : research_text_filter_star -> research_text_filter_hyperspace
+		1 : research_text_filter_jump -> research_text_filter_interstar
+		2 : research_text_filter_hyperspace -> research_text_filter_jump
+		3 : research_text_filter_interstar -> research_text_filter_phase
+		4 : research_text_filter_phase -> research_text_filter_star
+
+**vasari_upgrade_ice_biosphere_0**
+	extra_text_filter_strings
+		0 : research_text_filter_ice -> research_text_filter_arctic
+		1 : research_text_filter_arctic -> research_text_filter_ice
+
+**vasari_upgrade_ice_biosphere_1**
+	extra_text_filter_strings
+		0 : research_text_filter_ice -> research_text_filter_arctic
+		1 : research_text_filter_arctic -> research_text_filter_ice
+
+## Player Changes
+
+**vasari_loyalist**
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 3 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 4 -> 3
+		3
+			id : infrastructure -> utility
+			name : ship_component_build_group_name_infrastructure -> ship_component_build_group_name_utility
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+		9
+			planet_type : terran -> swamp
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			tracks
+				logistics
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+				mining
+					3
+						prerequisites
+							0
+								0 : vasari_upgrade_terran_biosphere_0 -> vasari_upgrade_swamp_biosphere_1
+		10
+			planet_type : volcanic -> terran
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_biosphere
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_0
+						metal_income_rate : 2.16 -> 1.44
+					4
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_1 -> vasari_upgrade_terran_biosphere_1
+						metal_income_rate : 3.36 -> 2.16
+					5
+						metal_income_rate : 4.8 -> 3.0
+				research
+					4
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_0
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+					2
+						max_planet_component_slots : 2 -> 4
+						structure_builder_count : 2 -> 3
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48
+
+**vasari_rebel**
+	ship_component_build_groups
+		0
+			id : offense -> consumable
+			name : ship_component_build_group_name_offense -> ship_component_build_group_name_consumable
+			column_count : 3 -> 2
+		1
+			id : defense -> offense
+			name : ship_component_build_group_name_defense -> ship_component_build_group_name_offense
+		2
+			id : utility -> defense
+			name : ship_component_build_group_name_utility -> ship_component_build_group_name_defense
+			column_count : 5 -> 4
+	planet_types
+		8
+			planet_type : swamp -> ship_graveyard
+			tracks
+				defense
+					1
+						max_health_points : 1500.0 -> 1000.0
+					2
+						max_health_points : 3000.0 -> 2000.0
+				logistics
+					0
+						max_planet_component_slots : 3 -> 2
+					1
+						max_planet_component_slots : 3 -> 2
+					2
+						max_planet_component_slots : 3 -> 2
+						structure_builder_count : 3 -> 2
+		9
+			planet_type : terran -> swamp
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			tracks
+				logistics
+					3
+						max_planet_component_slots : 4 -> 3
+						structure_builder_count : 4 -> 3
+				mining
+					3
+						prerequisites
+							0
+								0 : vasari_upgrade_terran_biosphere_0 -> vasari_upgrade_swamp_biosphere_1
+		10
+			planet_type : volcanic -> terran
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_biosphere
+			tracks
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						structure_builder_count : 3 -> 4
+				mining
+					1
+						metal_income_rate : 0.48 -> 0.36
+					2
+						metal_income_rate : 1.2 -> 0.84
+					3
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_0
+						metal_income_rate : 2.16 -> 1.44
+					4
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_1 -> vasari_upgrade_terran_biosphere_1
+						metal_income_rate : 3.36 -> 2.16
+					5
+						metal_income_rate : 4.8 -> 3.0
+				research
+					4
+						prerequisites
+							0
+								0 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_0
+		11
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_health_points : 1000.0 -> 1500.0
+					2
+						max_health_points : 2000.0 -> 3000.0
+					3
+						max_health_points : 3500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+					2
+						max_planet_component_slots : 2 -> 4
+						structure_builder_count : 2 -> 3
+				mining
+					1
+						metal_income_rate : 0.36 -> 0.48

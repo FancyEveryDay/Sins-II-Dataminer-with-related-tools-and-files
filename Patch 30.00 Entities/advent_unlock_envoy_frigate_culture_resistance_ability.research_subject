@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_evangelism",
+    "field_coord": [4, 3],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "prerequisites": [
+        ["advent_enemy_culture_suppression_0"]
+    ],
+    "name": "advent_unlock_envoy_frigate_culture_resistance_ability_research_subject_name",
+    "name_uppercase": "advent_unlock_envoy_frigate_culture_resistance_ability_research_subject_name_uppercase",
+    "description": "advent_unlock_envoy_frigate_culture_resistance_ability_research_subject_description",
+    "hud_icon": "advent_unlock_envoy_frigate_culture_resistance_ability_research_subject_hud_icon"
+}

@@ -2,7 +2,7 @@
 
 import json, glob
 
-def recursiveprint(collection, output, level = 0):
+def recursiveprint(collection, output, localText = {}, level = 0):
     printTypes = [str, int, float]
 
     indents = "\t" * level
@@ -10,9 +10,12 @@ def recursiveprint(collection, output, level = 0):
     if type(collection) is list:
         for entry in collection:
             if type(entry) not in printTypes:
-                recursiveprint(entry, output, level + 1)
+                recursiveprint(entry, output, localText, level + 1)
                 
             else:
+                try: entry = localText[entry]
+                except: pass
+                
                 print(f"{indents}{entry}")
                 output.write(f"{indents}{entry}\n")
 
@@ -23,8 +26,11 @@ def recursiveprint(collection, output, level = 0):
             if type(entry) not in printTypes:
                 print(f"{indents}{name}\n")
                 output.write(f"\n{indents}{name}\n")
-                recursiveprint(entry, output, level + 1)
+                recursiveprint(entry, output, localText, level + 1)
             else:
+                try: entry = localText[entry]
+                except: pass
+
                 print(f"{indents}{name} : {entry}")
                 output.write(f"{indents}{name} : {entry}\n")
 
@@ -38,15 +44,10 @@ def getSinsData(race, type, output = False, file = "F:\\SteamLibrary\\steamapps\
         with open(f"{race}{type}Text.txt", "w") as output:
             output.write("Sins of a Solar Empire 2 Unit Characteristics\n")
 
-            
-
             for unitfile in unitfilelist:
                 with open(unitfile) as unitJSON:
                     d = json.load(unitJSON)
                 
-            
-
-
                 print(unitfile.split("\\")[-1])
                 output.write(unitfile.split("\\")[-1] + "\n")
                 recursiveprint(d, output, 1)
@@ -173,10 +174,10 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
 
             #Ship Carrier Block
             try: 
-                carrier = unitDict["carrier"]["base_max_squadron_capacity"]
+                carrier = unitDict['carrier']['base_max_squadron_capacity']
                 try: 
-                    carrier = (f"{int(carrier + unitDict["levels"]["levels"][0]["unit_modifiers"]["additive_values"]["max_squadron_capacity"])} - "
-                    + f"{int(carrier + unitDict["levels"]["levels"][9]["unit_modifiers"]["additive_values"]["max_squadron_capacity"])}")
+                    carrier = (f"{int(carrier + unitDict['levels']['levels'][0]['unit_modifiers']['additive_values']['max_squadron_capacity'])} - "
+                    + f"{int(carrier + unitDict['levels']['levels'][9]['unit_modifiers']['additive_values']['max_squadron_capacity'])}")
                 except: pass
             except: carrier = False
 

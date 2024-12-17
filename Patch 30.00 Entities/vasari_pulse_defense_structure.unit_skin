@@ -1,0 +1,183 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 21638.277174,
+        "min_camera_distance": 1072.973441,
+        "gui":
+        {
+            "hud_icon": "vasari_pulse_defense_structure_hud_icon",
+            "hud_monochrome_icon": "vasari_pulse_defense_structure_main_view_icon",
+            "hud_picture": "vasari_pulse_defense_structure_hud_picture",
+            "tooltip_picture": "vasari_pulse_defense_structure_tooltip_picture",
+            "name": "vasari_pulse_defense_structure_name",
+            "description": "vasari_pulse_defense_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "vasari_pulse_defense_structure",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "vasari_pulse_defense_structure_pdpulse_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "vasari_pulse_defense_structure_pdpulse_barrel_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "vasari_pulse_defense_structure_main_view_icon",
+            "selected_icon": "vasari_pulse_defense_structure_main_view_icon_selected",
+            "sub_selected_icon": "vasari_pulse_defense_structure_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 10,
+                "damage_effects": [
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_clouds"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_plasma_sparks"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_1"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_3"
+                },
+                {
+                    "max_count": 3,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.42,
+                    "particle_effect": "vasari_damage_escaping_gas",
+                    "sound": "ambient_loop_tech_escaping_gas"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity",
+                    "sound": "ambient_loop_electrical_damage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.38,
+                    "particle_effect": "vasari_damage_embers"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 6.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "vasari_damage_fire",
+                    "sound": "ambient_loop_firedamage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.3,
+                    "particle_effect": "vasari_damage_fire_pillar",
+                    "sound": "ambient_loop_firepillar_damage"
+                }]
+            },
+            "effect_alias_bindings": [
+            {
+                "alias_name": "weapon_heavy_pulse_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "pulse_gun_impact_m",
+                    "sounds": [
+                        "weapon_impact_energy_medium_hithull",
+                        "weapon_impact_energy_medium_hithull_01",
+                        "weapon_impact_energy_medium_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "weapon_heavy_pulse_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "pulse_gun_impact_m",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "weapon_heavy_pulse_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "pulse_gun_muzzle_m",
+                    "sounds": [
+                        "weapon_muzzle_phase_medium_pulsegun",
+                        "weapon_muzzle_phase_medium_pulsegun_01",
+                        "weapon_muzzle_phase_medium_pulsegun_02",
+                        "weapon_muzzle_phase_medium_pulsegun_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "weapon_heavy_pulse_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "pulse_gun_travel_m"
+                }
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "planetmodule_phaseorbitalnanoweaponjammer_onselection_0"
+                    ],
+                    "scared": [
+                        "planetmodule_phaseorbitalnanoweaponjammer_onselection_0"]
+                }
+            }
+        },
+        "death_sequence_group": "vasari_planetmodulesmall"
+    }]
+}

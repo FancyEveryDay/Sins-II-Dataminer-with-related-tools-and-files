@@ -2,7 +2,7 @@ from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries
 import json, glob
 
 
-def recursiveprint(collection, output, level = 0):
+def recursiveprint(collection, output, localText = {}, level = 0):
     printTypes = [str, int, float]
 
     indents = "\t" * level
@@ -11,9 +11,12 @@ def recursiveprint(collection, output, level = 0):
         
         for entry in collection:
             if type(entry) not in printTypes:
-                recursiveprint(entry, output, level + 1)
+                recursiveprint(entry, output, localText, level + 1)
                 
             else:
+                try: entry = localText[entry]
+                except: pass
+            
                 print(f"{indents}{entry}")
 
                 if level == 0:
@@ -31,8 +34,11 @@ def recursiveprint(collection, output, level = 0):
                 if level == 0:
                     output.write(f"\n")
                 output.write(f"{indents}{name}\n")
-                recursiveprint(entry, output, level + 1)
+                recursiveprint(entry, output, localText, level + 1)
             else:
+                try: entry = localText[entry]
+                except: pass
+            
                 if level == 0:
                     output.write(f"\n")
 
@@ -113,7 +119,16 @@ def getSinsDataDict(race, type, file = "F:\\SteamLibrary\\steamapps\\common\\Sin
 
 if __name__ == "__main__":
 
-    filelist = glob.glob(f"F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities\\*")
+    gameEntitiesLocation = f"F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities"
+    gameLocalizedText = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\localized_text\\en.localized_text"
+
+    newPatchNumber = input("New Patch Number [format 1.28.16]:  ")
+    pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
+
+    newPatchNumber = newPatchNumber.replace(".","-")
+    pastPatchNumber = pastPatchNumber.replace(".","-")
+
+    filelist = glob.glob(gameEntitiesLocation + f"\\*")
     objectTypes = []
     for f in filelist:
         objectType = f.split(".")[-1]
@@ -123,29 +138,29 @@ if __name__ == "__main__":
     print(objectTypes)
 
 
-    with open("F:\SteamLibrary\steamapps\common\Sins2\localized_text\en.localized_text") as t:
+    with open(gameLocalizedText) as t:
         inGameText = json.load(t)
 
-    with open("1-30-00_changes.txt", 'w') as file:
+    with open(newPatchNumber + "_changes.txt", 'w') as file:
         pass
 
-    raceList = ["advent", "trader", "vasari"]
+    raceList = ["advent", "trader", "vasari"] # Add Minor races and general changes
 
     weaponDict = getSinsDataDict("",".weapon")
-    oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch 28.16 Entities")
+    oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
     
 
     for race in raceList:
-        with open("1-30-00_changes.txt", 'a') as file:
+        with open(newPatchNumber + "_changes.txt", 'a') as file:
             if race == "trader":
-                file.write(f"\n\n# {"TEC"} Changes\n")
+                file.write(f"\n\n# {'TEC'} Changes\n")
             else: file.write(f"\n\n# {race.capitalize()} Changes\n")
 
         ChangesList = []
         for obtype in objectTypes:
 
             shipDict = getSinsDataDict(race,f"{obtype}")
-            oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch 28.16 Entities")
+            oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
 
 
             unitChanges = compareShipDicts(shipDict, oldShipDict)
@@ -154,19 +169,26 @@ if __name__ == "__main__":
 
             for name, content in unitChanges.items():
                 namefound = False
+                new = False
+                if "[NEW] " in name:
+                    name = name.strip("[NEW] ")
+                    new = True
+
                 for fileSuffix in ["_name", "_ability_name", "_unit_item_name"]:
                     try:
-                        unitChanges2[inGameText[name+fileSuffix]] = content
+                        name = inGameText[name+fileSuffix]
                         namefound = True
                     except:
                         continue
 
-                if namefound == False:
-                    unitChanges2[name] = content
+                if new == True:
+                    name = "[NEW] " + name
+                
+                unitChanges2[name] = content
 
             ChangesList.append(unitChanges2)
             
-        with open("1-30-00_changes.txt", 'a') as file:
+        with open(newPatchNumber + "_changes.txt", 'a') as file:
 
             for i, changes in enumerate(ChangesList):
                 listList = []
@@ -189,4 +211,4 @@ if __name__ == "__main__":
                     for j in listList:
                         if j[1] != False:
                             file.write(f"\n**{j[0]}**\n")
-                            recursiveprint(j[1], file, 1)
+                            recursiveprint(j[1], file, inGameText, 1)

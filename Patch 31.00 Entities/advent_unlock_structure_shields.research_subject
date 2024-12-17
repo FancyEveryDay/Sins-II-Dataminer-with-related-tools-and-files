@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_energy",
+    "field_coord": [7, 1],
+    "research_time": 450.0,
+    "price":
+    {
+        "credits": 1650.0,
+        "metal": 475.0,
+        "crystal": 825.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_shield_points_2"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"]
+        },
+        "action_data_source": "advent_unlock_structure_shields",
+        "buff": "advent_unlock_structure_shields",
+        "tooltip_lines": [
+        {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "advent_unlock_structure_shields_max_shields_modifier"
+        }]
+    }],
+    "name": "advent_unlock_structure_shields_research_subject_name",
+    "name_uppercase": "advent_unlock_structure_shields_research_subject_name_uppercase",
+    "description": "advent_unlock_structure_shields_research_subject_description",
+    "hud_icon": "advent_unlock_structure_shields_research_subject_hud_icon"
+}

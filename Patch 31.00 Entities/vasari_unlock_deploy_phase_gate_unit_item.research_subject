@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_phase_mastery",
+    "field_coord": [8, 1],
+    "research_time": 540.0,
+    "price":
+    {
+        "metal": 840.0,
+        "crystal": 1260.0,
+        "credits": 0.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["vasari_unlock_phase_gate_structure"]
+    ],
+    "name": "vasari_unlock_deploy_phase_gate_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_deploy_phase_gate_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_deploy_phase_gate_unit_item_hud_icon"
+}

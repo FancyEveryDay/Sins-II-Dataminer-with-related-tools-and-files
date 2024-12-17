@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "is_artifact": true,
+    "is_finite": true,
+    "max_count_on_unit": 1,
+    "build_group_id": "utility",
+    "hud_icon": "research_archive_planet_artifact_hud_icon",
+    "tooltip_icon": "research_archive_planet_artifact_hud_icon",
+    "tooltip_picture": "research_archive_planet_artifact_tooltip_picture",
+    "name": "planet_artifact.research_archive.name",
+    "description": "planet_artifact.research_archive.desc",
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "ice",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic"
+        ]
+    }],
+    "player_modifiers":
+    {
+        "empire_modifiers": [
+        {
+            "value_behavior": "scalar",
+            "modifier_type": "civilian_research_rate",
+            "value": 1.5
+        },
+        {
+            "value_behavior": "scalar",
+            "modifier_type": "military_research_rate",
+            "value": 1.5
+        }]
+    }
+}

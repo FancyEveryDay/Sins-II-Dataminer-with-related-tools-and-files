@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "targeting_ui": "send_pirate_raid",
+    "gui":
+    {
+        "hud_icon": "pirate_looting_crew_hud_icon",
+        "name": "npc_reward.pirate_looting_crew_name",
+        "description": "npc_reward.pirate_looting_crew_description"
+    },
+    "type": "ship_component",
+    "item": "pirate_looting_crew"
+}

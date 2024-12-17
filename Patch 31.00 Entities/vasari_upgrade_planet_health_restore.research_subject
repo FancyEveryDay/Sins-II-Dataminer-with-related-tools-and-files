@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_nanotech",
+    "field_coord": [7, 7],
+    "research_time": 450.0,
+    "price":
+    {
+        "metal": 615.0,
+        "crystal": 870.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_planet_bombing_damage_reduction"]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "health_points_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.96
+    }],
+    "name": "vasari_upgrade_planet_health_restore_research_subject_name",
+    "name_uppercase": "vasari_upgrade_planet_health_restore_research_subject_name_uppercase",
+    "description": "vasari_upgrade_planet_health_restore_research_subject_description",
+    "hud_icon": "vasari_upgrade_planet_health_restore_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_planet_health_restore_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense"]
+}

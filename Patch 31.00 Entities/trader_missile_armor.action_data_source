@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "damage_prevented_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [0.35]
+        }
+    },
+    {
+        "action_value_id": "armor_bonus_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "armor_bonus_value",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "value_id": "armor_bonus_value"
+        }
+    }]
+}

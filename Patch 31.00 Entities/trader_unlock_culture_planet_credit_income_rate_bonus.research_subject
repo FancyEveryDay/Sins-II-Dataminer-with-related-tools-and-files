@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_policy",
+    "field_coord": [5, 5],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 1300.0,
+        "metal": 275.0,
+        "crystal": 375.0
+    },
+    "prerequisites": [
+        ["trader_culture_rate_0"]
+    ],
+    "name": "trader_unlock_culture_planet_credit_income_rate_bonus_research_subject_name",
+    "name_uppercase": "trader_unlock_culture_planet_credit_income_rate_bonus_research_subject_name_uppercase",
+    "description": "trader_unlock_culture_planet_credit_income_rate_bonus_research_subject_description",
+    "hud_icon": "trader_unlock_culture_planet_credit_income_rate_bonus_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_culture_planet_credit_income_rate_bonus_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_culture"]
+}

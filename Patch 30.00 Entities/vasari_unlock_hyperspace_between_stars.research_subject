@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_phase_mastery",
+    "field_coord": [2, 1],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 0.0,
+        "metal": 180.0,
+        "crystal": 240.0
+    },
+    "name": "vasari_unlock_hyperspace_between_stars_research_subject_name",
+    "name_uppercase": "vasari_unlock_hyperspace_between_stars_research_subject_name_uppercase",
+    "description": "vasari_unlock_hyperspace_between_stars_research_subject_description",
+    "hud_icon": "vasari_unlock_hyperspace_between_stars_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_hyperspace_between_stars_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_star",
+        "research_text_filter_jump",
+        "research_text_filter_hyperspace",
+        "research_text_filter_interstar",
+        "research_text_filter_phase"]
+}

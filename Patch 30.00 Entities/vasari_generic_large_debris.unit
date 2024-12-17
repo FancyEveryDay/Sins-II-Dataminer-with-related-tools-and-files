@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 48.515575,
+        "box":
+        {
+            "center": [0.989969, -1.408194, -4.482468],
+            "extents": [23.630238, 6.626311, 39.232006]
+        },
+        "can_collide": false
+    },
+    "physics":
+    {
+        "can_move_linear": true,
+        "max_linear_speed": 500.0,
+        "time_to_max_linear_speed": 25.0,
+        "can_move_angular": true
+    },
+    "debris":
+    {
+        "lifetime": [240.0, 360.0],
+        "linear_speed": [10.0, 40.0],
+        "angular_speed": [0.1, 0.6]
+    },
+    "target_filter_unit_type": "debris",
+    "skin_groups": [
+    {
+        "skins": [
+            "vasari_generic_large_debris_0",
+            "vasari_generic_large_debris_1",
+            "vasari_generic_large_debris_2"
+        ]
+    }],
+    "action_effect_size": "small_unit"
+}

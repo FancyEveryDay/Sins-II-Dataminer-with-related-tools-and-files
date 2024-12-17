@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_ascension",
+    "field_coord": [3, 2],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 125.0,
+        "crystal": 225.0
+    },
+    "prerequisites": [
+        ["advent_capital_ship_starting_level_0"]
+    ],
+    "name": "advent_unlock_guiding_mentor_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_guiding_mentor_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_guiding_mentor_unit_item_hud_icon",
+    "tooltip_picture": "advent_guiding_mentor_unit_item_tooltip_picture"
+}

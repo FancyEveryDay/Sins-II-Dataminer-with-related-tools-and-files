@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_industry",
+    "field_coord": [5, 7],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 1300.0,
+        "metal": 275.0,
+        "crystal": 375.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "unit_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.1,
+        "build_kinds": [
+            "corvette",
+            "frigate",
+            "cruiser"]
+    }],
+    "name": "trader_labor_negotiations_research_subject_name",
+    "name_uppercase": "trader_labor_negotiations_research_subject_name_uppercase",
+    "description": "trader_labor_negotiations_research_subject_description",
+    "hud_icon": "trader_labor_negotiations_research_subject_hud_icon",
+    "tooltip_picture": "trader_labor_negotiations_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_corvette",
+        "research_text_filter_frigate",
+        "research_text_filter_cruiser"
+    ]
+}

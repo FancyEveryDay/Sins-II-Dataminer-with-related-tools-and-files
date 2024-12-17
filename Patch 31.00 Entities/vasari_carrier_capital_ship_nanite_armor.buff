@@ -1,0 +1,105 @@
+{
+    "version": 0,
+    "active_duration": "nanite_armor_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "armor_bonus",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "nanite_armor_per_interval_armor_value"
+                },
+                {
+                    "operator_type": "multiply",
+                    "operand_value": "nanite_armor_execution_interval_count_value"
+                },
+                {
+                    "operator_type": "add",
+                    "operand_value": "nanite_armor_base_armor_value"
+                }]
+            }]
+        }
+    },
+    {
+        "first_action_delay_time_value": "nanite_armor_execution_interval_value",
+        "execution_interval_value": "nanite_armor_execution_interval_value",
+        "execution_interval_count_value": "nanite_armor_execution_interval_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "armor_bonus",
+                "math_operators": [
+                {
+                    "operator_type": "subtract",
+                    "operand_value": "nanite_armor_per_interval_armor_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "vasari_carrier_capital_ship_nanite_armor_buff_small",
+                        "medium_unit": "vasari_carrier_capital_ship_nanite_armor_buff_medium",
+                        "large_unit": "vasari_carrier_capital_ship_nanite_armor_buff_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_player_ownership_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "nanite_armor_strength_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_carrier_capital_ship_nanite_armor_ability_hud_icon",
+        "name": "vasari_carrier_capital_ship_nanite_armor_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "nanite_armor_strength_modifier",
+                "is_resolved_value": true
+            }]
+        }]
+    }
+}

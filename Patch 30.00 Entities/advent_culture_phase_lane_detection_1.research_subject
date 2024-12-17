@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_evangelism",
+    "field_coord": [6, 5],
+    "research_time": 375.0,
+    "price":
+    {
+        "credits": 1500.0,
+        "metal": 425.0,
+        "crystal": 775.0
+    },
+    "prerequisites": [
+        ["advent_culture_phase_lane_detection_0"]
+    ],
+    "name": "advent_culture_phase_lane_detection_1_research_subject_name",
+    "name_uppercase": "advent_culture_phase_lane_detection_1_research_subject_name_uppercase",
+    "description": "advent_culture_phase_lane_detection_1_research_subject_description",
+    "hud_icon": "advent_culture_phase_lane_detection_1_research_subject_hud_icon",
+    "tooltip_picture": "advent_culture_phase_lane_detection_1_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_detection"
+    ]
+}

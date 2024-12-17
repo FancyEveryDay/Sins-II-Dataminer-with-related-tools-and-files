@@ -1,0 +1,48 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_mobilization",
+    "field_coord": [3, 4],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 175.0
+    },
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_structure_with_slot_type",
+                "slot_type": "military"
+            }]
+        },
+        "action_data_source": "trader_defense_structure_culture_resistance_research_subject",
+        "buff": "trader_defense_structure_culture_resistance_research_subject",
+        "tooltip_sub_header_label": "military_structures_research_subject_sub_header_label",
+        "tooltip_lines": [
+        {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "trader_defense_structure_culture_resistance_modifier"
+        }]
+    }],
+    "name": "trader_defense_structure_culture_resistance_research_subject_name",
+    "name_uppercase": "trader_defense_structure_culture_resistance_research_subject_name_uppercase",
+    "description": "trader_defense_structure_culture_resistance_research_subject_description",
+    "hud_icon": "trader_defense_structure_culture_resistance_research_subject_hud_icon",
+    "tooltip_picture": "trader_defense_structure_culture_resistance_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_culture",
+        "research_text_filter_resistance"]
+}

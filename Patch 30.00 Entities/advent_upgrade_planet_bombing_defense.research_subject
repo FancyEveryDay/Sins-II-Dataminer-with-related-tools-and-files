@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_protection",
+    "field_coord": [4, 4],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_hull_points_0"]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "bombing_damage_taken",
+        "value_behavior": "scalar",
+        "value": -0.15
+    }],
+    "name": "advent_upgrade_planet_bombing_defense_research_subject_name",
+    "name_uppercase": "advent_upgrade_planet_bombing_defense_research_subject_name_uppercase",
+    "description": "advent_upgrade_planet_bombing_defense_research_subject_description",
+    "hud_icon": "advent_upgrade_planet_bombing_defense_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_planet_bombing_defense_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense"
+    ]
+}

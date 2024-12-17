@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_remnants",
+    "field_coord": [8, 8],
+    "research_time": 540.0,
+    "price":
+    {
+        "metal": 840.0,
+        "crystal": 1260.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_loyalist_titan"]
+    ],
+    "name": "vasari_unlock_loyalist_titan_ruler_ship_research_subject_name",
+    "name_uppercase": "vasari_unlock_loyalist_titan_ruler_ship_research_subject_name_uppercase",
+    "description": "vasari_unlock_loyalist_titan_ruler_ship_research_subject_description",
+    "hud_icon": "vasari_unlock_loyalist_titan_ruler_ship_research_subject_hud_icon"
+}

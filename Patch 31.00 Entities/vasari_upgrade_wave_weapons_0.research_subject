@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_assault",
+    "field_coord": [2, 1],
+    "research_time": 135.0,
+    "price":
+    {
+        "metal": 180.0,
+        "crystal": 240.0,
+        "credits": 0.0
+    },
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.12,
+        "tags": [
+            "wave"]
+    }],
+    "name": "vasari_upgrade_wave_weapons_0_research_subject_name",
+    "name_uppercase": "vasari_upgrade_wave_weapons_0_research_subject_name_uppercase",
+    "description": "vasari_upgrade_wave_weapons_0_research_subject_description",
+    "hud_icon": "vasari_upgrade_wave_weapons_0_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_wave_weapons_0_research_subject_tooltip_picture"
+}

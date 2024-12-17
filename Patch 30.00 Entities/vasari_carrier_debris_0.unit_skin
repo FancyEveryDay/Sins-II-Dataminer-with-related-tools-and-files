@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 90351.407667,
+        "min_camera_distance": 699.250469,
+        "unit_mesh":
+        {
+            "mesh": "debrisphasecapitalshipcarrier",
+            "is_shadow_blocker": true
+        }
+    }]
+}

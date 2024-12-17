@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_annexation",
+    "field_coord": [3, 8],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 175.0
+    },
+    "name": "trader_unlock_command_bunker_unit_item_research_subject_name",
+    "name_uppercase": "trader_unlock_command_bunker_unit_item_research_subject_name_uppercase",
+    "hud_icon": "trader_unlock_command_bunker_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_command_bunker_unit_item_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense"
+    ]
+}

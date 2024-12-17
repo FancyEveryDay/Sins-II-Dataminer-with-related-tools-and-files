@@ -1,0 +1,16 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_fabricator_cruiser_retrofit",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["vasari_unlock_fabricator_cruiser_ship_component_shop"]
+        ]
+    ],
+    "gui":
+    {
+        "hud_icon": "vasari_fabricator_cruiser_retrofit_ability_hud_icon",
+        "name": "vasari_fabricator_cruiser_retrofit_ability_name",
+        "description": "vasari_fabricator_cruiser_retrofit_ability_description"
+    }
+}

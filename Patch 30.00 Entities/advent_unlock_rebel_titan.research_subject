@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_ascension",
+    "field_coord": [7, 1],
+    "research_time": 450.0,
+    "price":
+    {
+        "credits": 1650.0,
+        "metal": 475.0,
+        "crystal": 825.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "name": "advent_unlock_rebel_titan_research_subject_name",
+    "name_uppercase": "advent_unlock_rebel_titan_research_subject_name_uppercase",
+    "hud_icon": "advent_rebel_titan_hud_icon",
+    "tooltip_picture": "advent_rebel_titan_tooltip_picture"
+}

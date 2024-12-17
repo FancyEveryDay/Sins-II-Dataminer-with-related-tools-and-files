@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_factory_retrofit",
+    "gui":
+    {
+        "hud_icon": "vasari_factory_retrofit_ability_hud_icon",
+        "name": "vasari_factory_retrofit_ability_name",
+        "description": "vasari_factory_retrofit_ability_description"
+    }
+}
