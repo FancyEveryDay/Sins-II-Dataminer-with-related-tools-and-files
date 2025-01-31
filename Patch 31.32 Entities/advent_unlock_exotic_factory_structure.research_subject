@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_material",
+    "field_coord": [4, 5],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "name": "advent_unlock_exotic_factory_structure_research_subject_name",
+    "name_uppercase": "advent_unlock_exotic_factory_structure_research_subject_name_uppercase",
+    "hud_icon": "advent_exotic_factory_structure_hud_icon",
+    "tooltip_picture": "advent_exotic_factory_structure_tooltip_picture"
+}

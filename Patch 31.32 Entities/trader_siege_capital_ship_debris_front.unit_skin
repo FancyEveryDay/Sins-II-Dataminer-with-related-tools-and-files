@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 29392.671738,
+        "min_camera_distance": 294.293304,
+        "unit_mesh":
+        {
+            "mesh": "trader_siege_capital_ship_debris_front",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "trader_siege_debris_damage"
+            }]
+        }
+    }]
+}

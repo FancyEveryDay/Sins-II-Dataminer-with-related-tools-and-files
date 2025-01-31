@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_ascension",
+    "field_coord": [3, 3],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 125.0,
+        "crystal": 225.0
+    },
+    "name": "advent_unlock_guardian_cruiser_research_subject_name",
+    "name_uppercase": "advent_unlock_guardian_cruiser_research_subject_name_uppercase",
+    "description": "advent_unlock_guardian_cruiser_research_subject_description",
+    "hud_icon": "advent_guardian_cruiser_hud_icon",
+    "tooltip_picture": "advent_guardian_cruiser_tooltip_picture"
+}

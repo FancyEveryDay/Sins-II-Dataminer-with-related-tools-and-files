@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_engineering",
+    "field_coord": [2, 1],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["trader_hull_damage_reduction_0",
+        "trader_max_hull_points_0"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_structure_with_slot_type",
+                "slot_type": "military"
+            }]
+        },
+        "action_data_source": "trader_structure_hull_research_subject",
+        "buff": "trader_structure_hull_research_subject",
+        "tooltip_sub_header_label": "military_structures_research_subject_sub_header_label",
+        "tooltip_lines": [
+        {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "structure_hull_max_hull_points_modifier"
+        },
+        {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "structure_hull_max_armor_points_modifier"
+        }]
+    }],
+    "name": "trader_structure_hull_research_subject_name",
+    "name_uppercase": "trader_structure_hull_research_subject_name_uppercase",
+    "description": "trader_structure_hull_research_subject_description",
+    "hud_icon": "trader_structure_hull_research_subject_hud_icon",
+    "tooltip_picture": "trader_structure_hull_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_armor",
+        "research_text_filter_faction",
+        "research_text_filter_hull",
+        "research_text_filter_loyalist"
+    ]
+}

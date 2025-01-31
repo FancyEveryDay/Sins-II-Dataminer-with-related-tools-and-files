@@ -57,6 +57,14 @@ def compareShipDicts(newDict : dict, oldDict : dict):
             changesDict["[NEW] " + i] = j
         print()
 
+    for i, j in oldDict.items():
+        print(i)
+        try:
+            recursiveCompare(j, newDict[i])
+        except:
+            changesDict["[REMOVED] " + i] = j
+        print()
+
     return changesDict
 
 def recursiveCompare(obj1, obj2, level = 1):

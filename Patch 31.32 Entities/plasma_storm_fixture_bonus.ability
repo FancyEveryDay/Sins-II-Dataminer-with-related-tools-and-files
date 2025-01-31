@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_data_source": "plasma_storm_fixture_bonus",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "plasma_storm_fixture_bonus_on_spawner"
+    },
+    "gui":
+    {}
+}

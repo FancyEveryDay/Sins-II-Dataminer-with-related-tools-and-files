@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "armistice_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "strikecraft",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "armistice_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [150.0]
+        }
+    },
+    {
+        "action_value_id": "armistice_cooldown_time_value",
+        "action_value":
+        {
+            "values": [180.0]
+        }
+    },
+    {
+        "action_value_id": "armistice_duration_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "armistice_radius_value",
+        "action_value":
+        {
+            "values": [18000.0]
+        }
+    }]
+}

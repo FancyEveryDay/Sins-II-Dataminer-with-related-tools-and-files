@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "planetary_shield_array_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }]
+}

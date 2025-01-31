@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "action_data_source": "magnetic_cloud_fixture_bonus",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "magnetic_cloud_fixture_bonus_on_spawner"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "magnetic_cloud_max_linear_acceleration_modifier"
+            }]
+        }]
+    }
+}

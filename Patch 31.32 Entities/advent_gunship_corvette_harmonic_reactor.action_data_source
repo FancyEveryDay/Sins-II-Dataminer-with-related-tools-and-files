@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "harmonic_reactor_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "harmonic_reactor_antimatter_restore_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.33]
+        }
+    }]
+}

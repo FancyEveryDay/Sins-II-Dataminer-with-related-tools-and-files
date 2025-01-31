@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "combat_repair_system_active_hull_restore_rate_value",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "combat_repair_system_cooldown_time_value",
+        "action_value":
+        {
+            "values": [180.0]
+        }
+    },
+    {
+        "action_value_id": "combat_repair_system_duration_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "trader_combat_repair_system_buff_active",
+        "alias_binding":
+        {
+            "particle_effect": "combat_repair",
+            "sounds": [
+                "trader_combat_repair_system_unit_item_buff"]
+        }
+    }]
+}
