@@ -1,0 +1,41 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "advent_starbase_culture_unit_item_hud_icon",
+    "tooltip_icon": "advent_starbase_culture_unit_item_hud_icon",
+    "tooltip_picture": "advent_starbase_culture_unit_item_tooltip_picture",
+    "name": "advent_starbase_culture_unit_item_name",
+    "description": "advent_starbase_culture_unit_item_description",
+    "item_level_count": 2,
+    "item_level_source": "research_prerequisites_per_level",
+    "item_level_prerequisites": [
+        [
+            ["advent_upgrade_starbase_culture_unit_item"]
+        ]
+    ],
+    "build_time": 90.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 350.0,
+        "crystal": 300.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "build_prerequisites": [
+        ["advent_unlock_starbase_culture_unit_item"]
+    ],
+    "build_group_id": "utility",
+    "unit_modifiers": [
+    {
+        "modifier_type": "culture_rate",
+        "value_behavior": "additive",
+        "values": [0.012, 0.024]
+    }]
+}

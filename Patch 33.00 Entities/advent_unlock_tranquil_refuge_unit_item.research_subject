@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_reclamation",
+    "field_coord": [4, 8],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "name": "advent_unlock_tranquil_refuge_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_tranquil_refuge_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_tranquil_refuge_unit_item_hud_icon",
+    "tooltip_picture": "advent_tranquil_refuge_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense"]
+}

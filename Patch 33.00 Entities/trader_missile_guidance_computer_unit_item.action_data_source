@@ -1,0 +1,46 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "missile_guidance_computer_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon",
+                "weapon_type": "normal",
+                "tag": "missile"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "missile_guidance_computer_damage_bonus_value",
+        "action_value":
+        {
+            "values": [0.1]
+        }
+    },
+    {
+        "action_value_id": "missile_guidance_computer_radius_value",
+        "action_value":
+        {
+            "values": [8000.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "missile_guidance_computer_damage_bonus_value",
+            "tags": [
+                "missile"]
+        }
+    }]
+}

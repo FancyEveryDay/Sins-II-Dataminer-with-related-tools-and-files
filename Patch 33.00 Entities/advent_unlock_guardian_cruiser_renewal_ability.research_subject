@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_ascension",
+    "field_coord": [4, 3],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 225.0,
+        "crystal": 425.0
+    },
+    "prerequisites": [
+        ["advent_unlock_guardian_cruiser"]
+    ],
+    "name": "advent_unlock_guardian_cruiser_renewal_ability_research_subject_name",
+    "name_uppercase": "advent_unlock_guardian_cruiser_renewal_ability_research_subject_name_uppercase",
+    "description": "advent_unlock_guardian_cruiser_renewal_ability_research_subject_description",
+    "hud_icon": "advent_guardian_cruiser_renewal_ability_hud_icon",
+    "tooltip_picture": "advent_guardian_cruiser_renewal_ability_tooltip_picture"
+}

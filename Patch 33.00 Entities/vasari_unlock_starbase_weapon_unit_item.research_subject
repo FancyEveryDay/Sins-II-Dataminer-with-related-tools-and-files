@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_remnants",
+    "field_coord": [6, 5],
+    "research_time": 375.0,
+    "price":
+    {
+        "metal": 570.0,
+        "crystal": 825.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_starbase",
+        "vasari_upgrade_wave_weapons_0"]
+    ],
+    "name": "vasari_unlock_starbase_weapon_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_starbase_weapon_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_starbase_unlock_extra_phase_missile_weapons_unit_item_hud_icon",
+    "tooltip_picture": "vasari_starbase_unlock_extra_phase_missile_weapons_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_starbase"]
+}

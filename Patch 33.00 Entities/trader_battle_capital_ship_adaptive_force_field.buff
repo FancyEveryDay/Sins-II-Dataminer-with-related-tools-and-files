@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "active_duration": "duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "damage_taken"
+    }],
+    "unit_mutations": [
+        "adaptive_force_field_active",
+        "disable_can_have_shields_bypassed"
+    ],
+    "gui":
+    {
+        "hud_icon": "trader_battle_capital_ship_adaptive_force_field_ability_hud_icon",
+        "name": "trader_battle_capital_ship_adaptive_force_field_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "damage_taken"
+            }]
+        }]
+    }
+}

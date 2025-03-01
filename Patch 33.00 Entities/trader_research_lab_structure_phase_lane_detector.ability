@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "action_data_source": "trader_research_lab_structure_phase_lane_detector",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["trader_unlock_phase_lane_detector"]
+        ],
+        [
+            ["trader_unlock_phase_lane_detector_extended_range"]
+        ]
+    ],
+    "passive_actions":
+    {
+        "persistant_buff": "trader_research_lab_structure_phase_lane_detector_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_research_lab_structure_phase_lane_detector_ability_hud_icon",
+        "tooltip_icon": "trader_research_lab_structure_phase_lane_detector_ability_hud_icon",
+        "name": "trader_research_lab_structure_phase_lane_detector_ability_name",
+        "description": "trader_research_lab_structure_phase_lane_detector_ability_description"
+    }
+}

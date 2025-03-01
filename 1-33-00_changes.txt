@@ -1,0 +1,243 @@
+
+
+# Advent Changes
+
+## Unit_skin Changes
+
+**Coronata Titan**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					9
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					10
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					11
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+
+**Eradica Titan**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					11
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					12
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					13
+						alias_binding
+							sounds
+								0 : weapon_muzzle_tech_planetbomb -> weapon_muzzle_psi_planetbomb
+
+**Halcyon Carrier**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					4
+						alias_binding
+							sounds
+								0 : effect_animatempest -> ability_activate_psi_anima_tempest
+					9
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					10
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					11
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+					17
+						alias_binding
+							sounds
+								0 : effect_telekineticpush -> ability_activate_psi_telekinetic_push
+
+**Progenitor Mothership**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					9
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					10
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					11
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+					26
+						alias_binding
+							sounds
+								0 : effect_shieldregeneration_loop -> ambient_loop_psi_shield_regeneration
+
+**Purge Vessel**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					1
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					2
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+
+**Radiance Battleship**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					34
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					35
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					36
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+
+**Rapture Battlecruiser**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					4
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_psionic_scream
+					5
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_impact_psi_psionic_scream
+					6
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_impact_psi_psionic_scream
+					7
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_impact_psi_psionic_scream
+					8
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_revenge_from_beyond
+					9
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_loop_psi_revenge_from_beyond
+					10
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_loop_psi_revenge_from_beyond
+					11
+						alias_binding
+							sounds
+								0 : effect_shipcripple_loop -> ability_loop_psi_revenge_from_beyond
+					16
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_impact_psi_domination
+					17
+						alias_binding
+							sounds
+								0 : effect_vengeance -> ability_activate_psi_domination
+					28
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					29
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					30
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+
+**Revelation Battlecruiser**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_binding
+							sounds
+								0 : effect_abilityguidance -> ability_activate_psi_guidance
+					9
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					10
+						alias_binding
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_impact_psi_planetbomb
+					11
+						alias_binding
+							sounds
+								0 : weapon_psi_planetbomb_muzzle -> weapon_muzzle_psi_planetbomb
+					17
+						alias_binding
+							sounds
+								0 : effect_planetmania_activated -> ability_charge_psi_provoke_hysteria
+					18
+						alias_binding
+							sounds
+								0 : effect_planetmania -> ambient_loop_psi_provoke_hysteria
+					19
+						alias_binding
+							sounds
+								0 : effect_planetmania -> ambient_loop_psi_provoke_hysteria
+					20
+						alias_binding
+							sounds
+								0 : effect_planetmania -> ambient_loop_psi_provoke_hysteria
+					21
+						alias_binding
+							sounds
+								0 : effect_planetmaniacharging -> ability_charge_psi_provoke_hysteria
+					28
+						alias_binding
+							sounds
+								0 : effect_farsight -> ambient_loop_psi_reverie
+					29
+						alias_binding
+							sounds
+								0 : effect_farsight -> ambient_loop_psi_reverie
+					30
+						alias_binding
+							sounds
+								0 : effect_farsight -> ambient_loop_psi_reverie
+
+
+# TEC Changes
+
+
+# Vasari Changes

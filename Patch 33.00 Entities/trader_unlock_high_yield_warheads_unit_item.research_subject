@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_armament",
+    "field_coord": [6, 6],
+    "research_time": 375.0,
+    "price":
+    {
+        "credits": 1900.0,
+        "metal": 425.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["trader_planet_bombing_damage_0"]
+    ],
+    "name": "trader_unlock_high_yield_warheads_unit_item_research_subject_name",
+    "name_uppercase": "trader_unlock_high_yield_warheads_unit_item_research_subject_name_uppercase",
+    "hud_icon": "trader_high_yield_warheads_unit_item_hud_icon",
+    "tooltip_picture": "trader_high_yield_warheads_unit_item_tooltip_picture"
+}

@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_nanotech",
+    "field_coord": [3, 8],
+    "research_time": 180.0,
+    "price":
+    {
+        "metal": 210.0,
+        "crystal": 270.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_exotic_factory_structure"]
+    ],
+    "name": "vasari_unlock_mobile_exotic_factory_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_mobile_exotic_factory_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_unlock_mobile_exotic_factory_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_mobile_exotic_factory_unit_item_research_subject_tooltip_picture"
+}

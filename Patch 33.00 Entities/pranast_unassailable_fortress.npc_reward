@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "pranast_unassailable_fortress_hud_icon",
+        "name": "npc_reward.pranast_unassailable_fortress.name",
+        "description": "npc_reward.pranast_unassailable_fortress.description"
+    },
+    "type": "planet_component",
+    "item": "pranast_unassailable_fortress"
+}

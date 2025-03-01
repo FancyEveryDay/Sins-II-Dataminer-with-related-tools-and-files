@@ -7,10 +7,10 @@ Iconus Guardian
 	Movespeed:	800.0
 	Acceleration:	160.0
 
-	Durability:	300.0
-	Armor Strength:	50.0
+	Durability:	200.0
+	Armor Strength:	80.0
 
-	Hull Points:	950
+	Hull Points:	750
 	Armor Points:	600
 	Shield Points:	3000
 	   Shield Burst CD: 45.0s

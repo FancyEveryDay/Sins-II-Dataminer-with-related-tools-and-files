@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_industry",
+    "field_coord": [4, 3],
+    "research_time": 240.0,
+    "price":
+    {
+        "credits": 1150.0,
+        "metal": 225.0,
+        "crystal": 325.0
+    },
+    "name": "trader_unlock_exotic_factory_structure_research_subject_name",
+    "name_uppercase": "trader_unlock_exotic_factory_structure_research_subject_name_uppercase",
+    "hud_icon": "trader_exotic_factory_structure_hud_icon",
+    "tooltip_picture": "trader_exotic_factory_structure_tooltip_picture"
+}

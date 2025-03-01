@@ -19,5 +19,5 @@ Exoria Illuminator
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy beam               	12.5 	x1    	12.5 	400   	10000
+		heavy beam               	11.2 	x1    	11.2 	400   	10000
 		medium beam              	5.0  	x2    	10.0 	400   	5000 

@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "rank_distances": [0.0, 125.0, 750.0],
+    "rank_groups": [
+    {
+        "width_scalar": 2.0,
+        "column_spacing": 50.0,
+        "row_spacing": 50.0
+    }],
+    "pattern":
+    {
+        "items": [
+        {
+            "group_index": 0,
+            "column_weight": 1.0
+        }]
+    }
+}

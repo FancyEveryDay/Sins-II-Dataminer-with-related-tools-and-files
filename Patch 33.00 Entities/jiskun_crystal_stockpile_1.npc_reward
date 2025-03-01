@@ -1,0 +1,14 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_crystal_stockpile_1_hud_icon",
+        "name": "npc_reward.jiskun_crystal_stockpile.name",
+        "description": "npc_reward.jiskun_crystal_stockpile.description"
+    },
+    "type": "assets",
+    "assets":
+    {
+        "crystal": 1500.0
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "ice_field_fixture_bonus_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_move"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "ice_field_damage_propagation_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.5]
+        }
+    }]
+}

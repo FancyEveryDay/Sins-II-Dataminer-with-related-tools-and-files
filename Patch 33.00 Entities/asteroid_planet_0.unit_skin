@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "planet"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 807885.966608,
+        "min_camera_distance": 6729.231712,
+        "gui":
+        {
+            "hud_icon": "asteroid_planet_0_hud_icon",
+            "hud_picture": "asteroid_planet_hud_picture",
+            "tooltip_icon": "asteroid_planet_0_tooltip_icon",
+            "name": "asteroid_planet_name",
+            "description": ""
+        },
+        "planet_mesh":
+        {
+            "mesh": "planet_asteroid",
+            "city":
+            {
+                "shader": "planet_city",
+                "city_material": "planet_asteroid_city"
+            }
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "asteroid_planet_0_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "effect_alias_bindings": [
+            {
+                "alias_name": "destroy_planet",
+                "alias_binding":
+                {
+                    "particle_effect": "asteroid_explosion",
+                    "sounds": [
+                        "effect_strippedtothecore"]
+                }
+            }]
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "00ffcccc",
+            "intensity": 0.37
+        },
+        "use_mesh_bounding_sphere_for_hit_effects": false
+    }],
+    "gravity_well_props": [
+        "dense_asteroids",
+        "sparse_clouds"]
+}

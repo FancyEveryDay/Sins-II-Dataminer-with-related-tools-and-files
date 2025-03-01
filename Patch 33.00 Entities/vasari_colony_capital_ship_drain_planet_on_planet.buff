@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "drain_planet_execution_interval_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "bomb_planet",
+                    "damage_source": "ability",
+                    "bombing_damage_value": "drain_planet_bombing_damage_value"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "give_assets",
+                    "asset_type": "metal",
+                    "asset_value": "drain_planet_metal_value"
+                },
+                {
+                    "operator_type": "give_assets",
+                    "asset_type": "crystal",
+                    "asset_value": "drain_planet_crystal_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_player_ownership_changed",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "drain_planet_target_filter"
+                }
+            },
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

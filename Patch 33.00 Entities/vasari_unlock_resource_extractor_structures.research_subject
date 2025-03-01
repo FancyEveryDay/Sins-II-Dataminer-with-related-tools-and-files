@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_nanotech",
+    "field_coord": [1, 0],
+    "research_time": 90.0,
+    "price":
+    {
+        "metal": 90.0,
+        "crystal": 120.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_resource_extractor_structures_research_subject_name",
+    "name_uppercase": "vasari_unlock_resource_extractor_structures_research_subject_name_uppercase",
+    "description": "vasari_unlock_resource_extractor_structures_research_subject_description",
+    "hud_icon": "vasari_metal_extractor_structure_hud_icon",
+    "tooltip_picture": "vasari_metal_extractor_structure_tooltip_picture"
+}

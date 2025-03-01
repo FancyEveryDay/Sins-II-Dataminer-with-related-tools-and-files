@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "trader_asteroid_military_research_lab_unit_item_hud_icon",
+    "tooltip_icon": "trader_asteroid_military_research_lab_unit_item_hud_icon",
+    "tooltip_picture": "trader_asteroid_military_research_lab_unit_item_tooltip_picture",
+    "name": "trader_asteroid_military_research_lab_unit_item_name",
+    "description": "trader_asteroid_military_research_lab_unit_item_description",
+    "build_time": 90.0,
+    "price":
+    {
+        "credits": 500.0,
+        "metal": 50.0,
+        "crystal": 125.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "gas_giant",
+            "ice_asteroid",
+            "moon",
+            "pirate_base",
+            "ship_graveyard"]
+    }],
+    "other_item_requirements":
+    {
+        "mutually_exclusive_items": [
+            "trader_asteroid_civilian_research_lab"]
+    },
+    "planet_modifiers": [
+    {
+        "modifier_type": "military_research_points",
+        "value_behavior": "additive",
+        "values": [1.0]
+    }]
+}

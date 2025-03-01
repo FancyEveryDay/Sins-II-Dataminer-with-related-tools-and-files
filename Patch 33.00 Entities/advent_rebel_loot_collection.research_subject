@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_protection",
+    "field_coord": [0, 3],
+    "research_time": 60.0,
+    "price":
+    {
+        "credits": 200.0,
+        "metal": 25.0,
+        "crystal": 75.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "loot_collection_duration",
+        "value_behavior": "scalar",
+        "value": -2.0
+    }],
+    "name": "advent_rebel_loot_collection_research_subject_name",
+    "name_uppercase": "advent_rebel_loot_collection_research_subject_name_uppercase",
+    "description": "advent_rebel_loot_collection_research_subject_description",
+    "hud_icon": "advent_rebel_loot_collection_research_subject_hud_icon",
+    "tooltip_picture": "advent_rebel_loot_collection_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_loot"]
+}
