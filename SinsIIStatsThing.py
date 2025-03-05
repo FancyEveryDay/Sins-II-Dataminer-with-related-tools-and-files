@@ -14,7 +14,7 @@ def recursiveprint(collection, output, localText = {}, level = 0):
                 
             else:
                 try: entry = localText[entry]
-                except: pass
+                except KeyError: pass
                 
                 print(f"{indents}{entry}")
                 output.write(f"{indents}{entry}\n")
@@ -29,7 +29,7 @@ def recursiveprint(collection, output, localText = {}, level = 0):
                 recursiveprint(entry, output, localText, level + 1)
             else:
                 try: entry = localText[entry]
-                except: pass
+                except KeyError: pass
 
                 print(f"{indents}{name} : {entry}")
                 output.write(f"{indents}{name} : {entry}\n")
@@ -71,10 +71,10 @@ def createWeaponDict(WeaponList):
         weaponStats = weapon[1]
         try:
             weaponStats["dps"] = weaponStats["damage"] / weaponStats["cooldown_duration"]
-        except: 
+        except KeyError:
             try:
                 weaponStats["dps"] = weaponStats["bombing_damage"] / weaponStats["cooldown_duration"]
-            except:
+            except KeyError:
                 pass
 
         WeaponsDict[indexName] = weaponStats
@@ -92,74 +92,74 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
         if filter in unitDict:
 
             try: outputName = inGameText[unitName + "_name"]
-            except: outputName = unitName
+            except KeyError: outputName = unitName
 
             #Ship Cost Block
 
             #print("\tResource Cost")
 
             try: unitBuildTime = unitDict["build"]["build_time"]
-            except: unitBuildTime = ""
+            except KeyError: unitBuildTime = ""
 
             try: unitCreditCost = unitDict["build"]["price"]["credits"]
-            except: unitCreditCost = ""
+            except KeyError: unitCreditCost = ""
 
             try: unitMetalCost = unitDict["build"]["price"]["metal"]
-            except: unitMetalCost = ""
+            except KeyError: unitMetalCost = ""
 
             try: unitCrystalCost = unitDict["build"]["price"]["crystal"]
-            except: unitCrystalCost = ""
+            except KeyError: unitCrystalCost = ""
 
             try: unitSupply = unitDict["build"]["supply_cost"]
-            except: unitSupply = ""
+            except KeyError: unitSupply = ""
 
             #Ship Durability Block
             try: unitMoveSpeed = unitDict["physics"]["max_linear_speed"]
-            except: unitMoveSpeed = ""
+            except KeyError: unitMoveSpeed = ""
 
             try: unitAcceleration = unitMoveSpeed / unitDict["physics"]["time_to_max_linear_speed"]
-            except: unitAcceleration = ""
+            except KeyError: unitAcceleration = ""
 
             try: unitDurability = unitDict["health"]["durability"]
-            except: unitDurability = ""
+            except KeyError: unitDurability = ""
  
             try: unitArmorStrength = unitDict["health"]["levels"][0]["armor_strength"]   
-            except: unitArmorStrength = ""
+            except KeyError: unitArmorStrength = ""
 
             try:
                 startingHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
                 endingHP = int( unitDict["health"]["levels"][9]["max_hull_points"])
                 unitHP = f"{startingHP} - {endingHP}"
-            except:
+            except KeyError:
                 try: unitHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
-                except: unitHP = ""   
+                except KeyError: unitHP = ""   
 
             try:
                 startingAP = int( unitDict["health"]["levels"][0]["max_armor_points"])
                 endingAP = int( unitDict["health"]["levels"][9]["max_armor_points"])
                 unitAP = f"{startingAP} - {endingAP}"
-            except:    
+            except KeyError:    
                 try: unitAP = int(unitDict["health"]["levels"][0]["max_armor_points"])
-                except: unitAP = ""
+                except KeyError: unitAP = ""
 
             try:
                 startingSP = int(unitDict["health"]["levels"][0]["max_shield_points"] )
                 endingSP = int(unitDict["health"]["levels"][9]["max_shield_points"] )
                 unitSP = f"{startingSP} - {endingSP}"
-            except:
+            except KeyError:
                 try: unitSP = int(unitDict["health"]["levels"][0]["max_shield_points"])
-                except: unitSP = ""
+                except KeyError: unitSP = ""
 
             try: unitShieldBurstCD = unitDict["health"]["levels"][0]["shield_burst_restore"]["cooldown_duration"]
-            except: unitShieldBurstCD = "nan"
+            except KeyError: unitShieldBurstCD = "nan"
 
             #Ship Weapons Block
 
             try: unitAntimatterAmt = unitDict["antimatter"]["max_antimatter"]
-            except: unitAntimatterAmt = ""
+            except KeyError: unitAntimatterAmt = ""
             
             try: unitWeaponsBlock = unitDict["weapons"]["weapons"]  
-            except: unitWeaponsBlock = False #or maybe make it false and add a conditional     
+            except KeyError: unitWeaponsBlock = False #or maybe make it false and add a conditional     
             
             weaponCollection = {}
 
@@ -178,8 +178,8 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                 try: 
                     carrier = (f"{int(carrier + unitDict['levels']['levels'][0]['unit_modifiers']['additive_values']['max_squadron_capacity'])} - "
                     + f"{int(carrier + unitDict['levels']['levels'][9]['unit_modifiers']['additive_values']['max_squadron_capacity'])}")
-                except: pass
-            except: carrier = False
+                except KeyError: pass
+            except KeyError: carrier = False
 
             #Ship Abilities Block
 
@@ -218,7 +218,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                     weaponDPS = round(weaponDPS, 1)
                     
                     try: weaponPenetration = weaponDict[weapon]["penetration"]
-                    except: weaponPenetration = 0
+                    except KeyError: weaponPenetration = 0
 
                     weaponRange = weaponDict[weapon]["range"]
                     
@@ -263,7 +263,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                         weaponDPS = round(weaponDPS, 1)
                         
                         try: weaponPenetration = int(weaponDict[weapon]["penetration"])
-                        except: weaponPenetration = 0
+                        except KeyError: weaponPenetration = 0
 
                         weaponRange = int(weaponDict[weapon]["range"])
                         

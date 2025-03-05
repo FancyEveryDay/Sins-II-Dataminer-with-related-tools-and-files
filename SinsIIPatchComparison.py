@@ -15,12 +15,12 @@ def recursiveprint(collection, output, localText = {}, level = 0):
                 
             else:
                 try: entry = localText[entry]
-                except: pass
+                except KeyError: pass
             
                 print(f"{indents}{entry}")
 
                 if level == 0:
-                    output.write(f"\n")
+                    output.write("\n")
 
                 output.write(f"{indents}{entry}\n")
 
@@ -32,15 +32,15 @@ def recursiveprint(collection, output, localText = {}, level = 0):
             elif type(entry) not in printTypes:
                 print(f"{indents}{name}\n")
                 if level == 0:
-                    output.write(f"\n")
+                    output.write("\n")
                 output.write(f"{indents}{name}\n")
                 recursiveprint(entry, output, localText, level + 1)
             else:
                 try: entry = localText[entry]
-                except: pass
+                except KeyError: pass
             
                 if level == 0:
-                    output.write(f"\n")
+                    output.write("\n")
 
                 print(f"{indents}{name} : {entry}")
                 output.write(f"{indents}{name} : {entry}\n")
@@ -70,7 +70,7 @@ def compareShipDicts(newDict : dict, oldDict : dict):
 def recursiveCompare(obj1, obj2, level = 1):
     printTypes = [str, int, float]
 
-    changes = {}
+    changeDict = {}
 
     indents = "\t" * level
 
@@ -88,9 +88,9 @@ def recursiveCompare(obj1, obj2, level = 1):
                 change = recursiveCompare(j, obj2[i], level = level + 1)
 
                 if change != False:
-                    changes[i] = change
+                    changeDict[i] = change
                 else: change = False
-            except:
+            except KeyError:
                 change = False
 
     if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
@@ -102,7 +102,7 @@ def recursiveCompare(obj1, obj2, level = 1):
                     try:
                         i = weaponDict[j]["name"].split('.')[-1]
                         change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
-                    except:
+                    except KeyError:
                         change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
 
                 else:  #j != obj2[i]:
@@ -110,18 +110,18 @@ def recursiveCompare(obj1, obj2, level = 1):
                     change = recursiveCompare(j, obj2[i], level = level + 1)
 
                 if change != False:
-                    changes[i] = change
+                    changeDict[i] = change
                 else: change = False
             except KeyError:
                 change = "[NEW]"
 
-    if changes == {}:
+    if changeDict == {}:
         return False
     else:
-        return changes
+        return changeDict
     
-def getSinsDataDict(race, type, file = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities"):
-    dataList = getSinsData(race, type, file = file)
+def getSinsDataDict(race, entityType, file = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities"):
+    dataList = getSinsData(race, entityType, file = file)
     dataDict = createWeaponDict(dataList)
     return dataDict
 
@@ -138,7 +138,7 @@ if __name__ == "__main__":
     newPatchNumber = newPatchNumber.replace(".","-")
     pastPatchNumber = pastPatchNumber.replace(".","-")
 
-    filelist = glob.glob(gameEntitiesLocation + f"\\*")
+    filelist = glob.glob(gameEntitiesLocation + "\\*")
     objectTypes = []
     for f in filelist:
         objectType = f.split(".")[-1]
@@ -148,7 +148,7 @@ if __name__ == "__main__":
     print(objectTypes)
 
 
-    with open(gameLocalizedText) as t:
+    with open(gameLocalizedText, 'r') as t:
         inGameText = json.load(t)
 
     with open(newPatchNumber + "_changes.txt", 'w') as file:
@@ -200,9 +200,9 @@ if __name__ == "__main__":
             
         with open(newPatchNumber + "_changes.txt", 'a') as file:
 
-            for i, changes in enumerate(ChangesList):
+            for i, changeDict in enumerate(ChangesList):
                 listList = []
-                for p, q in changes.items():
+                for p, q in changeDict.items():
                     listList.append((p,q))
 
                 listList.sort(key = lambda x: x[0])
