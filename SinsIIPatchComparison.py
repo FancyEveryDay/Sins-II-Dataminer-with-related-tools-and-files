@@ -53,7 +53,7 @@ def compareShipDicts(newDict : dict, oldDict : dict):
         print(i)
         try:
             changesDict[i] = recursiveCompare(j, oldDict[i])
-        except:
+        except KeyError:
             changesDict["[NEW] " + i] = j
         print()
 
@@ -61,7 +61,7 @@ def compareShipDicts(newDict : dict, oldDict : dict):
         print(i)
         try:
             recursiveCompare(j, newDict[i])
-        except:
+        except KeyError:
             changesDict["[REMOVED] " + i] = j
         print()
 
@@ -112,7 +112,7 @@ def recursiveCompare(obj1, obj2, level = 1):
                 if change != False:
                     changes[i] = change
                 else: change = False
-            except:
+            except KeyError:
                 change = "[NEW]"
 
     if changes == {}:
@@ -126,9 +126,11 @@ def getSinsDataDict(race, type, file = "F:\\SteamLibrary\\steamapps\\common\\Sin
     return dataDict
 
 if __name__ == "__main__":
+    # Change this to match your machine.
+    gameLocation = "F:\\SteamLibrary\\steamapps\\common\\Sins2"
 
-    gameEntitiesLocation = f"F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities"
-    gameLocalizedText = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\localized_text\\en.localized_text"
+    gameEntitiesLocation = gameLocation + "\\entities"
+    gameLocalizedText = gameLocation + "\\localized_text\\en.localized_text"
 
     newPatchNumber = input("New Patch Number [format 1.28.16]:  ")
     pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
@@ -154,7 +156,7 @@ if __name__ == "__main__":
 
     raceList = ["advent", "trader", "vasari"] # Add Minor races and general changes
 
-    weaponDict = getSinsDataDict("",".weapon")
+    weaponDict = getSinsDataDict("",".weapon", file = gameEntitiesLocation)
     oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
     
 
@@ -167,7 +169,7 @@ if __name__ == "__main__":
         ChangesList = []
         for obtype in objectTypes:
 
-            shipDict = getSinsDataDict(race,f"{obtype}")
+            shipDict = getSinsDataDict(race,f"{obtype}", file= gameEntitiesLocation)
             oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
 
 
