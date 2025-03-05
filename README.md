@@ -19,7 +19,7 @@ The repository currently contains 3 modules, I've also uploaded the latest colle
    In order to use it you have to copy the entities of a previous patch somewhere you can access them, either while the game is rolled back or before you update.
    This is what I use to produce my Detailed Patch Notes I post to reddit.
 
-   This module is sloppier, there are addresses to change on line 106, 113, 123, 145. Also the output file needs to be changed manually, line 166.
+   There is one address users will need to change on line 130. On starting the program, users will need to input the patch number to compare to, and the patch number to    output to. It is important that any new data folders added follow the same naming scheme, with the 1 omitted on the front end.
 
 ## 3. SinsIIFun.ipynb
    This notebook contains a bunch of experiments and tests as well as a few tools which you can use to potentially run your own tests.
