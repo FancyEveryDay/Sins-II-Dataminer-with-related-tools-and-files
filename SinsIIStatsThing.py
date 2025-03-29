@@ -208,7 +208,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                 print(f"\tAntimatter:\t{unitAntimatterAmt}")
                 print()
                 print("\tWeapons:")
-                print(f"\t\tweapon name\tdps\tcount\ttdps\tpen\trange")
+                print("\t\tweapon name\tdps\tcount\ttdps\tpen\trange")
 
                 for weapon, count in weaponCollection.items():
                     weaponName : str = weaponDict[weapon]["name"].split(".")[-1]
