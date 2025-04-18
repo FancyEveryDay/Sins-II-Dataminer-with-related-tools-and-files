@@ -90,7 +90,7 @@ def recursiveCompare(obj1, obj2, level = 1):
                 if change != False:
                     changeDict[i] = change
                 else: change = False
-            except KeyError:
+            except:
                 change = False
 
     if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):

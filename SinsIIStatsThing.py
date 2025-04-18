@@ -130,7 +130,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                 startingHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
                 endingHP = int( unitDict["health"]["levels"][9]["max_hull_points"])
                 unitHP = f"{startingHP} - {endingHP}"
-            except KeyError:
+            except IndexError:
                 try: unitHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
                 except KeyError: unitHP = ""   
 
@@ -138,17 +138,21 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                 startingAP = int( unitDict["health"]["levels"][0]["max_armor_points"])
                 endingAP = int( unitDict["health"]["levels"][9]["max_armor_points"])
                 unitAP = f"{startingAP} - {endingAP}"
-            except KeyError:    
+            except IndexError:    
                 try: unitAP = int(unitDict["health"]["levels"][0]["max_armor_points"])
                 except KeyError: unitAP = ""
+            except KeyError: unitAP = ""
 
             try:
                 startingSP = int(unitDict["health"]["levels"][0]["max_shield_points"] )
                 endingSP = int(unitDict["health"]["levels"][9]["max_shield_points"] )
                 unitSP = f"{startingSP} - {endingSP}"
-            except KeyError:
+            except IndexError:
                 try: unitSP = int(unitDict["health"]["levels"][0]["max_shield_points"])
                 except KeyError: unitSP = ""
+            except KeyError: unitSP = ""
+
+            
 
             try: unitShieldBurstCD = unitDict["health"]["levels"][0]["shield_burst_restore"]["cooldown_duration"]
             except KeyError: unitShieldBurstCD = "nan"
