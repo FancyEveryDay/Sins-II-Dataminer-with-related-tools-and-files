@@ -5,13 +5,13 @@ vasari_phase_missile_large
 	Crystal:	
 
 	Movespeed:	2100.0
-	Acceleration:	175.0
+	Acceleration:	210.0
 
 	Durability:	
-	Armor Strength:	
+	Armor Strength:	18.0
 
-	Hull Points:	9
-	Armor Points:	
+	Hull Points:	27
+	Armor Points:	30
 	Shield Points:	
 	   Shield Burst CD: nans
 

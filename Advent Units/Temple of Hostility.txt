@@ -1,19 +1,19 @@
 Temple of Hostility
 	Supply: 	
-	Credits:	
+	Credits:	450.0
 	Metal:  	75.0
-	Crystal:	125.0
+	Crystal:	100.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	60.0
+	Durability:	500.0
+	Armor Strength:	40.0
 
-	Hull Points:	1750
+	Hull Points:	2500
 	Armor Points:	
 	Shield Points:	1500
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 60.0s
 
 	Antimatter:	
 

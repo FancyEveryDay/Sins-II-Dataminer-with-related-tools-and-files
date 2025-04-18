@@ -1,17 +1,17 @@
 Retrofit Bay
 	Supply: 	
-	Credits:	750.0
+	Credits:	1000.0
 	Metal:  	100.0
 	Crystal:	200.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	100.0
+	Durability:	500.0
+	Armor Strength:	25.0
 
-	Hull Points:	2000
-	Armor Points:	500
+	Hull Points:	4750
+	Armor Points:	2000
 	Shield Points:	
 	   Shield Burst CD: nans
 

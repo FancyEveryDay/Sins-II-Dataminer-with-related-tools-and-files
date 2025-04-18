@@ -1,18 +1,18 @@
 Deliverance Engine
 	Supply: 	
-	Credits:	0.0
-	Metal:  	1500.0
-	Crystal:	3000.0
+	Credits:	3000.0
+	Metal:  	1250.0
+	Crystal:	2500.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	1000.0
-	Armor Strength:	80.0
+	Durability:	750.0
+	Armor Strength:	100.0
 
-	Hull Points:	3500
-	Armor Points:	900
-	Shield Points:	3000
+	Hull Points:	6500
+	Armor Points:	1500
+	Shield Points:	6000
 	   Shield Burst CD: 60.0s
 
 	Antimatter:	

@@ -4,20 +4,20 @@ Tosurak Raider
 	Metal:  	75.0
 	Crystal:	45.0
 
-	Movespeed:	840.0
-	Acceleration:	420.0
+	Movespeed:	960.0
+	Acceleration:	480.0
 
 	Durability:	
 	Armor Strength:	18.0
 
-	Hull Points:	415
-	Armor Points:	120
-	Shield Points:	245
+	Hull Points:	575
+	Armor Points:	180
+	Shield Points:	365
 	   Shield Burst CD: 15.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium pulse             	4.0  	x1    	4.0  	150   	4000 
+		medium pulse             	4.0  	x1    	4.0  	200   	3000 
 		light phase missile      	2.7  	x1    	2.7  	300   	5100 

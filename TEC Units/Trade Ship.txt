@@ -7,13 +7,13 @@ Trade Ship
 	Movespeed:	600.0
 	Acceleration:	80.0
 
-	Durability:	200.0
-	Armor Strength:	20.0
+	Durability:	50.0
+	Armor Strength:	25.0
 
-	Hull Points:	600
-	Armor Points:	300
+	Hull Points:	1000
+	Armor Points:	500
 	Shield Points:	
-	   Shield Burst CD: 30.0s
+	   Shield Burst CD: nans
 
 	Antimatter:	
 

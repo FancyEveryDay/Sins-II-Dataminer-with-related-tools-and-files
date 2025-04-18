@@ -10,7 +10,7 @@ Heavy Torpedo
 	Durability:	
 	Armor Strength:	50.0
 
-	Hull Points:	20
+	Hull Points:	50
 	Armor Points:	100
 	Shield Points:	
 	   Shield Burst CD: nans

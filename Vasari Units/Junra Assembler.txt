@@ -8,12 +8,12 @@ Junra Assembler
 	Acceleration:	250.0
 
 	Durability:	60.0
-	Armor Strength:	30.0
+	Armor Strength:	48.0
 
-	Hull Points:	460
-	Armor Points:	300
+	Hull Points:	665
+	Armor Points:	615
 	Shield Points:	
-	   Shield Burst CD: 25.0s
+	   Shield Burst CD: nans
 
 	Antimatter:	
 

@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_ascension",
+    "field_coord": [1, 4],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 300.0,
+        "metal": 50.0,
+        "crystal": 100.0
+    },
+    "name": "advent_unlock_missile_frigate_research_subject_name",
+    "name_uppercase": "advent_unlock_missile_frigate_research_subject_name_uppercase",
+    "hud_icon": "advent_missile_frigate_hud_icon",
+    "tooltip_picture": "advent_missile_frigate_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_missile"]
+}

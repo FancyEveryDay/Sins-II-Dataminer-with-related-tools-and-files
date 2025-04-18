@@ -1,0 +1,23 @@
+Junsurak Warden
+	Supply: 	6
+	Credits:	
+	Metal:  	105.0
+	Crystal:	30.0
+
+	Movespeed:	720.0
+	Acceleration:	125.0
+
+	Durability:	180.0
+	Armor Strength:	48.0
+
+	Hull Points:	745
+	Armor Points:	480
+	Shield Points:	535
+	   Shield Burst CD: 30.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		point defense pulse      	4.0  	x3    	12.0 	0     	5100 
+		light phase missile      	1.3  	x4    	5.2  	120   	5100 

@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_energy",
+    "field_coord": [6, 1],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1100.0,
+        "metal": 425.0,
+        "crystal": 900.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_shield_burst_restore_0"]
+    ],
+    "unit_modifiers": [
+    {
+        "modifier_type": "shield_burst_restore_cooldown_duration",
+        "value_behavior": "scalar",
+        "value": -0.3
+    }],
+    "name": "advent_upgrade_shield_burst_restore_1_research_subject_name",
+    "name_uppercase": "advent_upgrade_shield_burst_restore_1_research_subject_name_uppercase",
+    "description": "advent_upgrade_shield_burst_restore_1_research_subject_description",
+    "hud_icon": "advent_upgrade_shield_burst_restore_1_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_shield_burst_restore_1_research_subject_tooltip_picture"
+}

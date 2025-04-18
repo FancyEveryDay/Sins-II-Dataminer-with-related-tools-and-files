@@ -1,22 +1,22 @@
 Kalev Gauss Frigate
-	Supply: 	7
-	Credits:	450.0
-	Metal:  	60.0
+	Supply: 	6
+	Credits:	310.0
+	Metal:  	65.0
 	Crystal:	75.0
 
 	Movespeed:	800.0
-	Acceleration:	200.0
+	Acceleration:	320.0
 
-	Durability:	150.0
-	Armor Strength:	40.0
+	Durability:	125.0
+	Armor Strength:	25.0
 
-	Hull Points:	715
-	Armor Points:	610
+	Hull Points:	685
+	Armor Points:	575
 	Shield Points:	
-	   Shield Burst CD: 25.0s
+	   Shield Burst CD: 30.0s
 
-	Antimatter:	
+	Antimatter:	150.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		gauss                    	7.5  	x1    	7.5  	600   	7500 
+		gauss                    	7.7  	x1    	7.7  	600   	10000

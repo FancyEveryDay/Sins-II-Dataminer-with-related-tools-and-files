@@ -1,0 +1,3887 @@
+
+
+# Advent Changes
+
+## Unit_item Changes
+
+**Coalescence Sanctum**
+	planet_type_groups
+		0
+			planet_types
+				5 : oceanic -> magnetic
+				6 : swamp -> oceanic
+				7 : terran -> swamp
+
+**Crystal Enrichment Center**
+	planet_type_groups
+		0
+			planet_types
+				4 : oceanic -> magnetic
+				5 : swamp -> oceanic
+				6 : terran -> swamp
+
+**Cynosural Reservoir**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ice -> desert
+				4 : oceanic -> ice
+				5 : swamp -> magnetic
+				6 : terran -> oceanic
+
+**Heathen Quarter**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Laminate Forge**
+	planet_type_groups
+		0
+			planet_types
+				3 : ice -> hive_asteroid
+				4 : oceanic -> ice
+				5 : swamp -> magnetic
+				6 : terran -> oceanic
+
+**NeuroAugment Center**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> oceanic
+				3 : terran -> swamp
+
+**Plasma Furnace**
+	planet_type_groups
+		0
+			planet_types
+				3 : oceanic -> magnetic
+				4 : swamp -> oceanic
+				5 : terran -> swamp
+				6 : volcanic -> terran
+
+**PsiCredit Mint**
+	planet_type_groups
+		0
+			planet_types
+				3 : ice -> hive_asteroid
+				4 : oceanic -> ice
+				5 : swamp -> magnetic
+				6 : terran -> oceanic
+
+**Shrine of Harmony**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : ferrous -> crystalline
+				4 : ice_asteroid -> ferrous
+				5 : ice -> hive_asteroid
+				6 : ice_moon -> ice_asteroid
+				7 : moon -> ice
+				8 : oceanic -> ice_moon
+				9 : ship_graveyard -> moon
+				10 : swamp -> oceanic
+				11 : terran -> ship_graveyard
+				12 : volcanic -> swamp
+				13 : volcanic_moon -> terran
+
+**Shrine of Hostility**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : ferrous -> crystalline
+				4 : ice_asteroid -> ferrous
+				5 : ice -> hive_asteroid
+				6 : ice_moon -> ice_asteroid
+				7 : moon -> ice
+				8 : oceanic -> ice_moon
+				9 : ship_graveyard -> moon
+				10 : swamp -> oceanic
+				11 : terran -> ship_graveyard
+				12 : volcanic -> swamp
+				13 : volcanic_moon -> terran
+
+**Silent Monastery**
+	planet_type_groups
+		0
+			planet_types
+				2 : gas_giant -> hive_asteroid
+				3 : ice_asteroid -> moon
+				4 : moon -> pirate_base
+				5 : pirate_base -> ship_graveyard
+				6 : ship_graveyard -> volcanic
+				7 : volcanic -> volcanic_moon
+
+**Telepathic Relay**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : ice_asteroid -> ferrous
+				6 : ice -> hive_asteroid
+				7 : ice_moon -> ice_asteroid
+				8 : moon -> ice
+				9 : pirate_base -> ice_moon
+				10 : oceanic -> magnetic
+				11 : ship_graveyard -> moon
+				12 : swamp -> pirate_base
+				13 : terran -> oceanic
+				14 : volcanic -> ship_graveyard
+				15 : volcanic_moon -> swamp
+
+**Temple of Assimilation**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Temple of Pilgrimage**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Temple of Purification**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Temple of Resurrection**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Tithe Sanctum**
+	planet_type_groups
+		0
+			planet_types
+				5 : ice -> hive_asteroid
+				6 : oceanic -> ice
+				7 : swamp -> oceanic
+				8 : terran -> magnetic
+				9 : volcanic -> swamp
+	planet_modifiers
+		0
+			value_behavior : scalar -> additive
+			values
+				0 : 0.05 -> 1.0
+				1 : 0.15 -> 1.0
+				2 : 0.3 -> 1.0
+
+**Unity Protectorate**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**[NEW] Prescience Filter**
+	item_type : planet_component
+	build_group_id : utility
+	hud_icon : advent_prescience_filter_unit_item_hud_icon
+	tooltip_icon : advent_prescience_filter_unit_item_hud_icon
+	tooltip_picture : advent_prescience_filter_unit_item_tooltip_picture
+	name : Prescience Filter
+	description : A technological temple to purity, this grand edifice uses the unique properties of the Geomagnetic planet to shield the true Unity from corruptive influences.
+	build_time : 90.0
+	price
+		credits : 500.0
+		metal : 100.0
+		crystal : 150.0
+	exotic_price
+			exotic_type : utility
+			count : 2
+	max_count_on_unit : 1
+	planet_type_groups
+			planet_types
+				magnetic
+			build_prerequisites
+					advent_unlock_prescience_filter_unit_item
+	planet_modifiers
+			modifier_type : max_allied_population_factor
+			value_behavior : additive
+			values
+				0.2
+	player_modifiers
+		empire_modifiers
+				modifier_type : unity_mana_restore_rate
+				value_behavior : additive
+				value : 0.2
+				modifier_type : unity_max_mana_points
+				value_behavior : additive
+				value : 200.0
+
+**[NEW] Shrine of Concordance**
+	item_type : planet_component
+	build_group_id : utility
+	hud_icon : advent_surface_magnetic_planet_research_lab_unit_item_hud_icon
+	tooltip_icon : advent_surface_magnetic_planet_research_lab_unit_item_hud_icon
+	tooltip_picture : advent_surface_magnetic_planet_research_lab_unit_item_tooltip_picture
+	name : Shrine of Concordance
+	description : Prescient adepts use the surging energies of the Geomagnetic planet to focus their powers of revelation towards learning the secrets of ever more advanced technology.
+	build_time : 120.0
+	price
+		credits : 750.0
+		metal : 150.0
+		crystal : 200.0
+	exotic_price
+			exotic_type : economic
+			count : 1
+	max_count_on_unit : 1
+	planet_type_groups
+			planet_types
+				magnetic
+	planet_modifiers
+			modifier_type : civilian_research_points
+			value_behavior : additive
+			values
+				3.0
+			modifier_type : military_research_points
+			value_behavior : additive
+			values
+				3.0
+	player_modifiers
+		empire_modifiers
+				modifier_type : civilian_research_rate
+				value_behavior : scalar
+				value : 0.25
+				modifier_type : military_research_rate
+				value_behavior : scalar
+				value : 0.25
+
+**[NEW] Starlight Augury**
+	item_type : planet_component
+	build_group_id : utility
+	hud_icon : advent_starlight_augury_unit_item_hud_icon
+	tooltip_icon : advent_starlight_augury_unit_item_hud_icon
+	tooltip_picture : advent_starlight_augury_unit_item_tooltip_picture
+	name : Starlight Augury
+	description : Advanced field manipulation technology allows the Advent to transform the Geomagnetic planet into an immense signal amplifier. Primarily used to send the message of the Unity across space into the minds of the willing and unwilling alike, it sometimes also receives telepathic echoes, reaffirming the righteous purpose of the Unity.
+	build_time : 90.0
+	price
+		credits : 500.0
+		metal : 100.0
+		crystal : 150.0
+	exotic_price
+			exotic_type : economic
+			count : 2
+	max_count_on_unit : 1
+	planet_type_groups
+			planet_types
+				magnetic
+			build_prerequisites
+					advent_unlock_starlight_augury_unit_item
+	planet_modifiers
+			modifier_type : culture_rate
+			value_behavior : scalar
+			values
+				0.5
+			modifier_type : max_influence_points
+			value_behavior : additive
+			values
+				3.0
+			modifier_type : max_allied_population_factor
+			value_behavior : additive
+			values
+				0.1
+
+## Action_data_source Changes
+
+**Telekinetic Push**
+	action_values
+		0
+			action_value
+				ratio
+					ratio_values
+						0 : 0.003 -> -0.003
+						1 : 0.004 -> -0.004
+						2 : 0.005 -> -0.005
+		6
+			action_value
+				ratio
+					ratio_values
+						0 : 0.003 -> -0.003
+						1 : 0.004 -> -0.004
+						2 : 0.005 -> -0.005
+
+## Unit Changes
+
+**Acolyte Corvette**
+	build
+		price
+			credits : 180.0 -> 90.0
+			metal : 15.0 -> 40.0
+			crystal : 25.0 -> 30.0
+
+**Aeria Drone Host**
+	health
+		levels
+			0
+				max_hull_points : 2450.0 -> 2150.0
+				max_shield_points : 2600.0 -> 2300.0
+
+**Bomber**
+	health
+		levels
+			0
+				max_hull_points : 110.0 -> 80.0
+
+**Coronata Titan**
+	weapons
+		weapons
+			26
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			27
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			28
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			29
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			30
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			31
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			32
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			33
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			34
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			35
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			36
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			37
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			38
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			39
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			40
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			41
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			42
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Destra Crusader**
+	build
+		price
+			credits : 600.0 -> 550.0
+			metal : 190.0 -> 200.0
+			crystal : 215.0 -> 235.0
+
+**Disciple Vessel**
+	build
+		price
+			credits : 220.0 -> 150.0
+			metal : 40.0 -> 60.0
+
+**Domina Subjugator**
+	build
+		price
+			credits : 450.0 -> 400.0
+			metal : 120.0 -> 135.0
+
+**Eradica Titan**
+	weapons
+		weapons
+			8
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			9
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			10
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			11
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			12
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			13
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			14
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			15
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			16
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			17
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			18
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			19
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			20
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			21
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			22
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			23
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			24
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			25
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			26
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			27
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			28
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Exoria Illuminator**
+	physics
+		max_angular_speed : 30.0 -> 22.0
+		time_to_max_angular_speed : 6.0 -> 4.0
+	weapons
+		weapons
+			0
+				heavy_beam
+					cooldown_duration : 6.0 -> 9.0
+					damage : 60.0 -> 90.0
+					firing
+						beam_duration : 2.0 -> 3.0
+				yaw_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+				pitch_arc
+					min_angle : -2.5 -> -5.0
+					max_angle : 2.5 -> 5.0
+			1
+				medium_beam
+					cooldown_duration : 3.0 -> 6.0
+					damage : 15.0 -> 30.0
+			2
+				medium_beam
+					cooldown_duration : 3.0 -> 6.0
+					damage : 15.0 -> 30.0
+	build
+		build_time : 42.0 -> 44.0
+		price
+			credits : 550.0 -> 500.0
+			metal : 80.0 -> 90.0
+			crystal : 125.0 -> 150.0
+
+**Exotic Refinery**
+	build
+		price
+			credits : 1200.0 -> 1000.0
+			metal : 300.0 -> 350.0
+			crystal : 400.0 -> 425.0
+
+**Fighter**
+	health
+		levels
+			0
+				max_hull_points : 60.0 -> 45.0
+
+**Halcyon Carrier**
+	weapons
+		weapons
+			4
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			5
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			6
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			7
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			8
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			9
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			10
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			11
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Iconus Guardian**
+	build
+		price
+			credits : 500.0 -> 450.0
+			crystal : 175.0 -> 135.0
+
+**Missionary Vessel**
+	build
+		price
+			credits : 600.0 -> 400.0
+			metal : 50.0 -> 100.0
+
+**Progenitor Mothership**
+	weapons
+		weapons
+			2
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			3
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Purge Vessel**
+	build
+		price
+			credits : 500.0 -> 300.0
+			metal : 65.0 -> 130.0
+
+**Rapture Battlecruiser**
+	weapons
+		weapons
+			5
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			6
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			7
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			8
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Seeker Vessel**
+	build
+		price
+			credits : 90.0 -> 60.0
+			crystal : 10.0 -> 20.0
+
+**Tempest Vessel**
+	build
+		price
+			credits : 270.0 -> 180.0
+			metal : 60.0 -> 90.0
+
+**Temple of Communion**
+	build
+		price
+			credits : 900.0 -> 600.0
+			metal : 100.0 -> 150.0
+			crystal : 200.0 -> 250.0
+
+**Temple of Unity**
+	build
+		price
+			credits : 900.0 -> 600.0
+			metal : 150.0 -> 200.0
+			crystal : 300.0 -> 350.0
+
+**Titan Foundry**
+	build
+		price
+			credits : 2100.0 -> 1500.0
+			metal : 350.0 -> 500.0
+
+**Transcencia Starbase**
+	weapons
+		weapons
+			60
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			61
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			62
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			63
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			64
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			65
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			66
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			67
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			68
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			69
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			70
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			71
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			72
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			73
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			74
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			75
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+
+**Vigilis Sentinel**
+	weapons
+		weapons
+			0
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			1
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			2
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			3
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			4
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			5
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+			6
+				point_defense_laser
+					damage : 3.0 -> 5.0
+					dps : 1.5 -> 2.5
+	build
+		build_time : 40.0 -> 36.0
+		price
+			credits : 450.0 -> 350.0
+			metal : 120.0 -> 140.0
+			crystal : 30.0 -> 45.0
+
+## Unit_skin Changes
+
+**Deliverance Engine**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					12
+						alias_binding
+							particle_effect : deliverance_charge -> deliverance_charge_culture
+					13
+						alias_binding
+							particle_effect : deliverance_impact -> deliverance_impact_culture
+					14
+						alias_binding
+							particle_effect : deliverance_impact -> deliverance_impact_culture
+					15
+						alias_binding
+							particle_effect : deliverance_impact_dwarf -> deliverance_impact_culture_small
+					16
+						alias_binding
+							particle_effect : deliverance_muzzle -> deliverance_muzzle_culture
+					17
+						alias_binding
+							particle_effect : deliverance_projectile_mind_control -> deliverance_projectile_culture
+					18
+						alias_binding
+							particle_effect : advent_proselytize_gas_giant -> deliverance_culture_large
+					19
+						alias_binding
+							particle_effect : advent_proselytize -> deliverance_culture_medium
+					20
+						alias_binding
+							particle_effect : advent_proselytize_asteroid -> deliverance_culture_small
+					21
+						alias_binding
+							particle_effect : deliverance_charge_resurrection -> deliverance_charge_culture
+					22
+						alias_binding
+							particle_effect : deliverance_muzzle_resurrection -> deliverance_muzzle_culture
+					23
+						alias_binding
+							particle_effect : deliverance_projectile_resurrection -> deliverance_projectile_culture
+					24
+						alias_binding
+							particle_effect : deliverance_impact_resurrect -> deliverance_impact_culture
+					25
+						alias_binding
+							particle_effect : deliverance_impact_resurrect -> deliverance_impact_culture
+					26
+						alias_binding
+							particle_effect : deliverance_impact_dwarf_resurrect -> deliverance_impact_culture_small
+					27
+						alias_binding
+							particle_effect : advent_proselytize_gas_giant -> deliverance_culture_large
+					28
+						alias_binding
+							particle_effect : advent_proselytize -> deliverance_culture_medium
+					29
+						alias_binding
+							particle_effect : advent_proselytize_asteroid -> deliverance_culture_small
+
+## Research_subject Changes
+
+**[NEW] advent_unlock_magnetic_biosphere**
+	domain : civilian
+	tier : 1
+	field : civilian_reclamation
+	field_coord
+		2
+		3
+	research_time : 180.0
+	price
+		credits : 550.0
+		metal : 150.0
+		crystal : 350.0
+	name : Geomagnetic Embrace
+	name_uppercase : GEOMAGNETIC EMBRACE
+	description : Allows colonization of Geomagnetic planets.
+	hud_icon : advent_unlock_magnetic_biosphere_research_subject_hud_icon
+	tooltip_picture : advent_unlock_magnetic_biosphere_research_subject_tooltip_picture
+
+**[NEW] advent_unlock_prescience_filter_unit_item**
+	domain : civilian
+	tier : 2
+	field : civilian_reclamation
+	field_coord
+		4
+		2
+	research_time : 180.0
+	price
+		credits : 550.0
+		metal : 150.0
+		crystal : 350.0
+	prerequisites
+			advent_unlock_magnetic_biosphere
+	name : Prescience Filter Unlock
+	name_uppercase : PRESCIENCE FILTER UNLOCK
+	hud_icon : advent_prescience_filter_unit_item_hud_icon
+	tooltip_picture : advent_prescience_filter_unit_item_tooltip_picture
+
+**[NEW] advent_unlock_starlight_augury_unit_item**
+	domain : civilian
+	tier : 2
+	field : civilian_reclamation
+	field_coord
+		4
+		2
+	research_time : 180.0
+	price
+		credits : 550.0
+		metal : 150.0
+		crystal : 350.0
+	prerequisites
+			advent_unlock_magnetic_biosphere
+	name : Starlight Augury Unlock
+	name_uppercase : STARLIGHT AUGURY UNLOCK
+	hud_icon : advent_starlight_augury_unit_item_hud_icon
+	tooltip_picture : advent_starlight_augury_unit_item_tooltip_picture
+
+**[NEW] advent_upgrade_magnetic_biosphere**
+	domain : civilian
+	tier : 2
+	field : civilian_reclamation
+	field_coord
+		5
+		3
+	research_time : 300.0
+	price
+		credits : 800.0
+		metal : 250.0
+		crystal : 600.0
+	prerequisites
+			advent_unlock_magnetic_biosphere
+	name : Geomagnetic Development
+	name_uppercase : GEOMAGNETIC DEVELOPMENT
+	description : Allows further development of Geomagnetic planets.
+	hud_icon : advent_upgrade_magnetic_biosphere_research_subject_hud_icon
+	tooltip_picture : advent_upgrade_magnetic_biosphere_research_subject_tooltip_picture
+
+**advent_unlock_empyrean_city_unit_item**
+	field_coord
+		1 : 1 -> 0
+
+**advent_unlock_gas_giant_biosphere**
+	field_coord
+		1 : 1 -> 0
+
+**advent_unlock_hydrostatic_shield_dome_unit_item**
+	field_coord
+		1 : 2 -> 1
+
+**advent_unlock_oceanic_biosphere**
+	field_coord
+		1 : 2 -> 1
+
+**advent_upgrade_surveying_track**
+	planet_modifiers
+		0
+			value : -0.25 -> -0.35
+		1
+			value : -0.25 -> -0.35
+
+## Player Changes
+
+**advent_loyalist**
+	research
+		research_subjects
+			71 : advent_unlock_missile_frigate -> advent_unlock_magnetic_biosphere
+			72 : advent_unlock_neuroaugment_center_unit_item -> advent_unlock_missile_frigate
+			73 : advent_unlock_neuropsion_purifier_unit_item -> advent_unlock_neuroaugment_center_unit_item
+			74 : advent_unlock_oceanic_biosphere -> advent_unlock_neuropsion_purifier_unit_item
+			75 : advent_unlock_phase_jump_inhibitor_structure -> advent_unlock_oceanic_biosphere
+			76 : advent_unlock_plasma_booster_unit_item -> advent_unlock_phase_jump_inhibitor_structure
+			77 : advent_unlock_plasma_furnace_unit_item -> advent_unlock_plasma_booster_unit_item
+			78 : advent_unlock_psicredit_mint_unit_item -> advent_unlock_plasma_furnace_unit_item
+			79 : advent_unlock_psionic_dynamo_unit_item -> advent_unlock_psicredit_mint_unit_item
+			80 : advent_unlock_resource_extractor_structures -> advent_unlock_psionic_dynamo_unit_item
+			81 : advent_unlock_scout_corvette_lingering_presence_ability -> advent_unlock_resource_extractor_structures
+			82 : advent_unlock_shield_burst_restore -> advent_unlock_scout_corvette_lingering_presence_ability
+			83 : advent_unlock_ship_factory_structure_repair -> advent_unlock_shield_burst_restore
+			84 : advent_unlock_siege_frigate -> advent_unlock_ship_factory_structure_repair
+			85 : advent_unlock_silent_monastery_unit_item -> advent_unlock_siege_frigate
+			86 : advent_unlock_starbase -> advent_unlock_silent_monastery_unit_item
+			87 : advent_unlock_starbase_culture_unit_item -> advent_unlock_starbase
+			88 : advent_unlock_starbase_planetary_shield_array_unit_item -> advent_unlock_starbase_culture_unit_item
+			89 : advent_unlock_starbase_unlock_missile_weapon_unit_item -> advent_unlock_starbase_planetary_shield_array_unit_item
+			90 : advent_unlock_starbase_unlock_plasma_weapon_unit_item -> advent_unlock_starbase_unlock_missile_weapon_unit_item
+			91 : advent_unlock_starbase_zealous_labor_unit_item -> advent_unlock_starbase_unlock_plasma_weapon_unit_item
+			92 : advent_unlock_subjugator_cruiser -> advent_unlock_starbase_zealous_labor_unit_item
+			93 : advent_unlock_subjugator_cruiser_nullify_ability -> advent_unlock_starlight_augury_unit_item
+			94 : advent_unlock_swamp_biosphere -> advent_unlock_subjugator_cruiser
+			95 : advent_unlock_synchronous_shield_unit_item -> advent_unlock_subjugator_cruiser_nullify_ability
+			96 : advent_unlock_telepathic_relay_unit_item -> advent_unlock_swamp_biosphere
+			97 : advent_unlock_temple_of_assimilation_unit_item -> advent_unlock_synchronous_shield_unit_item
+			98 : advent_unlock_temple_of_pilgrimage_unit_item -> advent_unlock_telepathic_relay_unit_item
+			99 : advent_unlock_temple_of_renewal_structure -> advent_unlock_temple_of_assimilation_unit_item
+			100 : advent_unlock_temple_of_renewal_structure_recharge_shields_ability -> advent_unlock_temple_of_pilgrimage_unit_item
+			101 : advent_unlock_tithe_collector_unit_item -> advent_unlock_temple_of_renewal_structure
+			102 : advent_unlock_unity_protectorate_unit_item -> advent_unlock_temple_of_renewal_structure_recharge_shields_ability
+			103 : advent_unlock_unity_structure -> advent_unlock_tithe_collector_unit_item
+			104 : advent_unlock_volcanic_biosphere -> advent_unlock_unity_protectorate_unit_item
+			105 : advent_unlock_wormhole_travel -> advent_unlock_unity_structure
+			106 : advent_unstoppable_phase_jump -> advent_unlock_volcanic_biosphere
+			107 : advent_upgrade_antimatter_0 -> advent_unlock_wormhole_travel
+			108 : advent_upgrade_antimatter_1 -> advent_unstoppable_phase_jump
+			109 : advent_upgrade_antimatter_2 -> advent_upgrade_antimatter_0
+			110 : advent_upgrade_armor_0 -> advent_upgrade_antimatter_1
+			111 : advent_upgrade_armor_1 -> advent_upgrade_antimatter_2
+			112 : advent_upgrade_armor_2 -> advent_upgrade_armor_0
+			113 : advent_upgrade_barren_biosphere -> advent_upgrade_armor_1
+			114 : advent_upgrade_beam_weapon_damage_0 -> advent_upgrade_armor_2
+			115 : advent_upgrade_beam_weapon_damage_1 -> advent_upgrade_barren_biosphere
+			116 : advent_upgrade_beam_weapon_damage_2 -> advent_upgrade_beam_weapon_damage_0
+			117 : advent_upgrade_beam_weapon_range -> advent_upgrade_beam_weapon_damage_1
+			118 : advent_upgrade_crystal_extraction_0 -> advent_upgrade_beam_weapon_damage_2
+			119 : advent_upgrade_crystal_extraction_1 -> advent_upgrade_beam_weapon_range
+			120 : advent_upgrade_crystal_extraction_2 -> advent_upgrade_crystal_extraction_0
+			121 : advent_upgrade_culture_allegiance -> advent_upgrade_crystal_extraction_1
+			122 : advent_upgrade_culture_crystal_0 -> advent_upgrade_crystal_extraction_2
+			123 : advent_upgrade_culture_crystal_1 -> advent_upgrade_culture_allegiance
+			124 : advent_upgrade_culture_rate_0 -> advent_upgrade_culture_crystal_0
+			125 : advent_upgrade_culture_rate_1 -> advent_upgrade_culture_crystal_1
+			126 : advent_upgrade_culture_rate_2 -> advent_upgrade_culture_rate_0
+			127 : advent_upgrade_deliverance_engine_structure_loyalist_ability -> advent_upgrade_culture_rate_1
+			128 : advent_upgrade_desert_biosphere -> advent_upgrade_culture_rate_2
+			129 : advent_upgrade_desert_planets_0 -> advent_upgrade_deliverance_engine_structure_loyalist_ability
+			130 : advent_upgrade_desert_planets_1 -> advent_upgrade_desert_biosphere
+			131 : advent_upgrade_energy_booster_unit_item -> advent_upgrade_desert_planets_0
+			132 : advent_upgrade_home_planet -> advent_upgrade_desert_planets_1
+			133 : advent_upgrade_hull_points_0 -> advent_upgrade_energy_booster_unit_item
+			134 : advent_upgrade_hull_points_1 -> advent_upgrade_home_planet
+			135 : advent_upgrade_hull_points_2 -> advent_upgrade_hull_points_0
+			136 : advent_upgrade_influence_0 -> advent_upgrade_hull_points_1
+			137 : advent_upgrade_influence_1 -> advent_upgrade_hull_points_2
+			138 : advent_upgrade_influence_2 -> advent_upgrade_influence_0
+			139 : advent_upgrade_laser_weapon_damage_0 -> advent_upgrade_influence_1
+			140 : advent_upgrade_laser_weapon_damage_1 -> advent_upgrade_influence_2
+			141 : advent_upgrade_laser_weapon_damage_2 -> advent_upgrade_laser_weapon_damage_0
+			142 : advent_upgrade_metal_extraction_0 -> advent_upgrade_laser_weapon_damage_1
+			143 : advent_upgrade_metal_extraction_1 -> advent_upgrade_laser_weapon_damage_2
+			144 : advent_upgrade_metal_extraction_2 -> advent_upgrade_magnetic_biosphere
+			145 : advent_upgrade_missile_weapon_damage_0 -> advent_upgrade_metal_extraction_0
+			146 : advent_upgrade_missile_weapon_damage_1 -> advent_upgrade_metal_extraction_1
+			147 : advent_upgrade_missile_weapon_damage_2 -> advent_upgrade_metal_extraction_2
+			148 : advent_upgrade_missile_weapon_targeting -> advent_upgrade_missile_weapon_damage_0
+			149 : advent_upgrade_planet_bombing_defense -> advent_upgrade_missile_weapon_damage_1
+			150 : advent_upgrade_planet_max_military_structure_slots -> advent_upgrade_missile_weapon_damage_2
+			151 : advent_upgrade_plasma_booster_unit_item -> advent_upgrade_missile_weapon_targeting
+			152 : advent_upgrade_plasma_weapon_cooldown -> advent_upgrade_planet_bombing_defense
+			153 : advent_upgrade_plasma_weapon_damage_0 -> advent_upgrade_planet_max_military_structure_slots
+			154 : advent_upgrade_plasma_weapon_damage_1 -> advent_upgrade_plasma_booster_unit_item
+			155 : advent_upgrade_plasma_weapon_damage_2 -> advent_upgrade_plasma_weapon_cooldown
+			156 : advent_upgrade_research_rate -> advent_upgrade_plasma_weapon_damage_0
+			157 : advent_upgrade_shield_burst_restore_0 -> advent_upgrade_plasma_weapon_damage_1
+			158 : advent_upgrade_shield_burst_restore_1 -> advent_upgrade_plasma_weapon_damage_2
+			159 : advent_upgrade_shield_points_0 -> advent_upgrade_research_rate
+			160 : advent_upgrade_shield_points_1 -> advent_upgrade_shield_burst_restore_0
+			161 : advent_upgrade_shield_points_2 -> advent_upgrade_shield_burst_restore_1
+			162 : advent_upgrade_shield_points_3 -> advent_upgrade_shield_points_0
+			163 : advent_upgrade_spell_power_0 -> advent_upgrade_shield_points_1
+			164 : advent_upgrade_spell_power_1 -> advent_upgrade_shield_points_2
+			165 : advent_upgrade_spell_power_2 -> advent_upgrade_shield_points_3
+			166 : advent_upgrade_starbase_culture_unit_item -> advent_upgrade_spell_power_0
+			167 : advent_upgrade_structure_shield_points_0 -> advent_upgrade_spell_power_1
+			168 : advent_upgrade_structure_shield_points_1 -> advent_upgrade_spell_power_2
+			169 : advent_upgrade_surveying_track -> advent_upgrade_starbase_culture_unit_item
+			170 : advent_upgrade_swamp_biosphere -> advent_upgrade_structure_shield_points_0
+			171 : advent_upgrade_synchronous_shield_unit_item -> advent_upgrade_structure_shield_points_1
+			172 : advent_upgrade_tithe_collector_unit_item_0 -> advent_upgrade_surveying_track
+			173 : advent_upgrade_tithe_collector_unit_item_1 -> advent_upgrade_swamp_biosphere
+	planet_components
+		9 : advent_telepathic_relay -> advent_surface_magnetic_planet_research_lab
+		10 : advent_neuropsion_purifier -> advent_telepathic_relay
+		11 : advent_neuroaugment_center -> advent_neuropsion_purifier
+		12 : advent_plasma_furnace -> advent_neuroaugment_center
+		13 : advent_silent_monastery -> advent_plasma_furnace
+		14 : advent_unity_protectorate -> advent_silent_monastery
+		15 : advent_heathen_quarter -> advent_unity_protectorate
+		16 : advent_temple_of_pilgrimage -> advent_heathen_quarter
+		17 : advent_temple_of_assimilation -> advent_temple_of_pilgrimage
+		18 : advent_atmospheric_shield_dome -> advent_temple_of_assimilation
+		19 : advent_coalescence_sanctum -> advent_atmospheric_shield_dome
+		20 : advent_crystal_enricher -> advent_coalescence_sanctum
+		21 : advent_hydrostatic_shield_dome -> advent_crystal_enricher
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				commerce
+					1
+						credits_income_rate : 2.0 -> 3.0
+						credits_income_rate_per_population : 0.007 -> 0.006
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+			max_unity_provider_count : 2 -> 5
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+			max_unity_provider_count : 4 -> 2
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : advent_unlock_swamp_biosphere -> advent_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+				commerce
+					1
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.006 -> 0.005
+					2
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.013 -> 0.011
+					3
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.021 -> 0.018
+		15
+			planet_type : terran -> swamp
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+				commerce
+					1
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.005 -> 0.006
+					2
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.011 -> 0.013
+					3
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.018 -> 0.021
+					4
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.026 -> 0.03
+					5
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.035 -> 0.04
+			max_unity_provider_count : 5 -> 4
+		16
+			planet_type : volcanic -> terran
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				commerce
+					1
+						credits_income_rate : 2.0 -> 4.0
+						credits_income_rate_per_population : 0.007 -> 0.005
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+			max_unity_provider_count : 2 -> 5
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				commerce
+					1
+						credits_income_rate : 0.5 -> 2.0
+						credits_income_rate_per_population : 0.009 -> 0.007
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+			max_unity_provider_count : 1 -> 2
+		18
+			planet_type : ship_graveyard -> pirate_base
+
+**advent_rebel**
+	research
+		research_subjects
+			67 : advent_unlock_missile_frigate -> advent_unlock_magnetic_biosphere
+			68 : advent_unlock_neuroaugment_center_unit_item -> advent_unlock_missile_frigate
+			69 : advent_unlock_neuropsion_purifier_unit_item -> advent_unlock_neuroaugment_center_unit_item
+			70 : advent_unlock_oceanic_biosphere -> advent_unlock_neuropsion_purifier_unit_item
+			71 : advent_unlock_phase_jump_inhibitor_structure -> advent_unlock_oceanic_biosphere
+			72 : advent_unlock_plasma_booster_unit_item -> advent_unlock_phase_jump_inhibitor_structure
+			73 : advent_unlock_plasma_furnace_unit_item -> advent_unlock_plasma_booster_unit_item
+			74 : advent_unlock_psicredit_mint_unit_item -> advent_unlock_plasma_furnace_unit_item
+			75 : advent_unlock_psionic_dynamo_unit_item -> advent_unlock_prescience_filter_unit_item
+			76 : advent_unlock_rebel_titan -> advent_unlock_psicredit_mint_unit_item
+			77 : advent_unlock_rebel_titan_hull_plating_unit_item -> advent_unlock_psionic_dynamo_unit_item
+			78 : advent_unlock_rebel_titan_missile_weapon_unit_item -> advent_unlock_rebel_titan
+			79 : advent_unlock_rebel_titan_shield_booster_unit_item -> advent_unlock_rebel_titan_hull_plating_unit_item
+			80 : advent_unlock_resource_extractor_structures -> advent_unlock_rebel_titan_missile_weapon_unit_item
+			81 : advent_unlock_scout_corvette_lingering_presence_ability -> advent_unlock_rebel_titan_shield_booster_unit_item
+			82 : advent_unlock_shield_burst_restore -> advent_unlock_resource_extractor_structures
+			83 : advent_unlock_ship_factory_structure_repair -> advent_unlock_scout_corvette_lingering_presence_ability
+			84 : advent_unlock_siege_frigate -> advent_unlock_shield_burst_restore
+			85 : advent_unlock_silent_monastery_unit_item -> advent_unlock_ship_factory_structure_repair
+			86 : advent_unlock_starbase -> advent_unlock_siege_frigate
+			87 : advent_unlock_starbase_culture_unit_item -> advent_unlock_silent_monastery_unit_item
+			88 : advent_unlock_starbase_planetary_shield_array_unit_item -> advent_unlock_starbase
+			89 : advent_unlock_starbase_unlock_missile_weapon_unit_item -> advent_unlock_starbase_culture_unit_item
+			90 : advent_unlock_starbase_unlock_plasma_weapon_unit_item -> advent_unlock_starbase_planetary_shield_array_unit_item
+			91 : advent_unlock_starbase_zealous_labor_unit_item -> advent_unlock_starbase_unlock_missile_weapon_unit_item
+			92 : advent_unlock_subjugator_cruiser -> advent_unlock_starbase_unlock_plasma_weapon_unit_item
+			93 : advent_unlock_subjugator_cruiser_nullify_ability -> advent_unlock_starbase_zealous_labor_unit_item
+			94 : advent_unlock_swamp_biosphere -> advent_unlock_subjugator_cruiser
+			95 : advent_unlock_synchronous_shield_unit_item -> advent_unlock_subjugator_cruiser_nullify_ability
+			96 : advent_unlock_telepathic_relay_unit_item -> advent_unlock_swamp_biosphere
+			97 : advent_unlock_temple_of_purification_unit_item -> advent_unlock_synchronous_shield_unit_item
+			98 : advent_unlock_temple_of_renewal_structure -> advent_unlock_telepathic_relay_unit_item
+			99 : advent_unlock_temple_of_renewal_structure_recharge_shields_ability -> advent_unlock_temple_of_purification_unit_item
+			100 : advent_unlock_temple_of_resurrection_unit_item -> advent_unlock_temple_of_renewal_structure
+			101 : advent_unlock_tithe_collector_unit_item -> advent_unlock_temple_of_renewal_structure_recharge_shields_ability
+			102 : advent_unlock_unity_protectorate_unit_item -> advent_unlock_temple_of_resurrection_unit_item
+			103 : advent_unlock_unity_structure -> advent_unlock_tithe_collector_unit_item
+			104 : advent_unlock_volcanic_biosphere -> advent_unlock_unity_protectorate_unit_item
+			105 : advent_unlock_wormhole_travel -> advent_unlock_unity_structure
+			106 : advent_unstoppable_phase_jump -> advent_unlock_volcanic_biosphere
+			107 : advent_upgrade_antimatter_0 -> advent_unlock_wormhole_travel
+			108 : advent_upgrade_antimatter_1 -> advent_unstoppable_phase_jump
+			109 : advent_upgrade_antimatter_2 -> advent_upgrade_antimatter_0
+			110 : advent_upgrade_armor_0 -> advent_upgrade_antimatter_1
+			111 : advent_upgrade_armor_1 -> advent_upgrade_antimatter_2
+			112 : advent_upgrade_armor_2 -> advent_upgrade_armor_0
+			113 : advent_upgrade_barren_biosphere -> advent_upgrade_armor_1
+			114 : advent_upgrade_beam_weapon_damage_0 -> advent_upgrade_armor_2
+			115 : advent_upgrade_beam_weapon_damage_1 -> advent_upgrade_barren_biosphere
+			116 : advent_upgrade_beam_weapon_damage_2 -> advent_upgrade_beam_weapon_damage_0
+			117 : advent_upgrade_beam_weapon_range -> advent_upgrade_beam_weapon_damage_1
+			118 : advent_upgrade_crystal_extraction_0 -> advent_upgrade_beam_weapon_damage_2
+			119 : advent_upgrade_crystal_extraction_1 -> advent_upgrade_beam_weapon_range
+			120 : advent_upgrade_crystal_extraction_2 -> advent_upgrade_crystal_extraction_0
+			121 : advent_upgrade_culture_allegiance -> advent_upgrade_crystal_extraction_1
+			122 : advent_upgrade_culture_crystal_0 -> advent_upgrade_crystal_extraction_2
+			123 : advent_upgrade_culture_crystal_1 -> advent_upgrade_culture_allegiance
+			124 : advent_upgrade_culture_rate_0 -> advent_upgrade_culture_crystal_0
+			125 : advent_upgrade_culture_rate_1 -> advent_upgrade_culture_crystal_1
+			126 : advent_upgrade_culture_rate_2 -> advent_upgrade_culture_rate_0
+			127 : advent_upgrade_deliverance_engine_structure_rebel_ability -> advent_upgrade_culture_rate_1
+			128 : advent_upgrade_desert_biosphere -> advent_upgrade_culture_rate_2
+			129 : advent_upgrade_desert_planets_0 -> advent_upgrade_deliverance_engine_structure_rebel_ability
+			130 : advent_upgrade_desert_planets_1 -> advent_upgrade_desert_biosphere
+			131 : advent_upgrade_energy_booster_unit_item -> advent_upgrade_desert_planets_0
+			132 : advent_upgrade_home_planet -> advent_upgrade_desert_planets_1
+			133 : advent_upgrade_hull_points_0 -> advent_upgrade_energy_booster_unit_item
+			134 : advent_upgrade_hull_points_1 -> advent_upgrade_home_planet
+			135 : advent_upgrade_hull_points_2 -> advent_upgrade_hull_points_0
+			136 : advent_upgrade_influence_0 -> advent_upgrade_hull_points_1
+			137 : advent_upgrade_influence_1 -> advent_upgrade_hull_points_2
+			138 : advent_upgrade_influence_2 -> advent_upgrade_influence_0
+			139 : advent_upgrade_laser_weapon_damage_0 -> advent_upgrade_influence_1
+			140 : advent_upgrade_laser_weapon_damage_1 -> advent_upgrade_influence_2
+			141 : advent_upgrade_laser_weapon_damage_2 -> advent_upgrade_laser_weapon_damage_0
+			142 : advent_upgrade_metal_extraction_0 -> advent_upgrade_laser_weapon_damage_1
+			143 : advent_upgrade_metal_extraction_1 -> advent_upgrade_laser_weapon_damage_2
+			144 : advent_upgrade_metal_extraction_2 -> advent_upgrade_magnetic_biosphere
+			145 : advent_upgrade_missile_weapon_damage_0 -> advent_upgrade_metal_extraction_0
+			146 : advent_upgrade_missile_weapon_damage_1 -> advent_upgrade_metal_extraction_1
+			147 : advent_upgrade_missile_weapon_damage_2 -> advent_upgrade_metal_extraction_2
+			148 : advent_upgrade_missile_weapon_targeting -> advent_upgrade_missile_weapon_damage_0
+			149 : advent_upgrade_planet_bombing_defense -> advent_upgrade_missile_weapon_damage_1
+			150 : advent_upgrade_planet_max_military_structure_slots -> advent_upgrade_missile_weapon_damage_2
+			151 : advent_upgrade_plasma_booster_unit_item -> advent_upgrade_missile_weapon_targeting
+			152 : advent_upgrade_plasma_weapon_cooldown -> advent_upgrade_planet_bombing_defense
+			153 : advent_upgrade_plasma_weapon_damage_0 -> advent_upgrade_planet_max_military_structure_slots
+			154 : advent_upgrade_plasma_weapon_damage_1 -> advent_upgrade_plasma_booster_unit_item
+			155 : advent_upgrade_plasma_weapon_damage_2 -> advent_upgrade_plasma_weapon_cooldown
+			156 : advent_upgrade_research_rate -> advent_upgrade_plasma_weapon_damage_0
+			157 : advent_upgrade_shield_burst_restore_0 -> advent_upgrade_plasma_weapon_damage_1
+			158 : advent_upgrade_shield_burst_restore_1 -> advent_upgrade_plasma_weapon_damage_2
+			159 : advent_upgrade_shield_points_0 -> advent_upgrade_research_rate
+			160 : advent_upgrade_shield_points_1 -> advent_upgrade_shield_burst_restore_0
+			161 : advent_upgrade_shield_points_2 -> advent_upgrade_shield_burst_restore_1
+			162 : advent_upgrade_shield_points_3 -> advent_upgrade_shield_points_0
+			163 : advent_upgrade_spell_power_0 -> advent_upgrade_shield_points_1
+			164 : advent_upgrade_spell_power_1 -> advent_upgrade_shield_points_2
+			165 : advent_upgrade_spell_power_2 -> advent_upgrade_shield_points_3
+			166 : advent_upgrade_starbase_culture_unit_item -> advent_upgrade_spell_power_0
+			167 : advent_upgrade_structure_shield_points_0 -> advent_upgrade_spell_power_1
+			168 : advent_upgrade_structure_shield_points_1 -> advent_upgrade_spell_power_2
+			169 : advent_upgrade_surveying_track -> advent_upgrade_starbase_culture_unit_item
+			170 : advent_upgrade_swamp_biosphere -> advent_upgrade_structure_shield_points_0
+			171 : advent_upgrade_synchronous_shield_unit_item -> advent_upgrade_structure_shield_points_1
+			172 : advent_upgrade_temple_of_purification_unit_item -> advent_upgrade_surveying_track
+			173 : advent_upgrade_tithe_collector_unit_item_0 -> advent_upgrade_swamp_biosphere
+			174 : advent_upgrade_tithe_collector_unit_item_1 -> advent_upgrade_synchronous_shield_unit_item
+	planet_components
+		9 : advent_telepathic_relay -> advent_surface_magnetic_planet_research_lab
+		10 : advent_neuropsion_purifier -> advent_telepathic_relay
+		11 : advent_neuroaugment_center -> advent_neuropsion_purifier
+		12 : advent_plasma_furnace -> advent_neuroaugment_center
+		13 : advent_silent_monastery -> advent_plasma_furnace
+		14 : advent_unity_protectorate -> advent_silent_monastery
+		15 : advent_heathen_quarter -> advent_unity_protectorate
+		16 : advent_temple_of_purification -> advent_heathen_quarter
+		17 : advent_temple_of_resurrection -> advent_temple_of_purification
+		18 : advent_atmospheric_shield_dome -> advent_temple_of_resurrection
+		19 : advent_coalescence_sanctum -> advent_atmospheric_shield_dome
+		20 : advent_crystal_enricher -> advent_coalescence_sanctum
+		21 : advent_hydrostatic_shield_dome -> advent_crystal_enricher
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				commerce
+					1
+						credits_income_rate : 2.0 -> 3.0
+						credits_income_rate_per_population : 0.007 -> 0.006
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+			max_unity_provider_count : 2 -> 5
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+			max_unity_provider_count : 4 -> 2
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : advent_unlock_swamp_biosphere -> advent_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+				commerce
+					1
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.006 -> 0.005
+					2
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.013 -> 0.011
+					3
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.021 -> 0.018
+		15
+			planet_type : terran -> swamp
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+				commerce
+					1
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.005 -> 0.006
+					2
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.011 -> 0.013
+					3
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.018 -> 0.021
+					4
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.026 -> 0.03
+					5
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.035 -> 0.04
+			max_unity_provider_count : 5 -> 4
+		16
+			planet_type : volcanic -> terran
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				commerce
+					1
+						credits_income_rate : 2.0 -> 4.0
+						credits_income_rate_per_population : 0.007 -> 0.005
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+			max_unity_provider_count : 2 -> 5
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				commerce
+					1
+						credits_income_rate : 0.5 -> 2.0
+						credits_income_rate_per_population : 0.009 -> 0.007
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+			max_unity_provider_count : 1 -> 2
+		18
+			planet_type : ship_graveyard -> pirate_base
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**Alloy Foundry**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> magnetic
+				3 : terran -> oceanic
+
+**Auxiliary Supply Depot**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Center for Human Doctrine**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Civic University**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+
+**Command Bunker**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+				9 : pirate_base -> terran
+
+**Commercial District**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> oceanic
+				3 : terran -> swamp
+
+**Experimental Economics Lab**
+	planet_type_groups
+		0
+			planet_types
+				2 : ice_asteroid -> hive_asteroid
+				3 : ice_moon -> ice_asteroid
+				4 : moon -> ice_moon
+				5 : volcanic_moon -> moon
+				6 : pirate_base -> volcanic_moon
+				7 : ship_graveyard -> pirate_base
+
+**Fulfillment Warehouse**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : ice_asteroid -> ferrous
+				6 : ice -> hive_asteroid
+				7 : ice_moon -> ice_asteroid
+				8 : moon -> ice
+				9 : oceanic -> ice_moon
+				10 : pirate_base -> magnetic
+				11 : swamp -> moon
+				12 : terran -> oceanic
+				13 : volcanic -> pirate_base
+				14 : volcanic_moon -> swamp
+
+**Home Guard Outpost**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Industrial Complex**
+	planet_type_groups
+		0
+			planet_types
+				1 : desert -> city
+				2 : ferrous -> desert
+				3 : swamp -> ferrous
+				4 : terran -> swamp
+				5 : volcanic -> terran
+
+**Media Conglomerate**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : ice_asteroid -> ferrous
+				6 : ice -> hive_asteroid
+				7 : ice_moon -> ice_asteroid
+				8 : moon -> ice
+				9 : oceanic -> ice_moon
+				10 : swamp -> magnetic
+				11 : terran -> moon
+				12 : volcanic -> oceanic
+				13 : volcanic_moon -> swamp
+
+**Military Research Base**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+
+**Munitions Plant**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Orbital Mining Control**
+	planet_type_groups
+		0
+			planet_types
+				6 : ice_asteroid -> hive_asteroid
+				7 : ice -> ice_asteroid
+				8 : oceanic -> ice
+				9 : swamp -> magnetic
+				10 : terran -> oceanic
+				11 : volcanic -> swamp
+
+**Pirate Mercenary Base**
+	planet_type_groups
+		0
+			planet_types
+				1 : ice_asteroid -> hive_asteroid
+				2 : ice_moon -> ice_asteroid
+				3 : moon -> ice_moon
+				4 : volcanic_moon -> moon
+				5 : pirate_base -> volcanic_moon
+				6 : ship_graveyard -> pirate_base
+
+**Regional Government Office**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+
+**Secret Weapons Lab**
+	planet_type_groups
+		0
+			planet_types
+				2 : ice_asteroid -> hive_asteroid
+				3 : ice_moon -> ice_asteroid
+				4 : moon -> ice_moon
+				5 : volcanic_moon -> moon
+				6 : pirate_base -> volcanic_moon
+				7 : ship_graveyard -> pirate_base
+
+**Synthetic Crystal Farm**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> magnetic
+				3 : terran -> oceanic
+
+**[NEW] Directed Energy Lab**
+	item_type : planet_component
+	build_group_id : utility
+	hud_icon : trader_surface_magnetic_planet_research_lab_research_subject_hud_icon
+	tooltip_icon : trader_surface_magnetic_planet_research_lab_research_subject_hud_icon
+	tooltip_picture : trader_surface_magnetic_planet_research_lab_research_subject_tooltip_picture
+	name : Directed Energy Lab
+	description : The unusual magnetic fields of the Geomagnetic planet provide the ideal conditions for TEC scientists to conduct further research into the military applications of high energy particles.
+	build_time : 120.0
+	price
+		credits : 1000.0
+		metal : 150.0
+		crystal : 250.0
+	exotic_price
+			exotic_type : utility
+			count : 1
+	max_count_on_unit : 1
+	required_planet_level : 5
+	planet_type_groups
+			planet_types
+				magnetic
+	other_item_requirements
+		needed_items
+			trader_surface_military_research_lab
+	planet_modifiers
+			modifier_type : military_research_points
+			value_behavior : additive
+			values
+				5.0
+
+**[NEW] High Density District**
+	item_type : planet_component
+	build_group_id : economy
+	hud_icon : trader_high_density_district_unit_item_hud_icon
+	tooltip_icon : trader_high_density_district_unit_item_hud_icon
+	tooltip_picture : trader_high_density_district_unit_item_tooltip_picture
+	name : High Density District
+	description : Increases maximum population.
+	build_time : 60.0
+	price
+		credits : 750.0
+		metal : 200.0
+		crystal : 100.0
+	max_count_on_unit : 1
+	planet_type_groups
+			planet_types
+				city
+				hive_asteroid
+				terran
+	planet_modifiers
+			modifier_type : max_population_points
+			value_behavior : additive
+			values
+				100.0
+
+**trader_loyalist_garrison_recruitment_center**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+## Ability Changes
+
+**Concussion Charge**
+	active_actions
+		actions
+			actions
+				0
+					operators
+						1
+							effects
+								projectile_travel_effect : trader_siege_capital_ship_heavy_gauss_weapon_projectile_travel -> trader_siege_capital_ship_concussion_charge_weapon_projectile_travel
+
+## Unit Changes
+
+**Bomber**
+	health
+		levels
+			0
+				max_hull_points : 45.0 -> 40.0
+				max_armor_points : 90.0 -> 50.0
+
+**Fighter**
+	health
+		levels
+			0
+				max_hull_points : 30.0 -> 25.0
+				max_armor_points : 50.0 -> 30.0
+
+**Marza Dreadnought**
+	spatial
+		radius : 428.374115 -> 428.332336
+		box
+			center
+				0 : -1.702202 -> -2.979736
+				1 : 11.742729 -> 11.711182
+				2 : 74.960144 -> 74.919434
+			extents
+				0 : 235.631409 -> 236.916748
+				1 : 105.588387 -> 105.588379
+				2 : 351.39624 -> 351.396484
+	weapons
+		weapons
+			0
+				weapon_position
+					0 : -100.30349 -> -161.383057
+					1 : -1.835185 -> 25.074463
+					2 : 144.265961 -> 92.543945
+				non_turret_muzzle_positions
+					0
+						0 : -38.828613 -> -161.383057
+						1 : 25.182373 -> 25.074463
+						2 : 140.330566 -> 92.543945
+			1
+				weapon_position
+					0 : -86.941734 -> -63.087891
+					2 : 234.090179 -> 236.685059
+			2
+				weapon_position
+					1 : 18.958008 -> 17.954834
+
+**Percheron Carrier Cruiser**
+	health
+		levels
+			0
+				max_hull_points : 1450.0 -> 1350.0
+				max_armor_points : 800.0 -> 750.0
+
+## Unit_skin Changes
+
+**Marza Dreadnought**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					3
+						alias_binding
+							particle_effect : buff_trader_siege_capital_ship_concussion_charge_impact_large -> tec_concussive_status_large
+					4
+						alias_binding
+							particle_effect : buff_trader_siege_capital_ship_concussion_charge_impact_medium -> tec_concussive_status_medium
+					5
+						alias_binding
+							particle_effect : buff_trader_siege_capital_ship_concussion_charge_impact_small -> tec_concussive_status_small
+					7
+						alias_binding
+							particle_effect : buff_trader_siege_capital_ship_concussion_charge_self -> trader_siege_capital_ship_concussion_charge_radius_spawn
+					8
+						alias_name : trader_siege_capital_ship_heavy_gauss_weapon_hit_hull -> trader_siege_capital_ship_concussion_charge_weapon_projectile_travel
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_impact -> tec_concussive_shot_travel
+					9
+						alias_name : trader_siege_capital_ship_heavy_gauss_weapon_hit_shield -> trader_siege_capital_ship_heavy_gauss_weapon_hit_hull
+						alias_binding
+							sounds
+								0 : weapon_impact_generic_heavy_hitshields -> weapon_impact_physical_heavy_hithull
+								1 : weapon_impact_generic_heavy_hitshields_01 -> weapon_impact_physical_heavy_hithull_01
+								2 : weapon_impact_generic_heavy_hitshields_02 -> weapon_impact_physical_heavy_hithull_02
+								3 : weapon_impact_generic_heavy_hitshields_03 -> weapon_impact_physical_heavy_hithull_03
+					10
+						alias_name : trader_siege_capital_ship_heavy_gauss_weapon_muzzle -> trader_siege_capital_ship_heavy_gauss_weapon_hit_shield
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_muzzleflash -> tech_capital_gauss_cannon_impact
+							sounds
+								0 : weapon_muzzle_tech_gausscannon -> weapon_impact_generic_heavy_hitshields
+								1 : weapon_muzzle_tech_gausscannon_01 -> weapon_impact_generic_heavy_hitshields_01
+								2 : weapon_muzzle_tech_gausscannon_02 -> weapon_impact_generic_heavy_hitshields_02
+								3 : weapon_muzzle_tech_gausscannon_03 -> weapon_impact_generic_heavy_hitshields_03
+					11
+						alias_name : trader_siege_capital_ship_heavy_gauss_weapon_projectile_travel -> trader_siege_capital_ship_heavy_gauss_weapon_muzzle
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_travel -> tech_capital_gauss_cannon_muzzleflash
+					12
+						alias_name : trader_siege_capital_ship_medium_autocannon_weapon_hit_hull -> trader_siege_capital_ship_heavy_gauss_weapon_projectile_travel
+						alias_binding
+							particle_effect : medium_autocannon_impact -> tech_capital_gauss_cannon_travel
+					13
+						alias_name : trader_siege_capital_ship_medium_autocannon_weapon_hit_shield -> trader_siege_capital_ship_medium_autocannon_weapon_hit_hull
+						alias_binding
+							sounds
+								0 : weapon_impact_generic_medium_hitshields -> weapon_impact_physical_medium_hithull
+								1 : weapon_impact_generic_medium_hitshields_01 -> weapon_impact_physical_medium_hithull_01
+								2 : weapon_impact_generic_medium_hitshields_02 -> weapon_impact_physical_medium_hithull_02
+								3 : weapon_impact_generic_medium_hitshields_03 -> weapon_impact_physical_medium_hithull_03
+					14
+						alias_name : trader_siege_capital_ship_medium_autocannon_weapon_muzzle -> trader_siege_capital_ship_medium_autocannon_weapon_hit_shield
+						alias_binding
+							particle_effect : trader_capital_medium_autocannon_weapon_muzzle -> medium_autocannon_impact
+							sounds
+								0 : weapon_muzzle_tech_medium_autocannon -> weapon_impact_generic_medium_hitshields
+								1 : weapon_muzzle_tech_medium_autocannon_01 -> weapon_impact_generic_medium_hitshields_01
+								2 : weapon_muzzle_tech_medium_autocannon_02 -> weapon_impact_generic_medium_hitshields_02
+								3 : weapon_muzzle_tech_medium_autocannon_03 -> weapon_impact_generic_medium_hitshields_03
+					15
+						alias_name : trader_siege_capital_ship_medium_autocannon_weapon_projectile_travel -> trader_siege_capital_ship_medium_autocannon_weapon_muzzle
+						alias_binding
+							particle_effect : trader_medium_autocannon_weapon_projectile_travel -> trader_capital_medium_autocannon_weapon_muzzle
+					16
+						alias_name : trader_siege_capital_ship_medium_missile_weapon_muzzle -> trader_siege_capital_ship_medium_autocannon_weapon_projectile_travel
+						alias_binding
+							particle_effect : capital_ship_torpedo_muzzle -> trader_medium_autocannon_weapon_projectile_travel
+					17
+						alias_name : trader_siege_capital_ship_planet_bombing_weapon_hit_hull -> trader_siege_capital_ship_medium_missile_weapon_muzzle
+						alias_binding
+							particle_effect : nuke -> capital_ship_torpedo_muzzle
+							sounds
+								0 : weapon_impact_tech_planetbomb -> weapon_muzzle_tech_medium_missile_capship
+					18
+						alias_name : trader_siege_capital_ship_planet_bombing_weapon_hit_shield -> trader_siege_capital_ship_planet_bombing_weapon_hit_hull
+					19
+						alias_name : trader_siege_capital_ship_planet_bombing_weapon_muzzle -> trader_siege_capital_ship_planet_bombing_weapon_hit_shield
+						alias_binding
+							particle_effect : marza_raze_muzzle -> nuke
+							sounds
+								0 : weapon_muzzle_tech_planetbomb -> weapon_impact_tech_planetbomb
+					20
+						alias_name : trader_siege_capital_ship_planet_bombing_weapon_projectile_travel -> trader_siege_capital_ship_planet_bombing_weapon_muzzle
+						alias_binding
+							particle_effect : marza_raze_exhaust -> marza_raze_muzzle
+					21
+						alias_name : trader_siege_capital_ship_precision_targeting_buff_on_target_large -> trader_siege_capital_ship_planet_bombing_weapon_projectile_travel
+						alias_binding
+							particle_effect : precision_targeting_buff_large -> marza_raze_exhaust
+					22
+						alias_name : trader_siege_capital_ship_precision_targeting_buff_on_target_medium -> trader_siege_capital_ship_precision_targeting_buff_on_target_large
+						alias_binding
+							particle_effect : precision_targeting_buff_medium -> precision_targeting_buff_large
+					23
+						alias_name : trader_siege_capital_ship_precision_targeting_buff_on_target_small -> trader_siege_capital_ship_precision_targeting_buff_on_target_medium
+						alias_binding
+							particle_effect : precision_targeting_buff_small -> precision_targeting_buff_medium
+					24
+						alias_name : trader_siege_capital_ship_raze_planet_hit_surface -> trader_siege_capital_ship_precision_targeting_buff_on_target_small
+						alias_binding
+							particle_effect : marza_raze -> precision_targeting_buff_small
+					25
+						alias_name : trader_siege_capital_ship_raze_planet_muzzle -> trader_siege_capital_ship_raze_planet_hit_surface
+						alias_binding
+							particle_effect : trader_siege_capital_ship_raze_planet_muzzle -> marza_raze
+							sounds
+								0 : ability_muzzle_razeplanet -> ability_impact_razeplanet
+					26
+						alias_name : trader_siege_capital_ship_raze_planet_travel -> trader_siege_capital_ship_raze_planet_muzzle
+						alias_binding
+							particle_effect : trader_siege_capital_ship_raze_planet_travel -> trader_siege_capital_ship_raze_planet_muzzle
+
+## Research_subject Changes
+
+**[NEW] trader_unlock_magnetic_biosphere**
+	domain : civilian
+	tier : 1
+	field : civilian_annexation
+	field_coord
+		2
+		4
+	research_time : 60.0
+	price
+		credits : 400.0
+		metal : 25.0
+		crystal : 50.0
+	name : Geomagnetic Colonization
+	name_uppercase : GEOMAGNETIC COLONIZATION
+	description : Allows colonization of Geomagnetic planets and other similar environments.
+	hud_icon : trader_unlock_magnetic_biosphere_research_subject_hud_icon
+	tooltip_picture : trader_unlock_magnetic_biosphere_research_subject_tooltip_picture
+
+## Player Changes
+
+**trader_loyalist**
+	research
+		research_subjects
+			131 : trader_unlock_media_conglomerate_unit_item -> trader_unlock_magnetic_biosphere
+			132 : trader_unlock_metal_smelting_plant_unit_item -> trader_unlock_media_conglomerate_unit_item
+			133 : trader_unlock_missile_armor_unit_item -> trader_unlock_metal_smelting_plant_unit_item
+			134 : trader_unlock_missile_corvette -> trader_unlock_missile_armor_unit_item
+			135 : trader_unlock_missile_guidance_computer_unit_item -> trader_unlock_missile_corvette
+			136 : trader_unlock_munitions_plant_unit_item -> trader_unlock_missile_guidance_computer_unit_item
+			137 : trader_unlock_oceanic_biosphere -> trader_unlock_munitions_plant_unit_item
+			138 : trader_unlock_oceanic_domes_unit_item -> trader_unlock_oceanic_biosphere
+			139 : trader_unlock_phase_jump_inhibitor -> trader_unlock_oceanic_domes_unit_item
+			140 : trader_unlock_phase_lane_detector -> trader_unlock_phase_jump_inhibitor
+			141 : trader_unlock_phase_lane_detector_extended_range -> trader_unlock_phase_lane_detector
+			142 : trader_unlock_rapid_autoloader_unit_item -> trader_unlock_phase_lane_detector_extended_range
+			143 : trader_unlock_regional_government_unit_item -> trader_unlock_rapid_autoloader_unit_item
+			144 : trader_unlock_remote_drone_refinery_unit_item -> trader_unlock_regional_government_unit_item
+			145 : trader_unlock_reserve_squadron_hangar_unit_item -> trader_unlock_remote_drone_refinery_unit_item
+			146 : trader_unlock_resource_extractor_structures -> trader_unlock_reserve_squadron_hangar_unit_item
+			147 : trader_unlock_retrofit_bay_repair_ability -> trader_unlock_resource_extractor_structures
+			148 : trader_unlock_robotics_cruiser -> trader_unlock_retrofit_bay_repair_ability
+			149 : trader_unlock_robotics_cruiser_antimatter_droids_ability -> trader_unlock_robotics_cruiser
+			150 : trader_unlock_siege_frigate -> trader_unlock_robotics_cruiser_antimatter_droids_ability
+			151 : trader_unlock_skirmisher_corvette_frigate -> trader_unlock_siege_frigate
+			152 : trader_unlock_starbase -> trader_unlock_skirmisher_corvette_frigate
+			153 : trader_unlock_starbase_docking_booms_unit_item -> trader_unlock_starbase
+			154 : trader_unlock_starbase_improve_weapon_item -> trader_unlock_starbase_docking_booms_unit_item
+			155 : trader_unlock_starbase_planetary_shield_array_unit_item -> trader_unlock_starbase_improve_weapon_item
+			156 : trader_unlock_starbase_self_destruct_unit_item -> trader_unlock_starbase_planetary_shield_array_unit_item
+			157 : trader_unlock_starbase_structural_integrity_2_unit_item -> trader_unlock_starbase_self_destruct_unit_item
+			158 : trader_unlock_starbase_trade_port_unit_item -> trader_unlock_starbase_structural_integrity_2_unit_item
+			159 : trader_unlock_starbase_unit_factory_unit_item -> trader_unlock_starbase_trade_port_unit_item
+			160 : trader_unlock_starbase_unlock_beam_weapon_unit_item -> trader_unlock_starbase_unit_factory_unit_item
+			161 : trader_unlock_starbase_unlock_torpedo_weapon_unit_item -> trader_unlock_starbase_unlock_beam_weapon_unit_item
+			162 : trader_unlock_swamp_biosphere -> trader_unlock_starbase_unlock_torpedo_weapon_unit_item
+			163 : trader_unlock_targeting_array_unit_item -> trader_unlock_swamp_biosphere
+			164 : trader_unlock_torpedo_cruiser -> trader_unlock_targeting_array_unit_item
+			165 : trader_unlock_trade_escorts_0 -> trader_unlock_torpedo_cruiser
+			166 : trader_unlock_trade_escorts_1 -> trader_unlock_trade_escorts_0
+			167 : trader_unlock_trade_port -> trader_unlock_trade_escorts_1
+			168 : trader_unlock_trade_ship_detection -> trader_unlock_trade_port
+			169 : trader_unlock_volatile_accelerants_unit_item -> trader_unlock_trade_ship_detection
+			170 : trader_unlock_volcanic_biosphere -> trader_unlock_volatile_accelerants_unit_item
+			171 : trader_unlock_war_reporter_unit_item -> trader_unlock_volcanic_biosphere
+			172 : trader_unstoppable_phase_jump -> trader_unlock_war_reporter_unit_item
+			173 : trader_upgrade_backup_shield_generator_unit_item -> trader_unstoppable_phase_jump
+			174 : trader_upgrade_command_bunker_unit_item -> trader_upgrade_backup_shield_generator_unit_item
+			175 : trader_upgrade_crystalline_biosphere -> trader_upgrade_command_bunker_unit_item
+			176 : trader_upgrade_culture_ship_max_linear_speed_bonus -> trader_upgrade_crystalline_biosphere
+			177 : trader_upgrade_desert_biosphere -> trader_upgrade_culture_ship_max_linear_speed_bonus
+			178 : trader_upgrade_experience_gain_0 -> trader_upgrade_desert_biosphere
+			179 : trader_upgrade_experience_gain_1 -> trader_upgrade_experience_gain_0
+			180 : trader_upgrade_ferrous_biosphere -> trader_upgrade_experience_gain_1
+			181 : trader_upgrade_ice_biosphere -> trader_upgrade_ferrous_biosphere
+			182 : trader_upgrade_ice_biosphere_credit_rate -> trader_upgrade_ice_biosphere
+			183 : trader_upgrade_influence_0 -> trader_upgrade_ice_biosphere_credit_rate
+			184 : trader_upgrade_influence_1 -> trader_upgrade_influence_0
+			185 : trader_upgrade_influence_2 -> trader_upgrade_influence_1
+			186 : trader_upgrade_influence_rate -> trader_upgrade_influence_2
+			187 : trader_upgrade_loot_experience_gain -> trader_upgrade_influence_rate
+			188 : trader_upgrade_oceanic_biosphere -> trader_upgrade_loot_experience_gain
+			189 : trader_upgrade_oceanic_domes_unit_item_0 -> trader_upgrade_oceanic_biosphere
+			190 : trader_upgrade_oceanic_domes_unit_item_1 -> trader_upgrade_oceanic_domes_unit_item_0
+			191 : trader_upgrade_radiation_bomb_unit_item -> trader_upgrade_oceanic_domes_unit_item_1
+			192 : trader_upgrade_rapid_autoloader_unit_item -> trader_upgrade_radiation_bomb_unit_item
+			193 : trader_upgrade_regional_government_office_unit_item -> trader_upgrade_rapid_autoloader_unit_item
+			194 : trader_war_measures_act -> trader_upgrade_regional_government_office_unit_item
+			195 : trader_wormhole_travel -> trader_war_measures_act
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				commerce
+					1
+						credits_income_rate : 2.0 -> 3.0
+						credits_income_rate_per_population : 0.007 -> 0.006
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+			trade_capacity_levels
+				0
+					export_points
+						crystal : 2 -> 1
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+			trade_capacity_levels
+				0
+					export_points
+						metal : 1 -> 2
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : trader_unlock_swamp_biosphere -> trader_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+				commerce
+					1
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.006 -> 0.005
+					2
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.013 -> 0.011
+					3
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.021 -> 0.018
+					4
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.03 -> 0.026
+					5
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.04 -> 0.035
+		15
+			planet_type : terran -> swamp
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+				commerce
+					1
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.005 -> 0.006
+					2
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.011 -> 0.013
+					3
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.018 -> 0.021
+					4
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.026 -> 0.03
+					5
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.035 -> 0.04
+		16
+			planet_type : volcanic -> terran
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				commerce
+					1
+						credits_income_rate : 2.0 -> 4.0
+						credits_income_rate_per_population : 0.007 -> 0.005
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+			trade_capacity_levels
+				0
+					export_points
+						metal : 2 -> 1
+				1
+					export_points
+						metal : 2 -> 1
+				2
+					export_points
+						metal : 2 -> 1
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				commerce
+					1
+						credits_income_rate : 0.5 -> 2.0
+						credits_income_rate_per_population : 0.009 -> 0.007
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+			trade_capacity_levels
+				0
+					export_points
+						credits : 3 -> 1
+		18
+			planet_type : ship_graveyard -> pirate_base
+			trade_capacity_levels
+				0
+					export_points
+						credits : 1 -> 3
+	garrison
+		units
+			random_units
+				5
+					unit : trader_antifighter_frigate -> trader_missile_corvette
+					weight : 30.0 -> 20.0
+				6
+					unit : trader_antiarmor_frigate -> trader_antifighter_frigate
+					weight : 20.0 -> 30.0
+
+**trader_rebel**
+	research
+		research_subjects
+			123 : trader_unlock_media_conglomerate_unit_item -> trader_unlock_magnetic_biosphere
+			124 : trader_unlock_metal_smelting_plant_unit_item -> trader_unlock_media_conglomerate_unit_item
+			125 : trader_unlock_missile_armor_unit_item -> trader_unlock_metal_smelting_plant_unit_item
+			126 : trader_unlock_missile_corvette -> trader_unlock_missile_armor_unit_item
+			127 : trader_unlock_missile_guidance_computer_unit_item -> trader_unlock_missile_corvette
+			128 : trader_unlock_munitions_plant_unit_item -> trader_unlock_missile_guidance_computer_unit_item
+			129 : trader_unlock_oceanic_biosphere -> trader_unlock_munitions_plant_unit_item
+			130 : trader_unlock_oceanic_domes_unit_item -> trader_unlock_oceanic_biosphere
+			131 : trader_unlock_orbital_cannon_structure -> trader_unlock_oceanic_domes_unit_item
+			132 : trader_unlock_phase_jump_inhibitor -> trader_unlock_orbital_cannon_structure
+			133 : trader_unlock_phase_lane_detector -> trader_unlock_phase_jump_inhibitor
+			134 : trader_unlock_phase_lane_detector_extended_range -> trader_unlock_phase_lane_detector
+			135 : trader_unlock_pirate_mercenary_base_unit_item -> trader_unlock_phase_lane_detector_extended_range
+			136 : trader_unlock_rapid_autoloader_unit_item -> trader_unlock_pirate_mercenary_base_unit_item
+			137 : trader_unlock_rebel_titan -> trader_unlock_rapid_autoloader_unit_item
+			138 : trader_unlock_rebel_titan_hangar_unit_item -> trader_unlock_rebel_titan
+			139 : trader_unlock_rebel_titan_hull_plating_0_unit_item -> trader_unlock_rebel_titan_hangar_unit_item
+			140 : trader_unlock_rebel_titan_hull_plating_1_unit_item -> trader_unlock_rebel_titan_hull_plating_0_unit_item
+			141 : trader_unlock_rebel_titan_missile_weapon_unit_item -> trader_unlock_rebel_titan_hull_plating_1_unit_item
+			142 : trader_unlock_rebel_titan_rail_gun_weapon_unit_item -> trader_unlock_rebel_titan_missile_weapon_unit_item
+			143 : trader_unlock_regional_government_unit_item -> trader_unlock_rebel_titan_rail_gun_weapon_unit_item
+			144 : trader_unlock_remote_drone_refinery_unit_item -> trader_unlock_regional_government_unit_item
+			145 : trader_unlock_reserve_squadron_hangar_unit_item -> trader_unlock_remote_drone_refinery_unit_item
+			146 : trader_unlock_resource_extractor_structures -> trader_unlock_reserve_squadron_hangar_unit_item
+			147 : trader_unlock_retrofit_bay_repair_ability -> trader_unlock_resource_extractor_structures
+			148 : trader_unlock_robotics_cruiser -> trader_unlock_retrofit_bay_repair_ability
+			149 : trader_unlock_robotics_cruiser_antimatter_droids_ability -> trader_unlock_robotics_cruiser
+			150 : trader_unlock_siege_frigate -> trader_unlock_robotics_cruiser_antimatter_droids_ability
+			151 : trader_unlock_skirmisher_corvette_frigate -> trader_unlock_siege_frigate
+			152 : trader_unlock_starbase -> trader_unlock_skirmisher_corvette_frigate
+			153 : trader_unlock_starbase_docking_booms_unit_item -> trader_unlock_starbase
+			154 : trader_unlock_starbase_improve_weapon_item -> trader_unlock_starbase_docking_booms_unit_item
+			155 : trader_unlock_starbase_planetary_shield_array_unit_item -> trader_unlock_starbase_improve_weapon_item
+			156 : trader_unlock_starbase_self_destruct_unit_item -> trader_unlock_starbase_planetary_shield_array_unit_item
+			157 : trader_unlock_starbase_structural_integrity_2_unit_item -> trader_unlock_starbase_self_destruct_unit_item
+			158 : trader_unlock_starbase_trade_port_unit_item -> trader_unlock_starbase_structural_integrity_2_unit_item
+			159 : trader_unlock_starbase_unit_factory_unit_item -> trader_unlock_starbase_trade_port_unit_item
+			160 : trader_unlock_starbase_unlock_beam_weapon_unit_item -> trader_unlock_starbase_unit_factory_unit_item
+			161 : trader_unlock_starbase_unlock_torpedo_weapon_unit_item -> trader_unlock_starbase_unlock_beam_weapon_unit_item
+			162 : trader_unlock_swamp_biosphere -> trader_unlock_starbase_unlock_torpedo_weapon_unit_item
+			163 : trader_unlock_targeting_array_unit_item -> trader_unlock_swamp_biosphere
+			164 : trader_unlock_torpedo_cruiser -> trader_unlock_targeting_array_unit_item
+			165 : trader_unlock_trade_escorts_0 -> trader_unlock_torpedo_cruiser
+			166 : trader_unlock_trade_escorts_1 -> trader_unlock_trade_escorts_0
+			167 : trader_unlock_trade_port -> trader_unlock_trade_escorts_1
+			168 : trader_unlock_trade_ship_detection -> trader_unlock_trade_port
+			169 : trader_unlock_volatile_accelerants_unit_item -> trader_unlock_trade_ship_detection
+			170 : trader_unlock_volcanic_biosphere -> trader_unlock_volatile_accelerants_unit_item
+			171 : trader_unlock_war_reporter_unit_item -> trader_unlock_volcanic_biosphere
+			172 : trader_unstoppable_phase_jump -> trader_unlock_war_reporter_unit_item
+			173 : trader_upgrade_backup_shield_generator_unit_item -> trader_unstoppable_phase_jump
+			174 : trader_upgrade_command_bunker_unit_item -> trader_upgrade_backup_shield_generator_unit_item
+			175 : trader_upgrade_crystalline_biosphere -> trader_upgrade_command_bunker_unit_item
+			176 : trader_upgrade_culture_ship_max_linear_speed_bonus -> trader_upgrade_crystalline_biosphere
+			177 : trader_upgrade_desert_biosphere -> trader_upgrade_culture_ship_max_linear_speed_bonus
+			178 : trader_upgrade_experience_gain_0 -> trader_upgrade_desert_biosphere
+			179 : trader_upgrade_experience_gain_1 -> trader_upgrade_experience_gain_0
+			180 : trader_upgrade_ferrous_biosphere -> trader_upgrade_experience_gain_1
+			181 : trader_upgrade_ice_biosphere -> trader_upgrade_ferrous_biosphere
+			182 : trader_upgrade_ice_biosphere_credit_rate -> trader_upgrade_ice_biosphere
+			183 : trader_upgrade_influence_0 -> trader_upgrade_ice_biosphere_credit_rate
+			184 : trader_upgrade_influence_1 -> trader_upgrade_influence_0
+			185 : trader_upgrade_influence_2 -> trader_upgrade_influence_1
+			186 : trader_upgrade_influence_rate -> trader_upgrade_influence_2
+			187 : trader_upgrade_loot_experience_gain -> trader_upgrade_influence_rate
+			188 : trader_upgrade_oceanic_biosphere -> trader_upgrade_loot_experience_gain
+			189 : trader_upgrade_oceanic_domes_unit_item_0 -> trader_upgrade_oceanic_biosphere
+			190 : trader_upgrade_oceanic_domes_unit_item_1 -> trader_upgrade_oceanic_domes_unit_item_0
+			191 : trader_upgrade_radiation_bomb_unit_item -> trader_upgrade_oceanic_domes_unit_item_1
+			192 : trader_upgrade_rapid_autoloader_unit_item -> trader_upgrade_radiation_bomb_unit_item
+			193 : trader_upgrade_regional_government_office_unit_item -> trader_upgrade_rapid_autoloader_unit_item
+			194 : trader_wormhole_travel -> trader_upgrade_regional_government_office_unit_item
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				commerce
+					1
+						credits_income_rate : 2.0 -> 3.0
+						credits_income_rate_per_population : 0.007 -> 0.006
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+			trade_capacity_levels
+				0
+					export_points
+						crystal : 2 -> 1
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+			trade_capacity_levels
+				0
+					export_points
+						metal : 1 -> 2
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : trader_unlock_swamp_biosphere -> trader_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+				commerce
+					1
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.006 -> 0.005
+					2
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.013 -> 0.011
+					3
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.021 -> 0.018
+					4
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.03 -> 0.026
+					5
+						credits_income_rate : 3.0 -> 4.0
+						credits_income_rate_per_population : 0.04 -> 0.035
+		15
+			planet_type : terran -> swamp
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+				commerce
+					1
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.005 -> 0.006
+					2
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.011 -> 0.013
+					3
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.018 -> 0.021
+					4
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.026 -> 0.03
+					5
+						credits_income_rate : 4.0 -> 3.0
+						credits_income_rate_per_population : 0.035 -> 0.04
+		16
+			planet_type : volcanic -> terran
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				commerce
+					1
+						credits_income_rate : 2.0 -> 4.0
+						credits_income_rate_per_population : 0.007 -> 0.005
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+			trade_capacity_levels
+				0
+					export_points
+						metal : 2 -> 1
+				1
+					export_points
+						metal : 2 -> 1
+				2
+					export_points
+						metal : 2 -> 1
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				commerce
+					1
+						credits_income_rate : 0.5 -> 2.0
+						credits_income_rate_per_population : 0.009 -> 0.007
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+			trade_capacity_levels
+				0
+					export_points
+						credits : 3 -> 1
+		18
+			planet_type : ship_graveyard -> pirate_base
+			trade_capacity_levels
+				0
+					export_points
+						credits : 1 -> 3
+	culture
+		insurgency
+			spawn_units
+				random_units
+					2
+						unit : trader_long_range_cruiser -> trader_missile_corvette
+					3
+						unit : trader_heavy_cruiser -> trader_long_range_cruiser
+					4
+						unit : trader_carrier_cruiser -> trader_heavy_cruiser
+					5
+						unit : trader_antifighter_frigate -> trader_carrier_cruiser
+						weight : 10.0 -> 20.0
+					6
+						unit : trader_siege_frigate -> trader_antifighter_frigate
+			cooldown : 120.0 -> 200.0
+
+
+# Vasari Changes
+
+## Unit_item Changes
+
+**Administrative Uplink**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Alliance Xeno Embassy**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> oceanic
+				3 : terran -> swamp
+
+**Core Stripper**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> barren
+				2 : desert -> city
+				3 : ferrous -> crystalline
+				4 : gas_giant -> desert
+				5 : ice_asteroid -> ferrous
+				6 : ice -> gas_giant
+				7 : moon -> hive_asteroid
+				8 : oceanic -> ice_asteroid
+				9 : swamp -> ice
+				10 : ship_graveyard -> ice_moon
+				11 : terran -> magnetic
+				12 : volcanic -> moon
+				13 : pirate_base -> oceanic
+
+**Crystal Seeking Nanites**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+
+**Dark Fleet Tower**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Debris Reclamation Center**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Deconstruction Nanites**
+	hud_icon : vasari_hygroscopic_nanites_research_subject_hud_icon -> vasari_deconstruction_nanites_unit_item_hud_icon
+	tooltip_picture : vasari_hygroscopic_nanites_research_subject_tooltip_picture -> vasari_deconstruction_nanites_unit_item_tooltip_picture
+	planet_modifiers
+		0
+			values
+				0 : 1.8 -> 3.6
+
+**Defensive Uplink**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Exodus Xeno Embassy**
+	planet_type_groups
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : swamp -> oceanic
+				3 : terran -> swamp
+
+**Indoctrination Center**
+	planet_type_groups
+		0
+			planet_types
+				6 : oceanic -> magnetic
+				7 : swamp -> oceanic
+				8 : terran -> swamp
+				9 : volcanic -> terran
+
+**Intercultural Exchange**
+	planet_type_groups
+		0
+			planet_types
+				5 : ice -> hive_asteroid
+				6 : oceanic -> ice
+				7 : swamp -> magnetic
+				8 : terran -> oceanic
+				9 : volcanic -> swamp
+
+**Labor Camp**
+	planet_type_groups
+		0
+			planet_types
+				1 : barren -> city
+				2 : crystalline -> barren
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : ice_asteroid -> ferrous
+				6 : ice -> hive_asteroid
+				7 : ice_moon -> ice_asteroid
+				8 : moon -> ice
+				9 : oceanic -> ice_moon
+				10 : pirate_base -> magnetic
+				11 : swamp -> moon
+				12 : terran -> oceanic
+				13 : volcanic -> pirate_base
+				14 : volcanic_moon -> swamp
+
+**Lirtra Adjunct Lab**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> moon
+				12 : swamp -> magnetic
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Matter Hypercompiler**
+	planet_type_groups
+		0
+			planet_types
+				2 : crystalline -> city
+				3 : desert -> crystalline
+				4 : ferrous -> desert
+				5 : gas_giant -> ferrous
+				6 : ice_asteroid -> gas_giant
+				7 : ice -> hive_asteroid
+				8 : ice_moon -> ice_asteroid
+				9 : moon -> ice
+				10 : oceanic -> ice_moon
+				11 : pirate_base -> magnetic
+				12 : swamp -> moon
+				13 : terran -> oceanic
+				14 : volcanic -> pirate_base
+				15 : volcanic_moon -> swamp
+
+**Metal Seeking Nanites**
+	planet_type_groups
+		0
+			planet_types
+				1 : crystalline -> city
+				2 : desert -> crystalline
+				3 : ferrous -> desert
+				4 : ice -> ferrous
+				5 : oceanic -> ice
+				6 : swamp -> magnetic
+				7 : terran -> oceanic
+				8 : volcanic -> swamp
+
+**Sevra Genetics Lab**
+	planet_type_groups
+		0
+			planet_types
+				0 : oceanic -> city
+				1 : swamp -> oceanic
+				2 : terran -> swamp
+
+**Vitra Weapons Lab**
+	planet_type_groups
+		0
+			planet_types
+				1 : volcanic -> magnetic
+
+## Ability Changes
+
+**Elite Strike Craft**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					2
+						unit_modifier_id : elite_bombers_hull_armor_modifier -> elite_bombers_hull_regen_modifier
+
+**Repair**
+	gui
+		hud_icon : vasari_repair_platform_structure_repair_hud_icon -> vasari_structure_repair_hud_icon
+		tooltip_icon : vasari_repair_platform_structure_repair_hud_icon -> vasari_structure_repair_picture
+
+**Strike Craft Armor**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						unit_modifier_id : max_armor_points_bonus -> max_armor_points_modifier
+					1
+						unit_modifier_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_modifier
+
+## Action_data_source Changes
+
+**Elite Strike Craft**
+	action_values
+		0
+			action_value_id : elite_bombers_armor_bonus_value -> elite_bombers_damage_bonus_value
+			action_value
+				values
+					0 : 6.0 -> 0.18
+					1 : 12.0 -> 0.24
+					2 : 18.0 -> 0.3
+		1
+			action_value_id : elite_bombers_damage_bonus_value -> elite_bombers_hull_bonus_value
+			action_value
+				values
+					0 : 0.12 -> 18.0
+					1 : 0.24 -> 24.0
+					2 : 0.36 -> 30.0
+		2
+			action_value_id : elite_bombers_hull_bonus_value -> elite_bombers_hull_regen_bonus_value
+			action_value
+				values
+					0 : 10.0 -> 0.36
+					1 : 20.0 -> 0.48
+					2 : 30.0 -> 0.6
+	buff_unit_modifiers
+		1
+			buff_unit_modifier_id : elite_bombers_hull_armor_modifier -> elite_bombers_hull_regen_modifier
+			buff_unit_modifier
+				modifier_type : armor_strength -> hull_point_restore_rate
+				value_behavior : additive -> scalar
+				value_id : elite_bombers_armor_bonus_value -> elite_bombers_hull_regen_bonus_value
+
+**Phase Restoration**
+	action_values
+		7
+			action_value_id : phase_restoration_shield_restore_value -> phase_restoration_invincibility_value
+			action_value
+				values
+					0 : 0.9 -> 0.66
+		8
+			action_value_id : phase_restoration_trigger_duration_value -> phase_restoration_shield_restore_value
+			action_value
+				values
+					0 : 60.0 -> 0.9
+
+**Strike Craft Armor**
+	action_values
+		0
+			action_value_id : max_armor_points_bonus -> max_armor_points_value
+		1
+			action_value_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_value
+			action_value
+				values
+					0 : 12.0 -> 0.6
+	buff_unit_modifiers
+		0
+			buff_unit_modifier_id : max_armor_points_bonus -> max_armor_points_modifier
+			buff_unit_modifier
+				value_id : max_armor_points_bonus -> max_armor_points_value
+		1
+			buff_unit_modifier_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_modifier
+			buff_unit_modifier
+				modifier_type : armor_strength -> armor_point_restore_scalar_after_damage_taken
+				value_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_value
+
+## Buff Changes
+
+**Repair**
+	gui
+		hud_icon : vasari_repair_platform_structure_repair_hud_icon -> vasari_structure_repair_hud_icon
+
+**[NEW] vasari_marauder_capital_ship_phase_restoration_invincibility**
+	active_duration : phase_restoration_invincibility_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : preserve_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_current_spawner_try_make_dead
+			action_group
+				actions
+						action_type : abort_make_dead
+	unit_mutations
+		in_phase_space
+
+**vasari_carrier_capital_ship_elite_bombers_on_strikecraft**
+	unit_modifiers
+		1
+			buff_unit_modifier_id : elite_bombers_hull_armor_modifier -> elite_bombers_hull_regen_modifier
+	gui
+		tooltip_line_groups
+			0
+				lines
+					1
+						unit_modifier_id : elite_bombers_hull_armor_modifier -> elite_bombers_hull_regen_modifier
+
+**vasari_strikecraft_armor_unit_item_on_strikecraft**
+	unit_modifiers
+		0
+			buff_unit_modifier_id : max_armor_points_bonus -> max_armor_points_modifier
+		1
+			buff_unit_modifier_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_modifier
+	gui
+		tooltip_line_groups
+			0
+				lines
+					0
+						unit_modifier_id : max_armor_points_bonus -> max_armor_points_modifier
+					1
+						unit_modifier_id : hull_armor_bonus -> armor_point_restore_scalar_after_damage_taken_modifier
+
+## Unit Changes
+
+**Bomber**
+	health
+		levels
+			0
+				max_hull_points : 135.0 -> 90.0
+				max_armor_points : 60.0 -> 45.0
+
+**Heavy Fighter**
+	weapons
+		weapons
+			0
+				light_beam
+					tags
+						0 : autocannon -> beam
+						1 : physical -> energy
+	health
+		levels
+			0
+				max_hull_points : 165.0 -> 125.0
+				max_armor_points : 75.0 -> 30.0
+
+**Junsurak Warden**
+	health
+		levels
+			0
+				experience_given_on_death : 31.0 -> 37.0
+	build
+		price
+			metal : 90.0 -> 105.0
+			crystal : 20.0 -> 30.0
+		supply_cost : 5 -> 6
+
+**Kortovas Oppressor**
+	weapons
+		weapons
+			0
+				heavy_wave_cannon
+					damage : 42.0 -> 40.0
+					dps : 7.0 -> 6.666666666666667
+			1
+				heavy_wave_cannon
+					damage : 42.0 -> 40.0
+					dps : 7.0 -> 6.666666666666667
+			2
+				heavy_wave_cannon
+					damage : 42.0 -> 40.0
+					dps : 7.0 -> 6.666666666666667
+			3
+				heavy_wave_cannon
+					damage : 42.0 -> 40.0
+					dps : 7.0 -> 6.666666666666667
+	health
+		levels
+			0
+				max_hull_points : 1435.0 -> 1335.0
+	build
+		price
+			metal : 275.0 -> 335.0
+
+**Lasurak Transporter**
+	health
+		levels
+			0
+				max_armor_points : 675.0 -> 645.0
+				max_shield_points : 900.0 -> 840.0
+
+## Unit_skin Changes
+
+**Regeneration Bay**
+	skin_stages
+		0
+			effects
+				effect_alias_bindings
+					0
+						alias_binding
+							particle_effect : nanite_repair_start -> vasari_repair_platform_nanite_repair_start
+
+## Research_subject Changes
+
+**[NEW] vasari_unlock_magnetic_biosphere**
+	domain : civilian
+	tier : 2
+	field : civilian_oppression
+	field_coord
+		5
+		6
+	research_time : 90.0
+	price
+		metal : 150.0
+		crystal : 90.0
+	name : Geomagnetic Occupation
+	name_uppercase : GEOMAGNETIC OCCUPATION
+	description : Allows colonization of Geomagnetic planets.
+	hud_icon : vasari_unlock_magnetic_biosphere_research_subject_hud_icon
+	tooltip_picture : vasari_unlock_magnetic_biosphere_research_subject_tooltip_picture
+
+## Player Changes
+
+**vasari_loyalist**
+	research
+		research_subjects
+			72 : vasari_unlock_metal_refinery_unit_item -> vasari_unlock_magnetic_biosphere
+			73 : vasari_unlock_mobile_civilian_research_lab_unit_item -> vasari_unlock_metal_refinery_unit_item
+			74 : vasari_unlock_mobile_exotic_factory_unit_item -> vasari_unlock_mobile_civilian_research_lab_unit_item
+			75 : vasari_unlock_mobile_fleet_beacon_unit_item -> vasari_unlock_mobile_exotic_factory_unit_item
+			76 : vasari_unlock_mobile_military_research_lab_unit_item -> vasari_unlock_mobile_fleet_beacon_unit_item
+			77 : vasari_unlock_mobile_resonance_collector_unit_item -> vasari_unlock_mobile_military_research_lab_unit_item
+			78 : vasari_unlock_mobile_ruler_ship_unit_item -> vasari_unlock_mobile_resonance_collector_unit_item
+			79 : vasari_unlock_mobile_speed_research_lab_unit_item -> vasari_unlock_mobile_ruler_ship_unit_item
+			80 : vasari_unlock_ocean_floor_miner_unit_item -> vasari_unlock_mobile_speed_research_lab_unit_item
+			81 : vasari_unlock_oceanic_biosphere -> vasari_unlock_ocean_floor_miner_unit_item
+			82 : vasari_unlock_orbital_administration_unit_item -> vasari_unlock_oceanic_biosphere
+			83 : vasari_unlock_overseer_cruiser -> vasari_unlock_orbital_administration_unit_item
+			84 : vasari_unlock_overseer_cruiser_phase_lane_detection_ability -> vasari_unlock_overseer_cruiser
+			85 : vasari_unlock_phase_gate_structure -> vasari_unlock_overseer_cruiser_phase_lane_detection_ability
+			86 : vasari_unlock_phase_jump_inhibitor -> vasari_unlock_phase_gate_structure
+			87 : vasari_unlock_phase_lane_detection -> vasari_unlock_phase_jump_inhibitor
+			88 : vasari_unlock_phase_missile_boost_unit_item -> vasari_unlock_phase_lane_detection
+			89 : vasari_unlock_phase_resonance_amplifier_unit_item -> vasari_unlock_phase_missile_boost_unit_item
+			90 : vasari_unlock_phase_shield_unit_item -> vasari_unlock_phase_resonance_amplifier_unit_item
+			91 : vasari_unlock_phase_synchronizer_structure -> vasari_unlock_phase_shield_unit_item
+			92 : vasari_unlock_precise_turret_servos -> vasari_unlock_phase_synchronizer_structure
+			93 : vasari_unlock_raider_corvette -> vasari_unlock_precise_turret_servos
+			94 : vasari_unlock_repair_platform_structure -> vasari_unlock_raider_corvette
+			95 : vasari_unlock_resource_booster_unit_item -> vasari_unlock_repair_platform_structure
+			96 : vasari_unlock_self_repairing_armor_unit_item -> vasari_unlock_resource_booster_unit_item
+			97 : vasari_unlock_siege_cruiser -> vasari_unlock_self_repairing_armor_unit_item
+			98 : vasari_unlock_starbase -> vasari_unlock_siege_cruiser
+			99 : vasari_unlock_starbase_debris_vortex_unit_item -> vasari_unlock_starbase
+			100 : vasari_unlock_starbase_hangar_unit_item -> vasari_unlock_starbase_debris_vortex_unit_item
+			101 : vasari_unlock_starbase_hyperspace_engines_unit_item -> vasari_unlock_starbase_hangar_unit_item
+			102 : vasari_unlock_starbase_planetary_shield_array_unit_item -> vasari_unlock_starbase_hyperspace_engines_unit_item
+			103 : vasari_unlock_starbase_structural_integrity_0_unit_item -> vasari_unlock_starbase_planetary_shield_array_unit_item
+			104 : vasari_unlock_starbase_structural_integrity_1_unit_item -> vasari_unlock_starbase_structural_integrity_0_unit_item
+			105 : vasari_unlock_starbase_weapon_unit_item -> vasari_unlock_starbase_structural_integrity_1_unit_item
+			106 : vasari_unlock_strikecraft_armor_unit_item -> vasari_unlock_starbase_weapon_unit_item
+			107 : vasari_unlock_stripped_to_the_core_unit_item -> vasari_unlock_strikecraft_armor_unit_item
+			108 : vasari_unlock_swamp_biosphere -> vasari_unlock_stripped_to_the_core_unit_item
+			109 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			110 : vasari_unlock_terran_mining_booster_unit_item -> vasari_unlock_terran_biosphere
+			111 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_mining_booster_unit_item
+			112 : vasari_unlock_wave_boost_unit_item -> vasari_unlock_volcanic_biosphere
+			113 : vasari_unlock_wormhole_travel -> vasari_unlock_wave_boost_unit_item
+			114 : vasari_unstoppable_phase_jump -> vasari_unlock_wormhole_travel
+			115 : vasari_upgrade_beam_boost_unit_item -> vasari_unstoppable_phase_jump
+			116 : vasari_upgrade_beam_weapons_0 -> vasari_upgrade_beam_boost_unit_item
+			117 : vasari_upgrade_beam_weapons_1 -> vasari_upgrade_beam_weapons_0
+			118 : vasari_upgrade_beam_weapons_2 -> vasari_upgrade_beam_weapons_1
+			119 : vasari_upgrade_beam_weapons_3 -> vasari_upgrade_beam_weapons_2
+			120 : vasari_upgrade_crystalline_biosphere_0 -> vasari_upgrade_beam_weapons_3
+			121 : vasari_upgrade_dark_fleet_tower_unit_item -> vasari_upgrade_crystalline_biosphere_0
+			122 : vasari_upgrade_desert_biosphere_0 -> vasari_upgrade_dark_fleet_tower_unit_item
+			123 : vasari_upgrade_desert_biosphere_1 -> vasari_upgrade_desert_biosphere_0
+			124 : vasari_upgrade_experience_gain -> vasari_upgrade_desert_biosphere_1
+			125 : vasari_upgrade_fabricator_cruiser_debris_reclamation_ability -> vasari_upgrade_experience_gain
+			126 : vasari_upgrade_ferrous_biosphere_1 -> vasari_upgrade_fabricator_cruiser_debris_reclamation_ability
+			127 : vasari_upgrade_hull_armor_0 -> vasari_upgrade_ferrous_biosphere_1
+			128 : vasari_upgrade_hull_armor_1 -> vasari_upgrade_hull_armor_0
+			129 : vasari_upgrade_hull_armor_2 -> vasari_upgrade_hull_armor_1
+			130 : vasari_upgrade_hull_base -> vasari_upgrade_hull_armor_2
+			131 : vasari_upgrade_hull_point_restore_rate_0 -> vasari_upgrade_hull_base
+			132 : vasari_upgrade_hull_point_restore_rate_1 -> vasari_upgrade_hull_point_restore_rate_0
+			133 : vasari_upgrade_hull_point_restore_rate_2 -> vasari_upgrade_hull_point_restore_rate_1
+			134 : vasari_upgrade_hull_points_0 -> vasari_upgrade_hull_point_restore_rate_2
+			135 : vasari_upgrade_hull_points_1 -> vasari_upgrade_hull_points_0
+			136 : vasari_upgrade_hull_points_2 -> vasari_upgrade_hull_points_1
+			137 : vasari_upgrade_hyperspace_charge_time -> vasari_upgrade_hull_points_2
+			138 : vasari_upgrade_ice_biosphere_0 -> vasari_upgrade_hyperspace_charge_time
+			139 : vasari_upgrade_ice_biosphere_1 -> vasari_upgrade_ice_biosphere_0
+			140 : vasari_upgrade_influence_0 -> vasari_upgrade_ice_biosphere_1
+			141 : vasari_upgrade_influence_1 -> vasari_upgrade_influence_0
+			142 : vasari_upgrade_labor_camp_0 -> vasari_upgrade_influence_1
+			143 : vasari_upgrade_labor_camp_1 -> vasari_upgrade_labor_camp_0
+			144 : vasari_upgrade_missile_damage_0 -> vasari_upgrade_labor_camp_1
+			145 : vasari_upgrade_missile_damage_1 -> vasari_upgrade_missile_damage_0
+			146 : vasari_upgrade_missile_damage_2 -> vasari_upgrade_missile_damage_1
+			147 : vasari_upgrade_mobile_research_lab_unit_item_0 -> vasari_upgrade_missile_damage_2
+			148 : vasari_upgrade_mobile_research_lab_unit_item_1 -> vasari_upgrade_mobile_research_lab_unit_item_0
+			149 : vasari_upgrade_oceanic_biosphere_0 -> vasari_upgrade_mobile_research_lab_unit_item_1
+			150 : vasari_upgrade_oceanic_biosphere_1 -> vasari_upgrade_oceanic_biosphere_0
+			151 : vasari_upgrade_orbital_administration_unit_item -> vasari_upgrade_oceanic_biosphere_1
+			152 : vasari_upgrade_orbital_extraction_0 -> vasari_upgrade_orbital_administration_unit_item
+			153 : vasari_upgrade_orbital_extraction_1 -> vasari_upgrade_orbital_extraction_0
+			154 : vasari_upgrade_orbital_extraction_2 -> vasari_upgrade_orbital_extraction_1
+			155 : vasari_upgrade_overseer_cruiser_phase_lane_detection_ability -> vasari_upgrade_orbital_extraction_2
+			156 : vasari_upgrade_phase_missile_boost_unit_item -> vasari_upgrade_overseer_cruiser_phase_lane_detection_ability
+			157 : vasari_upgrade_phase_missile_bypass_shields_chance -> vasari_upgrade_phase_missile_boost_unit_item
+			158 : vasari_upgrade_phase_resonance_bonus_duration_0 -> vasari_upgrade_phase_missile_bypass_shields_chance
+			159 : vasari_upgrade_phase_resonance_bonus_duration_1 -> vasari_upgrade_phase_resonance_bonus_duration_0
+			160 : vasari_upgrade_planet_bombing_range -> vasari_upgrade_phase_resonance_bonus_duration_1
+			161 : vasari_upgrade_planet_health_restore -> vasari_upgrade_planet_bombing_range
+			162 : vasari_upgrade_pulse_weapons_0 -> vasari_upgrade_planet_health_restore
+			163 : vasari_upgrade_pulse_weapons_1 -> vasari_upgrade_pulse_weapons_0
+			164 : vasari_upgrade_pulse_weapons_2 -> vasari_upgrade_pulse_weapons_1
+			165 : vasari_upgrade_pulse_weapons_3 -> vasari_upgrade_pulse_weapons_2
+			166 : vasari_upgrade_shields_0 -> vasari_upgrade_pulse_weapons_3
+			167 : vasari_upgrade_shields_1 -> vasari_upgrade_shields_0
+			168 : vasari_upgrade_shields_regeneration -> vasari_upgrade_shields_1
+			169 : vasari_upgrade_starbase_engines -> vasari_upgrade_shields_regeneration
+			170 : vasari_upgrade_structure_build_time -> vasari_upgrade_starbase_engines
+			171 : vasari_upgrade_swamp_biosphere_0 -> vasari_upgrade_structure_build_time
+			172 : vasari_upgrade_swamp_biosphere_1 -> vasari_upgrade_swamp_biosphere_0
+			173 : vasari_upgrade_terran_biosphere_0 -> vasari_upgrade_swamp_biosphere_1
+			174 : vasari_upgrade_terran_biosphere_1 -> vasari_upgrade_terran_biosphere_0
+			175 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_1
+			176 : vasari_upgrade_volcanic_biosphere_1 -> vasari_upgrade_volcanic_biosphere_0
+			177 : vasari_upgrade_volcanic_biosphere_2 -> vasari_upgrade_volcanic_biosphere_1
+			178 : vasari_upgrade_wave_boost_unit_item -> vasari_upgrade_volcanic_biosphere_2
+			179 : vasari_upgrade_wave_weapons_0 -> vasari_upgrade_wave_boost_unit_item
+			180 : vasari_upgrade_wave_weapons_1 -> vasari_upgrade_wave_weapons_0
+			181 : vasari_upgrade_wave_weapons_2 -> vasari_upgrade_wave_weapons_1
+			182 : vasari_upgrade_wave_weapons_3 -> vasari_upgrade_wave_weapons_2
+	planet_components
+		3 : vasari_defensive_tower -> vasari_deconstruction_nanites
+		4 : vasari_metal_refinery -> vasari_defensive_tower
+		5 : vasari_crystal_refinery -> vasari_metal_refinery
+		6 : vasari_orbital_administration -> vasari_crystal_refinery
+		7 : vasari_resource_booster -> vasari_orbital_administration
+		8 : vasari_surface_research_lab -> vasari_resource_booster
+		9 : vasari_surface_civilian_lab_0 -> vasari_surface_research_lab
+		10 : vasari_surface_civilian_lab_1 -> vasari_surface_civilian_lab_0
+		11 : vasari_surface_military_lab_0 -> vasari_surface_civilian_lab_1
+		12 : vasari_surface_military_lab_1 -> vasari_surface_military_lab_0
+		13 : vasari_terran_mining_booster -> vasari_surface_military_lab_1
+		14 : vasari_hygroscopic_nanites -> vasari_terran_mining_booster
+		15 : vasari_nano_algae_reactors -> vasari_hygroscopic_nanites
+		16 : vasari_stabilization_nanites -> vasari_nano_algae_reactors
+		17 : vasari_indoctrination_center -> vasari_stabilization_nanites
+		18 : vasari_labor_camp -> vasari_indoctrination_center
+		19 : vasari_gas_harvester -> vasari_labor_camp
+		20 : vasari_stripped_to_the_core -> vasari_gas_harvester
+		21 : vasari_exodus_xeno_embassy -> vasari_stripped_to_the_core
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_swamp_biosphere -> vasari_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+		15
+			planet_type : terran -> swamp
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+		16
+			planet_type : volcanic -> terran
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+		18
+			planet_type : ship_graveyard -> pirate_base
+
+**vasari_rebel**
+	research
+		research_subjects
+			62 : vasari_unlock_metal_refinery_unit_item -> vasari_unlock_magnetic_biosphere
+			63 : vasari_unlock_ocean_floor_miner_unit_item -> vasari_unlock_metal_refinery_unit_item
+			64 : vasari_unlock_oceanic_biosphere -> vasari_unlock_ocean_floor_miner_unit_item
+			65 : vasari_unlock_orbital_administration_unit_item -> vasari_unlock_oceanic_biosphere
+			66 : vasari_unlock_overseer_cruiser -> vasari_unlock_orbital_administration_unit_item
+			67 : vasari_unlock_overseer_cruiser_phase_lane_detection_ability -> vasari_unlock_overseer_cruiser
+			68 : vasari_unlock_phase_gate_structure -> vasari_unlock_overseer_cruiser_phase_lane_detection_ability
+			69 : vasari_unlock_phase_jump_inhibitor -> vasari_unlock_phase_gate_structure
+			70 : vasari_unlock_phase_lane_detection -> vasari_unlock_phase_jump_inhibitor
+			71 : vasari_unlock_phase_missile_boost_unit_item -> vasari_unlock_phase_lane_detection
+			72 : vasari_unlock_phase_resonance_amplifier_unit_item -> vasari_unlock_phase_missile_boost_unit_item
+			73 : vasari_unlock_phase_shield_unit_item -> vasari_unlock_phase_resonance_amplifier_unit_item
+			74 : vasari_unlock_phase_synchronizer_structure -> vasari_unlock_phase_shield_unit_item
+			75 : vasari_unlock_precise_turret_servos -> vasari_unlock_phase_synchronizer_structure
+			76 : vasari_unlock_raider_corvette -> vasari_unlock_precise_turret_servos
+			77 : vasari_unlock_rebel_titan -> vasari_unlock_raider_corvette
+			78 : vasari_unlock_rebel_titan_hangar_unit_item -> vasari_unlock_rebel_titan
+			79 : vasari_unlock_rebel_titan_hull_plating_0_unit_item -> vasari_unlock_rebel_titan_hangar_unit_item
+			80 : vasari_unlock_rebel_titan_hull_plating_1_unit_item -> vasari_unlock_rebel_titan_hull_plating_0_unit_item
+			81 : vasari_unlock_rebel_titan_improve_gravity_pulse_unit_item -> vasari_unlock_rebel_titan_hull_plating_1_unit_item
+			82 : vasari_unlock_rebel_titan_improve_nano_emitters_unit_item -> vasari_unlock_rebel_titan_improve_gravity_pulse_unit_item
+			83 : vasari_unlock_rebel_titan_phase_cannon_unit_item -> vasari_unlock_rebel_titan_improve_nano_emitters_unit_item
+			84 : vasari_unlock_rebel_titan_phase_missile_unit_item -> vasari_unlock_rebel_titan_phase_cannon_unit_item
+			85 : vasari_unlock_repair_platform_structure -> vasari_unlock_rebel_titan_phase_missile_unit_item
+			86 : vasari_unlock_resource_booster_unit_item -> vasari_unlock_repair_platform_structure
+			87 : vasari_unlock_self_repairing_armor_unit_item -> vasari_unlock_resource_booster_unit_item
+			88 : vasari_unlock_siege_cruiser -> vasari_unlock_self_repairing_armor_unit_item
+			89 : vasari_unlock_starbase -> vasari_unlock_siege_cruiser
+			90 : vasari_unlock_starbase_debris_vortex_unit_item -> vasari_unlock_starbase
+			91 : vasari_unlock_starbase_hangar_unit_item -> vasari_unlock_starbase_debris_vortex_unit_item
+			92 : vasari_unlock_starbase_hyperspace_engines_unit_item -> vasari_unlock_starbase_hangar_unit_item
+			93 : vasari_unlock_starbase_planetary_shield_array_unit_item -> vasari_unlock_starbase_hyperspace_engines_unit_item
+			94 : vasari_unlock_starbase_structural_integrity_0_unit_item -> vasari_unlock_starbase_planetary_shield_array_unit_item
+			95 : vasari_unlock_starbase_structural_integrity_1_unit_item -> vasari_unlock_starbase_structural_integrity_0_unit_item
+			96 : vasari_unlock_starbase_weapon_unit_item -> vasari_unlock_starbase_structural_integrity_1_unit_item
+			97 : vasari_unlock_strikecraft_armor_unit_item -> vasari_unlock_starbase_weapon_unit_item
+			98 : vasari_unlock_swamp_biosphere -> vasari_unlock_strikecraft_armor_unit_item
+			99 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			100 : vasari_unlock_terran_mining_booster_unit_item -> vasari_unlock_terran_biosphere
+			101 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_mining_booster_unit_item
+			102 : vasari_unlock_wave_boost_unit_item -> vasari_unlock_volcanic_biosphere
+			103 : vasari_unlock_wormhole_travel -> vasari_unlock_wave_boost_unit_item
+			104 : vasari_unlock_xeno_settlement_unit_item -> vasari_unlock_wormhole_travel
+			105 : vasari_unstoppable_phase_jump -> vasari_unlock_xeno_settlement_unit_item
+			106 : vasari_upgrade_bazaar_unit_item_0 -> vasari_unstoppable_phase_jump
+			107 : vasari_upgrade_bazaar_unit_item_1 -> vasari_upgrade_bazaar_unit_item_0
+			108 : vasari_upgrade_beam_boost_unit_item -> vasari_upgrade_bazaar_unit_item_1
+			109 : vasari_upgrade_beam_weapons_0 -> vasari_upgrade_beam_boost_unit_item
+			110 : vasari_upgrade_beam_weapons_1 -> vasari_upgrade_beam_weapons_0
+			111 : vasari_upgrade_beam_weapons_2 -> vasari_upgrade_beam_weapons_1
+			112 : vasari_upgrade_beam_weapons_3 -> vasari_upgrade_beam_weapons_2
+			113 : vasari_upgrade_crystalline_biosphere_0 -> vasari_upgrade_beam_weapons_3
+			114 : vasari_upgrade_dark_fleet_tower_unit_item -> vasari_upgrade_crystalline_biosphere_0
+			115 : vasari_upgrade_desert_biosphere_0 -> vasari_upgrade_dark_fleet_tower_unit_item
+			116 : vasari_upgrade_desert_biosphere_1 -> vasari_upgrade_desert_biosphere_0
+			117 : vasari_upgrade_experience_gain -> vasari_upgrade_desert_biosphere_1
+			118 : vasari_upgrade_fabricator_cruiser_debris_reclamation_ability -> vasari_upgrade_experience_gain
+			119 : vasari_upgrade_ferrous_biosphere_1 -> vasari_upgrade_fabricator_cruiser_debris_reclamation_ability
+			120 : vasari_upgrade_hull_armor_0 -> vasari_upgrade_ferrous_biosphere_1
+			121 : vasari_upgrade_hull_armor_1 -> vasari_upgrade_hull_armor_0
+			122 : vasari_upgrade_hull_armor_2 -> vasari_upgrade_hull_armor_1
+			123 : vasari_upgrade_hull_base -> vasari_upgrade_hull_armor_2
+			124 : vasari_upgrade_hull_point_restore_rate_0 -> vasari_upgrade_hull_base
+			125 : vasari_upgrade_hull_point_restore_rate_1 -> vasari_upgrade_hull_point_restore_rate_0
+			126 : vasari_upgrade_hull_point_restore_rate_2 -> vasari_upgrade_hull_point_restore_rate_1
+			127 : vasari_upgrade_hull_points_0 -> vasari_upgrade_hull_point_restore_rate_2
+			128 : vasari_upgrade_hull_points_1 -> vasari_upgrade_hull_points_0
+			129 : vasari_upgrade_hull_points_2 -> vasari_upgrade_hull_points_1
+			130 : vasari_upgrade_hull_with_trader -> vasari_upgrade_hull_points_2
+			131 : vasari_upgrade_hyperspace_charge_time -> vasari_upgrade_hull_with_trader
+			132 : vasari_upgrade_ice_biosphere_0 -> vasari_upgrade_hyperspace_charge_time
+			133 : vasari_upgrade_ice_biosphere_1 -> vasari_upgrade_ice_biosphere_0
+			134 : vasari_upgrade_influence_0 -> vasari_upgrade_ice_biosphere_1
+			135 : vasari_upgrade_influence_1 -> vasari_upgrade_influence_0
+			136 : vasari_upgrade_missile_damage_0 -> vasari_upgrade_influence_1
+			137 : vasari_upgrade_missile_damage_1 -> vasari_upgrade_missile_damage_0
+			138 : vasari_upgrade_missile_damage_2 -> vasari_upgrade_missile_damage_1
+			139 : vasari_upgrade_npc_ability_cooldown -> vasari_upgrade_missile_damage_2
+			140 : vasari_upgrade_oceanic_biosphere_0 -> vasari_upgrade_npc_ability_cooldown
+			141 : vasari_upgrade_oceanic_biosphere_1 -> vasari_upgrade_oceanic_biosphere_0
+			142 : vasari_upgrade_orbital_administration_unit_item -> vasari_upgrade_oceanic_biosphere_1
+			143 : vasari_upgrade_orbital_extraction_0 -> vasari_upgrade_orbital_administration_unit_item
+			144 : vasari_upgrade_orbital_extraction_1 -> vasari_upgrade_orbital_extraction_0
+			145 : vasari_upgrade_orbital_extraction_2 -> vasari_upgrade_orbital_extraction_1
+			146 : vasari_upgrade_overseer_cruiser_phase_lane_detection_ability -> vasari_upgrade_orbital_extraction_2
+			147 : vasari_upgrade_phase_missile_boost_unit_item -> vasari_upgrade_overseer_cruiser_phase_lane_detection_ability
+			148 : vasari_upgrade_phase_missile_bypass_shields_chance -> vasari_upgrade_phase_missile_boost_unit_item
+			149 : vasari_upgrade_phase_resonance_bonus_duration_0 -> vasari_upgrade_phase_missile_bypass_shields_chance
+			150 : vasari_upgrade_phase_resonance_bonus_duration_1 -> vasari_upgrade_phase_resonance_bonus_duration_0
+			151 : vasari_upgrade_planet_bombing_range -> vasari_upgrade_phase_resonance_bonus_duration_1
+			152 : vasari_upgrade_planet_health_restore -> vasari_upgrade_planet_bombing_range
+			153 : vasari_upgrade_pulse_weapons_0 -> vasari_upgrade_planet_health_restore
+			154 : vasari_upgrade_pulse_weapons_1 -> vasari_upgrade_pulse_weapons_0
+			155 : vasari_upgrade_pulse_weapons_2 -> vasari_upgrade_pulse_weapons_1
+			156 : vasari_upgrade_pulse_weapons_3 -> vasari_upgrade_pulse_weapons_2
+			157 : vasari_upgrade_shields_0 -> vasari_upgrade_pulse_weapons_3
+			158 : vasari_upgrade_shields_1 -> vasari_upgrade_shields_0
+			159 : vasari_upgrade_shields_regeneration -> vasari_upgrade_shields_1
+			160 : vasari_upgrade_shields_with_advent -> vasari_upgrade_shields_regeneration
+			161 : vasari_upgrade_starbase_engines -> vasari_upgrade_shields_with_advent
+			162 : vasari_upgrade_structure_build_time -> vasari_upgrade_starbase_engines
+			163 : vasari_upgrade_swamp_biosphere_0 -> vasari_upgrade_structure_build_time
+			164 : vasari_upgrade_swamp_biosphere_1 -> vasari_upgrade_swamp_biosphere_0
+			165 : vasari_upgrade_terran_biosphere_0 -> vasari_upgrade_swamp_biosphere_1
+			166 : vasari_upgrade_terran_biosphere_1 -> vasari_upgrade_terran_biosphere_0
+			167 : vasari_upgrade_volcanic_biosphere_0 -> vasari_upgrade_terran_biosphere_1
+			168 : vasari_upgrade_volcanic_biosphere_1 -> vasari_upgrade_volcanic_biosphere_0
+			169 : vasari_upgrade_volcanic_biosphere_2 -> vasari_upgrade_volcanic_biosphere_1
+			170 : vasari_upgrade_wave_boost_unit_item -> vasari_upgrade_volcanic_biosphere_2
+			171 : vasari_upgrade_wave_weapons_0 -> vasari_upgrade_wave_boost_unit_item
+			172 : vasari_upgrade_wave_weapons_1 -> vasari_upgrade_wave_weapons_0
+			173 : vasari_upgrade_wave_weapons_2 -> vasari_upgrade_wave_weapons_1
+			174 : vasari_upgrade_wave_weapons_3 -> vasari_upgrade_wave_weapons_2
+	planet_components
+		3 : vasari_defensive_tower -> vasari_deconstruction_nanites
+		4 : vasari_metal_refinery -> vasari_defensive_tower
+		5 : vasari_crystal_refinery -> vasari_metal_refinery
+		6 : vasari_orbital_administration -> vasari_crystal_refinery
+		7 : vasari_resource_booster -> vasari_orbital_administration
+		8 : vasari_surface_research_lab -> vasari_resource_booster
+		9 : vasari_surface_civilian_lab_0 -> vasari_surface_research_lab
+		10 : vasari_surface_civilian_lab_1 -> vasari_surface_civilian_lab_0
+		11 : vasari_surface_military_lab_0 -> vasari_surface_civilian_lab_1
+		12 : vasari_surface_military_lab_1 -> vasari_surface_military_lab_0
+		13 : vasari_terran_mining_booster -> vasari_surface_military_lab_1
+		14 : vasari_gas_harvester -> vasari_terran_mining_booster
+		15 : vasari_hygroscopic_nanites -> vasari_gas_harvester
+		16 : vasari_nano_algae_reactors -> vasari_hygroscopic_nanites
+		17 : vasari_stabilization_nanites -> vasari_nano_algae_reactors
+		18 : vasari_alliance_xeno_embassy -> vasari_stabilization_nanites
+		19 : vasari_xeno_settlement -> vasari_alliance_xeno_embassy
+	planet_types
+		10
+			planet_type : moon -> magnetic
+			tracks
+				defense
+					3
+						max_health_points : 4500.0 -> 5000.0
+				logistics
+					0
+						max_planet_component_slots : 2 -> 4
+					1
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 3 -> 6
+					2
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 5 -> 11
+					3
+						max_planet_component_slots : 2 -> 4
+						max_civilian_structure_slots : 7 -> 15
+				research
+					1
+						civilian_research_rate_scalar : 0.2 -> 0.1
+						civilian_research_rate_per_population_scalar : 0.0006 -> 0.0003
+		11
+			planet_type : ice_moon -> moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+		12
+			planet_type : volcanic_moon -> ice_moon
+		13
+			planet_type : oceanic -> volcanic_moon
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+				logistics
+					0
+						max_planet_component_slots : 4 -> 2
+					1
+						max_planet_component_slots : 4 -> 2
+					2
+						max_planet_component_slots : 4 -> 2
+						max_civilian_structure_slots : 6 -> 5
+				research
+					1
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0003 -> 0.0006
+					2
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0007 -> 0.0013
+					3
+						military_research_rate_scalar : 0.1 -> 0.2
+						military_research_rate_per_population_scalar : 0.0012 -> 0.0021
+		14
+			planet_type : swamp -> oceanic
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_swamp_biosphere -> vasari_unlock_oceanic_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 4 -> 3
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 7 -> 6
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 10 -> 8
+		15
+			planet_type : terran -> swamp
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_terran_biosphere -> vasari_unlock_swamp_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 4 -> 3
+					1
+						max_planet_component_slots : 4 -> 3
+					2
+						max_planet_component_slots : 4 -> 3
+					3
+						max_planet_component_slots : 4 -> 3
+					4
+						max_planet_component_slots : 4 -> 3
+		16
+			planet_type : volcanic -> terran
+			colonization_research_prerequisites
+				0
+					0 : vasari_unlock_volcanic_biosphere -> vasari_unlock_terran_biosphere
+			tracks
+				defense
+					1
+						max_military_structure_slots : 10 -> 5
+					2
+						max_military_structure_slots : 20 -> 10
+				logistics
+					0
+						max_planet_component_slots : 3 -> 4
+					1
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 3 -> 4
+					2
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 6 -> 7
+					3
+						max_planet_component_slots : 3 -> 4
+						max_civilian_structure_slots : 8 -> 10
+				research
+					1
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0006 -> 0.0003
+					2
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0013 -> 0.0007
+					3
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.0021 -> 0.0012
+					4
+						military_research_rate_scalar : 0.2 -> 0.1
+						military_research_rate_per_population_scalar : 0.003 -> 0.0018
+		17
+			planet_type : pirate_base -> volcanic
+			tracks
+				defense
+					1
+						max_military_structure_slots : 5 -> 10
+					2
+						max_military_structure_slots : 10 -> 20
+				logistics
+					0
+						max_planet_component_slots : 2 -> 3
+					1
+						max_planet_component_slots : 2 -> 3
+					2
+						max_planet_component_slots : 2 -> 3
+						max_civilian_structure_slots : 5 -> 6
+				mining
+					1
+						metal_income_rate_per_population : 0.003 -> 0.002
+		18
+			planet_type : ship_graveyard -> pirate_base
+	culture
+		friendly_planet_modifiers
+			2
+				values
+					0
+						value : 0.48 -> -0.48

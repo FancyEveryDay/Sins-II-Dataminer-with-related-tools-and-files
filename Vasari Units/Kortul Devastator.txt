@@ -8,20 +8,20 @@ Kortul Devastator
 	Acceleration:	132.0
 
 	Durability:	500.0
-	Armor Strength:	132.0
+	Armor Strength:	90.0
 
-	Hull Points:	3175 - 5085
-	Armor Points:	960 - 1635
-	Shield Points:	1860 - 3170
-	   Shield Burst CD: 45.0s
+	Hull Points:	3640 - 6920
+	Armor Points:	1620 - 2760
+	Shield Points:	3120 - 5930
+	   Shield Burst CD: 65.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy wave cannon        	27.5 	x1    	27.5 	240   	6250 
-		beam                     	8.0  	x6    	48.0 	500   	6250 
-		heavy phase missile      	20.0 	x1    	20.0 	600   	6250 
+		heavy wave cannon        	30.0 	x1    	30.0 	300   	8000 
+		beam                     	6.7  	x6    	40.2 	500   	8000 
+		heavy phase missile      	15.0 	x1    	15.0 	600   	8000 
 		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 
 
 	Strike Craft: 1 - 2

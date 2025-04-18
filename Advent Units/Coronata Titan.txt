@@ -8,21 +8,21 @@ Coronata Titan
 	Acceleration:	100.0
 
 	Durability:	750.0
-	Armor Strength:	125.0
+	Armor Strength:	100.0
 
-	Hull Points:	7950 - 11960
-	Armor Points:	1250 - 2005
-	Shield Points:	8200 - 13145
-	   Shield Burst CD: 60.0s
+	Hull Points:	12500 - 21275
+	Armor Points:	1850 - 2785
+	Shield Points:	11000 - 18725
+	   Shield Burst CD: 90.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy beam               	14.3 	x8    	114.4	500   	8000 
-		heavy plasma             	6.2  	x6    	37.2 	750   	8000 
-		medium laser             	6.0  	x12   	72.0 	150   	8000 
-		point defense laser      	1.5  	x17   	25.5 	0     	6000 
+		heavy beam               	12.5 	x8    	100.0	500   	8000 
+		heavy plasma             	5.0  	x6    	30.0 	750   	8000 
+		medium laser             	6.0  	x12   	72.0 	200   	8000 
+		point defense laser      	2.5  	x17   	42.5 	0     	6000 
 		planet bombing plasma    	9.0  	x1    	9.0  	0     	4000 
 
 	Strike Craft: 5 - 10

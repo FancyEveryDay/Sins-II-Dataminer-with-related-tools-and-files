@@ -1,19 +1,19 @@
 Aeria Drone Host
 	Supply: 	20
-	Credits:	
-	Metal:  	295.0
-	Crystal:	350.0
+	Credits:	710.0
+	Metal:  	285.0
+	Crystal:	330.0
 
 	Movespeed:	700.0
 	Acceleration:	80.0
 
-	Durability:	150.0
+	Durability:	200.0
 	Armor Strength:	
 
-	Hull Points:	1650
+	Hull Points:	2150
 	Armor Points:	
-	Shield Points:	1600
-	   Shield Burst CD: 35.0s
+	Shield Points:	2300
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	
 

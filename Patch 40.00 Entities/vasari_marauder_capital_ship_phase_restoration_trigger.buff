@@ -1,0 +1,68 @@
+{
+    "version": 0,
+    "active_duration": "phase_restoration_trigger_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "vasari_marauder_capital_ship_phase_restoration_trigger"
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_try_make_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "abort_make_dead"
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_marauder_capital_ship_phase_restoration_restore"
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_marauder_capital_ship_phase_restoration_ability_hud_icon",
+        "name": "vasari_marauder_capital_ship_phase_restoration_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.vasari_marauder_capital_ship_phase_restoration_ability_short_description",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

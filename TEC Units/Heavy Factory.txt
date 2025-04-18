@@ -2,16 +2,16 @@ Heavy Factory
 	Supply: 	
 	Credits:	1000.0
 	Metal:  	250.0
-	Crystal:	150.0
+	Crystal:	100.0
 
 	Movespeed:	
 	Acceleration:	
 
 	Durability:	600.0
-	Armor Strength:	100.0
+	Armor Strength:	75.0
 
-	Hull Points:	2500
-	Armor Points:	1000
+	Hull Points:	7500
+	Armor Points:	1500
 	Shield Points:	
 	   Shield Burst CD: nans
 

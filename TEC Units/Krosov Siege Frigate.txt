@@ -1,22 +1,22 @@
 Krosov Siege Frigate
 	Supply: 	6
-	Credits:	450.0
+	Credits:	500.0
 	Metal:  	60.0
-	Crystal:	75.0
+	Crystal:	100.0
 
 	Movespeed:	650.0
 	Acceleration:	100.0
 
-	Durability:	150.0
-	Armor Strength:	60.0
+	Durability:	200.0
+	Armor Strength:	25.0
 
-	Hull Points:	775
-	Armor Points:	550
+	Hull Points:	610
+	Armor Points:	725
 	Shield Points:	
-	   Shield Burst CD: 25.0s
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		planet bombing           	3.0  	x1    	3.0  	0     	3000 
+		planet bombing           	2.0  	x1    	2.0  	0     	3000 

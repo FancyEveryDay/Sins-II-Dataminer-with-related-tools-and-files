@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "destroy_planet_time",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    }]
+}

@@ -1,22 +1,22 @@
 Purge Vessel
-	Supply: 	6
-	Credits:	425.0
-	Metal:  	80.0
-	Crystal:	
+	Supply: 	5
+	Credits:	300.0
+	Metal:  	130.0
+	Crystal:	90.0
 
 	Movespeed:	700.0
 	Acceleration:	100.0
 
-	Durability:	150.0
+	Durability:	100.0
 	Armor Strength:	
 
-	Hull Points:	725
+	Hull Points:	800
 	Armor Points:	
-	Shield Points:	750
-	   Shield Burst CD: 25.0s
+	Shield Points:	825
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		planet bombing plasma    	3.0  	x1    	3.0  	0     	3000 
+		planet bombing plasma    	2.0  	x1    	2.0  	0     	3000 

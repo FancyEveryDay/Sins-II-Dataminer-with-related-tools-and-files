@@ -1,0 +1,47 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "shield_restore_amount_per_second",
+        "action_value":
+        {
+            "values": [200.0]
+        }
+    },
+    {
+        "action_value_id": "shield_restore_duration",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_shield_battery_unit_item_buff_large",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_battery_large"
+        }
+    },
+    {
+        "alias_name": "advent_shield_battery_unit_item_buff_medium",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_battery"
+        }
+    },
+    {
+        "alias_name": "advent_shield_battery_unit_item_buff_small",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_battery_small"
+        }
+    }]
+}

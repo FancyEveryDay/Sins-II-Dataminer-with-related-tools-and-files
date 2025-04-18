@@ -10,18 +10,18 @@ Transcencia Starbase
 	Durability:	1000.0
 	Armor Strength:	100.0
 
-	Hull Points:	5000
-	Armor Points:	1000
-	Shield Points:	5000
-	   Shield Burst CD: 60.0s
+	Hull Points:	7500
+	Armor Points:	2500
+	Shield Points:	7500
+	   Shield Burst CD: 120.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium laser             	6.0  	x44   	264.0	150   	8000 
-		heavy plasma             	6.2  	x16   	99.2 	750   	8000 
-		point defense laser      	1.5  	x16   	24.0 	0     	6000 
-		light missile            	35.3 	x8    	282.4	0     	12000
+		medium laser             	6.0  	x44   	264.0	200   	10000
+		heavy plasma             	5.0  	x16   	80.0 	750   	10000
+		point defense laser      	2.5  	x16   	40.0 	0     	6000 
+		heavy missile            	45.0 	x8    	360.0	300   	10000
 
 	Strike Craft: 2

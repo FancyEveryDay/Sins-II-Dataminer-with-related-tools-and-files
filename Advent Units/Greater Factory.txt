@@ -1,19 +1,19 @@
 Greater Factory
 	Supply: 	
-	Credits:	750.0
-	Metal:  	
-	Crystal:	300.0
+	Credits:	900.0
+	Metal:  	200.0
+	Crystal:	200.0
 
 	Movespeed:	
 	Acceleration:	
 
 	Durability:	600.0
-	Armor Strength:	60.0
+	Armor Strength:	50.0
 
-	Hull Points:	2500
-	Armor Points:	
-	Shield Points:	2250
-	   Shield Burst CD: 45.0s
+	Hull Points:	5000
+	Armor Points:	750
+	Shield Points:	4000
+	   Shield Burst CD: 60.0s
 
 	Antimatter:	
 

@@ -1,0 +1,21 @@
+trader_missile_corvette_torpedo
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	850.0
+	Acceleration:	850.0
+
+	Durability:	
+	Armor Strength:	25.0
+
+	Hull Points:	5
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

@@ -7,13 +7,13 @@ Serevun Overseer
 	Movespeed:	660.0
 	Acceleration:	150.0
 
-	Durability:	180.0
+	Durability:	210.0
 	Armor Strength:	72.0
 
-	Hull Points:	1355
-	Armor Points:	535
-	Shield Points:	735
-	   Shield Burst CD: 35.0s
+	Hull Points:	1590
+	Armor Points:	1080
+	Shield Points:	915
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	350.0
 

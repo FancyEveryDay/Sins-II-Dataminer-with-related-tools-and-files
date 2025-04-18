@@ -1,19 +1,19 @@
 Temple of Communion
 	Supply: 	
-	Credits:	
-	Metal:  	125.0
+	Credits:	600.0
+	Metal:  	150.0
 	Crystal:	250.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	60.0
+	Durability:	500.0
+	Armor Strength:	40.0
 
-	Hull Points:	2000
+	Hull Points:	4000
 	Armor Points:	
-	Shield Points:	1750
-	   Shield Burst CD: 45.0s
+	Shield Points:	2500
+	   Shield Burst CD: 60.0s
 
 	Antimatter:	
 

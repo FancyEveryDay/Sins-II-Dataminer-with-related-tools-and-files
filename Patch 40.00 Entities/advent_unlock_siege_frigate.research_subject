@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_ascension",
+    "field_coord": [2, 3],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 500.0,
+        "metal": 125.0,
+        "crystal": 300.0
+    },
+    "name": "advent_unlock_siege_frigate_research_subject_name",
+    "name_uppercase": "advent_unlock_siege_frigate_research_subject_name_uppercase",
+    "description": "advent_unlock_siege_frigate_research_subject_description",
+    "hud_icon": "advent_siege_frigate_hud_icon",
+    "tooltip_picture": "advent_siege_frigate_tooltip_picture"
+}

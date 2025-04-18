@@ -1,0 +1,87 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 3528.18457,
+        "surface_radius": 2352.123047,
+        "line_of_sight_radius": 2352.123047,
+        "box":
+        {
+            "center": [-6.1e-05, 0.0, 0.0],
+            "extents": [1853.821533, 2172.74292, 1623.338989]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "gravity_well_fixture":
+    {
+        "inner_move_distance": 10000.0,
+        "axis_rotation_speed": [0.0, 3.0],
+        "axis_tilt_angle": [0.0, 0.0],
+        "chance_of_retrograde_axis_rotation_direction": 0.5
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true,
+        "selection_priority": 700
+    },
+    "planet":
+    {
+        "planet_type": "hive_asteroid",
+        "build_distance_from_inner_move_radius": 2000.0,
+        "non_random_metal_asteroids":
+        {
+            "tiers": [
+            {
+                "tier": 0,
+                "count": [1, 1]
+            }]
+        },
+        "non_random_crystal_asteroids":
+        {
+            "tiers": [
+            {
+                "tier": 0,
+                "count": [2, 2]
+            }]
+        },
+        "random_metal_asteroids":
+        {
+            "tiers": [
+            {
+                "tier": 0,
+                "count": [1, 2]
+            }]
+        },
+        "random_crystal_asteroids":
+        {
+            "tiers": [
+            {
+                "tier": 0,
+                "count": [2, 3]
+            }]
+        },
+        "destroyed_planet":
+        {
+            "skin": "asteroid_destroyed_planet",
+            "stripped_assets":
+            {
+                "metal": 2400.0,
+                "crystal": 3000.0
+            },
+            "stripped_exotics": [
+            {
+                "exotic_type": "utility",
+                "count": 1
+            }]
+        }
+    },
+    "items":
+    {},
+    "target_filter_unit_type": "planet",
+    "skin_groups": [
+    {
+        "skins": [
+            "hive_asteroid_planet_0"]
+    }],
+    "action_effect_size": "small_unit"
+}

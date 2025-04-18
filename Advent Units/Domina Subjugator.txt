@@ -1,19 +1,19 @@
 Domina Subjugator
-	Supply: 	10
-	Credits:	
-	Metal:  	150.0
-	Crystal:	215.0
+	Supply: 	8
+	Credits:	400.0
+	Metal:  	135.0
+	Crystal:	150.0
 
 	Movespeed:	750.0
 	Acceleration:	125.0
 
-	Durability:	150.0
+	Durability:	200.0
 	Armor Strength:	
 
-	Hull Points:	1450
+	Hull Points:	1600
 	Armor Points:	
-	Shield Points:	1400
-	   Shield Burst CD: 35.0s
+	Shield Points:	1750
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	350.0
 

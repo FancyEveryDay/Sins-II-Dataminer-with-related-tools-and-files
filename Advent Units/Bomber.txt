@@ -10,7 +10,7 @@ Bomber
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	75
+	Hull Points:	80
 	Armor Points:	
 	Shield Points:	
 	   Shield Burst CD: nans

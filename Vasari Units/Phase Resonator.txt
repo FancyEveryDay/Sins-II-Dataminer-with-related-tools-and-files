@@ -7,11 +7,11 @@ Phase Resonator
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
+	Durability:	510.0
 	Armor Strength:	96.0
 
-	Hull Points:	2400
-	Armor Points:	360
+	Hull Points:	4800
+	Armor Points:	1440
 	Shield Points:	
 	   Shield Burst CD: nans
 

@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "damage_prevented_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [0.2]
+        }
+    }]
+}

@@ -7,16 +7,16 @@ Bombardment Platform
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	150.0
-	Armor Strength:	96.0
+	Durability:	180.0
+	Armor Strength:	48.0
 
-	Hull Points:	715
-	Armor Points:	320
-	Shield Points:	510
-	   Shield Burst CD: 25.0s
+	Hull Points:	720
+	Armor Points:	480
+	Shield Points:	650
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		planet bombing beam      	3.0  	x1    	3.0  	0     	6000 
+		planet bombing beam      	2.0  	x1    	2.0  	0     	6000 

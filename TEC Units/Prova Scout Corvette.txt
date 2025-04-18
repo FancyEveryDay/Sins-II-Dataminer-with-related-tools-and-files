@@ -8,9 +8,9 @@ Prova Scout Corvette
 	Acceleration:	300.0
 
 	Durability:	50.0
-	Armor Strength:	20.0
+	Armor Strength:	25.0
 
-	Hull Points:	375
+	Hull Points:	275
 	Armor Points:	350
 	Shield Points:	
 	   Shield Burst CD: 15.0s

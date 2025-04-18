@@ -2,16 +2,16 @@ Crystal Extractor
 	Supply: 	
 	Credits:	
 	Metal:  	120.0
-	Crystal:	60.0
+	Crystal:	30.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
+	Durability:	420.0
 	Armor Strength:	48.0
 
-	Hull Points:	900
-	Armor Points:	120
+	Hull Points:	1800
+	Armor Points:	480
 	Shield Points:	
 	   Shield Burst CD: nans
 

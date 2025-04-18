@@ -10,7 +10,7 @@ Fighter
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	40
+	Hull Points:	45
 	Armor Points:	
 	Shield Points:	
 	   Shield Burst CD: nans
@@ -19,4 +19,4 @@ Fighter
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light laser              	3.2  	x1    	3.2  	50    	2750 
+		light laser              	3.2  	x1    	3.2  	100   	2750 

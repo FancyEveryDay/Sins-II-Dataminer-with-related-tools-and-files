@@ -8,12 +8,12 @@ LEV Construction Frigate
 	Acceleration:	250.0
 
 	Durability:	50.0
-	Armor Strength:	20.0
+	Armor Strength:	40.0
 
-	Hull Points:	430
-	Armor Points:	350
+	Hull Points:	525
+	Armor Points:	750
 	Shield Points:	
-	   Shield Burst CD: 20.0s
+	   Shield Burst CD: nans
 
 	Antimatter:	
 

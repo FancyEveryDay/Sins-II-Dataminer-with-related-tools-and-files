@@ -1,19 +1,19 @@
 Hangar Defense
 	Supply: 	
-	Credits:	
-	Metal:  	200.0
-	Crystal:	350.0
+	Credits:	600.0
+	Metal:  	300.0
+	Crystal:	150.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	80.0
+	Durability:	500.0
+	Armor Strength:	50.0
 
-	Hull Points:	2500
-	Armor Points:	900
-	Shield Points:	2250
-	   Shield Burst CD: 45.0s
+	Hull Points:	3750
+	Armor Points:	1000
+	Shield Points:	4000
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	
 

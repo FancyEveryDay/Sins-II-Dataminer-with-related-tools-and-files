@@ -1,19 +1,19 @@
 Percheron Carrier Cruiser
 	Supply: 	14
-	Credits:	785.0
-	Metal:  	125.0
-	Crystal:	180.0
+	Credits:	715.0
+	Metal:  	210.0
+	Crystal:	115.0
 
 	Movespeed:	650.0
 	Acceleration:	80.0
 
-	Durability:	150.0
-	Armor Strength:	20.0
+	Durability:	200.0
+	Armor Strength:	25.0
 
-	Hull Points:	1680
-	Armor Points:	550
+	Hull Points:	1350
+	Armor Points:	750
 	Shield Points:	
-	   Shield Burst CD: 35.0s
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	
 

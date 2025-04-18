@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_protection",
+    "field_coord": [7, 4],
+    "research_time": 600.0,
+    "price":
+    {
+        "credits": 1150.0,
+        "metal": 450.0,
+        "crystal": 950.0
+    },
+    "name": "advent_unstoppable_phase_jump_research_subject_name",
+    "name_uppercase": "advent_unstoppable_phase_jump_research_subject_name_uppercase",
+    "description": "advent_unstoppable_phase_jump_research_subject_description",
+    "hud_icon": "advent_scout_corvette_unstoppable_phase_jump_ability_hud_icon",
+    "tooltip_picture": "advent_scout_corvette_unstoppable_phase_jump_ability_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_scout"]
+}

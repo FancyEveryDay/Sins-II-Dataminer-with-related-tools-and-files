@@ -8,23 +8,23 @@ Ragnarov Titan
 	Acceleration:	100.0
 
 	Durability:	750.0
-	Armor Strength:	120.0
+	Armor Strength:	105.0
 
-	Hull Points:	8550 - 14555
-	Armor Points:	2240 - 3150
-	Shield Points:	4275 - 6930
-	   Shield Burst CD: 60.0s
+	Hull Points:	12800 - 23055
+	Armor Points:	4425 - 6220
+	Shield Points:	6575 - 10540
+	   Shield Burst CD: 90.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		gauss                    	18.0 	x8    	144.0	600   	10000
-		gauss                    	15.0 	x12   	180.0	600   	8000 
-		rail gun                 	80.0 	x1    	80.0 	1000  	10000
-		point defense autocannon 	4.0  	x14   	56.0 	0     	6000 
-		medium autocannon        	9.0  	x10   	90.0 	150   	8000 
-		heavy missile            	80.0 	x4    	320.0	600   	15000
+		gauss                    	15.4 	x4    	61.6 	600   	12000
+		gauss                    	12.5 	x12   	150.0	600   	12000
+		rail gun                 	75.0 	x1    	75.0 	1000  	12000
+		point defense autocannon 	4.0  	x14   	56.0 	0     	5000 
+		medium autocannon        	8.0  	x10   	80.0 	200   	8000 
+		heavy missile            	40.0 	x4    	160.0	500   	15000
 		planet bombing           	9.0  	x1    	9.0  	0     	4000 
 
 	Strike Craft: 0

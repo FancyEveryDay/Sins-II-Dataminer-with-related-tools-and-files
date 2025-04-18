@@ -1,22 +1,22 @@
 Vulrak Penetrator
-	Supply: 	15
+	Supply: 	12
 	Credits:	
-	Metal:  	420.0
-	Crystal:	375.0
+	Metal:  	360.0
+	Crystal:	215.0
 
 	Movespeed:	720.0
 	Acceleration:	100.0
 
-	Durability:	400.0
-	Armor Strength:	120.0
+	Durability:	330.0
+	Armor Strength:	96.0
 
-	Hull Points:	660
-	Armor Points:	925
-	Shield Points:	720
-	   Shield Burst CD: 35.0s
+	Hull Points:	960
+	Armor Points:	1235
+	Shield Points:	880
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		very heavy beam          	10.0 	x1    	10.0 	1000  	750  
+		very heavy beam          	10.0 	x1    	10.0 	1000  	900  

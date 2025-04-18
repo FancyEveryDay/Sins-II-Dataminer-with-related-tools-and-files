@@ -1,28 +1,28 @@
 Radiance Battleship
 	Supply: 	50
 	Credits:	2000.0
-	Metal:  	600.0
-	Crystal:	750.0
+	Metal:  	725.0
+	Crystal:	900.0
 
 	Movespeed:	700.0
 	Acceleration:	100.0
 
 	Durability:	500.0
-	Armor Strength:	80.0
+	Armor Strength:	90.0
 
-	Hull Points:	3150 - 5050
-	Armor Points:	975 - 1565
-	Shield Points:	3300 - 5290
-	   Shield Burst CD: 45.0s
+	Hull Points:	4150 - 7065
+	Armor Points:	1325 - 2520
+	Shield Points:	4400 - 8360
+	   Shield Burst CD: 65.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy beam               	14.3 	x2    	28.6 	500   	6250 
-		heavy plasma             	9.4  	x1    	9.4  	750   	6250 
-		medium plasma            	6.4  	x2    	12.8 	600   	6250 
-		light laser              	3.0  	x14   	42.0 	50    	6250 
+		heavy beam               	12.5 	x2    	25.0 	500   	8000 
+		heavy plasma             	10.0 	x1    	10.0 	750   	8000 
+		medium plasma            	5.0  	x2    	10.0 	600   	8000 
+		light laser              	3.0  	x14   	42.0 	100   	6000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
 
 	Strike Craft: 1 - 2

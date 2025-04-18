@@ -2,16 +2,16 @@ Xeno Relations Center
 	Supply: 	
 	Credits:	
 	Metal:  	240.0
-	Crystal:	120.0
+	Crystal:	240.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	96.0
+	Durability:	510.0
+	Armor Strength:	48.0
 
-	Hull Points:	2400
-	Armor Points:	360
+	Hull Points:	3600
+	Armor Points:	960
 	Shield Points:	
 	   Shield Burst CD: nans
 

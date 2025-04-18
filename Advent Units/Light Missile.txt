@@ -10,7 +10,7 @@ Light Missile
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	1
+	Hull Points:	5
 	Armor Points:	
 	Shield Points:	
 	   Shield Burst CD: nans

@@ -1,19 +1,19 @@
 Exotic Refinery
 	Supply: 	
-	Credits:	
-	Metal:  	300.0
-	Crystal:	400.0
+	Credits:	1000.0
+	Metal:  	350.0
+	Crystal:	425.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	60.0
+	Durability:	500.0
+	Armor Strength:	50.0
 
-	Hull Points:	3500
+	Hull Points:	6500
 	Armor Points:	
-	Shield Points:	3250
-	   Shield Burst CD: 45.0s
+	Shield Points:	5000
+	   Shield Burst CD: 60.0s
 
 	Antimatter:	
 

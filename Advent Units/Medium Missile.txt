@@ -10,7 +10,7 @@ Medium Missile
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	1
+	Hull Points:	15
 	Armor Points:	
 	Shield Points:	
 	   Shield Burst CD: nans

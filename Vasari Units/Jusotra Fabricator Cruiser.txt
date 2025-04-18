@@ -1,5 +1,5 @@
 Jusotra Fabricator Cruiser
-	Supply: 	14
+	Supply: 	24
 	Credits:	
 	Metal:  	300.0
 	Crystal:	360.0
@@ -7,13 +7,13 @@ Jusotra Fabricator Cruiser
 	Movespeed:	660.0
 	Acceleration:	125.0
 
-	Durability:	240.0
+	Durability:	330.0
 	Armor Strength:	48.0
 
-	Hull Points:	1280
-	Armor Points:	450
-	Shield Points:	430
-	   Shield Burst CD: 35.0s
+	Hull Points:	1880
+	Armor Points:	915
+	Shield Points:	1130
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	
 

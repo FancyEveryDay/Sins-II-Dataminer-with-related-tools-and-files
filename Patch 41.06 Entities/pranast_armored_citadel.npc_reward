@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "pranast_armored_citadel_hud_icon",
+        "name": "npc_reward.pranast_armored_citadel.name",
+        "description": "npc_reward.pranast_armored_citadel.description"
+    },
+    "type": "ship_component",
+    "item": "pranast_armored_citadel"
+}

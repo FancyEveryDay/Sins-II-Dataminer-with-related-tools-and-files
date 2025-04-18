@@ -1,17 +1,17 @@
 Phase Gate
 	Supply: 	
 	Credits:	
-	Metal:  	600.0
-	Crystal:	600.0
+	Metal:  	240.0
+	Crystal:	360.0
 
 	Movespeed:	
 	Acceleration:	
 
-	Durability:	600.0
-	Armor Strength:	144.0
+	Durability:	750.0
+	Armor Strength:	96.0
 
-	Hull Points:	1200
-	Armor Points:	720
+	Hull Points:	2400
+	Armor Points:	1440
 	Shield Points:	
 	   Shield Burst CD: nans
 

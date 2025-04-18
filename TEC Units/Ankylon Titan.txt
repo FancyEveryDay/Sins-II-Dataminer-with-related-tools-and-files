@@ -8,22 +8,22 @@ Ankylon Titan
 	Acceleration:	80.0
 
 	Durability:	750.0
-	Armor Strength:	150.0
+	Armor Strength:	130.0
 
-	Hull Points:	9520 - 17150
-	Armor Points:	3450 - 5190
-	Shield Points:	5000 - 7520
-	   Shield Burst CD: 60.0s
+	Hull Points:	14520 - 26155
+	Armor Points:	5000 - 7025
+	Shield Points:	6000 - 9620
+	   Shield Burst CD: 90.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium autocannon        	9.0  	x16   	144.0	150   	8000 
+		heavy autocannon         	10.0 	x16   	160.0	300   	8000 
 		heavy beam               	60.0 	x8    	480.0	500   	8000 
-		heavy missile            	40.0 	x4    	160.0	600   	15000
-		heavy missile            	50.0 	x8    	400.0	600   	15000
-		point defense autocannon 	4.0  	x18   	72.0 	0     	6000 
+		heavy missile            	26.7 	x4    	106.8	500   	12000
+		heavy missile            	33.3 	x8    	266.4	500   	12000
+		point defense autocannon 	4.0  	x18   	72.0 	0     	5000 
 		planet bombing           	9.0  	x1    	9.0  	0     	4000 
 
 	Strike Craft: 0

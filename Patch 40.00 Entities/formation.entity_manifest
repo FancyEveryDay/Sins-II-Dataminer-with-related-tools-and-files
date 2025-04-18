@@ -1,0 +1,13 @@
+{
+    "ids": [
+        "advent_starbase_strikecraft",
+        "capital_ship_strikecraft",
+        "carrier_frigate_strikecraft",
+        "default_ships_and_structures",
+        "default_strikecraft",
+        "hangar_defense_structure_strikecraft",
+        "titan_strikecraft",
+        "trader_starbase_strikecraft",
+        "vasari_starbase_strikecraft"
+    ]
+}

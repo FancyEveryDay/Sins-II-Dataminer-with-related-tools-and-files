@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "viturak_deploy_phase_gate_hud_icon",
+        "name": "npc_reward.viturak_deploy_phase_gate.name",
+        "description": "npc_reward.viturak_deploy_phase_gate.description"
+    },
+    "type": "ability",
+    "ability": "viturak_deploy_phase_gate"
+}

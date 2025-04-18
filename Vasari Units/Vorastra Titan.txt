@@ -8,23 +8,23 @@ Vorastra Titan
 	Acceleration:	60.0
 
 	Durability:	750.0
-	Armor Strength:	156.0
+	Armor Strength:	90.0
 
-	Hull Points:	11280 - 19200
-	Armor Points:	1740 - 2620
-	Shield Points:	5120 - 7705
-	   Shield Burst CD: 60.0s
+	Hull Points:	15880 - 27030
+	Armor Points:	4140 - 5820
+	Shield Points:	8260 - 13245
+	   Shield Burst CD: 90.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		point defense pulse      	7.5  	x12   	90.0 	0     	6000 
-		heavy beam               	15.0 	x4    	60.0 	500   	8000 
-		heavy wave cannon        	18.3 	x12   	219.6	240   	8000 
-		phase cannon             	100.0	x1    	100.0	1000  	10000
+		point defense pulse      	6.0  	x12   	72.0 	0     	5100 
+		heavy beam               	10.0 	x4    	40.0 	500   	8000 
+		heavy wave cannon        	12.0 	x12   	144.0	300   	8000 
+		phase cannon             	200.0	x1    	200.0	1000  	10000
 		planet bombing beam      	9.0  	x1    	9.0  	0     	3000 
-		heavy phase missile      	103.3	x2    	206.6	600   	8000 
-		heavy wave cannon        	41.2 	x2    	82.4 	240   	8000 
+		heavy phase missile      	90.0 	x2    	180.0	600   	8000 
+		very heavy wave cannon   	75.0 	x2    	150.0	420   	8000 
 
 	Strike Craft: 0

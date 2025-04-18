@@ -2,16 +2,16 @@ Pulse Gun Defense
 	Supply: 	
 	Credits:	
 	Metal:  	210.0
-	Crystal:	60.0
+	Crystal:	90.0
 
 	Movespeed:	
 	Acceleration:	
 
 	Durability:	600.0
-	Armor Strength:	96.0
+	Armor Strength:	72.0
 
-	Hull Points:	1260
-	Armor Points:	660
+	Hull Points:	2100
+	Armor Points:	1140
 	Shield Points:	
 	   Shield Burst CD: nans
 
@@ -19,4 +19,4 @@ Pulse Gun Defense
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy pulse              	12.0 	x3    	36.0 	200   	6000 
+		heavy pulse              	12.0 	x3    	36.0 	250   	10000

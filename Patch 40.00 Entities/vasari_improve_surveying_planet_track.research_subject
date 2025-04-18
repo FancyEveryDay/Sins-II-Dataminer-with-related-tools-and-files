@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_nanotech",
+    "field_coord": [1, 4],
+    "research_time": 90.0,
+    "price":
+    {
+        "metal": 150.0,
+        "crystal": 90.0,
+        "credits": 0.0
+    },
+    "empire_modifiers": [
+    {
+        "value_behavior": "additive",
+        "modifier_type": "surveying_bonus_exotic_chance",
+        "value": 0.24
+    }],
+    "name": "vasari_improve_surveying_planet_track_research_subject_name",
+    "name_uppercase": "vasari_improve_surveying_planet_track_research_subject_name_uppercase",
+    "description": "vasari_improve_surveying_planet_track_research_subject_description",
+    "hud_icon": "vasari_improve_surveying_planet_track_research_subject_hud_icon",
+    "tooltip_picture": "vasari_improve_surveying_planet_track_research_subject_tooltip_picture"
+}

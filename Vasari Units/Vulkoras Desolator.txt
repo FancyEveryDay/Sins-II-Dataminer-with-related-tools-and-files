@@ -8,20 +8,20 @@ Vulkoras Desolator
 	Acceleration:	132.0
 
 	Durability:	500.0
-	Armor Strength:	132.0
+	Armor Strength:	90.0
 
-	Hull Points:	2960 - 4745
-	Armor Points:	1180 - 2010
-	Shield Points:	1620 - 2760
-	   Shield Burst CD: 45.0s
+	Hull Points:	3460 - 5890
+	Armor Points:	1880 - 3575
+	Shield Points:	2820 - 5080
+	   Shield Burst CD: 65.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy phase missile      	33.3 	x2    	66.6 	600   	6250 
-		beam                     	8.0  	x3    	24.0 	500   	6250 
-		medium wave cannon       	5.0  	x2    	10.0 	180   	6250 
+		heavy phase missile      	25.0 	x2    	50.0 	600   	8000 
+		beam                     	6.7  	x3    	20.1 	500   	8000 
+		medium wave cannon       	10.0 	x2    	20.0 	200   	8000 
 		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 
 
 	Strike Craft: 1 - 2

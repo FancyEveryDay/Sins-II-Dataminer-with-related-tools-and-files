@@ -1,22 +1,22 @@
 Jarun Migrator
-	Supply: 	10
+	Supply: 	12
 	Credits:	
-	Metal:  	265.0
-	Crystal:	180.0
+	Metal:  	245.0
+	Crystal:	90.0
 
 	Movespeed:	720.0
 	Acceleration:	125.0
 
-	Durability:	240.0
+	Durability:	180.0
 	Armor Strength:	72.0
 
-	Hull Points:	830
-	Armor Points:	375
-	Shield Points:	465
-	   Shield Burst CD: 35.0s
+	Hull Points:	1215
+	Armor Points:	645
+	Shield Points:	965
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	225.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium pulse             	4.0  	x2    	8.0  	150   	3600 
+		medium pulse             	6.0  	x2    	12.0 	200   	5100 

@@ -1,0 +1,21 @@
+Breaker Missile
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	2000.0
+	Acceleration:	1000.0
+
+	Durability:	
+	Armor Strength:	25.0
+
+	Hull Points:	15
+	Armor Points:	50
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

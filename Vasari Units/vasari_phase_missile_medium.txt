@@ -5,13 +5,13 @@ vasari_phase_missile_medium
 	Crystal:	
 
 	Movespeed:	1800.0
-	Acceleration:	150.0
+	Acceleration:	180.0
 
 	Durability:	
-	Armor Strength:	
+	Armor Strength:	18.0
 
-	Hull Points:	1
-	Armor Points:	
+	Hull Points:	9
+	Armor Points:	15
 	Shield Points:	
 	   Shield Burst CD: nans
 

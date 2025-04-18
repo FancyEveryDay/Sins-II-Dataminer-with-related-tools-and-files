@@ -1,22 +1,22 @@
 Tempest Vessel
 	Supply: 	6
-	Credits:	
-	Metal:  	65.0
-	Crystal:	80.0
+	Credits:	180.0
+	Metal:  	90.0
+	Crystal:	75.0
 
 	Movespeed:	800.0
 	Acceleration:	125.0
 
-	Durability:	150.0
-	Armor Strength:	
+	Durability:	200.0
+	Armor Strength:	30.0
 
-	Hull Points:	800
-	Armor Points:	
-	Shield Points:	825
-	   Shield Burst CD: 25.0s
+	Hull Points:	900
+	Armor Points:	410
+	Shield Points:	925
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light missile            	7.1  	x2    	14.2 	0     	7500 
+		light missile            	6.8  	x2    	13.6 	0     	7500 

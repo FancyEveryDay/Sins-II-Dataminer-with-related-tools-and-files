@@ -1,19 +1,19 @@
 Protev Colony Frigate
 	Supply: 	5
-	Credits:	500.0
-	Metal:  	150.0
-	Crystal:	150.0
+	Credits:	450.0
+	Metal:  	100.0
+	Crystal:	50.0
 
 	Movespeed:	800.0
 	Acceleration:	200.0
 
-	Durability:	150.0
-	Armor Strength:	20.0
+	Durability:	50.0
+	Armor Strength:	25.0
 
-	Hull Points:	1120
-	Armor Points:	400
+	Hull Points:	750
+	Armor Points:	460
 	Shield Points:	
-	   Shield Burst CD: 25.0s
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	225.0
 

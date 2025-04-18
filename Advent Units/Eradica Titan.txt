@@ -8,22 +8,22 @@ Eradica Titan
 	Acceleration:	100.0
 
 	Durability:	750.0
-	Armor Strength:	125.0
+	Armor Strength:	100.0
 
-	Hull Points:	6750 - 10155
-	Armor Points:	1045 - 1780
-	Shield Points:	7000 - 11225
-	   Shield Burst CD: 60.0s
+	Hull Points:	11100 - 18895
+	Armor Points:	1535 - 2160
+	Shield Points:	9500 - 17110
+	   Shield Burst CD: 90.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy beam               	14.3 	x8    	114.4	500   	8000 
-		point defense laser      	1.5  	x21   	31.5 	0     	6000 
-		heavy plasma             	6.2  	x6    	37.2 	750   	8000 
-		heavy laser              	7.5  	x15   	112.5	250   	8000 
-		light missile            	44.1 	x6    	264.6	0     	12000
+		heavy beam               	12.5 	x8    	100.0	500   	8000 
+		point defense laser      	2.5  	x21   	52.5 	0     	6000 
+		heavy plasma             	5.0  	x6    	30.0 	750   	8000 
+		heavy laser              	7.5  	x15   	112.5	300   	8000 
+		heavy missile            	45.0 	x6    	270.0	300   	8000 
 		planet bombing plasma    	9.0  	x1    	9.0  	0     	4000 
 
 	Strike Craft: 3 - 8

@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_policy",
+    "field_coord": [8, 4],
+    "research_time": 840.0,
+    "price":
+    {
+        "credits": 2200.0,
+        "metal": 400.0,
+        "crystal": 700.0
+    },
+    "prerequisites": [
+        ["trader_commerce_culture",
+        "trader_culture_rate_1"]
+    ],
+    "name": "trader_improve_culture_propagation_research_subject_name",
+    "name_uppercase": "trader_improve_culture_propagation_research_subject_name_uppercase",
+    "description": "trader_improve_culture_propagation_research_subject_description",
+    "hud_icon": "trader_improve_culture_propagation_research_subject_hud_icon",
+    "tooltip_picture": "trader_improve_culture_propagation_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_culture"]
+}

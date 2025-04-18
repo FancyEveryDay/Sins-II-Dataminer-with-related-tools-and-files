@@ -1,0 +1,22 @@
+Stilat Missile Corvette
+	Supply: 	4
+	Credits:	245.0
+	Metal:  	25.0
+	Crystal:	55.0
+
+	Movespeed:	1000.0
+	Acceleration:	500.0
+
+	Durability:	
+	Armor Strength:	40.0
+
+	Hull Points:	300
+	Armor Points:	325
+	Shield Points:	
+	   Shield Burst CD: 15.0s
+
+	Antimatter:	
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium missile           	5.3  	x2    	10.6 	400   	3000 

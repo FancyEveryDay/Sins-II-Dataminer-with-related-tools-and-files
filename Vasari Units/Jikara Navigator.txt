@@ -1,22 +1,22 @@
 Jikara Navigator
 	Supply: 	3
 	Credits:	
-	Metal:  	45.0
+	Metal:  	40.0
 	Crystal:	
 
 	Movespeed:	1410.0
 	Acceleration:	300.0
 
 	Durability:	60.0
-	Armor Strength:	24.0
+	Armor Strength:	18.0
 
-	Hull Points:	410
-	Armor Points:	170
-	Shield Points:	350
+	Hull Points:	550
+	Armor Points:	315
+	Shield Points:	480
 	   Shield Burst CD: 15.0s
 
 	Antimatter:	
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		point defense pulse      	1.7  	x2    	3.4  	0     	3600 
+		point defense pulse      	2.0  	x2    	4.0  	0     	3600 

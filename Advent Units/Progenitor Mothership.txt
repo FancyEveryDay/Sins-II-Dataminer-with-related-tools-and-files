@@ -1,27 +1,27 @@
 Progenitor Mothership
 	Supply: 	50
 	Credits:	2000.0
-	Metal:  	600.0
-	Crystal:	750.0
+	Metal:  	725.0
+	Crystal:	900.0
 
 	Movespeed:	700.0
 	Acceleration:	100.0
 
 	Durability:	500.0
-	Armor Strength:	80.0
+	Armor Strength:	55.0
 
-	Hull Points:	3650 - 5490
-	Armor Points:	525 - 895
-	Shield Points:	3200 - 5450
-	   Shield Burst CD: 45.0s
+	Hull Points:	4500 - 8105
+	Armor Points:	810 - 1540
+	Shield Points:	4800 - 9120
+	   Shield Burst CD: 65.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy plasma             	6.2  	x2    	12.4 	750   	6250 
-		point defense laser      	1.5  	x2    	3.0  	0     	6000 
-		medium laser             	6.0  	x7    	42.0 	150   	6250 
+		heavy plasma             	5.0  	x2    	10.0 	750   	8000 
+		point defense laser      	2.5  	x2    	5.0  	0     	6000 
+		heavy laser              	7.5  	x7    	52.5 	300   	8000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
 
 	Strike Craft: 1 - 3

@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "aluxian_admiral_scion_hud_icon",
+    "name": "npc_reward.aluxian_admiral_scion.name",
+    "description": "npc_reward.aluxian_admiral_scion.description",
+    "always_show_in_shop": true,
+    "is_finite": true,
+    "required_unit_tags": [
+        "capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "utility",
+    "player_modifiers":
+    {
+        "empire_modifiers": [
+        {
+            "modifier_type": "max_influence_points",
+            "value_behavior": "additive",
+            "value": 5.0
+        }]
+    },
+    "ability": "aluxian_admiral_scion_unit_item"
+}

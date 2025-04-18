@@ -1,0 +1,95 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "dissever_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    },
+    {
+        "target_filter_id": "dissever_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "dissever_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_cooldown_time_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_damage_rate_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_damage_value",
+        "action_value":
+        {
+            "values": [900.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_penetration_value",
+        "action_value":
+        {
+            "values": [500.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_execution_count_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_radius_value",
+        "action_value":
+        {
+            "values": [6600.0]
+        }
+    },
+    {
+        "action_value_id": "dissever_auto_cast_target_count_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    }]
+}

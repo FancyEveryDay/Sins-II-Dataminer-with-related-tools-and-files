@@ -1,19 +1,19 @@
 Hoshiko Robotics Cruiser
 	Supply: 	6
-	Credits:	375.0
-	Metal:  	85.0
-	Crystal:	110.0
+	Credits:	500.0
+	Metal:  	95.0
+	Crystal:	45.0
 
 	Movespeed:	750.0
 	Acceleration:	150.0
 
 	Durability:	200.0
-	Armor Strength:	20.0
+	Armor Strength:	25.0
 
-	Hull Points:	1525
-	Armor Points:	675
+	Hull Points:	1235
+	Armor Points:	920
 	Shield Points:	
-	   Shield Burst CD: 35.0s
+	   Shield Burst CD: 45.0s
 
 	Antimatter:	350.0
 

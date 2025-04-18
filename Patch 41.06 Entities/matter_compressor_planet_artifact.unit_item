@@ -1,0 +1,48 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "is_artifact": true,
+    "is_finite": true,
+    "max_count_on_unit": 1,
+    "build_group_id": "utility",
+    "hud_icon": "matter_compressor_planet_artifact_hud_icon",
+    "tooltip_picture": "matter_compressor_planet_artifact_tooltip_picture",
+    "tooltip_icon": "matter_compressor_planet_artifact_hud_icon",
+    "name": "planet_artifact.matter_compressor.name",
+    "description": "planet_artifact.matter_compressor.desc",
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ]
+    }],
+    "player_modifiers": 
+    {
+        "planet_modifiers": [
+        {
+            "modifier_type": "factory_unit_build_price",
+            "value_behavior": "scalar",
+            "value": -0.15
+        },
+        {
+            "modifier_type": "structure_build_price",
+            "value_behavior": "scalar",
+            "value": -0.15
+        }]
+    }
+}

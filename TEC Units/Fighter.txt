@@ -8,9 +8,9 @@ Fighter
 	Acceleration:	250.0
 
 	Durability:	
-	Armor Strength:	20.0
+	Armor Strength:	25.0
 
-	Hull Points:	20
+	Hull Points:	25
 	Armor Points:	30
 	Shield Points:	
 	   Shield Burst CD: nans
@@ -19,4 +19,4 @@ Fighter
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light autocannon         	4.0  	x1    	4.0  	50    	2750 
+		light autocannon         	4.0  	x1    	4.0  	100   	2750 

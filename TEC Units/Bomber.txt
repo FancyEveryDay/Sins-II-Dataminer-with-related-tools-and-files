@@ -8,9 +8,9 @@ Bomber
 	Acceleration:	125.0
 
 	Durability:	
-	Armor Strength:	20.0
+	Armor Strength:	25.0
 
-	Hull Points:	35
+	Hull Points:	40
 	Armor Points:	50
 	Shield Points:	
 	   Shield Burst CD: nans

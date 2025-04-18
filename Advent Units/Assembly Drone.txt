@@ -1,8 +1,8 @@
 Assembly Drone
 	Supply: 	
-	Credits:	150.0
-	Metal:  	75.0
-	Crystal:	
+	Credits:	200.0
+	Metal:  	50.0
+	Crystal:	50.0
 
 	Movespeed:	750.0
 	Acceleration:	250.0
@@ -10,10 +10,10 @@ Assembly Drone
 	Durability:	50.0
 	Armor Strength:	
 
-	Hull Points:	425
+	Hull Points:	775
 	Armor Points:	
-	Shield Points:	450
-	   Shield Burst CD: 25.0s
+	Shield Points:	800
+	   Shield Burst CD: 30.0s
 
 	Antimatter:	
 
