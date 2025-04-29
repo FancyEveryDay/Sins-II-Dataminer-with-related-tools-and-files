@@ -2,37 +2,64 @@
 
 import json, glob
 
-def recursiveprint(collection, output, localText = {}, level = 0):
+def recursiveprint(collection, output = False, localText = {}, level = 0):
     printTypes = [str, int, float]
 
     indents = "\t" * level
 
-    if type(collection) is list:
-        for entry in collection:
-            if type(entry) not in printTypes:
-                recursiveprint(entry, output, localText, level + 1)
-                
-            else:
-                try: entry = localText[entry]
-                except KeyError: pass
-                
-                print(f"{indents}{entry}")
-                output.write(f"{indents}{entry}\n")
+    if output is not False:
+
+        if type(collection) is list:
+            for entry in collection:
+                if type(entry) not in printTypes:
+                    recursiveprint(entry, output, localText, level + 1)
+                    
+                else:
+                    try: entry = localText[entry]
+                    except KeyError: pass
+                    
+                    print(f"{indents}{entry}")
+                    output.write(f"{indents}{entry}\n")
 
 
-    elif type(collection) is dict:
-        for name, entry in collection.items():
+        elif type(collection) is dict:
+            for name, entry in collection.items():
 
-            if type(entry) not in printTypes:
-                print(f"{indents}{name}\n")
-                output.write(f"\n{indents}{name}\n")
-                recursiveprint(entry, output, localText, level + 1)
-            else:
-                try: entry = localText[entry]
-                except KeyError: pass
+                if type(entry) not in printTypes:
+                    print(f"{indents}{name}\n")
+                    output.write(f"\n{indents}{name}\n")
+                    recursiveprint(entry, output, localText, level + 1)
+                else:
+                    try: entry = localText[entry]
+                    except KeyError: pass
 
-                print(f"{indents}{name} : {entry}")
-                output.write(f"{indents}{name} : {entry}\n")
+                    print(f"{indents}{name} : {entry}")
+                    output.write(f"{indents}{name} : {entry}\n")
+
+    else:
+        if type(collection) is list:
+            for entry in collection:
+                if type(entry) not in printTypes:
+                    recursiveprint(entry, output, localText, level + 1)
+                    
+                else:
+                    try: entry = localText[entry]
+                    except KeyError: pass
+                    
+                    print(f"{indents}{entry}")
+
+
+        elif type(collection) is dict:
+            for name, entry in collection.items():
+
+                if type(entry) not in printTypes:
+                    print(f"{indents}{name}\n")
+                    recursiveprint(entry, output, localText, level + 1)
+                else:
+                    try: entry = localText[entry]
+                    except KeyError: pass
+
+                    print(f"{indents}{name} : {entry}")
 
 def getSinsData(race, type, output = False, file = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities" ):
     unitfilelist = glob.glob(f"{file}\\{race}**{type}")

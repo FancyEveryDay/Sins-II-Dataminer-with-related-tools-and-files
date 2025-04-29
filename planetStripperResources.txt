@@ -1,0 +1,240 @@
+
+asteroid
+	skin : asteroid_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 1
+
+barren
+	skin : ferrous_destroyed_planet
+
+	stripped_assets
+		metal : 19200.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 4
+
+city
+	skin : terran_destroyed_planet
+
+	stripped_assets
+		metal : 15000.0
+		crystal : 5000.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 10
+
+crystalline
+	skin : crystalline_destroyed_planet
+
+	stripped_assets
+		crystal : 19200.0
+
+	stripped_exotics
+			exotic_type : utility
+			count : 3
+			exotic_type : ultimate
+			count : 1
+
+desert
+	skin : desert_destroyed_planet
+
+	stripped_assets
+		metal : 9600.0
+		crystal : 7200.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 2
+			exotic_type : economic
+			count : 3
+
+ferrous
+	skin : ferrous_destroyed_planet
+
+	stripped_assets
+		metal : 19200.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 4
+
+gas_giant
+	skin : terran_destroyed_planet
+
+	stripped_assets
+		crystal : 19200.0
+
+	stripped_exotics
+			exotic_type : offense
+			count : 2
+			exotic_type : defense
+			count : 2
+			exotic_type : utility
+			count : 2
+			exotic_type : economic
+			count : 2
+
+hive_asteroid
+	skin : asteroid_destroyed_planet
+
+	stripped_assets
+		metal : 2400.0
+		crystal : 3000.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 1
+
+ice_asteroid
+	skin : asteroid_destroyed_planet
+
+	stripped_assets
+		metal : 2400.0
+		crystal : 3000.0
+
+	stripped_exotics
+			exotic_type : utility
+			count : 1
+
+ice_moon
+	skin : moon_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 1
+
+ice
+	skin : ice_destroyed_planet
+
+	stripped_assets
+		metal : 2400.0
+		crystal : 12600.0
+
+	stripped_exotics
+			exotic_type : utility
+			count : 3
+
+magnetic
+	skin : desert_destroyed_planet
+
+	stripped_assets
+		metal : 9600.0
+		crystal : 7200.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 2
+			exotic_type : economic
+			count : 3
+
+moon
+	skin : moon_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 1
+
+oceanic
+	skin : oceanic_destroyed_planet
+
+	stripped_assets
+		metal : 9600.0
+		crystal : 7200.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 2
+			exotic_type : utility
+			count : 2
+			exotic_type : economic
+			count : 2
+
+pirate_base
+	skin : asteroid_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : offense
+			count : 5
+			exotic_type : economic
+			count : 5
+
+ship_graveyard
+	skin : asteroid_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 3
+			exotic_type : utility
+			count : 2
+
+swamp
+	skin : swamp_destroyed_planet
+
+	stripped_assets
+		metal : 4800.0
+		crystal : 6400.0
+
+	stripped_exotics
+			exotic_type : offense
+			count : 2
+			exotic_type : economic
+			count : 1
+
+terran
+	skin : terran_destroyed_planet
+
+	stripped_assets
+		metal : 9600.0
+		crystal : 7500.0
+
+	stripped_exotics
+			exotic_type : offense
+			count : 2
+			exotic_type : economic
+			count : 2
+
+volcanic_moon
+	skin : moon_destroyed_planet
+
+	stripped_assets
+		metal : 3200.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : defense
+			count : 1
+
+volcanic
+	skin : volcanic_destroyed_planet
+
+	stripped_assets
+		metal : 12600.0
+		crystal : 2400.0
+
+	stripped_exotics
+			exotic_type : offense
+			count : 2
