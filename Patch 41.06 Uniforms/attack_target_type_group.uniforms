@@ -1,0 +1,162 @@
+{
+    "attack_target_type_groups": [
+    {
+        "unit_attack_target_type_group_id": "torpedo_strikecraft",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"torpedo",
+				"strikecraft"
+			]
+		}
+    },
+    {
+        "unit_attack_target_type_group_id": "strikecraft_torpedo",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"strikecraft",
+				"torpedo"
+			]
+		}
+    },
+    {
+        "unit_attack_target_type_group_id": "light_flak",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"light",
+				"flak"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "corvette",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"corvette"			
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "heavy_capital",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"heavy",
+				"capital"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "defense",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"defense"				
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "defense_starbase_titan",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"defense",
+				"starbase",
+				"titan"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "light",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"light"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "light_corvette",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"light",
+				"corvette"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "corvette_light",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"corvette",
+				"light"				
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "light_flak_corvette",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"light",
+				"flak",
+				"corvette"	
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "capital",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"capital"				
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "strikecraft_corvette",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"strikecraft",
+				"corvette"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "lrm_flak",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"lrm",
+				"flak"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "torpedo_strikecraft_corvette",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"torpedo",
+				"strikecraft",
+				"corvette"
+			]
+		}
+    },
+	{
+        "unit_attack_target_type_group_id": "light_defense",
+		"unit_attack_target_type_group":
+		{
+			"types": [
+				"light",
+				"defense"
+			]
+		}
+    }]
+}

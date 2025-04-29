@@ -1,0 +1,1196 @@
+
+
+# Advent Changes
+
+## Unit Changes
+
+**Acolyte Corvette**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Aeria Drone Host**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Coronata Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Destra Crusader**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Domina Subjugator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Eradica Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Exoria Illuminator**
+	weapons
+		weapons
+			0
+				heavy_beam
+					damage : 90.0 -> 80.0
+					dps : 10.0 -> 8.88888888888889
+			1
+				medium_beam
+					damage : 30.0 -> 25.0
+					dps : 5.0 -> 4.166666666666667
+			2
+				medium_beam
+					damage : 30.0 -> 25.0
+					dps : 5.0 -> 4.166666666666667
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Halcyon Carrier**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Iconus Guardian**
+	health
+		levels
+			0
+				shield_point_restore_rate : 6.0 -> 4.0
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 40.0
+					restore_percentage : 0.3 -> 0.5
+
+**Progenitor Mothership**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Radiance Battleship**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Rapture Battlecruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Revelation Battlecruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Seeker Vessel**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Vigilis Sentinel**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+
+# TEC Changes
+
+## Unit Changes
+
+**Akkan Battlecruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+	item_builds
+		0
+			build_group
+				0 : trader_targeting_array -> trader_flak_burst
+				2 : trader_volatile_accelerants -> trader_targeting_array
+				3 : trader_flak_burst -> trader_volatile_accelerants
+		5
+			build_group
+				0 : trader_salvage_kit -> trader_radiation_bomb
+				1 : trader_radiation_bomb -> trader_salvage_kit
+
+**Ankylon Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Dunov Battlecruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Harcka Heavy Cruiser**
+	weapons
+		weapons
+			0
+				heavy_autocannon
+					damage : 25.0 -> 20.0
+					dps : 5.0 -> 4.0
+			1
+				heavy_autocannon
+					damage : 25.0 -> 20.0
+					dps : 5.0 -> 4.0
+			2
+				heavy_autocannon
+					damage : 25.0 -> 20.0
+					dps : 5.0 -> 4.0
+			3
+				heavy_autocannon
+					damage : 25.0 -> 20.0
+					dps : 5.0 -> 4.0
+			4
+				heavy_autocannon
+					damage : 25.0 -> 20.0
+					dps : 5.0 -> 4.0
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Hoshiko Robotics Cruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Javelis LRM Cruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Kol Battleship**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Marza Dreadnought**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+	item_builds
+		0
+			build_group
+				0 : trader_rapid_autoloader -> trader_heavy_gauss_slugs
+				1 : trader_heavy_gauss_slugs -> trader_missile_guidance_computer
+				2 : trader_missile_guidance_computer -> trader_rapid_autoloader
+		1
+			build_group
+				0 : trader_flak_burst -> trader_combat_repair_system
+				1 : trader_combat_repair_system -> trader_flak_burst
+
+**Ogrov Torpedo Cruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Percheron Carrier Cruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Prova Scout Corvette**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Ragnarov Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Shriken Gunship Corvette**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Sova Carrier**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Stilat Missile Corvette**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+## Research_subject Changes
+
+**trader_asteroid_planet_credit_rate**
+	planet_modifiers
+		0
+			planet_types
+				1 : ice_asteroid -> hive_asteroid
+
+**trader_planet_civilian_slots**
+	planet_modifiers
+		0
+			planet_types
+				0 : desert -> city
+				1 : oceanic -> desert
+				2 : terran -> oceanic
+
+
+# Vasari Changes
+
+## Unit Changes
+
+**Antorak Marauder**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Heavy Fighter**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Jarrasul Evacuator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Jarun Migrator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Jikara Navigator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Jusotra Fabricator Cruiser**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Karrastra Destructor**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Kortovas Oppressor**
+	weapons
+		weapons
+			0
+				heavy_wave_cannon
+					damage : 40.0 -> 33.0
+					dps : 6.666666666666667 -> 5.5
+			1
+				heavy_wave_cannon
+					damage : 40.0 -> 33.0
+					dps : 6.666666666666667 -> 5.5
+			2
+				heavy_wave_cannon
+					damage : 40.0 -> 33.0
+					dps : 6.666666666666667 -> 5.5
+			3
+				heavy_wave_cannon
+					damage : 40.0 -> 33.0
+					dps : 6.666666666666667 -> 5.5
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Kortul Devastator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Kultorask Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Lasurak Transporter**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Serevun Overseer**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0
+
+**Skirantra Carrier**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Sulsurak Defensor**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Tosurak Raider**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 15.0 -> 20.0
+
+**Vorastra Titan**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 90.0 -> 70.0
+			1
+				shield_burst_restore
+					cooldown_duration : 87.0 -> 68.0
+			2
+				shield_burst_restore
+					cooldown_duration : 84.0 -> 66.0
+			3
+				shield_burst_restore
+					cooldown_duration : 81.0 -> 64.0
+					restore_percentage : 0.31 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 78.0 -> 62.0
+					restore_percentage : 0.33 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 75.0 -> 60.0
+					restore_percentage : 0.36 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 72.0 -> 58.0
+					restore_percentage : 0.39 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 69.0 -> 56.0
+					restore_percentage : 0.42 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 53.0
+					restore_percentage : 0.46 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 60.0 -> 50.0
+
+**Vulkoras Desolator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 65.0 -> 50.0
+					restore_percentage : 0.33 -> 0.25
+			1
+				shield_burst_restore
+					cooldown_duration : 63.0 -> 48.0
+					restore_percentage : 0.36 -> 0.27
+			2
+				shield_burst_restore
+					cooldown_duration : 61.0 -> 46.0
+					restore_percentage : 0.39 -> 0.29
+			3
+				shield_burst_restore
+					cooldown_duration : 59.0 -> 44.0
+					restore_percentage : 0.42 -> 0.32
+			4
+				shield_burst_restore
+					cooldown_duration : 57.0 -> 42.0
+					restore_percentage : 0.45 -> 0.35
+			5
+				shield_burst_restore
+					cooldown_duration : 55.0 -> 40.0
+					restore_percentage : 0.48 -> 0.38
+			6
+				shield_burst_restore
+					cooldown_duration : 53.0 -> 38.0
+					restore_percentage : 0.51 -> 0.41
+			7
+				shield_burst_restore
+					cooldown_duration : 51.0 -> 36.0
+					restore_percentage : 0.54 -> 0.44
+			8
+				shield_burst_restore
+					cooldown_duration : 48.0 -> 33.0
+					restore_percentage : 0.6 -> 0.47
+			9
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 30.0
+					restore_percentage : 0.66 -> 0.5
+
+**Vulrak Penetrator**
+	health
+		levels
+			0
+				shield_burst_restore
+					cooldown_duration : 45.0 -> 40.0

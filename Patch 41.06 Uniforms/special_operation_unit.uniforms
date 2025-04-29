@@ -1,0 +1,166 @@
+{
+    "special_operation_unit_kinds": [
+    {
+        "name": "garrison",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "is_garrison_unit": true,
+            "will_give_experience": true,
+            "will_notify_enemy_player_when_entering_gravity_well": true,
+            "max_move_distance_from_owner_planet": 1,
+            "should_be_in_planet_defenses_pip_group": true,
+            "name": "special_operation_unit.garrison.name",
+            "hud_icon": "garrison_unit_icon",
+            "main_view_icon":
+            {
+                "icon": "garrison_unit_icon",
+                "mesh_center_offset": 10
+            },
+            "main_view_icon_fill_color": "#FFFFFF"
+        }
+    },
+    {
+        "name": "insurgent",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "is_insurgent_unit": true,
+            "will_notify_enemy_player_when_entering_gravity_well": true,
+            "cannot_move_out_of_gravity_well": true,
+            "name": "special_operation_unit.insurgent.name",
+            "description": "special_operation_unit.insurgent.description",
+            "hud_icon": "insurgent_unit_icon",
+            "main_view_icon":
+            {
+                "icon": "insurgent_unit_icon",
+                "mesh_center_offset": 10
+            },
+            "main_view_icon_fill_color": "#FFFFFF",
+            "duration_start_condition": "when_planet_is_not_enemy",
+            "duration": 60
+        }
+    },
+    {
+        "name": "dark_fleet",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "will_notify_enemy_player_when_entering_gravity_well": true,
+            "cannot_move_out_of_gravity_well": true,
+            "name": "special_operation_unit.dark_fleet.name",
+            "description": "special_operation_unit.dark_fleet.description",
+            "hud_icon": "dark_fleet_unit_icon",
+            "main_view_icon":
+            {
+                "icon": "dark_fleet_unit_icon",
+                "mesh_center_offset": 10
+            },
+            "main_view_icon_fill_color": "#FFFFFF",
+            "duration_start_condition": "when_gravity_well_has_no_attackable_enemy_units",
+            "duration": 60
+        }
+    },
+    {
+        "name": "structure_builder",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "cannot_move_out_of_gravity_well": true
+        }
+    },
+    {
+        "name": "trade_ship",
+        "definition":
+        {
+            "is_ever_controllable": false
+        }
+    },
+    {
+        "name": "trade_escort",
+        "definition":
+        {
+            "is_ever_controllable": false,
+            "name": "special_operation_unit.trade_escort.name",
+            "description": "special_operation_unit.trade_escort.description",
+            "main_view_icon":
+            {
+                "icon": "garrison_unit_icon",
+                "mesh_center_offset": 10
+            },
+            "main_view_icon_fill_color": "#FFFFFF"
+        }
+    },
+    {
+        "name": "viturak_cabal_remote_fabrication",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "cannot_move_out_of_gravity_well": true,
+            "name": "npc_player.viturak_cabal.name",
+            "duration_start_condition": "immediately",
+            "duration": 300,
+            "will_give_experience": true
+        }
+    },
+    {
+        "name": "viturak_cabal_phase_gate",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "name": "npc_player.viturak_cabal.name",
+            "main_view_icon_fill_color": "#c99b73",
+            "will_give_experience": true
+        }
+    },
+    {
+        "name": "viturak_cabal_phase_gate_auction_reward",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "name": "npc_player.viturak_cabal.name",
+            "main_view_icon_fill_color": "#c99b73",
+            "will_give_experience": true
+        }
+    },
+    {
+        "name": "viturak_cabal_attack_ships",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "will_notify_enemy_player_when_entering_gravity_well": true,
+            "cannot_move_out_of_gravity_well": true,
+            "name": "npc_player.viturak_cabal.name",
+            "duration_start_condition": "when_gravity_well_has_no_attackable_enemy_units",
+            "duration": 60,
+            "main_view_icon_fill_color": "#c99b73",
+            "will_give_experience": true
+        }
+    },
+    {
+        "name": "pranast_gauss_defense_structure",
+        "definition":
+        {
+            "is_ever_controllable": true,
+            "name": "npc_player.pranast_united.name",
+            "main_view_icon_fill_color": "#e2a29c",
+            "will_give_experience": true
+        }
+    },
+    {
+        "name": "pranast_defensive_raid",
+        "definition":
+        {
+            "hud_icon": "pranast_defensive_raid_hud_icon",
+            "name": "npc_reward.pranast_defensive_raid.unit_name",
+            "description": "npc_reward.pranast_defensive_raid.unit_description",
+            "is_ever_controllable": true,
+            "is_detected_when_hyperspacing_in": true,
+            "duration_start_condition": "when_gravity_well_has_no_attackable_enemy_units",
+            "duration": 60,
+            "cannot_move_out_of_gravity_well": true,
+            "main_view_icon_fill_color": "#e2a29c",
+            "will_give_experience": true
+        }
+    }]
+}
