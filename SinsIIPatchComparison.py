@@ -126,8 +126,12 @@ def getSinsDataDict(race, entityType, file = "F:\\SteamLibrary\\steamapps\\commo
     return dataDict
 
 if __name__ == "__main__":
+    # Get .env
+    with open('.env', 'r') as file:
+        env = json.load(file)
+    
     # Change this to match your machine.
-    gameLocation = "F:\\SteamLibrary\\steamapps\\common\\Sins2"
+    gameLocation = env['sins2File']
 
     gameEntitiesLocation = gameLocation + "\\entities"
     gameLocalizedText = gameLocation + "\\localized_text\\en.localized_text"
