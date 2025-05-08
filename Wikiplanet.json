@@ -1,0 +1,1229 @@
+{
+ "Asteroid": {
+  "name": "asteroid",
+  "localized_name": "planet_type_name.asteroid",
+  "can_have_planet_elevators": false,
+  "population": {
+   "starting_population": 0,
+   "population_maximum": 50,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Ice Asteroid": {
+  "name": "ice_asteroid",
+  "localized_name": "planet_type_name.ice_asteroid",
+  "can_have_planet_elevators": false,
+  "population": {
+   "starting_population": 0,
+   "population_maximum": 60,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Hive Asteroid": {
+  "name": "hive_asteroid",
+  "localized_name": "planet_type_name.hive_asteroid",
+  "can_have_planet_elevators": false,
+  "population": {
+   "starting_population": 120,
+   "population_maximum": 180,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Barren planet": {
+  "name": "barren",
+  "localized_name": "planet_type_name.barren",
+  "population": {
+   "starting_population": 95,
+   "population_maximum": 225,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "City planet": {
+  "name": "city",
+  "localized_name": "planet_type_name.city",
+  "population": {
+   "starting_population": 1000,
+   "population_maximum": 1500,
+   "growth_rate": 0.15,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Crystalline planet": {
+  "name": "crystalline",
+  "localized_name": "planet_type_name.crystalline",
+  "population": {
+   "starting_population": 65,
+   "population_maximum": 190,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.45
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.25
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.65
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Kalanide",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.35
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Kalanide",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Desert planet": {
+  "name": "desert",
+  "localized_name": "planet_type_name.desert",
+  "population": {
+   "starting_population": 150,
+   "population_maximum": 400,
+   "growth_rate": 0.1,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.45
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.25
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.25
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.4
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.55
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Ferrous planet": {
+  "name": "ferrous",
+  "localized_name": "planet_type_name.ferrous",
+  "population": {
+   "starting_population": 120,
+   "population_maximum": 240,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.45
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.35
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Gas Giant planet": {
+  "name": "gas_giant",
+  "localized_name": "planet_type_name.gas_giant",
+  "population": {
+   "starting_population": 0,
+   "population_maximum": 0,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.5
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.3
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.4
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Quarnium",
+      "chance": 0.5
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Quarnium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Ice planet": {
+  "name": "ice",
+  "localized_name": "planet_type_name.ice",
+  "population": {
+   "starting_population": 45,
+   "population_maximum": 165,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.3
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.4
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Kalanide",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Geomagnetic planet": {
+  "name": "magnetic",
+  "localized_name": "planet_type_name.magnetic",
+  "population": {
+   "starting_population": 100,
+   "population_maximum": 250,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.45
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.35
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Moon planet": {
+  "name": "moon",
+  "localized_name": "planet_type_name.moon",
+  "can_have_planet_elevators": false,
+  "population": {
+   "starting_population": 40,
+   "population_maximum": 90,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Ice Moon planet": {
+  "name": "ice_moon",
+  "localized_name": "planet_type_name.ice_moon",
+  "population": {
+   "starting_population": 30,
+   "population_maximum": 70,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "can_have_planet_elevators": false,
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.3
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Volcanic Moon planet": {
+  "name": "volcanic_moon",
+  "localized_name": "planet_type_name.volcanic_moon",
+  "population": {
+   "starting_population": 10,
+   "population_maximum": 55,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "can_have_planet_elevators": false,
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Oceanic planet": {
+  "name": "oceanic",
+  "localized_name": "planet_type_name.oceanic",
+  "population": {
+   "starting_population": 200,
+   "population_maximum": 350,
+   "growth_rate": 0.1,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.45
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.15
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.35
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.05
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.35
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Ship Graveyard planet": {
+  "name": "ship_graveyard",
+  "localized_name": "planet_type_name.ship_graveyard",
+  "population": {
+   "starting_population": 10,
+   "population_maximum": 75,
+   "growth_rate": 0.025,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   }
+  ]
+ },
+ "Primordial planet": {
+  "name": "swamp",
+  "localized_name": "planet_type_name.swamp",
+  "population": {
+   "starting_population": 135,
+   "population_maximum": 300,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.3
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.45
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.35
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.05
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Terran planet": {
+  "name": "terran",
+  "localized_name": "planet_type_name.terran",
+  "population": {
+   "starting_population": 300,
+   "population_maximum": 700,
+   "growth_rate": 0.1,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.15
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.15
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.2
+     },
+     {
+      "exotic_type": "Andvar",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Indurium",
+      "count": [
+       2,
+       2
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Volcanic planet": {
+  "name": "volcanic",
+  "localized_name": "planet_type_name.volcanic",
+  "population": {
+   "starting_population": 30,
+   "population_maximum": 120,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.2
+     }
+    ],
+    "guaranteed_counts": []
+   },
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.4
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Tauranite",
+      "count": [
+       1,
+       1
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Pirate Base planet": {
+  "name": "pirate_base",
+  "localized_name": "planet_type_name.pirate_base",
+  "population": {
+   "starting_population": 25,
+   "population_maximum": 50,
+   "growth_rate": 0.05,
+   "growth_rate_if_above_max_population": -0.2
+  },
+  "surveying_track_levels": [
+   {
+    "bonus_exotic_chances": [
+     {
+      "exotic_type": "Tauranite",
+      "chance": 0.1
+     },
+     {
+      "exotic_type": "Indurium",
+      "chance": 0.3
+     },
+     {
+      "exotic_type": "Kalanide",
+      "chance": 0.1
+     }
+    ],
+    "guaranteed_counts": [
+     {
+      "exotic_type": "Andvar",
+      "count": [
+       5,
+       5
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

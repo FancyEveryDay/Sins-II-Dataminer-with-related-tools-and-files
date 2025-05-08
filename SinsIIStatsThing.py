@@ -187,7 +187,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
             #Ship Weapons Block
 
             try: unitAntimatterAmt = unitDict["antimatter"]["max_antimatter"]
-            except KeyError: unitAntimatterAmt = ""
+            except KeyError: unitAntimatterAmt = "nan"
             
             try: unitWeaponsBlock = unitDict["weapons"]["weapons"]  
             except KeyError: unitWeaponsBlock = False #or maybe make it false and add a conditional     
