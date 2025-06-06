@@ -15,7 +15,7 @@ Temple of Unity
 	Shield Points:	1500
 	   Shield Burst CD: 60.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

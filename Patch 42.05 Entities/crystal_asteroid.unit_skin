@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 39364.409854,
+        "min_camera_distance": 1996.251063,
+        "gui":
+        {
+            "hud_icon": "crystal_asteroid_hud_icon",
+            "tooltip_icon": "crystal_asteroid_tooltip_icon",
+            "name": "crystal_asteroid_name",
+            "description": "crystal_asteroid_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "crystal_asteroid",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "asteroid",
+            "icon": "crystal_asteroid_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        }
+    }]
+}

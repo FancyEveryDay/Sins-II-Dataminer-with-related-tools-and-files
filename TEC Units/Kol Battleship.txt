@@ -13,7 +13,7 @@ Kol Battleship
 	Hull Points:	3750 - 6755
 	Armor Points:	2420 - 4120
 	Shield Points:	2650 - 5035
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

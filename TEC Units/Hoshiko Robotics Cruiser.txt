@@ -13,7 +13,7 @@ Hoshiko Robotics Cruiser
 	Hull Points:	1235
 	Armor Points:	920
 	Shield Points:	
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
 	Antimatter:	350.0
 

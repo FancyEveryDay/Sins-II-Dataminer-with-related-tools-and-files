@@ -15,7 +15,7 @@ Beam Defense Platform
 	Shield Points:	1750
 	   Shield Burst CD: 60.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

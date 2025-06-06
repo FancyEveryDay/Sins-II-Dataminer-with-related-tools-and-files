@@ -13,7 +13,7 @@ Ragnarov Titan
 	Hull Points:	12800 - 23055
 	Armor Points:	4425 - 6220
 	Shield Points:	6575 - 10540
-	   Shield Burst CD: 90.0s
+	   Shield Burst CD: 70.0s
 
 	Antimatter:	0.0
 

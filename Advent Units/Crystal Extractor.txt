@@ -15,7 +15,7 @@ Crystal Extractor
 	Shield Points:	1000
 	   Shield Burst CD: 45.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

@@ -13,7 +13,7 @@ Eradica Titan
 	Hull Points:	11100 - 18895
 	Armor Points:	1535 - 2160
 	Shield Points:	9500 - 17110
-	   Shield Burst CD: 90.0s
+	   Shield Burst CD: 70.0s
 
 	Antimatter:	0.0
 
@@ -23,7 +23,7 @@ Eradica Titan
 		point defense laser      	2.5  	x21   	52.5 	0     	6000 
 		heavy plasma             	5.0  	x6    	30.0 	750   	8000 
 		heavy laser              	7.5  	x15   	112.5	300   	8000 
-		heavy missile            	45.0 	x6    	270.0	300   	8000 
+		heavy missile            	45.0 	x6    	270.0	400   	8000 
 		planet bombing plasma    	9.0  	x1    	9.0  	0     	4000 
 
 	Strike Craft: 3 - 8

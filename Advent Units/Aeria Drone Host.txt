@@ -13,9 +13,9 @@ Aeria Drone Host
 	Hull Points:	2150
 	Armor Points:	
 	Shield Points:	2300
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

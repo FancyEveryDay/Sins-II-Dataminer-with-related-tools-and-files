@@ -1,0 +1,2732 @@
+{
+    "minimum_gravity_well_distances_by_hierarchy_depth": [100000, 100000, 20000],
+    "gravity_well_y_offsets_by_hierarchy_depth": [
+        [0, 0],
+        [-150000, 150000],
+        [-15000, 15000]
+    ],
+    "gravity_well_orbit_durations_by_hierarchy_depth": [
+    {},
+    {
+        "min":
+        {
+            "radius": 1000000,
+            "time_in_hours": 2.0
+        },
+        "max":
+        {
+            "radius": 10000000,
+            "time_in_hours": 15.0
+        }
+    },
+    {
+        "min":
+        {
+            "radius": 200000,
+            "time_in_hours": 1.0
+        },
+        "max":
+        {
+            "radius": 1000000,
+            "time_in_hours": 2.0
+        }
+    }],
+    "secondary_fixture_y_offset": [-3000, 3000],
+    "min_jumps_to_any_home_planet_for_loot_level": [1, 3, 4],
+    "player_phase_resonance_points": [4, 3, 2, 1],
+    "fillings":
+    {
+        "npc_fillings": [
+        {
+            "name": "militia",
+            "filling":
+            {
+                "player_definition": "militia",
+                "npc_filling_type": "militia"
+            }
+        },
+        {
+            "name": "guardian",
+            "filling":
+            {
+                "player_definition": "guardian_npc",
+                "npc_filling_type": "guardian"
+            }
+        },
+        {
+            "name": "pirate",
+            "filling":
+            {
+                "player_definition": "pirate_npc",
+                "npc_filling_type": "enemy_faction",
+                "npc_id": "pirate"
+            }
+        },
+        {
+            "name": "aluxian_resurgence",
+            "filling":
+            {
+                "player_definition": "aluxian_resurgence_npc",
+                "npc_filling_type": "enemy_faction",
+                "npc_id": "aluxian_resurgence"
+            }
+        },
+        {
+            "name": "cot_aluxian_resurgence",
+            "filling":
+            {
+                "player_definition": "cot_aluxian_resurgence_npc",
+                "npc_id": "cot_aluxian_resurgence"
+            }
+        },
+        {
+            "name": "pranast_united",
+            "filling":
+            {
+                "player_definition": "pranast_united_npc",
+                "npc_filling_type": "friendly_faction",
+                "npc_id": "pranast_united"
+            }
+        },
+        {
+            "name": "viturak_cabal",
+            "filling":
+            {
+                "player_definition": "viturak_cabal_npc",
+                "npc_filling_type": "friendly_faction",
+                "npc_id": "viturak_cabal"
+            }
+        },
+        {
+            "name": "jiskun_force",
+            "filling":
+            {
+                "player_definition": "jiskun_force_npc",
+                "npc_filling_type": "friendly_faction",
+                "npc_id": "jiskun_force"
+            }
+        }],
+        "node_fillings": [
+        {
+            "name": "random_star",
+            "filling":
+            {
+                "editor_color": "#FAFAD2",
+                "primary_random_fixture_filling_name": "random_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+        {
+            "name": "random_yellow_star",
+            "filling":
+            {
+                "editor_color": "#FFFF00",
+                "primary_random_fixture_filling_name": "random_yellow_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+        {
+            "name": "random_blue_star",
+            "filling":
+            {
+                "editor_color": "#0000FF",
+                "primary_random_fixture_filling_name": "random_blue_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+		{
+            "name": "random_red_star",
+            "filling":
+            {
+                "editor_color": "#FFFF00",
+                "primary_random_fixture_filling_name": "random_red_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+		{
+            "name": "random_orange_star",
+            "filling":
+            {
+                "editor_color": "#FFFF00",
+                "primary_random_fixture_filling_name": "random_orange_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+		{
+            "name": "random_white_star",
+            "filling":
+            {
+                "editor_color": "#FFFF00",
+                "primary_random_fixture_filling_name": "random_white_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+		{
+            "name": "random_black_hole_star",
+            "filling":
+            {
+                "editor_color": "#FFFF00",
+                "primary_random_fixture_filling_name": "random_black_hole_star",
+                "is_existence_known_to_all": true,
+                "editor_visual_tag": "STA"
+            }
+        },
+        {
+            "name": "random_planet_unweighted",
+            "filling":
+            {
+                "editor_color": "#46055D",
+                "primary_random_fixture_filling_name": "random_planet_unweighted",
+                "primary_random_fixture_with_moon_filling_name": "random_planet_unweighted_with_moon",
+                "editor_visual_tag": "UNW"
+            }
+        },
+        {
+            "name": "random_planet_unweighted_near_home_planet",
+            "filling":
+            {
+                "editor_color": "#520B41",
+                "primary_random_fixture_filling_name": "random_planet_unweighted_near_home_planet",
+                "primary_random_fixture_with_moon_filling_name": "random_planet_unweighted_near_home_planet_with_moon",
+                "editor_visual_tag": "UNW"
+            }
+        },
+        {
+            "name": "random_planet_weighted",
+            "filling":
+            {
+                "editor_color": "#492367",
+                "primary_random_fixture_filling_name": "random_planet_weighted",
+                "primary_random_fixture_with_moon_filling_name": "random_planet_weighted_with_moon",
+                "editor_visual_tag": "WEI"
+            }
+        },
+        {
+            "name": "random_planet_weighted_near_home_planet",
+            "filling":
+            {
+                "editor_color": "#6B2E6E",
+                "primary_random_fixture_filling_name": "random_planet_weighted_near_home_planet",
+                "primary_random_fixture_with_moon_filling_name": "random_planet_weighted_near_home_planet_with_moon",
+                "editor_visual_tag": "WEI"
+            }
+        },
+        {
+            "name": "random_poor_planet",
+            "filling":
+            {
+                "editor_color": "#7F3300",
+                "gravity_wells": "asteroid_point_line_cluster_weighted",
+                "primary_random_fixture_filling_name": "random_poor_planet",
+                "secondary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "POOR"
+            }
+        },
+        {
+            "name": "random_debris_field_planet",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "gravity_wells": "debris_field",
+                "primary_random_fixture_filling_name": "random_debris_field_planet",
+                "secondary_random_fixture_filling_name": "random_debris",
+                "editor_visual_tag": "DF"
+            }
+        },
+        {
+            "name": "random_fair_planet",
+            "filling":
+            {
+                "editor_color": "#FAFAD2",
+                "primary_random_fixture_filling_name": "random_fair_planet",
+                "editor_visual_tag": "FAIR"
+            }
+        },
+        {
+            "name": "random_city_planet",
+            "filling":
+            {
+                "editor_color": "#4a4a4a",
+                "primary_random_fixture_filling_name": "random_city_planet",
+				"editor_visual_tag": "CITY"
+            }
+        },
+        {
+            "name": "random_crystalline_planet",
+            "filling":
+            {
+                "editor_color": "#FF69B4",
+                "primary_random_fixture_filling_name": "random_crystalline_planet",
+                "editor_visual_tag": "CRY"
+            }
+        },
+        {
+            "name": "random_desert_planet",
+            "filling":
+            {
+                "editor_color": "#EDC9AF",
+                "primary_random_fixture_filling_name": "random_desert_planet",
+                "editor_visual_tag": "DES"
+            }
+        },
+        {
+            "name": "random_ferrous_planet",
+            "filling":
+            {
+                "editor_color": "#4B4B4B",
+                "primary_random_fixture_filling_name": "random_ferrous_planet",
+                "editor_visual_tag": "FER"
+            }
+        },
+        {
+            "name": "random_gas_giant_planet",
+            "filling":
+            {
+                "editor_color": "#800000",
+                "primary_random_fixture_filling_name": "random_gas_giant_planet",
+                "editor_visual_tag": "GAS"
+            }
+        },
+        {
+            "name": "random_ice_planet",
+            "filling":
+            {
+                "editor_color": "#00FFFF",
+                "primary_random_fixture_filling_name": "random_ice_planet",
+                "editor_visual_tag": "ICE"
+            }
+        },
+        {
+            "name": "random_magnetic_planet",
+            "filling":
+            {
+                "editor_color": "#4682B4",
+                "primary_random_fixture_filling_name": "random_magnetic_planet",
+                "editor_visual_tag": "MAG"
+            }
+        },
+        {
+            "name": "random_oceanic_planet",
+            "filling":
+            {
+                "editor_color": "#4682B4",
+                "primary_random_fixture_filling_name": "random_oceanic_planet",
+                "editor_visual_tag": "OCE"
+            }
+        },
+        {
+            "name": "random_swamp_planet",
+            "filling":
+            {
+                "editor_color": "#006400",
+                "primary_random_fixture_filling_name": "random_swamp_planet",
+                "editor_visual_tag": "SWA"
+            }
+        },
+        {
+            "name": "random_greenhouse_planet",
+            "filling":
+            {
+                "editor_color": "#008800",
+                "primary_random_fixture_filling_name": "random_swamp_planet"
+            }
+        },
+        {
+            "name": "random_terran_planet",
+            "filling":
+            {
+                "editor_color": "#1E90FF",
+                "primary_random_fixture_filling_name": "random_terran_planet",
+                "editor_visual_tag": "TER"
+            }
+        },
+        {
+            "name": "random_volcanic_planet",
+            "filling":
+            {
+                "editor_color": "#FF4500",
+                "primary_random_fixture_filling_name": "random_volcanic_planet",
+                "editor_visual_tag": "VOL"
+            }
+        },
+        {
+            "name": "random_uncolonizable_planet",
+            "filling":
+            {
+                "editor_color": "#696969",
+                "gravity_wells": "asteroid_cluster",
+                "primary_random_fixture_filling_name": "random_uncolonizable_planet",
+                "secondary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "UNC"
+            }
+        },
+        {
+            "name": "random_dead_asteroid",
+            "filling":
+            {
+                "editor_color": "#696969",
+                "primary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "DA"
+            }
+        },
+        {
+            "name": "random_uncolonizable_cloud",
+            "filling":
+            {
+                "editor_color": "#696969",
+                "primary_random_fixture_filling_name": "random_uncolonizable_cloud",
+                "editor_visual_tag": "CLOUD"
+            }
+        },
+        {
+            "name": "random_barren_planet",
+            "filling":
+            {
+                "editor_color": "#4a4a4a",
+                "primary_random_fixture_filling_name": "random_barren_planet",
+				"editor_visual_tag": "BAR"
+            }
+        },
+        {
+            "name": "random_rich_planet",
+            "filling":
+            {
+                "editor_color": "#4CFF00",
+                "primary_random_fixture_filling_name": "random_rich_planet",
+                "editor_visual_tag": "RICH"
+            }
+        },
+        {
+            "name": "random_fair_planet_near_home_planet",
+            "filling":
+            {
+                "editor_color": "#FAFAD2",
+                "primary_random_fixture_filling_name": "random_fair_planet_near_home_planet",
+                "editor_visual_tag": "FAIR"
+            }
+        },
+        {
+            "name": "random_rich_planet_near_home_planet",
+            "filling":
+            {
+                "editor_color": "#4CFF00",
+                "primary_random_fixture_filling_name": "random_rich_planet_near_home_planet",
+                "editor_visual_tag": "RICH"
+            }
+        },
+        {
+            "name": "random_ice_volcanic_planet",
+            "filling":
+            {
+                "editor_color": "#008B8B",
+                "primary_random_fixture_filling_name": "random_ice_volcanic_planet",
+                "editor_visual_tag": "VOL/ICE"
+            }
+        },
+        {
+            "name": "random_home_ice_volcanic_planet",
+            "filling":
+            {
+                "editor_color": "#008B8B",
+                "primary_random_fixture_filling_name": "random_home_ice_volcanic_planet",
+                "editor_visual_tag": "VOL/ICE"
+            }
+        },
+        {
+            "name": "home_ice_planet",
+            "filling":
+            {
+                "editor_color": "#00FFFF",
+                "primary_random_fixture_filling_name": "home_ice_planet",
+                "editor_visual_tag": "ICE"
+            }
+        },
+        {
+            "name": "home_volcanic_planet",
+            "filling":
+            {
+                "editor_color": "#FF4500",
+                "primary_random_fixture_filling_name": "home_volcanic_planet",
+                "editor_visual_tag": "VOL"
+            }
+        },
+        {
+            "name": "home_swamp_planet",
+            "filling":
+            {
+                "editor_color": "#006400",
+                "primary_random_fixture_filling_name": "home_swamp_planet",
+                "editor_visual_tag": "SWA"
+            }
+        },
+        {
+            "name": "random_moon_planet_weighted",
+            "filling":
+            {
+                "editor_color": "#C1B0BD",
+                "primary_random_fixture_filling_name": "random_moon_planet_weighted",
+                "editor_visual_tag": "WEIMOO"
+            }
+        },
+        {
+            "name": "random_moon_planet",
+            "filling":
+            {
+                "editor_color": "#C1B0BD",
+                "primary_random_fixture_filling_name": "random_moon_planet",
+                "editor_visual_tag": "MOO"
+            }
+        },
+        {
+            "name": "random_ice_moon_planet",
+            "filling":
+            {
+                "editor_color": "#C1B0BD",
+                "primary_random_fixture_filling_name": "random_ice_moon_planet",
+                "editor_visual_tag": "IMOO"
+            }
+        },
+        {
+            "name": "random_volcanic_moon_planet",
+            "filling":
+            {
+                "editor_color": "#C1B0BD",
+                "primary_random_fixture_filling_name": "random_volcanic_moon_planet",
+                "editor_visual_tag": "VMOO"
+            }
+        },
+        {
+            "name": "player_home_planet",
+            "filling":
+            {
+                "editor_color": "#FFD700",
+                "is_primary_fixture_player_home_planet": true,
+                "primary_random_fixture_filling_name": "random_fair_planet",
+                "editor_visual_tag": "HOME"
+            }
+        },
+        {
+            "name": "random_ice_asteroid",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "primary_random_fixture_filling_name": "random_ice_asteroid_planet",
+                "editor_visual_tag": "ICEAST"
+            }
+        },
+        {
+            "name": "random_hive_asteroid",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "primary_random_fixture_filling_name": "random_hive_asteroid_planet",
+                "editor_visual_tag": "HVE"
+            }
+        },
+        {
+            "name": "random_asteroid",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "primary_random_fixture_filling_name": "random_asteroid_planet",
+                "editor_visual_tag": "AST"
+            }
+        },
+        {
+            "name": "random_asteroid_line_cluster",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "gravity_wells": "asteroid_line_cluster",
+                "primary_random_fixture_filling_name": "random_asteroid_planet",
+                "secondary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "AST"
+            }
+        },
+        {
+            "name": "random_asteroid_point_line_cluster",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "gravity_wells": "asteroid_point_line_cluster",
+                "primary_random_fixture_filling_name": "random_asteroid_planet",
+                "secondary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "AST"
+            }
+        },
+        {
+            "name": "random_asteroid_point_line_cluster_weighted",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "gravity_wells": "asteroid_point_line_cluster_weighted",
+                "primary_random_fixture_filling_name": "random_asteroid_planet",
+                "secondary_random_fixture_filling_name": "random_dead_asteroid_fixture",
+                "editor_visual_tag": "AST"
+            }
+        },
+        {
+            "name": "wormhole_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "wormhole_fixture",
+                "editor_visual_tag": "WORM"
+            }
+        },
+        {
+            "name": "random_ice_field_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_ice_field_fixture",
+                "editor_visual_tag": "FIELD"
+            }
+        },
+        {
+            "name": "random_magnetic_cloud_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_magnetic_cloud_fixture",
+                "editor_visual_tag": "MAGCLD"
+            }
+        },
+        {
+            "name": "random_plasma_storm_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_plasma_storm_fixture",
+                "editor_visual_tag": "PLAS"
+            }
+        },
+        {
+            "name": "random_radiation_storm_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_radiation_storm_fixture",
+                "editor_visual_tag": "RAD"
+            }
+        },
+        {
+            "name": "random_antimatter_fountain_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_antimatter_fountain_fixture",
+                "editor_visual_tag": "ANTI"
+            }
+        },
+        {
+            "name": "random_impassable_well_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "primary_random_fixture_filling_name": "random_impassable_well_fixture",
+                "editor_visual_tag": "ANTI"
+            }
+        },
+        {
+ 	    "name": "random_ship_graveyard_planet",
+            "filling":
+            {
+                "editor_color": "#606060",
+                "gravity_wells": "debris_field",
+                "primary_random_fixture_filling_name": "random_ship_graveyard_planet",
+                "secondary_random_fixture_filling_name": "random_debris",
+                "editor_visual_tag": "SG"
+            }
+        },
+        {
+            "name": "random_space_junk_fixture",
+            "filling":
+            {
+                "editor_color": "#FFFFFF",
+                "gravity_wells": "debris_field",
+                "primary_random_fixture_filling_name": "random_space_junk_fixture",
+                "secondary_random_fixture_filling_name": "random_debris",
+                "editor_visual_tag": "JUNK"
+            }
+        }],
+        "random_gravity_well_fillings": [
+        {
+            "name": "asteroid_point",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_point",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "asteroid_line",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_line",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "asteroid_cluster",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_cluster",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "debris_field",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "debris_field",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "asteroid_line_cluster",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_line",
+                    "probability": 3
+                },
+                {
+                    "name": "asteroid_cluster",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "asteroid_point_line_cluster",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_point",
+                    "probability": 1
+                },
+                {
+                    "name": "asteroid_line",
+                    "probability": 1
+                },
+                {
+                    "name": "asteroid_cluster",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "asteroid_point_line_cluster_weighted",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_point",
+                    "probability": 6
+                },
+                {
+                    "name": "asteroid_line",
+                    "probability": 3
+                },
+                {
+                    "name": "asteroid_cluster",
+                    "probability": 1
+                }]
+            }
+        }],
+        "gravity_well_fillings": [
+        {
+            "name": "asteroid_point",
+            "filling":
+            {
+                "sockets": []
+            }
+        },
+        {
+            "name": "asteroid_line",
+            "filling":
+            {
+                "sockets": [
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [-25, 25],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-25, 25]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [155, 205],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-25, 25]
+                    }]
+                }]
+            }
+        },
+        {
+            "name": "asteroid_cluster",
+            "filling":
+            {
+                "sockets": [
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360]
+                }]
+            }
+        },
+        {
+            "name": "debris_field",
+            "filling":
+            {
+                "sockets": [
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.25, 0.5],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.35, 0.6],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.45, 0.7],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.55, 0.8],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.65, 0.9],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.75, 1.0],
+                    "angle": [10, 110],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.75, 1.0],
+                    "angle": [130, 230],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.75, 1.0],
+                    "angle": [250, 350],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.85, 1.1],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.95, 1.2],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    },
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1.25
+                        ],
+                        "angle": [0, 360]
+                    }]
+                }]
+            }
+        },
+        {
+            "name": "asteroid_cluster_test",
+            "filling":
+            {
+                "sockets": [
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-90, 90]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-90, 90]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-90, 90]
+                    }]
+                },
+                {
+                    "distance_as_percent_of_parent_inner_move_radius": [0.5, 1],
+                    "angle": [0, 360],
+                    "socket_children": [
+                    {
+                        "distance_as_percent_of_parent_inner_move_radius": [
+                            0.5, 1
+                        ],
+                        "angle": [-90, 90]
+                    }]
+                }]
+            }
+        }],
+        "random_fixture_fillings": [
+        {
+            "name": "wormhole_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "wormhole_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_ice_field_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_field_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_magnetic_cloud_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "magnetic_cloud_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_plasma_storm_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "plasma_storm_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_radiation_storm_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "radiation_storm_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_antimatter_fountain_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "antimatter_fountain_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_impassable_well_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "impassable_well_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+			"name": "random_space_junk_fixture",
+		    "filling":
+		    {
+		        "items": [
+		        {
+		            "name": "space_junk_fixture",
+		            "probability": 1
+		        }]
+		    }
+		},
+		{
+            "name": "random_uncolonizable_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "antimatter_fountain_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "dead_asteroid_fixture",
+                    "probability": 4
+                },
+				{
+                    "name": "magnetic_cloud_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "ice_field_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "plasma_storm_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "radiation_storm_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_uncolonizable_cloud",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "antimatter_fountain_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "magnetic_cloud_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "ice_field_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "plasma_storm_fixture",
+                    "probability": 1
+                },
+				{
+                    "name": "radiation_storm_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "yellow_star",
+                    "probability": 1
+                },
+				{
+                    "name": "blue_star",
+                    "probability": 1
+                },
+				{
+                    "name": "red_star",
+                    "probability": 1
+                },
+				{
+                    "name": "orange_star",
+                    "probability": 1
+                },
+				{
+                    "name": "white_star",
+                    "probability": 1
+                },
+				{
+                    "name": "black_hole_star",
+                    "probability": 1
+                }]
+            }
+        },        
+        {
+            "name": "random_yellow_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "yellow_star",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_blue_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "blue_star",
+                    "probability": 1
+                }]
+            }
+        },
+		{
+            "name": "random_red_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "red_star",
+                    "probability": 1
+                }]
+            }
+        },
+		{
+            "name": "random_orange_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "orange_star",
+                    "probability": 1
+                }]
+            }
+        },
+		{
+            "name": "random_white_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "white_star",
+                    "probability": 1
+                }]
+            }
+        },
+		{
+            "name": "random_black_hole_star",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "black_hole_star",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_planet_unweighted",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "desert_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "magnetic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "oceanic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "swamp_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "terran_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "barren_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_asteroid_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "hive_asteroid_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "asteroid_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_planet_unweighted_with_moon",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "desert_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "magnetic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "oceanic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "swamp_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "terran_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "barren_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_planet_unweighted_near_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_asteroid_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "asteroid_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_planet_unweighted_near_home_planet_with_moon",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_planet_weighted",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "desert_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "magnetic_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "oceanic_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "swamp_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "terran_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "barren_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "ice_asteroid_planet",
+                    "probability": 8
+                },
+                {
+                    "name": "hive_asteroid_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "asteroid_planet",
+                    "probability": 9
+                }]
+            }
+        },
+        {
+            "name": "random_planet_weighted_with_moon",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "desert_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "magnetic_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "oceanic_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "swamp_planet",
+                    "probability": 5
+                },
+                {
+                    "name": "terran_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "barren_planet",
+                    "probability": 8
+                }]
+            }
+        },
+        {
+            "name": "random_planet_weighted_near_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 8
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "ice_asteroid_planet",
+                    "probability": 8
+                },
+                {
+                    "name": "asteroid_planet",
+                    "probability": 9
+                }]
+            }
+        },
+        {
+            "name": "random_planet_weighted_near_home_planet_with_moon",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 8
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 7
+                }]
+            }
+        },
+        {
+            "name": "random_ice_volcanic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_home_ice_volcanic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "home_ice_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "home_volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "home_ice_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "home_ice_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "home_volcanic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "home_volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "home_swamp_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "home_swamp_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_poor_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_planet",
+                    "probability": 7
+                },
+                {
+                    "name": "hive_asteroid_planet",
+                    "probability": 2
+                },
+                {
+                    "name": "ice_asteroid_planet",
+                    "probability": 7
+                }]
+            }
+        },
+        {
+            "name": "random_fair_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 3
+                }]
+            }
+        },
+        {
+            "name": "random_city_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_crystalline_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "crystalline_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_desert_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "desert_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_ferrous_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ferrous_planet",
+                    "probability": 1
+                }]
+            }
+        },
+		{
+            "name": "random_barren_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_gas_giant_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_ice_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_magnetic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "magnetic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_oceanic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "oceanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_swamp_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "swamp_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_terran_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "terran_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_volcanic_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "volcanic_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_rich_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "terran_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "city_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "desert_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "magnetic_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "oceanic_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "gas_giant_planet",
+                    "probability": 2
+                }]
+            }
+        },
+        {
+            "name": "random_fair_planet_near_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "home_barren_planet",
+                    "probability": 2
+                },
+                {
+                    "name": "home_ice_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "home_volcanic_planet",
+                    "probability": 3
+                }]
+            }
+        },
+        {
+            "name": "random_rich_planet_near_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "barren_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "ice_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "volcanic_planet",
+                    "probability": 3
+                }]
+            }
+        },
+        {
+            "name": "random_moon_planet_weighted",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "moon_planet",
+                    "probability": 4
+                },
+                {
+                    "name": "ice_moon_planet",
+                    "probability": 3
+                },
+                {
+                    "name": "volcanic_moon_planet",
+                    "probability": 3
+                }]
+            }
+        },
+        {
+            "name": "random_moon_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "moon_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_ice_moon_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_moon_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_volcanic_moon_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "volcanic_moon_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_hive_asteroid_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "hive_asteroid_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_ice_asteroid_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_asteroid_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_asteroid_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "asteroid_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_dead_asteroid_fixture",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "dead_asteroid_fixture"
+                }]
+            }
+        },
+        {
+            "name": "random_pirate_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "pirate_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_ship_graveyard_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ship_graveyard_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_debris_field_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ship_graveyard_planet",
+                    "probability": 1
+                },
+                {
+                    "name": "space_junk_fixture",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_metal_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "volcanic_planet",
+                    "probability": 10
+                },
+                {
+                    "name": "ferrous_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_crystal_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ice_planet",
+                    "probability": 10
+                },
+                {
+                    "name": "crystalline_planet",
+                    "probability": 1
+                }]
+            }
+        },
+        {
+            "name": "random_terran_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "terran_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_ferrous_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "ferrous_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_desert_home_planet",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "desert_planet"
+                }]
+            }
+        },
+        {
+            "name": "random_debris",
+            "filling":
+            {
+                "items": [
+                {
+                    "name": "dead_asteroid_fixture",
+                    "probability": 1
+                },
+                {
+                    "name": "advent_debris_fixture",
+                    "probability": 2
+                },
+                {
+                    "name": "trader_debris_fixture",
+                    "probability": 3
+                },
+                {
+                    "name": "vasari_debris_fixture",
+                    "probability": 2
+                }]
+            }
+        }],
+        "fixture_fillings": [
+        {
+            "name": "yellow_star",
+            "filling":
+            {
+                "entity_definition": "yellow_star",
+                "required_planet_bonuses": [
+                    "solar_gravity_slingshot_star_bonus",
+                    "solar_regeneration_star_bonus"
+                ]
+            }
+        },
+        {
+            "name": "blue_star",
+            "filling":
+            {
+                "entity_definition": "blue_star",
+                "required_planet_bonuses": [
+                    "solar_gravity_slingshot_star_bonus",
+                    "solar_regeneration_star_bonus"
+                ]
+            }
+        },
+		{
+            "name": "red_star",
+            "filling":
+            {
+                "entity_definition": "red_star",
+                "required_planet_bonuses": [
+                    "solar_gravity_slingshot_star_bonus",
+                    "solar_regeneration_star_bonus"
+                ]
+            }
+        },
+		{
+            "name": "orange_star",
+            "filling":
+            {
+                "entity_definition": "orange_star",
+                "required_planet_bonuses": [
+                    "solar_gravity_slingshot_star_bonus",
+                    "solar_regeneration_star_bonus"
+                ]
+            }
+        },
+		{
+            "name": "white_star",
+            "filling":
+            {
+                "entity_definition": "white_star",
+                "required_planet_bonuses": [
+                    "solar_gravity_slingshot_star_bonus",
+                    "solar_regeneration_star_bonus"
+                ]
+            }
+        },
+		{
+            "name": "black_hole_star",
+            "filling":
+            {
+                "entity_definition": "black_hole_star",
+                "required_planet_bonuses": [
+                    "singularity_gravity_slingshot_star_bonus",
+                    "singularity_time_dilation_star_bonus"
+                ]
+            }
+        },
+        {
+            "name": "barren_planet",
+            "filling":
+            {
+                "entity_definition": "barren_planet",
+                "militia_supply": [80, 88]
+            }
+        },
+        {
+            "name": "home_barren_planet",
+            "filling":
+            {
+                "entity_definition": "barren_planet",
+                "militia_supply": [40, 40]
+            }
+        },
+        {
+            "name": "city_planet",
+            "filling":
+            {
+                "entity_definition": "city_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "desert_planet",
+            "filling":
+            {
+                "entity_definition": "desert_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "ferrous_planet",
+            "filling":
+            {
+                "entity_definition": "ferrous_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "gas_giant_planet",
+            "filling":
+            {
+                "entity_definition": "gas_giant_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "ice_planet",
+            "filling":
+            {
+                "entity_definition": "ice_planet",
+                "militia_supply": [80, 88]
+            }
+        },
+        {
+            "name": "home_ice_planet",
+            "filling":
+            {
+                "entity_definition": "ice_planet",
+                "militia_supply": [40, 40]
+            }
+        },
+        {
+            "name": "magnetic_planet",
+            "filling":
+            {
+                "entity_definition": "magnetic_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "oceanic_planet",
+            "filling":
+            {
+                "entity_definition": "oceanic_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "crystalline_planet",
+            "filling":
+            {
+                "entity_definition": "crystalline_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "swamp_planet",
+            "filling":
+            {
+                "entity_definition": "swamp_planet",
+                "militia_supply": [80, 88]
+            }
+        },
+        {
+            "name": "home_swamp_planet",
+            "filling":
+            {
+                "entity_definition": "swamp_planet",
+                "militia_supply": [40, 40]
+            }
+        },
+        {
+            "name": "terran_planet",
+            "filling":
+            {
+                "entity_definition": "terran_planet",
+                "militia_supply": [125, 135]
+            }
+        },
+        {
+            "name": "volcanic_planet",
+            "filling":
+            {
+                "entity_definition": "volcanic_planet",
+                "militia_supply": [80, 88]
+            }
+        },
+        {
+            "name": "home_volcanic_planet",
+            "filling":
+            {
+                "entity_definition": "volcanic_planet",
+                "militia_supply": [40, 40]
+            }
+        },
+        {
+            "name": "moon_planet",
+            "filling":
+            {
+                "entity_definition": "moon_planet",
+                "militia_supply": [15, 20]
+            }
+        },
+        {
+            "name": "ice_moon_planet",
+            "filling":
+            {
+                "entity_definition": "ice_moon_planet",
+                "militia_supply": [10, 15]
+            }
+        },
+        {
+            "name": "volcanic_moon_planet",
+            "filling":
+            {
+                "entity_definition": "volcanic_moon_planet",
+                "militia_supply": [10, 15]
+            }
+        },
+        {
+            "name": "hive_asteroid_planet",
+            "filling":
+            {
+                "entity_definition": "hive_asteroid_planet",
+                "militia_supply": [21, 31]
+            }
+        },
+        {
+            "name": "ice_asteroid_planet",
+            "filling":
+            {
+                "entity_definition": "ice_asteroid_planet",
+                "militia_supply": [11, 20]
+            }
+        },
+        {
+            "name": "asteroid_planet",
+            "filling":
+            {
+                "entity_definition": "asteroid_planet",
+                "militia_supply": [11, 11]
+            }
+        },
+        {
+            "name": "ship_graveyard_planet",
+            "filling":
+            {
+                "entity_definition": "ship_graveyard_planet",
+                "militia_supply": [21, 31]
+            }
+        },
+        {
+            "name": "dead_asteroid_fixture",
+            "filling":
+            {
+                "entity_definition": "dead_asteroid_fixture"
+            }
+        },
+        {
+            "name": "advent_debris_fixture",
+            "filling":
+            {
+                "entity_definition": "advent_debris_fixture"
+            }
+        },
+        {
+            "name": "trader_debris_fixture",
+            "filling":
+            {
+                "entity_definition": "trader_debris_fixture"
+            }
+        },
+        {
+            "name": "vasari_debris_fixture",
+            "filling":
+            {
+                "entity_definition": "vasari_debris_fixture"
+            }
+        },
+        {
+            "name": "pirate_planet",
+            "filling":
+            {
+                "entity_definition": "pirate_base_planet",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "pirate_treasure_planet_bonus"]
+            }
+        },
+        {
+            "name": "wormhole_fixture",
+            "filling":
+            {
+                "entity_definition": "wormhole_fixture",
+                "militia_supply": [0, 0]
+            }
+        },
+        {
+            "name": "ice_field_fixture",
+            "filling":
+            {
+                "entity_definition": "ice_field_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "ice_field_fixture_bonus",
+                    "hazardous_space_fixture_bonus"
+                ]
+            }
+        },
+        {
+            "name": "magnetic_cloud_fixture",
+            "filling":
+            {
+                "entity_definition": "magnetic_cloud_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "magnetic_cloud_fixture_bonus",
+                    "hazardous_space_fixture_bonus"
+                ]
+            }
+        },
+        {
+            "name": "plasma_storm_fixture",
+            "filling":
+            {
+                "entity_definition": "plasma_storm_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "plasma_storm_fixture_bonus",
+                    "hazardous_space_fixture_bonus"
+                ]
+            }
+        },
+        {
+            "name": "radiation_storm_fixture",
+            "filling":
+            {
+                "entity_definition": "radiation_storm_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "radiation_storm_fixture_bonus",
+                    "hazardous_space_fixture_bonus"
+                ]
+            }
+        },
+        {
+            "name": "antimatter_fountain_fixture",
+            "filling":
+            {
+                "entity_definition": "antimatter_fountain_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "antimatter_fountain_fixture_bonus"
+                ]
+            }
+        },
+        {
+            "name": "impassable_well_fixture",
+            "filling":
+            {
+                "entity_definition": "impassable_well_fixture",
+                "militia_supply": [0, 0],
+                "required_planet_bonuses": [
+                    "impassable_well_fixture_bonus"
+                ]
+            }
+        },
+        {
+    	    "name": "space_junk_fixture",
+            "filling":
+            {
+                "entity_definition": "space_junk_fixture",
+                "militia_supply": [0, 0]
+            }
+        }],
+        "moon_fillings": [
+        {
+            "name": "default_home_planet_moons",
+            "filling":
+            {
+                "moons": [
+                {
+                    "filling_name": "random_asteroid",
+                    "orbit_parent": false,
+                    "sync_orbit_to_parent": true,
+                    "use_parent_ownership": false,
+                    "planet_offset": [30, 40],
+                    "counts": [
+                    {
+                        "count": 1,
+                        "probability": 1
+                    }]
+                },
+                {
+                    "filling_name": "random_asteroid_line_cluster",
+                    "orbit_parent": false,
+                    "sync_orbit_to_parent": true,
+                    "use_parent_ownership": false,
+                    "planet_offset": [50, 60],
+                    "counts": [
+                    {
+                        "count": 1,
+                        "probability": 1
+                    }]
+                },
+                {
+                    "filling_name": "random_home_ice_volcanic_planet",
+                    "orbit_parent": false,
+                    "sync_orbit_to_parent": true,
+                    "use_parent_ownership": false,
+                    "planet_offset": [70, 75],
+                    "counts": [
+                    {
+                        "count": 1,
+                        "probability": 1
+                    }]
+                }]
+            }
+        },
+        {
+            "name": "default_non_home_planet_moons",
+            "filling":
+            {
+                "moons": [
+                {
+                    "filling_name": "random_moon_planet_weighted",
+                    "orbit_parent": true,
+                    "use_parent_ownership": false,
+                    "planet_offset": [10, 20],
+                    "counts": [
+                    {
+                        "count": 0,
+                        "probability": 0.9
+                    },
+                    {
+                        "count": 1,
+                        "probability": 0.08
+                    },
+                    {
+                        "count": 2,
+                        "probability": 0.02
+                    }]
+                }]
+            }
+        }],
+        "wormhole_fillings": [
+        {
+            "name": "default_wormhole_fixture",
+            "filling":
+            {
+                "wormholes": [
+                {
+                    "filling_name": "wormhole_fixture"
+                }]
+            }
+        }],
+        "artifacts": [
+            "culture_bonus_planet_artifact",
+            "exoforce_matrix_ship_artifact",
+            "kinetic_intensifier_ship_artifact",
+            "matter_compressor_planet_artifact",
+            "power_core_relic_ship_artifact",
+            "relativistic_factories_planet_artifact",
+            "research_archive_planet_artifact",
+            "resilient_metaloids_ship_artifact",
+            "weapon_symbiote_ship_artifact",
+            "tachyon_comms_relay_planet_artifact",
+            "mass_negation_core_ship_artifact"
+    ]
+    }
+}

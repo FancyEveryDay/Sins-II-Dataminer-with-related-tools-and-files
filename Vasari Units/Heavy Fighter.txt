@@ -13,9 +13,9 @@ Heavy Fighter
 	Hull Points:	125
 	Armor Points:	30
 	Shield Points:	60
-	   Shield Burst CD: 15.0s
+	   Shield Burst CD: 20.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

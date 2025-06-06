@@ -13,7 +13,7 @@ Ankylon Titan
 	Hull Points:	14520 - 26155
 	Armor Points:	5000 - 7025
 	Shield Points:	6000 - 9620
-	   Shield Burst CD: 90.0s
+	   Shield Burst CD: 70.0s
 
 	Antimatter:	0.0
 

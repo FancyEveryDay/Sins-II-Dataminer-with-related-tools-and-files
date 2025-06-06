@@ -15,7 +15,7 @@ Neruda Envoy Frigate
 	Shield Points:	
 	   Shield Burst CD: 20.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

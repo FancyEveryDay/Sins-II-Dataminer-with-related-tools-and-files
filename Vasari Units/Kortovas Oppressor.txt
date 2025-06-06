@@ -13,11 +13,11 @@ Kortovas Oppressor
 	Hull Points:	1335
 	Armor Points:	925
 	Shield Points:	1260
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy wave cannon        	6.7  	x4    	26.8 	300   	5100 
+		heavy wave cannon        	5.5  	x4    	22.0 	300   	5100 
 		point defense pulse      	4.5  	x1    	4.5  	0     	5100 

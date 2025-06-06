@@ -1,0 +1,26 @@
+Ancient Starbase
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	500.0
+	Acceleration:	20.0
+
+	Durability:	1000.0
+	Armor Strength:	150.0
+
+	Hull Points:	25000
+	Armor Points:	8000
+	Shield Points:	15000
+	   Shield Burst CD: 120.0s
+
+	Antimatter:	nan
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		tachyon lance            	80.0 	x4    	320.0	750   	15000
+		phase cannon             	120.0	x8    	960.0	1000  	10000
+		heavy particle cannon    	23.3 	x16   	372.8	250   	10000
+		point defense beam       	10.0 	x20   	200.0	100   	8000 
+		heavy missile            	56.2 	x4    	224.8	500   	15000

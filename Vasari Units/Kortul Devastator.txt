@@ -13,7 +13,7 @@ Kortul Devastator
 	Hull Points:	3640 - 6920
 	Armor Points:	1620 - 2760
 	Shield Points:	3120 - 5930
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

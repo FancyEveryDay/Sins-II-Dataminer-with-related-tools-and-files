@@ -13,7 +13,7 @@ Domina Subjugator
 	Hull Points:	1600
 	Armor Points:	
 	Shield Points:	1750
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
 	Antimatter:	350.0
 

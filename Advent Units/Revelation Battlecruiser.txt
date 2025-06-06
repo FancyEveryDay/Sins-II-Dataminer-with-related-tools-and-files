@@ -13,14 +13,14 @@ Revelation Battlecruiser
 	Hull Points:	4450 - 7575
 	Armor Points:	970 - 1950
 	Shield Points:	4000 - 7600
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
 		heavy plasma             	5.0  	x2    	10.0 	750   	8000 
-		medium missile           	15.0 	x2    	30.0 	150   	8000 
+		medium missile           	15.0 	x2    	30.0 	200   	8000 
 		heavy laser              	0.0  	x1    	0.0  	0     	30000
 		medium laser             	6.0  	x4    	24.0 	200   	8000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 

@@ -15,13 +15,13 @@ Transcencia Starbase
 	Shield Points:	7500
 	   Shield Burst CD: 120.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
 		medium laser             	6.0  	x44   	264.0	200   	10000
 		heavy plasma             	5.0  	x16   	80.0 	750   	10000
 		point defense laser      	2.5  	x16   	40.0 	0     	6000 
-		heavy missile            	45.0 	x8    	360.0	300   	10000
+		heavy missile            	45.0 	x8    	360.0	400   	10000
 
 	Strike Craft: 2

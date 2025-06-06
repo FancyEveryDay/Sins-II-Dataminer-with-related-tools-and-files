@@ -1,0 +1,21 @@
+dlc_ancient_large_torpedo
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	2000.0
+	Acceleration:	200.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	5
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	nan
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

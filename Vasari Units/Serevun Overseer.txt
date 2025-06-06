@@ -13,7 +13,7 @@ Serevun Overseer
 	Hull Points:	1590
 	Armor Points:	1080
 	Shield Points:	915
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
 	Antimatter:	350.0
 

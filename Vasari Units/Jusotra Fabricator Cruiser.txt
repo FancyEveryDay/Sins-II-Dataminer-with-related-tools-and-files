@@ -13,9 +13,9 @@ Jusotra Fabricator Cruiser
 	Hull Points:	1880
 	Armor Points:	915
 	Shield Points:	1130
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

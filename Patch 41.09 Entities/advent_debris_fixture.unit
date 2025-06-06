@@ -1,0 +1,37 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 66.002083,
+        "box":
+        {
+            "center": [-8e-06, 0.0, 2e-06],
+            "extents": [24.537697, 14.574421, 60.131332]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "gravity_well_fixture":
+    {
+        "inner_move_distance": 4000.0,
+        "axis_rotation_speed": [2.0, 3.0],
+        "axis_tilt_angle": [0.0, 90.0],
+        "chance_of_retrograde_axis_rotation_direction": 0.5
+    },
+    "target_filter_unit_type": "planet",
+    "skin_groups": [
+    {
+        "skins": [
+            "advent_starbase_debris_front",
+			"advent_starbase_debris_mid",
+			"advent_starbase_debris_back",
+			"advent_loyalist_titan_debris_front",
+			"advent_loyalist_titan_debris_mid_0",
+            "advent_loyalist_titan_debris_mid_1",
+			"advent_loyalist_titan_debris_back",
+			"advent_rebel_titan_debris_front",
+			"advent_rebel_titan_debris_mid_0",
+			"advent_rebel_titan_debris_mid_1",
+			"advent_rebel_titan_debris_back"]
+    }],
+    "action_effect_size": "small_unit"
+}

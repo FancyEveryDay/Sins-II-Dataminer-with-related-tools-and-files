@@ -13,7 +13,7 @@ Marza Dreadnought
 	Hull Points:	4280 - 8595
 	Armor Points:	2180 - 3715
 	Shield Points:	1925 - 3090
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

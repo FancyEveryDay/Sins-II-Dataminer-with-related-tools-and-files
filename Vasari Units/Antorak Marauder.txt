@@ -13,7 +13,7 @@ Antorak Marauder
 	Hull Points:	3120 - 5620
 	Armor Points:	1415 - 2410
 	Shield Points:	3265 - 6205
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

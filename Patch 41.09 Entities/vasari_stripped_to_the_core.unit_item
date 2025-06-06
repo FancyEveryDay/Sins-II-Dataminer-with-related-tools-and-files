@@ -1,0 +1,46 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "vasari_stripped_to_the_core_unit_item_hud_icon",
+    "tooltip_picture": "vasari_stripped_to_the_core_unit_item_tooltip_picture",
+    "name": "vasari_stripped_to_the_core_unit_item_name",
+    "description": "vasari_stripped_to_the_core_unit_item_description",
+    "build_time": 300.0,
+    "price":
+    {
+        "metal": 300.0,
+        "crystal": 180.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["vasari_unlock_stripped_to_the_core_unit_item"]
+        ]
+    }],
+    "will_scuttle_destroy_planet_and_strip_resources": true,
+    "additive_scuttle_time": 150.0,
+    "ability": "vasari_stripped_to_the_core"
+}

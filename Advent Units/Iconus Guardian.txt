@@ -13,7 +13,7 @@ Iconus Guardian
 	Hull Points:	1350
 	Armor Points:	
 	Shield Points:	3000
-	   Shield Burst CD: 60.0s
+	   Shield Burst CD: 40.0s
 
 	Antimatter:	350.0
 

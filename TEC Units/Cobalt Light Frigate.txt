@@ -15,7 +15,7 @@ Cobalt Light Frigate
 	Shield Points:	
 	   Shield Burst CD: 30.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

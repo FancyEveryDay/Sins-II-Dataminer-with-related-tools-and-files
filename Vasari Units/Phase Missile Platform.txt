@@ -15,7 +15,7 @@ Phase Missile Platform
 	Shield Points:	
 	   Shield Burst CD: nans
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

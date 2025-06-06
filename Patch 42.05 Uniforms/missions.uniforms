@@ -1,0 +1,253 @@
+{
+    "main_mission_chains": [
+    {
+        "id": "early_game_questline",
+        "trigger": {
+            "trigger_type": "build_ships",
+            "count": 2500
+        },
+        "quest_chains": 
+        [
+            {
+                "quest_id": "seed_mission",
+                "advance" : [{
+                    "trigger_type": "has_any_faction",
+                    "factions": [
+                        "trader_loyalist",
+                        "trader_rebel",
+                        "advent_loyalist",
+                        "advent_rebel"
+                    ],
+                    "advance_id": "non_vasari_questline"
+                },
+                {
+                    "trigger_type": "has_any_faction",
+                    "factions": [
+                        "vasari_loyalist",
+                        "vasari_rebel"
+                    ],
+                    "advance_id": "vasari_questline"
+                }],
+                "chains": [{
+                    "id": "player_seed_mission",
+                    "trigger": {
+                        "trigger_type": "has_any_faction",
+                        "factions": [
+                            "trader_loyalist",
+                            "trader_rebel",
+                            "advent_loyalist",
+                            "advent_rebel",
+                            "vasari_loyalist",
+                            "vasari_rebel"
+                        ]
+                    },
+                    "advance": [{
+                        "is_last_mission": true
+                    }]
+                }]    
+            },
+            {
+                "quest_id": "non_vasari_questline",
+                "advance" : [{
+                    "trigger_type": "build_ships",
+                    "count": 2500,
+                    "advance_id": "fake_quest"
+                }],
+                "chains" : 
+                [
+                {
+                    "id": "build_a_capital_ship",
+                    "name": "missions.capital_ship_mission_name",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "build_any_capital_ship",
+                        "build_kind": "capital_ship",
+                        "count": 1
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "build_some_ships"
+                    }]
+                },
+                {
+                    "id": "build_some_ships",
+                    "name": "missions.build_ships",
+                    "reward_name": "missions.reward_metal",
+                    "trigger":
+                    {
+                        "trigger_type": "build_ships",
+                        "count": 10
+                    },
+                    "reward": {
+                        "reward_type": "metal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "build_military_research_provider_structure"
+                    }]
+                },
+                {
+            
+                    "id": "build_military_research_provider_structure",
+                    "name": "missions.military_research_structure",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "build_military_research_provider_structure",
+                        "count": 1
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "build_civilian_research_provider_structure"
+                    }]
+                },
+                {
+            
+                    "id": "build_civilian_research_provider_structure",
+                    "name": "missions.civilian_research_structure",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "build_civilian_research_provider_structure",
+                        "count": 1
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "get_tier_one_military"
+                    }]
+                },
+                {
+                    "id": "get_tier_one_military",
+                    "name": "missions.mil_tier_one",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "has_player_finished_military_research_tier",
+                        "tier": 0
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "research_supply"
+                    }]
+                },
+                {
+                    "id": "research_supply",
+                    "name": "missions.do_research",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "research_any_valid_subject",
+                        "research_subjects": [
+                            "trader_max_supply_0",
+                            "advent_max_supply_0"
+                        ]
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "colonize_planet"
+                    }]
+                },
+                {
+                    "id": "colonize_planet",
+                    "name": "missions.colonize_planet_name",
+                    "reward_name": "missions.reward_crystal",
+                    "trigger":
+                    {
+                        "trigger_type": "colonize_planet",
+                        "count": 1
+                    },
+                    "reward": {
+                        "reward_type": "crystal",
+                        "count": 500
+                    },
+                    "advance": [{
+                        "advance_id": "fake_mission"
+                    }]
+                },
+                {
+                    "id": "fake_mission",
+                    "trigger":
+                    {
+                        "trigger_type": "build_ships",
+                        "count": 2500
+                    },
+                    "advance": [{
+                        "advance_id": "fake_mission"
+                    }]
+                }]
+            },
+            {
+                "quest_id": "vasari_questline",
+                "advance" : [{
+                    "trigger_type": "build_ships",
+                    "count": 2500,
+                    "advance_id": "vasari_questline"
+                }],
+                "chains": [
+                {
+                    "id": "build_light_shipyard",
+                    "name": "missions.build_vasari_factory",
+                    "trigger":
+                    {
+                        "trigger_type": "build_units_of_type",
+                        "unit": "vasari_factory_structure",
+                        "count": 1
+                    },
+                    "advance": [{
+                        "advance_id": "fake_mission"
+                    }]
+                },
+                {
+                    "id": "fake_mission",
+                    "trigger":
+                    {
+                        "trigger_type": "build_ships",
+                        "count": 6000
+                    },
+                    "advance": [{
+                        "advance_id": "fake_mission"
+                    }]
+                }]
+            },
+            {
+                "quest_id": "fake_quest",
+                "advance" : [{
+                    "trigger_type": "build_ships",
+                    "count": 2500,
+                    "advance_id": "non_vasari_questline"
+                }],
+                "chains": [
+                {
+                    "id": "fake_mission",
+                    "trigger":
+                    {
+                        "trigger_type": "build_ships",
+                        "count": 2500
+                    },
+                    "advance": [{
+                        "advance_id": "fake_mission"
+                    }]
+                }]
+            }
+        ]
+    }],
+    "missions_complete": "missions.victory",
+    "unnamed_mission": "missions.unnamed_mission",
+    "unnamed_reward": "missions.unnamed_reward"
+}

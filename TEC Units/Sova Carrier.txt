@@ -13,7 +13,7 @@ Sova Carrier
 	Hull Points:	4585 - 8715
 	Armor Points:	1610 - 2900
 	Shield Points:	1650 - 2975
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

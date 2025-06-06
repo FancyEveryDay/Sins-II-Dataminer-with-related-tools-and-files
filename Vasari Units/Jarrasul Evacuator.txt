@@ -13,7 +13,7 @@ Jarrasul Evacuator
 	Hull Points:	5430 - 9780
 	Armor Points:	1560 - 2660
 	Shield Points:	2780 - 5585
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

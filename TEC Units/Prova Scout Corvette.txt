@@ -13,9 +13,9 @@ Prova Scout Corvette
 	Hull Points:	275
 	Armor Points:	350
 	Shield Points:	
-	   Shield Burst CD: 15.0s
+	   Shield Burst CD: 20.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

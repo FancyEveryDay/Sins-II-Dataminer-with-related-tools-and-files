@@ -15,7 +15,7 @@ vasari_charged_phase_missile_medium
 	Shield Points:	
 	   Shield Burst CD: nans
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

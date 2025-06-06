@@ -1,0 +1,72 @@
+{
+    "unspent_ability_points_fill_color": "66ffc000",
+    "unspent_ability_points_fill_blink":
+    {
+        "duration": 1.5,
+        "up_function": "in_out_quad",
+        "down_function": "in_out_quad"
+    },
+    "unit_alert":
+    {
+        "alert_types":
+        {
+            "ping_attention":
+            {
+                "min_color": "55bd6310",
+                "max_color": "99f1ab16",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "ping_attack":
+            {
+                "min_color": "55bd6310",
+                "max_color": "99f1ab16",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "ping_defend":
+            {
+                "min_color": "55bd6310",
+                "max_color": "99f1ab16",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "rallied_to":
+            {
+                "min_color": "40FFC705",
+                "max_color": "99FF7A00",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "positive_buff":
+            {
+                "min_color": "00000000",
+                "max_color": "aa15da00",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "negative_buff":
+            {
+                "min_color": "00000000",
+                "max_color": "aaff0035",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            },
+            "targeted_by_ability":
+            {
+                "min_color": "00000000",
+                "max_color": "aa8200FD",
+                "total_duration": 5,
+                "blink_duration": 2,
+                "fade_duration": 1
+            }
+        }
+    },
+    "custom_click_failed_sound_spam_threshold": 5
+}

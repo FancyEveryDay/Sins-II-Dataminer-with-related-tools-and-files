@@ -13,7 +13,7 @@ Vulkoras Desolator
 	Hull Points:	3460 - 5890
 	Armor Points:	1880 - 3575
 	Shield Points:	2820 - 5080
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

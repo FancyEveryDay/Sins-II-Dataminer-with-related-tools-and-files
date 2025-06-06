@@ -1,0 +1,69 @@
+{
+    "planet_tracks":
+    {
+        "defense":
+        {
+            "tooltip_icon": "defense_planet_track_tooltip_icon",
+            "hud_icon": "defense_planet_track_icon",
+            "name": "defense_planet_track_name",
+            "desc": "defense_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.defense",
+            "current_level_label": "tooltip.current_planet_development_level.defense"
+        },
+        "logistics":
+        {
+            "tooltip_icon": "logistics_planet_track_tooltip_icon",
+            "hud_icon": "logistics_planet_track_icon",
+            "name": "logistics_planet_track_name",
+            "desc": "logistics_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.logistics",
+            "current_level_label": "tooltip.current_planet_development_level.logistics"
+        },
+        "commerce":
+        {
+            "tooltip_icon": "commerce_planet_track_tooltip_icon",
+            "hud_icon": "commerce_planet_track_icon",
+            "name": "commerce_planet_track_name",
+            "desc": "commerce_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.commerce",
+            "current_level_label": "tooltip.current_planet_development_level.commerce"
+        },
+        "mining":
+        {
+            "tooltip_icon": "mining_planet_track_tooltip_icon",
+            "hud_icon": "mining_planet_track_icon",
+            "name": "mining_planet_track_name",
+            "desc": "mining_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.mining",
+            "current_level_label": "tooltip.current_planet_development_level.mining"
+        },
+        "research":
+        {
+            "tooltip_icon": "research_planet_track_icon",
+            "hud_icon": "research_planet_track_icon",
+            "name": "research_planet_track_name",
+            "desc": "research_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.research",
+            "current_level_label": "tooltip.current_planet_development_level.research"
+        },
+        "focus":
+        {
+            "tooltip_icon": "focus_planet_track_tooltip_icon",
+            "hud_icon": "focus_planet_track_icon",
+            "name": "focus_planet_track_name",
+            "desc": "focus_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.focus",
+            "current_level_label": "tooltip.current_planet_development_level.focus"
+        },
+        "surveying":
+        {
+            "tooltip_icon": "surveying_planet_track_tooltip_icon",
+            "hud_icon": "surveying_planet_track_icon",
+            "name": "surveying_planet_track_name",
+            "desc": "surveying_planet_track_desc",
+            "max_level_label": "tooltip.max_planet_development_level.surveying",
+            "current_level_label": "tooltip.current_planet_development_level.surveying"
+
+        }
+    }
+}

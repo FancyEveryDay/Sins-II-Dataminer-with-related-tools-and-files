@@ -1,0 +1,46 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "has_missing_shields",
+                        "percentage_missing_threshold": 1.0
+                    }
+                },
+                {
+                    "constraint_type": "weapon_has_weapon_tag",
+                    "weapon": "trigger_event_weapon",
+                    "any_weapon_tags": [
+                        "beam"]
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "prevent_damage",
+                "damage_prevented_value": "damage_prevented_value"
+            }]
+        }
+    }]
+}

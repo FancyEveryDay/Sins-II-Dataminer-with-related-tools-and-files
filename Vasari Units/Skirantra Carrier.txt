@@ -13,7 +13,7 @@ Skirantra Carrier
 	Hull Points:	5160 - 9805
 	Armor Points:	1480 - 2375
 	Shield Points:	2520 - 5065
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

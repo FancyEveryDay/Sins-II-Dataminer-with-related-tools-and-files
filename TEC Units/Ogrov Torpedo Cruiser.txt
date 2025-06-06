@@ -13,9 +13,9 @@ Ogrov Torpedo Cruiser
 	Hull Points:	1875
 	Armor Points:	1200
 	Shield Points:	
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

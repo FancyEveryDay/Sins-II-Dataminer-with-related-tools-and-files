@@ -15,7 +15,7 @@ advent_unity_agent_rebel
 	Shield Points:	
 	   Shield Burst CD: 60.0s
 
-	Antimatter:	
+	Antimatter:	nan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range

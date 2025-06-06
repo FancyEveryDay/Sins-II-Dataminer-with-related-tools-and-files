@@ -13,7 +13,7 @@ Radiance Battleship
 	Hull Points:	4150 - 7065
 	Armor Points:	1325 - 2520
 	Shield Points:	4400 - 8360
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

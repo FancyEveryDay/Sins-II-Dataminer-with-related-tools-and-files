@@ -1,5 +1,5 @@
-from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries
-import json, glob
+from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM
+import json, glob, shutil, pprint
 
 
 def recursiveprint(collection, output, localText = {}, level = 0):
@@ -67,7 +67,7 @@ def compareShipDicts(newDict : dict, oldDict : dict):
 
     return changesDict
 
-def recursiveCompare(obj1, obj2, level = 1):
+def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better handle new and removed content.
     printTypes = [str, int, float]
 
     changeDict = {}
@@ -90,8 +90,8 @@ def recursiveCompare(obj1, obj2, level = 1):
                 if change != False:
                     changeDict[i] = change
                 else: change = False
-            except:
-                change = False
+            except IndexError:
+                changeDict[f"[NEW] {i}"] = str(j)
 
     if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
         for i, j in obj1.items():
@@ -113,36 +113,91 @@ def recursiveCompare(obj1, obj2, level = 1):
                     changeDict[i] = change
                 else: change = False
             except KeyError:
-                change = "[NEW]"
+                changeDict[f"[NEW] {i}"] = str(j)
 
     if changeDict == {}:
         return False
     else:
         return changeDict
     
-def getSinsDataDict(race, entityType, file = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities"):
+def getSinsDataDict(race, entityType, file = SINS_DIRECTORY + "\\entities"):
     dataList = getSinsData(race, entityType, file = file)
     dataDict = createWeaponDict(dataList)
     return dataDict
 
 if __name__ == "__main__":
     # Get .env
-    with open('.env', 'r') as file:
-        env = json.load(file)
-    
-    # Change this to match your machine.
-    gameLocation = env['sins2File']
+    try:
+        with open('.env', 'r') as file:
+            env = json.load(file)
+        SINS_DIRECTORY = env['sins2File']
+    except FileNotFoundError:
+        print(".env not found")
+    except KeyError:
+        print("Sins 2 file location not found.")
 
-    gameEntitiesLocation = gameLocation + "\\entities"
-    gameLocalizedText = gameLocation + "\\localized_text\\en.localized_text"
+    ENTITIES_LOCATION = SINS_DIRECTORY + "\\entities"
+    LOCALIZED_TEXT_LOCATION = SINS_DIRECTORY + "\\localized_text\\en.localized_text"
+    with open(LOCALIZED_TEXT_LOCATION, 'r') as t:
+        LOCALIZED_TEXT = json.load(t)
 
+    # Get newpatch number from user
     newPatchNumber = input("New Patch Number [format 1.28.16]:  ")
-    pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
+    while True:
+        userInput = input(f"Is '{newPatchNumber}' the correct number for the current patch? [yes/no]")
 
+        if userInput.strip().lower() in ['yes', 'y','yea', 'yeah']:
+            print("Acknowledged")
+            break
+        elif userInput.strip().lower() in ['no', 'n', 'nahp', 'nope', 'nay']:
+            newPatchNumber = input("Current Patch Number [format 1.28.16]:  ")
+        else:
+            print("Input not recognized, try again.")
+
+    # Try to get pastpatch number from .env, otherwise from user.
+    try: 
+        pastPatchNumber = env["pastPatch"]
+    except KeyError:
+        print("No previous patch number found, please input one.")
+        pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
+
+    while True:
+        userInput = input(f"Is '{pastPatchNumber}' the correct number for the previous patch? [yes/no]")
+
+        if userInput.strip().lower() in ['yes', 'y','yea', 'yeah']:
+            print("Acknowledged")
+            break
+        elif userInput.strip().lower() in ['no', 'n', 'nahp', 'nope', 'nay']:
+            pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
+        else:
+            print("Input not recognized, try again.")
+
+    # Copy over new set of files
+    print("Copying new entity files")
+    try:
+        shutil.copytree(ENTITIES_LOCATION, f"Patch {newPatchNumber[2:]} Entities")
+    except FileExistsError:
+        shutil.rmtree(f"Patch {newPatchNumber[2:]} Entities")
+        shutil.copytree(ENTITIES_LOCATION, f"Patch {newPatchNumber[2:]} Entities")
+    print("Copying new Localized Text files")
+    try:
+        shutil.copytree(SINS_DIRECTORY + "\\localized_text", f"Patch {newPatchNumber[2:]} Localized Text")
+    except FileExistsError:
+            shutil.rmtree(f"Patch {newPatchNumber[2:]} Localized Text")
+            shutil.copytree(SINS_DIRECTORY + "\\localized_text", f"Patch {newPatchNumber[2:]} Localized Text")
+    print("Copying new Uniform files")
+    try:
+        shutil.copytree(SINS_DIRECTORY + "\\uniforms", f"Patch {newPatchNumber[2:]} Uniforms")
+    except FileExistsError:
+        shutil.rmtree(f"Patch {newPatchNumber[2:]} Uniforms")
+        shutil.copytree(SINS_DIRECTORY + "\\uniforms", f"Patch {newPatchNumber[2:]} Uniforms")
+
+    # Change number formatting (for reasons)
     newPatchNumber = newPatchNumber.replace(".","-")
     pastPatchNumber = pastPatchNumber.replace(".","-")
 
-    filelist = glob.glob(gameEntitiesLocation + "\\*")
+    # Get entity files
+    filelist = glob.glob(ENTITIES_LOCATION + "\\*")
     objectTypes = []
     for f in filelist:
         objectType = f.split(".")[-1]
@@ -151,16 +206,12 @@ if __name__ == "__main__":
 
     print(objectTypes)
 
-
-    with open(gameLocalizedText, 'r') as t:
-        inGameText = json.load(t)
-
     with open(newPatchNumber + "_changes.txt", 'w') as file:
         pass
 
-    raceList = ["advent", "trader", "vasari"] # Add Minor races and general changes
+    raceList = ["advent", "trader", "vasari"] # TODO Add Minor races and general changes
 
-    weaponDict = getSinsDataDict("",".weapon", file = gameEntitiesLocation)
+    weaponDict = getSinsDataDict("",".weapon", file = ENTITIES_LOCATION)
     oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
     
 
@@ -173,7 +224,7 @@ if __name__ == "__main__":
         ChangesList = []
         for obtype in objectTypes:
 
-            shipDict = getSinsDataDict(race,f"{obtype}", file= gameEntitiesLocation)
+            shipDict = getSinsDataDict(race,f"{obtype}", file= ENTITIES_LOCATION)
             oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
 
 
@@ -190,9 +241,9 @@ if __name__ == "__main__":
 
                 for fileSuffix in ["_name", "_ability_name", "_unit_item_name"]:
                     try:
-                        name = inGameText[name+fileSuffix]
+                        name = LOCALIZED_TEXT[name+fileSuffix]
                         namefound = True
-                    except:
+                    except KeyError:
                         continue
 
                 if new == True:
@@ -225,4 +276,9 @@ if __name__ == "__main__":
                     for j in listList:
                         if j[1] != False:
                             file.write(f"\n**{j[0]}**\n")
-                            recursiveprint(j[1], file, inGameText, 1)
+                            recursiveprint(j[1], file, LOCALIZED_TEXT, 1)
+
+    env['pastPatch'] = newPatchNumber.replace("-", ".")
+
+    with open('.env', 'w') as file:
+        json.dump(env, file)

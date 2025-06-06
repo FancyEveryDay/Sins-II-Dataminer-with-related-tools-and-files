@@ -1,0 +1,109 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "explosive_shot_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "explosive_shot_radius_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    },
+    {
+        "target_filter_id": "explosive_shot_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "explosive_shot_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [100.0, 75.0, 50.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_cooldown_time_value",
+        "action_value":
+        {
+            "values": [60.0, 45.0, 30.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_damage_value",
+        "action_value":
+        {
+            "values": [750.0, 1000.0, 1250.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_penetration_value",
+        "action_value":
+        {
+            "values": [100.0, 100.0, 100.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_radius_value",
+        "action_value":
+        {
+            "values": [3000.0, 3000.0, 3000.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_range_value",
+        "action_value":
+        {
+            "values": [10000.0, 10000.0, 10000.0]
+        }
+    },
+    {
+        "action_value_id": "explosive_shot_travel_speed_value",
+        "action_value":
+        {
+            "values": [4000.0, 4000.0, 4000.0]
+        }
+    }]
+}

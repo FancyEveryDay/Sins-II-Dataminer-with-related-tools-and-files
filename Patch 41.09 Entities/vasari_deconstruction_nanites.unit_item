@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "vasari_deconstruction_nanites_unit_item_hud_icon",
+    "tooltip_picture": "vasari_deconstruction_nanites_unit_item_tooltip_picture",
+    "name": "vasari_deconstruction_nanites_unit_item_name",
+    "description": "vasari_deconstruction_nanites_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "metal": 300.0,
+        "crystal": 180.0
+    },
+    "exotic_price": [
+        {
+            "exotic_type": "offense",
+            "count": 1
+        }],
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "city",
+            "hive_asteroid",
+            "ship_graveyard",
+            "pirate_base"
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "mining_track_metal_income_rate",
+        "value_behavior": "additive",
+        "values": [3.6]
+    }]
+}

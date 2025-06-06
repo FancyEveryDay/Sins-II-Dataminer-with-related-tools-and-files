@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1718550.287522,
+        "min_camera_distance": 18510.658849,
+        "unit_radius_when_mesh_visible": 20000.0,        
+        "gui":
+        {
+            "hud_icon": "gravity_well_ice_cloud_hud_icon",
+            "hud_picture": "gravity_well_ice_cloud_tooltip",
+            "tooltip_icon": "gravity_well_ice_cloud_tooltip_icon",
+            "name": "ice_field_fixture_name",
+            "description": ""
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "gravity_well_ice_cloud_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "proxy_mesh_effect": "ice_gravity_well"
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "8fffdacc",
+            "intensity": 0.37
+        }
+    }]
+}

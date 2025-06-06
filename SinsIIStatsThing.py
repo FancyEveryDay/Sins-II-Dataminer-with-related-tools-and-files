@@ -2,6 +2,16 @@
 
 import json, glob
 
+try:
+    with open(".env", 'r') as file:
+        env = json.load(file)
+        SINS_DIRECTORY = env['sins2File']
+        LAST_PATCH_NUM = env["pastPatch"]
+except FileNotFoundError:
+    print(".env file not found")
+    
+
+
 def recursiveprint(collection, output = False, localText = {}, level = 0):
     printTypes = [str, int, float]
 
@@ -61,7 +71,7 @@ def recursiveprint(collection, output = False, localText = {}, level = 0):
 
                     print(f"{indents}{name} : {entry}")
 
-def getSinsData(race, type, output = False, file = "F:\\SteamLibrary\\steamapps\\common\\Sins2\\entities" ):
+def getSinsData(race, type, output = False, file = SINS_DIRECTORY + "\\entities" ):
     unitfilelist = glob.glob(f"{file}\\{race}**{type}")
 
     listODatas = []
@@ -109,7 +119,7 @@ def createWeaponDict(WeaponList):
     return WeaponsDict
         
 def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = True, outputFile = False):
-    with open("F:\\SteamLibrary\\steamapps\\common\\Sins2\\localized_text\\en.localized_text") as t:
+    with open(SINS_DIRECTORY + "\\localized_text\\en.localized_text") as t:
         inGameText = json.load(t)
     
     for i in UnitList:
@@ -310,6 +320,7 @@ def main():
     vasariUnitList = getSinsData("vasari",".unit")
     tecUnitList = getSinsData("trader",".unit")
     adventUnitList = getSinsData("advent",".unit")
+    dlc_UnitList = getSinsData("dlc", ".unit")
 
     weaponList = getSinsData("",".weapon")
     weaponDict = createWeaponDict(weaponList)
@@ -317,6 +328,7 @@ def main():
     FormatUnitEntries(tecUnitList, weaponDict, consolePrint= False, outputFile="TEC Units")
     FormatUnitEntries(adventUnitList, weaponDict, consolePrint= False, outputFile="Advent Units")
     FormatUnitEntries(vasariUnitList, weaponDict, consolePrint= False, outputFile="Vasari Units")
+    FormatUnitEntries(dlc_UnitList, weaponDict, consolePrint= False, outputFile="DLC Units")
     
 if __name__ == "__main__":
     main()

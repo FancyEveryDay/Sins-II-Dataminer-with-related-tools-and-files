@@ -13,7 +13,7 @@ Destra Crusader
 	Hull Points:	1400
 	Armor Points:	645
 	Shield Points:	1550
-	   Shield Burst CD: 45.0s
+	   Shield Burst CD: 40.0s
 
 	Antimatter:	150.0
 

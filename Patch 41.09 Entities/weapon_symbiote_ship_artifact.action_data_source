@@ -1,0 +1,78 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "weapon_symbiote_duration",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "weapon_symbiote_cooldown_time",
+        "action_value":
+        {
+            "values": [150.0]
+        }
+    },
+    {
+        "action_value_id": "weapon_symbiote_weapon_cooldown_bonus",
+        "action_value":
+        {
+            "values": [-2.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "weapon_symbiote_weapon_cooldown_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "weapon_symbiote_weapon_cooldown_bonus"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_buff_large",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_large"
+        }
+    },
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_buff_medium",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_medium"
+        }
+    },
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_buff_small",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_small"
+        }
+    },
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_activate_large",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_activation_large"
+        }
+    },
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_activate_medium",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_activation_medium"
+        }
+    },
+    {
+        "alias_name": "weapon_symbiote_ship_artifact_activate_small",
+        "alias_binding":
+        {
+            "particle_effect": "rapid_autoloader_activation"
+        }
+    }]
+}

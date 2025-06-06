@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_material",
+    "field_coord": [4, 9],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 250.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_crystal_extraction_0"]
+    ],
+    "name": "advent_unlock_crystal_enricher_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_crystal_enricher_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_crystal_enricher_unit_item_hud_icon",
+    "tooltip_picture": "advent_crystal_enricher_unit_item_tooltip_picture"
+}

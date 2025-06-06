@@ -13,7 +13,7 @@ Halcyon Carrier
 	Hull Points:	4850 - 9215
 	Armor Points:	695 - 1255
 	Shield Points:	4500 - 8550
-	   Shield Burst CD: 65.0s
+	   Shield Burst CD: 50.0s
 
 	Antimatter:	0.0
 

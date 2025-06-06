@@ -1,0 +1,60 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "power_core_relic_ship_artifact_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_antimatter"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "power_core_relic_max_antimatter_bonus_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    },
+    {
+        "action_value_id": "power_core_relic_antimatter_restore_rate_bonus_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "power_core_relic_max_antimatter_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_antimatter",
+            "value_behavior": "scalar",
+            "value_id": "power_core_relic_max_antimatter_bonus_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "power_core_relic_antimatter_restore_rate_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "antimatter_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "power_core_relic_antimatter_restore_rate_bonus_value"
+        }
+    }]
+}

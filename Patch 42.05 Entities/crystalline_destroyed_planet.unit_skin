@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1659418.592171,
+        "min_camera_distance": 10821.176389,
+        "gui":
+        {
+            "hud_icon": "destroyed_planet_hud_icon",
+            "hud_picture": "unknown_planet_hud_picture",
+            "tooltip_icon": "destroyed_planet_tooltip_icon",
+            "name": "destroyed_planet_name",
+            "description": ""
+        },
+        "planet_mesh":
+        {
+            "mesh": "destroyed_planet"
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "destroyed_planet_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "7fccedff",
+            "intensity": 0.37
+        }
+    }]
+}
