@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_policy",
+    "field_coord": [6, 0],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "prerequisites": [
+        ["trader_unlock_commercial_district_unit_item"]
+    ],
+    "name": "trader_commercial_district_credit_rate_research_subject_name",
+    "name_uppercase": "trader_commercial_district_credit_rate_research_subject_name_uppercase",
+    "hud_icon": "trader_commercial_district_credit_rate_research_subject_hud_icon",
+    "tooltip_picture": "trader_commercial_district_credit_rate_research_subject_tooltip_picture"
+}

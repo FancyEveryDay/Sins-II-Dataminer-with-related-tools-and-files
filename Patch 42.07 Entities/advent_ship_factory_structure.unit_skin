@@ -1,0 +1,85 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 37448.665541,
+        "min_camera_distance": 1279.828049,
+        "gui":
+        {
+            "hud_icon": "advent_ship_factory_structure_hud_icon",
+            "hud_monochrome_icon": "advent_ship_factory_structure_main_view_icon",
+			"hud_picture": "advent_ship_factory_structure_hud_picture",
+            "tooltip_picture": "advent_ship_factory_structure_tooltip_picture",
+            "name": "advent_ship_factory_structure_name",
+            "description": "advent_ship_factory_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "advent_ship_factory_structure",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "advent_ship_factory_structure_main_view_icon",
+            "selected_icon": "advent_ship_factory_structure_main_view_icon_selected",
+            "sub_selected_icon": "advent_ship_factory_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_construct",
+                "constraint": "is_unit_factory_busy"
+            }],
+            "shield_effect": "advent_ship_factory_structure",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "advent_ship_factory_structure_repair_activate",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_frigate_factory_repair"
+                }
+            },
+            {
+                "alias_name": "advent_ship_factory_structure_repair_buff_large",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_frigate_factory_repair_on_large"
+                }
+            },
+            {
+                "alias_name": "advent_ship_factory_structure_repair_buff_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_frigate_factory_repair_on_medium"
+                }
+            },
+            {
+                "alias_name": "advent_ship_factory_structure_repair_buff_small",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_frigate_factory_repair_on_small"
+                }
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "planetmodule_psiorbitalfrigatefactory_onselection_0"
+                    ],
+                    "scared": [
+                        "planetmodule_psiorbitalfrigatefactory_onselection_0"]
+                }
+            }
+        },
+        "death_sequence_group": "advent_planetmodulesmall"
+    }]
+}

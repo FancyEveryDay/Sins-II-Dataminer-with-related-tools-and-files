@@ -1,0 +1,515 @@
+
+
+# Advent Changes
+
+## Action_data_source Changes
+
+**Proselytize**
+	action_values
+		3
+			action_value
+				values
+					1 : 0.06 -> 0.04
+					2 : 0.09 -> 0.05
+		4
+			action_value
+				values
+					1 : 0.6 -> 0.4
+					2 : 0.9 -> 0.5
+
+**Sacrifice**
+	action_values
+		3
+			action_value
+				values
+					0 : 20.0 -> 10.0
+					1 : 30.0 -> 15.0
+					2 : 40.0 -> 20.0
+
+## Unit Changes
+
+**Deliverance Engine**
+	tags
+		[NEW] 1 : superweapon
+
+**Destra Crusader**
+	weapons
+		weapons
+			0
+				very_heavy_plasma
+					damage : 140.0 -> 175.0
+					dps : 11.666666666666666 -> 14.583333333333334
+
+## Player Changes
+
+**advent_loyalist**
+	home_planet
+		starting_track_levels
+			focus : 4 -> 2
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}
+	planet_types
+		0
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		1
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		3
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+		4
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		5
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+		6
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+					5
+						mana_restore_rate_per_population : 0.0025 -> 0.0015
+		7
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		9
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		10
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+					5
+						mana_restore_rate_per_population : 0.0025 -> 0.0015
+		11
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		12
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		13
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		14
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		15
+			tracks
+				mining
+					[NEW] 2 : {'metal_income_rate': 0.0, 'metal_income_rate_per_population': 0.00384, 'crystal_income_rate': 0.0, 'crystal_income_rate_per_population': 0.0048, 'max_health_points': 500}
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		16
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		17
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		18
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		19
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+
+**advent_rebel**
+	home_planet
+		starting_track_levels
+			focus : 4 -> 2
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}
+	planet_types
+		0
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		1
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		3
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+		4
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		5
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+		6
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+					5
+						mana_restore_rate_per_population : 0.0025 -> 0.0015
+		7
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		9
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		10
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+					4
+						mana_restore_rate_per_population : 0.002 -> 0.0012
+					5
+						mana_restore_rate_per_population : 0.0025 -> 0.0015
+		11
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		12
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		13
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		14
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		15
+			tracks
+				mining
+					[NEW] 2 : {'metal_income_rate': 0.0, 'metal_income_rate_per_population': 0.00384, 'crystal_income_rate': 0.0, 'crystal_income_rate_per_population': 0.0048, 'max_health_points': 500}
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+		16
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		17
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+					2
+						mana_restore_rate_per_population : 0.001 -> 0.0006
+					3
+						mana_restore_rate_per_population : 0.0015 -> 0.0009
+		18
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+		19
+			tracks
+				focus
+					1
+						mana_restore_rate_per_population : 0.0005 -> 0.0003
+
+
+# TEC Changes
+
+## Action_data_source Changes
+
+**Fire Novalith Cannon**
+	action_values
+		4
+			action_value
+				values
+					0 : 25.0 -> 15.0
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		0
+			action_group
+				constraint
+					constraints
+						1
+							[NEW] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		0
+			action_group
+				constraint
+					constraints
+						1
+							[NEW] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Marza Dreadnought**
+	weapons
+		weapons
+			0
+				weapon_position
+					0 : -161.383057 -> -100.30349
+					1 : 25.074463 -> -1.835185
+					2 : 92.543945 -> 144.265961
+				non_turret_muzzle_positions
+					[NEW] 1 : [-161.383057, 9.493896, 92.543945]
+					[NEW] 2 : [-143.332275, 9.493896, 92.543945]
+					[NEW] 3 : [-143.332275, 25.074463, 92.543945]
+					[NEW] 4 : [-109.012695, 25.052246, 118.726562]
+					[NEW] 5 : [-109.012695, 9.471436, 118.726562]
+					[NEW] 6 : [-90.962402, 9.471436, 118.726562]
+					[NEW] 7 : [-56.880371, 9.601318, 140.330566]
+					[NEW] 8 : [-90.962402, 25.052246, 118.726562]
+					[NEW] 9 : [-56.880371, 25.182373, 140.330566]
+					[NEW] 10 : [-38.828613, 25.182373, 140.330566]
+					[NEW] 11 : [-38.828613, 9.601318, 140.330566]
+					[NEW] 12 : [-161.856934, -13.220947, 149.309082]
+					[NEW] 13 : [-161.856934, -28.801758, 149.309082]
+					[NEW] 14 : [-143.804199, -28.801758, 149.309082]
+					[NEW] 15 : [-143.804199, -13.220947, 149.309082]
+					[NEW] 16 : [-109.489502, -13.243652, 174.460938]
+					[NEW] 17 : [-109.489502, -28.824219, 174.460938]
+					[NEW] 18 : [-91.437012, -28.824219, 174.460938]
+					[NEW] 19 : [-91.437012, -13.243652, 174.460938]
+					[NEW] 20 : [-39.30127, -28.694092, 190.224609]
+					[NEW] 21 : [-57.353516, -28.694092, 190.224609]
+					[NEW] 22 : [-39.30127, -13.113281, 190.224609]
+					[NEW] 23 : [-57.353516, -13.113281, 190.224609]
+			1
+				weapon_position
+					0 : -63.087891 -> -86.941734
+					2 : 236.685059 -> 234.090179
+				non_turret_muzzle_positions
+					[NEW] 1 : [-87.627441, -61.227051, 234.179199]
+					[NEW] 2 : [-110.109863, -61.227051, 231.40625]
+			2
+				weapon_position
+					1 : 17.954834 -> 18.096924
+			3
+				weapon_position
+					1 : 50.09375 -> 51.105225
+
+**Novalith Cannon**
+	structure
+		slots_required : 10 -> 15
+	build
+		build_time : 150.0 -> 300.0
+		price
+			metal : 1000.0 -> 1500.0
+			crystal : 1500.0 -> 2000.0
+		exotic_price
+			1
+				count : 1 -> 2
+	tags
+		[NEW] 1 : superweapon
+
+## Research_subject Changes
+
+**trader_asteroid_planet_credit_rate**
+	planet_modifiers
+		0
+			value : 0.5 -> 0.25
+
+**trader_orbital_cannon_structure_range**
+	exotic_price
+		[NEW] 1 : {'exotic_type': 'ultimate', 'count': 1}
+
+**trader_terran_planet_credit_rate**
+	planet_modifiers
+		0
+			value : 0.25 -> 0.1
+
+**trader_unlock_orbital_cannon_structure**
+	exotic_price
+		0
+			exotic_type : offense -> ultimate
+
+## Player Changes
+
+**trader_loyalist**
+	home_planet
+		starting_track_levels
+			commerce : 4 -> 3
+			mining : 2 -> 1
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}
+
+**trader_rebel**
+	home_planet
+		starting_track_levels
+			commerce : 4 -> 3
+			mining : 2 -> 1
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}
+
+
+# Vasari Changes
+
+## Player Changes
+
+**vasari_loyalist**
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}
+
+**vasari_rebel**
+	unit_limits
+		planet
+			[NEW] 1 : {'tag': 'superweapon', 'unit_limit': 1}

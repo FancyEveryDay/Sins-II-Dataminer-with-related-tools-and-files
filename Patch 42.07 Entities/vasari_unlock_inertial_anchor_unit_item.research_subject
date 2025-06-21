@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_remnants",
+    "field_coord": [3, 1],
+    "research_time": 180.0,
+    "price":
+    {
+        "metal": 270.0,
+        "crystal": 240.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_inertial_anchor_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_inertial_anchor_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_inertial_anchor_unit_item_hud_icon",
+    "tooltip_picture": "vasari_inertial_anchor_unit_item_tooltip_picture"
+}

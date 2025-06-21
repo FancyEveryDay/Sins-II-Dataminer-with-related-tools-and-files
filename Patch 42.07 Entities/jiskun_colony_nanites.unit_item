@@ -1,0 +1,17 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "jiskun_colony_nanites_hud_icon",
+    "name": "npc_reward.jiskun_colony_nanites.name",
+    "description": "npc_reward.jiskun_colony_nanites.description",
+    "always_show_in_shop": true,
+    "is_finite": true,
+    "required_unit_tags": [
+        "capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "consumable",
+    "consumable_stack_count": [2],
+    "ability": "jiskun_colony_nanites"
+}

@@ -1,0 +1,62 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "vasari_surface_research_lab_unit_item_hud_icon",
+    "tooltip_picture": "vasari_surface_research_lab_unit_item_tooltip_picture",
+    "name": "vasari_surface_research_lab_unit_item_name",
+    "description": "vasari_surface_research_lab_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "metal": 180.0,
+        "crystal": 240.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "moon",
+            "magnetic",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ]
+    }],
+    "other_item_requirements":
+    {
+        "mutually_exclusive_items": [
+            "vasari_surface_civilian_lab_0",
+            "vasari_surface_civilian_lab_1",
+            "vasari_surface_military_lab_0",
+            "vasari_surface_military_lab_1"]
+    },
+    "player_modifiers":
+    {
+        "empire_modifiers": [
+        {
+            "modifier_type": "military_research_rate_per_population",
+            "value_behavior": "scalar",
+            "value": 0.12
+        },
+        {
+            "modifier_type": "civilian_research_rate_per_population",
+            "value_behavior": "scalar",
+            "value": 0.12
+        }]
+    }
+}

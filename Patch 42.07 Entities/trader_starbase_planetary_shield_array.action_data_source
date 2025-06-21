@@ -1,0 +1,110 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "planetary_shield_array_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "starbase_planetary_shield_array_max_shield_points",
+        "action_value":
+        {
+            "values": [10000.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_planetary_shield_array_shield_restore",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_planetary_shield_array_shield_burst_restore_percentage",
+        "action_value":
+        {
+            "values": [0.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_planetary_shield_array_shield_burst_cooldown_time",
+        "action_value":
+        {
+            "values": [0.0]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "trader_starbase_planetary_shield_array_max_planet_shield_points",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "additive",
+            "value_id": "starbase_planetary_shield_array_max_shield_points"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "trader_starbase_planetary_shield_array_shield_restore",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "shield_points_restore_rate",
+            "value_behavior": "additive",
+            "value_id": "starbase_planetary_shield_array_shield_restore"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "trader_starbase_planetary_shield_array_shield_burst_restore",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "planet_shield_burst_restore",
+            "value_behavior": "additive",
+            "value_id": "starbase_planetary_shield_array_shield_burst_restore_percentage"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "trader_starbase_planetary_shield_array_shield_burst_cooldown",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "planet_shield_burst_cooldown",
+            "value_behavior": "additive",
+            "value_id": "starbase_planetary_shield_array_shield_burst_cooldown_time"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "trader_starbase_planetary_shield_array_unit_item_buff",
+        "alias_binding":
+        {
+            "particle_effect": "tec_starbase_planetary_shield_fx"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_planetary_shield_array_unit_item_on_planet_large",
+        "alias_binding":
+        {
+            "particle_effect": "planetary_large_shield_tec"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_planetary_shield_array_unit_item_on_planet_medium",
+        "alias_binding":
+        {
+            "particle_effect": "planetary_shield_tec"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_planetary_shield_array_unit_item_on_planet_small",
+        "alias_binding":
+        {
+            "particle_effect": "planetary_small_shield_tec"
+        }
+    }]
+}

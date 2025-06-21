@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_assault",
+    "field_coord": [6, 3],
+    "research_time": 540.0,
+    "price":
+    {
+        "metal": 600.0,
+        "crystal": 660.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_upgrade_beam_weapons_1"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.12,
+        "tags": [
+            "beam"]
+    },
+    {
+        "weapon_type": "planet_bombing",
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.12,
+        "tags": [
+            "beam"]
+    }],
+    "name": "vasari_upgrade_beam_weapons_2_research_subject_name",
+    "name_uppercase": "vasari_upgrade_beam_weapons_2_research_subject_name_uppercase",
+    "description": "vasari_upgrade_beam_weapons_2_research_subject_description",
+    "hud_icon": "vasari_upgrade_beam_weapons_2_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_beam_weapons_2_research_subject_tooltip_picture"
+}

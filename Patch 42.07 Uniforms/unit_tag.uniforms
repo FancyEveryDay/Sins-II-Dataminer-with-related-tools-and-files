@@ -1,0 +1,43 @@
+{
+    "unit_tags": [
+    {
+        "name": "capital_ship",
+        "localized_name": "unit_tag_name.capital_ship"
+    },
+    {
+        "name": "frigate",
+        "localized_name": "unit_tag_name.frigate"
+    },
+    {
+        "name": "cruiser",
+        "localized_name": "unit_tag_name.cruiser"
+    },
+    {
+        "name": "strikecraft",
+        "localized_name": "unit_tag_name.strikecraft"
+    },
+    {
+        "name": "structure",
+        "localized_name": "unit_tag_name.structure"
+    },
+    {
+        "name": "titan",
+        "localized_name": "unit_tag_name.titan"
+    },
+    {
+        "name": "starbase",
+        "localized_name": "unit_tag_name.starbase"
+    },
+    {
+        "name": "corvette",
+        "localized_name": "unit_tag_name.corvette"
+    },
+    {
+        "name": "dlc_ancient_starbase",
+        "localized_name": "unit_tag_name.dlc_ancient_starbase"
+    },
+    {
+        "name": "superweapon",
+        "localized_name": "unit_tag_name.superweapon"
+    }]
+}

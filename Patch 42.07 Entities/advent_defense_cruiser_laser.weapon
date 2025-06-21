@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "name": "weapon_name.light_laser",
+    "pitch_speed": 40.0,
+    "yaw_speed": 40.0,
+    "pitch_firing_tolerance": 4.0,
+    "yaw_firing_tolerance": 4.0,
+    "range": 6000.0,
+    "cooldown_duration": 3.0,
+    "uniforms_target_filter_id": "common_weapon",
+    "attack_target_type_groups": [
+        "corvette",
+        "light_flak"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 9.0,
+    "penetration": 100.0,
+    "tags": [
+        "laser",
+        "energy"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.5,
+    "firing":
+    {
+        "firing_type": "projectile",
+        "travel_speed": 5500.0
+    },
+    "effects":
+    {
+        "burst_pattern": [0.0, 0.09, 0.18, 0.27, 0.36],
+        "muzzle_effect": "advent_defense_cruiser_laser_weapon_muzzle",
+        "projectile_travel_effect": "advent_defense_cruiser_laser_weapon_projectile_travel",
+        "hit_hull_effect": "advent_defense_cruiser_laser_weapon_hit_hull",
+        "hit_shield_effect": "advent_defense_cruiser_laser_weapon_hit_shield",
+        "hit_shield_impact_radius_t": 0.2
+    },
+    "turret":
+    {
+        "type": "biaxial",
+        "biaxial_base_mesh": "advent_asset_cruiser_lightlaser_mount_0",
+        "biaxial_barrel_mesh": "advent_asset_cruiser_lightlaser_barrel_0",
+        "barrel_position": [0.000553, 2.621921, -0.796863],
+        "muzzle_positions": [
+            [-0.003557, -0.040491, 3.68622]
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "archaeology_center_execution_interval_value",
+        "action_value":
+        {
+            "values": [480.0]
+        }
+    }]
+}

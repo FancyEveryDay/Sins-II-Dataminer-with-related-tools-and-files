@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "antimatter_fountain_fixture_bonus_hud_icon",
+    "tooltip_icon": "antimatter_fountain_fixture_bonus_hud_icon",
+	"tooltip_picture": "antimatter_fountain_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.antimatter_fountain.name",
+    "description": "planet_bonus.antimatter_fountain.desc",
+    "ability": "antimatter_fountain_fixture_bonus"
+}

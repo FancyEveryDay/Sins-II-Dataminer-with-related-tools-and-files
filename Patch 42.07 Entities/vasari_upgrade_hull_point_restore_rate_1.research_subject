@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_survival",
+    "field_coord": [3, 2],
+    "research_time": 180.0,
+    "price":
+    {
+        "metal": 270.0,
+        "crystal": 240.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_upgrade_hull_point_restore_rate_0"]
+    ],
+    "unit_modifiers": [
+    {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+    },
+    {
+        "modifier_type": "armor_point_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.24
+    }],
+    "name": "vasari_upgrade_hull_point_restore_rate_1_research_subject_name",
+    "name_uppercase": "vasari_upgrade_hull_point_restore_rate_1_research_subject_name_uppercase",
+    "description": "vasari_upgrade_hull_point_restore_rate_1_research_subject_description",
+    "hud_icon": "vasari_upgrade_hull_point_restore_rate_1_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_hull_point_restore_rate_1_research_subject_tooltip_picture"
+}
