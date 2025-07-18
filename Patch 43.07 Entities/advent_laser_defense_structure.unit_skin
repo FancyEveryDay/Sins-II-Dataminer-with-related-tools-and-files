@@ -1,0 +1,193 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 23296.312373,
+        "min_camera_distance": 1078.528761,
+        "gui":
+        {
+            "hud_icon": "advent_laser_defense_structure_hud_icon",
+            "hud_monochrome_icon": "advent_laser_defense_structure_main_view_icon",
+			"hud_picture": "advent_laser_defense_structure_hud_picture",
+			"tooltip_picture": "advent_laser_defense_structure_tooltip_picture",
+            "name": "advent_laser_defense_structure_name",
+            "description": "advent_laser_defense_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "advent_laser_defense_structure",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "advent_asset_hvylaser_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "advent_asset_hvylaser_barrel_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "advent_asset_hvylaser_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "advent_asset_hvylaser_mount_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "advent_laser_defense_structure_main_view_icon",
+            "selected_icon": "advent_laser_defense_structure_main_view_icon_selected",
+            "sub_selected_icon": "advent_laser_defense_structure_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 10,
+                "damage_effects": [
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "advent_vapor_pushed_out_damage",
+                    "sound": "ambient_loop_tech_escaping_gas"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "advent_damage_plasma_sparks"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "advent_damage_smoke_1"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "advent_damage_smoke_2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "advent_damage_smoke_3"
+                },
+                {
+                    "max_count": 3,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.42,
+                    "particle_effect": "advent_vapor_damage",
+                    "sound": "ambient_loop_airdecompression"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity",
+                    "sound": "ambient_loop_electrical_damage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.38,
+                    "particle_effect": "advent_embers"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 6.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "advent_damage_fire",
+                    "sound": "ambient_loop_firedamage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.3,
+                    "particle_effect": "advent_damage_fire_pillar",
+                    "sound": "ambient_loop_firepillar_damage"
+                }]
+            },
+            "shield_effect": "advent_laser_defense_structure",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "advent_laser_defense_structure_laser_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_laser_bolt_heavy_impact",
+                    "sounds": [
+                        "weapon_impact_energy_heavy_hithull",
+                        "weapon_impact_energy_heavy_hithull_01",
+                        "weapon_impact_energy_heavy_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "advent_laser_defense_structure_laser_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_laser_bolt_heavy_impact",
+                    "sounds": [
+                        "weapon_impact_generic_heavy_hitshields",
+                        "weapon_impact_generic_heavy_hitshields_01",
+                        "weapon_impact_generic_heavy_hitshields_02",
+                        "weapon_impact_generic_heavy_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "advent_laser_defense_structure_laser_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_laser_bolt_heavy_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_psi_energy_heavy_laser",
+                        "weapon_muzzle_psi_energy_heavy_laser_01",
+                        "weapon_muzzle_psi_energy_heavy_laser_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "advent_laser_defense_structure_laser_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "advent_laser_bolt_heavy"
+                }
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "ui_onselection_psi_laser_defense"
+                    ],
+                    "scared": [
+                        "ui_onselection_psi_laser_defense"]
+                }
+            }
+        },
+        "death_sequence_group": "advent_planetmodulesmall"
+    }]
+}

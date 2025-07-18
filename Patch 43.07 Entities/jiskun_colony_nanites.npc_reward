@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_colony_nanites_hud_icon",
+        "name": "npc_reward.jiskun_colony_nanites.name",
+        "description": "npc_reward.jiskun_colony_nanites.description"
+    },
+    "type": "ship_component",
+    "item": "jiskun_colony_nanites"
+}

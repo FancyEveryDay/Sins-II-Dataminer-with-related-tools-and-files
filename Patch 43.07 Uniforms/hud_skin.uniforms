@@ -1,0 +1,4 @@
+{
+    "default_hud_skin_name": "universal_hud_skin",
+    "hud_skin_names": ["universal_hud_skin", "trader_hud_skin", "vasari_hud_skin", "advent_hud_skin"]
+}

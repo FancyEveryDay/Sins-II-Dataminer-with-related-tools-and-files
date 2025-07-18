@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time_value",
+        "action_value":
+        {
+            "values": [240.0]
+        }
+    },
+    {
+        "action_value_id": "duration_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "vasari_phase_shield_unit_item_activate_large",
+        "alias_binding":
+        {
+            "particle_effect": "phase_attenuated_shield_large"
+        }
+    },
+    {
+        "alias_name": "vasari_phase_shield_unit_item_activate_medium",
+        "alias_binding":
+        {
+            "particle_effect": "phase_attenuated_shield_medium"
+        }
+    },
+    {
+        "alias_name": "vasari_phase_shield_unit_item_activate_small",
+        "alias_binding":
+        {
+            "particle_effect": "phase_attenuated_shield_small"
+        }
+    }]
+}

@@ -1,0 +1,12 @@
+{
+    "no_owner_carrier_self_destruct_duration": 15,
+    "strikecraft_kinds": [
+    {
+        "name": "interceptor",
+        "localized_name": "foo"
+    },
+    {
+        "name": "bomber",
+        "localized_name": "bar"
+    }]
+}

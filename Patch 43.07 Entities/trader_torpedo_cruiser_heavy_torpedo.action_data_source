@@ -1,0 +1,120 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "heavy_torpedo_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "heavy_torpedo_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "heavy_torpedo_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "heavy_torpedo_armor_penetration_value",
+        "action_value":
+        {
+            "values": [1000.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_cooldown_time_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_damage_value",
+        "action_value":
+        {
+            "values": [500.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_range_value",
+        "action_value":
+        {
+            "values": [15000.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_torpedo_count_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_torpedo_lifetime_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_torpedo_steering_distance_radius_scalar_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_max_charge_count_value",
+        "action_value":
+        {
+            "values": [4.0]
+        }
+    },
+    {
+        "action_value_id": "heavy_torpedo_duration_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    }]
+}
