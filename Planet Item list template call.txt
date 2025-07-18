@@ -1,0 +1,53 @@
+{{Header Nav|game=Sins of a Solar Empire II}}
+A list of all Advent planetary items.
+
+{{SoaSE2/Planet Item List
+|race = Advent
+|faction = All 
+|featured = true
+
+|Advent Atmospheric Shield Dome = TODO
+
+|Advent Coalescence Sanctum = TODO
+
+|Crystal Enrichment Center = A key Advent structure, the Crystal Enrichment Center helps alleviate the relative rarity of crystals compared to metal and credits and the high crystal costs of Advent technologies and ships. Its effectiveness increases with high population worlds, so prioritize these on Primordial, Terran, and Oceanic worlds.
+
+|Advent Greater Temple of Purification = An enhanced version of the normal Temple of Purification, used exclusively on the Advent Reborn homeworld. Applies a hull and shield restoration to friendly forces that have defeated all enemies in neighbouring gravity wells. In general, not a particularly helpful improvement early-game as local gravity wells are no match for your early game capital ships. Against enemies that do pose a threat to your capital ship, this temple will not provide an in-combat bonus that would help either.<br /><br />This structure cannot be rebuilt if destroyed or removed. It can only be replaced by the normal Temple of Purification, which has the same radius and healing ability, but at half the effectiveness.
+|ability=+20 Hull and Armour per second and +40 shield per second for 10 sec.
+
+|Advent Heathen Quarter= Similar to the TEC's Auxiliary Supply Depot, the Heathen Quarter provides 15 AUs worth of range to targeted minor faction abilities (such as pirate raids).
+|ability=Minor faction range +15.0 AUs
+
+|Advent Hydrostatic Shield Dome= Improves the population of oceanic planets from 350 to 500. Advent planet items are less reliant on population, but this can work in conjunction with the Crystal Enrichment Center to produce additional crystal.
+
+|Advent Laminate Forge= '''Cannot be combined with: PsiCredit Mint'''.<br /><br />Converts the planet's crystal output into metal.
+|ability=Converts the planet's crystal output into 1.2 metal per consumed crystal.
+
+|Advent Plasma Furnace= While this planet item does significantly improve metal extraction, its real value is the improvement to exotic construction time. This item is particularly helpful in conjunction with Aluxian Economic Advisors from the Aluxian Resurgence. With a combined -50% refinery exotic build time, each orbital refinery becomes extremely efficient.
+
+|Advent Prescience Filter= Exclusive to the Advent Reborn.<br /><br />Improves your maximum focus and the focus restore rate, allowing you to use more Unity abilities more often. It also grants +20% higher allied population on the planet it is built on. However, it can only be built on Geomagnetic planets.
+
+|Advent PsiCredit Mint= '''Cannot be combined with: Laminate Forge'''.<br /><br />A popular and effective item for fixing resource income levels. A common strategy is to place one on the Advent home world which typically produces enough credits to make up the difference for the whole empire.
+|ability=Converts the planet's crystal output into 2 credits per consumed crystal.
+
+|Advent Shrine of Harmony= '''Cannot be combined with: Shrine of Hostility'''.
+
+|Advent Shrine of Hostility= '''Cannot be combined with: Shrine of Harmony'''
+
+|Advent Shrine of Prophecy= '''Cannot be combined with: Shrine of Revelation'''.
+
+|Advent Shrine of Revelation= '''Cannot be combined with: Shrine of Prophecy'''.
+
+|Advent Starlight Augury= Exclusive to the Advent Wrath.<br /><br />This structure massively improves the culture rate generated from this planet, encouraging many Temples of Communion to be built here. Constructing it also provides the player with three extra maximum influence points.<br /><br />The higher maximum percentage of allied population is helpful, but it is not as strong as its Advent Reborn counterpart.
+
+|Advent Tithe Sanctum = A strong early item for improving Advent's otherwise mediocre credit production.
+}}
+ 
+==Advent Reborn Greater Temple of Purification==
+<section begin="Advent Reborn Greater Temple of Purification" />
+{{SoaSE2/Planet Item|Advent Reborn Greater Temple of Purification 
+|customtext=An enhanced version of the normal Temple of Purification, used exclusively on the Advent Reborn homeworld. Applies a hull and shield restoration to friendly forces that have defeated all enemies in neighbouring gravity wells. In general, not a particularly helpful improvement early-game as local gravity wells are no match for your early game capital ships. Against enemies that do pose a threat to your capital ship, this temple will not provide an in-combat bonus that would help either.<br /><br />This structure cannot be rebuilt if destroyed or removed, but regular Temples of Purification have the same effects after researching [[Sins of a Solar Empire II/Advent Harmony research#Improved Temple of Purification]].
+|ability=+20 Hull and Armour per second and +40 shield per second for 10 sec.
+}} <section end="Advent Reborn Greater Temple of Purification" />
+
+{{Footer Nav|game=Sins of a Solar Empire II|prevpage=Advent Ship items|nextpage=Advent research}}

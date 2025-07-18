@@ -2,14 +2,19 @@
 
 import json, glob
 
+# try:
+with open(".env", 'r') as file:
+    env = json.load(file)
+    SINS_DIRECTORY = env['sins2File']
+    LAST_PATCH_NUM = env["pastPatch"]
+# except FileNotFoundError:
+#     print(".env file not found")
+
 try:
-    with open(".env", 'r') as file:
-        env = json.load(file)
-        SINS_DIRECTORY = env['sins2File']
-        LAST_PATCH_NUM = env["pastPatch"]
+    with open(SINS_DIRECTORY + "\\localized_text\\en.localized_text") as t:
+        LOCALIZED_TEXT = json.load(t)
 except FileNotFoundError:
-    print(".env file not found")
-    
+    print("Localized text file not found")
 
 
 def recursiveprint(collection, output = False, localText = {}, level = 0):
