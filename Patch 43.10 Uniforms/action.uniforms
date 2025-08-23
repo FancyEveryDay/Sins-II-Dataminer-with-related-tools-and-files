@@ -1,0 +1,103 @@
+{
+    "common_action_values": [
+    {
+        "action_value_id": "fixed_negative_one",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [-1, -1, -1, -1, -1]
+        }
+    },
+    {
+        "action_value_id": "fixed_zero",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [0, 0, 0, 0, 0]
+        }
+    },
+    {
+        "action_value_id": "fixed_one",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [1, 1, 1, 1, 1]
+        }
+    },
+    {
+        "action_value_id": "fixed_minute",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [60, 60, 60, 60, 60]
+        }
+    },
+    {
+        "action_value_id": "common_simulation_time_value",
+        "action_value":
+        {
+            "transform_type": "simulation_time",
+            "values": [1, 1, 1, 1, 1]
+        }
+    },
+    {
+        "action_value_id": "common_action_level_value",
+        "action_value":
+        {
+            "transform_type": "action_level",
+            "values": [1, 1, 1, 1, 1]
+        }
+    },
+    {
+        "action_value_id": "common_child_buff_count_value",
+        "action_value":
+        {
+            "transform_type": "pending_and_active_child_buff_count",
+            "values": [1, 1, 1, 1, 1]
+        }
+    },
+    {
+        "action_value_id": "common_ability_damage_penetration_value",
+        "action_value":
+        {
+            "transform_type": "fixed",
+            "values": [500.0, 500.0, 500.0, 500.0, 500.0]
+        }
+    },
+    {
+        "action_value_id": "uniforms_damage_event_raw_damage_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "uniforms_damage_event_total_resolved_damage_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "uniforms_damage_event_penetration_value",
+        "action_value":
+        {
+            "transform_type": "per_damage_event_penetration",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "uniforms_current_spawner_current_shields",
+        "action_value":
+        {
+            "transform_type": "per_current_shield_points",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    }]
+}

@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_remnants",
+    "field_coord": [8, 2],
+    "research_time": 840.0,
+    "price":
+    {
+        "metal": 810.0,
+        "crystal": 900.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_starbase_structural_integrity_0_unit_item"]
+    ],
+    "name": "vasari_unlock_starbase_structural_integrity_1_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_starbase_structural_integrity_1_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_unlock_starbase_structural_integrity_1_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_starbase_structural_integrity_1_unit_item_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_starbase"]
+}

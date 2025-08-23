@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_revival",
+    "field_coord": [4, 5],
+    "research_time": 300.0,
+    "price":
+    {
+        "metal": 420.0,
+        "crystal": 420.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_fabricator_cruiser"]
+    ],
+    "name": "vasari_unlock_fabricator_cruiser_ship_component_shop_research_subject_name",
+    "name_uppercase": "vasari_unlock_fabricator_cruiser_ship_component_shop_research_subject_name_uppercase",
+    "description": "vasari_unlock_fabricator_cruiser_ship_component_shop_research_subject_description",
+    "hud_icon": "vasari_unlock_fabricator_cruiser_ship_component_shop_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_fabricator_cruiser_ship_component_shop_research_subject_tooltip_picture"
+}

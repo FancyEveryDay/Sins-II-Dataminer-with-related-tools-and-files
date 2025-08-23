@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "target_filters": [
+    {
+        "target_filter_id": "amplify_energy_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "amplify_energy_apply_buff_radius",
+        "action_value":
+        {
+            "values": [8000.0, 8000.0, 8000.0, 8000.0]
+        }
+    },
+    {
+        "action_value_id": "amplify_energy_unity_bonus_value",
+        "action_value":
+        {
+            "values": [10.0, 20.0, 30.0, 40.0]
+        }
+    },
+    {
+        "action_value_id": "amplify_energy_weapon_damage_bonus_value",
+        "action_value":
+        {
+            "values": [0.06, 0.12, 0.18, 0.24]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "amplify_energy_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "amplify_energy_weapon_damage_bonus_value",
+            "tags": [
+                "energy"]
+        }
+    }]
+}

@@ -1,0 +1,169 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "shield_projection_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "has_recently_been_damaged"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_guardian_cruiser_shield_projection_on_spawner",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "shield_projection_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_guardian_cruiser_shield_projection_on_target"
+                }
+            }]
+        }
+    }],
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "last_sent_effect_time",
+            "time_since_sent_effect",
+            "total_damage"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "shield_projection_last_sent_effect_time_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "last_sent_effect_time",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_total_damage_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "total_damage",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_time_since_sent_effect_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "time_since_sent_effect",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_total_damage_threshold_value",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_min_time_between_effects_value",
+        "action_value":
+        {
+            "values": [1.5]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_damage_sent_effect_duration",
+        "action_value":
+        {
+            "values": [0.75]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_cooldown_time_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_max_charge_count_value",
+        "action_value":
+        {
+            "values": [6.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_damage_prevented_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [0.5]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_duration_value",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "shield_projection_range_value",
+        "action_value":
+        {
+            "values": [7500.0]
+        }
+    }]
+}

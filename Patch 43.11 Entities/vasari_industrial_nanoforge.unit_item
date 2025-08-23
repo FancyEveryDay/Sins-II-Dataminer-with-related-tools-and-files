@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "vasari_industrial_nanoforge_unit_item_hud_icon",
+    "tooltip_icon": "vasari_industrial_nanoforge_unit_item_hud_icon",
+    "tooltip_picture": "vasari_industrial_nanoforge_unit_item_tooltip_picture",
+    "name": "vasari_industrial_nanoforge_unit_item_name",
+    "description": "vasari_industrial_nanoforge_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "credits": 0.0,
+        "metal": 300.0,
+        "crystal": 180.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "hive_asteroid"
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "values": [-0.33]
+    }]
+}

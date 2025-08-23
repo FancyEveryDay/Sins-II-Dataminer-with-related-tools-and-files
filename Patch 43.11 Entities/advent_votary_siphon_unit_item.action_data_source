@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "votary_siphon_spellpower_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+    {
+        "action_value_id": "votary_siphon_duration",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "votary_siphon_spellpower_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "spell_power",
+            "value_behavior": "additive",
+            "value_id": "votary_siphon_spellpower_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_votary_siphon_activate",
+        "alias_binding":
+        {
+            "particle_effect": "advent_votary_siphon_activate"
+        }
+    },
+    {
+        "alias_name": "advent_votary_siphon_medium",
+        "alias_binding":
+        {
+            "particle_effect": "advent_votary_siphon"
+        }
+    }]
+}

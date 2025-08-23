@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "brown_dwarf_fixture_bonus_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "brown_dwarf_weapon_range_bonus_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "brown_dwarf_ability_range_bonus_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "brown_dwarf_weapon_range_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "range",
+            "value_behavior": "scalar",
+            "value_id": "brown_dwarf_weapon_range_bonus_value"
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "brown_dwarf_ability_range_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "ability_range",
+            "value_behavior": "scalar",
+            "value_id": "brown_dwarf_ability_range_bonus_value"
+        }
+    }]
+}

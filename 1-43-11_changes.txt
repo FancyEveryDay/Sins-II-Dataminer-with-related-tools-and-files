@@ -1,0 +1,91 @@
+
+
+# Advent Changes
+
+## Unit Changes
+
+**Purge Vessel**
+	build
+		build_time : 35.0 -> 45.0
+		price
+			credits : 300.0 -> 450.0
+			metal : 130.0 -> 150.0
+			crystal : 90.0 -> 100.0
+
+## Research_subject Changes
+
+**advent_unlock_tithe_collector_unit_item**
+	research_time : 90.0 -> 180.0
+	price
+		credits : 300.0 -> 550.0
+		metal : 50.0 -> 150.0
+		crystal : 100.0 -> 350.0
+
+**advent_upgrade_tithe_collector_unit_item_0**
+	research_time : 180.0 -> 360.0
+	price
+		credits : 550.0 -> 850.0
+		metal : 150.0 -> 275.0
+		crystal : 350.0 -> 650.0
+
+**advent_upgrade_tithe_collector_unit_item_1**
+	research_time : 360.0 -> 600.0
+	price
+		credits : 850.0 -> 1150.0
+		metal : 275.0 -> 450.0
+		crystal : 650.0 -> 950.0
+
+
+# TEC Changes
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		0
+			action_group
+				constraint
+					constraints
+						1
+							[NEW] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		0
+			action_group
+				constraint
+					constraints
+						1
+							[NEW] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Krosov Siege Frigate**
+	build
+		build_time : 40.0 -> 50.0
+		price
+			credits : 500.0 -> 600.0
+			metal : 60.0 -> 75.0
+			crystal : 100.0 -> 125.0
+
+
+# Vasari Changes
+
+## Unit Changes
+
+**Karrastra Destructor**
+	build
+		build_time : 54.0 -> 60.0
+		price
+			metal : 185.0 -> 215.0
+			crystal : 235.0 -> 270.0
+
+## Player Changes
+
+**vasari_loyalist**
+	home_planet
+		starting_militia_supply : 40 -> 30
+
+**vasari_rebel**
+	home_planet
+		starting_militia_supply : 40 -> 30

@@ -1,0 +1,64 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "phase_out_hull_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly"]
+        }
+    },
+    {
+        "target_filter_id": "phase_out_hull_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "phase_out_hull_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [120.0, 90.0, 60.0]
+        }
+    },
+    {
+        "action_value_id": "phase_out_hull_cooldown_time_value",
+        "action_value":
+        {
+            "values": [27.0, 18.0, 9.0]
+        }
+    },
+    {
+        "action_value_id": "phase_out_hull_duration_value",
+        "action_value":
+        {
+            "values": [3.0, 6.0, 9.0]
+        }
+    },
+    {
+        "action_value_id": "phase_out_hull_range_value",
+        "action_value":
+        {
+            "values": [9000.0, 9000.0, 9000.0]
+        }
+    }]
+}

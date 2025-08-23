@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "brown_dwarf_fixture_bonus_hud_icon",
+    "tooltip_icon": "brown_dwarf_fixture_bonus_hud_icon",
+	"tooltip_picture": "brown_dwarf_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.brown_dwarf.name",
+    "description": "planet_bonus.brown_dwarf.desc",
+    "ability": "brown_dwarf_fixture_bonus"
+}

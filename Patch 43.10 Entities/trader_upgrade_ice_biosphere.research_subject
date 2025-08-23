@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_annexation",
+    "field_coord": [3, 3],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["trader_unlock_ice_biosphere"]
+    ],
+    "name": "trader_upgrade_ice_biosphere_research_subject_name",
+    "name_uppercase": "trader_upgrade_ice_biosphere_research_subject_name_uppercase",
+    "description": "trader_upgrade_ice_biosphere_research_subject_description",
+    "hud_icon": "trader_upgrade_ice_biosphere_research_subject_hud_icon",
+    "tooltip_picture": "trader_upgrade_ice_biosphere_research_subject_tooltip_picture"
+}

@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_frontier_lab_hud_icon",
+        "name": "npc_reward.jiskun_frontier_lab.name",
+        "description": "npc_reward.jiskun_frontier_lab.description"
+    },
+    "type": "planet_component",
+    "item": "jiskun_frontier_lab"
+}
