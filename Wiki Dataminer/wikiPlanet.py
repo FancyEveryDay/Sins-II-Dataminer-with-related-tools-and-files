@@ -66,29 +66,39 @@ def main():
     planetUnit = {}
 
     for p in planet_unit_glob:
-        with open(p, 'r') as file:
-            planetJson = json.load(file)
+        try:
 
-        planet = planetJson['planet']
-        name = LOCALIZED_TEXT.get(planetJson['planet']['planet_type'] + "_planet_name").capitalize()
-        planetUnit[name] = {}
+            # Get planet data from .json, prints an alert and continues if an entity contains no planet data
+            with open(p, 'r') as file:
+                planetJson = json.load(file)
+            
+            try:
+                planet = planetJson['planet']
+            except KeyError:
+                print(f"{p.split("\\")[-1]} is not colonizable, contains no planet data.")
+                continue
+            
+            name = LOCALIZED_TEXT.get(planetJson['planet']['planet_type'] + "_planet_name").capitalize()
+            planetUnit[name] = {}
 
-        # Get Asteroids
-        asteroidDict = {"crystal" :  planet['non_random_crystal_asteroids']['tiers'][0]['count'][0],
-                        "random crystal" :  planet['random_crystal_asteroids']['tiers'][0]['count'][0],
-                        "metal" :  planet['non_random_metal_asteroids']['tiers'][0]['count'][0],
-                        "random metal" :  planet['random_metal_asteroids']['tiers'][0]['count'][0]
-                        }
-        # Get SttC resources
-        strippedResourcesDict = {}
-        for asset, n in planet['destroyed_planet']['stripped_assets'].items():
-            strippedResourcesDict[asset] = n
+            # Get Asteroids
+            asteroidDict = {"crystal" :  planet['non_random_crystal_asteroids']['tiers'][0]['count'][0],
+                            "random crystal" :  planet['random_crystal_asteroids']['tiers'][0]['count'][0],
+                            "metal" :  planet['non_random_metal_asteroids']['tiers'][0]['count'][0],
+                            "random metal" :  planet['random_metal_asteroids']['tiers'][0]['count'][0]
+                            }
+            # Get SttC resources
+            strippedResourcesDict = {}
+            for asset, n in planet['destroyed_planet']['stripped_assets'].items():
+                strippedResourcesDict[asset] = n
 
-        for asset in planet['destroyed_planet']['stripped_exotics']:
-            strippedResourcesDict[LOCALIZED_TEXT[f"exotic.{asset["exotic_type"]}.name"]] = asset["count"]
+            for asset in planet['destroyed_planet']['stripped_exotics']:
+                strippedResourcesDict[LOCALIZED_TEXT[f"exotic.{asset["exotic_type"]}.name"]] = asset["count"]
 
-        planetUnit[name]['asteroids'] = asteroidDict
-        planetUnit[name]['stripped_to_the_core_resources'] = strippedResourcesDict
+            planetUnit[name]['asteroids'] = asteroidDict
+            planetUnit[name]['stripped_to_the_core_resources'] = strippedResourcesDict
+        except KeyError as e:
+            print(f"Exception when loading {p}\n\t Key Error: {e}")
 
     # Format planet entries and add them to dictionary
     for planet in PLANET_UNIFORMS['planet_types']:
@@ -96,11 +106,14 @@ def main():
 
         print(f"Processing {planet['name']}")
 
+
         # Get name that matches wiki-formatting
         name = LOCALIZED_TEXT.get(planet['name'] + "_planet_name").capitalize()
 
+
         # Add development track summaries
         planet['base_dev_tracks'] = planetBaseDevLevels[planet['name']]
+
 
         # Simplify survey field
         for index, i in enumerate(planet['surveying_track_levels']):
@@ -120,20 +133,18 @@ def main():
 
             planet['base_dev_tracks']['survey'] = index + 1
 
+
         # Add planet .unit file data
         planet['asteroids'] = planetUnit[name]['asteroids']
         planet['stripped_to_the_core_resources'] = planetUnit[name]['stripped_to_the_core_resources']
+
 
         # Add planet quality
         numSum = 0
         for _, num in planet['base_dev_tracks'].items():
             numSum += num
 
-        #numSum = numSum/5
-
         numSum += round(planet['population']['population_maximum']/100)
-
-        # numSum += round((planet['asteroids'].get('crystal', 0) + planet['asteroids'].get('metal', 0)))
 
         if numSum < 20:
             quality = 'Poor'
@@ -142,6 +153,7 @@ def main():
         else:
             quality = 'Rich'        
         planet['quality'] = f"{quality} ({int(round(numSum, 0 ))} Quality Points)"
+
 
         # Add full dev tracks
         popList = []
@@ -195,12 +207,15 @@ def main():
                 except KeyError:
                     print(f'Failed to Parse <{name}> track data for <{fileName}>')
         
+
         # Cleanup - Removes non-conforming player files from the dict on first iteration.
         for pop in popList:
             playerDict.pop(pop)
-            
+        
+
         # Remove extra stuff
         planet.pop('tooltip_icon')
+
 
         # Add planet entry to dictionary
         wiki_planet[name] = planet
