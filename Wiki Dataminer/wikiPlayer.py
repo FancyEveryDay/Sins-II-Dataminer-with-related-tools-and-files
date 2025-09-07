@@ -8,7 +8,7 @@ ENTITIES = SINS_DIRECTORY + r'\entities'
 with open(SINS_DIRECTORY + r'\localized_text\en.localized_text', 'r') as file:
     LOCALIZED_TEXT = json.load(file)
 
-def getUniqueLists(subject : str, wiki_player : dict, playerDict : dict, itemDict : dict):
+def getUniqueLists(subject : str, wiki_player : dict, playerDict : dict, itemDict : dict, allBuildableItems : set = set()):
     """Checks for general and unique subject items and creates generic lists at the race level, and unique lists at the faction level.
     
     playerDict is a dict of factions while wiki_player is the dict of races."""
@@ -24,6 +24,7 @@ def getUniqueLists(subject : str, wiki_player : dict, playerDict : dict, itemDic
         general_count = 0
     
         for item in itemList.get( subject, []):
+            allBuildableItems.add(item)
             item_is_copy = False
 
             for f, i in playerDict.items():
@@ -141,16 +142,21 @@ def main():
                 'structures' : '.unit',
                 }
 
+    # Create complete item set
+    completeItemSet = set()
 
     for key, itemGroup in nameDict.items():
         key : str
         itemGroup : str
         
-        getUniqueLists(subject= key, wiki_player= wiki_player, playerDict= playerDict, itemDict= itemDict(itemGroup))
+        getUniqueLists(subject= key, wiki_player= wiki_player, playerDict= playerDict, itemDict= itemDict(itemGroup), allBuildableItems = completeItemSet)
 
     with open("WikiFiles\\Wikiplayer.json", "w") as file:
         json.dump(wiki_player, file, indent = 1)
 
+    
+    # Return complete item set for use in other scripts.
+    return completeItemSet
 
 if __name__ == "__main__":
     main()

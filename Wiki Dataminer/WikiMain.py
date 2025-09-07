@@ -1,9 +1,13 @@
-import wikiPlanet, wikiPlayer
+import wikiPlanet 
+import wikiPlayer
+import wikiPrerequisites
+import wikiUtilities
 
 def main():
-    # Run wikiPlanet script
+    
     wikiPlanet.main()
-    wikiPlayer.main()
+    completeItemSet = wikiPlayer.main()
+    wikiPrerequisites.main(completeItemSet = completeItemSet)
 
 
 if __name__ == "__main__":
