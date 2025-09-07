@@ -1,13 +1,43 @@
 {
  "unit_item": {
+  "Advent Atmospheric Shield Dome": [
+   [
+    "Advent Atmospheric Shield Dome Unlock"
+   ]
+  ],
+  "Advent Coalescence Sanctum": [
+   [
+    "Advent Coalescence Sanctum Unlock"
+   ]
+  ],
+  "Advent Crystal Enrichment Center": [
+   [
+    "Advent Crystal Enrichment Center Unlock"
+   ]
+  ],
+  "Advent Cynosural Reservoir": [
+   [
+    "Advent Cynosural Reservoir Unlock"
+   ]
+  ],
   "Advent Deploy Transcencia Starbase": [
    [
     "Advent Deploy Transcencia Unlock"
    ]
   ],
+  "Advent Empyrean City": [
+   [
+    "Advent Empyrean City Unlock"
+   ]
+  ],
   "Advent Energy Accelerator": [
    [
     "Advent Energy Accelerator Unlock"
+   ]
+  ],
+  "Advent Epitaph of the Lost": [
+   [
+    "Advent Epitaph of the Lost Unlock"
    ]
   ],
   "Advent Essence Reservoir": [
@@ -45,9 +75,19 @@
     "Advent Harmony Circuit Unlock"
    ]
   ],
-  "Advent Antimatter Phase Jump Panels": [
+  "Advent Heathen Quarter": [
    [
-    "Advent High Efficiency Jumps"
+    "Advent Heathen Quarter Unlock"
+   ]
+  ],
+  "Advent Hydrostatic Shield Dome": [
+   [
+    "Advent Hydrostatic Shield Dome Unlock"
+   ]
+  ],
+  "Advent Laminate Forge": [
+   [
+    "Advent Laminate Forge Unlock"
    ]
   ],
   "Advent Additional Armor": [
@@ -60,14 +100,49 @@
     "Advent Shield Booster Unlock"
    ]
   ],
+  "Advent NeuroAugment Center": [
+   [
+    "Advent NeuroAugment Center Unlock"
+   ]
+  ],
+  "Advent NeuroPsion Purifier": [
+   [
+    "Advent NeuroPsion Purifier Unlock"
+   ]
+  ],
+  "Advent Pelagic Interface Relay": [
+   [
+    "Advent Pelagic Interface Relay Unlock"
+   ]
+  ],
   "Advent Plasma Agitator": [
    [
     "Advent Plasma Agitator Unlock"
    ]
   ],
+  "Advent Plasma Furnace": [
+   [
+    "Advent Plasma Furnace Unlock"
+   ]
+  ],
+  "Advent Prescience Filter": [
+   [
+    "Advent Prescience Filter Unlock"
+   ]
+  ],
+  "Advent PsiCredit Mint": [
+   [
+    "Advent PsiCredit Mint Unlock"
+   ]
+  ],
   "Advent Psionic Dynamo": [
    [
     "Advent Psionic Dynamo Unlock"
+   ]
+  ],
+  "Advent Radiation Shield Dome": [
+   [
+    "Advent Radiation Shield Dome Unlock"
    ]
   ],
   "Advent Eradica Swarm Missiles": [
@@ -80,14 +155,14 @@
     "Advent Synchronous Shield Unlock"
    ]
   ],
+  "Advent Silent Monastery": [
+   [
+    "Advent Silent Monastery Unlock"
+   ]
+  ],
   "Advent Evangelization Nodes": [
    [
     "Advent Evangelization Nodes Unlock"
-   ]
-  ],
-  "Advent Final Judgment": [
-   [
-    "Advent Meteoroid Control"
    ]
   ],
   "Advent Meteor Storm": [
@@ -115,9 +190,49 @@
     "Advent Zealous Labor Unlock"
    ]
   ],
+  "Advent Starlight Augury": [
+   [
+    "Advent Starlight Augury Unlock"
+   ]
+  ],
   "Advent Structural Force Fields": [
    [
     "Advent Structural Force Fields Unlock"
+   ]
+  ],
+  "Advent Telepathic Relay": [
+   [
+    "Advent Telepathic Relay Unlock"
+   ]
+  ],
+  "Advent Temple of Assimilation": [
+   [
+    "Advent Temple of Assimilation Unlock"
+   ]
+  ],
+  "Advent Temple of Pilgrimage": [
+   [
+    "Advent Temple of Pilgrimage Unlock"
+   ]
+  ],
+  "Advent Temple of Purification": [
+   [
+    "Advent Temple of Purification Unlock"
+   ]
+  ],
+  "Advent Temple of Resurrection": [
+   [
+    "Advent Temple of Resurrection Unlock"
+   ]
+  ],
+  "Advent Tithe Sanctum": [
+   [
+    "Advent Tithe Sanctum Unlock"
+   ]
+  ],
+  "Advent Unity Protectorate": [
+   [
+    "Advent Unity Protectorate Unlock"
    ]
   ],
   "TEC Armored Citadel": [
@@ -130,9 +245,34 @@
     "TEC Bastion Module Unlock"
    ]
   ],
+  "TEC Regional Government Office": [
+   [
+    "TEC Regional Government Unlock"
+   ]
+  ],
+  "TEC Unassailable Fortress": [
+   [
+    "TEC Unassailable Fortress Unlock"
+   ]
+  ],
+  "TEC Alloy Foundry": [
+   [
+    "TEC Alloy Foundry Unlock"
+   ]
+  ],
   "TEC Antimatter Engine": [
    [
     "TEC Antimatter Engine Unlock"
+   ]
+  ],
+  "TEC Aquaculture Harvester": [
+   [
+    "TEC Aquaculture Harvester Unlock"
+   ]
+  ],
+  "TEC Auxiliary Supply Depot": [
+   [
+    "TEC Auxiliary Supply Depot Unlock"
    ]
   ],
   "TEC Ablative Armor": [
@@ -140,9 +280,29 @@
     "TEC Ablative Armor Unlock"
    ]
   ],
+  "TEC Chemical Plant": [
+   [
+    "TEC Chemical Plant Unlock"
+   ]
+  ],
   "TEC Combat Repair System": [
    [
     "TEC Combat Repair System Unlock"
+   ]
+  ],
+  "TEC Command Bunker": [
+   [
+    "TEC Command Bunker Unlock"
+   ]
+  ],
+  "TEC Commercial District": [
+   [
+    "TEC Commercial District Unlock"
+   ]
+  ],
+  "TEC Synthetic Crystal Farm": [
+   [
+    "TEC Synthetic Crystal Farm Unlock"
    ]
   ],
   "TEC Deploy Argonev Starbase": [
@@ -150,14 +310,39 @@
     "TEC Deploy Argonev Unlock"
    ]
   ],
-  "TEC Derelict Specialist Team": [
+  "TEC Ferric Mining Rig": [
    [
-    "TEC Derelict Specialists"
+    "TEC Ferric Mining Rig Unlock"
+   ]
+  ],
+  "TEC Fissile Enrichment Plant": [
+   [
+    "TEC Fissile Enrichment Plant Unlock"
    ]
   ],
   "TEC Flak Burst": [
    [
     "TEC Flak Burst Unlock"
+   ]
+  ],
+  "TEC Fulfillment Warehouse": [
+   [
+    "TEC Fulfillment Warehouse Unlock"
+   ]
+  ],
+  "TEC Gas Crystalizer": [
+   [
+    "TEC Gas Crystallizer Unlock"
+   ]
+  ],
+  "TEC Gas Harvester": [
+   [
+    "TEC Gas Harvester Unlock"
+   ]
+  ],
+  "TEC Harvesting Crawler": [
+   [
+    "TEC Harvesting Crawler Unlock"
    ]
   ],
   "TEC Core Systems Armor": [
@@ -173,6 +358,26 @@
   "TEC High Yield Warheads": [
    [
     "TEC High Yield Warheads Unlock"
+   ]
+  ],
+  "TEC Ice Processing Facility": [
+   [
+    "TEC Ice Processing Facility Unlock"
+   ]
+  ],
+  "TEC Industrial Complex": [
+   [
+    "TEC Industrial Complex Unlock"
+   ]
+  ],
+  "TEC Garrison Recruitment Center": [
+   [
+    "TEC Garrison Recruitment"
+   ]
+  ],
+  "TEC Home Guard Outpost": [
+   [
+    "TEC Home Guard Outpost Unlock"
    ]
   ],
   "TEC Ankylon Hangar": [
@@ -210,6 +415,16 @@
     "TEC Ankylon Missile Launchers Unlock"
    ]
   ],
+  "TEC Media Conglomerate": [
+   [
+    "TEC Media Conglomerate Unlock"
+   ]
+  ],
+  "TEC Geothermal Smelter": [
+   [
+    "TEC Geothermal Smelter Unlock"
+   ]
+  ],
   "TEC Reactive Plating": [
    [
     "TEC Reactive Plating Unlock"
@@ -220,9 +435,29 @@
     "TEC Missile Guidance Computer Unlock"
    ]
   ],
+  "TEC Munitions Plant": [
+   [
+    "TEC Munitions Plant Unlock"
+   ]
+  ],
+  "TEC High Pressure Domes": [
+   [
+    "TEC High Pressure Domes"
+   ]
+  ],
+  "TEC Pirate Mercenary Base": [
+   [
+    "TEC Pirate Mercenary Base Unlock"
+   ]
+  ],
   "TEC Rapid Autoloader": [
    [
     "TEC Rapid Autoloader Unlock"
+   ]
+  ],
+  "TEC Center for Human Doctrine": [
+   [
+    "TEC Center for Human Doctrine Unlock"
    ]
   ],
   "TEC Ragnarov Hangar": [
@@ -240,9 +475,19 @@
     "TEC Railgun Accelerator Unlock"
    ]
   ],
+  "TEC Orbital Mining Control": [
+   [
+    "TEC Orbital Mining Control Unlock"
+   ]
+  ],
   "TEC Reserve Squadron Hangar": [
    [
     "TEC Reserve Squadron Hangar Unlock"
+   ]
+  ],
+  "TEC Resort Complex": [
+   [
+    "TEC Resort Complex Unlock"
    ]
   ],
   "TEC Docking Booms": [
@@ -285,11 +530,6 @@
     "TEC Starbase Missile Launchers"
    ]
   ],
-  "TEC Tactical Analyst": [
-   [
-    "TEC Tactical Analyst Training"
-   ]
-  ],
   "TEC Targeting Array": [
    [
     "TEC Targeting Array Unlock"
@@ -305,9 +545,19 @@
     "TEC War Reporter Training"
    ]
   ],
+  "Vasari Alliance Xeno Embassy": [
+   [
+    "Vasari Alliance Xeno Embassy Unlock"
+   ]
+  ],
   "Vasari Antimatter Recharger": [
    [
     "Vasari Antimatter Recharger Unlock"
+   ]
+  ],
+  "Vasari Intercultural Exchange": [
+   [
+    "Vasari Intercultural Exchange"
    ]
   ],
   "Vasari Beam Modulator": [
@@ -315,14 +565,24 @@
     "Vasari Beam Modulator Unlock"
    ]
   ],
-  "Vasari Deploy Phase Gate": [
+  "Vasari Crystal Seeking Nanites": [
    [
-    "Vasari Mobile Phase Gate Unlock"
+    "Vasari Crystal Nanite Base Unlock"
    ]
   ],
-  "Vasari Deploy Phase Resonator": [
+  "Vasari Dark Fleet Tower": [
    [
-    "Vasari Deploy Phase Resonator Unlock"
+    "Vasari Dark Fleet Tower Unlock"
+   ]
+  ],
+  "Vasari Debris Reclamation Center": [
+   [
+    "Vasari Debris Reclamation Center Unlock"
+   ]
+  ],
+  "Vasari Defensive Uplink": [
+   [
+    "Vasari Unlock Defensive Uplink"
    ]
   ],
   "Vasari Deploy Orkulus Starbase": [
@@ -335,14 +595,34 @@
     "Vasari Gravity Stabilizer Unlock"
    ]
   ],
-  "Vasari Vask Tacticians": [
+  "Vasari Exodus Xeno Embassy": [
    [
-    "Vasari Vask Tacticians Unlock"
+    "Vasari Exodus Xeno Embassy Unlock"
+   ]
+  ],
+  "Vasari Crystallizing Gas Refinery": [
+   [
+    "Vasari Crystallizing Gas Refinery Unlock"
+   ]
+  ],
+  "Vasari Deconstruction Nanites": [
+   [
+    "Vasari Hygroscopic Nanites"
+   ]
+  ],
+  "Vasari Indoctrination Center": [
+   [
+    "Vasari Indoctrination Center Unlock"
    ]
   ],
   "Vasari Inertial Anchor": [
    [
     "Vasari Inertial Anchor Unlock"
+   ]
+  ],
+  "Vasari Labor Camp": [
+   [
+    "Vasari Labor Camp Unlock"
    ]
   ],
   "Vasari Vorastra Hangar": [
@@ -385,6 +665,11 @@
     "Vasari Wave Cannon Restoration"
    ]
   ],
+  "Vasari Metal Seeking Nanites": [
+   [
+    "Vasari Metal Nanite Base Unlock"
+   ]
+  ],
   "Vasari Mobile Empire Lab": [
    [
     "Vasari Mobile Empire Lab Unlock"
@@ -418,6 +703,21 @@
   "Vasari Mobile Adjunct Lab": [
    [
     "Vasari Mobile Adjunct Lab Unlock"
+   ]
+  ],
+  "Vasari Nano Algae Reactors": [
+   [
+    "Vasari Nano Algae Reactors"
+   ]
+  ],
+  "Vasari Ocean Floor Miner": [
+   [
+    "Vasari Ocean Floor Miner Unlock"
+   ]
+  ],
+  "Vasari Administrative Uplink": [
+   [
+    "Vasari Administrative Uplink Unlock"
    ]
   ],
   "Vasari Phase Missile Augments": [
@@ -470,9 +770,19 @@
     "Vasari Phase Cannon Restoration"
    ]
   ],
+  "Vasari Matter Hypercompiler": [
+   [
+    "Vasari Matter Hypercompiler Unlock"
+   ]
+  ],
   "Vasari Self-Repairing Armor": [
    [
     "Vasari Self-Repairing Armor Unlock"
+   ]
+  ],
+  "Vasari Stabilization Nanites": [
+   [
+    "Vasari Stabilization Nanites"
    ]
   ],
   "Vasari Debris Reintegration": [
@@ -520,9 +830,24 @@
     "Vasari Strike Craft Armor Unlock"
    ]
   ],
+  "Vasari Core Stripper": [
+   [
+    "Vasari Stripped to the Core"
+   ]
+  ],
+  "Vasari Organic Reclamation Nanites": [
+   [
+    "Vasari Organic Reclamation Nanites Unlock"
+   ]
+  ],
   "Vasari Wave Modulator": [
    [
     "Vasari Wave Modulator Unlock"
+   ]
+  ],
+  "Vasari Xeno Settlement": [
+   [
+    "Vasari Xeno Settlement Unlock"
    ]
   ]
  },
@@ -598,7 +923,7 @@
   "Advent Recharge Antimatter": [
    [],
    [
-    "advent_temple_of_renewal_structure_antimatter_restore_rate"
+    "Advent Antimatter Multicasting"
    ]
   ],
   "Advent Recharge Shields": [
@@ -735,11 +1060,6 @@
     "Advent Deliverance Engine Unlock"
    ]
   ],
-  "Advent Herald Envoy": [
-   [
-    "Advent Herald Unlock"
-   ]
-  ],
   "Advent Exotic Refinery": [
    [
     "Advent Exotic Refinery Unlock"
@@ -830,11 +1150,6 @@
     "Advent Temple of Unity Unlock"
    ]
   ],
-  "dlc_vasari_mad_titan": [
-   [
-    "Vasari Vorastra Unlock"
-   ]
-  ],
   "TEC Kalev Gauss Frigate": [
    [
     "TEC Kalev Unlock"
@@ -858,11 +1173,6 @@
   "TEC Broadcast Center": [
    [
     "TEC Interstellar Networks"
-   ]
-  ],
-  "TEC Neruda Envoy Frigate": [
-   [
-    "TEC Neruda Unlock"
    ]
   ],
   "TEC Exotic Refinery": [
@@ -1184,16 +1494,6 @@
     "Advent Collective Focus"
    ]
   ],
-  "Advent Unity Ascendant": [
-   [
-    "Advent Temple of Unity Unlock"
-   ]
-  ],
-  "Advent Unity Unleashed": [
-   [
-    "Advent Unity Ascendant"
-   ]
-  ],
   "Advent False Belief Monitoring": [
    [
     "Advent Unwavering Belief"
@@ -1269,11 +1569,6 @@
     "Advent Refined Laser Cannons"
    ]
   ],
-  "Advent Sanctify": [
-   [
-    "Advent Wall of Faith"
-   ]
-  ],
   "Advent Epitaph of the Lost Unlock": [
    [
     "Advent Irradiated Embrace"
@@ -1305,11 +1600,6 @@
    ]
   ],
   "Advent Mend": [
-   [
-    "Advent Guardian Unlock"
-   ]
-  ],
-  "Advent Will of the Unity": [
    [
     "Advent Guardian Unlock"
    ]
@@ -1454,17 +1744,7 @@
     "Advent Refined Frameworks"
    ]
   ],
-  "Advent Structural Shielding": [
-   [
-    "Advent Rotating Shield Frequencies"
-   ]
-  ],
   "Advent Nullify": [
-   [
-    "Advent Domina Unlock"
-   ]
-  ],
-  "Advent Repulsion Field": [
    [
     "Advent Domina Unlock"
    ]
@@ -1482,6 +1762,11 @@
   "Advent Recharge Shields": [
    [
     "Advent Temple of Renewal Unlock"
+   ]
+  ],
+  "Advent Tithe Sanctum Unlock": [
+   [
+    "Advent Commerce Adaptation"
    ]
   ],
   "Advent Unity Protectorate Unlock": [
@@ -1534,11 +1819,6 @@
     "Advent Beam Amplification"
    ]
   ],
-  "Advent Crystalline Development": [
-   [
-    "Advent Crystalline Embrace"
-   ]
-  ],
   "Advent Selective Harvesting": [
    [
     "Advent Orbital Extraction"
@@ -1546,7 +1826,7 @@
   ],
   "Advent Telekinetic Stasis": [
    [
-    "Advent Uniform Cultivation"
+    "Advent Selective Harvesting"
    ]
   ],
   "Advent Telekinetic Separation": [
@@ -1600,16 +1880,13 @@
    ]
   ],
   "Advent Booming Desert Cities": [
-   []
+   [
+    "Advent Thriving Desert Cities"
+   ]
   ],
   "Advent Hastened Acceleration": [
    [
     "Advent Energy Accelerator Unlock"
-   ]
-  ],
-  "Advent Ferrous Development": [
-   [
-    "Advent Ferrous Embrace"
    ]
   ],
   "Advent Elegant Hull Design": [
@@ -1625,11 +1902,6 @@
   "Advent Kinetic Dampening": [
    [
     "Advent Hydrostatic Shield Dome Unlock"
-   ]
-  ],
-  "Advent Arctic Development": [
-   [
-    "Advent Arctic Embrace"
    ]
   ],
   "Advent Empathic Alignment": [
@@ -1690,16 +1962,6 @@
   "Advent Anima Redirection": [
    [
     "Advent Refined Warheads"
-   ]
-  ],
-  "Advent Oceanic Development": [
-   [
-    "Advent Oceanic Embrace"
-   ]
-  ],
-  "Advent Anima Integration": [
-   [
-    "Advent Telekinetic Fracturing"
    ]
   ],
   "Advent Hardened Cities": [
@@ -1802,11 +2064,6 @@
     "Advent Willing Donations"
    ]
   ],
-  "Advent Volcanic Development": [
-   [
-    "Advent Volcanic Embrace"
-   ]
-  ],
   "TEC Triple Fortress": [
    [
     "TEC Compartmentalization"
@@ -1890,11 +2147,6 @@
   "TEC Desert Mercantile Mandate": [
    [
     "TEC Desert Development"
-   ]
-  ],
-  "TEC Neruda Envoy Upgrade": [
-   [
-    "TEC Neruda Unlock"
    ]
   ],
   "TEC Garrison Expansion": [
@@ -2047,11 +2299,6 @@
     "TEC Improved Shield Arrays"
    ]
   ],
-  "trader_shield_burst_restore": [
-   [
-    "TEC Improved Shield Arrays"
-   ]
-  ],
   "TEC Compartmentalization": [
    [
     "TEC Argonev Unlock"
@@ -2147,11 +2394,6 @@
     "TEC Orbital Commerce"
    ]
   ],
-  "TEC Cultural Market Bonus": [
-   [
-    "TEC Coalition Association"
-   ]
-  ],
   "TEC Interstellar Commerce": [
    [
     "TEC Addictive Consumerism"
@@ -2210,11 +2452,6 @@
   "TEC Core Systems Armor Unlock": [
    [
     "TEC Advanced Metallurgy"
-   ]
-  ],
-  "TEC Intercept": [
-   [
-    "TEC Harcka Unlock"
    ]
   ],
   "TEC Heavy Garrison": [
@@ -2358,11 +2595,6 @@
    ]
   ],
   "TEC Recharger Droids Unlock": [
-   [
-    "TEC Hoshiko Unlock"
-   ]
-  ],
-  "TEC EMP Droids Unlock": [
    [
     "TEC Hoshiko Unlock"
    ]
@@ -2712,16 +2944,6 @@
     "Vasari Resource Sublimation"
    ]
   ],
-  "Vasari Mobile Phase Gate Unlock": [
-   [
-    "Vasari Phase Gate Unlock"
-   ]
-  ],
-  "Vasari Deploy Phase Resonator Unlock": [
-   [
-    "Vasari Phase Resonator"
-   ]
-  ],
   "Vasari Deploy Orkulus Unlock": [
    [
     "Vasari Orkulus Unlock"
@@ -2797,11 +3019,6 @@
     "Vasari Kultorask Unlock"
    ]
   ],
-  "Vasari Vorastra Rulership": [
-   [
-    "Vasari Vorastra Unlock"
-   ]
-  ],
   "Vasari Wave Cannon Restoration": [
    [
     "Vasari Vorastra Unlock"
@@ -2828,11 +3045,6 @@
    ]
   ],
   "Vasari Mobile Phase Detection": [
-   [
-    "Vasari Serevun Unlock"
-   ]
-  ],
-  "Vasari Overseer Tower Unlock": [
    [
     "Vasari Serevun Unlock"
    ]
@@ -2980,11 +3192,6 @@
   "Vasari Stabilization Nanites": [
    [
     "Vasari Crystalline Occupation"
-   ]
-  ],
-  "Vasari Localized Phasing": [
-   [
-    "Vasari Stabilization Nanites"
    ]
   ],
   "Vasari Dark Fleet Tower Upgrade": [
