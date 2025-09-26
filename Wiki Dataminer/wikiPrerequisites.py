@@ -136,6 +136,8 @@ def main(completeItemSet : set = set()):
     with open('WikiFiles\\Wikiprerequsites.json', 'w') as file:
         json.dump(prereqsDict, file, indent=1)
 
+    return(prereqsDict)
+
 
 if __name__ == "__main__":
     main()
