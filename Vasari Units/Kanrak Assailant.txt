@@ -19,4 +19,4 @@ Kanrak Assailant
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium phase missile     	13.3 	x1    	13.3 	400   	9000 
+		medium phase missile     	10.0 	x1    	10.0 	510   	9000 

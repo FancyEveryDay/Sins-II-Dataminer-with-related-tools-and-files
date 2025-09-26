@@ -19,4 +19,4 @@ Javelis LRM Cruiser
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium missile           	20.0 	x1    	20.0 	400   	12000
+		medium missile           	20.0 	x1    	20.0 	450   	12000

@@ -19,5 +19,5 @@ Missile Battery
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium missile           	10.0 	x1    	10.0 	400   	12000
+		medium missile           	10.0 	x1    	10.0 	450   	12000
 		point defense autocannon 	3.0  	x2    	6.0  	0     	5000 

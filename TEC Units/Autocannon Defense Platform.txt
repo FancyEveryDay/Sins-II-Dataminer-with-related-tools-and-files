@@ -19,4 +19,4 @@ Autocannon Defense Platform
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy autocannon         	32.0 	x1    	32.0 	300   	10000
+		heavy autocannon         	32.0 	x1    	32.0 	250   	10000

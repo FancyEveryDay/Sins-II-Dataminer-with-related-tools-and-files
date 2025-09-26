@@ -2,167 +2,167 @@
  "unit_item": {
   "Advent Atmospheric Shield Dome": [
    [
-    "Advent Atmospheric Shield Dome Unlock"
+    "Advent Atmospheric Shield Dome Blueprint"
    ]
   ],
   "Advent Coalescence Sanctum": [
    [
-    "Advent Coalescence Sanctum Unlock"
+    "Advent Coalescence Sanctum Blueprint"
    ]
   ],
   "Advent Crystal Enrichment Center": [
    [
-    "Advent Crystal Enrichment Center Unlock"
+    "Advent Crystal Enrichment Center Blueprint"
    ]
   ],
   "Advent Cynosural Reservoir": [
    [
-    "Advent Cynosural Reservoir Unlock"
+    "Advent Cynosural Reservoir Blueprint"
    ]
   ],
   "Advent Deploy Transcencia Starbase": [
    [
-    "Advent Deploy Transcencia Unlock"
+    "Advent Deploy Transcencia Blueprint"
    ]
   ],
   "Advent Empyrean City": [
    [
-    "Advent Empyrean City Unlock"
+    "Advent Empyrean City Blueprint"
    ]
   ],
   "Advent Energy Accelerator": [
    [
-    "Advent Energy Accelerator Unlock"
+    "Advent Energy Accelerator Blueprint"
    ]
   ],
   "Advent Epitaph of the Lost": [
    [
-    "Advent Epitaph of the Lost Unlock"
+    "Advent Epitaph of the Lost Blueprint"
    ]
   ],
   "Advent Essence Reservoir": [
    [
-    "Advent Essence Reservoir Unlock"
+    "Advent Essence Reservoir Blueprint"
    ]
   ],
   "Advent Brilliance Array": [
    [
-    "Advent Brilliance Array Unlock"
+    "Advent Brilliance Array Blueprint"
    ]
   ],
   "Advent PsiKinetic Plating": [
    [
-    "Advent PsiKinetic Plating Unlock"
+    "Advent PsiKinetic Plating Blueprint"
    ]
   ],
   "Advent Consecration Inducer": [
    [
-    "Advent Consecration Inducer Unlock"
+    "Advent Consecration Inducer Blueprint"
    ]
   ],
   "Advent Vex Amplifier": [
    [
-    "Advent Vex Amplifier Unlock"
+    "Advent Vex Amplifier Blueprint"
    ]
   ],
   "Advent Guiding Mentor": [
    [
-    "Advent Guiding Mentor Unlock"
+    "Advent Guiding Mentor Blueprint"
    ]
   ],
   "Advent Harmony Circuit": [
    [
-    "Advent Harmony Circuit Unlock"
+    "Advent Harmony Circuit Blueprint"
    ]
   ],
   "Advent Heathen Quarter": [
    [
-    "Advent Heathen Quarter Unlock"
+    "Advent Heathen Quarter Blueprint"
    ]
   ],
   "Advent Hydrostatic Shield Dome": [
    [
-    "Advent Hydrostatic Shield Dome Unlock"
+    "Advent Hydrostatic Shield Dome Blueprint"
    ]
   ],
   "Advent Laminate Forge": [
    [
-    "Advent Laminate Forge Unlock"
+    "Advent Laminate Forge Blueprint"
    ]
   ],
   "Advent Additional Armor": [
    [
-    "Advent Additional Armor Unlock"
+    "Advent Additional Armor Blueprint"
    ]
   ],
   "Advent Shield Booster": [
    [
-    "Advent Shield Booster Unlock"
+    "Advent Shield Booster Blueprint"
    ]
   ],
   "Advent NeuroAugment Center": [
    [
-    "Advent NeuroAugment Center Unlock"
+    "Advent NeuroAugment Center Blueprint"
    ]
   ],
   "Advent NeuroPsion Purifier": [
    [
-    "Advent NeuroPsion Purifier Unlock"
+    "Advent NeuroPsion Purifier Blueprint"
    ]
   ],
   "Advent Pelagic Interface Relay": [
    [
-    "Advent Pelagic Interface Relay Unlock"
+    "Advent Pelagic Interface Relay Blueprint"
    ]
   ],
   "Advent Plasma Agitator": [
    [
-    "Advent Plasma Agitator Unlock"
+    "Advent Plasma Agitator Blueprint"
    ]
   ],
   "Advent Plasma Furnace": [
    [
-    "Advent Plasma Furnace Unlock"
+    "Advent Plasma Furnace Blueprint"
    ]
   ],
   "Advent Prescience Filter": [
    [
-    "Advent Prescience Filter Unlock"
+    "Advent Prescience Filter Blueprint"
    ]
   ],
   "Advent PsiCredit Mint": [
    [
-    "Advent PsiCredit Mint Unlock"
+    "Advent PsiCredit Mint Blueprint"
    ]
   ],
   "Advent Psionic Dynamo": [
    [
-    "Advent Psionic Dynamo Unlock"
+    "Advent Psionic Dynamo Blueprint"
    ]
   ],
   "Advent Radiation Shield Dome": [
    [
-    "Advent Radiation Shield Dome Unlock"
+    "Advent Radiation Shield Dome Blueprint"
    ]
   ],
   "Advent Eradica Swarm Missiles": [
    [
-    "Advent Eradica Swarm Missiles Unlock"
+    "Advent Eradica Swarm Missiles Blueprint"
    ]
   ],
   "Advent Synchronous Shield": [
    [
-    "Advent Synchronous Shield Unlock"
+    "Advent Synchronous Shield Blueprint"
    ]
   ],
   "Advent Silent Monastery": [
    [
-    "Advent Silent Monastery Unlock"
+    "Advent Silent Monastery Blueprint"
    ]
   ],
   "Advent Evangelization Nodes": [
    [
-    "Advent Evangelization Nodes Unlock"
+    "Advent Evangelization Nodes Blueprint"
    ]
   ],
   "Advent Meteor Storm": [
@@ -172,7 +172,7 @@
   ],
   "Advent Planetary Shield Array": [
    [
-    "Advent Planetary Shield Array Unlock"
+    "Advent Planetary Shield Array Blueprint"
    ]
   ],
   "Advent Starbase Swarm Missiles": [
@@ -187,187 +187,202 @@
   ],
   "Advent Zealous Labor": [
    [
-    "Advent Zealous Labor Unlock"
+    "Advent Zealous Labor Blueprint"
    ]
   ],
   "Advent Starlight Augury": [
    [
-    "Advent Starlight Augury Unlock"
+    "Advent Starlight Augury Blueprint"
    ]
   ],
   "Advent Structural Force Fields": [
    [
-    "Advent Structural Force Fields Unlock"
+    "Advent Structural Force Fields Blueprint"
    ]
   ],
   "Advent Telepathic Relay": [
    [
-    "Advent Telepathic Relay Unlock"
+    "Advent Telepathic Relay Blueprint"
    ]
   ],
   "Advent Temple of Assimilation": [
    [
-    "Advent Temple of Assimilation Unlock"
+    "Advent Temple of Assimilation Blueprint"
    ]
   ],
   "Advent Temple of Pilgrimage": [
    [
-    "Advent Temple of Pilgrimage Unlock"
+    "Advent Temple of Pilgrimage Blueprint"
    ]
   ],
   "Advent Temple of Purification": [
    [
-    "Advent Temple of Purification Unlock"
+    "Advent Temple of Purification Blueprint"
    ]
   ],
   "Advent Temple of Resurrection": [
    [
-    "Advent Temple of Resurrection Unlock"
+    "Advent Temple of Resurrection Blueprint"
    ]
   ],
   "Advent Tithe Sanctum": [
    [
-    "Advent Tithe Sanctum Unlock"
+    "Advent Tithe Sanctum Blueprint"
    ]
   ],
   "Advent Unity Protectorate": [
    [
-    "Advent Unity Protectorate Unlock"
+    "Advent Unity Protectorate Blueprint"
+   ]
+  ],
+  "Advent Telepathic Amplifier": [
+   [
+    "Advent Telepathic Amplifier Blueprint"
+   ]
+  ],
+  "TEC Planet Cracker Warheads": [
+   [
+    "TEC Planet Cracker Warhead Blueprint"
+   ]
+  ],
+  "Vasari Departure Supplies": [
+   [
+    "Vasari Departure Planning"
    ]
   ],
   "TEC Armored Citadel": [
    [
-    "TEC Armored Citadel Unlock"
+    "TEC Armored Citadel Blueprint"
    ]
   ],
   "TEC Bastion Module": [
    [
-    "TEC Bastion Module Unlock"
+    "TEC Bastion Module Blueprint"
    ]
   ],
   "TEC Regional Government Office": [
    [
-    "TEC Regional Government Unlock"
+    "TEC Regional Government Blueprint"
    ]
   ],
   "TEC Unassailable Fortress": [
    [
-    "TEC Unassailable Fortress Unlock"
+    "TEC Unassailable Fortress Blueprint"
    ]
   ],
   "TEC Alloy Foundry": [
    [
-    "TEC Alloy Foundry Unlock"
+    "TEC Alloy Foundry Blueprint"
    ]
   ],
   "TEC Antimatter Engine": [
    [
-    "TEC Antimatter Engine Unlock"
+    "TEC Antimatter Engine Blueprint"
    ]
   ],
   "TEC Aquaculture Harvester": [
    [
-    "TEC Aquaculture Harvester Unlock"
+    "TEC Aquaculture Harvester Blueprint"
    ]
   ],
   "TEC Auxiliary Supply Depot": [
    [
-    "TEC Auxiliary Supply Depot Unlock"
+    "TEC Auxiliary Supply Depot Blueprint"
    ]
   ],
   "TEC Ablative Armor": [
    [
-    "TEC Ablative Armor Unlock"
+    "TEC Ablative Armor Blueprint"
    ]
   ],
   "TEC Chemical Plant": [
    [
-    "TEC Chemical Plant Unlock"
+    "TEC Chemical Plant Blueprint"
    ]
   ],
   "TEC Combat Repair System": [
    [
-    "TEC Combat Repair System Unlock"
+    "TEC Combat Repair System Blueprint"
    ]
   ],
   "TEC Command Bunker": [
    [
-    "TEC Command Bunker Unlock"
+    "TEC Command Bunker Blueprint"
    ]
   ],
   "TEC Commercial District": [
    [
-    "TEC Commercial District Unlock"
+    "TEC Commercial District Blueprint"
    ]
   ],
   "TEC Synthetic Crystal Farm": [
    [
-    "TEC Synthetic Crystal Farm Unlock"
+    "TEC Synthetic Crystal Farm Blueprint"
    ]
   ],
   "TEC Deploy Argonev Starbase": [
    [
-    "TEC Deploy Argonev Unlock"
+    "TEC Deploy Argonev Blueprint"
    ]
   ],
   "TEC Ferric Mining Rig": [
    [
-    "TEC Ferric Mining Rig Unlock"
+    "TEC Ferric Mining Rig Blueprint"
    ]
   ],
   "TEC Fissile Enrichment Plant": [
    [
-    "TEC Fissile Enrichment Plant Unlock"
+    "TEC Fissile Enrichment Plant Blueprint"
    ]
   ],
   "TEC Flak Burst": [
    [
-    "TEC Flak Burst Unlock"
+    "TEC Flak Burst Blueprint"
    ]
   ],
   "TEC Fulfillment Warehouse": [
    [
-    "TEC Fulfillment Warehouse Unlock"
+    "TEC Fulfillment Warehouse Blueprint"
    ]
   ],
   "TEC Gas Crystalizer": [
    [
-    "TEC Gas Crystallizer Unlock"
+    "TEC Gas Crystallizer Blueprint"
    ]
   ],
   "TEC Gas Harvester": [
    [
-    "TEC Gas Harvester Unlock"
+    "TEC Gas Harvester Blueprint"
    ]
   ],
   "TEC Harvesting Crawler": [
    [
-    "TEC Harvesting Crawler Unlock"
+    "TEC Harvesting Crawler Blueprint"
    ]
   ],
   "TEC Core Systems Armor": [
    [
-    "TEC Core Systems Armor Unlock"
+    "TEC Core Systems Armor Blueprint"
    ]
   ],
   "TEC Heavy Gauss Slugs": [
    [
-    "TEC Heavy Gauss Slugs Unlock"
+    "TEC Heavy Gauss Slugs Blueprint"
    ]
   ],
   "TEC High Yield Warheads": [
    [
-    "TEC High Yield Warheads Unlock"
+    "TEC High Yield Warheads Blueprint"
    ]
   ],
   "TEC Ice Processing Facility": [
    [
-    "TEC Ice Processing Facility Unlock"
+    "TEC Ice Processing Facility Blueprint"
    ]
   ],
   "TEC Industrial Complex": [
    [
-    "TEC Industrial Complex Unlock"
+    "TEC Industrial Complex Blueprint"
    ]
   ],
   "TEC Garrison Recruitment Center": [
@@ -377,67 +392,67 @@
   ],
   "TEC Home Guard Outpost": [
    [
-    "TEC Home Guard Outpost Unlock"
+    "TEC Home Guard Outpost Blueprint"
    ]
   ],
   "TEC Ankylon Hangar": [
    [
-    "TEC Ankylon Hangar Unlock"
+    "TEC Ankylon Hangar Blueprint"
    ]
   ],
   "TEC Extra Armor Plating I": [
    [
-    "TEC Extra Armor Plating I Unlock"
+    "TEC Extra Armor Plating I Blueprint"
    ]
   ],
   "TEC Extra Armor Plating II": [
    [
-    "TEC Extra Armor Plating II Unlock"
+    "TEC Extra Armor Plating II Blueprint"
    ]
   ],
   "TEC Extra Armor Plating III": [
    [
-    "TEC Extra Armor Plating III Unlock"
+    "TEC Extra Armor Plating III Blueprint"
    ]
   ],
   "TEC Ankylon Planetary Shield Array": [
    [
-    "TEC Ankylon Planetary Shield Array Unlock"
+    "TEC Ankylon Planetary Shield Array Blueprint"
    ]
   ],
   "TEC Ankylon Beams": [
    [
-    "TEC Ankylon Beam Turrets Unlock"
+    "TEC Ankylon Beam Turrets Blueprint"
    ]
   ],
   "TEC Ankylon Missile Batteries": [
    [
-    "TEC Ankylon Missile Launchers Unlock"
+    "TEC Ankylon Missile Launchers Blueprint"
    ]
   ],
   "TEC Media Conglomerate": [
    [
-    "TEC Media Conglomerate Unlock"
+    "TEC Media Conglomerate Blueprint"
    ]
   ],
   "TEC Geothermal Smelter": [
    [
-    "TEC Geothermal Smelter Unlock"
+    "TEC Geothermal Smelter Blueprint"
    ]
   ],
   "TEC Reactive Plating": [
    [
-    "TEC Reactive Plating Unlock"
+    "TEC Reactive Plating Blueprint"
    ]
   ],
   "TEC Missile Guidance Computer": [
    [
-    "TEC Missile Guidance Computer Unlock"
+    "TEC Missile Guidance Computer Blueprint"
    ]
   ],
   "TEC Munitions Plant": [
    [
-    "TEC Munitions Plant Unlock"
+    "TEC Munitions Plant Blueprint"
    ]
   ],
   "TEC High Pressure Domes": [
@@ -447,57 +462,57 @@
   ],
   "TEC Pirate Mercenary Base": [
    [
-    "TEC Pirate Mercenary Base Unlock"
+    "TEC Pirate Mercenary Base Blueprint"
    ]
   ],
   "TEC Rapid Autoloader": [
    [
-    "TEC Rapid Autoloader Unlock"
+    "TEC Rapid Autoloader Blueprint"
    ]
   ],
   "TEC Center for Human Doctrine": [
    [
-    "TEC Center for Human Doctrine Unlock"
+    "TEC Center for Human Doctrine Blueprint"
    ]
   ],
   "TEC Ragnarov Hangar": [
    [
-    "TEC Ragnarov Hangar Unlock"
+    "TEC Ragnarov Hangar Blueprint"
    ]
   ],
   "TEC Ragnarov Missile Launchers": [
    [
-    "TEC Ragnarov Missile Launchers Unlock"
+    "TEC Ragnarov Missile Launchers Blueprint"
    ]
   ],
   "TEC Ragnarov Railgun Accelerator": [
    [
-    "TEC Railgun Accelerator Unlock"
+    "TEC Railgun Accelerator Blueprint"
    ]
   ],
   "TEC Orbital Mining Control": [
    [
-    "TEC Orbital Mining Control Unlock"
+    "TEC Orbital Mining Control Blueprint"
    ]
   ],
   "TEC Reserve Squadron Hangar": [
    [
-    "TEC Reserve Squadron Hangar Unlock"
+    "TEC Reserve Squadron Hangar Blueprint"
    ]
   ],
   "TEC Resort Complex": [
    [
-    "TEC Resort Complex Unlock"
+    "TEC Resort Complex Blueprint"
    ]
   ],
   "TEC Docking Booms": [
    [
-    "TEC Docking Booms Unlock"
+    "TEC Docking Booms Blueprint"
    ]
   ],
   "TEC Argonev Planetary Shield Array": [
    [
-    "TEC Planetary Shield Array Unlock"
+    "TEC Planetary Shield Array Blueprint"
    ]
   ],
   "TEC Safety Override Protocol": [
@@ -532,12 +547,12 @@
   ],
   "TEC Targeting Array": [
    [
-    "TEC Targeting Array Unlock"
+    "TEC Targeting Array Blueprint"
    ]
   ],
   "TEC Volatile Accelerants": [
    [
-    "TEC Volatile Accelerants Unlock"
+    "TEC Volatile Accelerants Blueprint"
    ]
   ],
   "TEC War Reporter": [
@@ -547,12 +562,12 @@
   ],
   "Vasari Alliance Xeno Embassy": [
    [
-    "Vasari Alliance Xeno Embassy Unlock"
+    "Vasari Alliance Xeno Embassy Blueprint"
    ]
   ],
   "Vasari Antimatter Recharger": [
    [
-    "Vasari Antimatter Recharger Unlock"
+    "Vasari Antimatter Recharger Blueprint"
    ]
   ],
   "Vasari Intercultural Exchange": [
@@ -562,47 +577,47 @@
   ],
   "Vasari Beam Modulator": [
    [
-    "Vasari Beam Modulator Unlock"
+    "Vasari Beam Modulator Blueprint"
    ]
   ],
   "Vasari Crystal Seeking Nanites": [
    [
-    "Vasari Crystal Nanite Base Unlock"
+    "Vasari Crystal Nanite Base Blueprint"
    ]
   ],
   "Vasari Dark Fleet Tower": [
    [
-    "Vasari Dark Fleet Tower Unlock"
+    "Vasari Dark Fleet Tower Blueprint"
    ]
   ],
   "Vasari Debris Reclamation Center": [
    [
-    "Vasari Debris Reclamation Center Unlock"
+    "Vasari Debris Reclamation Center Blueprint"
    ]
   ],
   "Vasari Defensive Uplink": [
    [
-    "Vasari Unlock Defensive Uplink"
+    "Vasari Defensive Uplink Blueprint"
    ]
   ],
   "Vasari Deploy Orkulus Starbase": [
    [
-    "Vasari Deploy Orkulus Unlock"
+    "Vasari Deploy Orkulus Blueprint"
    ]
   ],
   "Vasari Gravity Stabilizer": [
    [
-    "Vasari Gravity Stabilizer Unlock"
+    "Vasari Gravity Stabilizer Blueprint"
    ]
   ],
   "Vasari Exodus Xeno Embassy": [
    [
-    "Vasari Exodus Xeno Embassy Unlock"
+    "Vasari Exodus Xeno Embassy Blueprint"
    ]
   ],
   "Vasari Crystallizing Gas Refinery": [
    [
-    "Vasari Crystallizing Gas Refinery Unlock"
+    "Vasari Crystallizing Gas Refinery Blueprint"
    ]
   ],
   "Vasari Deconstruction Nanites": [
@@ -612,17 +627,17 @@
   ],
   "Vasari Indoctrination Center": [
    [
-    "Vasari Indoctrination Center Unlock"
+    "Vasari Indoctrination Center Blueprint"
    ]
   ],
   "Vasari Inertial Anchor": [
    [
-    "Vasari Inertial Anchor Unlock"
+    "Vasari Inertial Anchor Blueprint"
    ]
   ],
   "Vasari Labor Camp": [
    [
-    "Vasari Labor Camp Unlock"
+    "Vasari Labor Camp Blueprint"
    ]
   ],
   "Vasari Vorastra Hangar": [
@@ -647,12 +662,12 @@
   ],
   "Vasari Micro Phase Jump Enhancer": [
    [
-    "Vasari Micro Phase Jump Enhancer Unlock"
+    "Vasari Micro Phase Jump Enhancer Blueprint"
    ]
   ],
   "Vasari The Maw Enhancer": [
    [
-    "Vasari The Maw Enhancer Unlock"
+    "Vasari The Maw Enhancer Blueprint"
    ]
   ],
   "Vasari Vorastra Phase Cannon": [
@@ -667,12 +682,12 @@
   ],
   "Vasari Metal Seeking Nanites": [
    [
-    "Vasari Metal Nanite Base Unlock"
+    "Vasari Metal Nanite Base Blueprint"
    ]
   ],
   "Vasari Mobile Empire Lab": [
    [
-    "Vasari Mobile Empire Lab Unlock"
+    "Vasari Mobile Empire Lab Blueprint"
    ]
   ],
   "Vasari Mobile Exotic Refinery": [
@@ -682,27 +697,27 @@
   ],
   "Vasari Mobile Fleet Beacon": [
    [
-    "Vasari Mobile Fleet Beacon Unlock"
+    "Vasari Mobile Fleet Beacon Blueprint"
    ]
   ],
   "Vasari Mobile Warfare Lab": [
    [
-    "Vasari Mobile Warfare Lab Unlock"
+    "Vasari Mobile Warfare Lab Blueprint"
    ]
   ],
   "Vasari Mobile Resonance Capacitor": [
    [
-    "Vasari Mobile Resonance Capacitor Unlock"
+    "Vasari Mobile Resonance Capacitor Blueprint"
    ]
   ],
   "Vasari Mobile Rulership": [
    [
-    "Vasari Mobile Rulership Unlock"
+    "Vasari Mobile Rulership Blueprint"
    ]
   ],
   "Vasari Mobile Adjunct Lab": [
    [
-    "Vasari Mobile Adjunct Lab Unlock"
+    "Vasari Mobile Adjunct Lab Blueprint"
    ]
   ],
   "Vasari Nano Algae Reactors": [
@@ -712,27 +727,27 @@
   ],
   "Vasari Ocean Floor Miner": [
    [
-    "Vasari Ocean Floor Miner Unlock"
+    "Vasari Ocean Floor Miner Blueprint"
    ]
   ],
   "Vasari Administrative Uplink": [
    [
-    "Vasari Administrative Uplink Unlock"
+    "Vasari Administrative Uplink Blueprint"
    ]
   ],
   "Vasari Phase Missile Augments": [
    [
-    "Vasari Phase Missile Augments Unlock"
+    "Vasari Phase Missile Augments Blueprint"
    ]
   ],
   "Vasari Resonance Amplifier": [
    [
-    "Vasari Resonance Amplifier Unlock"
+    "Vasari Resonance Amplifier Blueprint"
    ]
   ],
   "Vasari Phase Attenuated Shield": [
    [
-    "Vasari Phase Attenuated Shield Unlock"
+    "Vasari Phase Attenuated Shield Blueprint"
    ]
   ],
   "Vasari Kultorask Hangar Expansion": [
@@ -752,12 +767,12 @@
   ],
   "Vasari Gravity Pulse Enhancer": [
    [
-    "Vasari Gravity Pulse Enhancer Unlock"
+    "Vasari Gravity Pulse Enhancer Blueprint"
    ]
   ],
   "Vasari Enhanced Nano Emitters": [
    [
-    "Vasari Enhanced Nano Emitters Unlock"
+    "Vasari Enhanced Nano Emitters Blueprint"
    ]
   ],
   "Vasari Kultorask Phase Missile Launchers": [
@@ -772,12 +787,12 @@
   ],
   "Vasari Matter Hypercompiler": [
    [
-    "Vasari Matter Hypercompiler Unlock"
+    "Vasari Matter Hypercompiler Blueprint"
    ]
   ],
   "Vasari Self-Repairing Armor": [
    [
-    "Vasari Self-Repairing Armor Unlock"
+    "Vasari Self-Repairing Armor Blueprint"
    ]
   ],
   "Vasari Stabilization Nanites": [
@@ -787,7 +802,7 @@
   ],
   "Vasari Debris Reintegration": [
    [
-    "Vasari Debris Reintegration Unlock"
+    "Vasari Debris Reintegration Blueprint"
    ]
   ],
   "Vasari Efficient Hangars I": [
@@ -797,17 +812,17 @@
   ],
   "Vasari Orkulus Phase Jump Drive": [
    [
-    "Vasari Orkulus Phase Jump Drive Unlock"
+    "Vasari Orkulus Phase Jump Drive Blueprint"
    ]
   ],
   "Vasari Planetary Shield Array": [
    [
-    "Vasari Planetary Shield Array Unlock"
+    "Vasari Planetary Shield Array Blueprint"
    ]
   ],
   "Vasari Intelligent Armor I": [
    [
-    "Vasari Intelligent Armor Unlock"
+    "Vasari Intelligent Armor Blueprint"
    ]
   ],
   "Vasari Intelligent Armor III": [
@@ -825,9 +840,9 @@
     "Vasari Armament Restoration"
    ]
   ],
-  "Vasari Strike Craft Armor": [
+  "Vasari Strikecraft Armor": [
    [
-    "Vasari Strike Craft Armor Unlock"
+    "Vasari Strikecraft Armor Blueprint"
    ]
   ],
   "Vasari Core Stripper": [
@@ -837,17 +852,17 @@
   ],
   "Vasari Organic Reclamation Nanites": [
    [
-    "Vasari Organic Reclamation Nanites Unlock"
+    "Vasari Organic Reclamation Nanites Blueprint"
    ]
   ],
   "Vasari Wave Modulator": [
    [
-    "Vasari Wave Modulator Unlock"
+    "Vasari Wave Modulator Blueprint"
    ]
   ],
   "Vasari Xeno Settlement": [
    [
-    "Vasari Xeno Settlement Unlock"
+    "Vasari Xeno Settlement Blueprint"
    ]
   ]
  },
@@ -962,7 +977,7 @@
   ],
   "TEC Repair": [
    [
-    "TEC Repair Droid Unlock"
+    "TEC Repair Droid Blueprint"
    ],
    [
     "TEC Advanced Repair Droids"
@@ -970,12 +985,12 @@
   ],
   "TEC Recharger Droids": [
    [
-    "TEC Recharger Droids Unlock"
+    "TEC Recharger Droids Blueprint"
    ]
   ],
   "TEC EMP Droids": [
    [
-    "TEC EMP Droids Unlock"
+    "TEC EMP Droids Blueprint"
    ]
   ],
   "TEC Repair Droids": [
@@ -987,6 +1002,11 @@
   "TEC Failsafe Jump Plotting": [
    [
     "TEC Failsafe Jump Plotting"
+   ]
+  ],
+  "TEC Torpedo Targeting Override": [
+   [
+    "TEC Torpedo Targeting Override"
    ]
   ],
   "Vasari Berserker Overcharge": [
@@ -1037,7 +1057,7 @@
  "unit": {
   "Advent Aeria Drone Host": [
    [
-    "Advent Aeria Unlock"
+    "Advent Aeria Blueprint"
    ]
   ],
   "Advent Crystal Extractor": [
@@ -1047,57 +1067,57 @@
   ],
   "Advent Temple of Communion": [
    [
-    "Advent Temple of Communion Unlock"
+    "Advent Temple of Communion Blueprint"
    ]
   ],
   "Advent Vigilis Sentinel": [
    [
-    "Advent Vigilis Unlock"
+    "Advent Vigilis Blueprint"
    ]
   ],
   "Advent Deliverance Engine": [
    [
-    "Advent Deliverance Engine Unlock"
+    "Advent Deliverance Engine Blueprint"
    ]
   ],
   "Advent Exotic Refinery": [
    [
-    "Advent Exotic Refinery Unlock"
+    "Advent Exotic Refinery Blueprint"
    ]
   ],
   "Advent Iconus Guardian": [
    [
-    "Advent Guardian Unlock"
+    "Advent Guardian Blueprint"
    ]
   ],
   "Advent Acolyte Corvette": [
    [
-    "Advent Acolyte Unlock"
+    "Advent Acolyte Blueprint"
    ]
   ],
   "Advent Hangar Defense": [
    [
-    "Advent Hangar Defense Unlock"
+    "Advent Hangar Defense Blueprint"
    ]
   ],
   "Advent Destra Crusader": [
    [
-    "Advent Destra Unlock"
+    "Advent Destra Blueprint"
    ]
   ],
   "Advent Exoria Illuminator": [
    [
-    "Advent Exoria Unlock"
+    "Advent Exoria Blueprint"
    ]
   ],
   "Advent Coronata Titan": [
    [
-    "Advent Coronata Unlock"
+    "Advent Coronata Blueprint"
    ]
   ],
   "Advent Titan Foundry": [
    [
-    "Advent Eradica Unlock"
+    "Advent Titan Foundry Blueprint"
    ]
   ],
   "Advent Metal Extractor": [
@@ -1107,12 +1127,12 @@
   ],
   "Advent Tempest Vessel": [
    [
-    "Advent Tempest Unlock"
+    "Advent Tempest Blueprint"
    ]
   ],
   "Advent Phase Jump Inhibitor": [
    [
-    "Advent Phase Jump Inhibitor Unlock"
+    "Advent Phase Jump Inhibitor Blueprint"
    ]
   ],
   "Advent Temple of Congregation": [
@@ -1122,47 +1142,77 @@
   ],
   "Advent Eradica Titan": [
    [
-    "Advent Eradica Unlock"
+    "Advent Eradica Blueprint"
    ]
   ],
-  "Advent Purge Vessel": [
+  "Advent Purge": [
    [
-    "Advent Purge Unlock"
+    "Advent Purge Blueprint"
    ]
   ],
   "Advent Transcencia Starbase": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
   "Advent Domina Subjugator": [
    [
-    "Advent Domina Unlock"
+    "Advent Domina Blueprint"
    ]
   ],
   "Advent Temple of Renewal": [
    [
-    "Advent Temple of Renewal Unlock"
+    "Advent Temple of Renewal Blueprint"
    ]
   ],
   "Advent Temple of Unity": [
    [
-    "Advent Temple of Unity Unlock"
+    "Advent Temple of Unity Blueprint"
+   ]
+  ],
+  "Advent Oblivia Dreadnought": [
+   [
+    "Advent Oblivia Blueprint"
+   ]
+  ],
+  "Advent Justicia Dreadnought": [
+   [
+    "Advent Justicia Blueprint"
+   ]
+  ],
+  "TEC Takadaran Command Fortress": [
+   [
+    "TEC Takadaran Blueprint"
+   ]
+  ],
+  "TEC Khevarkov Modular Battlecruiser": [
+   [
+    "TEC Khevarkov Blueprint"
+   ]
+  ],
+  "Vasari Anarkrul Wanderer": [
+   [
+    "Vasari Anarkrul Blueprint"
+   ]
+  ],
+  "Vasari Sularkon Tyrant": [
+   [
+    "Vasari Sularkon Blueprint"
    ]
   ],
   "TEC Kalev Gauss Frigate": [
    [
-    "TEC Kalev Unlock"
+    "TEC Kalev Blueprint"
    ]
   ],
   "TEC Garda Flak Frigate": [
    [
-    "TEC Garda Unlock"
+    "TEC Garda Blueprint"
    ]
   ],
   "TEC Percheron Carrier Cruiser": [
    [
-    "TEC Percheron Unlock"
+    "TEC Percheron Blueprint"
    ]
   ],
   "TEC Crystal Extractor": [
@@ -1177,27 +1227,32 @@
   ],
   "TEC Exotic Refinery": [
    [
-    "TEC Exotic Refinery Unlock"
+    "TEC Exotic Refinery Blueprint"
    ]
   ],
   "TEC Hangar Defense": [
    [
-    "TEC Hangar Defense Unlock"
+    "TEC Hangar Defense Blueprint"
    ]
   ],
   "TEC Harcka Heavy Cruiser": [
    [
-    "TEC Harcka Unlock"
+    "TEC Harcka Blueprint"
    ]
   ],
   "TEC Javelis LRM Cruiser": [
    [
-    "TEC Javelis Unlock"
+    "TEC Javelis Blueprint"
+   ]
+  ],
+  "TEC Ankylon Titan": [
+   [
+    "TEC Ankylon Blueprint"
    ]
   ],
   "TEC Titan Foundry": [
    [
-    "TEC Ragnarov Unlock"
+    "TEC Titan Foundry Blueprint"
    ]
   ],
   "TEC Metal Extractor": [
@@ -1207,17 +1262,17 @@
   ],
   "TEC Stilat Missile Corvette": [
    [
-    "TEC Stilat Unlock"
+    "TEC Stilat Blueprint"
    ]
   ],
   "TEC Novalith Cannon": [
    [
-    "TEC Novalith Unlock"
+    "TEC Novalith Blueprint"
    ]
   ],
   "TEC Phase Jump Inhibitor": [
    [
-    "TEC Phase Jump Inhibitor Unlock"
+    "TEC Phase Jump Inhibitor Blueprint"
    ]
   ],
   "TEC Orbital Transit Hub": [
@@ -1225,29 +1280,34 @@
     "TEC Interplanetary Transit"
    ]
   ],
+  "TEC Ragnarov Titan": [
+   [
+    "TEC Ragnarov Blueprint"
+   ]
+  ],
   "TEC Hoshiko Robotics Cruiser": [
    [
-    "TEC Hoshiko Unlock"
+    "TEC Hoshiko Blueprint"
    ]
   ],
   "TEC Krosov Siege Frigate": [
    [
-    "TEC Krosov Unlock"
+    "TEC Krosov Blueprint"
    ]
   ],
   "TEC Shriken Gunship Corvette": [
    [
-    "TEC Shriken Unlock"
+    "TEC Shriken Blueprint"
    ]
   ],
   "TEC Argonev Starbase": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Ogrov Torpedo Cruiser": [
    [
-    "TEC Ogrov Unlock"
+    "TEC Ogrov Blueprint"
    ]
   ],
   "TEC Trade Port": [
@@ -1257,27 +1317,27 @@
   ],
   "Vasari Vulrak Penetrator": [
    [
-    "Vasari Vulrak Unlock"
+    "Vasari Vulrak Blueprint"
    ]
   ],
   "Vasari Sulsurak Defensor": [
    [
-    "Vasari Sulsurak Unlock"
+    "Vasari Sulsurak Blueprint"
    ]
   ],
   "Vasari Junsurak Warden": [
    [
-    "Vasari Junsurak Unlock"
+    "Vasari Junsurak Blueprint"
    ]
   ],
   "Vasari Lasurak Transporter": [
    [
-    "Vasari Lasurak Unlock"
+    "Vasari Lasurak Blueprint"
    ]
   ],
   "Vasari Xeno Relations Center": [
    [
-    "Vasari Xeno Relations Center Unlock"
+    "Vasari Xeno Relations Center Blueprint"
    ]
   ],
   "Vasari Exotic Refinery": [
@@ -1287,37 +1347,37 @@
   ],
   "Vasari Jusotra Fabricator Cruiser": [
    [
-    "Vasari Jusotra Unlock"
+    "Vasari Jusotra Blueprint"
    ]
   ],
   "Vasari Kortovas Oppressor": [
    [
-    "Vasari Kortovas Unlock"
+    "Vasari Kortovas Blueprint"
    ]
   ],
   "Vasari Kanrak Assailant": [
    [
-    "Vasari Kanrak Unlock"
+    "Vasari Kanrak Blueprint"
    ]
   ],
   "Vasari Vorastra Titan": [
    [
-    "Vasari Vorastra Unlock"
+    "Vasari Vorastra Blueprint"
    ]
   ],
   "Vasari Serevun Overseer": [
    [
-    "Vasari Serevun Unlock"
+    "Vasari Serevun Blueprint"
    ]
   ],
   "Vasari Phase Gate": [
    [
-    "Vasari Phase Gate Unlock"
+    "Vasari Phase Gate Blueprint"
    ]
   ],
   "Vasari Phase Jump Inhibitor": [
    [
-    "Vasari Phase Jump Inhibitor Unlock"
+    "Vasari Phase Jump Inhibitor Blueprint"
    ]
   ],
   "Vasari Phase Resonator": [
@@ -1332,27 +1392,27 @@
   ],
   "Vasari Tosurak Raider": [
    [
-    "Vasari Tosurak Unlock"
+    "Vasari Tosurak Blueprint"
    ]
   ],
   "Vasari Kultorask Titan": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
   "Vasari Regeneration Bay": [
    [
-    "Vasari Regeneration Bay Unlock"
+    "Vasari Regeneration Bay Blueprint"
    ]
   ],
   "Vasari Karrastra Destructor": [
    [
-    "Vasari Karrastra Unlock"
+    "Vasari Karrastra Blueprint"
    ]
   ],
   "Vasari Orkulus Starbase": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ]
  },
@@ -1391,17 +1451,7 @@
   ],
   "Advent Andvar Cultivation": [
    [
-    "Advent Exotic Refinery Unlock"
-   ]
-  ],
-  "Advent Wall of Faith": [
-   [
-    "Advent Shield of Faith"
-   ]
-  ],
-  "Advent Fortress of Faith": [
-   [
-    "Advent Wall of Faith"
+    "Advent Exotic Refinery Blueprint"
    ]
   ],
   "Advent Improved Meteoroid Control": [
@@ -1446,12 +1496,12 @@
   ],
   "Advent Meteoroid Control": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
   "Advent Plasmatic Tauranite": [
    [
-    "Advent Exotic Refinery Unlock"
+    "Advent Exotic Refinery Blueprint"
    ]
   ],
   "Advent Mass Transcendence": [
@@ -1459,7 +1509,7 @@
     "Advent Total Assimilation"
    ]
   ],
-  "Advent Shield of Faith": [
+  "Advent Wall of Faith": [
    [
     "Advent Unwavering Belief"
    ]
@@ -1471,12 +1521,12 @@
   ],
   "Advent Antimatter Multicasting": [
    [
-    "Advent Temple of Renewal Unlock"
+    "Advent Temple of Renewal Blueprint"
    ]
   ],
   "Advent Unity Awakened": [
    [
-    "Advent Temple of Unity Unlock"
+    "Advent Temple of Unity Blueprint"
    ]
   ],
   "Advent Accumulated Will": [
@@ -1499,17 +1549,17 @@
     "Advent Unwavering Belief"
    ]
   ],
-  "Advent Atmospheric Shield Dome Unlock": [
+  "Advent Atmospheric Shield Dome Blueprint": [
    [
     "Advent Barren Development"
    ]
   ],
   "Advent Quarnium Forging": [
    [
-    "Advent Exotic Refinery Unlock"
+    "Advent Exotic Refinery Blueprint"
    ]
   ],
-  "Advent Crystal Enrichment Center Unlock": [
+  "Advent Crystal Enrichment Center Blueprint": [
    [
     "Advent Selective Harvesting"
    ]
@@ -1529,29 +1579,29 @@
     "Advent Total Assimilation"
    ]
   ],
-  "Advent Cynosural Reservoir Unlock": [
+  "Advent Cynosural Reservoir Blueprint": [
    [
-    "Advent Temple of Unity Unlock"
+    "Advent Temple of Unity Blueprint"
    ]
   ],
-  "Advent Deliverance Engine Unlock": [
+  "Advent Deliverance Engine Blueprint": [
    [
     "Advent Total Assimilation"
    ]
   ],
   "Advent Dominating Deliverance": [
    [
-    "Advent Deliverance Engine Unlock"
+    "Advent Deliverance Engine Blueprint"
    ]
   ],
   "Advent Resurrecting Deliverance": [
    [
-    "Advent Deliverance Engine Unlock"
+    "Advent Deliverance Engine Blueprint"
    ]
   ],
-  "Advent Deploy Transcencia Unlock": [
+  "Advent Deploy Transcencia Blueprint": [
    [
-    "Advent Tempest Unlock"
+    "Advent Tempest Blueprint"
    ]
   ],
   "Advent Eyes of the Converted": [
@@ -1559,72 +1609,72 @@
     "Advent False Belief Monitoring"
    ]
   ],
-  "Advent Empyrean City Unlock": [
+  "Advent Empyrean City Blueprint": [
    [
     "Advent Gas Giant Embrace"
    ]
   ],
-  "Advent Energy Accelerator Unlock": [
+  "Advent Energy Accelerator Blueprint": [
    [
     "Advent Refined Laser Cannons"
    ]
   ],
-  "Advent Epitaph of the Lost Unlock": [
+  "Advent Epitaph of the Lost Blueprint": [
    [
     "Advent Irradiated Embrace"
    ]
   ],
-  "Advent Essence Reservoir Unlock": [
+  "Advent Essence Reservoir Blueprint": [
    [
     "Advent Adept Psi Training"
    ]
   ],
-  "Advent Brilliance Array Unlock": [
+  "Advent Brilliance Array Blueprint": [
    [
     "Advent Adept Psi Training"
    ]
   ],
-  "Advent PsiKinetic Plating Unlock": [
+  "Advent PsiKinetic Plating Blueprint": [
    [
     "Advent Novice Psi Training"
    ]
   ],
-  "Advent Consecration Inducer Unlock": [
+  "Advent Consecration Inducer Blueprint": [
    [
     "Advent Adept Psi Training"
    ]
   ],
-  "Advent Vex Amplifier Unlock": [
+  "Advent Vex Amplifier Blueprint": [
    [
     "Advent Adept Psi Training"
    ]
   ],
   "Advent Mend": [
    [
-    "Advent Guardian Unlock"
+    "Advent Guardian Blueprint"
    ]
   ],
-  "Advent Guiding Mentor Unlock": [
+  "Advent Guiding Mentor Blueprint": [
    [
     "Advent Ritualized Instruction"
    ]
   ],
-  "Advent Harmony Circuit Unlock": [
+  "Advent Harmony Circuit Blueprint": [
    [
     "Advent Novice Psi Training"
    ]
   ],
-  "Advent Heathen Quarter Unlock": [
+  "Advent Heathen Quarter Blueprint": [
    [
     "Advent Empathic Alignment"
    ]
   ],
   "Advent Ruthlessness": [
    [
-    "Advent Destra Unlock"
+    "Advent Destra Blueprint"
    ]
   ],
-  "Advent Hydrostatic Shield Dome Unlock": [
+  "Advent Hydrostatic Shield Dome Blueprint": [
    [
     "Advent Oceanic Embrace"
    ]
@@ -1634,69 +1684,79 @@
     "Advent Zealous Worship"
    ]
   ],
-  "Advent Exoria Unlock": [
+  "Advent Exoria Blueprint": [
    [
     "Advent Improved Beam Emitters"
    ]
   ],
-  "Advent Additional Armor Unlock": [
+  "Advent Coronata Blueprint": [
    [
-    "Advent Eradica Unlock"
+    "Advent Titan Foundry Blueprint"
    ]
   ],
-  "Advent Shield Booster Unlock": [
+  "Advent Additional Armor Blueprint": [
    [
-    "Advent Eradica Unlock"
+    "Advent Eradica Blueprint"
    ]
   ],
-  "Advent NeuroAugment Center Unlock": [
+  "Advent Shield Booster Blueprint": [
    [
-    "Advent Temple of Unity Unlock"
+    "Advent Eradica Blueprint"
    ]
   ],
-  "Advent NeuroPsion Purifier Unlock": [
+  "Advent NeuroAugment Center Blueprint": [
+   [
+    "Advent Temple of Unity Blueprint"
+   ]
+  ],
+  "Advent NeuroPsion Purifier Blueprint": [
    [
     "Advent Primordial Embrace"
    ]
   ],
-  "Advent Pelagic Interface Relay Unlock": [
+  "Advent Pelagic Interface Relay Blueprint": [
    [
     "Advent Oceanic Embrace"
    ]
   ],
-  "Advent Plasma Agitator Unlock": [
+  "Advent Plasma Agitator Blueprint": [
    [
     "Advent Improved Containment"
    ]
   ],
-  "Advent Plasma Furnace Unlock": [
+  "Advent Plasma Furnace Blueprint": [
    [
-    "Advent Exotic Refinery Unlock"
+    "Advent Exotic Refinery Blueprint"
    ]
   ],
-  "Advent Prescience Filter Unlock": [
+  "Advent Prescience Filter Blueprint": [
    [
     "Advent Geomagnetic Embrace"
    ]
   ],
-  "Advent PsiCredit Mint Unlock": [
+  "Advent PsiCredit Mint Blueprint": [
    [
     "Advent Commerce Adaptation"
    ]
   ],
-  "Advent Psionic Dynamo Unlock": [
+  "Advent Psionic Dynamo Blueprint": [
    [
     "Advent Novice Psi Training"
    ]
   ],
-  "Advent Radiation Shield Dome Unlock": [
+  "Advent Radiation Shield Dome Blueprint": [
    [
     "Advent Irradiated Embrace"
    ]
   ],
-  "Advent Eradica Swarm Missiles Unlock": [
+  "Advent Eradica Blueprint": [
    [
-    "Advent Eradica Unlock"
+    "Advent Titan Foundry Blueprint"
+   ]
+  ],
+  "Advent Eradica Swarm Missiles Blueprint": [
+   [
+    "Advent Eradica Blueprint"
    ]
   ],
   "Advent Secondary Shield Generators": [
@@ -1704,72 +1764,72 @@
     "Advent Basic Shield Projection"
    ]
   ],
-  "Advent Silent Monastery Unlock": [
+  "Advent Silent Monastery Blueprint": [
    [
     "Advent Rich Ore Scrying"
    ]
   ],
-  "Advent Evangelization Nodes Unlock": [
+  "Advent Evangelization Nodes Blueprint": [
    [
-    "Advent Temple of Communion Unlock"
+    "Advent Temple of Communion Blueprint"
    ]
   ],
-  "Advent Planetary Shield Array Unlock": [
+  "Advent Planetary Shield Array Blueprint": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
   "Advent Starbase Missile Launchers": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
   "Advent Starbase Plasma": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
-  "Advent Zealous Labor Unlock": [
+  "Advent Zealous Labor Blueprint": [
    [
-    "Advent Transcencia Unlock"
+    "Advent Transcencia Blueprint"
    ]
   ],
-  "Advent Starlight Augury Unlock": [
+  "Advent Starlight Augury Blueprint": [
    [
     "Advent Geomagnetic Embrace"
    ]
   ],
-  "Advent Structural Force Fields Unlock": [
+  "Advent Structural Force Fields Blueprint": [
    [
     "Advent Refined Frameworks"
    ]
   ],
   "Advent Nullify": [
    [
-    "Advent Domina Unlock"
+    "Advent Domina Blueprint"
    ]
   ],
-  "Advent Synchronous Shield Unlock": [
+  "Advent Synchronous Shield Blueprint": [
    [
     "Advent Secondary Shield Generators"
    ]
   ],
-  "Advent Telepathic Relay Unlock": [
+  "Advent Telepathic Relay Blueprint": [
    [
     "Advent Empathic Projection"
    ]
   ],
   "Advent Recharge Shields": [
    [
-    "Advent Temple of Renewal Unlock"
+    "Advent Temple of Renewal Blueprint"
    ]
   ],
-  "Advent Tithe Sanctum Unlock": [
+  "Advent Tithe Sanctum Blueprint": [
    [
     "Advent Commerce Adaptation"
    ]
   ],
-  "Advent Unity Protectorate Unlock": [
+  "Advent Unity Protectorate Blueprint": [
    [
     "Advent Novice Psi Training"
    ]
@@ -1851,7 +1911,7 @@
   ],
   "Advent Zealous Worship": [
    [
-    "Advent Temple of Communion Unlock"
+    "Advent Temple of Communion Blueprint"
    ]
   ],
   "Advent Unwavering Belief": [
@@ -1886,7 +1946,7 @@
   ],
   "Advent Hastened Acceleration": [
    [
-    "Advent Energy Accelerator Unlock"
+    "Advent Energy Accelerator Blueprint"
    ]
   ],
   "Advent Elegant Hull Design": [
@@ -1901,7 +1961,7 @@
   ],
   "Advent Kinetic Dampening": [
    [
-    "Advent Hydrostatic Shield Dome Unlock"
+    "Advent Hydrostatic Shield Dome Blueprint"
    ]
   ],
   "Advent Empathic Alignment": [
@@ -1912,6 +1972,11 @@
   "Advent Empathic Harmony": [
    [
     "Advent Empathic Alignment"
+   ]
+  ],
+  "Advent Empathic Union": [
+   [
+    "Advent Empathic Harmony"
    ]
   ],
   "Advent Irradiated Development": [
@@ -1971,7 +2036,7 @@
   ],
   "Advent Plasma Concentration": [
    [
-    "Advent Plasma Agitator Unlock"
+    "Advent Plasma Agitator Blueprint"
    ]
   ],
   "Advent Rapid Plasma Generation": [
@@ -2026,7 +2091,7 @@
   ],
   "Advent Improved Evangelization Nodes": [
    [
-    "Advent Evangelization Nodes Unlock"
+    "Advent Evangelization Nodes Blueprint"
    ]
   ],
   "Advent Pristine Structure Shields": [
@@ -2046,17 +2111,17 @@
   ],
   "Advent Perfect Synchrony": [
    [
-    "Advent Synchronous Shield Unlock"
+    "Advent Synchronous Shield Blueprint"
    ]
   ],
   "Advent Improved Purification": [
    [
-    "Advent Temple of Purification Unlock"
+    "Advent Temple of Purification Blueprint"
    ]
   ],
   "Advent Willing Donations": [
    [
-    "Advent Tithe Sanctum Unlock"
+    "Advent Tithe Sanctum Blueprint"
    ]
   ],
   "Advent Telepathic Collectors": [
@@ -2064,19 +2129,49 @@
     "Advent Willing Donations"
    ]
   ],
+  "Advent Oblivia Blueprint": [
+   [
+    "Advent Titan Foundry Blueprint"
+   ]
+  ],
+  "Advent Justicia Blueprint": [
+   [
+    "Advent Titan Foundry Blueprint"
+   ]
+  ],
+  "TEC Planet Cracker Warhead Blueprint": [
+   [
+    "TEC Novalith Blueprint"
+   ]
+  ],
+  "TEC Takadaran Blueprint": [
+   [
+    "TEC Titan Foundry Blueprint"
+   ]
+  ],
+  "TEC Khevarkov Blueprint": [
+   [
+    "TEC Titan Foundry Blueprint"
+   ]
+  ],
+  "Vasari Efficient Subdivision": [
+   [
+    "Vasari Anarkrul Blueprint"
+   ]
+  ],
   "TEC Triple Fortress": [
    [
     "TEC Compartmentalization"
    ]
   ],
-  "TEC Armored Citadel Unlock": [
+  "TEC Armored Citadel Blueprint": [
    [
     "TEC Fortified Superstructure"
    ]
   ],
-  "TEC Bastion Module Unlock": [
+  "TEC Bastion Module Blueprint": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Potent Reaction Chaining": [
@@ -2121,12 +2216,12 @@
   ],
   "TEC Expanded Commerce Mandate": [
    [
-    "TEC Commercial District Unlock"
+    "TEC Commercial District Blueprint"
    ]
   ],
   "TEC Enhanced Light Thrusters": [
    [
-    "TEC Stilat Unlock"
+    "TEC Stilat Blueprint"
    ]
   ],
   "TEC Insurgency": [
@@ -2156,7 +2251,7 @@
   ],
   "TEC Heavy Fallout": [
    [
-    "TEC Krosov Unlock"
+    "TEC Krosov Blueprint"
    ]
   ],
   "TEC Titano-Ferric Plating": [
@@ -2251,7 +2346,7 @@
   ],
   "TEC Novalith Range": [
    [
-    "TEC Novalith Unlock"
+    "TEC Novalith Blueprint"
    ]
   ],
   "TEC Crystal Surveyor Miniaturization": [
@@ -2281,7 +2376,7 @@
   ],
   "TEC Advanced Repair Droids": [
    [
-    "TEC Repair Droid Unlock"
+    "TEC Repair Droid Blueprint"
    ]
   ],
   "TEC Savage Thrill": [
@@ -2301,7 +2396,7 @@
   ],
   "TEC Compartmentalization": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Expedited Permits": [
@@ -2339,57 +2434,57 @@
     "TEC Labor Negotiations"
    ]
   ],
-  "TEC Alloy Foundry Unlock": [
+  "TEC Alloy Foundry Blueprint": [
    [
     "TEC Orbital Commerce"
    ]
   ],
   "TEC Coil Shock": [
    [
-    "TEC Kalev Unlock"
+    "TEC Kalev Blueprint"
    ]
   ],
-  "TEC Garda Mark II Unlock": [
+  "TEC Garda Mark II Blueprint": [
    [
     "TEC Ferro-Uranite Rounds"
    ]
   ],
-  "TEC Antimatter Engine Unlock": [
+  "TEC Antimatter Engine Blueprint": [
    [
     "TEC Efficient Generators"
    ]
   ],
-  "TEC Aquaculture Harvester Unlock": [
+  "TEC Aquaculture Harvester Blueprint": [
    [
     "TEC Oceanic Colonization"
    ]
   ],
-  "TEC Auxiliary Supply Depot Unlock": [
+  "TEC Auxiliary Supply Depot Blueprint": [
    [
     "TEC Prestigious Investments"
    ]
   ],
-  "TEC Ablative Armor Unlock": [
+  "TEC Ablative Armor Blueprint": [
    [
     "TEC Titano-Ferric Plating"
    ]
   ],
   "TEC Quarnium Forging": [
    [
-    "TEC Exotic Refinery Unlock"
+    "TEC Exotic Refinery Blueprint"
    ]
   ],
-  "TEC Chemical Plant Unlock": [
+  "TEC Chemical Plant Blueprint": [
    [
     "TEC Primordial Colonization"
    ]
   ],
-  "TEC Combat Repair System Unlock": [
+  "TEC Combat Repair System Blueprint": [
    [
-    "TEC Repair Droid Unlock"
+    "TEC Repair Droid Blueprint"
    ]
   ],
-  "TEC Synthetic Crystal Farm Unlock": [
+  "TEC Synthetic Crystal Farm Blueprint": [
    [
     "TEC Orbital Commerce"
    ]
@@ -2409,47 +2504,47 @@
     "TEC Interstellar Networks"
    ]
   ],
-  "TEC Deploy Argonev Unlock": [
+  "TEC Deploy Argonev Blueprint": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
-  "TEC Ferric Mining Rig Unlock": [
+  "TEC Ferric Mining Rig Blueprint": [
    [
     "TEC Ferrous Occupation"
    ]
   ],
-  "TEC Fissile Enrichment Plant Unlock": [
+  "TEC Fissile Enrichment Plant Blueprint": [
    [
     "TEC Irradiated Colonization"
    ]
   ],
-  "TEC Fulfillment Warehouse Unlock": [
+  "TEC Fulfillment Warehouse Blueprint": [
    [
     "TEC Huge Cargo Holds"
    ]
   ],
-  "TEC Gas Crystallizer Unlock": [
+  "TEC Gas Crystallizer Blueprint": [
    [
-    "TEC Gas Harvester Unlock"
+    "TEC Gas Harvester Blueprint"
    ]
   ],
-  "TEC Gas Harvester Unlock": [
+  "TEC Gas Harvester Blueprint": [
    [
     "TEC Gas Giant Colonization"
    ]
   ],
   "TEC Hangar Flak Turrets": [
    [
-    "TEC Hangar Defense Unlock"
+    "TEC Hangar Defense Blueprint"
    ]
   ],
-  "TEC Harvesting Crawler Unlock": [
+  "TEC Harvesting Crawler Blueprint": [
    [
     "TEC Crystalline Colonization"
    ]
   ],
-  "TEC Core Systems Armor Unlock": [
+  "TEC Core Systems Armor Blueprint": [
    [
     "TEC Advanced Metallurgy"
    ]
@@ -2459,77 +2554,82 @@
     "TEC Garrison Expansion"
    ]
   ],
-  "TEC Heavy Gauss Slugs Unlock": [
+  "TEC Heavy Gauss Slugs Blueprint": [
    [
     "TEC Advanced Gauss Coils"
    ]
   ],
-  "TEC High Yield Warheads Unlock": [
+  "TEC High Yield Warheads Blueprint": [
    [
     "TEC Submission Warheads"
    ]
   ],
-  "TEC Ice Processing Facility Unlock": [
+  "TEC Ice Processing Facility Blueprint": [
    [
     "TEC Arctic Colonization"
    ]
   ],
-  "TEC Industrial Complex Unlock": [
+  "TEC Industrial Complex Blueprint": [
    [
     "TEC Labor Negotiations"
    ]
   ],
   "TEC Breaker Missile": [
    [
-    "TEC Javelis Unlock"
+    "TEC Javelis Blueprint"
    ]
   ],
-  "TEC Ankylon Beam Turrets Unlock": [
+  "TEC Ankylon Blueprint": [
    [
-    "TEC Ankylon Unlock"
+    "TEC Titan Foundry Blueprint"
    ]
   ],
-  "TEC Ankylon Hangar Unlock": [
+  "TEC Ankylon Beam Turrets Blueprint": [
    [
-    "TEC Ankylon Unlock"
+    "TEC Ankylon Blueprint"
    ]
   ],
-  "TEC Extra Armor Plating I Unlock": [
+  "TEC Ankylon Hangar Blueprint": [
    [
-    "TEC Ragnarov Unlock"
+    "TEC Ankylon Blueprint"
    ]
   ],
-  "TEC Extra Armor Plating II Unlock": [
+  "TEC Extra Armor Plating I Blueprint": [
    [
-    "TEC Extra Armor Plating I Unlock"
+    "TEC Ragnarov Blueprint"
    ]
   ],
-  "TEC Extra Armor Plating III Unlock": [
+  "TEC Extra Armor Plating II Blueprint": [
    [
-    "TEC Extra Armor Plating II Unlock"
+    "TEC Extra Armor Plating I Blueprint"
    ]
   ],
-  "TEC Ankylon Missile Launchers Unlock": [
+  "TEC Extra Armor Plating III Blueprint": [
    [
-    "TEC Ankylon Unlock"
+    "TEC Extra Armor Plating II Blueprint"
    ]
   ],
-  "TEC Ankylon Planetary Shield Array Unlock": [
+  "TEC Ankylon Missile Launchers Blueprint": [
    [
-    "TEC Ankylon Unlock"
+    "TEC Ankylon Blueprint"
    ]
   ],
-  "TEC Media Conglomerate Unlock": [
+  "TEC Ankylon Planetary Shield Array Blueprint": [
+   [
+    "TEC Ankylon Blueprint"
+   ]
+  ],
+  "TEC Media Conglomerate Blueprint": [
    [
     "TEC Interstellar Networks"
    ]
   ],
-  "TEC Geothermal Smelter Unlock": [
+  "TEC Geothermal Smelter Blueprint": [
    [
     "TEC Volcanic Colonization"
    ]
   ],
-  "TEC Reactive Plating Unlock": [
+  "TEC Reactive Plating Blueprint": [
    [
     "TEC Titano-Ferric Plating"
    ]
@@ -2539,7 +2639,7 @@
     "TEC Oceanic Colonization"
    ]
   ],
-  "TEC Novalith Unlock": [
+  "TEC Novalith Blueprint": [
    [
     "TEC Refined Missile Avionics"
    ]
@@ -2549,37 +2649,42 @@
     "TEC PSIDAR"
    ]
   ],
-  "TEC Pirate Mercenary Base Unlock": [
+  "TEC Pirate Mercenary Base Blueprint": [
    [
     "TEC Gang of Freebooters"
    ]
   ],
-  "TEC Rapid Autoloader Unlock": [
+  "TEC Rapid Autoloader Blueprint": [
    [
     "TEC Military Grade Rounds"
    ]
   ],
-  "TEC Ragnarov Hangar Unlock": [
+  "TEC Ragnarov Blueprint": [
    [
-    "TEC Ragnarov Unlock"
+    "TEC Titan Foundry Blueprint"
    ]
   ],
-  "TEC Ragnarov Missile Launchers Unlock": [
+  "TEC Ragnarov Hangar Blueprint": [
    [
-    "TEC Ragnarov Unlock"
+    "TEC Ragnarov Blueprint"
    ]
   ],
-  "TEC Railgun Accelerator Unlock": [
+  "TEC Ragnarov Missile Launchers Blueprint": [
    [
-    "TEC Ragnarov Unlock"
+    "TEC Ragnarov Blueprint"
    ]
   ],
-  "TEC Orbital Mining Control Unlock": [
+  "TEC Railgun Accelerator Blueprint": [
+   [
+    "TEC Ragnarov Blueprint"
+   ]
+  ],
+  "TEC Orbital Mining Control Blueprint": [
    [
     "TEC Orbital Extraction"
    ]
   ],
-  "TEC Resort Complex Unlock": [
+  "TEC Resort Complex Blueprint": [
    [
     "TEC Oceanic Colonization"
    ]
@@ -2589,34 +2694,34 @@
     "TEC Efficient Crystal Sorting"
    ]
   ],
-  "TEC Hoshiko Unlock": [
+  "TEC Hoshiko Blueprint": [
    [
-    "TEC Repair Droid Unlock"
+    "TEC Repair Droid Blueprint"
    ]
   ],
-  "TEC Recharger Droids Unlock": [
+  "TEC Recharger Droids Blueprint": [
    [
-    "TEC Hoshiko Unlock"
+    "TEC Hoshiko Blueprint"
    ]
   ],
-  "TEC Docking Booms Unlock": [
+  "TEC Docking Booms Blueprint": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Advanced Fire Control": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
-  "TEC Planetary Shield Array Unlock": [
+  "TEC Planetary Shield Array Blueprint": [
    [
     "TEC Improved Shield Arrays"
    ]
   ],
   "TEC Safety Override Protocol": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Unbreachable Hull": [
@@ -2631,12 +2736,12 @@
   ],
   "TEC Remote Construction": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Starbase Beams": [
    [
-    "TEC Argonev Unlock"
+    "TEC Argonev Blueprint"
    ]
   ],
   "TEC Starbase Missile Launchers": [
@@ -2644,14 +2749,19 @@
     "TEC Refined Missile Avionics"
    ]
   ],
+  "TEC Torpedo Targeting Override": [
+   [
+    "TEC Ogrov Blueprint"
+   ]
+  ],
   "TEC Light Trade Escorts": [
    [
-    "TEC Garda Unlock"
+    "TEC Garda Blueprint"
    ]
   ],
   "TEC Heavy Trade Escorts": [
    [
-    "TEC Harcka Unlock"
+    "TEC Harcka Blueprint"
    ]
   ],
   "TEC Trade Ship Sensors": [
@@ -2671,7 +2781,7 @@
   ],
   "TEC Superior Command Bunker": [
    [
-    "TEC Command Bunker Unlock"
+    "TEC Command Bunker Blueprint"
    ]
   ],
   "TEC Modular Equipment Bay": [
@@ -2749,14 +2859,14 @@
     "TEC High Density Domes"
    ]
   ],
-  "TEC Rapid Autoloader Mark II Unlock": [
+  "TEC Rapid Autoloader Mark II Blueprint": [
    [
-    "TEC Rapid Autoloader Unlock"
+    "TEC Rapid Autoloader Blueprint"
    ]
   ],
   "TEC Orbital Development Initiative": [
    [
-    "TEC Regional Government Unlock"
+    "TEC Regional Government Blueprint"
    ]
   ],
   "TEC Primordial Development": [
@@ -2816,7 +2926,7 @@
   ],
   "Vasari Xeno Disruption": [
    [
-    "Vasari Xeno Relations Center Unlock"
+    "Vasari Xeno Relations Center Blueprint"
    ]
   ],
   "Vasari Xeno Corruption": [
@@ -2831,17 +2941,17 @@
   ],
   "Vasari Nanomedicine Outreach": [
    [
-    "Vasari Xeno Relations Center Unlock"
+    "Vasari Xeno Relations Center Blueprint"
    ]
   ],
   "Vasari Uplink Security": [
    [
-    "Vasari Unlock Defensive Uplink"
+    "Vasari Defensive Uplink Blueprint"
    ]
   ],
   "Vasari Mass Enslaved Labor": [
    [
-    "Vasari Labor Camp Unlock"
+    "Vasari Labor Camp Blueprint"
    ]
   ],
   "Vasari Highly Attuned Sensors": [
@@ -2856,12 +2966,12 @@
   ],
   "Vasari Assault Deployment": [
    [
-    "Vasari Deploy Orkulus Unlock"
+    "Vasari Deploy Orkulus Blueprint"
    ]
   ],
   "Vasari Local Enforcers": [
    [
-    "Vasari Xeno Relations Center Unlock"
+    "Vasari Xeno Relations Center Blueprint"
    ]
   ],
   "Vasari Cunning Sympathizers": [
@@ -2896,7 +3006,7 @@
   ],
   "Vasari External Influence": [
    [
-    "Vasari Xeno Relations Center Unlock"
+    "Vasari Xeno Relations Center Blueprint"
    ]
   ],
   "Vasari Empire Sympathizers": [
@@ -2906,30 +3016,30 @@
   ],
   "Vasari Improved Regeneration Bay": [
    [
-    "Vasari Regeneration Bay Unlock"
+    "Vasari Regeneration Bay Blueprint"
    ]
   ],
-  "Vasari Alliance Xeno Embassy Unlock": [
+  "Vasari Alliance Xeno Embassy Blueprint": [
    [
     "Vasari Ambassador Relations"
    ]
   ],
-  "Vasari Vulrak Unlock": [
+  "Vasari Vulrak Blueprint": [
    [
-    "Vasari Kortovas Unlock"
+    "Vasari Kortovas Blueprint"
    ]
   ],
   "Vasari Berserker Overcharge": [
    [
-    "Vasari Vulrak Unlock"
+    "Vasari Vulrak Blueprint"
    ]
   ],
-  "Vasari Antimatter Recharger Unlock": [
+  "Vasari Antimatter Recharger Blueprint": [
    [
     "Vasari Optimized Reactors"
    ]
   ],
-  "Vasari Beam Modulator Unlock": [
+  "Vasari Beam Modulator Blueprint": [
    [
     "Vasari Beam Streaming"
    ]
@@ -2939,32 +3049,32 @@
     "Vasari Orbital Exotic Refinement"
    ]
   ],
-  "Vasari Crystal Nanite Base Unlock": [
+  "Vasari Crystal Nanite Base Blueprint": [
    [
     "Vasari Resource Sublimation"
    ]
   ],
-  "Vasari Deploy Orkulus Unlock": [
+  "Vasari Deploy Orkulus Blueprint": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
-  "Vasari Exodus Xeno Embassy Unlock": [
+  "Vasari Exodus Xeno Embassy Blueprint": [
    [
     "Vasari Ambassador Relations"
    ]
   ],
   "Vasari Debris Reclamation": [
    [
-    "Vasari Jusotra Unlock"
+    "Vasari Jusotra Blueprint"
    ]
   ],
   "Vasari Mobile Retrofit": [
    [
-    "Vasari Jusotra Unlock"
+    "Vasari Jusotra Blueprint"
    ]
   ],
-  "Vasari Crystallizing Gas Refinery Unlock": [
+  "Vasari Crystallizing Gas Refinery Blueprint": [
    [
     "Vasari Gas Giant Occupation"
    ]
@@ -2974,24 +3084,24 @@
     "Vasari Precise Turret Servos"
    ]
   ],
-  "Vasari Indoctrination Center Unlock": [
+  "Vasari Indoctrination Center Blueprint": [
    [
     "Vasari Emissary Outreach"
    ]
   ],
   "Vasari Phase Missile Charging": [
    [
-    "Vasari Kanrak Unlock"
+    "Vasari Kanrak Blueprint"
    ]
   ],
   "Vasari Vorastra Hangar Restoration": [
    [
-    "Vasari Vorastra Unlock"
+    "Vasari Vorastra Blueprint"
    ]
   ],
   "Vasari Hull Restoration I": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
   "Vasari Hull Restoration II": [
@@ -3004,27 +3114,27 @@
     "Vasari Hull Restoration II"
    ]
   ],
-  "Vasari Micro Phase Jump Enhancer Unlock": [
+  "Vasari Micro Phase Jump Enhancer Blueprint": [
    [
-    "Vasari Vorastra Unlock"
+    "Vasari Vorastra Blueprint"
    ]
   ],
-  "Vasari The Maw Enhancer Unlock": [
+  "Vasari The Maw Enhancer Blueprint": [
    [
-    "Vasari Vorastra Unlock"
+    "Vasari Vorastra Blueprint"
    ]
   ],
   "Vasari Phase Cannon Restoration": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
   "Vasari Wave Cannon Restoration": [
    [
-    "Vasari Vorastra Unlock"
+    "Vasari Vorastra Blueprint"
    ]
   ],
-  "Vasari Metal Nanite Base Unlock": [
+  "Vasari Metal Nanite Base Blueprint": [
    [
     "Vasari Resource Sublimation"
    ]
@@ -3034,129 +3144,129 @@
     "Vasari Orbital Exotic Refinement"
    ]
   ],
-  "Vasari Mobile Resonance Capacitor Unlock": [
+  "Vasari Mobile Resonance Capacitor Blueprint": [
    [
     "Vasari Resonance Mastery"
    ]
   ],
-  "Vasari Ocean Floor Miner Unlock": [
+  "Vasari Ocean Floor Miner Blueprint": [
    [
     "Vasari Oceanic Occupation"
    ]
   ],
   "Vasari Mobile Phase Detection": [
    [
-    "Vasari Serevun Unlock"
+    "Vasari Serevun Blueprint"
    ]
   ],
-  "Vasari Phase Missile Augments Unlock": [
+  "Vasari Phase Missile Augments Blueprint": [
    [
     "Vasari NME Warheads"
    ]
   ],
-  "Vasari Resonance Amplifier Unlock": [
+  "Vasari Resonance Amplifier Blueprint": [
    [
     "Vasari Phase Resonator"
    ]
   ],
-  "Vasari Phase Attenuated Shield Unlock": [
+  "Vasari Phase Attenuated Shield Blueprint": [
    [
     "Vasari Bifurcative Shielding"
    ]
   ],
   "Vasari Kultorask Hangar Restoration": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
-  "Vasari Gravity Pulse Enhancer Unlock": [
+  "Vasari Gravity Pulse Enhancer Blueprint": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
-  "Vasari Enhanced Nano Emitters Unlock": [
+  "Vasari Enhanced Nano Emitters Blueprint": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
   "Vasari Phase Missile Restoration": [
    [
-    "Vasari Kultorask Unlock"
+    "Vasari Kultorask Blueprint"
    ]
   ],
-  "Vasari Regeneration Bay Unlock": [
+  "Vasari Regeneration Bay Blueprint": [
    [
     "Vasari Reintegration"
    ]
   ],
-  "Vasari Matter Hypercompiler Unlock": [
+  "Vasari Matter Hypercompiler Blueprint": [
    [
     "Vasari Entanglement Filtering"
    ]
   ],
-  "Vasari Self-Repairing Armor Unlock": [
+  "Vasari Self-Repairing Armor Blueprint": [
    [
     "Vasari Atomic Engineering"
    ]
   ],
-  "Vasari Debris Reintegration Unlock": [
+  "Vasari Debris Reintegration Blueprint": [
    [
     "Vasari Debris Reclamation"
    ]
   ],
   "Vasari Efficient Hangars": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
-  "Vasari Orkulus Phase Jump Drive Unlock": [
+  "Vasari Orkulus Phase Jump Drive Blueprint": [
    [
     "Vasari Orkulus Advanced Engines"
    ]
   ],
-  "Vasari Planetary Shield Array Unlock": [
+  "Vasari Planetary Shield Array Blueprint": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
-  "Vasari Intelligent Armor Unlock": [
+  "Vasari Intelligent Armor Blueprint": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
   "Vasari Advanced Intelligent Armor": [
    [
-    "Vasari Intelligent Armor Unlock"
+    "Vasari Intelligent Armor Blueprint"
    ]
   ],
   "Vasari Armament Restoration": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
-  "Vasari Strike Craft Armor Unlock": [
+  "Vasari Strikecraft Armor Blueprint": [
    [
     "Vasari Atomic Engineering"
    ]
   ],
-  "Vasari Organic Reclamation Nanites Unlock": [
+  "Vasari Organic Reclamation Nanites Blueprint": [
    [
     "Vasari Terran Occupation"
    ]
   ],
-  "Vasari Wave Modulator Unlock": [
+  "Vasari Wave Modulator Blueprint": [
    [
     "Vasari Wave Densification"
    ]
   ],
-  "Vasari Xeno Settlement Unlock": [
+  "Vasari Xeno Settlement Blueprint": [
    [
     "Vasari Emissary Outreach"
    ]
   ],
   "Vasari Jump Inhibition Immunity": [
    [
-    "Vasari Phase Jump Inhibitor Unlock"
+    "Vasari Phase Jump Inhibitor Blueprint"
    ]
   ],
   "Vasari Interracial Forum": [
@@ -3171,7 +3281,7 @@
   ],
   "Vasari Beam Overdrive": [
    [
-    "Vasari Beam Modulator Unlock"
+    "Vasari Beam Modulator Blueprint"
    ]
   ],
   "Vasari Intense Beams": [
@@ -3196,7 +3306,7 @@
   ],
   "Vasari Dark Fleet Tower Upgrade": [
    [
-    "Vasari Dark Fleet Tower Unlock"
+    "Vasari Dark Fleet Tower Blueprint"
    ]
   ],
   "Vasari Anhydrobiosis": [
@@ -3251,7 +3361,7 @@
   ],
   "Vasari Self-Repairing Systems": [
    [
-    "Vasari Self-Repairing Armor Unlock"
+    "Vasari Self-Repairing Armor Blueprint"
    ]
   ],
   "Vasari Thermogenesis": [
@@ -3271,7 +3381,7 @@
   ],
   "Vasari Communal Oppression": [
    [
-    "Vasari Labor Camp Unlock"
+    "Vasari Labor Camp Blueprint"
    ]
   ],
   "Vasari Full Lockdown": [
@@ -3291,7 +3401,7 @@
   ],
   "Vasari Enhanced Mobile Research": [
    [
-    "Vasari Mobile Empire Lab Unlock"
+    "Vasari Mobile Empire Lab Blueprint"
    ]
   ],
   "Vasari Advanced Mobile Research": [
@@ -3316,7 +3426,7 @@
   ],
   "Vasari Administrative Specialists": [
    [
-    "Vasari Administrative Uplink Unlock"
+    "Vasari Administrative Uplink Blueprint"
    ]
   ],
   "Vasari Advanced Orbital Extraction": [
@@ -3336,7 +3446,7 @@
   ],
   "Vasari Phase Missile Augments Upgrade": [
    [
-    "Vasari Phase Missile Augments Unlock"
+    "Vasari Phase Missile Augments Blueprint"
    ]
   ],
   "Vasari Phase Missile Predictors": [
@@ -3391,7 +3501,7 @@
   ],
   "Vasari Orkulus Advanced Engines": [
    [
-    "Vasari Orkulus Unlock"
+    "Vasari Orkulus Blueprint"
    ]
   ],
   "Vasari Genetic Cataloging": [
@@ -3431,7 +3541,7 @@
   ],
   "Vasari Wave Overdrive": [
    [
-    "Vasari Wave Modulator Unlock"
+    "Vasari Wave Modulator Blueprint"
    ]
   ],
   "Vasari Wave Amplification": [

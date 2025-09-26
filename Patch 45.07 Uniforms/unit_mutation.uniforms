@@ -1,0 +1,447 @@
+{
+    "mutations": [
+    {
+        "name": "disable_can_use_weapons",
+        "localized_name": "unit_mutation.disable_can_use_weapons",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_use_missile_weapons",
+        "localized_name": "unit_mutation.disable_can_use_missile_weapons",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_use_weapons_from_channeling",
+        "localized_name": "unit_mutation.disable_can_use_weapons",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_be_targeted_by_enemies",
+        "localized_name": "unit_mutation.disable_can_be_targeted_by_enemies",
+        "is_positive": true
+    },
+    {
+        "name": "disable_can_have_hull_restored",
+        "localized_name": "unit_mutation.disable_can_have_hull_restored",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_have_armor_restored",
+        "localized_name": "unit_mutation.disable_can_have_armor_restored",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_have_shields_restored",
+        "localized_name": "unit_mutation.disable_can_have_shields_restored",
+        "is_positive": false
+    },
+    {
+        "name": "enable_can_have_shields_burst_restored",
+        "localized_name": "unit_mutation.enable_can_have_shields_burst_restored",
+        "is_positive": true
+    },
+    {
+        "name": "disable_can_have_shields_bypassed",
+        "localized_name": "unit_mutation.disable_can_have_shields_bypassed",
+        "is_positive": true
+    },
+    {
+        "name": "disable_can_passively_regenerate_hull",
+        "localized_name": "unit_mutation.disable_can_passively_regenerate_hull",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_passively_regenerate_armor",
+        "localized_name": "unit_mutation.disable_can_passively_regenerate_armor",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_passively_regenerate_shields",
+        "localized_name": "unit_mutation.disable_can_passively_regenerate_shields",
+        "is_positive": false
+    },
+    {
+        "name": "enable_can_hyperspace",
+        "localized_name": "unit_mutation.enable_can_hyperspace",
+        "is_positive": true
+    },
+    {
+        "name": "disable_can_hyperspace",
+        "localized_name": "unit_mutation.disable_can_hyperspace",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_use_active_abilities",
+        "localized_name": "unit_mutation.disable_can_use_active_abilities",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_update_ability_cooldown_progress",
+        "localized_name": "unit_mutation.disable_can_update_ability_cooldown_progress",
+        "is_positive": false
+    },
+    {
+        "name": "enable_can_update_build_progress",
+        "localized_name": "unit_mutation.enable_can_update_build_progress",
+        "is_positive": true
+    },
+    {
+        "name": "enable_can_use_abilities_when_crippled",
+        "localized_name": "unit_mutation.enable_can_use_abilities_when_crippled",
+        "is_positive": true
+    },
+    {
+        "name": "enable_can_use_weapons_when_crippled",
+        "localized_name": "unit_mutation.enable_can_use_weapons_when_crippled",
+        "is_positive": true
+    },
+    {
+        "name": "enable_can_create_retargeting_torpedoes",
+        "localized_name": "unit_mutation.enable_can_create_retargeting_torpedoes",
+        "description": "unit_mutation.enable_can_create_retargeting_torpedoes.description",
+        "is_positive": true
+    },
+    {
+        "name": "disable_can_update_build_progress",
+        "localized_name": "unit_mutation.disable_can_update_build_progress",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_be_colonized",
+        "localized_name": "unit_mutation.disable_can_be_colonized",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_launch_or_dock_strikecraft",
+        "localized_name": "unit_mutation.disable_can_launch_or_dock_strikecraft",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_have_strikecraft_launched",
+        "localized_name": "unit_mutation.disable_can_have_strikecraft_launched",
+        "is_positive": false
+    },
+    {
+        "name": "disable_can_update_unit_production",
+        "localized_name": "unit_mutation.disable_can_update_unit_production",
+        "is_positive": false
+    },
+    {
+        "name": "suppress_disable_can_hyperspace",
+        "localized_name": "unit_mutation.suppress_disable_can_hyperspace",
+        "is_positive": true
+    },
+    {
+        "name": "invulnerable",
+        "localized_name": "unit_mutation.invulnerable",
+        "is_positive": true
+    },
+    {
+        "name": "suppress_invulnerable",
+        "localized_name": "unit_mutation.suppress_invulnerable",
+        "is_positive": false
+    },
+    {
+        "name": "asteroid_extractors_enabled",
+        "localized_name": "unit_mutation.asteroid_extractors_enabled",
+        "is_positive": true
+    },
+    {
+        "name": "adaptive_force_field_active",
+        "localized_name": "unit_mutation.adaptive_force_field_active",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "mobile_unit_factory_enabled",
+        "localized_name": "unit_mutation.mobile_unit_factory_enabled",
+        "is_positive": true
+    },
+    {
+        "name": "mobile_exotic_factory_enabled",
+        "localized_name": "unit_mutation.mobile_exotic_factory_enabled",
+        "is_positive": true
+    },
+    {
+        "name": "phase_jump_disruption",
+        "localized_name": "unit_mutation.phase_jump_disruption",
+        "is_positive": false,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "phase_jump_disruption_immune",
+        "localized_name": "unit_mutation.phase_jump_disruption_immune",
+        "is_positive": true
+    },
+    {
+        "name": "nano_leech_active",
+        "localized_name": "unit_mutation.nano_leech_active",
+        "is_positive": false
+    },
+    {
+        "name": "gravity_effect_active",
+        "localized_name": "unit_mutation.gravity_effect_active",
+        "is_positive": false
+    },
+    {
+        "name": "in_phase_space",
+        "localized_name": "unit_mutation.in_phase_space",
+        "is_positive": true
+    },
+    {
+        "name": "improved_piercing_shot",
+        "localized_name": "unit_mutation.improved_piercing_shot",
+        "is_positive": true
+    },
+    {
+        "name": "mind_fracture_active",
+        "localized_name": "unit_mutation.mind_fracture_active",
+        "is_positive": false
+    },
+    {
+        "name": "improved_micro_phase_jump",
+        "localized_name": "unit_mutation.improved_micro_phase_jump",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "improved_the_maw",
+        "localized_name": "unit_mutation.improved_the_maw",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "improved_titan_nano_emitters",
+        "localized_name": "unit_mutation.improved_titan_nano_emitters",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "improved_gravity_pulse",
+        "localized_name": "unit_mutation.improved_gravity_pulse",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "gauss_turrets_equipped",
+        "localized_name": "unit_mutation.gauss_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "modular_railgun_equipped",
+        "localized_name": "unit_mutation.railgun_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "modular_missile_equipped",
+        "localized_name": "unit_mutation.missile_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "modular_launch_bay_equipped",
+        "localized_name": "unit_mutation.launch_bay_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "malefic_locus_equipped",
+        "localized_name": "unit_mutation.malefic_locus_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "mind_locus_equipped",
+        "localized_name": "unit_mutation.mind_locus_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "savior_locus_equipped",
+        "localized_name": "unit_mutation.savior_locus_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "trader_faction_victory_equipped",
+        "localized_name": "unit_mutation.trader_faction_victory_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    },
+    {
+        "name": "trader_orbital_cannon_range_equipped",
+        "localized_name": "unit_mutation.trader_orbital_cannon_range_equipped",
+        "is_positive": true,
+        "show_in_buff_tooltip": false
+    }],
+    "permission_infos":
+    {
+        "can_use_weapons":
+        {
+            "disabling_mutations": [
+                "disable_can_use_weapons",
+                "disable_can_use_weapons_from_channeling",
+                "in_phase_space"
+            ]
+        },
+        "can_use_missile_weapons":
+        {
+            "disabling_mutations": [
+                "disable_can_use_weapons",
+                "disable_can_use_missile_weapons",
+                "in_phase_space"
+            ]
+        },
+        "can_update_weapon_cooldown_progress":
+        {
+            "disabling_mutations": [
+                "in_phase_space"]
+        },
+        "can_use_weapons_when_crippled":
+        {
+            "enabling_mutation": "enable_can_use_weapons_when_crippled"
+        },
+        "can_hyperspace":
+        {
+            "enabling_mutation": "enable_can_hyperspace",
+            "disabling_mutations": [
+                "disable_can_hyperspace",
+                "in_phase_space"]
+        },
+        "can_be_targeted_by_allies":
+        {
+            "disabling_mutations": []
+        },
+        "can_be_targeted_by_enemies":
+        {
+            "disabling_mutations": [
+                "disable_can_be_targeted_by_enemies"]
+        },
+        "can_be_damaged":
+        {
+            "disabling_mutations": [
+                "in_phase_space",
+                "invulnerable"]
+        },
+        "can_planet_be_damaged":
+        {
+            "disabling_mutations": [
+                "invulnerable"]
+        },
+        "can_planet_update_track_upgrade_progress":
+        {
+            "disabling_mutations": [
+                "in_phase_space"]
+        },
+        "can_have_hull_restored":
+        {
+            "disabling_mutations": [
+                "disable_can_have_hull_restored"]
+        },
+        "can_have_armor_restored":
+        {
+            "disabling_mutations": [
+                "disable_can_have_armor_restored"]
+        },
+        "can_have_shields_bypassed":
+        {
+            "disabling_mutations": [
+                "disable_can_have_shields_bypassed"]
+        },
+        "can_have_shields_restored":
+        {
+            "disabling_mutations": [
+                "disable_can_have_shields_restored"]
+        },
+        "can_have_shields_burst_restored":
+        {
+            "enabling_mutation": "enable_can_have_shields_burst_restored"
+        },
+        "can_passively_regenerate_hull":
+        {
+            "disabling_mutations": [
+                "disable_can_passively_regenerate_hull",
+                "in_phase_space"]
+        },
+        "can_passively_regenerate_armor":
+        {
+            "disabling_mutations": [
+                "disable_can_passively_regenerate_armor",
+                "in_phase_space"]
+        },
+        "can_passively_regenerate_shields":
+        {
+            "disabling_mutations": [
+                "disable_can_passively_regenerate_shields",
+                "in_phase_space"]
+        },
+        "can_use_active_abilities":
+        {
+            "disabling_mutations": [
+                "disable_can_use_active_abilities",
+                "in_phase_space"]
+        },
+        "can_use_abilities_when_crippled":
+        {
+            "enabling_mutation": "enable_can_use_abilities_when_crippled"
+        },
+        "can_update_ability_cooldown_progress":
+        {
+            "disabling_mutations": [
+                "disable_can_update_ability_cooldown_progress",
+                "in_phase_space"]
+        },
+        "can_update_build_progress":
+        {
+            "enabling_mutation": "enable_can_update_build_progress",
+            "disabling_mutations": [
+                "disable_can_update_build_progress",
+                "in_phase_space"]
+        },
+        "can_be_colonized":
+        {
+            "disabling_mutations": [
+                "disable_can_be_colonized"]
+        },
+        "can_launch_or_dock_strikecraft":
+        {
+            "disabling_mutations": [
+                "disable_can_launch_or_dock_strikecraft",
+                "in_phase_space"]
+        },
+        "can_have_any_strikecraft_launched":
+        {
+            "disabling_mutations": [
+                "disable_can_have_strikecraft_launched"
+            ]
+        },
+        "can_update_unit_production":
+        {
+            "disabling_mutations": [
+                "disable_can_update_unit_production",
+                "in_phase_space"]
+        },
+        "can_create_retargeting_torpedoes":
+        {
+            "enabling_mutation": "enable_can_create_retargeting_torpedoes"
+        },
+        "can_update_unit_item_build_progress":
+        {
+            "disabling_mutations": [
+                "in_phase_space"]
+        }
+    },
+    "suppressors": [
+    {
+        "suppressing_mutation": "suppress_disable_can_hyperspace",
+        "suppressed_mutations": [
+            "disable_can_hyperspace"]
+    },
+    {
+        "suppressing_mutation": "suppress_invulnerable",
+        "suppressed_mutations": [
+            "invulnerable"]
+    }]
+}

@@ -1,0 +1,168 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_zero",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "time_since_last_stack",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                },
+                {
+                    "operator_type": "subtract",
+                    "operand_value": "berserk_overcharge_last_stack_changed_time_value"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "berserk_overcharge_time_since_last_stack_value",
+                    "comparison_type": "greater_than_equal_to",
+                    "value_b": "berserk_overcharge_stack_duration_value"
+                },
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "subtract",
+                    "operand_value": "fixed_one"
+                },
+                {
+                    "operator_type": "max",
+                    "operand_value": "fixed_zero"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "berserk_overcharge_time_since_last_stack_value",
+                    "comparison_type": "greater_than_equal_to",
+                    "value_b": "berserk_overcharge_stack_duration_value"
+                },
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "last_stack_changed_time",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "damage_has_damage_source",
+                    "damage_source": "weapon"
+                },
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "add",
+                    "operand_value": "fixed_one"
+                },
+                {
+                    "operator_type": "min",
+                    "operand_value": "berserk_overcharge_max_stack_count"
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "last_stack_changed_time",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "action_data_source",
+                        "mesh_point": "center",
+                        "effect_by_size":
+                        {
+                            "small_unit": "berserker_buff",
+                            "medium_unit": "berserker_buff",
+                            "large_unit": "berserker_buff"
+                        }
+                    }
+                }]
+            }]
+        }
+    }],
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "berserk_overcharge_weapon_damage_modifier"
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "berserk_overcharge_max_linear_speed_modifier"
+    },
+    {
+        "buff_unit_modifier_id": "berserk_overcharge_max_angular_speed_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "vasari_antiarmor_cruiser_berserk_overcharge_ability_hud_icon",
+        "name": "vasari_antiarmor_cruiser_berserk_overcharge_ability_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "berserk_overcharge_weapon_damage_modifier",
+                "is_resolved_value": true
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "berserk_overcharge_max_linear_speed_modifier",
+                "is_resolved_value": true
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "berserk_overcharge_max_angular_speed_modifier",
+                "is_resolved_value": true
+            }]
+        }]
+    }
+}

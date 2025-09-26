@@ -19,4 +19,4 @@ Fighter
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light autocannon         	4.0  	x1    	4.0  	100   	2750 
+		light autocannon         	5.0  	x1    	5.0  	100   	2750 

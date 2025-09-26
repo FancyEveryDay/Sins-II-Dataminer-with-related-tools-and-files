@@ -19,4 +19,4 @@ Destra Crusader
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		very heavy plasma        	11.7 	x1    	11.7 	1000  	5000 
+		very heavy plasma        	16.7 	x1    	16.7 	1000  	5000 

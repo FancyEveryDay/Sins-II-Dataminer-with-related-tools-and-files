@@ -19,4 +19,4 @@ Harcka Heavy Cruiser
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy autocannon         	4.0  	x5    	20.0 	300   	5000 
+		heavy autocannon         	5.0  	x5    	25.0 	250   	5000 

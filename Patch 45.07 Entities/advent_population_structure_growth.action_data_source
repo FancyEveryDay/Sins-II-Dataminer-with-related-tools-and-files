@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "growth_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "growth_pop_growth_rate_bonus_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "growth_pop_growth_rate_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "population_growth_rate",
+            "value_behavior": "scalar",
+            "value_id": "growth_pop_growth_rate_bonus_value"
+        }
+    }]
+}

@@ -4,8 +4,8 @@ Ancient Starbase
 	Metal:  	
 	Crystal:	
 
-	Movespeed:	500.0
-	Acceleration:	20.0
+	Movespeed:	
+	Acceleration:	
 
 	Durability:	1000.0
 	Armor Strength:	150.0

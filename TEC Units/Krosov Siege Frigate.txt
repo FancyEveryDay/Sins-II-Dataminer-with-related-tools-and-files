@@ -1,8 +1,8 @@
 Krosov Siege Frigate
-	Supply: 	6
-	Credits:	500.0
-	Metal:  	60.0
-	Crystal:	100.0
+	Supply: 	8
+	Credits:	600.0
+	Metal:  	75.0
+	Crystal:	125.0
 
 	Movespeed:	650.0
 	Acceleration:	100.0
@@ -19,4 +19,4 @@ Krosov Siege Frigate
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		planet bombing           	2.0  	x1    	2.0  	0     	3000 
+		planet bombing           	1.7  	x1    	1.7  	0     	3000 

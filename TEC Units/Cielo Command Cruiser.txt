@@ -1,0 +1,21 @@
+Cielo Command Cruiser
+	Supply: 	6
+	Credits:	425.0
+	Metal:  	25.0
+	Crystal:	60.0
+
+	Movespeed:	625.0
+	Acceleration:	125.0
+
+	Durability:	200.0
+	Armor Strength:	40.0
+
+	Hull Points:	850
+	Armor Points:	550
+	Shield Points:	
+	   Shield Burst CD: 40.0s
+
+	Antimatter:	350.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

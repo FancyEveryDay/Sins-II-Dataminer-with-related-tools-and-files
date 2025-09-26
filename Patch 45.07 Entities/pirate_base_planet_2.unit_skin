@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "planet"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 178892.494093,
+        "min_camera_distance": 10649.751216,
+        "gui":
+        {
+            "hud_icon": "pirate_base_planet_2_hud_icon",
+            "hud_picture": "pirate_base_planet_hud_picture",
+            "tooltip_icon": "pirate_base_planet_2_tooltip_icon",
+            "name": "pirate_base_planet_name",
+            "description": ""
+        },
+        "unit_mesh":
+        {
+            "mesh": "planet_piratebase_0"
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "pirate_base_planet_2_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "shield_effect": "pirate_base_shield",
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "pirate_planet_flair_effects"
+            }],
+            "effect_alias_bindings": [
+            {
+                "alias_name": "destroy_planet",
+                "alias_binding":
+                {
+                    "particle_effect": "asteroid_explosion",
+                    "sounds": [
+                        "effect_strippedtothecore"]
+                }
+            }]
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "00ffcccc",
+            "intensity": 0.37
+        }
+    }],
+    "gravity_well_props": [
+        "sparse_asteroids",
+        "sparse_clouds"]
+}

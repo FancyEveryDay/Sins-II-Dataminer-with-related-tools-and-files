@@ -1,0 +1,39 @@
+{
+    "build_kinds": [
+    {
+        "name": "strikecraft",
+        "localized_name": "unit_build_kind_name.strikecraft"
+    },
+    {
+        "name": "corvette",
+        "localized_name": "unit_build_kind_name.corvette"
+    },
+    {
+        "name": "frigate",
+        "localized_name": "unit_build_kind_name.frigate"
+    },
+    {
+        "name": "cruiser",
+        "localized_name": "unit_build_kind_name.cruiser"
+    },
+    {
+        "name": "capital_ship",
+        "localized_name": "unit_build_kind_name.capital_ship"
+    },
+    {
+        "name": "structure",
+        "localized_name": "unit_build_kind_name.structure"
+    },
+    {
+        "name": "titan",
+        "localized_name": "unit_build_kind_name.titan"
+    },
+    {
+        "name": "starbase",
+        "localized_name": "unit_build_kind_name.starbase"
+    },
+    {
+        "name": "super_capital_ship",
+        "localized_name": "unit_build_kind_name.super_capital_ship"
+    }]
+}

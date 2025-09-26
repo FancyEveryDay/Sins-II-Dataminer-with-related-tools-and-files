@@ -46,23 +46,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -124,8 +124,8 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
@@ -147,23 +147,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -225,23 +225,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -338,23 +338,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -412,8 +412,8 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
@@ -434,23 +434,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -508,23 +508,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -617,34 +617,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -756,34 +756,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -875,34 +875,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -1032,56 +1032,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -1165,32 +1165,32 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
       "Temple of Unity Cap": 3
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0012,
       "Maximum Health": 1000,
@@ -1228,56 +1228,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -1361,56 +1361,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -1563,67 +1563,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -1768,24 +1768,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 450,
-      "Bonus Max Focus / 100 Pop {population}": 0.6,
+      "Bonus Max. Focus": 450,
+      "Bonus Max. Focus / 100 Pop {population}": 0.6,
       "Focus Restore Rate": 0.3,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -1829,67 +1829,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -2019,67 +2019,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -2261,34 +2261,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -2421,32 +2421,32 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
       "Temple of Unity Cap": 3
      },
      {
-      "Bonus Max Focus": 400,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 400,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0012,
       "Maximum Health": 1000,
@@ -2486,34 +2486,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -2676,34 +2676,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -2905,56 +2905,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -3087,40 +3087,40 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
       "Temple of Unity Cap": 3
      },
      {
-      "Bonus Max Focus": 400,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 400,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0012,
       "Maximum Health": 1000,
       "Temple of Unity Cap": 4
      },
      {
-      "Bonus Max Focus": 500,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 500,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0015,
       "Maximum Health": 1250,
@@ -3171,56 +3171,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -3378,56 +3378,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -3596,56 +3596,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -3762,24 +3762,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -3819,56 +3819,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4010,56 +4010,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4231,67 +4231,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1000.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 2000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 4000.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4391,67 +4391,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1000.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 2000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 4000.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4509,67 +4509,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1000.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 2000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 4000.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4679,45 +4679,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -4807,24 +4807,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -4864,45 +4864,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5007,45 +5007,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5173,45 +5173,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5309,24 +5309,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -5361,45 +5361,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5527,45 +5527,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5731,67 +5731,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -5904,40 +5904,40 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
       "Temple of Unity Cap": 3
      },
      {
-      "Bonus Max Focus": 400,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 400,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0012,
       "Maximum Health": 1000,
       "Temple of Unity Cap": 4
      },
      {
-      "Bonus Max Focus": 500,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 500,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0015,
       "Maximum Health": 1250,
@@ -5996,67 +5996,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6174,67 +6174,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6382,45 +6382,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6499,24 +6499,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -6538,45 +6538,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6655,45 +6655,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6806,34 +6806,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -6918,16 +6918,16 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
@@ -6948,34 +6948,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7070,34 +7070,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7206,23 +7206,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7309,16 +7309,16 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
@@ -7339,23 +7339,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7457,23 +7457,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7629,56 +7629,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -7815,16 +7815,16 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
@@ -7875,56 +7875,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8081,56 +8081,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8282,23 +8282,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8343,8 +8343,8 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
@@ -8366,23 +8366,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8432,23 +8432,23 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8561,45 +8561,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8737,16 +8737,16 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 200,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 200,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
@@ -8789,45 +8789,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -8980,45 +8980,45 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -9193,56 +9193,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -9378,24 +9378,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 300,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 300,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 450,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 450,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -9449,56 +9449,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -9624,56 +9624,56 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -9826,34 +9826,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -9945,24 +9945,24 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
       "Temple of Unity Cap": 1
      },
      {
-      "Bonus Max Focus": 100,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 100,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0006,
       "Maximum Health": 500,
       "Temple of Unity Cap": 2
      },
      {
-      "Bonus Max Focus": 150,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 150,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0009,
       "Maximum Health": 750,
@@ -10002,34 +10002,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -10141,34 +10141,34 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -10297,67 +10297,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -10405,8 +10405,8 @@
     "focus": [
      {},
      {
-      "Bonus Max Focus": 50,
-      "Bonus Max Focus / 100 Pop {population}": 0.0,
+      "Bonus Max. Focus": 50,
+      "Bonus Max. Focus / 100 Pop {population}": 0.0,
       "Focus Restore Rate": 0.0,
       "Focus Restore Rate / 100 Pop {population}": 0.0003,
       "Maximum Health": 250,
@@ -10426,67 +10426,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }
@@ -10539,67 +10539,67 @@
     "defense": [
      {
       "Health Regen Rate": 2.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 500,
       "Military Orbit Slots": 0,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 4.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 1500.0,
       "Military Orbit Slots": 5,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 6.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 3000.0,
       "Military Orbit Slots": 10,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 8.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 5000.0,
       "Military Orbit Slots": 20,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 10.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 7500.0,
       "Military Orbit Slots": 30,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      },
      {
       "Health Regen Rate": 12.0,
-      "Max Shields": 0,
+      "Max. Shields": 0,
       "Maximum Health": 10500.0,
       "Military Orbit Slots": 40,
       "planet_shield_burst_restore": {
        "cooldown_duration": 30.0,
-       "restore_percentage": 0.5
+       "restore_percentage": 1.0
       },
       "shield_points_restore_rate": 0.0
      }

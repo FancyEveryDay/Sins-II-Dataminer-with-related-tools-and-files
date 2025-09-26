@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 59603.793641,
+        "min_camera_distance": 619.466679,
+        "unit_mesh":
+        {
+            "mesh": "vasari_marauder_capital_ship_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_capital_marauder_mid_damage_debris"
+            }]
+        }
+    }]
+}

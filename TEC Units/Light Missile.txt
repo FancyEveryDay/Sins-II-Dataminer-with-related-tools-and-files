@@ -1,0 +1,21 @@
+Light Missile
+	Supply: 	
+	Credits:	
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1500.0
+	Acceleration:	200.0
+
+	Durability:	
+	Armor Strength:	
+
+	Hull Points:	1
+	Armor Points:	
+	Shield Points:	
+	   Shield Burst CD: nans
+
+	Antimatter:	nan
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range

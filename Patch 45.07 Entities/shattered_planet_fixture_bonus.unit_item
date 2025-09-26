@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "shattered_planet_fixture_bonus_hud_icon",
+    "tooltip_icon": "shattered_planet_fixture_bonus_hud_icon",
+	"tooltip_picture": "shattered_planet_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.shattered_planet.name",
+    "description": "planet_bonus.shattered_planet.desc",
+    "ability": "shattered_planet_fixture_bonus"
+}

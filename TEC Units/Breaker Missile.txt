@@ -10,7 +10,7 @@ Breaker Missile
 	Durability:	
 	Armor Strength:	25.0
 
-	Hull Points:	15
+	Hull Points:	5
 	Armor Points:	50
 	Shield Points:	
 	   Shield Burst CD: nans

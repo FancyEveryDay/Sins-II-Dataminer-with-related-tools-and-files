@@ -19,7 +19,7 @@ Ankylon Titan
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		heavy autocannon         	10.0 	x16   	160.0	300   	8000 
+		heavy autocannon         	10.0 	x16   	160.0	250   	8000 
 		heavy beam               	60.0 	x8    	480.0	500   	8000 
 		heavy missile            	26.7 	x4    	106.8	500   	12000
 		heavy missile            	33.3 	x8    	266.4	500   	12000

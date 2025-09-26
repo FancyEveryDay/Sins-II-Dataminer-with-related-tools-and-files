@@ -20,4 +20,4 @@ Tosurak Raider
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
 		medium pulse             	4.0  	x1    	4.0  	200   	3000 
-		light phase missile      	2.7  	x1    	2.7  	300   	5100 
+		light phase missile      	2.7  	x1    	2.7  	420   	5100 

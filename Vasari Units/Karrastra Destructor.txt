@@ -1,8 +1,8 @@
 Karrastra Destructor
-	Supply: 	9
+	Supply: 	12
 	Credits:	
-	Metal:  	185.0
-	Crystal:	235.0
+	Metal:  	215.0
+	Crystal:	270.0
 
 	Movespeed:	600.0
 	Acceleration:	100.0
@@ -19,4 +19,4 @@ Karrastra Destructor
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		planet bombing beam      	3.0  	x1    	3.0  	0     	3000 
+		planet bombing beam      	2.5  	x1    	2.5  	0     	3000 

@@ -19,4 +19,4 @@ Bomber
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light phase missile      	5.3  	x1    	5.3  	300   	5100 
+		light phase missile      	5.3  	x1    	5.3  	420   	5100 

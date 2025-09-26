@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "tithe_collector_planet_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "advent_tithe_collector_unit_item_bonus"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_tithe_collector_unit_item_hud_icon",
+        "name": "advent_tithe_collector_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "tithe_collector_commerce_per_population_modifier"
+            }]
+        }]
+    }
+}

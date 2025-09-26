@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "advent_faction_victory_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "super_capital_ship"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "gravity_well_contains_unit_type",
+                "unit_type": "star"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "objectives_completed_value",
+        "action_value":
+        {
+            "values": [1]
+        }
+    }]
+}

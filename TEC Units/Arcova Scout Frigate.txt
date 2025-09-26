@@ -1,0 +1,23 @@
+Arcova Scout Frigate
+	Supply: 	3
+	Credits:	200.0
+	Metal:  	
+	Crystal:	
+
+	Movespeed:	1250.0
+	Acceleration:	250.0
+
+	Durability:	100.0
+	Armor Strength:	25.0
+
+	Hull Points:	450
+	Armor Points:	250
+	Shield Points:	
+	   Shield Burst CD: 30.0s
+
+	Antimatter:	nan
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		medium autocannon        	4.8  	x1    	4.8  	200   	4000 
+		point defense autocannon 	2.0  	x1    	2.0  	0     	5000 

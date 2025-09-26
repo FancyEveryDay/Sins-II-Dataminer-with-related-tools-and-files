@@ -1,0 +1,28 @@
+Oblivia Dreadnought
+	Supply: 	100
+	Credits:	4500.0
+	Metal:  	1600.0
+	Crystal:	1950.0
+
+	Movespeed:	650.0
+	Acceleration:	80.0
+
+	Durability:	600.0
+	Armor Strength:	100.0
+
+	Hull Points:	7250 - 10905
+	Armor Points:	1650 - 2810
+	Shield Points:	8500 - 15310
+	   Shield Burst CD: 60.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		very heavy plasma        	12.5 	x6    	75.0 	1000  	8000 
+		heavy plasma             	5.0  	x4    	20.0 	750   	8000 
+		medium plasma            	5.0  	x12   	60.0 	600   	8000 
+		heavy laser              	7.5  	x7    	52.5 	300   	8000 
+		planet bombing plasma    	9.0  	x1    	9.0  	0     	4000 
+
+	Strike Craft: 3 - 8

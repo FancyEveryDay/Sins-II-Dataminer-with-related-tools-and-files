@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "action_data_source": "dlc_ancient_starbase_phase_jump_inhibitor_jump_disruption",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc_ancient_starbase_phase_jump_inhibitor_jump_disruption_on_spawner"
+    }
+}

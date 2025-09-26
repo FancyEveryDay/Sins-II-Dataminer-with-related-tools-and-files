@@ -19,4 +19,4 @@ Gauss Defense Platform
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		gauss                    	23.1 	x1    	23.1 	600   	10000
+		gauss                    	30.0 	x1    	30.0 	600   	10000

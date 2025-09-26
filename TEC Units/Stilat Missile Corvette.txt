@@ -19,4 +19,4 @@ Stilat Missile Corvette
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium missile           	5.3  	x2    	10.6 	400   	3000 
+		light missile            	5.3  	x2    	10.6 	400   	3000 

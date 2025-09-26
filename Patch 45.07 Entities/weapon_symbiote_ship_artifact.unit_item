@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "is_artifact": true,
+    "is_finite": true,
+    "hud_icon": "weapon_symbiote_ship_artifact_hud_icon",
+    "tooltip_picture": "weapon_symbiote_ship_artifact_tooltip_picture",
+    "tooltip_icon": "weapon_symbiote_ship_artifact_hud_icon",
+    "name": "ship_artifact.weapon_symbiote.name",
+    "description": "ship_artifact.weapon_symbiote.desc",
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "offense",
+    "weapon_modifiers": [
+    {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "values": [-0.50]
+    }],
+    "ability": "weapon_symbiote_ship_artifact"
+}

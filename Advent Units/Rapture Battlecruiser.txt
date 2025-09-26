@@ -19,7 +19,7 @@ Rapture Battlecruiser
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium missile           	20.5 	x2    	41.0 	200   	8000 
+		medium missile           	20.0 	x2    	40.0 	200   	8000 
 		heavy plasma             	10.0 	x1    	10.0 	750   	8000 
 		heavy beam               	12.5 	x2    	25.0 	500   	8000 
 		point defense laser      	2.5  	x4    	10.0 	0     	6000 

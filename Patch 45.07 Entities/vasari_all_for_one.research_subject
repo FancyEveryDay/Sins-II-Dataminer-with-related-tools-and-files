@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_survival",
+    "field_coord": [7, 3],
+    "research_time": 600.0,
+    "price":
+    {
+        "metal": 630.0,
+        "crystal": 720.0,
+        "credits": 0.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "provides_victory_condition_alliance_guard": true,
+    "name": "vasari_all_for_one_research_subject_name",
+    "name_uppercase": "vasari_all_for_one_research_subject_name_uppercase",
+    "description": "vasari_all_for_one_research_subject_description",
+    "hud_icon": "vasari_all_for_one_research_subject_hud_icon",
+    "tooltip_picture": "vasari_all_for_one_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_ally",
+        "research_text_filter_lose",
+        "research_text_filter_victory"
+    ]
+}

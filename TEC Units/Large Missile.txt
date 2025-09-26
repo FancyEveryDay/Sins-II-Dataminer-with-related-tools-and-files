@@ -8,10 +8,10 @@ Large Missile
 	Acceleration:	300.0
 
 	Durability:	
-	Armor Strength:	40.0
+	Armor Strength:	25.0
 
-	Hull Points:	25
-	Armor Points:	
+	Hull Points:	10
+	Armor Points:	20
 	Shield Points:	
 	   Shield Burst CD: nans
 

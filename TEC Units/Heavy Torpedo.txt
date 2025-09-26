@@ -4,8 +4,8 @@ Heavy Torpedo
 	Metal:  	
 	Crystal:	
 
-	Movespeed:	1200.0
-	Acceleration:	600.0
+	Movespeed:	1000.0
+	Acceleration:	500.0
 
 	Durability:	
 	Armor Strength:	50.0

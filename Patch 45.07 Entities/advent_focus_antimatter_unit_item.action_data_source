@@ -1,0 +1,47 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "focus_antimatter_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_antimatter"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "apply_buff_radius",
+        "action_value":
+        {
+            "values": [8000.0]
+        }
+    },
+    {
+        "action_value_id": "focus_antimatter_regeneration_bonus_value",
+        "action_value":
+        {
+            "values": [0.1],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [0.003]
+            }
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "focus_antimatter_regeneration_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "antimatter_restore_rate",
+            "value_behavior": "additive",
+            "value_id": "focus_antimatter_regeneration_bonus_value"
+        }
+    }]
+}

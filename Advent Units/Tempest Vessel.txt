@@ -19,4 +19,4 @@ Tempest Vessel
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light missile            	6.8  	x2    	13.6 	0     	7500 
+		light missile            	9.1  	x2    	18.2 	0     	7500 

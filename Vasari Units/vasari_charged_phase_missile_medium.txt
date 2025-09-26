@@ -5,7 +5,7 @@ vasari_charged_phase_missile_medium
 	Crystal:	
 
 	Movespeed:	1800.0
-	Acceleration:	600.0
+	Acceleration:	900.0
 
 	Durability:	
 	Armor Strength:	18.0

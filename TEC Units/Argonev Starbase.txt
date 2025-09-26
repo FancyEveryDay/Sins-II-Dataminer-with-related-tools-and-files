@@ -23,6 +23,6 @@ Argonev Starbase
 		light autocannon         	6.7  	x16   	107.2	100   	5000 
 		point defense autocannon 	4.0  	x16   	64.0 	0     	5000 
 		heavy beam               	60.0 	x4    	240.0	500   	10000
-		heavy missile            	93.3 	x4    	373.2	500   	12500
+		very heavy missile       	140.0	x4    	560.0	750   	10000
 
 	Strike Craft: 0

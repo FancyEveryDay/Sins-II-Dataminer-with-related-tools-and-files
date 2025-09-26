@@ -4,14 +4,14 @@ Medium Missile
 	Metal:  	
 	Crystal:	
 
-	Movespeed:	1250.0
-	Acceleration:	156.25
+	Movespeed:	1750.0
+	Acceleration:	350.0
 
 	Durability:	
 	Armor Strength:	25.0
 
-	Hull Points:	15
-	Armor Points:	
+	Hull Points:	5
+	Armor Points:	10
 	Shield Points:	
 	   Shield Burst CD: nans
 
