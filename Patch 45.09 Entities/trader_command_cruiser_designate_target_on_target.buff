@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "above",
+                    "effect_by_size":
+                    {
+                        "small_unit": "trader_command_cruiser_designate_target_on_target_small",
+                        "medium_unit": "trader_command_cruiser_designate_target_on_target_medium",
+                        "large_unit": "trader_command_cruiser_designate_target_on_target_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "designate_target_damage_taken_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_targeting_array_unit_item_hud_icon",
+        "name": "trader_command_cruiser_designate_target_ability_name",
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "designate_target_damage_taken_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "thermal_lift_planet_bonus_hud_icon",
+    "tooltip_icon": "thermal_lift_planet_bonus_hud_icon",
+    "name": "planet_bonus.thermal_lift.name",
+    "description": "planet_bonus.thermal_lift.desc",
+    "planet_types": [
+        "desert",
+        "ferrous",
+        "ice",
+        "oceanic",
+        "terran",
+        "volcanic"
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "structure_build_price",
+        "value_behavior": "scalar",
+        "values": [-0.15]
+    },
+    {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "values": [-0.2]
+    }]
+}

@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "pirate_looting_crew_hud_icon",
+    "tooltip_picture": "pirate_looting_crew_tooltip_picture",
+    "name": "npc_reward.pirate_looting_crew_name",
+    "description": "npc_reward.pirate_looting_crew_description",
+    "always_show_in_shop": true,
+    "is_finite": true,
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "utility",
+    "ability": "pirate_looting_crew"
+}

@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 7433.808105,
+        "surface_radius": 4955.87207,
+        "line_of_sight_radius": 4955.87207,
+        "box":
+        {
+            "center": [0.002441, 0.0, -0.002441],
+            "extents": [4955.867188, 1955.864746, 4946.089355]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "gravity_well_fixture":
+    {
+        "inner_move_distance": 24000.0,
+        "axis_rotation_speed": [0.2, 0.3],
+        "axis_tilt_angle": [0.0, 0.0]
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true,
+        "selection_priority": 800,
+        "under_cursor_type": "sphere"
+    },
+    "items":
+    {},
+    "target_filter_unit_type": "star",
+    "skin_groups": [
+    {
+        "skins": [
+            "binary_test_star"]
+    }],
+    "action_effect_size": "small_unit"
+}

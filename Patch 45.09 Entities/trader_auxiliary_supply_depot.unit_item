@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "tec_auxiliary_supply_depot_unit_item_hud_icon",
+    "tooltip_icon": "tec_auxiliary_supply_depot_unit_item_hud_icon",
+    "tooltip_picture": "tec_auxiliary_supply_depot_unit_item_tooltip_picture",
+    "name": "trader_auxiliary_supply_depot_unit_item_name",
+    "description": "trader_auxiliary_supply_depot_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 200.0,
+        "crystal": 100.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "irradiated",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["trader_unlock_auxiliary_supply_depot_unit_item"]
+        ]
+    }],
+    "npc_range_origin":
+    {
+        "between_gravity_well_range": 15.0
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_evangelism",
+    "field_coord": [4, 8],
+    "research_time": 300.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 250.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["advent_unity_mana_0"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"]
+        },
+        "action_data_source": "advent_soul_reclamation",
+        "buff": "advent_soul_reclamation",
+        "tooltip_sub_header_label": "tooltip.advent_soul_reclamation_mana_given_sub_header",
+        "tooltip_lines": [
+        {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.advent_soul_reclamation_mana_given_small_unit",
+            "value_id": "soul_reclamation_small_unit_mana_value",
+            "value_color": "positive"
+        },
+        {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.advent_soul_reclamation_mana_given_medium_unit",
+            "value_id": "soul_reclamation_medium_unit_mana_value",
+            "value_color": "positive"
+        },
+        {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.advent_soul_reclamation_mana_given_large_unit",
+            "value_id": "soul_reclamation_large_unit_mana_value",
+            "value_color": "positive"
+        },
+        {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.advent_soul_reclamation_mana_given_very_large_unit",
+            "value_id": "soul_reclamation_very_large_unit_mana_value",
+            "value_color": "positive"
+        }]
+    }],
+    "name": "advent_soul_reclamation_research_subject_name",
+    "name_uppercase": "advent_soul_reclamation_research_subject_name_uppercase",
+    "description": "advent_soul_reclamation_research_subject_description",
+    "hud_icon": "advent_soul_reclamation_research_subject_hud_icon",
+    "tooltip_picture": "advent_soul_reclamation_research_subject_tooltip_picture"
+}

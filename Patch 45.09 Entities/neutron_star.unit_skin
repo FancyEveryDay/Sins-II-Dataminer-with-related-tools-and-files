@@ -1,0 +1,69 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "star"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2000000,
+        "min_camera_distance": 5146.348431,
+        "unit_radius_when_mesh_visible": 20000.0,
+        "gui":
+        {
+            "hud_icon": "neutron_star_hud_icon",
+            "hud_picture": "neutron_star_hud_picture",
+            "tooltip_icon": "neutron_star_tooltip_icon",
+            "name": "star.neutron_star_name",
+            "description": "star.neutron_star_desc"
+        },
+        "star_mesh":
+        {
+            "mesh": "neutron_star_core",
+            "atmosphere":
+            {
+                "shader": "star_atmosphere",
+                "material": "blue_star_atmosphere",
+                "noise_texture": "solar_atmosphere_noise_baw"
+            },
+            "corona":
+            {
+                "shader": "star_corona",
+                "color_texture": "neutron_star_corona_clr_tex.png",
+                "noise_texture": "warping_flames",
+                "color": "ffffffff",
+                "radius_scalar": 3.5,
+                "animation_speed": 0.05,
+                "noise_1_zoom": 2.0,
+                "basic_constants":
+                {
+                    "emissive_factor": 0.2,
+                    "alpha_ramp_steepness": 0.0,
+                    "alpha_ramp_growth_delay": 1.0
+                }
+            }
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "neutron_star_torus"
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "neutron_star_main_view_icon",
+            "is_additive": true,
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "ffdef2ff",
+            "intensity": 1.0
+        }
+    }]
+}

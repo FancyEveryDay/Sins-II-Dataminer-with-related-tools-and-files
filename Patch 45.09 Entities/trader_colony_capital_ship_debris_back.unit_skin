@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 43347.482847,
+        "min_camera_distance": 792.298396,
+        "unit_mesh":
+        {
+            "mesh": "trader_colony_capital_ship_debris_back",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "trader_colony_debris_damage"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,195 @@
+{
+    "dark_skybox": "skybox_starfield",
+    "random_skybox_fillings": [
+    {
+        "name": "skybox_random",
+        "filling":
+        {
+            "items": [            
+            {
+                "skybox": "skybox_cloud_9",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_10",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_11",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_12",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_13",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_14",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_15",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_16",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_17",
+                "probability": 1
+            },
+            {
+                "skybox": "skybox_cloud_18",
+                "probability": 1
+            }
+            ]
+        }
+    },    
+    {
+        "name": "skybox_black",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_black",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_9",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_9",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_10",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_10",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_11",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_11",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_12",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_12",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_13",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_13",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_14",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_14",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_15",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_15",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_16",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_16",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_17",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_17",
+                "probability": 1
+            }]
+        }
+    },
+    {
+        "name": "skybox_cloud_18",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_18",
+                "probability": 1
+            }]
+        }
+    },    
+    {
+        "name": "skybox_starfield",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_starfield",
+                "probability": 1
+            }]
+        }
+    },    
+    {
+        "name": "front_end_scene",
+        "filling":
+        {
+            "items": [
+            {
+                "skybox": "skybox_cloud_9",
+                "probability": 1
+            }]
+        }
+    }]
+}

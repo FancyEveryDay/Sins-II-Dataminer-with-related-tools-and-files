@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "active_duration": "coil_shock_beam_charge_value",
+    "make_dead_on_current_spawner_ownership_changed_from_buff_ownership": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_chained_units",
+                "first_source_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "first_destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "chain_target_filter_id": "coil_shock_chain_target_filter",
+                "max_target_count_value": "coil_shock_max_target_count_value",
+                "chain_range_value": "coil_shock_chain_range_value",
+                "chain_delay": 0.1,
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_antiarmor_frigate_coil_shock_on_target"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "weapon.0",
+                    "effects":
+                    {
+                        "charge_effect": "trader_antiarmor_frigate_coil_shock_charge",
+                        "muzzle_effect": "trader_antiarmor_frigate_coil_shock_muzzle",
+                        "beam_effect": "trader_antiarmor_frigate_coil_shock_beam",
+                        "hit_hull_effect": "trader_antiarmor_frigate_coil_shock_hit_hull",
+                        "hit_shield_effect": "trader_antiarmor_frigate_coil_shock_hit_shield",
+                        "hit_shield_impact_radius_t": 1.0
+                    },
+                    "charge_duration": "coil_shock_beam_charge_value",
+                    "beam_duration": "coil_shock_beam_duration_value"
+                }]
+            }]
+        }
+    }]
+}

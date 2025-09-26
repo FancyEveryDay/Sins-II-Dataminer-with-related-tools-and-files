@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 58665.404558,
+        "min_camera_distance": 614.465411,
+        "unit_mesh":
+        {
+            "mesh": "vasari_battle_capital_ship_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_capital_battle_mid_damage_debris"
+            }]
+        }
+    }]
+}

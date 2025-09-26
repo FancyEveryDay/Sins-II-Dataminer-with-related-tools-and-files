@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "action_data_source": "jiskun_share_vision",
+    "active_actions":
+    {
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_owned_by_player",
+                "player":
+                {
+                    "player_type": "ability_npc_player",
+                    "ability":
+                    {
+                        "ability_type": "source_ability"
+                    }
+                },
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "buff_targets"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "jiskun_share_vision_on_scout"
+                }]
+            }]
+        }
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "buff_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "action_data_source": "advent_population_structure_growth",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_population_structure_growth_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "advent_population_structure_growth_ability_hud_icon",
+        "tooltip_picture": "advent_population_structure_growth_ability_tooltip_picture",
+        "name": "advent_population_structure_growth_ability_name",
+        "description": "advent_population_structure_growth_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "growth_pop_growth_rate_modifier"
+            }]
+        }]
+    }
+}
