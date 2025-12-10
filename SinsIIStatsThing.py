@@ -77,7 +77,7 @@ def recursiveprint(collection, output = False, localText = {}, level = 0):
                     print(f"{indents}{name} : {entry}")
 
 def getSinsData(race, type, output = False, file = SINS_DIRECTORY + "\\entities" ):
-    unitfilelist = glob.glob(f"{file}\\{race}**{type}")
+    unitfilelist = glob.glob(f"{file}\\**{race}**{type}")
 
     listODatas = []
 

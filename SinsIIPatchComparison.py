@@ -74,6 +74,14 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
 
     indents = "\t" * level
 
+    ## Handle single-item lists contain a single collection
+    if(type(obj1) == list and len(obj1) == 1 and len(obj2) == 1 and obj1[0] not in printTypes):
+        try:
+            obj1 = obj1[0]
+            obj2 = obj2[0]
+        except IndexError:
+            return {0: "[NEW] " + str(obj1[0])}
+
     if (type(obj1) in printTypes) and type(obj2) in printTypes:
         if obj1 != obj2:
             # print(f"{indents}{obj2} -> {obj1}")
@@ -82,7 +90,6 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
 
     if (type(obj1) is list) and (type(obj2) is list): # and (obj1 != obj2):
         for i, j in enumerate(obj1):
-
             try:
                 # print(f"{indents}{i+1}")
                 change = recursiveCompare(j, obj2[i], level = level + 1)
@@ -104,6 +111,18 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
                         change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
                     except KeyError:
                         change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
+
+                ## Handle lists of strings (like planet names)
+                elif isinstance(j, list) and all(isinstance(item, str) for item in j) and all(isinstance(item, str) for item in obj2[i]):
+                    change = []
+                    for index, planet in enumerate(j):
+                        if planet not in obj2[i]:
+                            change.append("[NEW] " + planet)
+                    for index, planet in enumerate(obj2[i]):
+                        if planet not in j:
+                            change.append("[REMOVED] " + planet)
+                    if len(change) == 0:
+                        change = False
 
                 else:  #j != obj2[i]:
                     # print(f"{indents}{i}")   
@@ -209,7 +228,7 @@ if __name__ == "__main__":
     with open(newPatchNumber + "_changes.txt", 'w') as file:
         pass
 
-    raceList = ["advent", "trader", "vasari"] # TODO Add Minor races and general changes
+    raceList = ["advent", "trader", "vasari", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
 
     weaponDict = getSinsDataDict("",".weapon", file = ENTITIES_LOCATION)
     oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
