@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 146926.045206,
+        "min_camera_distance": 647.90654,
+        "unit_mesh":
+        {
+            "mesh": "dlc2_advent_rebel_super_capital_ship_debris_front",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_loyalist_titan_front_debris_damage"
+            }]
+        }
+    }]
+}

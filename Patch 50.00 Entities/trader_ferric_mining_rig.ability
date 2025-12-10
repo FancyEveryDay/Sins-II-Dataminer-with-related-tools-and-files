@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "trader_ferric_mining_rig",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_ferric_mining_rig"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_planet_current_mining_track_level_header",
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "ferric_mining_rig_metal_income_rate_modifier"
+            }]
+        }]
+    }
+}

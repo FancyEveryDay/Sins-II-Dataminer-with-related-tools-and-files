@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_crystal_refinery",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_crystal_refinery"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_planet_current_survey_track_level_header",
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "crystal_refinery_crystal_income_rate_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_revival",
+    "field_coord": [8, 1],
+    "research_time": 525.0,
+    "price":
+    {
+        "metal": 810.0,
+        "crystal": 900.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_antiarmor_cruiser"]
+    ],
+    "name": "vasari_unlock_antiarmor_cruiser_berserk_overcharge_ability_research_subject_name",
+    "name_uppercase": "vasari_unlock_antiarmor_cruiser_berserk_overcharge_ability_research_subject_name_uppercase",
+    "description": "vasari_unlock_antiarmor_cruiser_berserk_overcharge_ability_research_subject_description",
+    "hud_icon": "vasari_antiarmor_cruiser_berserk_overcharge_ability_hud_icon",
+    "tooltip_picture": "vasari_antiarmor_cruiser_berserk_overcharge_ability_tooltip_picture"
+}

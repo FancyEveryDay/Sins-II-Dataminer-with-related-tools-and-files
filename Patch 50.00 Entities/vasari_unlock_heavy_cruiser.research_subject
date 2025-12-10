@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_revival",
+    "field_coord": [5, 2],
+    "research_time": 270.0,
+    "price":
+    {
+        "metal": 450.0,
+        "crystal": 480.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_heavy_cruiser_research_subject_name",
+    "name_uppercase": "vasari_unlock_heavy_cruiser_research_subject_name_uppercase",
+    "hud_icon": "vasari_heavy_cruiser_hud_icon",
+    "tooltip_picture": "vasari_heavy_cruiser_tooltip_picture"
+}

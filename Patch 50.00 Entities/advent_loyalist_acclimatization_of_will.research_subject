@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_evangelism",
+    "field_coord": [5, 8],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 850.0,
+        "metal": 275.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["advent_unity_mana_1"]
+    ],
+    "name": "advent_loyalist_acclimatization_of_will_research_subject_name",
+    "name_uppercase": "advent_loyalist_acclimatization_of_will_research_subject_name_uppercase",
+    "description": "advent_loyalist_acclimatization_of_will_research_subject_description",
+    "hud_icon": "advent_loyalist_acclimatization_of_will_research_subject_hud_icon",
+    "tooltip_picture": "advent_loyalist_acclimatization_of_will_research_subject_tooltip_picture",
+    "arbitary_research_line":
+    {
+        "sub_heading_before_empire_modifier": "tooltip.research_subject.empire_modifiers_per_friendly_with_dominant_culture"
+    }
+}

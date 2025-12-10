@@ -1,0 +1,16 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "gravity_well":
+    {
+        "gravity_well_jump_node_radius": 10000.0,
+        "gravity_well_outer_move_area_distance": 5000.0,
+        "gravity_well_vertical_plane_max_distance": 4000.0,
+        "gravity_well_vertical_plane_return_distance": 3500.0,
+        "min_gravity_well_inner_move_area_distance": 2000.0
+    },
+    "target_filter_unit_type": "gravity_well"
+}

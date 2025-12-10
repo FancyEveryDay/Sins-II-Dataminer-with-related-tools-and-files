@@ -1,0 +1,156 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "harvest_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "harvest_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc2_advent_rebel_super_harvest_on_target"
+                }]
+            }]
+        }
+    },
+    {
+        "execution_interval_value": "fixed_zero",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "harvest_stack_count_value",
+                    "comparison_type": "greater_than",
+                    "value_b": "fixed_zero"
+                },
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "harvest_stacks_expiry_time_value",
+                    "comparison_type": "less_than",
+                    "value_b": "common_simulation_time_value"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "fixed_zero"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_child_buff_made_dead",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "buff_made_dead_has_context",
+                "buff_made_dead_context": "made_dead_by_action"
+            },
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "value_comparison",
+                    "value_a": "harvest_stack_count_value",
+                    "comparison_type": "less_than",
+                    "value_b": "harvest_max_stack_count_value"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "advent_harvest_unit_item_on_self"
+                    }
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                {
+                    "operator_type": "add",
+                    "operand_value": "fixed_one"
+                },
+                {
+                    "operator_type": "min",
+                    "operand_value": "harvest_max_stack_count_value"
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stacks_expiry_time",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                },
+                {
+                    "operator_type": "add",
+                    "operand_value": "harvest_stack_duration_value"
+                }]
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "harvest_antimatter_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc2_advent_rebel_super_harvest_hud_icon",
+        "name": "dlc2_advent_rebel_super_harvest_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "harvest_antimatter_modifier",
+                "is_resolved_value": true
+            }]
+        }]
+    }
+}

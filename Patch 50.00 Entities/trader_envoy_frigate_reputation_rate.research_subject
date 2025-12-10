@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_policy",
+    "field_coord": [4, 7],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 200.0,
+        "crystal": 300.0
+    },
+    "prerequisites": [
+        ["trader_unlock_envoy_frigate"]
+    ],
+    "name": "trader_envoy_frigate_reputation_rate_research_subject_name",
+    "name_uppercase": "trader_envoy_frigate_reputation_rate_research_subject_name_uppercase",
+    "description": "trader_envoy_frigate_reputation_rate_research_subject_description",
+    "hud_icon": "trader_envoy_frigate_reputation_rate_research_subject_hud_icon",
+    "tooltip_picture": "trader_envoy_frigate_reputation_rate_research_subject_tooltip_picture"
+}

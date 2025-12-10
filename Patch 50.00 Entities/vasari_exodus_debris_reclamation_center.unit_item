@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "vasari_exodus_debris_reclamation_center_unit_item_hud_icon",
+    "tooltip_picture": "vasari_exodus_debris_reclamation_center_unit_item_tooltip_picture",
+    "name": "vasari_exodus_debris_reclamation_center_unit_item_name",
+    "description": "vasari_exodus_debris_reclamation_center_unit_item_desc",
+    "max_count_on_unit": 1,
+    "is_finite": true,
+    "add_back_finite_item_to_player_inventory": false,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "desert",
+            "ferrous",
+            "ice",
+            "moon",
+            "oceanic",
+            "terran",
+            "volcanic"
+        ]
+    }],
+    "ability": "vasari_exodus_debris_reclamation_center",
+    "item_ai_valuation": 600.0
+}

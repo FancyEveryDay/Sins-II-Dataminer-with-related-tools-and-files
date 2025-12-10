@@ -1,0 +1,54 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "trader_industrial_complex_unit_item_hud_icon",
+    "tooltip_icon": "trader_industrial_complex_unit_item_hud_icon",
+    "tooltip_picture": "trader_industrial_complex_unit_item_tooltip_picture",
+    "name": "trader_industrial_complex_unit_item_name",
+    "description": "trader_industrial_complex_unit_item_description",
+    "build_time": 75.0,
+    "price":
+    {
+        "credits": 2000.0,
+        "metal": 500.0,
+        "crystal": 500.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "max_count_on_unit": 1,
+    "required_planet_level": 5,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "ice",
+            "ice_moon",
+            "irradiated",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["trader_unlock_industrial_complex_unit_item"]
+        ]
+    }],
+    "other_item_requirements":
+    {
+        "mutually_exclusive_items": [
+            "trader_commercial_district",
+            "trader_high_density_district"]
+    },
+    "ability": "trader_industrial_complex"
+}

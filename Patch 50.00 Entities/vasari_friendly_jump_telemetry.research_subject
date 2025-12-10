@@ -1,0 +1,41 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_phase_mastery",
+    "field_coord": [3, 4],
+    "research_time": 150.0,
+    "price":
+    {
+        "metal": 270.0,
+        "crystal": 240.0,
+        "credits": 0.0
+    },
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_hyperspace"
+            }]
+        },
+        "action_data_source": "vasari_friendly_jump_telemetry",
+        "buff": "vasari_friendly_jump_telemetry_trigger",
+        "tooltip_sub_header_label": "vasari_friendly_jump_telemetry_research_subject_tooltip_sub_header_label",
+        "tooltip_lines": [
+        {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "vasari_friendly_jump_telemetry_hyperspace_speed_modifier"
+        }]
+    }],
+    "name": "vasari_friendly_jump_telemetry_research_subject_name",
+    "name_uppercase": "vasari_friendly_jump_telemetry_research_subject_name_uppercase",
+    "description": "vasari_friendly_jump_telemetry_research_subject_description",
+    "hud_icon": "vasari_friendly_jump_telemetry_research_subject_hud_icon",
+    "tooltip_picture": "vasari_friendly_jump_telemetry_research_subject_tooltip_picture"
+}
