@@ -1,8 +1,8 @@
 Light Factory
 	Supply: 	
 	Credits:	750.0
-	Metal:  	150.0
-	Crystal:	75.0
+	Metal:  	80.0
+	Crystal:	80.0
 
 	Movespeed:	
 	Acceleration:	

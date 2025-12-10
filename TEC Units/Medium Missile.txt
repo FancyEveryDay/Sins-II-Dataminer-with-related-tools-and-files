@@ -5,7 +5,7 @@ Medium Missile
 	Crystal:	
 
 	Movespeed:	1750.0
-	Acceleration:	350.0
+	Acceleration:	250.0
 
 	Durability:	
 	Armor Strength:	25.0

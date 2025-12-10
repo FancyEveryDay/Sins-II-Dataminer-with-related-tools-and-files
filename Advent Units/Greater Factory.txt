@@ -1,8 +1,8 @@
 Greater Factory
 	Supply: 	
-	Credits:	900.0
-	Metal:  	200.0
-	Crystal:	200.0
+	Credits:	600.0
+	Metal:  	150.0
+	Crystal:	375.0
 
 	Movespeed:	
 	Acceleration:	

@@ -4,8 +4,8 @@ Progenitor Mothership
 	Metal:  	725.0
 	Crystal:	900.0
 
-	Movespeed:	700.0
-	Acceleration:	100.0
+	Movespeed:	800.0
+	Acceleration:	160.0
 
 	Durability:	500.0
 	Armor Strength:	55.0

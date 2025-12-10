@@ -1,7 +1,7 @@
 Broadcast Center
 	Supply: 	
 	Credits:	1000.0
-	Metal:  	150.0
+	Metal:  	100.0
 	Crystal:	150.0
 
 	Movespeed:	

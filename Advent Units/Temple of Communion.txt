@@ -2,7 +2,7 @@ Temple of Communion
 	Supply: 	
 	Credits:	600.0
 	Metal:  	150.0
-	Crystal:	250.0
+	Crystal:	225.0
 
 	Movespeed:	
 	Acceleration:	

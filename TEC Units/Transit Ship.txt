@@ -1,17 +1,17 @@
-Crystal Extractor
+Transit Ship
 	Supply: 	
 	Credits:	
-	Metal:  	90.0
+	Metal:  	
 	Crystal:	
 
-	Movespeed:	
-	Acceleration:	
+	Movespeed:	600.0
+	Acceleration:	80.0
 
-	Durability:	420.0
-	Armor Strength:	48.0
+	Durability:	50.0
+	Armor Strength:	25.0
 
-	Hull Points:	1800
-	Armor Points:	480
+	Hull Points:	1000
+	Armor Points:	500
 	Shield Points:	
 	   Shield Burst CD: nans
 

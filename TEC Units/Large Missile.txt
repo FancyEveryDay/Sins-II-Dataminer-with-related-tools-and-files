@@ -5,13 +5,13 @@ Large Missile
 	Crystal:	
 
 	Movespeed:	1500.0
-	Acceleration:	300.0
+	Acceleration:	200.0
 
 	Durability:	
 	Armor Strength:	25.0
 
 	Hull Points:	10
-	Armor Points:	20
+	Armor Points:	40
 	Shield Points:	
 	   Shield Burst CD: nans
 

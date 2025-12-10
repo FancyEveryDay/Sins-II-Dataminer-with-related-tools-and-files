@@ -1,11 +1,11 @@
 Disciple
 	Supply: 	4
-	Credits:	150.0
-	Metal:  	60.0
+	Credits:	180.0
+	Metal:  	50.0
 	Crystal:	
 
-	Movespeed:	1100.0
-	Acceleration:	275.0
+	Movespeed:	1250.0
+	Acceleration:	250.0
 
 	Durability:	100.0
 	Armor Strength:	30.0

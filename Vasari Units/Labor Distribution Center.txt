@@ -1,8 +1,8 @@
 Labor Distribution Center
 	Supply: 	
 	Credits:	
-	Metal:  	210.0
-	Crystal:	60.0
+	Metal:  	240.0
+	Crystal:	180.0
 
 	Movespeed:	
 	Acceleration:	

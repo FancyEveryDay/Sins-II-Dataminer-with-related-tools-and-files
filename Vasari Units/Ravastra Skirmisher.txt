@@ -4,7 +4,7 @@ Ravastra Skirmisher
 	Metal:  	135.0
 	Crystal:	15.0
 
-	Movespeed:	960.0
+	Movespeed:	1200.0
 	Acceleration:	240.0
 
 	Durability:	120.0

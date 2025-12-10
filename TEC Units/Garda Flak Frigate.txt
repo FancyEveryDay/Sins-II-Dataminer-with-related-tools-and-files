@@ -4,8 +4,8 @@ Garda Flak Frigate
 	Metal:  	30.0
 	Crystal:	20.0
 
-	Movespeed:	900.0
-	Acceleration:	225.0
+	Movespeed:	800.0
+	Acceleration:	200.0
 
 	Durability:	200.0
 	Armor Strength:	75.0

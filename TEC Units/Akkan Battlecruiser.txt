@@ -4,8 +4,8 @@ Akkan Battlecruiser
 	Metal:  	850.0
 	Crystal:	600.0
 
-	Movespeed:	750.0
-	Acceleration:	125.0
+	Movespeed:	800.0
+	Acceleration:	160.0
 
 	Durability:	500.0
 	Armor Strength:	50.0

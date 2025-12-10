@@ -5,7 +5,7 @@ Super Heavy Missile
 	Crystal:	
 
 	Movespeed:	1250.0
-	Acceleration:	250.0
+	Acceleration:	400.0
 
 	Durability:	
 	Armor Strength:	25.0

@@ -1,8 +1,8 @@
 Orbital Transit Hub
 	Supply: 	
 	Credits:	750.0
-	Metal:  	100.0
-	Crystal:	50.0
+	Metal:  	125.0
+	Crystal:	100.0
 
 	Movespeed:	
 	Acceleration:	

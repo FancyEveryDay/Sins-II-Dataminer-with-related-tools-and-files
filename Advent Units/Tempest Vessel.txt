@@ -1,7 +1,7 @@
 Tempest Vessel
 	Supply: 	6
-	Credits:	180.0
-	Metal:  	90.0
+	Credits:	210.0
+	Metal:  	80.0
 	Crystal:	75.0
 
 	Movespeed:	800.0

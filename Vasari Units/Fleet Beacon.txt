@@ -2,7 +2,7 @@ Fleet Beacon
 	Supply: 	
 	Credits:	
 	Metal:  	480.0
-	Crystal:	480.0
+	Crystal:	960.0
 
 	Movespeed:	
 	Acceleration:	

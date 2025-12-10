@@ -1,8 +1,8 @@
 Lesser Factory
 	Supply: 	
 	Credits:	450.0
-	Metal:  	125.0
-	Crystal:	125.0
+	Metal:  	120.0
+	Crystal:	120.0
 
 	Movespeed:	
 	Acceleration:	

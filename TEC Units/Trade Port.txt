@@ -1,8 +1,8 @@
 Trade Port
 	Supply: 	
 	Credits:	1000.0
-	Metal:  	200.0
-	Crystal:	125.0
+	Metal:  	175.0
+	Crystal:	150.0
 
 	Movespeed:	
 	Acceleration:	

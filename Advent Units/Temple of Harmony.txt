@@ -2,7 +2,7 @@ Temple of Harmony
 	Supply: 	
 	Credits:	450.0
 	Metal:  	75.0
-	Crystal:	100.0
+	Crystal:	125.0
 
 	Movespeed:	
 	Acceleration:	

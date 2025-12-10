@@ -1,8 +1,8 @@
 Exotic Refinery
 	Supply: 	
-	Credits:	1000.0
-	Metal:  	350.0
-	Crystal:	425.0
+	Credits:	900.0
+	Metal:  	375.0
+	Crystal:	600.0
 
 	Movespeed:	
 	Acceleration:	

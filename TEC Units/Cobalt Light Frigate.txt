@@ -4,7 +4,7 @@ Cobalt Light Frigate
 	Metal:  	55.0
 	Crystal:	
 
-	Movespeed:	1000.0
+	Movespeed:	1250.0
 	Acceleration:	250.0
 
 	Durability:	100.0

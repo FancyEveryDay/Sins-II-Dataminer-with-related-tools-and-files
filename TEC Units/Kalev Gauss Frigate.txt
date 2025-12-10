@@ -5,7 +5,7 @@ Kalev Gauss Frigate
 	Crystal:	75.0
 
 	Movespeed:	800.0
-	Acceleration:	320.0
+	Acceleration:	200.0
 
 	Durability:	125.0
 	Armor Strength:	25.0
@@ -19,4 +19,4 @@ Kalev Gauss Frigate
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		gauss                    	6.0  	x1    	6.0  	600   	8000 
+		gauss                    	6.0  	x1    	6.0  	600   	10000

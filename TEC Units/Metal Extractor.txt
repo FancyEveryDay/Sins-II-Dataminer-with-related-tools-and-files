@@ -1,7 +1,7 @@
 Metal Extractor
 	Supply: 	
-	Credits:	500.0
-	Metal:  	25.0
+	Credits:	250.0
+	Metal:  	20.0
 	Crystal:	
 
 	Movespeed:	

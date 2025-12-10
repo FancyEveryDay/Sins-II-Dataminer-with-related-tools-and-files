@@ -10,8 +10,8 @@ trader_missile_corvette_torpedo
 	Durability:	
 	Armor Strength:	25.0
 
-	Hull Points:	5
-	Armor Points:	
+	Hull Points:	1
+	Armor Points:	5
 	Shield Points:	
 	   Shield Burst CD: nans
 
