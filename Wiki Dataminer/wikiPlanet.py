@@ -142,16 +142,24 @@ def main():
         # Add planet quality
         numSum = 0
         for _, num in planet['base_dev_tracks'].items():
-            numSum += num
+            if _ == 'focus':
+                if num > 0 and num//3 < 1:
+                    numSum += 1
+                else:
+                    numSum += num//3
+            else:
+                numSum += num
 
         numSum += round(planet['population']['population_maximum']/100)
 
         if numSum < 20:
             quality = 'Poor'
-        elif numSum < 30:
+        elif numSum < 26:
             quality = 'Fair'
+        elif numSum < 31:
+            quality = 'Rich'
         else:
-            quality = 'Rich'        
+            quality = 'Super Rich'        
         planet['quality'] = f"{quality} ({int(round(numSum, 0 ))} Quality Points)"
 
 

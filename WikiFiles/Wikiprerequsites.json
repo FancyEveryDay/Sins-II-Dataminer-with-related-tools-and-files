@@ -35,11 +35,6 @@
     "Advent Energy Accelerator Blueprint"
    ]
   ],
-  "Advent Epitaph of the Lost": [
-   [
-    "Advent Epitaph of the Lost Blueprint"
-   ]
-  ],
   "Advent Essence Reservoir": [
    [
     "Advent Essence Reservoir Blueprint"
@@ -105,16 +100,6 @@
     "Advent NeuroAugment Center Blueprint"
    ]
   ],
-  "Advent NeuroPsion Purifier": [
-   [
-    "Advent NeuroPsion Purifier Blueprint"
-   ]
-  ],
-  "Advent Pelagic Interface Relay": [
-   [
-    "Advent Pelagic Interface Relay Blueprint"
-   ]
-  ],
   "Advent Plasma Agitator": [
    [
     "Advent Plasma Agitator Blueprint"
@@ -123,11 +108,6 @@
   "Advent Plasma Furnace": [
    [
     "Advent Plasma Furnace Blueprint"
-   ]
-  ],
-  "Advent Prescience Filter": [
-   [
-    "Advent Prescience Filter Blueprint"
    ]
   ],
   "Advent PsiCredit Mint": [
@@ -150,14 +130,14 @@
     "Advent Eradica Swarm Missiles Blueprint"
    ]
   ],
+  "Advent Sanctuary Spire": [
+   [
+    "Advent Sanctuary Spire Blueprint"
+   ]
+  ],
   "Advent Synchronous Shield": [
    [
     "Advent Synchronous Shield Blueprint"
-   ]
-  ],
-  "Advent Silent Monastery": [
-   [
-    "Advent Silent Monastery Blueprint"
    ]
   ],
   "Advent Evangelization Nodes": [
@@ -190,11 +170,6 @@
     "Advent Zealous Labor Blueprint"
    ]
   ],
-  "Advent Starlight Augury": [
-   [
-    "Advent Starlight Augury Blueprint"
-   ]
-  ],
   "Advent Structural Force Fields": [
    [
     "Advent Structural Force Fields Blueprint"
@@ -223,6 +198,11 @@
   "Advent Temple of Resurrection": [
    [
     "Advent Temple of Resurrection Blueprint"
+   ]
+  ],
+  "Advent Thermal Shield Dome": [
+   [
+    "Advent Thermal Shield Dome Blueprint"
    ]
   ],
   "Advent Tithe Sanctum": [
@@ -280,11 +260,6 @@
     "TEC Antimatter Engine Blueprint"
    ]
   ],
-  "TEC Aquaculture Harvester": [
-   [
-    "TEC Aquaculture Harvester Blueprint"
-   ]
-  ],
   "TEC Auxiliary Supply Depot": [
    [
     "TEC Auxiliary Supply Depot Blueprint"
@@ -293,11 +268,6 @@
   "TEC Ablative Armor": [
    [
     "TEC Ablative Armor Blueprint"
-   ]
-  ],
-  "TEC Chemical Plant": [
-   [
-    "TEC Chemical Plant Blueprint"
    ]
   ],
   "TEC Combat Repair System": [
@@ -315,6 +285,11 @@
     "TEC Commercial District Blueprint"
    ]
   ],
+  "TEC Commodity Exchange": [
+   [
+    "TEC Commodity Exchange Blueprint"
+   ]
+  ],
   "TEC Synthetic Crystal Farm": [
    [
     "TEC Synthetic Crystal Farm Blueprint"
@@ -323,16 +298,6 @@
   "TEC Deploy Argonev Starbase": [
    [
     "TEC Deploy Argonev Blueprint"
-   ]
-  ],
-  "TEC Ferric Mining Rig": [
-   [
-    "TEC Ferric Mining Rig Blueprint"
-   ]
-  ],
-  "TEC Fissile Enrichment Plant": [
-   [
-    "TEC Fissile Enrichment Plant Blueprint"
    ]
   ],
   "TEC Flak Burst": [
@@ -355,11 +320,6 @@
     "TEC Gas Harvester Blueprint"
    ]
   ],
-  "TEC Harvesting Crawler": [
-   [
-    "TEC Harvesting Crawler Blueprint"
-   ]
-  ],
   "TEC Core Systems Armor": [
    [
     "TEC Core Systems Armor Blueprint"
@@ -370,19 +330,19 @@
     "TEC Heavy Gauss Slugs Blueprint"
    ]
   ],
+  "TEC High Density District": [
+   [
+    "TEC High Density District Blueprint"
+   ]
+  ],
   "TEC High Yield Warheads": [
    [
     "TEC High Yield Warheads Blueprint"
    ]
   ],
-  "TEC Ice Processing Facility": [
+  "TEC Industrial District": [
    [
-    "TEC Ice Processing Facility Blueprint"
-   ]
-  ],
-  "TEC Industrial Complex": [
-   [
-    "TEC Industrial Complex Blueprint"
+    "TEC Industrial District Blueprint"
    ]
   ],
   "TEC Garrison Recruitment Center": [
@@ -433,11 +393,6 @@
   "TEC Media Conglomerate": [
    [
     "TEC Media Conglomerate Blueprint"
-   ]
-  ],
-  "TEC Geothermal Smelter": [
-   [
-    "TEC Geothermal Smelter Blueprint"
    ]
   ],
   "TEC Reactive Plating": [
@@ -498,11 +453,6 @@
   "TEC Reserve Squadron Hangar": [
    [
     "TEC Reserve Squadron Hangar Blueprint"
-   ]
-  ],
-  "TEC Resort Complex": [
-   [
-    "TEC Resort Complex Blueprint"
    ]
   ],
   "TEC Docking Booms": [
@@ -582,7 +532,7 @@
   ],
   "Vasari Crystal Seeking Nanites": [
    [
-    "Vasari Crystal Nanite Base Blueprint"
+    "Vasari Crystal Seeking Nanites Blueprint"
    ]
   ],
   "Vasari Dark Fleet Tower": [
@@ -598,6 +548,11 @@
   "Vasari Defensive Uplink": [
    [
     "Vasari Defensive Uplink Blueprint"
+   ]
+  ],
+  "Vasari Deploy Phase Gate": [
+   [
+    "Vasari Mobile Phase Gate Blueprint"
    ]
   ],
   "Vasari Deploy Orkulus Starbase": [
@@ -618,11 +573,6 @@
   "Vasari Crystallizing Gas Refinery": [
    [
     "Vasari Crystallizing Gas Refinery Blueprint"
-   ]
-  ],
-  "Vasari Deconstruction Nanites": [
-   [
-    "Vasari Hygroscopic Nanites"
    ]
   ],
   "Vasari Indoctrination Center": [
@@ -682,7 +632,7 @@
   ],
   "Vasari Metal Seeking Nanites": [
    [
-    "Vasari Metal Nanite Base Blueprint"
+    "Vasari Metal Seeking Nanites Blueprint"
    ]
   ],
   "Vasari Mobile Empire Lab": [
@@ -718,16 +668,6 @@
   "Vasari Mobile Adjunct Lab": [
    [
     "Vasari Mobile Adjunct Lab Blueprint"
-   ]
-  ],
-  "Vasari Nano Algae Reactors": [
-   [
-    "Vasari Nano Algae Reactors"
-   ]
-  ],
-  "Vasari Ocean Floor Miner": [
-   [
-    "Vasari Ocean Floor Miner Blueprint"
    ]
   ],
   "Vasari Administrative Uplink": [
@@ -795,11 +735,6 @@
     "Vasari Self-Repairing Armor Blueprint"
    ]
   ],
-  "Vasari Stabilization Nanites": [
-   [
-    "Vasari Stabilization Nanites"
-   ]
-  ],
   "Vasari Debris Reintegration": [
    [
     "Vasari Debris Reintegration Blueprint"
@@ -850,11 +785,6 @@
     "Vasari Stripped to the Core"
    ]
   ],
-  "Vasari Organic Reclamation Nanites": [
-   [
-    "Vasari Organic Reclamation Nanites Blueprint"
-   ]
-  ],
   "Vasari Wave Modulator": [
    [
     "Vasari Wave Modulator Blueprint"
@@ -867,6 +797,7 @@
   ]
  },
  "entity_manifest": {},
+ "start_mode": {},
  "ability": {
   "Advent Culture Deliverance": [
    [],
@@ -908,6 +839,11 @@
   "Advent Ruthlessness": [
    [
     "Advent Ruthlessness"
+   ]
+  ],
+  "Advent Orbital Habitation": [
+   [
+    "Advent Orbital Habitation Blueprint"
    ]
   ],
   "Advent Lingering Presence": [
@@ -965,6 +901,11 @@
    [],
    [
     "TEC Novalith Range"
+   ]
+  ],
+  "TEC Transit Tax": [
+   [
+    "TEC Transit Taxation Policy"
    ]
   ],
   "TEC PSIDAR": [
@@ -1038,6 +979,11 @@
    ],
    [
     "Vasari Improved Phase Detection"
+   ]
+  ],
+  "Vasari Orbital Labor": [
+   [
+    "Vasari Orbital Labor Allocation"
    ]
   ],
   "Vasari Repair": [
@@ -1516,7 +1462,7 @@
   ],
   "Advent Soul Reclamation": [
    [
-    "Advent Unity Awakened"
+    "Advent Accumulated Will"
    ]
   ],
   "Advent Antimatter Multicasting": [
@@ -1551,12 +1497,17 @@
   ],
   "Advent Atmospheric Shield Dome Blueprint": [
    [
-    "Advent Barren Development"
+    "Advent Barren Specialization"
    ]
   ],
   "Advent Quarnium Forging": [
    [
     "Advent Exotic Refinery Blueprint"
+   ]
+  ],
+  "Advent Coalescence Sanctum Blueprint": [
+   [
+    "Advent Empathic Projection"
    ]
   ],
   "Advent Crystal Enrichment Center Blueprint": [
@@ -1617,11 +1568,6 @@
   "Advent Energy Accelerator Blueprint": [
    [
     "Advent Refined Laser Cannons"
-   ]
-  ],
-  "Advent Epitaph of the Lost Blueprint": [
-   [
-    "Advent Irradiated Embrace"
    ]
   ],
   "Advent Essence Reservoir Blueprint": [
@@ -1704,21 +1650,6 @@
     "Advent Eradica Blueprint"
    ]
   ],
-  "Advent NeuroAugment Center Blueprint": [
-   [
-    "Advent Temple of Unity Blueprint"
-   ]
-  ],
-  "Advent NeuroPsion Purifier Blueprint": [
-   [
-    "Advent Primordial Embrace"
-   ]
-  ],
-  "Advent Pelagic Interface Relay Blueprint": [
-   [
-    "Advent Oceanic Embrace"
-   ]
-  ],
   "Advent Plasma Agitator Blueprint": [
    [
     "Advent Improved Containment"
@@ -1729,14 +1660,14 @@
     "Advent Exotic Refinery Blueprint"
    ]
   ],
-  "Advent Prescience Filter Blueprint": [
+  "Advent Orbital Habitation Blueprint": [
    [
-    "Advent Geomagnetic Embrace"
+    "Advent Orbital Congregation"
    ]
   ],
   "Advent PsiCredit Mint Blueprint": [
    [
-    "Advent Commerce Adaptation"
+    "Advent Commerce Integration"
    ]
   ],
   "Advent Psionic Dynamo Blueprint": [
@@ -1764,11 +1695,6 @@
     "Advent Basic Shield Projection"
    ]
   ],
-  "Advent Silent Monastery Blueprint": [
-   [
-    "Advent Rich Ore Scrying"
-   ]
-  ],
   "Advent Evangelization Nodes Blueprint": [
    [
     "Advent Temple of Communion Blueprint"
@@ -1792,11 +1718,6 @@
   "Advent Zealous Labor Blueprint": [
    [
     "Advent Transcencia Blueprint"
-   ]
-  ],
-  "Advent Starlight Augury Blueprint": [
-   [
-    "Advent Geomagnetic Embrace"
    ]
   ],
   "Advent Structural Force Fields Blueprint": [
@@ -1824,9 +1745,14 @@
     "Advent Temple of Renewal Blueprint"
    ]
   ],
+  "Advent Thermal Shield Dome Blueprint": [
+   [
+    "Advent Arctic Embrace"
+   ]
+  ],
   "Advent Tithe Sanctum Blueprint": [
    [
-    "Advent Commerce Adaptation"
+    "Advent Commerce Integration"
    ]
   ],
   "Advent Unity Protectorate Blueprint": [
@@ -1936,7 +1862,7 @@
   ],
   "Advent Thriving Desert Cities": [
    [
-    "Advent Desert Development"
+    "Advent Homeworld Prophecy"
    ]
   ],
   "Advent Booming Desert Cities": [
@@ -1979,7 +1905,7 @@
     "Advent Empathic Harmony"
    ]
   ],
-  "Advent Irradiated Development": [
+  "Advent Irradiated Specialization": [
    [
     "Advent Irradiated Embrace"
    ]
@@ -1994,7 +1920,7 @@
     "Advent Burst Modulated Lasers"
    ]
   ],
-  "Advent Geomagnetic Development": [
+  "Advent Geomagnetic Specialization": [
    [
     "Advent Geomagnetic Embrace"
    ]
@@ -2104,7 +2030,7 @@
     "Advent Pristine Structure Shields"
    ]
   ],
-  "Advent Primordial Development": [
+  "Advent Primordial Specialization": [
    [
     "Advent Primordial Embrace"
    ]
@@ -2139,6 +2065,26 @@
     "Advent Titan Foundry Blueprint"
    ]
   ],
+  "Advent Conceptual Duality": [
+   [
+    "Advent Oblivia Blueprint"
+   ]
+  ],
+  "Advent Spiritual Triality": [
+   [
+    "Advent Conceptual Duality"
+   ]
+  ],
+  "Advent Manifest Purity": [
+   [
+    "Advent Justicia Blueprint"
+   ]
+  ],
+  "Advent Reflective Clarity": [
+   [
+    "Advent Manifest Purity"
+   ]
+  ],
   "TEC Planet Cracker Warhead Blueprint": [
    [
     "TEC Novalith Blueprint"
@@ -2154,9 +2100,49 @@
     "TEC Titan Foundry Blueprint"
    ]
   ],
+  "TEC Command Comms Channel": [
+   [
+    "TEC Takadaran Blueprint"
+   ]
+  ],
+  "TEC Remote High Command": [
+   [
+    "TEC Command Comms Channel"
+   ]
+  ],
+  "TEC Operational Flexibility": [
+   [
+    "TEC Khevarkov Blueprint"
+   ]
+  ],
+  "TEC Standard Modular Interlink": [
+   [
+    "TEC Operational Flexibility"
+   ]
+  ],
   "Vasari Efficient Subdivision": [
    [
     "Vasari Anarkrul Blueprint"
+   ]
+  ],
+  "Vasari Dark Fleet Auxiliary": [
+   [
+    "Vasari Anarkrul Blueprint"
+   ]
+  ],
+  "Vasari Desperate Recall": [
+   [
+    "Vasari Dark Fleet Auxiliary"
+   ]
+  ],
+  "Vasari Symbols Of Authority": [
+   [
+    "Vasari Sularkon Blueprint"
+   ]
+  ],
+  "Vasari Governance Placement Program": [
+   [
+    "Vasari Symbols Of Authority"
    ]
   ],
   "TEC Triple Fortress": [
@@ -2211,7 +2197,7 @@
   ],
   "TEC Commercial Appropriation": [
    [
-    "TEC Addictive Consumerism"
+    "TEC Cultural Monopolization"
    ]
   ],
   "TEC Expanded Commerce Mandate": [
@@ -2239,11 +2225,6 @@
     "TEC Addictive Consumerism"
    ]
   ],
-  "TEC Desert Mercantile Mandate": [
-   [
-    "TEC Desert Development"
-   ]
-  ],
   "TEC Garrison Expansion": [
    [
     "TEC Garrison Recruitment"
@@ -2266,7 +2247,7 @@
   ],
   "TEC Critical Mass": [
    [
-    "TEC Commercial Appropriation"
+    "TEC Cultural Monopolization"
    ]
   ],
   "TEC Advanced Gauss Coils": [
@@ -2369,6 +2350,11 @@
     "TEC Enhanced Microgravity Excavators"
    ]
   ],
+  "TEC Pervasive Economy": [
+   [
+    "TEC Immense Cargo Holds"
+   ]
+  ],
   "TEC Truce Amongst Rogues": [
    [
     "TEC Sordid Intel"
@@ -2454,11 +2440,6 @@
     "TEC Efficient Generators"
    ]
   ],
-  "TEC Aquaculture Harvester Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
   "TEC Auxiliary Supply Depot Blueprint": [
    [
     "TEC Prestigious Investments"
@@ -2474,24 +2455,19 @@
     "TEC Exotic Refinery Blueprint"
    ]
   ],
-  "TEC Chemical Plant Blueprint": [
-   [
-    "TEC Primordial Colonization"
-   ]
-  ],
   "TEC Combat Repair System Blueprint": [
    [
     "TEC Repair Droid Blueprint"
    ]
   ],
-  "TEC Synthetic Crystal Farm Blueprint": [
+  "TEC Commodity Exchange Blueprint": [
    [
     "TEC Orbital Commerce"
    ]
   ],
-  "TEC Interstellar Commerce": [
+  "TEC Synthetic Crystal Farm Blueprint": [
    [
-    "TEC Addictive Consumerism"
+    "TEC Orbital Commerce"
    ]
   ],
   "TEC Familiar Territory": [
@@ -2509,19 +2485,9 @@
     "TEC Argonev Blueprint"
    ]
   ],
-  "TEC Ferric Mining Rig Blueprint": [
-   [
-    "TEC Ferrous Occupation"
-   ]
-  ],
-  "TEC Fissile Enrichment Plant Blueprint": [
-   [
-    "TEC Irradiated Colonization"
-   ]
-  ],
   "TEC Fulfillment Warehouse Blueprint": [
    [
-    "TEC Huge Cargo Holds"
+    "TEC Immense Cargo Holds"
    ]
   ],
   "TEC Gas Crystallizer Blueprint": [
@@ -2537,11 +2503,6 @@
   "TEC Hangar Flak Turrets": [
    [
     "TEC Hangar Defense Blueprint"
-   ]
-  ],
-  "TEC Harvesting Crawler Blueprint": [
-   [
-    "TEC Crystalline Colonization"
    ]
   ],
   "TEC Core Systems Armor Blueprint": [
@@ -2564,12 +2525,7 @@
     "TEC Submission Warheads"
    ]
   ],
-  "TEC Ice Processing Facility Blueprint": [
-   [
-    "TEC Arctic Colonization"
-   ]
-  ],
-  "TEC Industrial Complex Blueprint": [
+  "TEC Industrial District Blueprint": [
    [
     "TEC Labor Negotiations"
    ]
@@ -2624,11 +2580,6 @@
     "TEC Interstellar Networks"
    ]
   ],
-  "TEC Geothermal Smelter Blueprint": [
-   [
-    "TEC Volcanic Colonization"
-   ]
-  ],
   "TEC Reactive Plating Blueprint": [
    [
     "TEC Titano-Ferric Plating"
@@ -2652,6 +2603,11 @@
   "TEC Pirate Mercenary Base Blueprint": [
    [
     "TEC Gang of Freebooters"
+   ]
+  ],
+  "TEC Transit Taxation Policy": [
+   [
+    "TEC Interplanetary Transit"
    ]
   ],
   "TEC Rapid Autoloader Blueprint": [
@@ -2682,16 +2638,6 @@
   "TEC Orbital Mining Control Blueprint": [
    [
     "TEC Orbital Extraction"
-   ]
-  ],
-  "TEC Resort Complex Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
-  "TEC Orbital Extraction": [
-   [
-    "TEC Efficient Crystal Sorting"
    ]
   ],
   "TEC Hoshiko Blueprint": [
@@ -2779,6 +2725,11 @@
     "TEC Improved Shield Arrays"
    ]
   ],
+  "TEC Barren Development": [
+   [
+    "TEC Barren Mercantile Mandate"
+   ]
+  ],
   "TEC Superior Command Bunker": [
    [
     "TEC Command Bunker Blueprint"
@@ -2790,6 +2741,11 @@
    ]
   ],
   "TEC Crystalline Development": [
+   [
+    "TEC Crystalline Mercantile Mandate"
+   ]
+  ],
+  "TEC Crystalline Mercantile Mandate": [
    [
     "TEC Crystalline Colonization"
    ]
@@ -2811,17 +2767,22 @@
   ],
   "TEC Ferrous Development": [
    [
-    "TEC Ferrous Occupation"
+    "TEC Ferrous Mercantile Mandate"
+   ]
+  ],
+  "TEC Ferrous Mercantile Mandate": [
+   [
+    "TEC Ferrous Colonization"
    ]
   ],
   "TEC Arctic Development": [
    [
-    "TEC Arctic Colonization"
+    "TEC Ice Mercantile Mandate"
    ]
   ],
   "TEC Ice Mercantile Mandate": [
    [
-    "TEC Arctic Development"
+    "TEC Arctic Colonization"
    ]
   ],
   "TEC Prestigious Investments": [
@@ -2841,7 +2802,17 @@
   ],
   "TEC Irradiated Development": [
    [
+    "TEC Irradiated Mercantile Mandate"
+   ]
+  ],
+  "TEC Irradiated Mercantile Mandate": [
+   [
     "TEC Irradiated Colonization"
+   ]
+  ],
+  "TEC Geomagnetic Development": [
+   [
+    "TEC Geomagnetic Colonization"
    ]
   ],
   "TEC Oceanic Development": [
@@ -2875,6 +2846,11 @@
    ]
   ],
   "TEC Volcanic Development": [
+   [
+    "TEC Volcanic Mercantile Mandate"
+   ]
+  ],
+  "TEC Volcanic Mercantile Mandate": [
    [
     "TEC Volcanic Colonization"
    ]
@@ -3004,6 +2980,11 @@
     "Vasari Seized Infrastructure"
    ]
   ],
+  "Vasari Trauma Nanomedicine": [
+   [
+    "Vasari Artificial Longevity"
+   ]
+  ],
   "Vasari External Influence": [
    [
     "Vasari Xeno Relations Center Blueprint"
@@ -3049,9 +3030,14 @@
     "Vasari Orbital Exotic Refinement"
    ]
   ],
-  "Vasari Crystal Nanite Base Blueprint": [
+  "Vasari Crystal Seeking Nanites Blueprint": [
    [
     "Vasari Resource Sublimation"
+   ]
+  ],
+  "Vasari Mobile Phase Gate Blueprint": [
+   [
+    "Vasari Phase Gate Blueprint"
    ]
   ],
   "Vasari Deploy Orkulus Blueprint": [
@@ -3134,7 +3120,7 @@
     "Vasari Vorastra Blueprint"
    ]
   ],
-  "Vasari Metal Nanite Base Blueprint": [
+  "Vasari Metal Seeking Nanites Blueprint": [
    [
     "Vasari Resource Sublimation"
    ]
@@ -3147,11 +3133,6 @@
   "Vasari Mobile Resonance Capacitor Blueprint": [
    [
     "Vasari Resonance Mastery"
-   ]
-  ],
-  "Vasari Ocean Floor Miner Blueprint": [
-   [
-    "Vasari Oceanic Occupation"
    ]
   ],
   "Vasari Mobile Phase Detection": [
@@ -3172,6 +3153,11 @@
   "Vasari Phase Attenuated Shield Blueprint": [
    [
     "Vasari Bifurcative Shielding"
+   ]
+  ],
+  "Vasari Orbital Labor Allocation": [
+   [
+    "Vasari Labor Distribution"
    ]
   ],
   "Vasari Kultorask Hangar Restoration": [
@@ -3249,11 +3235,6 @@
     "Vasari Atomic Engineering"
    ]
   ],
-  "Vasari Organic Reclamation Nanites Blueprint": [
-   [
-    "Vasari Terran Occupation"
-   ]
-  ],
   "Vasari Wave Modulator Blueprint": [
    [
     "Vasari Wave Densification"
@@ -3299,7 +3280,7 @@
     "Vasari Acute Beams"
    ]
   ],
-  "Vasari Stabilization Nanites": [
+  "Vasari Silicate Adaptation": [
    [
     "Vasari Crystalline Occupation"
    ]
@@ -3312,11 +3293,6 @@
   "Vasari Anhydrobiosis": [
    [
     "Vasari Desert Occupation"
-   ]
-  ],
-  "Vasari Hygroscopic Nanites": [
-   [
-    "Vasari Anhydrobiosis"
    ]
   ],
   "Vasari Improved Debris Reclamation": [
@@ -3379,6 +3355,11 @@
     "Vasari Emissary Outreach"
    ]
   ],
+  "Vasari Genome Autorepair": [
+   [
+    "Vasari Irradiated Occupation"
+   ]
+  ],
   "Vasari Communal Oppression": [
    [
     "Vasari Labor Camp Blueprint"
@@ -3387,6 +3368,11 @@
   "Vasari Full Lockdown": [
    [
     "Vasari Communal Oppression"
+   ]
+  ],
+  "Vasari Magnetoreception": [
+   [
+    "Vasari Geomagnetic Occupation"
    ]
   ],
   "Vasari Advanced NME Warheads": [
@@ -3417,11 +3403,6 @@
   "Vasari Self Constructing Domes": [
    [
     "Vasari Oceanic Occupation"
-   ]
-  ],
-  "Vasari Nano Algae Reactors": [
-   [
-    "Vasari Self Constructing Domes"
    ]
   ],
   "Vasari Administrative Specialists": [
@@ -3467,11 +3448,6 @@
   "Vasari Pinpoint Bombardment": [
    [
     "Vasari Beam Streaming"
-   ]
-  ],
-  "Vasari Artificial Longevity": [
-   [
-    "Vasari Trauma Nanomedicine"
    ]
   ],
   "Vasari Rapid Pulse Cycling": [
