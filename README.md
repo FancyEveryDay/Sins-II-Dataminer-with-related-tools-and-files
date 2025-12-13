@@ -5,6 +5,7 @@ This repository contains my personal tools I use for all my Sins of a Solar Empi
 The repository currently contains 5 modules, I've also uploaded the latest collection of unit stats files produced by the SinsIIStatsThing.py
 
 Each has been updated to use a .env file which you will need to create in the parent folder on installation.
+
 {
    'sins2File' : '<Address to sins2 file here>'
    'pastPatch' : '1.42.09'
