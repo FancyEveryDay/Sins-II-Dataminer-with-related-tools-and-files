@@ -2,9 +2,10 @@
 
 This repository contains my personal tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use, but some of you technically inclined people may find them useful or inspirational.
 
-The repository currently contains 3 modules, I've also uploaded the latest collection of unit stats files produced by the SinsIIStatsThing.py
+The repository currently contains 5 modules, I've also uploaded the latest collection of unit stats files produced by the SinsIIStatsThing.py
 
 Each has been updated to use a .env file which you will need to create in the parent folder on installation.
+
 {
    'sins2File' : '<Address to sins2 file here>'
    'pastPatch' : '1.42.09'
@@ -21,10 +22,9 @@ Each has been updated to use a .env file which you will need to create in the pa
 ## 2. SinsIIPatchComparison.py
    
    This module leverages SinsIIStatsThing functions to produce a printout of all the data changes to entities.
-   In order to use it you have to copy the entities of a previous patch somewhere you can access them, either while the game is rolled back or before you update.
    This is what I use to produce my Detailed Patch Notes I post to reddit.
 
-   In order to use it on your machine you'll need to create the .env file mentioned above. On starting the program, users will need to input the patch number to compare to, and the patch number to    output to. It is important that any new data folders added follow the same naming scheme, with the 1 omitted on the front end.
+   In order to use it on your machine you'll need to create the .env file mentioned above. On starting the program, users will need to input the patch number to compare to, and the patch number to output to. It is important that any new data folders added follow the same naming scheme, with the 1 omitted on the front end.
 
 ## 3. SinsIIFun.ipynb
    This notebook contains a bunch of experiments and tests as well as a few tools which you can use to potentially run your own tests.
@@ -44,14 +44,16 @@ Each has been updated to use a .env file which you will need to create in the pa
 
 ## 5. WikiMain.py and other wiki scripts
 
-   This module contains the code for the dataminer which I am developing to replace the incomplete Java and Javascript miners I inherited when I joined the Sins 2 Wiki project. Also uses a .env       but this one must be placed in the Wiki Dataminer folder. The .json format Wiki Files are created in the Wiki Data folder.
+   This module contains the code for the dataminer which I am developing to replace the incomplete Java and Javascript miners I inherited when I joined the Sins 2 Wiki project. Also uses a .env but this one must be placed in the Wiki Dataminer folder. The .json format Wiki Files are created in the Wiki Data folder.
 
    ### Includes:
    - wikiPlanet.py : exports all planet specific data
+   - wikiPlayer.py : exports data specific to each faction (such as lists of buildable units and research)
+   - wikiPrerequisites.py : finds and creates a file which lists all items in the game and their prerequisites.
+   - wikiResearchTesting.ipynb : Outputs research data. Needs to be condensed into wikiResearch.py and bundled with the others.
 
    ### Not Included But in Active Development:
-   - wikiPlayer.py - exports data specific to each faction (which mostly comes from .player files)
-   - wikiResearch.py - exports research data. Partially covered by Jintekki's Javascript Dataminer.
+   - wikiResearch.py - exports research data. Partially covered by Jintekki's Javascript Dataminer. wikiResearchTesting.ipynb currently outputs wikiResearch files.
 
    ### Miner Backlog:
    - wikiShipItem.py - exports ship item data
@@ -59,7 +61,10 @@ Each has been updated to use a .env file which you will need to create in the pa
    
    #### Covered by Daxos' Java dataminer but need replaced eventually
    - wikiUnit.py - exports unit data (including weapon data)
-   - wikiStructure.py - (debating combing this with wikiUnit because of similarities) exports unit data
+   - wikiStructure.py - (debating combining this with wikiUnit because of similarities) exports unit data
    - wikiPlanetItems.py - exports planet item data
 
-   
+## 6. findIconChanges.py
+   This module compares the images in the game to an image folder in a location and produces an output which names all the large tooltip icons for new or changed art, and then copies these new images into a folder for viewing.
+
+   Still a bit half-baked, doesn't use a .env yet but needs one.
