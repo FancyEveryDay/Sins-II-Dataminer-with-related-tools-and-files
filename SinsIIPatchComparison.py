@@ -67,14 +67,40 @@ def compareShipDicts(newDict : dict, oldDict : dict):
 
     return changesDict
 
+def checkForListOfDicts(obj) -> bool:
+    """Checks if the object is a list of dicts with string identifying keys."""
+    try:
+        if isinstance(obj, list) and len(obj) > 0 and all(isinstance(item, dict) for item in obj) and isinstance(obj[0][next(iter(obj[0]))], str):
+            return True
+    except:
+        pass
+    return False
+
 def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better handle new and removed content.
-    printTypes = [str, int, float]
+    printTypes = (str, int, float)
 
     changeDict = {}
 
     indents = "\t" * level
 
-    ## Handle single-item lists contain a single collection
+    # Handling dicts in lists (grab name of dict list member)
+    ## Reframes both lists as dicts with the (in theory) identifying string as the key
+    if checkForListOfDicts(obj1) and checkForListOfDicts(obj2):
+        Dict1 = {}
+        Dict2 = {}
+
+        idString = next(iter(obj1[0]))
+        for i in obj1:
+            memberName = i.get(idString)
+            Dict1[memberName] = i
+        for j in obj2:
+            memberName = j.get(idString)
+            Dict2[memberName] = j
+        
+        obj1 = Dict1
+        obj2 = Dict2
+
+    ## Handle single-item lists that contain a single collection
     if(type(obj1) == list and len(obj1) == 1 and len(obj2) == 1 and obj1[0] not in printTypes):
         try:
             obj1 = obj1[0]
@@ -82,13 +108,13 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
         except IndexError:
             return {0: "[NEW] " + str(obj1[0])}
 
-    if (type(obj1) in printTypes) and type(obj2) in printTypes:
+    elif (type(obj1) in printTypes) and type(obj2) in printTypes:
         if obj1 != obj2:
             # print(f"{indents}{obj2} -> {obj1}")
             return f"{obj2} -> {obj1}"
         else: return False
 
-    if (type(obj1) is list) and (type(obj2) is list): # and (obj1 != obj2):
+    elif (type(obj1) is list) and (type(obj2) is list): # and (obj1 != obj2):
         for i, j in enumerate(obj1):
             try:
                 # print(f"{indents}{i+1}")
@@ -100,7 +126,7 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
             except IndexError:
                 changeDict[f"[NEW] {i}"] = str(j)
 
-    if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
+    elif (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
         for i, j in obj1.items():
             
             try:

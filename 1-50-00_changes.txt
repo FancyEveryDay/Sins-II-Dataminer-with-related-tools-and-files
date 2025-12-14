@@ -4,10 +4,6 @@
 
 ## Unit_item Changes
 
-**Atmospheric Shield Dome**
-	planet_modifiers
-		values : 125.0 -> 75.0
-
 **Coalescence Sanctum**
 	hud_icon : advent_haven_dome_unit_item_hud_icon -> advent_mobile_ruler_ship_unit_item_hud_icon
 	tooltip_icon : advent_haven_dome_unit_item_hud_icon -> advent_mobile_ruler_ship_unit_item_hud_icon
@@ -16,14 +12,6 @@
 		credits : 500.0 -> 900.0
 		metal : 100.0 -> 75.0
 		crystal : 150.0 -> 225.0
-	planet_type_groups
-		planet_types
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	[NEW] ability : advent_coalescence_sanctum
 
 **Crystal Enrichment Center**
@@ -31,17 +19,6 @@
 		credits : 500.0 -> 1350.0
 		metal : 100.0 -> 210.0
 		crystal : 150.0 -> 75.0
-	planet_type_groups
-		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] gas_giant
-			[NEW] hive_asteroid
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
 	[NEW] ability : advent_crystal_enricher
 
 **Cynosural Reservoir**
@@ -50,27 +27,19 @@
 		metal : 100.0 -> 210.0
 		crystal : 150.0 -> 175.0
 	exotic_price
-		exotic_type : utility -> economic
-	planet_type_groups
-		planet_types
-			[NEW] ferrous
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+		[NEW] economic : {'exotic_type': 'economic', 'count': 1}
 	[NEW] ability : advent_cynosural_reservoir
 
 **Empyrean City**
 	planet_modifiers
-		0
-			modifier_type : commerce_track_credit_income_rate -> max_population_points
-			values : 5.0 -> 150.0
-		[NEW] 1 : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.25]}
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [150.0]}
+		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.25]}
 
 **Hydrostatic Shield Dome**
 	planet_modifiers
-		values
-			1 : 175 -> 150
+		max_population_points
+			values
+				1 : 175 -> 150
 
 **Laminate Forge**
 	build_time : 90.0 -> 135.0
@@ -78,25 +47,10 @@
 		credits : 500.0 -> 900.0
 		metal : 100.0 -> 75.0
 		crystal : 150.0 -> 225.0
-	planet_type_groups
-		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-	planet_income_rate_transmuter
-		produced_scalar : -0.2 -> 0.0
 
 **Neural Stimulator**
 	planet_modifiers
-		0
-			values : 0.001 -> 0.0005
-		1
-			modifier_type : bonus_max_mana -> bonus_max_mana_per_population
-			values : 50.0 -> 0.5
+		[NEW] bonus_max_mana_per_population : {'modifier_type': 'bonus_max_mana_per_population', 'value_behavior': 'additive', 'values': [0.5]}
 
 **NeuroAugment Center**
 	build_time : 90.0 -> 45.0
@@ -104,24 +58,7 @@
 		metal : 100.0 -> 120.0
 		crystal : 150.0 -> 175.0
 	exotic_price
-		exotic_type : utility -> economic
-	planet_type_groups
-		planet_types
-			[NEW] asteroid
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic
-			[NEW] volcanic_moon
+		[NEW] economic : {'exotic_type': 'economic', 'count': 1}
 	[NEW] ability : advent_neuroaugment_center
 
 **Plasma Furnace**
@@ -130,24 +67,14 @@
 		credits : 1000.0 -> 1350.0
 		metal : 200.0 -> 75.0
 		crystal : 300.0 -> 225.0
-	planet_type_groups
-		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] gas_giant
-			[NEW] hive_asteroid
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic_moon
 	[NEW] ability : advent_plasma_furnace
 
 **Prescience Filter**
 	player_modifiers
 		empire_modifiers
-			0
+			unity_mana_restore_rate
 				value : 0.2 -> 0.5
-			1
+			unity_max_mana_points
 				value : 200.0 -> 100.0
 
 **PsiCredit Mint**
@@ -156,40 +83,15 @@
 		credits : 500.0 -> 450.0
 		metal : 100.0 -> 150.0
 		crystal : 150.0 -> 225.0
-	planet_type_groups
-		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-
-**Radiation Shield Dome**
-	planet_modifiers
-		values : 90.0 -> 75.0
 
 **Sanctuary Spire**
 	price
 		credits : 500.0 -> 600.0
 		metal : 100.0 -> 120.0
 		crystal : 150.0 -> 175.0
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] city
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic_moon
 	planet_modifiers
-		0
-			modifier_type : commerce_track_credit_income_rate -> max_population_points
-			value_behavior : scalar -> additive
-			values : 0.5 -> 50.0
-		[NEW] 1 : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.1]}
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [50.0]}
+		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.1]}
 
 **Shrine of Harmony**
 	build_time : 90.0 -> 75.0
@@ -197,10 +99,6 @@
 		credits : 500.0 -> 800.0
 		metal : 100.0 -> 75.0
 		crystal : 125.0 -> 120.0
-	planet_type_groups
-		planet_types
-			[NEW] pirate_base
-			[REMOVED] hive_asteroid
 	[NEW] ability : advent_surface_civilian_research_lab
 
 **Shrine of Hostility**
@@ -209,10 +107,6 @@
 		credits : 500.0 -> 800.0
 		metal : 100.0 -> 75.0
 		crystal : 125.0 -> 120.0
-	planet_type_groups
-		planet_types
-			[NEW] pirate_base
-			[REMOVED] hive_asteroid
 	[NEW] ability : advent_surface_military_research_lab
 
 **Shrine of Prophecy**
@@ -237,21 +131,9 @@
 		credits : 250.0 -> 450.0
 		metal : 50.0 -> 75.0
 		crystal : 75.0 -> 25.0
-	planet_type_groups
-		planet_types
-			[NEW] ice_asteroid
-			[REMOVED] ferrous
-			[REMOVED] moon
-			[REMOVED] volcanic
-			[REMOVED] volcanic_moon
 	planet_modifiers
-		0
-			modifier_type : mining_track_metal_income_rate -> max_population_points
-			value_behavior : scalar -> additive
-			values : 0.15 -> 25.0
-		1
-			modifier_type : mining_track_metal_income_rate_per_population -> population_growth_rate
-			values : 0.15 -> 0.1
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [25.0]}
+		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.1]}
 
 **Temple of Purification**
 	[NEW] max_count_on_unit : 1
@@ -336,28 +218,11 @@
 **Orbital Habitation**
 	[NEW] level_source : research_prerequisites_per_level
 	[NEW] level_prerequisites : [[['advent_unlock_population_growth_ability']]]
-	gui
-		tooltip_line_groups
-			lines
-				0
-					planet_modifier_id : growth_pop_growth_rate_modifier -> growth_max_population_modifier
-				[NEW] 1 : {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'growth_population_assimilation_rate_modifier'}
 
 **Tithe Sanctum**
 	gui
 		tooltip_line_groups
-			header_text : tooltip.bonus_per_advent_population_structure_tooltip_lines_sub_header_label -> tooltip.bonus_per_planet_current_commerce_track_level_header
-			lines
-				0
-					planet_modifier_id : tithe_collector_commerce_per_population_modifier -> tithe_collector_credit_income_rate_modifier
-				[NEW] 1 : {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier'}
-
-**Unity Meditation**
-	gui
-		tooltip_line_groups
-			lines
-				[NEW] 1 : {'rendering_type': 'buff_empire_modifier', 'empire_modifier_id': 'unity_meditation_max_mana_points_modifier'}
-				[NEW] 2 : {'rendering_type': 'buff_empire_modifier', 'empire_modifier_id': 'unity_meditation_mana_restore_rate_modifier'}
+			[NEW] tooltip.bonus_per_planet_current_commerce_track_level_header : {'header_text': 'tooltip.bonus_per_planet_current_commerce_track_level_header', 'lines': [{'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'tithe_collector_credit_income_rate_modifier'}, {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier'}]}
 
 **[NEW] Coalescence Sanctum**
 	action_data_source : advent_coalescence_sanctum
@@ -505,23 +370,15 @@
 
 **Orbital Habitation**
 	action_values
-		0
-			action_value_id : growth_pop_growth_rate_bonus_value -> growth_max_population_value
-			action_value
-				values : 0.25 -> 10.0
-		[NEW] 1 : {'action_value_id': 'growth_population_assimilation_rate_value', 'action_value': {'values': [0.05]}}
+		[NEW] growth_max_population_value : {'action_value_id': 'growth_max_population_value', 'action_value': {'values': [10.0]}}
+		[NEW] growth_population_assimilation_rate_value : {'action_value_id': 'growth_population_assimilation_rate_value', 'action_value': {'values': [0.05]}}
 	buff_planet_modifiers
-		0
-			buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_max_population_modifier
-			buff_planet_modifier
-				modifier_type : population_growth_rate -> max_population_points
-				value_behavior : scalar -> additive
-				value_id : growth_pop_growth_rate_bonus_value -> growth_max_population_value
-		[NEW] 1 : {'buff_planet_modifier_id': 'growth_population_assimilation_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value_id': 'growth_population_assimilation_rate_value'}}
+		[NEW] growth_max_population_modifier : {'buff_planet_modifier_id': 'growth_max_population_modifier', 'buff_planet_modifier': {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'value_id': 'growth_max_population_value'}}
+		[NEW] growth_population_assimilation_rate_modifier : {'buff_planet_modifier_id': 'growth_population_assimilation_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value_id': 'growth_population_assimilation_rate_value'}}
 
 **Reinvigorate**
 	action_values
-		9
+		reinvigorate_damage_output_bonus_value
 			action_value
 				ratio
 					ratio_values
@@ -533,28 +390,17 @@
 **Tithe Sanctum**
 	[NEW] per_buff_memory_declaration : {'float_variable_ids': ['track_count']}
 	action_values
-		0
-			action_value_id : tithe_collector_research_time_bonus -> commerce_track_level_count
-			action_value
-				[NEW] transform_type : per_planet_current_commerce_track_level
-				[NEW] transform_unit : {'unit_type': 'current_spawner'}
-				values
-					0 : 0.03 -> 1.0
-					1 : 0.04 -> 1.0
-					2 : 0.05 -> 1.0
-		[NEW] 1 : {'action_value_id': 'tithe_collector_credit_income_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.03, 0.06, 0.09]}}
-		[NEW] 2 : {'action_value_id': 'tithe_collector_neutral_assimilation_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.03, 0.06, 0.09]}}
+		[NEW] commerce_track_level_count : {'action_value_id': 'commerce_track_level_count', 'action_value': {'transform_type': 'per_planet_current_commerce_track_level', 'transform_unit': {'unit_type': 'current_spawner'}, 'values': [1.0, 1.0, 1.0]}}
+		[NEW] tithe_collector_credit_income_rate_value : {'action_value_id': 'tithe_collector_credit_income_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.03, 0.06, 0.09]}}
+		[NEW] tithe_collector_neutral_assimilation_value : {'action_value_id': 'tithe_collector_neutral_assimilation_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.03, 0.06, 0.09]}}
 	buff_planet_modifiers
-		0
-			buff_planet_modifier_id : tithe_collector_commerce_per_population_modifier -> tithe_collector_credit_income_rate_modifier
-			buff_planet_modifier
-				value_id : tithe_collector_research_time_bonus -> tithe_collector_credit_income_rate_value
-		[NEW] 1 : {'buff_planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier', 'buff_planet_modifier': {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value_id': 'tithe_collector_neutral_assimilation_value'}}
+		[NEW] tithe_collector_credit_income_rate_modifier : {'buff_planet_modifier_id': 'tithe_collector_credit_income_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'commerce_track_credit_income_rate_per_population', 'value_behavior': 'scalar', 'value_id': 'tithe_collector_credit_income_rate_value'}}
+		[NEW] tithe_collector_neutral_assimilation_modifier : {'buff_planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier', 'buff_planet_modifier': {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value_id': 'tithe_collector_neutral_assimilation_value'}}
 
 **Unity Meditation**
 	action_values
-		[NEW] 1 : {'action_value_id': 'unity_meditation_max_mana_points_bonus_value', 'action_value': {'values': [25.0, 50.0, 75.0]}}
-		[NEW] 2 : {'action_value_id': 'unity_meditation_mana_restore_rate_bonus_value', 'action_value': {'values': [0.1, 0.2, 0.3]}}
+		[NEW] unity_meditation_max_mana_points_bonus_value : {'action_value_id': 'unity_meditation_max_mana_points_bonus_value', 'action_value': {'values': [25.0, 50.0, 75.0]}}
+		[NEW] unity_meditation_mana_restore_rate_bonus_value : {'action_value_id': 'unity_meditation_mana_restore_rate_bonus_value', 'action_value': {'values': [0.1, 0.2, 0.3]}}
 	[NEW] buff_empire_modifiers : [{'buff_empire_modifier_id': 'unity_meditation_max_mana_points_modifier', 'buff_empire_modifier': {'modifier_type': 'unity_max_mana_points', 'value_behavior': 'additive', 'value_id': 'unity_meditation_max_mana_points_bonus_value'}}, {'buff_empire_modifier_id': 'unity_meditation_mana_restore_rate_modifier', 'buff_empire_modifier': {'modifier_type': 'unity_mana_restore_rate', 'value_behavior': 'additive', 'value_id': 'unity_meditation_mana_restore_rate_bonus_value'}}]
 
 **[NEW] Coalescence Sanctum**
@@ -934,22 +780,16 @@
 
 **Colonize**
 	trigger_event_actions
-		action_group
-			actions
-				0
-					operators
-						0
-							planet_track_type : focus -> logistics
-							level_count_value : colonize_level_count_value -> colonize_logistics_level_count_value
-						[NEW] 1 : {'operator_type': 'increase_planet_track_level', 'planet_track_type': 'focus', 'level_count_value': 'colonize_focus_level_count_value', 'will_offset_development_track_upgrade_price': True, 'ignore_research': True}
+		on_current_spawner_planet_colonized
+			action_group
+				actions
+					use_unit_operators_on_single_unit
+						operators
+							increase_planet_track_level
+								level_count_value : colonize_level_count_value -> colonize_focus_level_count_value
 
 **Unity Meditation**
 	[NEW] empire_modifiers : [{'buff_empire_modifier_id': 'unity_meditation_max_mana_points_modifier'}, {'buff_empire_modifier_id': 'unity_meditation_mana_restore_rate_modifier'}]
-	gui
-		tooltip_line_groups
-			lines
-				[NEW] 1 : {'rendering_type': 'buff_empire_modifier', 'empire_modifier_id': 'unity_meditation_max_mana_points_modifier'}
-				[NEW] 2 : {'rendering_type': 'buff_empire_modifier', 'empire_modifier_id': 'unity_meditation_mana_restore_rate_modifier'}
 
 **[NEW] Coalescence Sanctum**
 	make_dead_on_source_ability_released
@@ -1411,32 +1251,18 @@
 
 **advent_population_structure_growth_on_planet**
 	planet_modifiers
-		0
-			buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_max_population_modifier
-		[NEW] 1 : {'buff_planet_modifier_id': 'growth_population_assimilation_rate_modifier'}
+		[NEW] growth_max_population_modifier : {'buff_planet_modifier_id': 'growth_max_population_modifier'}
+		[NEW] growth_population_assimilation_rate_modifier : {'buff_planet_modifier_id': 'growth_population_assimilation_rate_modifier'}
 	gui
 		hud_icon : advent_starbase_zealous_labor_unit_item_hud_icon -> advent_population_structure_growth_ability_hud_icon
-		tooltip_line_groups
-			lines
-				0
-					planet_modifier_id : growth_pop_growth_rate_modifier -> growth_max_population_modifier
-				[NEW] 1 : {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'growth_population_assimilation_rate_modifier'}
 
 **advent_tithe_collector_unit_item_on_planet**
 	trigger_event_actions
-		0
+		on_buff_started
 			action_group
 				actions
-					action_type : use_unit_operators_on_units_in_gravity_well_of_unit -> change_buff_memory_float_value
-					[NEW] float_variable : track_count
-					[NEW] math_operators : [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'commerce_track_level_count'}]
-		1
-			trigger_event_type : on_unit_finished_building_in_gravity_well -> on_current_spawner_planet_track_completed
-			action_group
-				actions
-					action_type : use_unit_operators_on_single_unit -> change_buff_memory_float_value
-					[NEW] float_variable : track_count
-					[NEW] math_operators : [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'commerce_track_level_count'}]
+					[NEW] change_buff_memory_float_value : {'action_type': 'change_buff_memory_float_value', 'float_variable': 'track_count', 'math_operators': [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'commerce_track_level_count'}]}
+		[NEW] on_current_spawner_planet_track_completed : {'trigger_event_type': 'on_current_spawner_planet_track_completed', 'action_group': {'actions': [{'action_type': 'change_buff_memory_float_value', 'float_variable': 'track_count', 'math_operators': [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'commerce_track_level_count'}]}]}}
 	[NEW] planet_modifiers : [{'buff_planet_modifier_id': 'tithe_collector_credit_income_rate_modifier'}, {'buff_planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier'}]
 	[NEW] gui : {'hud_icon': 'advent_tithe_collector_unit_item_hud_icon', 'name': 'advent_tithe_collector_unit_item_name', 'visibility_scope': 'positive', 'is_visible_within_unit_tooltip': True, 'tooltip_line_groups': [{'lines': [{'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'tithe_collector_credit_income_rate_modifier', 'is_resolved_value': True}, {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'tithe_collector_neutral_assimilation_modifier', 'is_resolved_value': True}]}]}
 
@@ -1489,16 +1315,17 @@
 			[REMOVED] lrm_flak
 	weapons
 		weapons
-			medium_laser
-				attack_target_type_groups
-					[NEW] flak
-					[NEW] light
-					[NEW] antiarmor_lrm
-					[NEW] carrier_support
-					[NEW] capital_supercapital_heavy
-					[NEW] defense
-					[NEW] corvette
-					[REMOVED] lrm_flak
+			advent_light_frigate_laser
+				medium_laser
+					attack_target_type_groups
+						[NEW] flak
+						[NEW] light
+						[NEW] antiarmor_lrm
+						[NEW] carrier_support
+						[NEW] capital_supercapital_heavy
+						[NEW] defense
+						[NEW] corvette
+						[REMOVED] lrm_flak
 	build
 		price
 			credits : 150.0 -> 180.0
@@ -1521,7 +1348,7 @@
 		attack_target_type : lrm -> antiarmor
 	weapons
 		weapons
-			0
+			advent_long_range_cruiser_weapon_heavy_beam
 				medium_beam
 					attack_target_type_groups
 						[NEW] heavy
@@ -1530,16 +1357,7 @@
 						[NEW] carrier_support
 						[NEW] light
 						[REMOVED] heavy_capital
-			1
-				light_beam
-					attack_target_type_groups
-						[NEW] heavy
-						[NEW] antistructure
-						[NEW] capital_supercapital
-						[NEW] carrier_support
-						[NEW] light
-						[REMOVED] heavy_capital
-			2
+			advent_long_range_cruiser_weapon_medium_beam
 				light_beam
 					attack_target_type_groups
 						[NEW] heavy
@@ -2254,8 +2072,6 @@
 
 **advent_soul_reclamation**
 	research_time : 300.0 -> 225.0
-	prerequisites
-		0 : advent_unity_mana_0 -> advent_unity_mana_1
 
 **advent_temple_of_renewal_structure_antimatter_restore_rate**
 	research_time : 300.0 -> 225.0
@@ -2558,8 +2374,6 @@
 
 **advent_unlock_plasma_furnace_unit_item**
 	research_time : 360.0 -> 270.0
-	prerequisites
-		[NEW] 1 : advent_upgrade_metal_extraction_0
 
 **advent_unlock_population_structure**
 	tier : 1 -> 0
@@ -2585,8 +2399,6 @@
 		credits : 550.0 -> 500.0
 		metal : 150.0 -> 125.0
 		crystal : 350.0 -> 300.0
-	prerequisites
-		0 : advent_commerce_1 -> advent_commerce_0
 
 **advent_unlock_radiation_shield_dome_unit_item**
 	tier : 2 -> 3
@@ -2723,8 +2535,6 @@
 		credits : 550.0 -> 300.0
 		metal : 150.0 -> 50.0
 		crystal : 350.0 -> 100.0
-	prerequisites
-		0 : advent_commerce_1 -> advent_commerce_0
 
 **advent_unlock_tranquil_refuge_unit_item**
 	research_time : 300.0 -> 225.0
@@ -2784,10 +2594,7 @@
 		crystal : 100.0 -> 300.0
 	[NEW] exotic_price : [{'exotic_type': 'defense', 'count': 1}]
 	planet_modifiers
-		0
-			modifier_type : max_planet_component_slots -> max_civilian_structure_slots
-			value : 1.0 -> 2.0
-		[NEW] 1 : {'modifier_type': 'max_planet_component_slots', 'value_behavior': 'additive', 'value': 1.0, 'planet_types': ['barren']}
+		[NEW] max_civilian_structure_slots : {'modifier_type': 'max_civilian_structure_slots', 'value_behavior': 'additive', 'value': 2.0, 'planet_types': ['barren']}
 
 **advent_upgrade_beam_weapon_damage_0**
 	research_time : 180.0 -> 150.0
@@ -2831,9 +2638,7 @@
 		1 : 8 -> 4
 	research_time : 540.0 -> 360.0
 	planet_modifiers
-		modifier_type : max_allied_population_factor -> enemy_population_assimilation_rate
-		value_behavior : additive -> scalar
-		value : 0.1 -> 1.0
+		[NEW] enemy_population_assimilation_rate : {'modifier_type': 'enemy_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 1.0}
 
 **advent_upgrade_culture_crystal_0**
 	research_time : 300.0 -> 225.0
@@ -2844,19 +2649,19 @@
 **advent_upgrade_culture_rate_0**
 	research_time : 90.0 -> 75.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.1}
-		[NEW] 2 : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.1}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.1}
+		[NEW] neutral_population_assimilation_rate : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.1}
 
 **advent_upgrade_culture_rate_1**
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.15}
-		[NEW] 2 : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.15}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.15}
+		[NEW] neutral_population_assimilation_rate : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.15}
 
 **advent_upgrade_culture_rate_2**
 	research_time : 360.0 -> 270.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.2}
-		[NEW] 2 : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.2}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.2}
+		[NEW] neutral_population_assimilation_rate : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.2}
 
 **advent_upgrade_deliverance_engine_structure_loyalist_ability**
 	research_time : 900.0 -> 600.0
@@ -2876,26 +2681,22 @@
 		crystal : 100.0 -> 350.0
 	[NEW] exotic_price : [{'exotic_type': 'economic', 'count': 1}]
 	planet_modifiers
-		0
-			modifier_type : max_planet_component_slots -> max_civilian_structure_slots
-			value : 1.0 -> 2.0
-		[NEW] 1 : {'modifier_type': 'max_planet_component_slots', 'value_behavior': 'additive', 'value': 1.0, 'planet_types': ['desert']}
+		[NEW] max_civilian_structure_slots : {'modifier_type': 'max_civilian_structure_slots', 'value_behavior': 'additive', 'value': 2.0, 'planet_types': ['desert']}
 
 **advent_upgrade_desert_planets_0**
 	field_coord
 		1 : 4 -> 1
-	prerequisites
-		0 : advent_upgrade_desert_biosphere -> advent_upgrade_home_planet
-		1 : advent_upgrade_home_planet -> advent_upgrade_surveying_track
 	planet_modifiers
-		value : 75.0 -> 50.0
+		max_population_points
+			value : 75.0 -> 50.0
 
 **advent_upgrade_desert_planets_1**
 	field_coord
 		1 : 4 -> 1
 	research_time : 300.0 -> 225.0
 	planet_modifiers
-		value : 125.0 -> 100.0
+		max_population_points
+			value : 125.0 -> 100.0
 
 **advent_upgrade_dps_on_planet_death**
 	research_time : 90.0 -> 75.0
@@ -2948,10 +2749,7 @@
 		crystal : 950.0 -> 650.0
 	[NEW] exotic_price : [{'exotic_type': 'offense', 'count': 1}]
 	planet_modifiers
-		0
-			modifier_type : max_planet_component_slots -> max_civilian_structure_slots
-			value : 1.0 -> 2.0
-		[NEW] 1 : {'modifier_type': 'max_planet_component_slots', 'value_behavior': 'additive', 'value': 1.0, 'planet_types': ['irradiated']}
+		[NEW] max_civilian_structure_slots : {'modifier_type': 'max_civilian_structure_slots', 'value_behavior': 'additive', 'value': 2.0, 'planet_types': ['irradiated']}
 
 **advent_upgrade_laser_weapon_damage_2**
 	research_time : 300.0 -> 225.0
@@ -2967,10 +2765,7 @@
 		crystal : 650.0 -> 600.0
 	[NEW] exotic_price : [{'exotic_type': 'utility', 'count': 1}]
 	planet_modifiers
-		0
-			modifier_type : max_planet_component_slots -> max_civilian_structure_slots
-			value : 1.0 -> 2.0
-		[NEW] 1 : {'modifier_type': 'max_planet_component_slots', 'value_behavior': 'additive', 'value': 1.0, 'planet_types': ['magnetic']}
+		[NEW] max_civilian_structure_slots : {'modifier_type': 'max_civilian_structure_slots', 'value_behavior': 'additive', 'value': 2.0, 'planet_types': ['magnetic']}
 
 **advent_upgrade_metal_extraction_1**
 	research_time : 300.0 -> 225.0
@@ -2978,7 +2773,7 @@
 **advent_upgrade_metal_extraction_2**
 	research_time : 540.0 -> 360.0
 	planet_modifiers
-		2
+		orbital_extraction_metal_income_rate
 			value : 0.15 -> 0.2
 
 **advent_upgrade_missile_weapon_damage_0**
@@ -3090,10 +2885,7 @@
 		crystal : 600.0 -> 350.0
 	[NEW] exotic_price : [{'exotic_type': 'economic', 'count': 1}]
 	planet_modifiers
-		0
-			modifier_type : max_planet_component_slots -> max_civilian_structure_slots
-			value : 1.0 -> 2.0
-		[NEW] 1 : {'modifier_type': 'max_planet_component_slots', 'value_behavior': 'additive', 'value': 1.0, 'planet_types': ['swamp']}
+		[NEW] max_civilian_structure_slots : {'modifier_type': 'max_civilian_structure_slots', 'value_behavior': 'additive', 'value': 2.0, 'planet_types': ['swamp']}
 
 **advent_upgrade_synchronous_shield_unit_item**
 	research_time : 840.0 -> 525.0
@@ -3173,14 +2965,10 @@
 		starting_track_levels
 			mining : 4 -> 1
 	[NEW] DEPRECATED_starting_units_in_player_file : See normal_start_mode.start_mode and other .start_mode files for player starting units, tech, assets and planets. See start_mode.entity_manifest, and start_mode.uniforms to add new start_modes.
-	starting_units_in_formations
-		required_units
-			0
-				unit : advent_scout_corvette -> advent_ship_factory_structure
 	[NEW] allowed_traffic_ports : ['advent_crystal_extractor_structure', 'advent_exotic_factory_structure', 'advent_metal_extractor_structure', 'advent_population_structure', 'trader_population_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -3192,7 +2980,8 @@
 							crystal : 125.0 -> 100.0
 						player_modifiers
 							empire_modifiers
-								value : 0.5 -> 3.0
+								additive
+									value : 0.5 -> 3.0
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -3201,7 +2990,8 @@
 							crystal : 250.0 -> 400.0
 						player_modifiers
 							planet_modifiers
-								value : 0.05 -> 0.1
+								additive
+									value : 0.05 -> 0.1
 					2
 						acquire_time : 120.0 -> 150.0
 						required_research_points : 8 -> 6
@@ -3211,11 +3001,7 @@
 							crystal : 500.0 -> 800.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : crystal_income_rate -> unity_max_mana_points
-									value : 1.0 -> 0.1
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.1}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.1}
 					3
 						acquire_time : 180.0 -> 300.0
 						required_research_points : 15 -> 10
@@ -3225,7 +3011,8 @@
 							crystal : 1000.0 -> 1600.0
 						player_modifiers
 							planet_modifiers
-								value : 0.1 -> 0.2
+								additive
+									value : 0.1 -> 0.2
 					4
 						acquire_time : 240.0 -> 600.0
 						required_research_points : 25 -> 15
@@ -3235,11 +3022,7 @@
 							crystal : 2000.0 -> 3000.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : crystal_income_rate -> unity_max_mana_points
-									value : 1.5 -> 0.2
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.2}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.2}
 			military
 				research_tiers
 					0
@@ -3289,7 +3072,7 @@
 		[NEW] advent_planet_surface_shield
 		[NEW] advent_thermal_shield_dome
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -3316,7 +3099,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -3343,7 +3126,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -3380,7 +3163,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.003
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
-		3
+		barren
 			tracks
 				defense
 					2
@@ -3433,7 +3216,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_2']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.8
-		4
+		city
 			tracks
 				defense
 					2
@@ -3494,7 +3277,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -3559,7 +3342,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_2']]
 						bonus_max_mana : 400 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		6
+		desert
 			tracks
 				defense
 					2
@@ -3619,7 +3402,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_3']]
 						bonus_max_mana : 500 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -3680,7 +3463,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -3719,7 +3502,7 @@
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['advent_unity_mana_3']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0015, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 1.0, 'max_unity_provider_count': 5, 'max_health_points': 1250}
-		9
+		ice
 			tracks
 				defense
 					2
@@ -3774,7 +3557,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -3839,7 +3622,7 @@
 						bonus_max_mana_per_population : 0.0 -> 0.6
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['advent_unity_mana_3']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0015, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 1.0, 'max_unity_provider_count': 5, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -3916,7 +3699,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_3']]
 						bonus_max_mana : 500 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		12
+		moon
 			tracks
 				defense
 					2
@@ -3963,7 +3746,7 @@
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -4008,7 +3791,7 @@
 						bonus_max_mana : 100 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -4052,7 +3835,7 @@
 						bonus_max_mana : 100 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -4112,7 +3895,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -4169,7 +3952,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		17
+		terran
 			tracks
 				defense
 					2
@@ -4217,7 +4000,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -4273,7 +4056,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -4301,7 +4084,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -4361,14 +4144,10 @@
 		starting_track_levels
 			mining : 4 -> 1
 	[NEW] DEPRECATED_starting_units_in_player_file : See normal_start_mode.start_mode and other .start_mode files for player starting units, tech, assets and planets. See start_mode.entity_manifest, and start_mode.uniforms to add new start_modes.
-	starting_units_in_formations
-		required_units
-			0
-				unit : advent_scout_corvette -> advent_ship_factory_structure
 	[NEW] allowed_traffic_ports : ['advent_crystal_extractor_structure', 'advent_exotic_factory_structure', 'advent_metal_extractor_structure', 'advent_population_structure', 'trader_population_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -4380,7 +4159,8 @@
 							crystal : 125.0 -> 100.0
 						player_modifiers
 							empire_modifiers
-								value : 0.5 -> 3.0
+								additive
+									value : 0.5 -> 3.0
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -4389,7 +4169,8 @@
 							crystal : 250.0 -> 400.0
 						player_modifiers
 							planet_modifiers
-								value : 0.05 -> 0.1
+								additive
+									value : 0.05 -> 0.1
 					2
 						acquire_time : 120.0 -> 150.0
 						required_research_points : 8 -> 6
@@ -4399,11 +4180,7 @@
 							crystal : 500.0 -> 800.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : crystal_income_rate -> unity_max_mana_points
-									value : 1.0 -> 0.1
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.1}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.1}
 					3
 						acquire_time : 180.0 -> 300.0
 						required_research_points : 15 -> 10
@@ -4413,7 +4190,8 @@
 							crystal : 1000.0 -> 1600.0
 						player_modifiers
 							planet_modifiers
-								value : 0.1 -> 0.2
+								additive
+									value : 0.1 -> 0.2
 					4
 						acquire_time : 240.0 -> 600.0
 						required_research_points : 25 -> 15
@@ -4423,11 +4201,7 @@
 							crystal : 2000.0 -> 3000.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : crystal_income_rate -> unity_max_mana_points
-									value : 1.5 -> 0.2
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.2}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'unity_mana_restore_rate', 'value': 0.2}
 			military
 				research_tiers
 					0
@@ -4477,7 +4251,7 @@
 		[NEW] advent_planet_surface_shield
 		[NEW] advent_thermal_shield_dome
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -4504,7 +4278,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -4531,7 +4305,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -4568,7 +4342,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.003
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
-		3
+		barren
 			tracks
 				defense
 					2
@@ -4621,7 +4395,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_2']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.8
-		4
+		city
 			tracks
 				defense
 					2
@@ -4682,7 +4456,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -4747,7 +4521,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_2']]
 						bonus_max_mana : 400 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		6
+		desert
 			tracks
 				defense
 					2
@@ -4807,7 +4581,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_3']]
 						bonus_max_mana : 500 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -4868,7 +4642,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -4907,7 +4681,7 @@
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['advent_unity_mana_3']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0015, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 1.0, 'max_unity_provider_count': 5, 'max_health_points': 1250}
-		9
+		ice
 			tracks
 				defense
 					2
@@ -4962,7 +4736,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -5027,7 +4801,7 @@
 						bonus_max_mana_per_population : 0.0 -> 0.6
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['advent_unity_mana_3']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0015, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 1.0, 'max_unity_provider_count': 5, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -5104,7 +4878,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_3']]
 						bonus_max_mana : 500 -> 0
 						bonus_max_mana_per_population : 0.0 -> 1.0
-		12
+		moon
 			tracks
 				defense
 					2
@@ -5151,7 +4925,7 @@
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
 					[NEW] 4 : {'prerequisites': [['advent_unity_mana_2']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0012, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.8, 'max_unity_provider_count': 4, 'max_health_points': 1000}
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -5196,7 +4970,7 @@
 						bonus_max_mana : 100 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -5240,7 +5014,7 @@
 						bonus_max_mana : 100 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
 					[NEW] 3 : {'prerequisites': [['advent_unity_mana_1']], 'mana_restore_rate': 0.0, 'mana_restore_rate_per_population': 0.0009, 'bonus_max_mana': 0, 'bonus_max_mana_per_population': 0.6, 'max_unity_provider_count': 3, 'max_health_points': 750}
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -5300,7 +5074,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -5357,7 +5131,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 200 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		17
+		terran
 			tracks
 				defense
 					2
@@ -5405,7 +5179,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_0']]
 						bonus_max_mana : 300 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.4
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -5461,7 +5235,7 @@
 						[NEW] prerequisites : [['advent_unity_mana_1']]
 						bonus_max_mana : 150 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.6
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -5489,7 +5263,7 @@
 					1
 						bonus_max_mana : 50 -> 0
 						bonus_max_mana_per_population : 0.0 -> 0.2
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -5549,18 +5323,6 @@
 		credits : 900.0 -> 1500.0
 		metal : 75.0 -> 50.0
 		crystal : 150.0 -> 250.0
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commodity_exchange', 'trader_crystal_synthesizer']}
 
 **Archaeology Center**
@@ -5578,9 +5340,6 @@
 		credits : 750.0 -> 1000.0
 		metal : 200.0 -> 100.0
 		crystal : 100.0 -> 50.0
-	planet_type_groups
-		planet_types
-			[NEW] ship_graveyard
 	npc_range_origin
 		between_gravity_well_range : 15.0 -> 20.0
 
@@ -5606,18 +5365,6 @@
 		credits : 750.0 -> 1000.0
 		metal : 200.0 -> 250.0
 		crystal : 100.0 -> 250.0
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_high_density_district', 'trader_industrial_complex']}
 	[NEW] ability : trader_commercial_district
 
@@ -5650,10 +5397,6 @@
 		credits : 750.0 -> 1000.0
 		metal : 200.0 -> 125.0
 		crystal : 100.0 -> 125.0
-	planet_type_groups
-		planet_types
-			[NEW] gas_giant
-			[NEW] ship_graveyard
 	trade_capacity
 		import_points : 1 -> 2
 
@@ -5663,9 +5406,6 @@
 		credits : 750.0 -> 1500.0
 		metal : 200.0 -> 125.0
 		crystal : 100.0 -> 125.0
-	planet_type_groups
-		planet_types
-			[NEW] volcanic_moon
 	[NEW] ability : trader_metal_smelting_plant
 
 **Harvesting Crawler**
@@ -5683,32 +5423,17 @@
 		metal : 200.0 -> 250.0
 		crystal : 100.0 -> 50.0
 	[NEW] required_planet_level : 5
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] desert
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] oceanic
-			[NEW] swamp
-			[NEW] volcanic
-			[NEW] volcanic_moon
-		[NEW] build_prerequisites : [['trader_unlock_high_density_district_unit_item']]
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commercial_district', 'trader_industrial_complex']}
 	planet_modifiers
-		value_behavior : additive -> scalar
-		values : 100.0 -> 0.2
+		max_population_points
+			value_behavior : additive -> scalar
 
 **High Pressure Domes**
 	planet_modifiers
-		values
-			1 : 125.0 -> 100.0
-			2 : 250 -> 200
+		max_population_points
+			values
+				1 : 125.0 -> 100.0
+				2 : 250 -> 200
 
 **Ice Processing Facility**
 	build_time : 60.0 -> 75.0
@@ -5716,9 +5441,6 @@
 		credits : 750.0 -> 1500.0
 		metal : 200.0 -> 125.0
 		crystal : 100.0 -> 125.0
-	planet_type_groups
-		planet_types
-			[NEW] ice_moon
 	[NEW] ability : trader_ice_processor
 
 **Industrial District**
@@ -5728,16 +5450,6 @@
 		metal : 350.0 -> 500.0
 		crystal : 250.0 -> 500.0
 	[NEW] required_planet_level : 5
-	planet_type_groups
-		planet_types
-			[NEW] crystalline
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] oceanic
-			[NEW] volcanic_moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commercial_district', 'trader_high_density_district']}
 	[NEW] ability : trader_industrial_complex
 
@@ -5757,11 +5469,7 @@
 
 **Regional Government Office**
 	planet_modifiers
-		0
-			modifier_type : commerce_track_credit_income_rate -> max_allied_population_factor
-			values
-				0 : 0.5 -> 0.1
-				1 : 1.0 -> 0.25
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'values': [0.1, 0.25]}
 
 **Secret Weapons Lab**
 	build_time : 90.0 -> 50.0
@@ -5775,18 +5483,6 @@
 	price
 		credits : 1250.0 -> 1500.0
 		metal : 225.0 -> 250.0
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_alloy_foundry', 'trader_commodity_exchange']}
 
 **Xeno Emporium**
@@ -5848,10 +5544,6 @@
 **Transit Tax**
 	[NEW] level_source : research_prerequisites_per_level
 	[NEW] level_prerequisites : [[['trader_unlock_population_growth_ability']]]
-	gui
-		tooltip_line_groups
-			lines
-				planet_modifier_id : growth_pop_growth_rate_modifier -> growth_credit_income_rate_modifier
 
 **[NEW] Chemical Plant**
 	action_data_source : trader_chemical_plant
@@ -5988,37 +5680,32 @@
 **Archaeology Center**
 	[NEW] per_buff_memory_declaration : {'float_variable_ids': ['track_count']}
 	action_values
-		0
-			action_value_id : archaeology_center_execution_interval_value -> survey_track_level_count
-			action_value
-				[NEW] transform_type : per_planet_current_survey_track_level
-				[NEW] transform_unit : {'unit_type': 'current_spawner'}
-				values : 480.0 -> 1.0
-		[NEW] 1 : {'action_value_id': 'archaeology_center_credit_income_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.05]}}
-		[NEW] 2 : {'action_value_id': 'archaeology_center_influence_points_recharge_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.05]}}
+		[NEW] survey_track_level_count : {'action_value_id': 'survey_track_level_count', 'action_value': {'transform_type': 'per_planet_current_survey_track_level', 'transform_unit': {'unit_type': 'current_spawner'}, 'values': [1.0]}}
+		[NEW] archaeology_center_credit_income_rate_value : {'action_value_id': 'archaeology_center_credit_income_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.05]}}
+		[NEW] archaeology_center_influence_points_recharge_rate_value : {'action_value_id': 'archaeology_center_influence_points_recharge_rate_value', 'action_value': {'transform_type': 'current_buff_memory_value', 'memory_float_variable_id': 'track_count', 'values': [0.05]}}
 	[NEW] buff_planet_modifiers : [{'buff_planet_modifier_id': 'archaeology_center_credit_income_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'commerce_track_credit_income_rate_per_population', 'value_behavior': 'scalar', 'value_id': 'archaeology_center_credit_income_rate_value'}}]
 	[NEW] buff_empire_modifiers : [{'buff_empire_modifier_id': 'archaeology_center_influence_points_recharge_rate_modifier', 'buff_empire_modifier': {'modifier_type': 'influence_points_recharge_rate', 'value_behavior': 'scalar', 'value_id': 'archaeology_center_influence_points_recharge_rate_value'}}]
 
 **Experimental Beam**
 	action_values
-		0
+		antimatter_cost_value
 			action_value
 				values
 					1 : 75.0 -> 80.0
 					2 : 75.0 -> 85.0
-		2
+		cooldown_time_value
 			action_value
 				values
 					0 : 10.0 -> 30.0
 					1 : 10.0 -> 28.0
 					2 : 10.0 -> 26.0
-		3
+		damage_rate_value
 			action_value
 				values
 					0 : 75.0 -> 250.0
 					1 : 150.0 -> 275.0
 					2 : 225.0 -> 300.0
-		4
+		penetration_value
 			action_value
 				values
 					1 : 600.0 -> 500.0
@@ -6026,15 +5713,9 @@
 
 **Transit Tax**
 	action_values
-		action_value_id : growth_pop_growth_rate_bonus_value -> growth_credit_income_rate_value
-		action_value
-			values : 0.25 -> 1.0
+		[NEW] growth_credit_income_rate_value : {'action_value_id': 'growth_credit_income_rate_value', 'action_value': {'values': [1.0]}}
 	buff_planet_modifiers
-		buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_credit_income_rate_modifier
-		buff_planet_modifier
-			modifier_type : population_growth_rate -> commerce_track_credit_income_rate
-			value_behavior : scalar -> additive
-			value_id : growth_pop_growth_rate_bonus_value -> growth_credit_income_rate_value
+		[NEW] growth_credit_income_rate_modifier : {'buff_planet_modifier_id': 'growth_credit_income_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'commerce_track_credit_income_rate', 'value_behavior': 'additive', 'value_id': 'growth_credit_income_rate_value'}}
 
 **[NEW] Chemical Plant**
 	per_buff_memory_declaration
@@ -6349,29 +6030,32 @@
 
 **Ablative Armor**
 	trigger_event_actions
-		action_group
-			constraint
-				constraints
-					2
-						[NEW] weapon : trigger_event_weapon
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
 
 **Colonize**
 	trigger_event_actions
-		action_group
-			actions
-				0
-					operators
-						0
-							level_count_value : colonize_level_count_value -> colonize_logistics_level_count_value
-						[NEW] 1 : {'operator_type': 'increase_planet_track_level', 'planet_track_type': 'commerce', 'level_count_value': 'colonize_commerce_level_count_value', 'will_offset_development_track_upgrade_price': True, 'ignore_research': True}
+		on_current_spawner_planet_colonized
+			action_group
+				actions
+					use_unit_operators_on_single_unit
+						operators
+							increase_planet_track_level
+								planet_track_type : logistics -> commerce
+								level_count_value : colonize_level_count_value -> colonize_commerce_level_count_value
 
 **Reactive Plating**
 	trigger_event_actions
-		action_group
-			constraint
-				constraints
-					2
-						[NEW] weapon : trigger_event_weapon
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
 
 **[NEW] Chemical Plant**
 	make_dead_on_source_ability_released
@@ -6804,33 +6488,6 @@
 						planet_modifier_id : surface_military_research_lab_factory_unit_build_time_modifier
 						is_resolved_value
 
-**dls2_trader_loyalist_super_coordinate_on_target_corvette**
-	gui
-		tooltip_line_groups
-			lines
-				0
-					rendering_type : buff_unit_modifier -> buff_weapon_modifier
-					[NEW] weapon_modifier_id : coordinate_corvette_cooldown_duration_modifier
-				[NEW] 1 : {'rendering_type': 'buff_unit_modifier', 'unit_modifier_id': 'coordinate_corvette_linear_speed_modifier'}
-
-**dls2_trader_loyalist_super_coordinate_on_target_cruiser**
-	gui
-		tooltip_line_groups
-			lines
-				0
-					rendering_type : buff_unit_modifier -> buff_weapon_modifier
-					[NEW] weapon_modifier_id : coordinate_cruiser_cooldown_duration_modifier
-				[NEW] 1 : {'rendering_type': 'buff_unit_modifier', 'unit_modifier_id': 'coordinate_cruiser_ability_cost_modifier'}
-
-**dls2_trader_loyalist_super_coordinate_on_target_frigate**
-	gui
-		tooltip_line_groups
-			lines
-				0
-					rendering_type : buff_unit_modifier -> buff_weapon_modifier
-					[NEW] weapon_modifier_id : coordinate_frigate_cooldown_duration_modifier
-				[NEW] 1 : {'rendering_type': 'buff_unit_modifier', 'unit_modifier_id': 'coordinate_frigate_angular_speed_modifier'}
-
 **trader_archaeology_center_unit_item_on_planet**
 	[NEW] stacking_limit : {'stacking_limit': 'fixed_one', 'stacking_limit_met_behavior': 'preserve_existing_buff'}
 	[NEW] trigger_event_actions : [{'trigger_event_type': 'on_buff_started', 'action_group': {'actions': [{'action_type': 'change_buff_memory_float_value', 'float_variable': 'track_count', 'math_operators': [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'survey_track_level_count'}]}]}}, {'trigger_event_type': 'on_current_spawner_planet_track_completed', 'action_group': {'actions': [{'action_type': 'change_buff_memory_float_value', 'float_variable': 'track_count', 'math_operators': [{'operator_type': 'assign', 'operand_value': 'fixed_zero'}, {'operator_type': 'add', 'operand_value': 'survey_track_level_count'}]}]}}]
@@ -6840,12 +6497,9 @@
 
 **trader_population_structure_growth_on_planet**
 	planet_modifiers
-		buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_credit_income_rate_modifier
+		[NEW] growth_credit_income_rate_modifier : {'buff_planet_modifier_id': 'growth_credit_income_rate_modifier'}
 	gui
 		hud_icon : advent_starbase_zealous_labor_unit_item_hud_icon -> trader_population_structure_growth_ability_hud_icon
-		tooltip_line_groups
-			lines
-				planet_modifier_id : growth_pop_growth_rate_modifier -> growth_credit_income_rate_modifier
 
 ## Unit Changes
 
@@ -6890,16 +6544,17 @@
 			[REMOVED] lrm_flak
 	weapons
 		weapons
-			medium_autocannon
-				attack_target_type_groups
-					[NEW] flak
-					[NEW] light
-					[NEW] antiarmor_lrm
-					[NEW] carrier_support
-					[NEW] capital_supercapital_heavy
-					[NEW] defense
-					[NEW] corvette
-					[REMOVED] lrm_flak
+			trader_light_frigate_medium_autocannon
+				medium_autocannon
+					attack_target_type_groups
+						[NEW] flak
+						[NEW] light
+						[NEW] antiarmor_lrm
+						[NEW] carrier_support
+						[NEW] capital_supercapital_heavy
+						[NEW] defense
+						[NEW] corvette
+						[REMOVED] lrm_flak
 
 **Crystal Extractor**
 	ai_attack_target
@@ -6947,16 +6602,17 @@
 		attack_target_type : light -> antiarmor
 	weapons
 		weapons
-			gauss
-				attack_target_type_groups
-					[NEW] capital_supercapital
-					[NEW] defense_civilian
-					[NEW] heavy
-					[NEW] antistructure
-					[NEW] carrier_support
-					[NEW] light
-					[REMOVED] heavy_capital
-					[REMOVED] defense
+			trader_antiarmor_frigate_gauss
+				gauss
+					attack_target_type_groups
+						[NEW] capital_supercapital
+						[NEW] defense_civilian
+						[NEW] heavy
+						[NEW] antistructure
+						[NEW] carrier_support
+						[NEW] light
+						[REMOVED] heavy_capital
+						[REMOVED] defense
 
 **Khevarkov Modular Battlecruiser**
 	ai
@@ -6974,15 +6630,7 @@
 			[REMOVED] defense
 	weapons
 		weapons
-			0
-				gauss
-					attack_target_type_groups
-						[NEW] capital_supercapital_heavy
-						[NEW] antistructure_antiarmor
-						[NEW] defense_civilian
-						[REMOVED] heavy_capital
-						[REMOVED] defense
-			1
+			trader_battle_capital_ship_heavy_gauss
 				gauss
 					attack_target_type_groups
 						[NEW] capital_supercapital_heavy
@@ -7011,7 +6659,7 @@
 **Marza Dreadnought**
 	weapons
 		weapons
-			1
+			trader_siege_capital_ship_heavy_gauss
 				gauss
 					attack_target_type_groups
 						[NEW] capital_supercapital_heavy
@@ -7019,11 +6667,6 @@
 						[NEW] defense_civilian
 						[REMOVED] heavy_capital
 						[REMOVED] defense
-
-**Medium Missile**
-	health
-		levels
-			max_armor_points : 15.0 -> 10.0
 
 **Metal Extractor**
 	ai_attack_target
@@ -7276,46 +6919,6 @@
 	action_effect_size : small_unit
 
 ## Unit_skin Changes
-
-**Takadaran Command Fortress**
-	skin_stages
-		effects
-			effect_alias_bindings
-				17
-					alias_binding
-						[NEW] sounds : ['ability_activate_tech_coord_assault']
-				21
-					alias_binding
-						[NEW] sounds : ['ability_activate_tech_holdtheline']
-				22
-					alias_binding
-						[NEW] sounds : ['ambient_loop_tech_holdtheline_target']
-				23
-					alias_binding
-						[NEW] sounds : ['ambient_loop_tech_holdtheline_target']
-				24
-					alias_binding
-						[NEW] sounds : ['ambient_loop_tech_holdtheline_target']
-				25
-					alias_binding
-						[NEW] sounds : ['ambient_loop_tech_magnetic_overshield']
-				26
-					alias_binding
-						[NEW] sounds : ['ability_activate_tech_magnetic_overshield']
-				27
-					alias_binding
-						[NEW] sounds : ['ability_activate_tech_reserve_fleet']
-
-**Trade Ship**
-	skin_stages
-		effects
-			hyperspace_effects
-				charge_effect : hyperspace_tech_frigate_chargeup -> trader_chargeup_travel_traffic
-				charge_effect_between_stars : hyperspace_tech_frigate_chargeup_interstellar -> trader_chargeup_travel_traffic
-				charge_effect_destabilized : hyperspace_tech_frigate_chargeup_unstable -> trader_chargeup_travel_traffic
-				travel_effect : hyperspace_tech_frigate_travel -> trader_chargeup_travel_traffic
-				travel_effect_between_stars : hyperspace_tech_frigate_travel_interstellar -> trader_chargeup_travel_traffic
-				travel_effect_destabilized : hyperspace_tech_frigate_travel_unstable -> trader_chargeup_travel_traffic
 
 **[NEW] trader_refinery_ship_0**
 	skin_stages
@@ -8046,11 +7649,7 @@
 	field_coord
 		1 : 1 -> 6
 	planet_modifiers
-		modifier_type : commerce_track_credit_income_rate_per_population -> commerce_track_credit_income_rate
-		value_behavior : scalar -> additive
-		value : 0.25 -> 0.5
-		planet_types
-			[REMOVED] hive_asteroid
+		[NEW] commerce_track_credit_income_rate : {'modifier_type': 'commerce_track_credit_income_rate', 'value_behavior': 'additive', 'value': 0.5, 'planet_types': ['asteroid', 'ice_asteroid']}
 
 **trader_autocannon_weapon_damage_2**
 	research_time : 300.0 -> 225.0
@@ -8075,8 +7674,6 @@
 		credits : 1700.0 -> 1750.0
 		metal : 300.0 -> 325.0
 		crystal : 500.0 -> 550.0
-	prerequisites
-		0 : trader_culture_rate_0 -> trader_culture_rate_1
 
 **trader_commercial_district_credit_rate**
 	research_time : 540.0 -> 360.0
@@ -8093,7 +7690,7 @@
 **trader_culture_rate_0**
 	research_time : 300.0 -> 225.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.1}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.1}
 
 **trader_culture_rate_1**
 	field_coord
@@ -8104,7 +7701,7 @@
 		metal : 325.0 -> 300.0
 		crystal : 550.0 -> 500.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.15}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.15}
 
 **trader_defense_structure_culture_resistance**
 	research_time : 180.0 -> 150.0
@@ -8157,8 +7754,6 @@
 
 **trader_improve_culture_propagation**
 	research_time : 840.0 -> 525.0
-	prerequisites
-		0 : trader_commerce_culture -> trader_culture_rate_1
 
 **trader_improve_gauss_defense_cooldown**
 	research_time : 300.0 -> 225.0
@@ -8198,9 +7793,9 @@
 		metal : 50.0 -> 125.0
 		crystal : 75.0 -> 150.0
 	planet_modifiers
-		0
+		mining_track_crystal_income_rate
 			value : 0.15 -> 0.1
-		1
+		mining_track_crystal_income_rate_per_population
 			value : 0.15 -> 0.1
 
 **trader_mining_track_crystal_rate_1**
@@ -8214,9 +7809,9 @@
 		metal : 125.0 -> 225.0
 		crystal : 150.0 -> 350.0
 	planet_modifiers
-		0
+		mining_track_crystal_income_rate
 			value : 0.2 -> 0.15
-		1
+		mining_track_crystal_income_rate_per_population
 			value : 0.2 -> 0.15
 
 **trader_mining_track_metal_rate_0**
@@ -8230,9 +7825,9 @@
 		metal : 25.0 -> 100.0
 		crystal : 50.0 -> 125.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.15 -> 0.1
-		1
+		mining_track_metal_income_rate_per_population
 			value : 0.15 -> 0.1
 
 **trader_mining_track_metal_rate_1**
@@ -8246,9 +7841,9 @@
 		metal : 100.0 -> 200.0
 		crystal : 125.0 -> 300.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.2 -> 0.15
-		1
+		mining_track_metal_income_rate_per_population
 			value : 0.2 -> 0.15
 
 **trader_missile_weapon_armor**
@@ -8280,7 +7875,8 @@
 		metal : 200.0 -> 100.0
 		crystal : 300.0 -> 125.0
 	planet_modifiers
-		value : 0.1 -> 0.15
+		orbital_extraction_crystal_income_rate
+			value : 0.1 -> 0.15
 
 **trader_orbital_extraction_crystal_rate_1**
 	tier : 3 -> 2
@@ -8293,7 +7889,8 @@
 		metal : 300.0 -> 200.0
 		crystal : 500.0 -> 300.0
 	planet_modifiers
-		value : 0.15 -> 0.25
+		orbital_extraction_crystal_income_rate
+			value : 0.15 -> 0.25
 
 **trader_orbital_extraction_metal_rate_0**
 	tier : 1 -> 0
@@ -8305,7 +7902,8 @@
 		metal : 125.0 -> 50.0
 		crystal : 150.0 -> 75.0
 	planet_modifiers
-		value : 0.1 -> 0.15
+		orbital_extraction_metal_income_rate
+			value : 0.1 -> 0.15
 
 **trader_orbital_extraction_metal_rate_1**
 	tier : 2 -> 1
@@ -8317,7 +7915,8 @@
 		metal : 225.0 -> 125.0
 		crystal : 350.0 -> 150.0
 	planet_modifiers
-		value : 0.15 -> 0.25
+		orbital_extraction_metal_income_rate
+			value : 0.15 -> 0.25
 
 **trader_pervasive_economy**
 	field : civilian_policy -> civilian_industry
@@ -8605,8 +8204,6 @@
 		credits : 1250.0 -> 1750.0
 		metal : 225.0 -> 325.0
 		crystal : 350.0 -> 550.0
-	prerequisites
-		0 : trader_trade_port_income_rate_0 -> trader_trade_port_income_rate_1
 
 **trader_unlock_gas_crystalizer_unit_item**
 	field_coord
@@ -8932,8 +8529,6 @@
 		metal : 325.0 -> 300.0
 		crystal : 550.0 -> 500.0
 	[NEW] exotic_price : [{'exotic_type': 'utility', 'count': 1}]
-	prerequisites
-		0 : trader_unlock_crystalline_biosphere -> trader_upgrade_crystalline_biosphere_credit_rate
 
 **trader_upgrade_culture_ship_max_linear_speed_bonus**
 	research_time : 840.0 -> 525.0
@@ -8960,8 +8555,6 @@
 		1 : 6 -> 7
 	research_time : 540.0 -> 360.0
 	[NEW] exotic_price : [{'exotic_type': 'defense', 'count': 1}]
-	prerequisites
-		0 : trader_unlock_ferrous_biosphere -> trader_upgrade_ferrous_biosphere_credit_rate
 
 **trader_upgrade_ice_biosphere**
 	tier : 1 -> 2
@@ -8974,8 +8567,6 @@
 		metal : 125.0 -> 200.0
 		crystal : 150.0 -> 300.0
 	[NEW] exotic_price : [{'exotic_type': 'utility', 'count': 1}]
-	prerequisites
-		0 : trader_unlock_ice_biosphere -> trader_upgrade_ice_biosphere_credit_rate
 
 **trader_upgrade_ice_biosphere_credit_rate**
 	tier : 2 -> 1
@@ -8987,12 +8578,8 @@
 		credits : 1200.0 -> 700.0
 		metal : 200.0 -> 100.0
 		crystal : 300.0 -> 125.0
-	prerequisites
-		0 : trader_upgrade_ice_biosphere -> trader_unlock_ice_biosphere
 	planet_modifiers
-		modifier_type : commerce_track_credit_income_rate_per_population -> commerce_track_credit_income_rate
-		value_behavior : scalar -> additive
-		value : 0.25 -> 1.5
+		[NEW] commerce_track_credit_income_rate : {'modifier_type': 'commerce_track_credit_income_rate', 'value_behavior': 'additive', 'value': 1.5, 'planet_types': ['ice']}
 
 **trader_upgrade_influence_1**
 	research_time : 180.0 -> 150.0
@@ -9013,8 +8600,6 @@
 		metal : 225.0 -> 300.0
 		crystal : 350.0 -> 500.0
 	[NEW] exotic_price : [{'exotic_type': 'offense', 'count': 1}]
-	prerequisites
-		0 : trader_unlock_irradiated_biosphere -> trader_upgrade_irradiated_biosphere_credit_rate
 
 **trader_upgrade_oceanic_biosphere**
 	field_coord
@@ -9078,8 +8663,6 @@
 		metal : 125.0 -> 200.0
 		crystal : 150.0 -> 300.0
 	[NEW] exotic_price : [{'exotic_type': 'offense', 'count': 1}]
-	prerequisites
-		0 : trader_unlock_volcanic_biosphere -> trader_upgrade_volcanic_biosphere_credit_rate
 
 **trader_war_measures_act**
 	research_time : 600.0 -> 420.0
@@ -9096,7 +8679,7 @@
 	[NEW] allowed_traffic_ports : ['advent_population_structure', 'trader_crystal_extractor_structure', 'trader_exotic_factory_structure', 'trader_metal_extractor_structure', 'trader_population_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -9108,10 +8691,9 @@
 							credits : 400.0 -> 250.0
 						player_modifiers
 							empire_modifiers
-								0
-									value : 1.0 -> 2.0
-								[NEW] 1 : {'value_behavior': 'additive', 'modifier_type': 'metal_income_rate', 'value': 0.5}
-								[NEW] 2 : {'value_behavior': 'additive', 'modifier_type': 'crystal_income_rate', 'value': 0.5}
+								additive
+									modifier_type : credit_income_rate -> crystal_income_rate
+									value : 1.0 -> 0.5
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -9127,12 +8709,7 @@
 							metal : 300.0 -> 200.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 2.0 -> 0.1
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.1}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
 					3
 						acquire_time : 180.0 -> 300.0
 						required_research_points : 15 -> 10
@@ -9149,12 +8726,7 @@
 							metal : 1200.0 -> 750.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 3.0 -> 0.15
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.15}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
 			military
 				research_tiers
 					0
@@ -9211,7 +8783,7 @@
 		[NEW] trader_archaeology_center
 		[NEW] trader_commodity_exchange
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -9234,7 +8806,7 @@
 					2
 						metal_income_rate_per_population : 0.0128 -> 0.018
 						crystal_income_rate_per_population : 0.0128 -> 0.009
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -9257,10 +8829,7 @@
 					2
 						crystal_income_rate : 0.42 -> 0.0
 						crystal_income_rate_per_population : 0.0128 -> 0.018
-			trade_capacity_levels
-				export_points
-					crystal : 2 -> 1
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -9299,7 +8868,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'metal': 1, 'crystal': 1}}
-		3
+		barren
 			tracks
 				defense
 					2
@@ -9343,7 +8912,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		4
+		city
 			tracks
 				defense
 					2
@@ -9409,7 +8978,7 @@
 				4
 					export_points
 						credits : 7 -> 5
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -9466,7 +9035,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		6
+		desert
 			tracks
 				defense
 					2
@@ -9514,7 +9083,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -9571,7 +9140,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -9623,7 +9192,7 @@
 				3
 					export_points
 						credits : 4 -> 5
-		9
+		ice
 			tracks
 				defense
 					2
@@ -9674,7 +9243,7 @@
 					export_points
 						credits : 2 -> 1
 						crystal : 2 -> 1
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -9725,7 +9294,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
 					[NEW] 4 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -9789,7 +9358,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		12
+		moon
 			tracks
 				defense
 					2
@@ -9827,7 +9396,7 @@
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
 				[NEW] 2 : {'import_points': 3, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -9868,7 +9437,7 @@
 					export_points
 						crystal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'crystal': 1}}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -9911,7 +9480,7 @@
 					export_points
 						metal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1}}
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -9975,7 +9544,7 @@
 				2
 					export_points
 						credits : 3 -> 4
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -10032,7 +9601,7 @@
 				1
 					export_points
 						credits : 2 -> 3
-		17
+		terran
 			tracks
 				defense
 					2
@@ -10082,7 +9651,7 @@
 				3
 					export_points
 						credits : 4 -> 2
-		18
+		volcanic
 			[NEW] colonization_research_prerequisites : [['trader_unlock_volcanic_biosphere']]
 			tracks
 				defense
@@ -10141,7 +9710,7 @@
 					export_points
 						credits : 2 -> 1
 						metal : 2 -> 1
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -10165,10 +9734,7 @@
 					1
 						metal_income_rate_per_population : 0.002 -> 0.0036
 						crystal_income_rate_per_population : 0.002 -> 0.0036
-			trade_capacity_levels
-				export_points
-					credits : 3 -> 1
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -10219,14 +9785,10 @@
 		starting_track_levels
 			commerce : 3 -> 1
 	[NEW] DEPRECATED_starting_units_in_player_file : See normal_start_mode.start_mode and other .start_mode files for player starting units, tech, assets and planets. See start_mode.entity_manifest, and start_mode.uniforms to add new start_modes.
-	starting_units_in_formations
-		required_units
-			0
-				unit : trader_scout_corvette -> trader_frigate_factory_structure
 	[NEW] allowed_traffic_ports : ['advent_population_structure', 'trader_crystal_extractor_structure', 'trader_exotic_factory_structure', 'trader_metal_extractor_structure', 'trader_population_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -10238,10 +9800,9 @@
 							credits : 400.0 -> 250.0
 						player_modifiers
 							empire_modifiers
-								0
-									value : 1.0 -> 2.0
-								[NEW] 1 : {'value_behavior': 'additive', 'modifier_type': 'metal_income_rate', 'value': 0.5}
-								[NEW] 2 : {'value_behavior': 'additive', 'modifier_type': 'crystal_income_rate', 'value': 0.5}
+								additive
+									modifier_type : credit_income_rate -> crystal_income_rate
+									value : 1.0 -> 0.5
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -10257,12 +9818,7 @@
 							metal : 300.0 -> 200.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 2.0 -> 0.1
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.1}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
 					3
 						acquire_time : 180.0 -> 300.0
 						required_research_points : 15 -> 10
@@ -10279,12 +9835,7 @@
 							metal : 1200.0 -> 750.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 3.0 -> 0.15
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.15}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
 			military
 				research_tiers
 					0
@@ -10342,7 +9893,7 @@
 		[NEW] trader_archaeology_center
 		[NEW] trader_commodity_exchange
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -10365,7 +9916,7 @@
 					2
 						metal_income_rate_per_population : 0.0128 -> 0.018
 						crystal_income_rate_per_population : 0.0128 -> 0.009
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -10388,10 +9939,7 @@
 					2
 						crystal_income_rate : 0.42 -> 0.0
 						crystal_income_rate_per_population : 0.0128 -> 0.018
-			trade_capacity_levels
-				export_points
-					crystal : 2 -> 1
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -10430,7 +9978,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'metal': 1, 'crystal': 1}}
-		3
+		barren
 			tracks
 				defense
 					2
@@ -10476,7 +10024,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		4
+		city
 			tracks
 				defense
 					2
@@ -10542,7 +10090,7 @@
 				4
 					export_points
 						credits : 7 -> 5
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -10600,7 +10148,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		6
+		desert
 			tracks
 				defense
 					2
@@ -10649,7 +10197,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -10706,7 +10254,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -10758,7 +10306,7 @@
 				3
 					export_points
 						credits : 4 -> 5
-		9
+		ice
 			tracks
 				defense
 					2
@@ -10809,7 +10357,7 @@
 					export_points
 						credits : 2 -> 1
 						crystal : 2 -> 1
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -10860,7 +10408,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
 					[NEW] 4 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -10927,7 +10475,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		12
+		moon
 			tracks
 				defense
 					2
@@ -10967,7 +10515,7 @@
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
 				[NEW] 2 : {'import_points': 3, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -11008,7 +10556,7 @@
 					export_points
 						crystal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'crystal': 1}}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -11051,7 +10599,7 @@
 					export_points
 						metal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1}}
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -11116,7 +10664,7 @@
 				2
 					export_points
 						credits : 3 -> 4
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -11174,7 +10722,7 @@
 				1
 					export_points
 						credits : 2 -> 3
-		17
+		terran
 			tracks
 				defense
 					2
@@ -11224,7 +10772,7 @@
 				3
 					export_points
 						credits : 4 -> 2
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -11278,7 +10826,7 @@
 					export_points
 						credits : 2 -> 1
 						metal : 2 -> 1
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -11302,10 +10850,7 @@
 					1
 						metal_income_rate_per_population : 0.002 -> 0.0036
 						crystal_income_rate_per_population : 0.002 -> 0.0036
-			trade_capacity_levels
-				export_points
-					credits : 3 -> 1
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -11363,14 +10908,10 @@
 		starting_track_levels
 			commerce : 3 -> 1
 	[NEW] DEPRECATED_starting_units_in_player_file : See normal_start_mode.start_mode and other .start_mode files for player starting units, tech, assets and planets. See start_mode.entity_manifest, and start_mode.uniforms to add new start_modes.
-	starting_units_in_formations
-		required_units
-			0
-				unit : trader_scout_corvette -> trader_frigate_factory_structure
 	[NEW] allowed_traffic_ports : ['advent_population_structure', 'trader_crystal_extractor_structure', 'trader_exotic_factory_structure', 'trader_metal_extractor_structure', 'trader_population_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -11382,10 +10923,9 @@
 							credits : 400.0 -> 250.0
 						player_modifiers
 							empire_modifiers
-								0
-									value : 1.0 -> 2.0
-								[NEW] 1 : {'value_behavior': 'additive', 'modifier_type': 'metal_income_rate', 'value': 0.5}
-								[NEW] 2 : {'value_behavior': 'additive', 'modifier_type': 'crystal_income_rate', 'value': 0.5}
+								additive
+									modifier_type : credit_income_rate -> crystal_income_rate
+									value : 1.0 -> 0.5
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -11401,12 +10941,7 @@
 							metal : 300.0 -> 200.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 2.0 -> 0.1
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.1}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.1}
 					3
 						acquire_time : 180.0 -> 300.0
 						required_research_points : 15 -> 10
@@ -11423,12 +10958,7 @@
 							metal : 1200.0 -> 750.0
 						player_modifiers
 							empire_modifiers
-								0
-									value_behavior : additive -> scalar
-									modifier_type : credit_income_rate -> trade_credits_income_rate
-									value : 3.0 -> 0.15
-								[NEW] 1 : {'value_behavior': 'scalar', 'modifier_type': 'trade_metal_income_rate', 'value': 0.15}
-								[NEW] 2 : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
+								[NEW] scalar : {'value_behavior': 'scalar', 'modifier_type': 'trade_crystal_income_rate', 'value': 0.15}
 			military
 				research_tiers
 					0
@@ -11486,7 +11016,7 @@
 		[NEW] trader_archaeology_center
 		[NEW] trader_commodity_exchange
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -11509,7 +11039,7 @@
 					2
 						metal_income_rate_per_population : 0.0128 -> 0.018
 						crystal_income_rate_per_population : 0.0128 -> 0.009
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -11532,10 +11062,7 @@
 					2
 						crystal_income_rate : 0.42 -> 0.0
 						crystal_income_rate_per_population : 0.0128 -> 0.018
-			trade_capacity_levels
-				export_points
-					crystal : 2 -> 1
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -11574,7 +11101,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'metal': 1, 'crystal': 1}}
-		3
+		barren
 			tracks
 				defense
 					2
@@ -11620,7 +11147,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		4
+		city
 			tracks
 				defense
 					2
@@ -11686,7 +11213,7 @@
 				4
 					export_points
 						credits : 7 -> 5
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -11744,7 +11271,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		6
+		desert
 			tracks
 				defense
 					2
@@ -11793,7 +11320,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -11850,7 +11377,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -11902,7 +11429,7 @@
 				3
 					export_points
 						credits : 4 -> 5
-		9
+		ice
 			tracks
 				defense
 					2
@@ -11953,7 +11480,7 @@
 					export_points
 						credits : 2 -> 1
 						crystal : 2 -> 1
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -12004,7 +11531,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
 					[NEW] 4 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'prerequisites': [['trader_upgrade_irradiated_biosphere']], 'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -12071,7 +11598,7 @@
 				2
 					export_points
 						credits : 3 -> 1
-		12
+		moon
 			tracks
 				defense
 					2
@@ -12111,7 +11638,7 @@
 			trade_capacity_levels
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
 				[NEW] 2 : {'import_points': 3, 'export_points': {'credits': 1, 'metal': 1, 'crystal': 1}}
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -12152,7 +11679,7 @@
 					export_points
 						crystal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'crystal': 1}}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -12195,7 +11722,7 @@
 					export_points
 						metal : 2 -> 1
 				[NEW] 1 : {'import_points': 2, 'export_points': {'credits': 1, 'metal': 1}}
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -12260,7 +11787,7 @@
 				2
 					export_points
 						credits : 3 -> 4
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -12318,7 +11845,7 @@
 				1
 					export_points
 						credits : 2 -> 3
-		17
+		terran
 			tracks
 				defense
 					2
@@ -12368,7 +11895,7 @@
 				3
 					export_points
 						credits : 4 -> 2
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -12422,7 +11949,7 @@
 					export_points
 						credits : 2 -> 1
 						metal : 2 -> 1
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -12446,10 +11973,7 @@
 					1
 						metal_income_rate_per_population : 0.002 -> 0.0036
 						crystal_income_rate_per_population : 0.002 -> 0.0036
-			trade_capacity_levels
-				export_points
-					credits : 3 -> 1
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -12511,23 +12035,10 @@
 	[NEW] item_ai_valuation : 500.0
 
 **Alliance Xeno Embassy**
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	player_modifiers
 		empire_modifiers
-			value : 0.18 -> 0.24
-	planet_modifiers
-		values : 3.0 -> 2.0
+			scalar
+				value : 0.18 -> 0.24
 	npc_range_origin
 		between_gravity_well_range : 18.0 -> 24.0
 
@@ -12537,12 +12048,8 @@
 		metal : 300.0 -> 360.0
 		crystal : 180.0 -> 360.0
 	exotic_price
-		count : 1 -> 2
-	planet_modifiers
-		0
-			values : 90.0 -> 120.0
-		1
-			values : 1.2 -> 2.4
+		economic
+			count : 1 -> 2
 
 **Closed Cycle Exotic Refinery**
 	build_time : 90.0 -> 96.0
@@ -12555,24 +12062,14 @@
 		metal : 600.0 -> 240.0
 		crystal : 360.0 -> 180.0
 	[NEW] exotic_price : [{'exotic_type': 'economic', 'count': 1}]
-	planet_modifiers
-		0
-			values : 0.48 -> 0.24
-		1
-			values : 0.48 -> 0.24
 
 **Crystal Seeking Nanites**
-	planet_type_groups
-		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic_moon
 	[NEW] ability : vasari_crystal_refinery
 
 **Deconstruction Nanites**
 	build_time : 60.0 -> 30.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
 
 **Deploy Phase Gate**
 	price
@@ -12592,23 +12089,10 @@
 	[NEW] item_ai_valuation : 100.0
 
 **Exodus Xeno Embassy**
-	planet_type_groups
-		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
 	player_modifiers
 		empire_modifiers
-			value : 0.12 -> 0.18
-	planet_modifiers
-		values : 2.0 -> 1.0
+			scalar
+				value : 0.12 -> 0.18
 	npc_range_origin
 		between_gravity_well_range : 12.0 -> 18.0
 
@@ -12616,26 +12100,12 @@
 	name : vasari_deconstruction_nanites_unit_item_name -> vasari_hygroscopic_nanites_unit_item_name
 	description : vasari_deconstruction_nanites_unit_item_description -> vasari_hygroscopic_nanites_unit_item_description
 	planet_modifiers
-		0
+		max_population_points
 			value_behavior : additive -> scalar
-			values : 60.0 -> 0.18
-		1
-			values : 0.6 -> 0.36
-
-**Industrial Nanoforge**
-	planet_modifiers
-		values : -0.33 -> -0.48
 
 **Intercultural Exchange**
-	planet_type_groups
-		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic_moon
 	planet_modifiers
-		0
+		commerce_track_credit_income_rate_per_population
 			values
 				0 : 0.01 -> 0.006
 				1 : 0.016 -> 0.011
@@ -12646,10 +12116,6 @@
 	price
 		metal : 360.0 -> 180.0
 		crystal : 480.0 -> 90.0
-	planet_type_groups
-		planet_types
-			[NEW] ice_moon
-			[NEW] moon
 
 **Kortra Gravity Lab**
 	build_time : 90.0 -> 144.0
@@ -12657,21 +12123,17 @@
 		metal : 360.0 -> 540.0
 		crystal : 480.0 -> 270.0
 	exotic_price
-		0
+		defense
 			count : 1 -> 2
-		[NEW] 1 : {'exotic_type': 'utility', 'count': 1}
+		[NEW] utility : {'exotic_type': 'utility', 'count': 1}
 
 **Labor Camp**
-	planet_type_groups
-		planet_types
-			[NEW] gas_giant
-			[NEW] ship_graveyard
 	planet_modifiers
-		0
+		mining_track_metal_income_rate_per_population
 			values
 				1 : 0.42 -> 0.36
 				2 : 0.72 -> 0.6
-		1
+		any_development_track_build_time
 			values
 				1 : -0.42 -> -0.36
 				2 : -0.72 -> -0.6
@@ -12680,34 +12142,16 @@
 	price
 		metal : 180.0 -> 240.0
 		crystal : 240.0 -> 120.0
-	planet_type_groups
-		planet_types
-			[NEW] ship_graveyard
 	other_item_requirements
 		mutually_exclusive_items
 			[NEW] vasari_surface_civilian_lab_2
 
 **Matter Hypercompiler**
-	planet_type_groups
-		planet_types
-			[NEW] ship_graveyard
 	planet_modifiers
-		0
-			values : 0.96 -> 0.48
-		1
-			modifier_type : mining_track_crystal_income_rate -> mining_track_metal_income_rate_per_population
-			values : 0.96 -> 0.48
-		2
-			modifier_type : orbital_extraction_metal_income_rate -> mining_track_crystal_income_rate
-		3
-			modifier_type : orbital_extraction_crystal_income_rate -> mining_track_crystal_income_rate_per_population
+		[NEW] mining_track_metal_income_rate_per_population : {'modifier_type': 'mining_track_metal_income_rate_per_population', 'value_behavior': 'scalar', 'values': [0.48]}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'values': [0.48]}
 
 **Metal Seeking Nanites**
-	planet_type_groups
-		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic_moon
 	[NEW] ability : vasari_metal_refinery
 
 **Mobile Adjunct Lab**
@@ -12727,24 +12171,16 @@
 
 **Nano Algae Reactors**
 	planet_modifiers
-		0
+		max_population_points
 			value_behavior : additive -> scalar
-			values : 90.0 -> 0.36
 
 **Ocean Floor Miner**
 	build_time : 90.0 -> 30.0
 	price
 		metal : 600.0 -> 300.0
 		crystal : 360.0 -> 180.0
-	planet_type_groups
-		planet_types
-			[NEW] terran
 	planet_modifiers
-		0
-			values : 3.0 -> 1.8
-		1
-			values : 2.4 -> 1.5
-		[NEW] 2 : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
 
 **Organic Reclamation Nanites**
 	build_time : 90.0 -> 30.0
@@ -12753,11 +12189,7 @@
 		crystal : 360.0 -> 180.0
 	[NEW] exotic_price : [{'exotic_type': 'offense', 'count': 1}]
 	planet_modifiers
-		0
-			values : 2.4 -> 1.8
-		1
-			values : 1.8 -> 1.5
-		[NEW] 2 : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'scalar', 'values': [-0.48]}
 
 **Sevistra Biology Lab**
 	build_time : 90.0 -> 144.0
@@ -12765,77 +12197,62 @@
 		metal : 360.0 -> 540.0
 		crystal : 480.0 -> 270.0
 	exotic_price
-		0
-			exotic_type : economic -> defense
-		[NEW] 1 : {'exotic_type': 'economic', 'count': 2}
+		[NEW] defense : {'exotic_type': 'defense', 'count': 1}
+		economic
+			count : 1 -> 2
 	planet_modifiers
-		0
-			values : 3.0 -> 4.0
-		1
+		max_population_points
 			value_behavior : additive -> scalar
-			values : 60.0 -> 0.36
-		[NEW] 2 : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.36]}
+		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.36]}
 
 **Sevra Genetics Lab**
 	build_time : 90.0 -> 96.0
 	price
 		crystal : 480.0 -> 180.0
 	exotic_price
-		count : 1 -> 2
+		economic
+			count : 1 -> 2
 
 **Stabilization Nanites**
 	hud_icon : vasari_stabilization_nanites_research_subject_hud_icon -> vasari_stabilization_nanites_unit_item_hud_icon
 	tooltip_picture : vasari_stabilization_nanites_research_subject_tooltip_picture -> vasari_stabilization_nanites_unit_item_tooltip_picture
 	planet_modifiers
-		0
+		max_population_points
 			value_behavior : additive -> scalar
-			values : 65.0 -> 0.18
-		[NEW] 1 : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'values': [0.36]}
-		[NEW] 2 : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'values': [0.36]}
+		[NEW] mining_track_crystal_income_rate : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'values': [0.36]}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'values': [0.36]}
 
 **Strikecraft Armor**
 	exotic_price
-		exotic_type : offense -> defense
+		[NEW] defense : {'exotic_type': 'defense', 'count': 1}
 
 **Vitra Weapons Lab**
 	build_time : 90.0 -> 96.0
 	price
 		crystal : 480.0 -> 180.0
 	exotic_price
-		count : 1 -> 2
-	planet_type_groups
-		planet_types
-			[NEW] volcanic_moon
+		offense
+			count : 1 -> 2
 
 **Xeno Settlement**
 	planet_modifiers
-		1
+		max_population_points
 			value_behavior : additive -> scalar
-			values : 60.0 -> 0.18
-		[NEW] 2 : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.18]}
+		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.18]}
 
 ## Ability Changes
 
 **Exodus Supplies**
 	gui
 		tooltip_line_groups
-			lines
-				2
-					rendering_type : unit_item_value -> single_value
-					label_text : tooltip.ability.free_planet_component -> tooltip.ability.free_mining_track_level
-					[NEW] value_id : fixed_one
-					[NEW] value_color : positive
-				[NEW] 3 : {'rendering_type': 'unit_item_value', 'label_text': 'tooltip.ability.free_planet_component', 'unit_item': 'vasari_alliance_consulate'}
+			tooltip.ability.on_colonization_header
+				lines
+					single_value
+						label_text : tooltip.ability.free_defense_track_level -> tooltip.ability.free_mining_track_level
 
 **Orbital Labor**
 	[NEW] level_source : research_prerequisites_per_level
 	[NEW] level_prerequisites : [[['vasari_unlock_population_growth_ability']]]
-	gui
-		tooltip_line_groups
-			lines
-				0
-					planet_modifier_id : growth_pop_growth_rate_modifier -> growth_metal_extraction_rate_modifier
-				[NEW] 1 : {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'growth_crystal_extraction_rate_modifier'}
 
 **Phase Missile Swarm**
 	ability_positions
@@ -12933,22 +12350,12 @@
 **Subversion Grid**
 	gui
 		tooltip_line_groups
-			1
+			tooltip.ability.all_enemy_units_at_planet
 				lines
-					0
-						label_text : tooltip.ability.final_value_duration -> dlc2_vasari_rebel_super_subversion_grid_initial_max_ability_range
-						value_id : subversion_grid_modifier_execution_interval_count_value -> subversion_grid_base_range_bonus_value
-						[NEW] value_float_format : percentage_with_sign
-						[NEW] value_color : negative
-					1
-						label_text : dlc2_vasari_rebel_super_subversion_grid_initial_max_ability_range -> dlc2_vasari_rebel_super_subversion_grid_initial_max_weapon_range
-					2
-						label_text : dlc2_vasari_rebel_super_subversion_grid_final_max_ability_range -> dlc2_vasari_rebel_super_subversion_grid_initial_max_ability_cooldown
-						value_id : subversion_grid_per_interval_range_bonus_value -> subversion_grid_base_cooldown_bonus_value
-					3
-						label_text : dlc2_vasari_rebel_super_subversion_grid_initial_max_weapon_range -> dlc2_vasari_rebel_super_subversion_grid_initial_max_weapon_cooldown
-						value_id : subversion_grid_base_range_bonus_value -> subversion_grid_base_cooldown_bonus_value
-			[NEW] 2 : {'lines': [{'rendering_type': 'single_value', 'label_text': 'tooltip.ability.final_value_duration', 'value_id': 'subversion_grid_modifier_execution_interval_count_value', 'value_suffix': 'seconds', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_ability_range', 'value_id': 'subversion_grid_per_interval_range_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_range_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_weapon_range', 'value_id': 'subversion_grid_per_interval_range_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_range_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_ability_cooldown', 'value_id': 'subversion_grid_per_interval_cooldown_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_cooldown_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_weapon_cooldown', 'value_id': 'subversion_grid_per_interval_cooldown_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_cooldown_bonus_value'}]}]}
+					single_value
+						label_text : dlc2_vasari_rebel_super_subversion_grid_final_max_weapon_cooldown -> dlc2_vasari_rebel_super_subversion_grid_initial_max_weapon_cooldown
+						value_id : subversion_grid_per_interval_cooldown_bonus_value -> subversion_grid_base_cooldown_bonus_value
+			[NEW] None : {'lines': [{'rendering_type': 'single_value', 'label_text': 'tooltip.ability.final_value_duration', 'value_id': 'subversion_grid_modifier_execution_interval_count_value', 'value_suffix': 'seconds', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_ability_range', 'value_id': 'subversion_grid_per_interval_range_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_range_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_weapon_range', 'value_id': 'subversion_grid_per_interval_range_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_range_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_ability_cooldown', 'value_id': 'subversion_grid_per_interval_cooldown_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_cooldown_bonus_value'}]}, {'rendering_type': 'single_value', 'label_text': 'dlc2_vasari_rebel_super_subversion_grid_final_max_weapon_cooldown', 'value_id': 'subversion_grid_per_interval_cooldown_bonus_value', 'value_float_format': 'percentage_with_sign', 'value_color': 'negative', 'value_modifiers': [{'operator_type': 'multiply', 'operand_value': 'subversion_grid_modifier_execution_interval_count_value'}, {'operator_type': 'add', 'operand_value': 'subversion_grid_base_cooldown_bonus_value'}]}]}
 
 **[NEW] Crystal Seeking Nanites**
 	action_data_source : vasari_crystal_refinery
@@ -12978,76 +12385,54 @@
 
 **Orbital Labor**
 	action_values
-		0
-			action_value_id : growth_pop_growth_rate_bonus_value -> growth_metal_extraction_rate_value
-			action_value
-				values : 0.3 -> 0.12
-		[NEW] 1 : {'action_value_id': 'growth_crystal_extraction_rate_value', 'action_value': {'values': [0.12]}}
+		[NEW] growth_metal_extraction_rate_value : {'action_value_id': 'growth_metal_extraction_rate_value', 'action_value': {'values': [0.12]}}
+		[NEW] growth_crystal_extraction_rate_value : {'action_value_id': 'growth_crystal_extraction_rate_value', 'action_value': {'values': [0.12]}}
 	buff_planet_modifiers
-		0
-			buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_metal_extraction_rate_modifier
-			buff_planet_modifier
-				modifier_type : population_growth_rate -> orbital_extraction_metal_income_rate
-				value_id : growth_pop_growth_rate_bonus_value -> growth_metal_extraction_rate_value
-		[NEW] 1 : {'buff_planet_modifier_id': 'growth_crystal_extraction_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'orbital_extraction_crystal_income_rate', 'value_behavior': 'scalar', 'value_id': 'growth_crystal_extraction_rate_value'}}
+		[NEW] growth_metal_extraction_rate_modifier : {'buff_planet_modifier_id': 'growth_metal_extraction_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'orbital_extraction_metal_income_rate', 'value_behavior': 'scalar', 'value_id': 'growth_metal_extraction_rate_value'}}
+		[NEW] growth_crystal_extraction_rate_modifier : {'buff_planet_modifier_id': 'growth_crystal_extraction_rate_modifier', 'buff_planet_modifier': {'modifier_type': 'orbital_extraction_crystal_income_rate', 'value_behavior': 'scalar', 'value_id': 'growth_crystal_extraction_rate_value'}}
 
 **Phase Missile Swarm**
 	action_values
-		0
+		phase_missile_swarm_antimatter_cost_value
 			action_value
 				values
 					0 : 90.0 -> 120.0
 					1 : 75.0 -> 132.0
 					2 : 60.0 -> 144.0
-		3
+		phase_missile_swarm_cooldown_time_value
 			action_value
 				values
 					0 : 72.0 -> 66.0
 					1 : 54.0 -> 63.0
 					2 : 36.0 -> 60.0
-		6
-			action_value_id : phase_missile_swarm_torpedo_count_value -> phase_missile_swarm_execution_interval_value
+		[NEW] phase_missile_swarm_execution_interval_value : {'action_value_id': 'phase_missile_swarm_execution_interval_value', 'action_value': {'values': [0.18, 0.18, 0.18]}}
+		[NEW] phase_missile_swarm_torpedoes_per_interval_value : {'action_value_id': 'phase_missile_swarm_torpedoes_per_interval_value', 'action_value': {'values': [3.0, 3.0, 3.0]}}
+		[NEW] phase_missile_swarm_interval_count_value : {'action_value_id': 'phase_missile_swarm_interval_count_value', 'action_value': {'values': [5.0, 6.0, 7.0]}}
+		phase_missile_swarm_torpedo_count_value
 			action_value
 				values
-					0 : 20.0 -> 0.18
-					1 : 20.0 -> 0.18
-					2 : 20.0 -> 0.18
-		7
-			action_value_id : phase_missile_swarm_torpedo_lifetime_value -> phase_missile_swarm_torpedoes_per_interval_value
-			action_value
-				values
-					0 : 21.0 -> 3.0
-					1 : 21.0 -> 3.0
-					2 : 21.0 -> 3.0
-		8
-			action_value_id : phase_missile_swarm_torpedo_steering_distance_radius_scalar_value -> phase_missile_swarm_interval_count_value
-			action_value
-				values
-					0 : 1.0 -> 5.0
-					1 : 1.0 -> 6.0
-					2 : 1.0 -> 7.0
-		[NEW] 9 : {'action_value_id': 'phase_missile_swarm_torpedo_count_value', 'action_value': {'values': [15.0, 18.0, 21.0]}}
-		[NEW] 10 : {'action_value_id': 'phase_missile_swarm_torpedo_lifetime_value', 'action_value': {'values': [21.0, 21.0, 21.0]}}
-		[NEW] 11 : {'action_value_id': 'phase_missile_swarm_torpedo_steering_distance_radius_scalar_value', 'action_value': {'values': [1.0, 1.0, 1.0]}}
+					0 : 20.0 -> 15.0
+					1 : 20.0 -> 18.0
+					2 : 20.0 -> 21.0
 
 **Subversion Grid**
 	action_values
-		11
+		subversion_grid_weapon_cooldown_duration_bonus_value
 			action_value
 				values
 					0 : -1.0 -> 1.0
 					1 : -1.0 -> 1.0
-		12
+		subversion_grid_weapon_range_bonus_value
 			action_value
 				values
 					0 : -1.0 -> 1.0
 					1 : -1.0 -> 1.0
-		13
+		subversion_grid_ability_cooldown_duration_bonus_value
 			action_value
 				values
 					0 : -1.0 -> 1.0
 					1 : -1.0 -> 1.0
-		14
+		subversion_grid_ability_range_bonus_value
 			action_value
 				values
 					0 : -1.0 -> 1.0
@@ -13107,14 +12492,13 @@
 
 **Colonize**
 	trigger_event_actions
-		action_group
-			actions
-				0
-					operators
-						0
-							planet_track_type : mining -> logistics
-							level_count_value : colonize_level_count_value -> colonize_logistics_level_count_value
-						[NEW] 1 : {'operator_type': 'increase_planet_track_level', 'planet_track_type': 'mining', 'level_count_value': 'colonize_mining_level_count_value', 'will_offset_development_track_upgrade_price': True, 'ignore_research': True}
+		on_current_spawner_planet_colonized
+			action_group
+				actions
+					use_unit_operators_on_single_unit
+						operators
+							increase_planet_track_level
+								level_count_value : colonize_level_count_value -> colonize_mining_level_count_value
 
 **[NEW] Crystal Seeking Nanites**
 	make_dead_on_source_ability_released
@@ -13201,76 +12585,39 @@
 **dlc2_vasari_loyalist_super_nano_devourer_on_target**
 	[NEW] make_dead_on_all_finite_time_actions_done : True
 	time_actions
-		[NEW] execution_interval_count_value : nano_devourer_duration_value
+		fixed_one
+			[NEW] execution_interval_count_value : nano_devourer_duration_value
 
 **dlc2_vasari_rebel_super_capital_ship_phase_gate_active**
 	[NEW] make_dead_on_current_spawner_made_dead : True
 
 **dlc2_vasari_rebel_super_subversion_grid_on_target**
 	time_actions
-		0
+		fixed_one
 			action_group
 				actions
-					0
+					change_buff_memory_float_value
 						math_operators
-							operand_value : subversion_grid_base_range_bonus_value -> subversion_grid_base_cooldown_bonus_value
-					1
-						math_operators
-							operand_value : subversion_grid_base_cooldown_bonus_value -> subversion_grid_base_range_bonus_value
-		1
+							assign
+								operand_value : subversion_grid_base_cooldown_bonus_value -> subversion_grid_base_range_bonus_value
+		subversion_grid_modifier_execution_interval_count_value
 			action_group
 				actions
-					0
+					change_buff_memory_float_value
 						math_operators
-							operand_value : subversion_grid_per_interval_range_bonus_value -> subversion_grid_per_interval_cooldown_bonus_value
-					1
-						math_operators
-							operand_value : subversion_grid_per_interval_cooldown_bonus_value -> subversion_grid_per_interval_range_bonus_value
-
-**vasari_loyalist_exodus_package_on_planet**
-	trigger_event_actions
-		action_group
-			actions
-				0
-					operators
-						2
-							operator_type : add_unit_item -> increase_planet_track_level
-							[NEW] planet_track_type : mining
-							[NEW] will_offset_development_track_upgrade_price : True
-							[NEW] ignore_research : True
-						[NEW] 3 : {'operator_type': 'add_unit_item', 'unit_item': 'vasari_exodus_debris_reclamation_center'}
+							add
+								operand_value : subversion_grid_per_interval_cooldown_bonus_value -> subversion_grid_per_interval_range_bonus_value
 
 **vasari_population_structure_growth_on_planet**
 	planet_modifiers
-		0
-			buff_planet_modifier_id : growth_pop_growth_rate_modifier -> growth_metal_extraction_rate_modifier
-		[NEW] 1 : {'buff_planet_modifier_id': 'growth_crystal_extraction_rate_modifier'}
+		[NEW] growth_metal_extraction_rate_modifier : {'buff_planet_modifier_id': 'growth_metal_extraction_rate_modifier'}
+		[NEW] growth_crystal_extraction_rate_modifier : {'buff_planet_modifier_id': 'growth_crystal_extraction_rate_modifier'}
 	gui
 		hud_icon : advent_starbase_zealous_labor_unit_item_hud_icon -> vasari_population_structure_growth_ability_hud_icon
-		tooltip_line_groups
-			lines
-				0
-					planet_modifier_id : growth_pop_growth_rate_modifier -> growth_metal_extraction_rate_modifier
-				[NEW] 1 : {'rendering_type': 'buff_planet_modifier', 'planet_modifier_id': 'growth_crystal_extraction_rate_modifier'}
-
-**vasari_rebel_exodus_package_on_planet**
-	trigger_event_actions
-		action_group
-			actions
-				0
-					operators
-						2
-							operator_type : add_unit_item -> increase_planet_track_level
-							[NEW] planet_track_type : mining
-							[NEW] will_offset_development_track_upgrade_price : True
-							[NEW] ignore_research : True
-						[NEW] 3 : {'operator_type': 'add_unit_item', 'unit_item': 'vasari_alliance_consulate'}
 
 **vasari_siege_capital_ship_phase_missile_swarm_on_self**
 	time_actions
-		[NEW] execution_interval_value : phase_missile_swarm_execution_interval_value
-		executions_per_interval_value : phase_missile_swarm_torpedo_count_value -> phase_missile_swarm_torpedoes_per_interval_value
-		execution_interval_count_value : fixed_one -> phase_missile_swarm_interval_count_value
+		[NEW] phase_missile_swarm_execution_interval_value : {'execution_interval_value': 'phase_missile_swarm_execution_interval_value', 'executions_per_interval_value': 'phase_missile_swarm_torpedoes_per_interval_value', 'execution_interval_count_value': 'phase_missile_swarm_interval_count_value', 'action_group': {'actions': [{'action_type': 'use_position_operators_on_single_position', 'position': {'position_type': 'ability_position', 'ability': {'ability_type': 'source_ability'}, 'ability_position_picking_type': 'next_sequential'}, 'position_operators': [{'operator_type': 'create_torpedo', 'torpedo_to_create': 'vasari_phase_missile_large', 'torpedo_forward': {'direction_type': 'operand_position_forward'}, 'torpedo_source_unit': {'unit_type': 'current_spawner'}, 'torpedo_enable_steering_distance_as_radius_scalar_value': 'phase_missile_swarm_torpedo_steering_distance_radius_scalar_value', 'torpedo_target_unit': {'unit_type': 'target'}, 'damage_affect_type': 'hull_and_armor_and_shields', 'damage_value': 'phase_missile_swarm_damage_value', 'penetration_value': 'phase_missile_swarm_armor_penetration_value', 'bypass_shields_chance_value': 'phase_missile_swarm_bypass_shields_chance_value', 'duration_value': 'phase_missile_swarm_torpedo_lifetime_value'}, {'operator_type': 'play_point_effect', 'effect_definition': {'binding': 'unit_skin', 'mesh_point': 'center', 'effect': 'vasari_siege_capital_ship_phase_missile_swarm_muzzle'}, 'effect_destination_unit': {'unit_type': 'current_spawner'}, 'effect_forward': {'direction_type': 'operand_position_forward'}}]}]}}
 
 ## Unit Changes
 
@@ -13279,23 +12626,7 @@
 		attack_target_type : capital -> supercapital
 	weapons
 		weapons
-			3
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			4
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			5
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			6
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			9
+			dlc2_vasari_loyalist_super_capital_ship_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13303,11 +12634,7 @@
 **Antorak Marauder**
 	weapons
 		weapons
-			0
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			1
+			vasari_marauder_capital_ship_beam
 				beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13343,12 +12670,13 @@
 **Heavy Fighter**
 	weapons
 		weapons
-			light_beam
-				firing
-					beam_duration : 0.08 -> 0.21
-				effects
-					burst_pattern
-						1 : 0.16 -> 0.24
+			vasari_interceptor_strikecraft_beam
+				light_beam
+					firing
+						beam_duration : 0.08 -> 0.21
+					effects
+						burst_pattern
+							1 : 0.16 -> 0.24
 
 **Jarrasul Evacuator**
 	physics
@@ -13357,19 +12685,7 @@
 		time_to_max_angular_speed : 15.0 -> 13.0
 	weapons
 		weapons
-			1
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			2
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			3
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			4
+			vasari_colony_capital_ship_beam
 				beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13393,27 +12709,7 @@
 **Kortul Devastator**
 	weapons
 		weapons
-			1
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			2
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			3
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			4
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			5
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			6
+			vasari_battle_capital_ship_beam
 				beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13421,35 +12717,7 @@
 **Kultorask Titan**
 	weapons
 		weapons
-			36
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			37
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			38
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			39
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			40
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			41
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			42
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			43
+			vasari_rebel_titan_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13506,27 +12774,7 @@
 		[NEW] collision_rank : 3
 	weapons
 		weapons
-			42
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			43
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			44
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			45
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			46
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			47
+			vasari_starbase_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13561,16 +12809,17 @@
 			[REMOVED] lrm_flak
 	weapons
 		weapons
-			medium_pulse
-				attack_target_type_groups
-					[NEW] flak
-					[NEW] light
-					[NEW] antiarmor_lrm
-					[NEW] carrier_support
-					[NEW] capital_supercapital_heavy
-					[NEW] defense
-					[NEW] corvette
-					[REMOVED] lrm_flak
+			vasari_light_frigate_pulse
+				medium_pulse
+					attack_target_type_groups
+						[NEW] flak
+						[NEW] light
+						[NEW] antiarmor_lrm
+						[NEW] carrier_support
+						[NEW] capital_supercapital_heavy
+						[NEW] defense
+						[NEW] corvette
+						[REMOVED] lrm_flak
 
 **Serevun Overseer**
 	ai_attack_target
@@ -13581,27 +12830,7 @@
 		attack_target_type : capital -> supercapital
 	weapons
 		weapons
-			12
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			13
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			14
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			15
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			16
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			17
+			dlc2_vasari_rebel_super_capital_ship_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13629,19 +12858,7 @@
 **Vorastra Titan**
 	weapons
 		weapons
-			12
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			13
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			14
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			15
+			vasari_loyalist_titan_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13649,15 +12866,7 @@
 **Vulkoras Desolator**
 	weapons
 		weapons
-			2
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			3
-				beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			4
+			vasari_siege_capital_ship_beam
 				beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -13839,19 +13048,7 @@
 **dlc_vasari_mad_titan**
 	weapons
 		weapons
-			12
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			13
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			14
-				heavy_beam
-					firing
-						beam_duration : 0.24 -> 0.3
-			15
+			vasari_loyalist_titan_beam
 				heavy_beam
 					firing
 						beam_duration : 0.24 -> 0.3
@@ -14221,46 +13418,42 @@
 **vasari_asteroid_extraction_rate_0**
 	research_time : 90.0 -> 75.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.18 -> 0.12
-		1
-			modifier_type : mining_track_crystal_income_rate -> mining_track_metal_income_rate_per_population
+		[NEW] mining_track_metal_income_rate_per_population : {'modifier_type': 'mining_track_metal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		mining_track_crystal_income_rate
 			value : 0.18 -> 0.12
-		[NEW] 2 : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'value': 0.12}
-		[NEW] 3 : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
 
 **vasari_asteroid_extraction_rate_1**
 	research_time : 180.0 -> 150.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.18 -> 0.12
-		1
-			modifier_type : mining_track_crystal_income_rate -> mining_track_metal_income_rate_per_population
+		[NEW] mining_track_metal_income_rate_per_population : {'modifier_type': 'mining_track_metal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		mining_track_crystal_income_rate
 			value : 0.18 -> 0.12
-		[NEW] 2 : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'value': 0.12}
-		[NEW] 3 : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
 
 **vasari_asteroid_extraction_rate_2**
 	research_time : 360.0 -> 270.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.24 -> 0.12
-		1
-			modifier_type : mining_track_crystal_income_rate -> mining_track_metal_income_rate_per_population
+		[NEW] mining_track_metal_income_rate_per_population : {'modifier_type': 'mining_track_metal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		mining_track_crystal_income_rate
 			value : 0.24 -> 0.12
-		[NEW] 2 : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'value': 0.12}
-		[NEW] 3 : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.12}
 
 **vasari_asteroid_extraction_rate_3**
 	research_time : 600.0 -> 420.0
 	planet_modifiers
-		0
+		mining_track_metal_income_rate
 			value : 0.36 -> 0.24
-		1
-			modifier_type : mining_track_crystal_income_rate -> mining_track_metal_income_rate_per_population
+		[NEW] mining_track_metal_income_rate_per_population : {'modifier_type': 'mining_track_metal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.24}
+		mining_track_crystal_income_rate
 			value : 0.36 -> 0.24
-		[NEW] 2 : {'modifier_type': 'mining_track_crystal_income_rate', 'value_behavior': 'scalar', 'value': 0.24}
-		[NEW] 3 : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.24}
+		[NEW] mining_track_crystal_income_rate_per_population : {'modifier_type': 'mining_track_crystal_income_rate_per_population', 'value_behavior': 'scalar', 'value': 0.24}
 
 **vasari_capital_ship_starting_level_0**
 	research_time : 180.0 -> 150.0
@@ -14318,14 +13511,14 @@
 **vasari_loyalist_culture_rate_0**
 	research_time : 300.0 -> 225.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.06}
-		[NEW] 2 : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.12}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.06}
+		[NEW] neutral_population_assimilation_rate : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.12}
 
 **vasari_loyalist_culture_rate_1**
 	research_time : 540.0 -> 360.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.12}
-		[NEW] 2 : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.24}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.12}
+		[NEW] neutral_population_assimilation_rate : {'modifier_type': 'neutral_population_assimilation_rate', 'value_behavior': 'scalar', 'value': 0.24}
 
 **vasari_max_supply_0**
 	research_time : 90.0 -> 75.0
@@ -14366,16 +13559,17 @@
 **vasari_rebel_culture_rate_0**
 	research_time : 300.0 -> 225.0
 	planet_modifiers
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.12}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.12}
 
 **vasari_rebel_culture_rate_1**
 	research_time : 540.0 -> 360.0
 	planet_modifiers
-		0
+		culture_rate
 			value : 0.12 -> 0.18
-		[NEW] 1 : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.18}
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'value': 0.18}
 	empire_modifiers
-		value : 0.12 -> 0.18
+		scalar
+			value : 0.12 -> 0.18
 
 **vasari_repair_platform_structure_repair_rate_0**
 	research_time : 300.0 -> 225.0
@@ -14759,8 +13953,9 @@
 		metal : 450.0 -> 420.0
 		crystal : 480.0 -> 420.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.12 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.12 -> 60.0
 
 **vasari_upgrade_desert_biosphere_1**
 	research_time : 600.0 -> 420.0
@@ -14778,8 +13973,9 @@
 	field_coord
 		1 : 15 -> 12
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.3 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.3 -> 60.0
 
 **vasari_upgrade_hull_armor_1**
 	research_time : 300.0 -> 225.0
@@ -14811,14 +14007,16 @@
 **vasari_upgrade_ice_biosphere_0**
 	research_time : 180.0 -> 150.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.12 -> 30.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.12 -> 30.0
 
 **vasari_upgrade_ice_biosphere_1**
 	research_time : 360.0 -> 270.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.18 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.18 -> 60.0
 
 **vasari_upgrade_influence_1**
 	research_time : 180.0 -> 150.0
@@ -14853,8 +14051,9 @@
 		metal : 420.0 -> 600.0
 		crystal : 420.0 -> 660.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.12 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.12 -> 60.0
 
 **vasari_upgrade_oceanic_biosphere_1**
 	research_time : 540.0 -> 360.0
@@ -14864,9 +14063,9 @@
 
 **vasari_upgrade_orbital_extraction_0**
 	planet_modifiers
-		0
+		orbital_extraction_metal_income_rate
 			value : 0.24 -> 0.12
-		1
+		orbital_extraction_crystal_income_rate
 			value : 0.24 -> 0.12
 
 **vasari_upgrade_orbital_extraction_1**
@@ -14877,9 +14076,9 @@
 		metal : 240.0 -> 270.0
 		crystal : 210.0 -> 240.0
 	planet_modifiers
-		0
+		orbital_extraction_metal_income_rate
 			value : 0.24 -> 0.18
-		1
+		orbital_extraction_crystal_income_rate
 			value : 0.24 -> 0.18
 
 **vasari_upgrade_orbital_extraction_2**
@@ -14891,9 +14090,9 @@
 		metal : 420.0 -> 600.0
 		crystal : 420.0 -> 660.0
 	planet_modifiers
-		0
+		orbital_extraction_metal_income_rate
 			value : 0.48 -> 0.3
-		1
+		orbital_extraction_crystal_income_rate
 			value : 0.48 -> 0.3
 
 **vasari_upgrade_overseer_cruiser_phase_lane_detection_ability**
@@ -14952,16 +14151,18 @@
 		1 : 11 -> 9
 	research_time : 180.0 -> 150.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.12 -> 30.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.12 -> 30.0
 
 **vasari_upgrade_swamp_biosphere_1**
 	field_coord
 		1 : 11 -> 9
 	research_time : 360.0 -> 270.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.18 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.18 -> 60.0
 
 **vasari_upgrade_terran_biosphere_0**
 	tier : 2 -> 3
@@ -14973,8 +14174,9 @@
 		metal : 450.0 -> 630.0
 		crystal : 480.0 -> 720.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.12 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.12 -> 60.0
 
 **vasari_upgrade_terran_biosphere_1**
 	tier : 3 -> 4
@@ -14986,30 +14188,34 @@
 		metal : 630.0 -> 810.0
 		crystal : 720.0 -> 900.0
 	planet_modifiers
-		value_behavior : scalar -> additive
+		max_allied_population_factor
+			value_behavior : scalar -> additive
 
 **vasari_upgrade_volcanic_biosphere_0**
 	field_coord
 		1 : 10 -> 7
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.24 -> 30.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.24 -> 30.0
 
 **vasari_upgrade_volcanic_biosphere_1**
 	field_coord
 		1 : 10 -> 7
 	research_time : 300.0 -> 225.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.3 -> 30.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.3 -> 30.0
 
 **vasari_upgrade_volcanic_biosphere_2**
 	field_coord
 		1 : 10 -> 7
 	research_time : 540.0 -> 360.0
 	planet_modifiers
-		value_behavior : scalar -> additive
-		value : 0.36 -> 60.0
+		max_population_points
+			value_behavior : scalar -> additive
+			value : 0.36 -> 60.0
 
 **vasari_upgrade_wave_boost_unit_item**
 	research_time : 600.0 -> 420.0
@@ -15031,7 +14237,7 @@
 	[NEW] allowed_traffic_ports : ['advent_population_structure', 'trader_population_structure', 'vasari_crystal_extractor_structure', 'vasari_exotic_factory_structure', 'vasari_metal_extractor_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -15043,9 +14249,9 @@
 							metal : 175.0 -> 120.0
 						player_modifiers
 							empire_modifiers
-								0
+								additive
+									modifier_type : metal_income_rate -> crystal_income_rate
 									value : 0.6 -> 1.2
-								[NEW] 1 : {'value_behavior': 'additive', 'modifier_type': 'crystal_income_rate', 'value': 1.2}
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -15124,7 +14330,7 @@
 	ship_components
 		[NEW] vasari_deploy_phase_gate
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -15140,7 +14346,7 @@
 					2
 						metal_income_rate_per_population : 0.016 -> 0.018
 						crystal_income_rate_per_population : 0.0128 -> 0.009
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -15156,7 +14362,7 @@
 					2
 						crystal_income_rate : 0.42 -> 0.0
 						crystal_income_rate_per_population : 0.0128 -> 0.018
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -15189,7 +14395,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.003
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
-		3
+		barren
 			tracks
 				defense
 					2
@@ -15218,7 +14424,7 @@
 						[NEW] military_research_rate_scalar : 0.0
 						[NEW] military_research_rate_per_population_scalar : 0.0009
 						[NEW] military_research_points_per_population : 0.0
-		4
+		city
 			tracks
 				defense
 					2
@@ -15258,7 +14464,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -15300,7 +14506,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		6
+		desert
 			tracks
 				defense
 					2
@@ -15330,7 +14536,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -15375,7 +14581,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -15414,7 +14620,7 @@
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0015, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0015, 'military_research_points_per_population': 0.0, 'max_health_points': 750}
 					[NEW] 4 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		9
+		ice
 			tracks
 				defense
 					2
@@ -15447,7 +14653,7 @@
 						civilian_research_rate_scalar : 0.2 -> 0.0
 						civilian_research_rate_per_population_scalar : 0.0013 -> 0.0018
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'max_health_points': 750}
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -15494,7 +14700,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
 					[NEW] 4 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -15543,7 +14749,7 @@
 						civilian_research_rate_per_population_scalar : 0.0018 -> 0.0022
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0018 -> 0.0022
-		12
+		moon
 			tracks
 				defense
 					2
@@ -15570,7 +14776,7 @@
 						[NEW] military_research_rate_scalar : 0.0
 						[NEW] military_research_rate_per_population_scalar : 0.0009
 						[NEW] military_research_points_per_population : 0.0
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -15596,7 +14802,7 @@
 						civilian_research_rate_scalar : 0.2 -> 0.0
 						civilian_research_rate_per_population_scalar : 0.0013 -> 0.0018
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'max_health_points': 750}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -15624,7 +14830,7 @@
 					3
 						military_research_rate_scalar : 0.2 -> 0.0
 						military_research_rate_per_population_scalar : 0.0021 -> 0.003
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -15663,7 +14869,7 @@
 						civilian_research_rate_per_population_scalar : 0.0018 -> 0.0022
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0018 -> 0.0022
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -15696,7 +14902,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		17
+		terran
 			tracks
 				defense
 					2
@@ -15723,7 +14929,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -15760,7 +14966,7 @@
 					3
 						military_research_rate_scalar : 0.2 -> 0.0
 						military_research_rate_per_population_scalar : 0.0021 -> 0.003
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -15780,7 +14986,7 @@
 					1
 						metal_income_rate_per_population : 0.0025 -> 0.0036
 						crystal_income_rate_per_population : 0.002 -> 0.0036
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -15800,13 +15006,13 @@
 		metal : 4800 -> 2400
 		crystal : 6000 -> 3000
 	default_starting_exotics
-		0
+		offense
 			count : 2 -> 1
-		1
+		utility
 			count : 2 -> 1
-		2
+		defense
 			count : 2 -> 1
-		3
+		economic
 			count : 2 -> 1
 	asteroid_extraction_rates
 		metal : 0.36 -> 0.6
@@ -15821,20 +15027,8 @@
 		[NEW] allegiance_decay_exponent : 2.0
 		[NEW] allegiance_decay_minimum_percentage : 0.01
 		friendly_planet_modifiers
-			0
-				modifier_type : mining_track_metal_income_rate_per_population -> orbital_extraction_metal_income_rate
-				values
-					0
-						value : 0.12 -> 0.36
-						prerequisites
-							0 : vasari_unlock_culture_center -> vasari_culture_mining_extraction_rate_bonus
-			1
-				modifier_type : mining_track_crystal_income_rate_per_population -> orbital_extraction_crystal_income_rate
-				values
-					0
-						value : 0.12 -> 0.36
-						prerequisites
-							0 : vasari_unlock_culture_center -> vasari_culture_mining_extraction_rate_bonus
+			[NEW] orbital_extraction_metal_income_rate : {'modifier_type': 'orbital_extraction_metal_income_rate', 'value_behavior': 'scalar', 'values': [{'value': 0.36, 'prerequisites': [['vasari_culture_mining_extraction_rate_bonus']]}]}
+			[NEW] orbital_extraction_crystal_income_rate : {'modifier_type': 'orbital_extraction_crystal_income_rate', 'value_behavior': 'scalar', 'values': [{'value': 0.36, 'prerequisites': [['vasari_culture_mining_extraction_rate_bonus']]}]}
 	ai
 		alliance_offer_decline_reasons
 			[NEW] could_not_accept_due_to_insufficient_influence : We do not have the Influence requested. Sorry.
@@ -15848,7 +15042,7 @@
 	[NEW] allowed_traffic_ports : ['advent_population_structure', 'trader_population_structure', 'vasari_crystal_extractor_structure', 'vasari_exotic_factory_structure', 'vasari_metal_extractor_structure', 'vasari_population_structure']
 	unit_limits
 		global
-			1
+			super_capital_ship
 				unit_limit : 3 -> 1
 	research
 		research_domains
@@ -15860,9 +15054,9 @@
 							metal : 175.0 -> 120.0
 						player_modifiers
 							empire_modifiers
-								0
+								additive
+									modifier_type : metal_income_rate -> crystal_income_rate
 									value : 0.6 -> 1.2
-								[NEW] 1 : {'value_behavior': 'additive', 'modifier_type': 'crystal_income_rate', 'value': 1.2}
 					1
 						acquire_time : 60.0 -> 75.0
 						required_research_points : 4 -> 3
@@ -15936,7 +15130,7 @@
 			[REMOVED] vasari_upgrade_desert_biosphere_1
 			[REMOVED] vasari_upgrade_oceanic_biosphere_1
 	planet_types
-		0
+		asteroid
 			tracks
 				defense
 					0
@@ -15952,7 +15146,7 @@
 					2
 						metal_income_rate_per_population : 0.016 -> 0.018
 						crystal_income_rate_per_population : 0.0128 -> 0.009
-		1
+		ice_asteroid
 			tracks
 				defense
 					0
@@ -15968,7 +15162,7 @@
 					2
 						crystal_income_rate : 0.42 -> 0.0
 						crystal_income_rate_per_population : 0.0128 -> 0.018
-		2
+		hive_asteroid
 			tracks
 				defense
 					0
@@ -16001,7 +15195,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.003
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.003
-		3
+		barren
 			tracks
 				defense
 					2
@@ -16030,7 +15224,7 @@
 						[NEW] military_research_rate_scalar : 0.0
 						[NEW] military_research_rate_per_population_scalar : 0.0009
 						[NEW] military_research_points_per_population : 0.0
-		4
+		city
 			tracks
 				defense
 					2
@@ -16070,7 +15264,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		5
+		crystalline
 			tracks
 				defense
 					1
@@ -16112,7 +15306,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		6
+		desert
 			tracks
 				defense
 					2
@@ -16142,7 +15336,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		7
+		ferrous
 			tracks
 				defense
 					2
@@ -16187,7 +15381,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		8
+		gas_giant
 			tracks
 				defense
 					0
@@ -16226,7 +15420,7 @@
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0015, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0015, 'military_research_points_per_population': 0.0, 'max_health_points': 750}
 					[NEW] 4 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		9
+		ice
 			tracks
 				defense
 					2
@@ -16259,7 +15453,7 @@
 						civilian_research_rate_scalar : 0.2 -> 0.0
 						civilian_research_rate_per_population_scalar : 0.0013 -> 0.0018
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'max_health_points': 750}
-		10
+		irradiated
 			tracks
 				defense
 					2
@@ -16306,7 +15500,7 @@
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
 					[NEW] 4 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.0022, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.0022, 'military_research_points_per_population': 0.0, 'max_health_points': 1000}
 					[NEW] 5 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'military_research_rate_scalar': 0.0, 'military_research_rate_per_population_scalar': 0.003, 'military_research_points_per_population': 0.0, 'max_health_points': 1250}
-		11
+		magnetic
 			tracks
 				defense
 					2
@@ -16355,7 +15549,7 @@
 						civilian_research_rate_per_population_scalar : 0.0018 -> 0.0022
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0018 -> 0.0022
-		12
+		moon
 			tracks
 				defense
 					2
@@ -16382,7 +15576,7 @@
 						[NEW] military_research_rate_scalar : 0.0
 						[NEW] military_research_rate_per_population_scalar : 0.0009
 						[NEW] military_research_points_per_population : 0.0
-		13
+		ice_moon
 			tracks
 				defense
 					1
@@ -16408,7 +15602,7 @@
 						civilian_research_rate_scalar : 0.2 -> 0.0
 						civilian_research_rate_per_population_scalar : 0.0013 -> 0.0018
 					[NEW] 3 : {'civilian_research_rate_scalar': 0.0, 'civilian_research_rate_per_population_scalar': 0.003, 'civilian_research_points_per_population': 0.0, 'max_health_points': 750}
-		14
+		volcanic_moon
 			tracks
 				defense
 					1
@@ -16436,7 +15630,7 @@
 					3
 						military_research_rate_scalar : 0.2 -> 0.0
 						military_research_rate_per_population_scalar : 0.0021 -> 0.003
-		15
+		oceanic
 			tracks
 				defense
 					2
@@ -16475,7 +15669,7 @@
 						civilian_research_rate_per_population_scalar : 0.0018 -> 0.0022
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0018 -> 0.0022
-		16
+		swamp
 			tracks
 				defense
 					2
@@ -16508,7 +15702,7 @@
 						civilian_research_rate_per_population_scalar : 0.0012 -> 0.0015
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0012 -> 0.0015
-		17
+		terran
 			tracks
 				defense
 					2
@@ -16535,7 +15729,7 @@
 						civilian_research_rate_per_population_scalar : 0.0007 -> 0.0009
 						military_research_rate_scalar : 0.1 -> 0.0
 						military_research_rate_per_population_scalar : 0.0007 -> 0.0009
-		18
+		volcanic
 			tracks
 				defense
 					1
@@ -16572,7 +15766,7 @@
 					3
 						military_research_rate_scalar : 0.2 -> 0.0
 						military_research_rate_per_population_scalar : 0.0021 -> 0.003
-		19
+		pirate_base
 			tracks
 				defense
 					0
@@ -16592,7 +15786,7 @@
 					1
 						metal_income_rate_per_population : 0.0025 -> 0.0036
 						crystal_income_rate_per_population : 0.002 -> 0.0036
-		20
+		ship_graveyard
 			tracks
 				defense
 					0
@@ -16612,13 +15806,13 @@
 		metal : 4800 -> 2400
 		crystal : 6000 -> 3000
 	default_starting_exotics
-		0
+		offense
 			count : 2 -> 1
-		1
+		utility
 			count : 2 -> 1
-		2
+		defense
 			count : 2 -> 1
-		3
+		economic
 			count : 2 -> 1
 	asteroid_extraction_rates
 		metal : 0.36 -> 0.6
@@ -16633,17 +15827,11 @@
 		[NEW] allegiance_decay_exponent : 2.0
 		[NEW] allegiance_decay_minimum_percentage : 0.01
 		friendly_planet_modifiers
-			1
+			factory_unit_build_time
 				values
 					0
 						value : -0.06 -> -0.36
-						prerequisites
-							0 : vasari_unlock_culture_center -> vasari_culture_factory_unit_build_time_bonus
-			2
-				modifier_type : bombing_population_damage_taken -> population_growth_rate
-				values
-					value : -0.48 -> 0.24
-			[NEW] 3 : {'modifier_type': 'bombing_population_damage_taken', 'value_behavior': 'scalar', 'values': [{'value': -0.24, 'prerequisites': [['vasari_culture_planet_heal']]}]}
+			[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [{'value': 0.24, 'prerequisites': [['vasari_culture_planet_heal']]}]}
 	ai
 		alliance_offer_decline_reasons
 			[NEW] could_not_accept_due_to_insufficient_influence : We do not have the Influence requested. Sorry.
@@ -16674,9 +15862,11 @@
 	active_actions
 		actions
 			actions
-				position_operators
-					unit_forward
-						direction_type : unit_forward -> from_unit_to_target_position
+				use_position_operators_on_single_position
+					position_operators
+						create_unit
+							unit_forward
+								direction_type : unit_forward -> from_unit_to_target_position
 
 
 # Pirate Changes
@@ -16756,24 +15946,12 @@
 
 # Eivonns Changes
 
-## Ability Changes
-
-**eivonns_flak_ships**
-	gui
-		tooltip_line_groups
-			1
-				lines
-					0
-						unit : trader_antifighter_frigate -> trader_scout_frigate
-					1
-						unit : pirate_light_frigate -> trader_antifighter_frigate
-
 ## Player Changes
 
 **eivonns_frigates_npc**
 	starting_units_in_gravity_well
 		required_units
-			8
+			trader_trade_port_structure
 				count
 					0 : 2 -> 1
 					1 : 2 -> 1
@@ -16841,8 +16019,7 @@
 
 **ancient_arcology_planet_bonus**
 	planet_modifiers
-		modifier_type : max_civilian_structure_slots -> max_population_points
-		values : 4.0 -> 100.0
+		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [100.0]}
 
 ## Research_subject Changes
 
@@ -16929,14 +16106,3 @@
 
 **weapon_symbiote_ship_artifact**
 	[NEW] item_ai_valuation : 5000.0
-
-## Action_data_source Changes
-
-**mass_negation_core_ship_artifact**
-	action_values
-		1
-			action_value
-				values : 1.5 -> 0.75
-		2
-			action_value
-				values : 1.5 -> 0.75
