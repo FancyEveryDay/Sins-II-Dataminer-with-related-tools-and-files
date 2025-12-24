@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "pranast_bastion_module_hud_icon",
+    "tooltip_picture": "pranast_bastion_module_tooltip_picture",
+    "name": "npc_reward.pranast_bastion_module.name",
+    "description": "npc_reward.pranast_bastion_module.description",
+    "build_time": 60.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 500.0,
+        "crystal": 250.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "defense",
+        "count": 1
+    }],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "build_prerequisites": [
+        ["dlc_trader_unlock_bastion_module_unit_item"]
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "defense",
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_hull_points",
+        "value_behavior": "additive",
+        "values": [5000]
+    },
+    {
+        "modifier_type": "max_armor_points",
+        "value_behavior": "additive",
+        "values": [5000]
+    }]
+}

@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "growth_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "growth_max_population_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "growth_population_assimilation_rate_value",
+        "action_value":
+        {
+            "values": [0.05]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "growth_max_population_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "max_population_points",
+            "value_behavior": "additive",
+            "value_id": "growth_max_population_value"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "growth_population_assimilation_rate_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "neutral_population_assimilation_rate",
+            "value_behavior": "scalar",
+            "value_id": "growth_population_assimilation_rate_value"
+        }
+    }]
+}

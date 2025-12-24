@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_industry",
+    "field_coord": [7, 4],
+    "research_time": 420.0,
+    "price":
+    {
+        "credits": 1750.0,
+        "metal": 325.0,
+        "crystal": 550.0
+    },
+    "prerequisites": [
+        ["trader_trade_port_income_rate_1"]
+    ],
+    "name": "trader_unlock_fulfilment_warehouse_unit_item_research_subject_name",
+    "name_uppercase": "trader_unlock_fulfilment_warehouse_unit_item_research_subject_name_uppercase",
+    "hud_icon": "trader_unlock_fulfilment_warehouse_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_fulfilment_warehouse_unit_item_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_trade"]
+}

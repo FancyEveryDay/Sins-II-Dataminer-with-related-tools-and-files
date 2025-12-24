@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "dlc2_trader_loyalist_super_capital_ship_factory_supplies",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc2_trader_loyalist_super_capital_ship_factory_supplies"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.unit_item_self_label",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_factory_modifier",
+                "unit_factory_modifier_id": "factory_supplies_factory_build_time_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_material",
+    "field_coord": [6, 4],
+    "research_time": 360.0,
+    "price":
+    {
+        "credits": 1100.0,
+        "metal": 425.0,
+        "crystal": 900.0
+    },
+    "prerequisites": [
+        ["advent_unlock_exotic_factory_structure"]
+    ],
+    "exotic_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.3,
+        "exotic_types": [
+            "economic"]
+    }],
+    "windfall":
+    {
+        "exotics_given": [
+        {
+            "exotic_type": "economic",
+            "count": 3
+        }]
+    },
+    "name": "advent_economic_exotic_build_rate_research_subject_name",
+    "name_uppercase": "advent_economic_exotic_build_rate_research_subject_name_uppercase",
+    "description": "advent_economic_exotic_build_rate_research_subject_description",
+    "hud_icon": "advent_economic_exotic_build_rate_research_subject_hud_icon",
+    "tooltip_picture": "advent_economic_exotic_build_rate_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_windfall"]
+}

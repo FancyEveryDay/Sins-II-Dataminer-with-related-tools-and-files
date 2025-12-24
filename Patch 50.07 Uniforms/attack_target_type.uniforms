@@ -1,0 +1,81 @@
+{
+	"version": 0,
+	"attack_target_types": [
+		{
+			"name": "none",
+			"localized_name": "unit_attack_target_type.none.name"
+		},
+		{
+			"name": "torpedo",
+			"localized_name": "unit_attack_target_type.torpedo.name"
+		},
+		{
+			"name": "strikecraft",
+			"localized_name": "unit_attack_target_type.strikecraft.name"
+		},
+		{
+			"name": "corvette",
+			"localized_name": "unit_attack_target_type.corvette.name"
+		},
+		{
+			"name": "light",
+			"localized_name": "unit_attack_target_type.light.name"
+		},
+		{
+			"name": "flak",
+			"localized_name": "unit_attack_target_type.flak.name"
+		},
+		{
+			"name": "heavy",
+			"localized_name": "unit_attack_target_type.heavy.name"
+		},
+		{
+			"name": "lrm",
+			"localized_name": "unit_attack_target_type.lrm.name"
+		},
+		{
+			"name": "capital",
+			"localized_name": "unit_attack_target_type.capital.name"
+		},
+		{
+			"name": "titan",
+			"localized_name": "unit_attack_target_type.titan.name"
+		},
+		{
+			"name": "starbase",
+			"localized_name": "unit_attack_target_type.starbase.name"
+		},
+		{
+			"name": "defense",
+			"localized_name": "unit_attack_target_type.defense.name"
+		},
+		{
+			"name": "carrier",
+			"localized_name": "unit_attack_target_type.carrier.name"
+		},
+		{
+			"name": "siege",
+			"localized_name": "unit_attack_target_type.siege.name"
+		},
+		{
+			"name": "support",
+			"localized_name": "unit_attack_target_type.support.name"
+		},
+		{
+			"name": "antiarmor",
+			"localized_name": "unit_attack_target_type.antiarmor.name"
+		},
+		{
+			"name": "antistructure",
+			"localized_name": "unit_attack_target_type.antistructure.name"
+		},
+		{
+			"name": "supercapital",
+			"localized_name": "unit_attack_target_type.supercapital.name"
+		},
+		{
+			"name": "civilian",
+			"localized_name": "unit_attack_target_type.civilian.name"
+		}
+	]
+}

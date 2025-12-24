@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_policy",
+    "field_coord": [2, 7],
+    "research_time": 120.0,
+    "price":
+    {
+        "credits": 700.0,
+        "metal": 100.0,
+        "crystal": 125.0
+    },
+    "name": "trader_unlock_population_structure_research_subject_name",
+    "name_uppercase": "trader_unlock_population_structure_research_subject_name_uppercase",
+    "hud_icon": "trader_population_structure_hud_icon",
+    "tooltip_picture": "trader_population_structure_tooltip_picture"
+}

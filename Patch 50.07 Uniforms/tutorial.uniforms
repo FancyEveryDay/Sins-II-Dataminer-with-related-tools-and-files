@@ -1,0 +1,20 @@
+{
+    "tutorials": [
+        "tutorial_camera_controls",
+        "tutorial_hud",
+        "tutorial_galaxy_overview",
+        "tutorial_structures",
+        "tutorial_unit_controls",
+        "tutorial_fleet",
+        "tutorial_research",
+        "tutorial_derelicts_loot",
+        "tutorial_economy",
+        "tutorial_exotics",
+        "tutorial_conquer_colonize",
+        "tutorial_minor_factions",
+        "tutorial_combat_model",
+        "tutorial_trade",
+        "tutorial_unity",
+        "tutorial_resonance"
+    ]    
+}

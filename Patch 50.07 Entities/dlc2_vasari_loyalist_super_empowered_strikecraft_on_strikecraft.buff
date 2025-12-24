@@ -1,0 +1,73 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "damage_has_damage_source",
+                    "damage_source": "weapon"
+                },
+                {
+					"constraint_type": "damage_has_weapon_tag",
+					"weapon_tag": "beam"
+			    },
+                {
+                    "constraint_type": "random_chance",
+                    "chance_value": "empowered_strike_craft_chance_value"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_antimatter",
+                    "antimatter_remove_value": "empowered_strike_craft_antimatter_removed_value"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_spawned_torpedo",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc2_vasari_loyalist_super_empowered_strikecraft_on_damagedealer"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc2_vasari_loyalist_super_empowered_strikecraft_hud_icon",
+        "name": "dlc2_vasari_loyalist_super_empowered_strike_craft_ability_name",
+        "visibility_scope": "positive"
+    }
+}

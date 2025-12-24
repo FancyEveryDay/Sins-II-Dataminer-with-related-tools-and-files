@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_engineering",
+    "field_coord": [7, 6],
+    "research_time": 420.0,
+    "price":
+    {
+        "credits": 1750.0,
+        "metal": 325.0,
+        "crystal": 550.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["trader_shields_0",
+        "trader_unlock_backup_shield_generator_unit_item"]
+    ],
+    "unit_modifiers": [
+    {
+        "modifier_type": "shield_burst_restore_points",
+        "value_behavior": "scalar",
+        "value": 0.5
+    }],
+    "name": "trader_upgrade_backup_shield_generator_unit_item_research_subject_name",
+    "name_uppercase": "trader_upgrade_backup_shield_generator_unit_item_research_subject_name_uppercase",
+    "description": "trader_upgrade_backup_shield_generator_unit_item_research_subject_description",
+    "hud_icon": "trader_upgrade_backup_shield_generator_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "trader_upgrade_backup_shield_generator_unit_item_research_subject_tooltip_picture"
+}

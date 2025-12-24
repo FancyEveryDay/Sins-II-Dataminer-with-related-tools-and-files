@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "advent_surface_civilian_research_lab",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_surface_civilian_research_lab"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_planet_current_focus_track_level_header",
+            "lines": [
+            {
+                "rendering_type": "buff_empire_modifier",
+                "empire_modifier_id": "surface_civilian_research_lab_civilian_research_rate_modifier"
+            }]
+        }]
+    }
+}

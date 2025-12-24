@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_survival",
+    "field_coord": [5, 6],
+    "research_time": 270.0,
+    "price":
+    {
+        "metal": 275.0,
+        "crystal": 650.0,
+        "credits": 850.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_shield_points",
+        "value_behavior": "scalar",
+        "value": 0.15
+    },
+    {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.15
+    }],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"]
+        },
+        "action_data_source": "vasari_upgrade_shields_with_advent",
+        "buff": "vasari_upgrade_shields_with_advent"
+    }],
+    "name": "vasari_upgrade_shields_with_advent_research_subject_name",
+    "name_uppercase": "vasari_upgrade_shields_with_advent_research_subject_name_uppercase",
+    "description": "vasari_upgrade_shields_with_advent_research_subject_description",
+    "hud_icon": "vasari_upgrade_shields_with_advent_research_subject_hud_icon",
+    "tooltip_picture": "vasari_upgrade_shields_with_advent_research_subject_tooltip_picture"
+}

@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_energy",
+    "field_coord": [5, 3],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 850.0,
+        "metal": 275.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_antimatter_1"]
+    ],
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_antimatter",
+        "value_behavior": "scalar",
+        "value": 0.1
+    },
+    {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+    }],
+    "name": "advent_upgrade_antimatter_2_research_subject_name",
+    "name_uppercase": "advent_upgrade_antimatter_2_research_subject_name_uppercase",
+    "description": "advent_upgrade_antimatter_2_research_subject_description",
+    "hud_icon": "advent_upgrade_antimatter_2_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_antimatter_2_research_subject_tooltip_picture"
+}

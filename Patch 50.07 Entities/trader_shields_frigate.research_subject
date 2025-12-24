@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_engineering",
+    "field_coord": [3, 8],
+    "research_time": 150.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "name": "trader_shields_frigate_research_subject_name",
+    "name_uppercase": "trader_shields_frigate_research_subject_name_uppercase",
+    "description": "trader_shields_frigate_research_subject_description",
+    "hud_icon": "trader_shields_frigate_research_subject_hud_icon",
+    "tooltip_picture": "trader_shields_frigate_research_subject_tooltip_picture"
+}

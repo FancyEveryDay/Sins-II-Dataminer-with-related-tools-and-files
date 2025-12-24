@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "radiation_storm_fixture_bonus_hud_icon",
+    "tooltip_icon": "radiation_storm_fixture_bonus_hud_icon",
+	"tooltip_picture": "radiation_storm_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.radiation_storm.name",
+    "description": "planet_bonus.radiation_storm.desc",
+    "ability": "radiation_storm_fixture_bonus"
+}

@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 69737.956791,
+        "min_camera_distance": 663.793044,
+        "unit_mesh":
+        {
+            "mesh": "vasari_colony_capital_debris_front_0",
+            "is_shadow_blocker": true
+        }
+    }]
+}

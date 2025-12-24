@@ -1,0 +1,174 @@
+{
+    "diplomatic_tags": [
+        {
+            "name": "friendly",
+            "base_modifier": 10.0,
+            "tag_relationships": [
+                { "name": "friendly", "relationship_modifier": 20.0 },
+                { "name": "diplomatic", "relationship_modifier": 25.0 },
+                { "name": "trader", "relationship_modifier": 15.0 },
+                { "name": "militant", "relationship_modifier": -20.0 },
+                { "name": "zealot", "relationship_modifier": -30.0 },
+                { "name": "pirate", "relationship_modifier": -25.0 },
+                { "name": "xenophobe", "relationship_modifier": -40.0 },
+                { "name": "imperialist", "relationship_modifier": -25.0 }
+            ]
+        },
+        {
+            "name": "militant",
+            "base_modifier": -15.0,
+            "tag_relationships": [
+                { "name": "militant", "relationship_modifier": 10.0 },
+                { "name": "expansionist", "relationship_modifier": 5.0 },
+                { "name": "friendly", "relationship_modifier": -10.0 },
+                { "name": "diplomatic", "relationship_modifier": -20.0 },
+                { "name": "isolationist", "relationship_modifier": -15.0 },
+                { "name": "pirate", "relationship_modifier": -5.0 },
+                { "name": "imperialist", "relationship_modifier": 10.0 }
+            ]
+        },
+        {
+            "name": "trader",
+            "base_modifier": 5.0,
+            "tag_relationships": [
+                { "name": "trader", "relationship_modifier": 25.0 },
+                { "name": "diplomatic", "relationship_modifier": 20.0 },
+                { "name": "friendly", "relationship_modifier": 15.0 },
+                { "name": "opportunist", "relationship_modifier": 10.0 },
+                { "name": "pirate", "relationship_modifier": -35.0 },
+                { "name": "zealot", "relationship_modifier": -15.0 },
+                { "name": "isolationist", "relationship_modifier": -10.0 }
+            ]
+        },
+        {
+            "name": "isolationist",
+            "base_modifier": -10.0,
+            "tag_relationships": [
+                { "name": "isolationist", "relationship_modifier": 15.0 },
+                { "name": "expansionist", "relationship_modifier": -35.0 },
+                { "name": "militant", "relationship_modifier": -20.0 },
+                { "name": "pirate", "relationship_modifier": -25.0 },
+                { "name": "friendly", "relationship_modifier": 5.0 },
+                { "name": "ancient", "relationship_modifier": 0.0 },
+                { "name": "imperialist", "relationship_modifier": -35.0 }
+            ]
+        },
+        {
+            "name": "expansionist",
+            "base_modifier": -5.0,
+            "tag_relationships": [
+                { "name": "expansionist", "relationship_modifier": -15.0 },
+                { "name": "isolationist", "relationship_modifier": -30.0 },
+                { "name": "militant", "relationship_modifier": 10.0 },
+                { "name": "trader", "relationship_modifier": 5.0 },
+                { "name": "survivor", "relationship_modifier": -10.0 }
+            ]
+        },
+        {
+            "name": "zealot",
+            "base_modifier": -25.0,
+            "tag_relationships": [
+                { "name": "zealot", "relationship_modifier": -40.0 },
+                { "name": "friendly", "relationship_modifier": -20.0 },
+                { "name": "diplomatic", "relationship_modifier": -35.0 },
+                { "name": "ancient", "relationship_modifier": -30.0 },
+                { "name": "militant", "relationship_modifier": 5.0 },
+                { "name": "xenophobe", "relationship_modifier": 10.0 }
+            ]
+        },
+        {
+            "name": "pirate",
+            "base_modifier": -20.0,
+            "tag_relationships": [
+                { "name": "pirate", "relationship_modifier": 5.0 },
+                { "name": "opportunist", "relationship_modifier": 10.0 },
+                { "name": "trader", "relationship_modifier": -30.0 },
+                { "name": "friendly", "relationship_modifier": -15.0 },
+                { "name": "militant", "relationship_modifier": 0.0 },
+                { "name": "survivor", "relationship_modifier": 5.0 }
+            ]
+        },
+        {
+            "name": "ancient",
+            "base_modifier": -15.0,
+            "tag_relationships": [
+                { "name": "ancient", "relationship_modifier": 20.0 },
+                { "name": "zealot", "relationship_modifier": -25.0 },
+                { "name": "pirate", "relationship_modifier": -30.0 },
+                { "name": "diplomatic", "relationship_modifier": 5.0 },
+                { "name": "expansionist", "relationship_modifier": -20.0 },
+                { "name": "survivor", "relationship_modifier": 10.0 },
+                { "name": "imperialist", "relationship_modifier": -25.0 }
+            ]
+        },
+        {
+            "name": "diplomatic",
+            "base_modifier": 15.0,
+            "tag_relationships": [
+                { "name": "diplomatic", "relationship_modifier": 30.0 },
+                { "name": "friendly", "relationship_modifier": 25.0 },
+                { "name": "trader", "relationship_modifier": 20.0 },
+                { "name": "survivor", "relationship_modifier": 15.0 },
+                { "name": "zealot", "relationship_modifier": -30.0 },
+                { "name": "militant", "relationship_modifier": -15.0 },
+                { "name": "xenophobe", "relationship_modifier": -35.0 },
+                { "name": "imperialist", "relationship_modifier": -20.0 }
+            ]
+        },
+        {
+            "name": "survivor",
+            "base_modifier": 0.0,
+            "tag_relationships": [
+                { "name": "survivor", "relationship_modifier": 20.0 },
+                { "name": "friendly", "relationship_modifier": 15.0 },
+                { "name": "diplomatic", "relationship_modifier": 15.0 },
+                { "name": "pirate", "relationship_modifier": -10.0 },
+                { "name": "expansionist", "relationship_modifier": -15.0 },
+                { "name": "zealot", "relationship_modifier": -20.0 },
+                { "name": "imperialist", "relationship_modifier": -25.0 }
+            ]
+        },
+        {
+            "name": "xenophobe",
+            "base_modifier": -30.0,
+            "tag_relationships": [
+                { "name": "xenophobe", "relationship_modifier": 15.0 },
+                { "name": "friendly", "relationship_modifier": -35.0 },
+                { "name": "diplomatic", "relationship_modifier": -40.0 },
+                { "name": "trader", "relationship_modifier": -25.0 },
+                { "name": "isolationist", "relationship_modifier": 5.0 },
+                { "name": "zealot", "relationship_modifier": 10.0 }
+            ]
+        },
+        {
+            "name": "opportunist",
+            "base_modifier": 0.0,
+            "tag_relationships": [
+                { "name": "opportunist", "relationship_modifier": -10.0 },
+                { "name": "trader", "relationship_modifier": 15.0 },
+                { "name": "pirate", "relationship_modifier": 10.0 },
+                { "name": "diplomatic", "relationship_modifier": 5.0 },
+                { "name": "zealot", "relationship_modifier": -15.0 },
+                { "name": "xenophobe", "relationship_modifier": -20.0 },
+                { "name": "imperialist", "relationship_modifier": 5.0 }
+            ]
+        },
+        {
+            "name": "imperialist",
+            "base_modifier": -10.0,
+            "tag_relationships": [
+                { "name": "imperialist", "relationship_modifier": -25.0 },
+                { "name": "militant", "relationship_modifier": 15.0 },
+                { "name": "expansionist", "relationship_modifier": 10.0 },
+                { "name": "ancient", "relationship_modifier": -20.0 },
+                { "name": "friendly", "relationship_modifier": -15.0 },
+                { "name": "diplomatic", "relationship_modifier": -10.0 },
+                { "name": "isolationist", "relationship_modifier": -30.0 },
+                { "name": "survivor", "relationship_modifier": -5.0 },
+                { "name": "trader", "relationship_modifier": 5.0 },
+                { "name": "pirate", "relationship_modifier": -20.0 },
+                { "name": "opportunist", "relationship_modifier": 10.0 }
+            ]
+        }
+    ]
+}

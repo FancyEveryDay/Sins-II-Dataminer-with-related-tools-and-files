@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_reclamation",
+    "field_coord": [3, 12],
+    "research_time": 150.0,
+    "price":
+    {
+        "credits": 550.0,
+        "metal": 150.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["advent_unlock_unity_structure"]
+    ],
+    "name": "advent_unlock_cynosural_reservoir_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_cynosural_reservoir_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_cynosural_reservoir_unit_item_hud_icon",
+    "tooltip_picture": "advent_cynosural_reservoir_unit_item_tooltip_picture"
+}

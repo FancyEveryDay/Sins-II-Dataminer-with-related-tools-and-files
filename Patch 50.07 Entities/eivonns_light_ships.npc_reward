@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "trader_light_frigate_hud_icon",
+        "name": "npc_reward.eivonns_light_ships.name",
+        "description": "npc_reward.eivonns_light_ships.description"
+    },
+    "type": "ability",
+    "ability": "eivonns_light_ships"
+}
