@@ -1,0 +1,190 @@
+
+
+# Advent Changes
+
+## Research_subject Changes
+
+**[NEW] advent_unlock_planet_surface_shield_unit_item**
+	domain : military
+	tier : 2
+	field : military_energy
+	field_coord
+		4
+		10
+	research_time : 225.0
+	price
+		credits : 800.0
+		metal : 250.0
+		crystal : 600.0
+	name : Planetary Shield Projector Blueprint
+	name_uppercase : PLANETARY SHIELD PROJECTOR BLUEPRINT
+	hud_icon : advent_planet_surface_shield_unit_item_hud_icon
+	tooltip_picture : advent_planet_surface_shield_unit_item_tooltip_picture
+
+## Player Changes
+
+**advent_loyalist**
+	research
+		research_subjects
+			[NEW] advent_unlock_planet_surface_shield_unit_item
+	asteroid_extraction_rates
+		metal : 0.5 -> 0.4
+		crystal : 0.6 -> 0.48
+
+**advent_rebel**
+	research
+		research_subjects
+			[NEW] advent_unlock_planet_surface_shield_unit_item
+	asteroid_extraction_rates
+		metal : 0.5 -> 0.4
+		crystal : 0.6 -> 0.48
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**dlc_trader_regional_government_office**
+	planet_modifiers
+		[NEW] max_allied_population_factor : {'modifier_type': 'max_allied_population_factor', 'value_behavior': 'additive', 'values': [0.1, 0.25]}
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Harcka Heavy Cruiser**
+	build
+		build_time : 42.0 -> 40.0
+		price
+			metal : 250.0 -> 200.0
+		supply_cost : 15 -> 14
+
+## Player Changes
+
+**dlc_trader_loyalist**
+	asteroid_extraction_rates
+		metal : 0.5 -> 0.4
+		crystal : 0.5 -> 0.4
+	trade
+		trade_income_rates
+			credits : 1.5 -> 2.0
+
+**trader_loyalist**
+	asteroid_extraction_rates
+		metal : 0.5 -> 0.4
+		crystal : 0.5 -> 0.4
+	trade
+		trade_income_rates
+			credits : 1.5 -> 2.0
+
+**trader_rebel**
+	asteroid_extraction_rates
+		metal : 0.5 -> 0.4
+		crystal : 0.5 -> 0.4
+	trade
+		trade_income_rates
+			credits : 1.5 -> 2.0
+
+
+# Vasari Changes
+
+## Unit Changes
+
+**Crystal Extractor**
+	build
+		price
+			metal : 90.0 -> 120.0
+			[NEW] crystal : 30.0
+
+**Metal Extractor**
+	build
+		price
+			metal : 90.0 -> 120.0
+			[NEW] crystal : 30.0
+
+**Sulsurak Defensor**
+	physics
+		max_linear_speed : 1260.0 -> 1200.0
+
+**Tosurak Raider**
+	physics
+		max_linear_speed : 1260.0 -> 1080.0
+		time_to_max_linear_speed : 2.5 -> 3.0
+
+## Research_subject Changes
+
+**vasari_unlock_dark_fleet_tower_unit_item**
+	tier : 2 -> 3
+	field_coord
+		0 : 4 -> 6
+	research_time : 225.0 -> 360.0
+	price
+		metal : 420.0 -> 600.0
+		crystal : 420.0 -> 660.0
+
+## Player Changes
+
+**vasari_loyalist**
+	asteroid_extraction_rates
+		metal : 0.6 -> 0.48
+		crystal : 0.5 -> 0.4
+
+**vasari_rebel**
+	asteroid_extraction_rates
+		metal : 0.6 -> 0.48
+		crystal : 0.5 -> 0.4
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+## Player Changes
+
+**jiskun_force_npc**
+	npc
+		reputation
+			rewards
+				viturak_spawn_attack_ships
+					influence_point_cost : 6 -> 8
+					cooldown_duration : 480 -> 600
+			levels
+				3
+					influence_point_cost : 6 -> 8
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

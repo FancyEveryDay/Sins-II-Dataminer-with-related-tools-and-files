@@ -82,10 +82,10 @@ def main():
             planetUnit[name] = {}
 
             # Get Asteroids
-            asteroidDict = {"crystal" :  planet['non_random_crystal_asteroids']['tiers'][0]['count'][0],
-                            "random crystal" :  planet['random_crystal_asteroids']['tiers'][0]['count'][0],
-                            "metal" :  planet['non_random_metal_asteroids']['tiers'][0]['count'][0],
-                            "random metal" :  planet['random_metal_asteroids']['tiers'][0]['count'][0]
+            asteroidDict = {"min crystal" :  planet['random_crystal_asteroids']['tiers'][0]['count'][0],
+                            "max crystal" :  planet['random_crystal_asteroids']['tiers'][0]['count'][1],
+                            "min metal" :  planet['random_metal_asteroids']['tiers'][0]['count'][0],
+                            "max metal" :  planet['random_metal_asteroids']['tiers'][0]['count'][1]
                             }
             # Get SttC resources
             strippedResourcesDict = {}

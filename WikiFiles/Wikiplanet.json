@@ -34,10 +34,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 2,
-   "random crystal": 1,
-   "metal": 3,
-   "random metal": 2
+   "min crystal": 1,
+   "max crystal": 2,
+   "min metal": 2,
+   "max metal": 3
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,
@@ -361,10 +361,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 3,
-   "random crystal": 2,
-   "metal": 1,
-   "random metal": 0
+   "min crystal": 2,
+   "max crystal": 3,
+   "min metal": 0,
+   "max metal": 1
   },
   "stripped_to_the_core_resources": {
    "metal": 2400.0,
@@ -677,10 +677,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 2,
-   "random crystal": 1,
-   "metal": 3,
-   "random metal": 2
+   "min crystal": 1,
+   "max crystal": 2,
+   "min metal": 2,
+   "max metal": 3
   },
   "stripped_to_the_core_resources": {
    "metal": 2400.0,
@@ -1114,10 +1114,10 @@
    "survey": 2
   },
   "asteroids": {
-   "crystal": 2,
-   "random crystal": 1,
-   "metal": 2,
-   "random metal": 1
+   "min crystal": 1,
+   "max crystal": 2,
+   "min metal": 1,
+   "max metal": 2
   },
   "stripped_to_the_core_resources": {
    "metal": 19200.0,
@@ -1717,10 +1717,10 @@
    "survey": 3
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 25000.0,
@@ -2333,10 +2333,10 @@
    "survey": 3
   },
   "asteroids": {
-   "crystal": 5,
-   "random crystal": 4,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 4,
+   "max crystal": 5,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "crystal": 19200.0,
@@ -2946,10 +2946,10 @@
    "survey": 5
   },
   "asteroids": {
-   "crystal": 3,
-   "random crystal": 1,
-   "metal": 3,
-   "random metal": 1
+   "min crystal": 1,
+   "max crystal": 3,
+   "min metal": 1,
+   "max metal": 3
   },
   "stripped_to_the_core_resources": {
    "metal": 9600.0,
@@ -3578,10 +3578,10 @@
    "survey": 3
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 5,
-   "random metal": 4
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 4,
+   "max metal": 5
   },
   "stripped_to_the_core_resources": {
    "metal": 19200.0,
@@ -4197,10 +4197,10 @@
    "survey": 5
   },
   "asteroids": {
-   "crystal": 5,
-   "random crystal": 3,
-   "metal": 5,
-   "random metal": 3
+   "min crystal": 3,
+   "max crystal": 5,
+   "min metal": 3,
+   "max metal": 5
   },
   "stripped_to_the_core_resources": {
    "crystal": 19200.0,
@@ -4887,10 +4887,10 @@
    "survey": 2
   },
   "asteroids": {
-   "crystal": 4,
-   "random crystal": 2,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 2,
+   "max crystal": 4,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 2400.0,
@@ -5452,10 +5452,10 @@
    "survey": 4
   },
   "asteroids": {
-   "crystal": 4,
-   "random crystal": 2,
-   "metal": 4,
-   "random metal": 2
+   "min crystal": 2,
+   "max crystal": 4,
+   "min metal": 2,
+   "max metal": 4
   },
   "stripped_to_the_core_resources": {
    "metal": 19200.0,
@@ -6153,10 +6153,10 @@
    "survey": 4
   },
   "asteroids": {
-   "crystal": 1,
-   "random crystal": 3,
-   "metal": 1,
-   "random metal": 2
+   "min crystal": 3,
+   "max crystal": 4,
+   "min metal": 2,
+   "max metal": 3
   },
   "stripped_to_the_core_resources": {
    "metal": 9600.0,
@@ -6875,10 +6875,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,
@@ -7399,10 +7399,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,
@@ -7868,10 +7868,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,
@@ -8370,10 +8370,10 @@
    "survey": 4
   },
   "asteroids": {
-   "crystal": 3,
-   "random crystal": 1,
-   "metal": 1,
-   "random metal": 0
+   "min crystal": 1,
+   "max crystal": 3,
+   "min metal": 0,
+   "max metal": 1
   },
   "stripped_to_the_core_resources": {
    "metal": 9600.0,
@@ -8944,10 +8944,10 @@
    "survey": 1
   },
   "asteroids": {
-   "crystal": 1,
-   "random crystal": 0,
-   "metal": 2,
-   "random metal": 1
+   "min crystal": 0,
+   "max crystal": 1,
+   "min metal": 1,
+   "max metal": 2
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,
@@ -9326,10 +9326,10 @@
    "survey": 2
   },
   "asteroids": {
-   "crystal": 2,
-   "random crystal": 1,
-   "metal": 2,
-   "random metal": 1
+   "min crystal": 1,
+   "max crystal": 2,
+   "min metal": 1,
+   "max metal": 2
   },
   "stripped_to_the_core_resources": {
    "metal": 4800.0,
@@ -9912,10 +9912,10 @@
    "survey": 3
   },
   "asteroids": {
-   "crystal": 1,
-   "random crystal": 0,
-   "metal": 2,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 2,
+   "min metal": 0,
+   "max metal": 2
   },
   "stripped_to_the_core_resources": {
    "metal": 9600.0,
@@ -10472,10 +10472,10 @@
    "survey": 2
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 4,
-   "random metal": 2
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 2,
+   "max metal": 4
   },
   "stripped_to_the_core_resources": {
    "metal": 12600.0,
@@ -11005,10 +11005,10 @@
    "survey": 2
   },
   "asteroids": {
-   "crystal": 0,
-   "random crystal": 0,
-   "metal": 0,
-   "random metal": 0
+   "min crystal": 0,
+   "max crystal": 0,
+   "min metal": 0,
+   "max metal": 0
   },
   "stripped_to_the_core_resources": {
    "metal": 3200.0,

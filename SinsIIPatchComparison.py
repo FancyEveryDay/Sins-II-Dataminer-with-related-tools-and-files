@@ -108,13 +108,13 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
         except IndexError:
             return {0: "[NEW] " + str(obj1[0])}
 
-    elif (type(obj1) in printTypes) and type(obj2) in printTypes:
+    if (type(obj1) in printTypes) and type(obj2) in printTypes:
         if obj1 != obj2:
             # print(f"{indents}{obj2} -> {obj1}")
             return f"{obj2} -> {obj1}"
         else: return False
 
-    elif (type(obj1) is list) and (type(obj2) is list): # and (obj1 != obj2):
+    if (type(obj1) is list) and (type(obj2) is list): # and (obj1 != obj2):
         for i, j in enumerate(obj1):
             try:
                 # print(f"{indents}{i+1}")
@@ -126,7 +126,7 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
             except IndexError:
                 changeDict[f"[NEW] {i}"] = str(j)
 
-    elif (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
+    if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
         for i, j in obj1.items():
             
             try:
