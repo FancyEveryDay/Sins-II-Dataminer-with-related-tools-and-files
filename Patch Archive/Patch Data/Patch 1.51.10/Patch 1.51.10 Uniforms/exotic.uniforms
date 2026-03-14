@@ -1,0 +1,23 @@
+{
+    "type_datas": [
+    {
+        "name": "offense",
+        "entity": "offense"
+    },
+    {
+        "name": "defense",
+        "entity": "defense"
+    },
+    {
+        "name": "utility",
+        "entity": "utility"
+    },
+    {
+        "name": "economic",
+        "entity": "economic"
+    },
+    {
+        "name": "ultimate",
+        "entity": "ultimate"
+    }]
+}

@@ -1,0 +1,107 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "redline_navigation_radius_value"
+    },
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "pirate_king_capital_ship_redline_navigation_on_target_small",
+                        "medium_unit": "pirate_king_capital_ship_redline_navigation_on_target_medium",
+                        "large_unit": "pirate_king_capital_ship_redline_navigation_on_target_large"
+                    }
+                }
+            },
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_buffs_on_current_spawner",
+                "buff_constraint":
+                {
+                    "constraint_type": "buff_has_mutation",
+                    "buff": "operand_buff",
+                    "mutation": "phase_jump_disruption"
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_hyperspace_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_only",
+                    "damage_value": "redline_navigation_hull_damage_value",
+                    "penetration_value": "redline_navigation_penetration_value"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_hyperspace_stopped",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "phase_jump_disruption_immune"
+    ],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "redline_navigation_hyperspace_charge_time_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_unstoppable_phase_jump_research_subject_hud_icon",
+        "name": "pirate_king_capital_ship_redline_navigation_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "redline_navigation_hyperspace_charge_time_modifier"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "pirate_king_capital_ship_redline_navigation_hull_lost",
+                "value_id": "redline_navigation_hull_damage_value",
+                "value_float_format": "percentage",
+                "value_color": "negative"
+            }]
+        }]
+    }
+}

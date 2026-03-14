@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "singularity_time_dilation_star_bonus_hud_icon",
+    "tooltip_icon": "singularity_time_dilation_star_bonus_hud_icon",
+	"tooltip_picture": "singularity_time_dilation_star_bonus_tooltip_picture",
+    "name": "planet_bonus.singularity_time_dilation.name",
+    "description": "planet_bonus.singularity_time_dilation.desc",
+    "ability": "singularity_time_dilation_star_bonus"
+}

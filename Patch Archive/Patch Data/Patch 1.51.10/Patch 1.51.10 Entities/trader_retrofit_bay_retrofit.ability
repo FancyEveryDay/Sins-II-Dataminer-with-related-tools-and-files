@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "action_data_source": "trader_retrofit_bay_retrofit",
+    "gui":
+    {
+        "hud_icon": "trader_retrofit_bay_retrofit_ability_hud_icon",
+        "name": "trader_retrofit_bay_retrofit_ability_name",
+        "description": "trader_retrofit_bay_retrofit_ability_description"
+    }
+}

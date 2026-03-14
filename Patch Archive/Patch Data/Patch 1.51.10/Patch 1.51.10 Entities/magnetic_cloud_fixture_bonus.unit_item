@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "magnetic_cloud_fixture_bonus_hud_icon",
+    "tooltip_icon": "magnetic_cloud_fixture_bonus_hud_icon",
+	"tooltip_picture": "magnetic_cloud_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.magnetic_cloud.name",
+    "description": "planet_bonus.magnetic_cloud.desc",
+    "ability": "magnetic_cloud_fixture_bonus"
+}

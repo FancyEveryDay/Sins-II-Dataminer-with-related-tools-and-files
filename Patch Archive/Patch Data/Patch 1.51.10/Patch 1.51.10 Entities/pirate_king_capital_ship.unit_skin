@@ -1,0 +1,674 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "capital_ship"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 22391.391875,
+        "min_camera_distance": 764.70139,
+        "gui":
+        {
+            "hud_icon": "pirate_king_captial_ship_hud_icon",
+            "hud_monochrome_icon": "pirate_king_capital_ship_main_view_icon",
+            "hud_picture": "pirate_king_capital_ship_hud_picture",
+            "tooltip_picture": "pirate_king_captial_ship_tooltip_picture",
+            "name": "pirate_king_capital_ship_name",
+            "description": "pirate_king_capital_ship_description",
+            "hud_selection_window_icon_offet": [-10, 0]
+        },
+        "unit_mesh":
+        {
+            "mesh": "pirate_capital_ship_king",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "pirate_asset_autocannon_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "pirate_asset_autocannon_barrel_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "pirate_asset_autocannon_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "pirate_asset_autocannon_mount_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "pirate_asset_pdcannon_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "pirate_asset_pdcannon_barrel_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "pirate_asset_pdcannon_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "pirate_asset_pdcannon_mount_0",
+                    "shader": "ship",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "capital_ship",
+            "icon": "pirate_king_capital_ship_main_view_icon",
+            "selected_icon": "pirate_king_capital_ship_main_view_icon_selected",
+            "sub_selected_icon": "pirate_king_capital_ship_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "exhaust_effects":
+            {
+                "particle_effects": [
+                {
+                    "particle_effect": "pirate_exhaust_large"
+                }]
+            },
+            "hyperspace_effects":
+            {
+                "charge_effect": "hyperspace_tech_capital_chargeup",
+                "charge_effect_between_stars": "hyperspace_tech_capital_chargeup_interstellar",
+                "charge_effect_destabilized": "hyperspace_tech_capital_chargeup_unstable",
+                "travel_effect": "hyperspace_tech_capital_travel",
+                "travel_effect_between_stars": "hyperspace_tech_capital_travel_interstellar",
+                "travel_effect_destabilized": "hyperspace_tech_capital_travel_unstable",
+                "exit_effect": "hyperspace_tech_capital_exit",
+                "charge_sound": "hyperspace_chargeup",
+                "enter_sound": "hyperspace_entry",
+                "exit_sound": "hyperspace_exit"
+            },
+            "damage_effects":
+            {
+                "max_damage_effect_count": 20,
+                "damage_effects": [
+                {
+                    "max_count": 6,
+                    "weight": 15.0,
+                    "hull_percentage_threshold": 0.99,
+                    "particle_effect": "damage_air_decompression",
+                    "sound": "ambient_loop_airdecompression"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 5.0,
+                    "hull_percentage_threshold": 0.99,
+                    "particle_effect": "damage_smoke_2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 5.0,
+                    "hull_percentage_threshold": 0.75,
+                    "particle_effect": "damage_smoke_3"
+                },
+                {
+                    "max_count": 6,
+                    "weight": 20.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "tec_damage_escaping_gas",
+                    "sound": "ambient_loop_tech_escaping_gas"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 5.0,
+                    "hull_percentage_threshold": 0.75,
+                    "particle_effect": "damage_electricity",
+                    "sound": "ambient_loop_electrical_damage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 5.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                },
+                {
+                    "max_count": 6,
+                    "weight": 10.0,
+                    "hull_percentage_threshold": 0.99,
+                    "particle_effect": "tec_damage_embers"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 30.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "damage_fire",
+                    "sound": "ambient_loop_firedamage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 5.0,
+                    "hull_percentage_threshold": 0.25,
+                    "particle_effect": "damage_fire_pillar",
+                    "sound": "ambient_loop_firepillar_damage"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "tec_damage_capital_1",
+                "constraint": "is_crippled"
+            },
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "pirate_surrender_status_effects",
+                "constraint": "is_surrendered"
+            }],
+            "level_up_effect": "capitalship_levelup",
+            "level_up_sound": "capitalship_levelup",
+            "shield_effect": "pirate_king_capital_ship",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "pirate_king_capital_ship_autocannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "medium_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_physical_medium_hithull",
+                        "weapon_impact_physical_medium_hithull_01",
+                        "weapon_impact_physical_medium_hithull_02",
+                        "weapon_impact_physical_medium_hithull_03",
+                        "weapon_impact_physical_medium_hithull_04"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_autocannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "medium_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_autocannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_capital_medium_autocannon_weapon_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_tech_medium_autocannon",
+                        "weapon_muzzle_tech_medium_autocannon_01",
+                        "weapon_muzzle_tech_medium_autocannon_02",
+                        "weapon_muzzle_tech_medium_autocannon_03",
+                        "weapon_muzzle_tech_medium_autocannon_04",
+                        "weapon_muzzle_tech_medium_autocannon_05"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_autocannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_medium_autocannon_weapon_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_heavy_gauss_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "tech_capital_gauss_cannon_impact",
+                    "sounds": [
+                        "weapon_impact_physical_heavy_hithull",
+                        "weapon_impact_physical_heavy_hithull_01",
+                        "weapon_impact_physical_heavy_hithull_02",
+                        "weapon_impact_physical_heavy_hithull_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_heavy_gauss_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "tech_capital_gauss_cannon_impact",
+                    "sounds": [
+                        "weapon_impact_generic_heavy_hitshields",
+                        "weapon_impact_generic_heavy_hitshields_01",
+                        "weapon_impact_generic_heavy_hitshields_02",
+                        "weapon_impact_generic_heavy_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_heavy_gauss_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "tech_capital_gauss_cannon_muzzleflash",
+                    "sounds": [
+                        "weapon_muzzle_tech_gausscannon",
+                        "weapon_muzzle_tech_gausscannon_01",
+                        "weapon_muzzle_tech_gausscannon_02",
+                        "weapon_muzzle_tech_gausscannon_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_heavy_gauss_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "tech_capital_gauss_cannon_travel"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_ion_bolt_buff_on_target_large",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_large",
+                    "sounds": [
+                        "ability_impact_concussioncharge"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_ion_bolt_buff_on_target_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_medium",
+                    "sounds": [
+                        "ability_impact_concussioncharge"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_ion_bolt_buff_on_target_small",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_small",
+                    "sounds": [
+                        "ability_impact_concussioncharge"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_ion_bolt_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_ion_bolt_muzzle",
+                    "sounds": [
+                        "ability_muzzle_tech_concussioncharge"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_ion_bolt_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_ion_bolt_travel"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_mag_blast_missile_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_mag_blast_missile_muzzle_super",
+                    "sounds": [
+                        "weapon_muzzle_tech_neutrontorp"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_missile_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_king_capital_ship_mag_blast_missile_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_tech_medium_missile_capship",
+                        "weapon_muzzle_tech_medium_missile_capship_01",
+                        "weapon_muzzle_tech_medium_missile_capship_02",
+                        "weapon_muzzle_tech_medium_missile_capship_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_armed_structure",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_damage_status_effects",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_culture",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_culture_status_effects",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_exotic_refinery",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_exotic_status_effects",
+                    "sounds": [
+                        "ability_impact_tech_empdroids_roboticscruiser"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_extractor_crystal",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_crystals_status_effects",
+                    "sounds": [
+                        "ability_impact_tech_empdroids_roboticscruiser"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_extractor_metal",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_resources_status_effects",
+                    "sounds": [
+                        "ability_impact_tech_empdroids_roboticscruiser"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_on_target",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_structure_status_effects",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_research_civilian",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_research_status_effects",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_pillage_research_military",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_military_status_effects",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_planet_bombing_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_bombardment_impact",
+                    "sounds": [
+                        "weapon_impact_tech_planetbomb"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_planet_bombing_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_bombardment_impact",
+                    "sounds": [
+                        "weapon_impact_tech_planetbomb"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_planet_bombing_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_bombardment_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_tech_planetbomb"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_planet_bombing_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_bombardment_exhaust"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_point_defense_autocannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "pd_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_physical_pointdefense_hithull",
+                        "weapon_impact_physical_pointdefense_hithull_01",
+                        "weapon_impact_physical_pointdefense_hithull_02",
+                        "weapon_impact_physical_pointdefense_hithull_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_point_defense_autocannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "pd_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_generic_pointdefense_hitshields",
+                        "weapon_impact_generic_pointdefense_hitshields_01",
+                        "weapon_impact_generic_pointdefense_hitshields_02",
+                        "weapon_impact_generic_pointdefense_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_point_defense_autocannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_capital_point_defense_autocannon_weapon_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_tech_pointdefense_autocannon",
+                        "weapon_muzzle_tech_pointdefense_autocannon_01",
+                        "weapon_muzzle_tech_pointdefense_autocannon_02",
+                        "weapon_muzzle_tech_pointdefense_autocannon_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_point_defense_autocannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_point_defense_autocannon_weapon_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_redline_navigation_on_spawner",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_redline_navigation_ability",
+                    "sounds": [
+                        "ability_inspiring_broadcast_loop"]
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_redline_navigation_on_target_large",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_redline_navigation_status_large"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_redline_navigation_on_target_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_redline_navigation_status_medium"
+                }
+            },
+            {
+                "alias_name": "pirate_king_capital_ship_redline_navigation_on_target_small",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_redline_navigation_status_small"
+                }
+            },
+            {
+                "alias_name": "trader_colony_shuttle",
+                "alias_binding":
+                {
+                    "particle_effect": "pirate_pillage_shuttle",
+                    "sounds": [
+                        "ability_activate_tech_shuttlelaunch"]
+                }
+            }]
+        },
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "engine_techcapitalship",
+                "hyperspace_travel": "hyperspace_travel"
+            },
+            "dialogue":
+            {
+                "spawned":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_spawned_neutral_0"]
+                },
+                "selected":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_selected_neutral_0_0",
+                        "pirate_king_capital_ship_selected_neutral_0_1",
+                        "pirate_king_capital_ship_selected_neutral_1",
+                        "pirate_king_capital_ship_selected_neutral_2"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_selected_scared_0",
+                        "pirate_king_capital_ship_selected_scared_1",
+                        "pirate_king_capital_ship_selected_scared_2"
+                    ]
+                },
+                "order_issued":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_order_issued_neutral_0",
+                        "pirate_king_capital_ship_order_issued_neutral_1",
+                        "pirate_king_capital_ship_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_order_issued_scared_0",
+                        "pirate_king_capital_ship_order_issued_scared_1",
+                        "pirate_king_capital_ship_order_issued_scared_2"
+                    ]
+                },
+                "attack_order_issued":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_attack_order_issued_neutral_0",
+                        "pirate_king_capital_ship_attack_order_issued_neutral_1",
+                        "pirate_king_capital_ship_attack_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_attack_order_issued_scared_0",
+                        "pirate_king_capital_ship_attack_order_issued_scared_1",
+                        "pirate_king_capital_ship_attack_order_issued_scared_2"
+                    ],
+                    "smug": [
+                        "pirate_king_capital_ship_attack_order_issued_smug_0_0",
+                        "pirate_king_capital_ship_attack_order_issued_smug_0_1",
+                        "pirate_king_capital_ship_attack_order_issued_smug_1",
+                        "pirate_king_capital_ship_attack_order_issued_smug_2"
+                    ]
+                },
+                "retreat":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_retreat_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_retreat_scared_0"]
+                },
+                "hyperspace_charge_started":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_hyperspace_charge_started_neutral_0"
+                    ]
+                },
+                "cannot_hyperspace":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_cannot_hyperspace_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_cannot_hyperspace_scared_0"]
+                },
+                "shields_down":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_shields_down_neutral_0",
+                        "pirate_king_capital_ship_shields_down_neutral_1"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_shields_down_scared_0",
+                        "pirate_king_capital_ship_shields_down_scared_1"
+                    ]
+                },
+                "armor_down":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_armor_down_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_armor_down_scared_0"]
+                },
+                "became_crippled":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_became_crippled_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_became_crippled_scared_0"]
+                },
+                "destroyed":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_destroyed_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_destroyed_scared_0"]
+                },
+                "ship_component_finished_building":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_ship_component_finished_building_neutral_0"
+                    ]
+                },
+                "ability_cooldown_is_not_completed":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_ability_cooldown_is_not_completed_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_ability_cooldown_is_not_completed_scared_0"
+                    ]
+                },
+                "insufficient_antimatter":
+                {
+                    "neutral": [
+                        "pirate_king_capital_ship_insufficient_antimatter_neutral_0"
+                    ],
+                    "scared": [
+                        "pirate_king_capital_ship_insufficient_antimatter_scared_0",
+                        "pirate_king_capital_ship_insufficient_antimatter_scared_1"
+                    ]
+                }
+            }
+        },
+        "death_sequence_group": "capitalshipcolony"
+    }]
+}

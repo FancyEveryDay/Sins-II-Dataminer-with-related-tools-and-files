@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "medicinal_plants_planet_bonus_hud_icon",
+    "tooltip_icon": "medicinal_plants_planet_bonus_hud_icon",
+    "name": "planet_bonus.medicinal_plants.name",
+    "description": "planet_bonus.medicinal_plants.desc",
+    "planet_types": [
+        "desert",
+        "terran"
+    ],
+    "required_surveying_level": [1, 2],
+    "planet_modifiers": [
+    {
+        "modifier_type": "commerce_track_credit_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.15]
+    },
+    {
+        "modifier_type": "population_growth_rate",
+        "value_behavior": "scalar",
+        "values": [0.15]
+    }]
+}

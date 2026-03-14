@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 95117.582725,
+        "min_camera_distance": 453.055443,
+        "unit_mesh":
+        {
+            "mesh": "dlc2_trader_rebel_super_capital_ship_debris_front",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "trader_loyalist_titan_debris_damage_front"
+            }]
+        }
+    }]
+}

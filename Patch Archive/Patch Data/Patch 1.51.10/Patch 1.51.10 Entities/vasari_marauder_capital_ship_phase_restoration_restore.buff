@@ -1,0 +1,57 @@
+{
+    "version": 0,
+    "active_duration": "phase_restoration_restore_delay_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "hull_only",
+                    "repair_value": "phase_restoration_hull_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_only",
+                    "repair_value": "phase_restoration_armor_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "shields_only",
+                    "repair_value": "phase_restoration_shield_restore_value"
+                },
+                {
+                    "operator_type": "restore_antimatter",
+                    "antimatter_restore_value": "phase_restoration_antimatter_restore_value"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "vasari_marauder_capital_ship_phase_restoration_activate"
+                    }
+                }]
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "in_phase_space"]
+}

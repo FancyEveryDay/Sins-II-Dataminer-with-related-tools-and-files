@@ -1,0 +1,63 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "player_has_factional_victory_active",
+                        "objectives_active": 3
+                    }
+                },
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_unity_sanctify_buff_small",
+                        "medium_unit": "advent_unity_sanctify_buff_medium",
+                        "large_unit": "advent_unity_sanctify_buff_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "invulnerable"
+    ],
+    "gui":
+    {
+        "hud_icon": "advent_mobile_fleet_beacon_unit_item_tooltip_picture",
+        "name": "dlc2_advent_faction_victory_unit_item_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive"
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 40889.262247,
+        "min_camera_distance": 1487.567901,
+        "gui":
+        {
+            "hud_icon": "vasari_military_research_lab_structure_hud_icon",
+            "hud_monochrome_icon": "vasari_military_research_lab_structure_main_view_icon",
+            "hud_picture": "vasari_military_research_lab_structure_hud_picture",
+            "tooltip_picture": "vasari_military_research_lab_structure_tooltip_picture",
+            "name": "vasari_military_research_lab_structure_name",
+            "description": "vasari_military_research_lab_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "vasari_military_research_lab_structure",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "vasari_military_research_lab_structure_main_view_icon",
+            "selected_icon": "vasari_military_research_lab_structure_main_view_icon_selected",
+            "sub_selected_icon": "vasari_military_research_lab_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 10,
+                "damage_effects": [
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_clouds",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_plasma_sparks",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_1",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_2",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_3",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 3,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.42,
+                    "particle_effect": "vasari_damage_escaping_gas",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.38,
+                    "particle_effect": "vasari_damage_embers",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 6.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "vasari_damage_fire",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.3,
+                    "particle_effect": "vasari_damage_fire_pillar",
+                    "sound": "hyperspace_chargeup"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_lab_ambient"
+            },
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_damage_structure",
+                "constraint": "is_crippled"
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "planetmodule_phaseorbitalcombatlaboratory_onselection_0"
+                    ],
+                    "scared": [
+                        "planetmodule_phaseorbitalcombatlaboratory_onselection_0"]
+                }
+            }
+        },
+        "death_sequence_group": "vasari_planetmodulesmall"
+    }]
+}

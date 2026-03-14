@@ -1,5 +1,6 @@
-from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT
+from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT, PARENT_DIR
 import json, glob, shutil, pprint
+from pathlib import Path
 
 
 def recursiveprint(collection, output, localText = {}, level = 0):
@@ -165,7 +166,7 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
     else:
         return changeDict
     
-def getSinsDataDict(race, entityType, file = SINS_DIRECTORY + "\\entities"):
+def getSinsDataDict(race, entityType, file = SINS_DIRECTORY / "entities"):
     dataList = getSinsData(race, entityType, file = file)
     dataDict = createWeaponDict(dataList)
     return dataDict
@@ -173,16 +174,16 @@ def getSinsDataDict(race, entityType, file = SINS_DIRECTORY + "\\entities"):
 if __name__ == "__main__":
     # Get .env
     try:
-        with open('.env', 'r') as file:
+        with open(PARENT_DIR / ".env", 'r') as file:
             env = json.load(file)
-        SINS_DIRECTORY = env['sins2File']
+        SINS_DIRECTORY = Path(env['sins2File'])
     except FileNotFoundError:
         print(".env not found")
     except KeyError:
         print("Sins 2 file location not found.")
 
-    ENTITIES_LOCATION = SINS_DIRECTORY + "\\entities"
-    LOCALIZED_TEXT_LOCATION = SINS_DIRECTORY + "\\localized_text\\en.localized_text"
+    ENTITIES_LOCATION = SINS_DIRECTORY / "entities"
+    LOCALIZED_TEXT_LOCATION = SINS_DIRECTORY / "localized_text" / "en.localized_text"
     with open(LOCALIZED_TEXT_LOCATION, 'r') as t:
         LOCALIZED_TEXT = json.load(t)
 
@@ -219,39 +220,45 @@ if __name__ == "__main__":
 
     # Copy over new set of files
     print("Copying new entity files")
+
+    archive_path = PARENT_DIR / "Patch Archive"
+    archive_data_path = archive_path / "Patch Data" / f"Patch {newPatchNumber}"
+
+
+
     try:
-        shutil.copytree(ENTITIES_LOCATION, f"Patch {newPatchNumber[2:]} Entities")
+        shutil.copytree(ENTITIES_LOCATION, archive_data_path / f"Patch {newPatchNumber} Entities" )
     except FileExistsError:
-        shutil.rmtree(f"Patch {newPatchNumber[2:]} Entities")
-        shutil.copytree(ENTITIES_LOCATION, f"Patch {newPatchNumber[2:]} Entities")
+        shutil.rmtree(archive_data_path / f"Patch {newPatchNumber} Entities")
+        shutil.copytree(ENTITIES_LOCATION, archive_data_path / f"Patch {newPatchNumber} Entities")
     print("Copying new Localized Text files")
     try:
-        shutil.copytree(SINS_DIRECTORY + "\\localized_text", f"Patch {newPatchNumber[2:]} Localized Text")
+        shutil.copytree(SINS_DIRECTORY / "localized_text", archive_data_path / f"Patch {newPatchNumber} Localized Text")
     except FileExistsError:
-            shutil.rmtree(f"Patch {newPatchNumber[2:]} Localized Text")
-            shutil.copytree(SINS_DIRECTORY + "\\localized_text", f"Patch {newPatchNumber[2:]} Localized Text")
+            shutil.rmtree(archive_data_path / f"Patch {newPatchNumber} Localized Text")
+            shutil.copytree(SINS_DIRECTORY / "localized_text", archive_data_path / f"Patch {newPatchNumber} Localized Text")
     print("Copying new Uniform files")
     try:
-        shutil.copytree(SINS_DIRECTORY + "\\uniforms", f"Patch {newPatchNumber[2:]} Uniforms")
+        shutil.copytree(SINS_DIRECTORY / "uniforms", archive_data_path / f"Patch {newPatchNumber} Uniforms")
     except FileExistsError:
-        shutil.rmtree(f"Patch {newPatchNumber[2:]} Uniforms")
-        shutil.copytree(SINS_DIRECTORY + "\\uniforms", f"Patch {newPatchNumber[2:]} Uniforms")
+        shutil.rmtree(archive_data_path / f"Patch {newPatchNumber} Uniforms")
+        shutil.copytree(SINS_DIRECTORY / "uniforms", archive_data_path / f"Patch {newPatchNumber} Uniforms")
 
     # Change number formatting (for reasons)
     newPatchNumber = newPatchNumber.replace(".","-")
     pastPatchNumber = pastPatchNumber.replace(".","-")
 
     # Get entity files
-    filelist = glob.glob(ENTITIES_LOCATION + "\\*")
+    filelist = ENTITIES_LOCATION.glob("*")
     objectTypes = []
     for f in filelist:
-        objectType = f.split(".")[-1]
+        objectType = f.name.split(".")[-1]
         if objectType not in objectTypes and objectType != "weapon":
             objectTypes.append(objectType)
 
     print(objectTypes)
 
-    with open(newPatchNumber + "_changes.txt", 'w') as file:
+    with open(archive_path / f"{newPatchNumber}_changes.txt", 'w') as file:
         pass
 
     raceList = ["advent", "trader", "vasari", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
@@ -261,7 +268,7 @@ if __name__ == "__main__":
     
 
     for race in raceList:
-        with open(newPatchNumber + "_changes.txt", 'a') as file:
+        with open(archive_path / f"{newPatchNumber}_changes.txt", 'a') as file:
             if race == "trader":
                 file.write(f"\n\n# {'TEC'} Changes\n")
             else: file.write(f"\n\n# {race.capitalize()} Changes\n")
@@ -325,5 +332,5 @@ if __name__ == "__main__":
 
     env['pastPatch'] = newPatchNumber.replace("-", ".")
 
-    with open('.env', 'w') as file:
+    with open(PARENT_DIR / ".env", 'w') as file:
         json.dump(env, file)

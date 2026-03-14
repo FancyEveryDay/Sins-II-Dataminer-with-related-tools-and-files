@@ -1,20 +1,21 @@
-
-
 import json, glob
+from pathlib import Path
 
 # try:
 with open(".env", 'r') as file:
     env = json.load(file)
-    SINS_DIRECTORY = env['sins2File']
+    SINS_DIRECTORY = Path(env['sins2File'])
     LAST_PATCH_NUM = env["pastPatch"]
 # except FileNotFoundError:
 #     print(".env file not found")
 
 try:
-    with open(SINS_DIRECTORY + "\\localized_text\\en.localized_text") as t:
+    with open(SINS_DIRECTORY / "localized_text" / "en.localized_text" ) as t:
         LOCALIZED_TEXT = json.load(t)
 except FileNotFoundError:
     print("Localized text file not found")
+
+PARENT_DIR = Path(__file__).parent.resolve()
 
 
 def recursiveprint(collection, output = False, localText = {}, level = 0):
@@ -76,8 +77,9 @@ def recursiveprint(collection, output = False, localText = {}, level = 0):
 
                     print(f"{indents}{name} : {entry}")
 
-def getSinsData(race, type, output = False, file = SINS_DIRECTORY + "\\entities" ):
-    unitfilelist = glob.glob(f"{file}\\**{race}**{type}")
+def getSinsData(race, type, output = False, file = SINS_DIRECTORY / "entities" ):
+    file = Path(file) # just in case
+    unitfilelist = file.rglob(f"{race}*{type}")
 
     listODatas = []
 
@@ -90,8 +92,8 @@ def getSinsData(race, type, output = False, file = SINS_DIRECTORY + "\\entities"
                 with open(unitfile) as unitJSON:
                     d = json.load(unitJSON)
                 
-                print(unitfile.split("\\")[-1])
-                output.write(unitfile.split("\\")[-1] + "\n")
+                print(unitfile.name)
+                output.write(unitfile.name + "\n")
                 recursiveprint(d, output, 1)
 
     else:
@@ -99,7 +101,7 @@ def getSinsData(race, type, output = False, file = SINS_DIRECTORY + "\\entities"
                 with open(unitfile) as unitJSON:
                     d = json.load(unitJSON)
 
-                listODatas.append([unitfile.split("\\")[-1].split(".")[0], d])
+                listODatas.append([unitfile.name.split(".")[0], d])
 
     return listODatas
 
@@ -109,7 +111,7 @@ def createWeaponDict(WeaponList):
     WeaponsDict = {}
 
     for weapon in WeaponList:
-        indexName = weapon[0].split("\\")[-1]
+        indexName = weapon[0]
         weaponStats = weapon[1]
         try:
             weaponStats["dps"] = weaponStats["damage"] / weaponStats["cooldown_duration"]
@@ -124,12 +126,12 @@ def createWeaponDict(WeaponList):
     return WeaponsDict
         
 def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = True, outputFile = False):
-    with open(SINS_DIRECTORY + "\\localized_text\\en.localized_text") as t:
+    with open(SINS_DIRECTORY / "localized_text" / "en.localized_text") as t:
         inGameText = json.load(t)
     
     for i in UnitList:
 
-        unitName = i[0].split("\\")[-1]
+        unitName = i[0]
         unitDict = i[1]
         if filter in unitDict:
 

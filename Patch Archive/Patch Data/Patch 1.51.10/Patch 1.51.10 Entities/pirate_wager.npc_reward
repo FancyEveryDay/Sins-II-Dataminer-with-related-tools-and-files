@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "pirate_wager_hud_icon",
+        "name": "npc_reward.pirate_wager_name",
+        "description": "npc_reward.pirate_wager_description"
+    },
+    "type": "random_assets_and_exotics",
+    "random_assets_and_exotics": [
+    {
+        "weight": 10,
+        "credits": [10, 1000],
+        "metal": [10, 1000],
+        "crystal": [10, 1000],
+        "exotics":
+        {
+            "count": [0, 2],
+            "exotics": [
+                "defense",
+                "economic",
+                "offense",
+                "utility"]
+        }
+    },
+    {
+        "weight": 5,
+        "credits": [1000, 2000],
+        "metal": [1000, 2000],
+        "crystal": [1000, 2000],
+        "exotics":
+        {
+            "count": [1, 5],
+            "exotics": [
+                "defense",
+                "economic",
+                "offense",
+                "utility"]
+        }
+    },
+    {
+        "weight": 1,
+        "exotics":
+        {
+            "count": [1, 2],
+            "exotics": [
+                "ultimate"]
+        }
+    }]
+}
