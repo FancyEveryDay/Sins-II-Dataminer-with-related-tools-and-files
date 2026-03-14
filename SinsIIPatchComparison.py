@@ -197,6 +197,8 @@ if __name__ == "__main__":
             break
         elif userInput.strip().lower() in ['no', 'n', 'nahp', 'nope', 'nay']:
             newPatchNumber = input("Current Patch Number [format 1.28.16]:  ")
+        elif len(userInput.strip()) == 7 and len(userInput.split(".")) == 3:
+            newPatchNumber = userInput.strip()
         else:
             print("Input not recognized, try again.")
 
@@ -215,6 +217,8 @@ if __name__ == "__main__":
             break
         elif userInput.strip().lower() in ['no', 'n', 'nahp', 'nope', 'nay']:
             pastPatchNumber = input("Previous Patch Number [format 1.28.16]:  ")
+        elif len(userInput.strip()) == 7 and len(userInput.split(".")) == 3:
+            pastPatchNumber = userInput.strip()
         else:
             print("Input not recognized, try again.")
 
