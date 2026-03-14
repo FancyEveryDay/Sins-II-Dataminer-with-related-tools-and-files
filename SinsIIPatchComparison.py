@@ -305,7 +305,7 @@ if __name__ == "__main__":
 
             ChangesList.append(unitChanges2)
             
-        with open(newPatchNumber + "_changes.txt", 'a') as file:
+        with open(archive_data_path / f"{newPatchNumber}_changes.txt", 'a') as file:
 
             for i, changeDict in enumerate(ChangesList):
                 listList = []
