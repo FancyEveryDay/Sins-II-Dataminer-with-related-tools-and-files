@@ -2,7 +2,7 @@ Nano Assembly Factory
 	Supply: 	
 	Credits:	
 	Metal:  	300.0
-	Crystal:	240.0
+	Crystal:	120.0
 
 	Movespeed:	
 	Acceleration:	

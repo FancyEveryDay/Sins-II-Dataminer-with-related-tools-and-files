@@ -1,0 +1,67 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "icon_of_research_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_or",
+                "constraints": [
+                {
+                    "constraint_type": "has_definition",
+                    "unit_definition": "advent_military_research_lab_structure"
+                },
+                {
+                    "constraint_type": "has_definition",
+                    "unit_definition": "advent_civilian_research_lab_structure"
+                }]
+            }]
+        }
+    },
+    {
+        "target_filter_id": "icon_of_research_planet_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "icon_of_research_research_time_bonus",
+        "action_value":
+        {
+            "values": [0.05]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "advent_icon_of_research_civilian_research_time_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "civilian_research_rate",
+            "value_behavior": "scalar",
+            "value_id": "icon_of_research_research_time_bonus"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "advent_icon_of_research_military_research_time_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "military_research_rate",
+            "value_behavior": "scalar",
+            "value_id": "icon_of_research_research_time_bonus"
+        }
+    }]
+}

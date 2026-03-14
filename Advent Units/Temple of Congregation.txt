@@ -1,7 +1,7 @@
 Temple of Congregation
 	Supply: 	
-	Credits:	450.0
-	Metal:  	150.0
+	Credits:	300.0
+	Metal:  	125.0
 	Crystal:	120.0
 
 	Movespeed:	

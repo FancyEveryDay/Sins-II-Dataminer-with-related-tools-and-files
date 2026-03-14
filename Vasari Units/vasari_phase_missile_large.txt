@@ -11,7 +11,7 @@ vasari_phase_missile_large
 	Armor Strength:	18.0
 
 	Hull Points:	27
-	Armor Points:	30
+	Armor Points:	24
 	Shield Points:	
 	   Shield Burst CD: nans
 

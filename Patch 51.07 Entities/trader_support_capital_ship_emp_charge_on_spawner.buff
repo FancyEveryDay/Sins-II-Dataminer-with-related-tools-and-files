@@ -1,0 +1,103 @@
+{
+    "version": 0,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "trader_support_capital_ship_emp_charge_buff_on_spawner_start"
+                    }
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "is_empowered"
+                    }
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "radius_value",
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "emp_charge_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "shields_only",
+                    "damage_value": "non_empowered_shield_damage_value",
+                    "penetration_value": "emp_charge_penetration_value"
+                },
+                {
+                    "operator_type": "remove_antimatter",
+                    "antimatter_remove_value": "non_empowered_antimatter_remove_value"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "is_empowered"
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "radius_value",
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "emp_charge_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "shields_only",
+                    "damage_value": "empowered_shield_damage_value",
+                    "penetration_value": "emp_charge_penetration_value"
+                },
+                {
+                    "operator_type": "remove_antimatter",
+                    "antimatter_remove_value": "empowered_antimatter_remove_value"
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

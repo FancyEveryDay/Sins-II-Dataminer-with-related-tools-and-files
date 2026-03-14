@@ -1,0 +1,95 @@
+{
+    "version": 0,
+    "action_data_source": "pirate_king_capital_ship_pillage",
+    "is_ultimate_ability": true,
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "pillage_cooldown_time_value",
+        "antimatter_cost": "pillage_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "pillage_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "explicit_time",
+                    "explicit_time_value": "pillage_delay_time_value"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "pirate_king_capital_ship_pillage_on_target"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "aura",
+                    "effects":
+                    {
+                        "projectile_travel_effect": "trader_colony_shuttle",
+                        "projectile_travel_easing_function": "in_out_cubic"
+                    }
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "pillage_target_filter"
+        ],
+        "range": "pillage_range_value",
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "pillage_auto_cast_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_pirate_raid_supply_research_subject_hud_icon",
+        "tooltip_picture": "trader_pirate_raid_supply_research_subject_tooltip_picture",
+        "name": "pirate_king_capital_ship_pillage_ability_name",
+        "description": "pirate_king_capital_ship_pillage_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "pillage_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.hull_damage_rate",
+                "value_id": "pillage_damage_rate_value"
+            },
+            {
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "pillage_penetration_value"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 510542.658378,
+        "min_camera_distance": 1743.583797,
+        "unit_mesh":
+        {
+            "mesh": "dlc2_vasari_rebel_super_capital_ship_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_generic_damage_debris"
+            }]
+        }
+    }]
+}

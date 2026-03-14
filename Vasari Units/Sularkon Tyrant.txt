@@ -1,0 +1,27 @@
+Sularkon Tyrant
+	Supply: 	100
+	Credits:	
+	Metal:  	3480.0
+	Crystal:	2700.0
+
+	Movespeed:	600.0
+	Acceleration:	75.0
+
+	Durability:	600.0
+	Armor Strength:	90.0
+
+	Hull Points:	9600 - 17290
+	Armor Points:	3120 - 4695
+	Shield Points:	6630 - 9975
+	   Shield Burst CD: 60.0s
+
+	Antimatter:	0.0
+
+	Weapons:
+		weapon name              	dps  	count	tdps 	pen   	range
+		heavy wave cannon        	12.0 	x12   	144.0	300   	8000 
+		heavy beam               	10.0 	x6    	60.0 	500   	8000 
+		point defense pulse      	4.5  	x12   	54.0 	0     	5000 
+		planet bombing beam      	9.0  	x1    	9.0  	0     	3000 
+
+	Strike Craft: 3 - 8

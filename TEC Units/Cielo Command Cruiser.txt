@@ -7,7 +7,7 @@ Cielo Command Cruiser
 	Movespeed:	625.0
 	Acceleration:	125.0
 
-	Durability:	200.0
+	Durability:	250.0
 	Armor Strength:	40.0
 
 	Hull Points:	850

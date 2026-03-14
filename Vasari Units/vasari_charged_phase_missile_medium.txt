@@ -10,8 +10,8 @@ vasari_charged_phase_missile_medium
 	Durability:	
 	Armor Strength:	18.0
 
-	Hull Points:	9
-	Armor Points:	15
+	Hull Points:	6
+	Armor Points:	9
 	Shield Points:	
 	   Shield Burst CD: nans
 

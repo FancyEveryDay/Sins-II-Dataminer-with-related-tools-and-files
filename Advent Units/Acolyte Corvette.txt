@@ -1,22 +1,23 @@
 Acolyte Corvette
 	Supply: 	3
-	Credits:	90.0
-	Metal:  	40.0
+	Credits:	75.0
+	Metal:  	30.0
 	Crystal:	30.0
 
-	Movespeed:	1100.0
-	Acceleration:	499.99999999999994
+	Movespeed:	1200.0
+	Acceleration:	500.0
 
 	Durability:	
 	Armor Strength:	
 
-	Hull Points:	450
+	Hull Points:	325
 	Armor Points:	
-	Shield Points:	425
+	Shield Points:	300
 	   Shield Burst CD: 20.0s
 
 	Antimatter:	60.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light laser              	6.0  	x1    	6.0  	100   	3000 
+		medium laser             	3.3  	x1    	3.3  	150   	3000 
+		light laser              	2.0  	x3    	6.0  	50    	3000 

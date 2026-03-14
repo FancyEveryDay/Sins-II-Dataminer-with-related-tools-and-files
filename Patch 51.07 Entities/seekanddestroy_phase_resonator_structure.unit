@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 751.625549,
+        "box":
+        {
+            "center": [-0.000671, 104.315338, 71.424316],
+            "extents": [595.098816, 538.040527, 570.069641]
+        },
+        "collision_rank": 0,
+        "can_be_displaced_on_collision": false
+    },
+    "physics": {
+        "can_move_linear": false,
+        "can_move_angular": false
+    },
+    "user_interface": {
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "loot",
+        "can_show_distance_to_plane_line": true
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "levels": [
+            {
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_point_restore_scalar_after_damage_taken": 0.0,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_point_restore_scalar_after_damage_taken": 0.0,
+                "shield_point_restore_rate": 1.9,
+                "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+                "shield_point_restore_scalar_after_damage_taken": 0.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 60.0,
+                    "restore_percentage": 0.5
+                }
+            }
+        ]
+    },
+    "target_filter_unit_type": "loot",
+    "skin_groups": [
+        {
+            "skins": [
+                "seekanddestroy_phase_resonator_structure"
+            ]
+        }
+    ],
+    "action_effect_size": "small_unit"
+}

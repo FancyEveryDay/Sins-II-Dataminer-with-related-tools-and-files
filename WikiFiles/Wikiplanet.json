@@ -6,7 +6,7 @@
   "population": {
    "starting_population": [
     0,
-    40
+    15
    ],
    "population_maximum": 40,
    "growth_rate": 0.015,
@@ -333,7 +333,7 @@
   "population": {
    "starting_population": [
     0,
-    50
+    20
    ],
    "population_maximum": 50,
    "growth_rate": 0.015,
@@ -648,7 +648,7 @@
   "population": {
    "starting_population": [
     30,
-    90
+    60
    ],
    "population_maximum": 120,
    "growth_rate": 0.02,
@@ -1077,7 +1077,7 @@
   "population": {
    "starting_population": [
     30,
-    110
+    50
    ],
    "population_maximum": 125,
    "growth_rate": 0.02,
@@ -1086,7 +1086,7 @@
   "surveying_track_levels": [
    {
     "random_exotics": {
-     "Tauranite": 0.05
+     "Indurium": 0.05
     },
     "guaranteed_exotics": {
      "Indurium": 1
@@ -1663,7 +1663,7 @@
   "population": {
    "starting_population": [
     500,
-    900
+    650
    ],
    "population_maximum": 1000,
    "growth_rate": 0.05,
@@ -2286,7 +2286,7 @@
   "population": {
    "starting_population": [
     60,
-    180
+    120
    ],
    "population_maximum": 210,
    "growth_rate": 0.025,
@@ -2869,8 +2869,8 @@
   "localized_name": "planet_type_name.desert",
   "population": {
    "starting_population": [
-    100,
-    275
+    75,
+    175
    ],
    "population_maximum": 350,
    "growth_rate": 0.03,
@@ -3531,7 +3531,7 @@
   "population": {
    "starting_population": [
     150,
-    210
+    150
    ],
    "population_maximum": 240,
    "growth_rate": 0.025,
@@ -4850,7 +4850,7 @@
   "population": {
    "starting_population": [
     20,
-    90
+    45
    ],
    "population_maximum": 100,
    "growth_rate": 0.02,
@@ -5389,7 +5389,7 @@
   "population": {
    "starting_population": [
     0,
-    25
+    15
    ],
    "population_maximum": 80,
    "growth_rate": 0.02,
@@ -6089,8 +6089,8 @@
   "localized_name": "planet_type_name.magnetic",
   "population": {
    "starting_population": [
-    50,
-    200
+    25,
+    100
    ],
    "population_maximum": 250,
    "growth_rate": 0.025,
@@ -6846,7 +6846,7 @@
   "population": {
    "starting_population": [
     0,
-    80
+    40
    ],
    "population_maximum": 90,
    "growth_rate": 0.02,
@@ -7369,7 +7369,7 @@
   "population": {
    "starting_population": [
     0,
-    60
+    35
    ],
    "population_maximum": 70,
    "growth_rate": 0.02,
@@ -7838,7 +7838,7 @@
   "population": {
    "starting_population": [
     0,
-    50
+    20
    ],
    "population_maximum": 60,
    "growth_rate": 0.02,
@@ -8306,8 +8306,8 @@
   "localized_name": "planet_type_name.oceanic",
   "population": {
    "starting_population": [
-    125,
-    275
+    100,
+    150
    ],
    "population_maximum": 300,
    "growth_rate": 0.03,
@@ -8916,7 +8916,7 @@
   "population": {
    "starting_population": [
     25,
-    50
+    40
    ],
    "population_maximum": 75,
    "growth_rate": 0.02,
@@ -9288,8 +9288,8 @@
   "localized_name": "planet_type_name.swamp",
   "population": {
    "starting_population": [
-    40,
-    175
+    30,
+    100
    ],
    "population_maximum": 200,
    "growth_rate": 0.025,
@@ -9858,8 +9858,8 @@
   "localized_name": "planet_type_name.terran",
   "population": {
    "starting_population": [
-    200,
-    425
+    150,
+    300
    ],
    "population_maximum": 500,
    "growth_rate": 0.03,
@@ -10435,7 +10435,7 @@
   "population": {
    "starting_population": [
     15,
-    75
+    35
    ],
    "population_maximum": 90,
    "growth_rate": 0.02,

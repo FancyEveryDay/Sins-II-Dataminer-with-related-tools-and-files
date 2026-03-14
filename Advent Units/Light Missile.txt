@@ -4,8 +4,8 @@ Light Missile
 	Metal:  	
 	Crystal:	
 
-	Movespeed:	1500.0
-	Acceleration:	1500.0
+	Movespeed:	1650.0
+	Acceleration:	1650.0
 
 	Durability:	
 	Armor Strength:	

@@ -19,9 +19,9 @@ Jarrasul Evacuator
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium wave cannon       	10.0 	x1    	10.0 	200   	8000 
+		medium wave cannon       	10.0 	x6    	60.0 	200   	8000 
 		beam                     	6.7  	x4    	26.8 	500   	8000 
 		point defense pulse      	4.5  	x2    	9.0  	0     	5000 
 		planet bombing beam      	5.0  	x1    	5.0  	0     	3000 
 
-	Strike Craft: 1 - 5
+	Strike Craft: 1 - 2

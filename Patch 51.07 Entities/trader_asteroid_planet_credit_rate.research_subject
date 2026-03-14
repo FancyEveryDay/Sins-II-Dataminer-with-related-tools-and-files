@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_annexation",
+    "field_coord": [0, 6],
+    "research_time": 60.0,
+    "price":
+    {
+        "credits": 400.0,
+        "metal": 25.0,
+        "crystal": 50.0
+    },
+    "planet_modifiers": [
+    {
+        "modifier_type": "commerce_track_credit_income_rate",
+        "value_behavior": "additive",
+        "value": 0.5,
+        "planet_types": [
+            "asteroid",
+            "ice_asteroid"]
+    }],
+    "name": "trader_asteroid_planet_credit_rate_research_subject_name",
+    "name_uppercase": "trader_asteroid_planet_credit_rate_research_subject_name_uppercase",
+    "description": "trader_asteroid_planet_credit_rate_research_subject_description",
+    "hud_icon": "trader_asteroid_planet_credit_rate_research_subject_hud_icon",
+    "tooltip_picture": "trader_asteroid_planet_credit_rate_research_subject_tooltip_picture"
+}

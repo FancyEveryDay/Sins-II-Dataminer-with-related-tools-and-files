@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_frontier_uplink_hud_icon",
+        "name": "npc_reward.jiskun_frontier_uplink.name",
+        "description": "npc_reward.jiskun_frontier_uplink.description"
+    },
+    "type": "planet_component",
+    "item": "jiskun_frontier_uplink"
+}

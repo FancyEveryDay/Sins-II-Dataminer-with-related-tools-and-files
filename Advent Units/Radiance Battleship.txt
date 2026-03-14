@@ -22,7 +22,7 @@ Radiance Battleship
 		heavy beam               	12.5 	x2    	25.0 	500   	8000 
 		heavy plasma             	10.0 	x1    	10.0 	750   	8000 
 		medium plasma            	5.0  	x2    	10.0 	600   	8000 
-		light laser              	3.0  	x14   	42.0 	100   	6000 
+		light laser              	3.0  	x14   	42.0 	50    	6000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
 
 	Strike Craft: 1 - 2

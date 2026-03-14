@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "rally_point":
+    {},
+    "formation":
+    {
+        "leader_priority": 2,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 2,
+                "group": 1
+            }
+        }
+    }
+}

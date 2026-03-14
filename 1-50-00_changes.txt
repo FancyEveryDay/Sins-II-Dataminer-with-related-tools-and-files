@@ -19,12 +19,12 @@
 		crystal : 150.0 -> 225.0
 	planet_type_groups
 		planet_types
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] ability : advent_coalescence_sanctum
 
 **Crystal Enrichment Center**
@@ -34,15 +34,15 @@
 		crystal : 150.0 -> 75.0
 	planet_type_groups
 		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] gas_giant
-			[NEW] hive_asteroid
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
+			[NEW] Asteroid
+			[NEW] City
+			[NEW] Gas giant
+			[NEW] Hive asteroid
+			[NEW] Ice asteroid
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
 	[NEW] ability : advent_crystal_enricher
 
 **Cynosural Reservoir**
@@ -54,11 +54,11 @@
 		[NEW] economic : {'exotic_type': 'economic', 'count': 1}
 	planet_type_groups
 		planet_types
-			[NEW] ferrous
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Ferrous
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] ability : advent_cynosural_reservoir
 
 **Empyrean City**
@@ -80,13 +80,13 @@
 		crystal : 150.0 -> 225.0
 	planet_type_groups
 		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
+			[NEW] Asteroid
+			[NEW] City
+			[NEW] Ice asteroid
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
 	planet_income_rate_transmuter
 		produced_scalar : -0.2 -> 0.0
 
@@ -105,21 +105,21 @@
 		[NEW] economic : {'exotic_type': 'economic', 'count': 1}
 	planet_type_groups
 		planet_types
-			[NEW] asteroid
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Asteroid
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Gas giant
+			[NEW] Ice
+			[NEW] Ice asteroid
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] ability : advent_neuroaugment_center
 
 **Plasma Furnace**
@@ -130,14 +130,14 @@
 		crystal : 300.0 -> 225.0
 	planet_type_groups
 		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] gas_giant
-			[NEW] hive_asteroid
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic_moon
+			[NEW] Asteroid
+			[NEW] City
+			[NEW] Gas giant
+			[NEW] Hive asteroid
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
+			[NEW] Volcanic moon
 	[NEW] ability : advent_plasma_furnace
 
 **Prescience Filter**
@@ -156,13 +156,13 @@
 		crystal : 150.0 -> 225.0
 	planet_type_groups
 		planet_types
-			[NEW] asteroid
-			[NEW] city
-			[NEW] ice_asteroid
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
+			[NEW] Asteroid
+			[NEW] City
+			[NEW] Ice asteroid
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
 
 **Radiation Shield Dome**
 	planet_modifiers
@@ -176,13 +176,13 @@
 		crystal : 150.0 -> 175.0
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] city
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] City
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Volcanic moon
 	planet_modifiers
 		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [50.0]}
 		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.1]}
@@ -195,8 +195,8 @@
 		crystal : 125.0 -> 120.0
 	planet_type_groups
 		planet_types
-			[NEW] pirate_base
-			[REMOVED] hive_asteroid
+			[NEW] Pirate base
+			[REMOVED] Hive asteroid
 	[NEW] ability : advent_surface_civilian_research_lab
 
 **Shrine of Hostility**
@@ -207,8 +207,8 @@
 		crystal : 125.0 -> 120.0
 	planet_type_groups
 		planet_types
-			[NEW] pirate_base
-			[REMOVED] hive_asteroid
+			[NEW] Pirate base
+			[REMOVED] Hive asteroid
 	[NEW] ability : advent_surface_military_research_lab
 
 **Shrine of Prophecy**
@@ -235,11 +235,11 @@
 		crystal : 75.0 -> 25.0
 	planet_type_groups
 		planet_types
-			[NEW] ice_asteroid
-			[REMOVED] ferrous
-			[REMOVED] moon
-			[REMOVED] volcanic
-			[REMOVED] volcanic_moon
+			[NEW] Ice asteroid
+			[REMOVED] Ferrous
+			[REMOVED] Moon
+			[REMOVED] Volcanic
+			[REMOVED] Volcanic moon
 	planet_modifiers
 		[NEW] max_population_points : {'modifier_type': 'max_population_points', 'value_behavior': 'additive', 'values': [25.0]}
 		[NEW] population_growth_rate : {'modifier_type': 'population_growth_rate', 'value_behavior': 'scalar', 'values': [0.1]}
@@ -1435,27 +1435,27 @@
 		time_to_max_angular_speed : 2.0 -> 1.2
 	ai
 		attack_target_type_groups
-			[NEW] flak
-			[NEW] light
-			[NEW] antiarmor_lrm
-			[NEW] carrier_support
-			[NEW] capital_supercapital_heavy
-			[NEW] defense
-			[NEW] corvette
-			[REMOVED] lrm_flak
+			[NEW] Flak
+			[NEW] Light
+			[NEW] Antiarmor lrm
+			[NEW] Carrier support
+			[NEW] Capital supercapital heavy
+			[NEW] Defense
+			[NEW] Corvette
+			[REMOVED] Lrm flak
 	weapons
 		weapons
 			advent_light_frigate_laser
 				medium_laser
 					attack_target_type_groups
-						[NEW] flak
-						[NEW] light
-						[NEW] antiarmor_lrm
-						[NEW] carrier_support
-						[NEW] capital_supercapital_heavy
-						[NEW] defense
-						[NEW] corvette
-						[REMOVED] lrm_flak
+						[NEW] Flak
+						[NEW] Light
+						[NEW] Antiarmor lrm
+						[NEW] Carrier support
+						[NEW] Capital supercapital heavy
+						[NEW] Defense
+						[NEW] Corvette
+						[REMOVED] Lrm flak
 	build
 		price
 			credits : 150.0 -> 180.0
@@ -1468,12 +1468,12 @@
 **Exoria Illuminator**
 	ai
 		attack_target_type_groups
-			[NEW] heavy
-			[NEW] antistructure
-			[NEW] capital_supercapital
-			[NEW] carrier_support
-			[NEW] light
-			[REMOVED] heavy_capital
+			[NEW] Heavy
+			[NEW] Antistructure
+			[NEW] Capital supercapital
+			[NEW] Carrier support
+			[NEW] Light
+			[REMOVED] Heavy capital
 	ai_attack_target
 		attack_target_type : lrm -> antiarmor
 	weapons
@@ -1481,21 +1481,21 @@
 			advent_long_range_cruiser_weapon_heavy_beam
 				medium_beam
 					attack_target_type_groups
-						[NEW] heavy
-						[NEW] antistructure
-						[NEW] capital_supercapital
-						[NEW] carrier_support
-						[NEW] light
-						[REMOVED] heavy_capital
+						[NEW] Heavy
+						[NEW] Antistructure
+						[NEW] Capital supercapital
+						[NEW] Carrier support
+						[NEW] Light
+						[REMOVED] Heavy capital
 			advent_long_range_cruiser_weapon_medium_beam
 				light_beam
 					attack_target_type_groups
-						[NEW] heavy
-						[NEW] antistructure
-						[NEW] capital_supercapital
-						[NEW] carrier_support
-						[NEW] light
-						[REMOVED] heavy_capital
+						[NEW] Heavy
+						[NEW] Antistructure
+						[NEW] Capital supercapital
+						[NEW] Carrier support
+						[NEW] Light
+						[REMOVED] Heavy capital
 
 **Exotic Refinery**
 	ai_attack_target
@@ -3215,21 +3215,21 @@
 							metal : 1200.0 -> 2000.0
 							crystal : 2000.0 -> 3000.0
 		research_subjects
-			[NEW] advent_unlock_planet_surface_shield_unit_item
-			[NEW] advent_unlock_sanctuary_spire_unit_item
-			[NEW] advent_unlock_thermal_shield_dome_unit_item
-			[NEW] dlc2_advent_upgrade_loyalist_super_limit_0
-			[NEW] dlc2_advent_upgrade_loyalist_super_limit_1
-			[NEW] advent_unlock_population_growth_ability
-			[REMOVED] advent_unlock_epitaph_of_the_lost_unit_item
-			[REMOVED] advent_unlock_neuropsion_purifier_unit_item
-			[REMOVED] advent_unlock_pelagic_interface_relay_unit_item
-			[REMOVED] advent_unlock_silent_monastery_unit_item
-			[REMOVED] advent_unlock_starlight_augury_unit_item
+			[NEW] Advent unlock planet surface shield unit item
+			[NEW] Advent unlock sanctuary spire unit item
+			[NEW] Advent unlock thermal shield dome unit item
+			[NEW] Dlc2 advent upgrade loyalist super limit 0
+			[NEW] Dlc2 advent upgrade loyalist super limit 1
+			[NEW] Orbital Habitation Blueprint
+			[REMOVED] Advent unlock epitaph of the lost unit item
+			[REMOVED] Advent unlock neuropsion purifier unit item
+			[REMOVED] Advent unlock pelagic interface relay unit item
+			[REMOVED] Advent unlock silent monastery unit item
+			[REMOVED] Advent unlock starlight augury unit item
 	planet_components
-		[NEW] advent_sanctuary_spire
-		[NEW] advent_planet_surface_shield
-		[NEW] advent_thermal_shield_dome
+		[NEW] Advent sanctuary spire
+		[NEW] Advent planet surface shield
+		[NEW] Advent thermal shield dome
 	planet_types
 		asteroid
 			tracks
@@ -4395,21 +4395,21 @@
 							metal : 1200.0 -> 2000.0
 							crystal : 2000.0 -> 3000.0
 		research_subjects
-			[NEW] advent_unlock_planet_surface_shield_unit_item
-			[NEW] advent_unlock_sanctuary_spire_unit_item
-			[NEW] advent_unlock_thermal_shield_dome_unit_item
-			[NEW] dlc2_advent_upgrade_rebel_super_limit_0
-			[NEW] dlc2_advent_upgrade_rebel_super_limit_1
-			[NEW] advent_unlock_population_growth_ability
-			[REMOVED] advent_unlock_epitaph_of_the_lost_unit_item
-			[REMOVED] advent_unlock_neuropsion_purifier_unit_item
-			[REMOVED] advent_unlock_pelagic_interface_relay_unit_item
-			[REMOVED] advent_unlock_prescience_filter_unit_item
-			[REMOVED] advent_unlock_silent_monastery_unit_item
+			[NEW] Advent unlock planet surface shield unit item
+			[NEW] Advent unlock sanctuary spire unit item
+			[NEW] Advent unlock thermal shield dome unit item
+			[NEW] Dlc2 advent upgrade rebel super limit 0
+			[NEW] Dlc2 advent upgrade rebel super limit 1
+			[NEW] Orbital Habitation Blueprint
+			[REMOVED] Advent unlock epitaph of the lost unit item
+			[REMOVED] Advent unlock neuropsion purifier unit item
+			[REMOVED] Advent unlock pelagic interface relay unit item
+			[REMOVED] Advent unlock prescience filter unit item
+			[REMOVED] Advent unlock silent monastery unit item
 	planet_components
-		[NEW] advent_sanctuary_spire
-		[NEW] advent_planet_surface_shield
-		[NEW] advent_thermal_shield_dome
+		[NEW] Advent sanctuary spire
+		[NEW] Advent planet surface shield
+		[NEW] Advent thermal shield dome
 	planet_types
 		asteroid
 			tracks
@@ -5485,16 +5485,16 @@
 		crystal : 150.0 -> 250.0
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Gas giant
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commodity_exchange', 'trader_crystal_synthesizer']}
 
 **Archaeology Center**
@@ -5514,7 +5514,7 @@
 		crystal : 100.0 -> 50.0
 	planet_type_groups
 		planet_types
-			[NEW] ship_graveyard
+			[NEW] Ship graveyard
 	npc_range_origin
 		between_gravity_well_range : 15.0 -> 20.0
 
@@ -5542,16 +5542,16 @@
 		crystal : 100.0 -> 250.0
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_high_density_district', 'trader_industrial_complex']}
 	[NEW] ability : trader_commercial_district
 
@@ -5586,8 +5586,8 @@
 		crystal : 100.0 -> 125.0
 	planet_type_groups
 		planet_types
-			[NEW] gas_giant
-			[NEW] ship_graveyard
+			[NEW] Gas giant
+			[NEW] Ship graveyard
 	trade_capacity
 		import_points : 1 -> 2
 
@@ -5599,7 +5599,7 @@
 		crystal : 100.0 -> 125.0
 	planet_type_groups
 		planet_types
-			[NEW] volcanic_moon
+			[NEW] Volcanic moon
 	[NEW] ability : trader_metal_smelting_plant
 
 **Harvesting Crawler**
@@ -5619,19 +5619,19 @@
 	[NEW] required_planet_level : 5
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] desert
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] oceanic
-			[NEW] swamp
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Desert
+			[NEW] Ferrous
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Oceanic
+			[NEW] Swamp
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 		[NEW] build_prerequisites : [['trader_unlock_high_density_district_unit_item']]
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commercial_district', 'trader_industrial_complex']}
 	planet_modifiers
@@ -5654,7 +5654,7 @@
 		crystal : 100.0 -> 125.0
 	planet_type_groups
 		planet_types
-			[NEW] ice_moon
+			[NEW] Ice moon
 	[NEW] ability : trader_ice_processor
 
 **Industrial District**
@@ -5666,14 +5666,14 @@
 	[NEW] required_planet_level : 5
 	planet_type_groups
 		planet_types
-			[NEW] crystalline
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] oceanic
-			[NEW] volcanic_moon
+			[NEW] Crystalline
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Oceanic
+			[NEW] Volcanic moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_commercial_district', 'trader_high_density_district']}
 	[NEW] ability : trader_industrial_complex
 
@@ -5709,16 +5709,16 @@
 		metal : 225.0 -> 250.0
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] gas_giant
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Gas giant
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	[NEW] other_item_requirements : {'mutually_exclusive_items': ['trader_alloy_foundry', 'trader_commodity_exchange']}
 
 **Xeno Emporium**
@@ -6801,27 +6801,27 @@
 		time_to_max_angular_speed : 2.0 -> 1.2
 	ai
 		attack_target_type_groups
-			[NEW] flak
-			[NEW] light
-			[NEW] antiarmor_lrm
-			[NEW] carrier_support
-			[NEW] capital_supercapital_heavy
-			[NEW] defense
-			[NEW] corvette
-			[REMOVED] lrm_flak
+			[NEW] Flak
+			[NEW] Light
+			[NEW] Antiarmor lrm
+			[NEW] Carrier support
+			[NEW] Capital supercapital heavy
+			[NEW] Defense
+			[NEW] Corvette
+			[REMOVED] Lrm flak
 	weapons
 		weapons
 			trader_light_frigate_medium_autocannon
 				medium_autocannon
 					attack_target_type_groups
-						[NEW] flak
-						[NEW] light
-						[NEW] antiarmor_lrm
-						[NEW] carrier_support
-						[NEW] capital_supercapital_heavy
-						[NEW] defense
-						[NEW] corvette
-						[REMOVED] lrm_flak
+						[NEW] Flak
+						[NEW] Light
+						[NEW] Antiarmor lrm
+						[NEW] Carrier support
+						[NEW] Capital supercapital heavy
+						[NEW] Defense
+						[NEW] Corvette
+						[REMOVED] Lrm flak
 
 **Crystal Extractor**
 	ai_attack_target
@@ -6868,14 +6868,14 @@
 		time_to_max_angular_speed : 1.0 -> 1.25
 	ai
 		attack_target_type_groups
-			[NEW] capital_supercapital
-			[NEW] defense_civilian
-			[NEW] heavy
-			[NEW] antistructure
-			[NEW] carrier_support
-			[NEW] light
-			[REMOVED] heavy_capital
-			[REMOVED] defense
+			[NEW] Capital supercapital
+			[NEW] Defense civilian
+			[NEW] Heavy
+			[NEW] Antistructure
+			[NEW] Carrier support
+			[NEW] Light
+			[REMOVED] Heavy capital
+			[REMOVED] Defense
 	ai_attack_target
 		attack_target_type : light -> antiarmor
 	weapons
@@ -6883,14 +6883,14 @@
 			trader_antiarmor_frigate_gauss
 				gauss
 					attack_target_type_groups
-						[NEW] capital_supercapital
-						[NEW] defense_civilian
-						[NEW] heavy
-						[NEW] antistructure
-						[NEW] carrier_support
-						[NEW] light
-						[REMOVED] heavy_capital
-						[REMOVED] defense
+						[NEW] Capital supercapital
+						[NEW] Defense civilian
+						[NEW] Heavy
+						[NEW] Antistructure
+						[NEW] Carrier support
+						[NEW] Light
+						[REMOVED] Heavy capital
+						[REMOVED] Defense
 
 **Khevarkov Modular Battlecruiser**
 	ai
@@ -6901,21 +6901,21 @@
 **Kol Battleship**
 	ai
 		attack_target_type_groups
-			[NEW] capital_supercapital_heavy
-			[NEW] antistructure_antiarmor
-			[NEW] defense_civilian
-			[REMOVED] heavy_capital
-			[REMOVED] defense
+			[NEW] Capital supercapital heavy
+			[NEW] Antistructure antiarmor
+			[NEW] Defense civilian
+			[REMOVED] Heavy capital
+			[REMOVED] Defense
 	weapons
 		weapons
 			trader_battle_capital_ship_heavy_gauss
 				gauss
 					attack_target_type_groups
-						[NEW] capital_supercapital_heavy
-						[NEW] antistructure_antiarmor
-						[NEW] defense_civilian
-						[REMOVED] heavy_capital
-						[REMOVED] defense
+						[NEW] Capital supercapital heavy
+						[NEW] Antistructure antiarmor
+						[NEW] Defense civilian
+						[REMOVED] Heavy capital
+						[REMOVED] Defense
 
 **Krosov Siege Frigate**
 	ai_attack_target
@@ -6940,11 +6940,11 @@
 			trader_siege_capital_ship_heavy_gauss
 				gauss
 					attack_target_type_groups
-						[NEW] capital_supercapital_heavy
-						[NEW] antistructure_antiarmor
-						[NEW] defense_civilian
-						[REMOVED] heavy_capital
-						[REMOVED] defense
+						[NEW] Capital supercapital heavy
+						[NEW] Antistructure antiarmor
+						[NEW] Defense civilian
+						[REMOVED] Heavy capital
+						[REMOVED] Defense
 
 **Medium Missile**
 	health
@@ -9098,31 +9098,31 @@
 							credits : 6400.0 -> 7500.0
 							metal : 1200.0 -> 750.0
 		research_subjects
-			[NEW] dlc2_trader_upgrade_loyalist_super_limit_0
-			[NEW] dlc2_trader_upgrade_loyalist_super_limit_1
-			[NEW] trader_unlock_high_density_district_unit_item
-			[NEW] trader_upgrade_barren_biosphere
-			[NEW] trader_upgrade_barren_biosphere_credit_rate
-			[NEW] trader_upgrade_crystalline_biosphere_credit_rate
-			[NEW] trader_upgrade_ferrous_biosphere_credit_rate
-			[NEW] trader_upgrade_irradiated_biosphere_credit_rate
-			[NEW] trader_upgrade_magnetic_biosphere
-			[NEW] trader_upgrade_volcanic_biosphere_credit_rate
-			[NEW] trader_unlock_commodity_exchange_unit_item
-			[NEW] trader_unlock_population_growth_ability
-			[REMOVED] trader_desert_planet_credit_rate
-			[REMOVED] trader_terran_planet_credit_rate
-			[REMOVED] trader_unlock_aquaculture_harvester_unit_item
-			[REMOVED] trader_unlock_chemical_plant_unit_item
-			[REMOVED] trader_unlock_culture_planet_credit_income_rate_bonus
-			[REMOVED] trader_unlock_ferric_mining_rig_unit_item
-			[REMOVED] trader_unlock_fissile_plant_unit_item
-			[REMOVED] trader_unlock_harvesting_crawler_unit_item
-			[REMOVED] trader_unlock_ice_processor_unit_item
-			[REMOVED] trader_unlock_metal_smelting_plant_unit_item
+			[NEW] Dlc2 trader upgrade loyalist super limit 0
+			[NEW] Dlc2 trader upgrade loyalist super limit 1
+			[NEW] Trader unlock high density district unit item
+			[NEW] Trader upgrade barren biosphere
+			[NEW] Trader upgrade barren biosphere credit rate
+			[NEW] Trader upgrade crystalline biosphere credit rate
+			[NEW] Trader upgrade ferrous biosphere credit rate
+			[NEW] Trader upgrade irradiated biosphere credit rate
+			[NEW] Trader upgrade magnetic biosphere
+			[NEW] Trader upgrade volcanic biosphere credit rate
+			[NEW] Trader unlock commodity exchange unit item
+			[NEW] Transit Taxation Policy
+			[REMOVED] Trader desert planet credit rate
+			[REMOVED] Trader terran planet credit rate
+			[REMOVED] Trader unlock aquaculture harvester unit item
+			[REMOVED] Trader unlock chemical plant unit item
+			[REMOVED] Trader unlock culture planet credit income rate bonus
+			[REMOVED] Trader unlock ferric mining rig unit item
+			[REMOVED] Trader unlock fissile plant unit item
+			[REMOVED] Trader unlock harvesting crawler unit item
+			[REMOVED] Trader unlock ice processor unit item
+			[REMOVED] Trader unlock metal smelting plant unit item
 	planet_components
-		[NEW] trader_archaeology_center
-		[NEW] trader_commodity_exchange
+		[NEW] Trader archaeology center
+		[NEW] Trader commodity exchange
 	planet_types
 		asteroid
 			tracks
@@ -10214,32 +10214,32 @@
 							credits : 6400.0 -> 7500.0
 							metal : 1200.0 -> 750.0
 		research_subjects
-			[NEW] dlc2_trader_upgrade_loyalist_super_limit_0
-			[NEW] dlc2_trader_upgrade_loyalist_super_limit_1
-			[NEW] trader_unlock_high_density_district_unit_item
-			[NEW] trader_upgrade_barren_biosphere
-			[NEW] trader_upgrade_barren_biosphere_credit_rate
-			[NEW] trader_upgrade_crystalline_biosphere_credit_rate
-			[NEW] trader_upgrade_ferrous_biosphere_credit_rate
-			[NEW] trader_upgrade_irradiated_biosphere_credit_rate
-			[NEW] trader_upgrade_magnetic_biosphere
-			[NEW] trader_upgrade_volcanic_biosphere_credit_rate
-			[NEW] trader_unlock_commodity_exchange_unit_item
-			[NEW] trader_unlock_population_growth_ability
-			[REMOVED] trader_desert_planet_credit_rate
-			[REMOVED] trader_terran_planet_credit_rate
-			[REMOVED] trader_unlock_aquaculture_harvester_unit_item
-			[REMOVED] trader_unlock_chemical_plant_unit_item
-			[REMOVED] trader_unlock_culture_planet_credit_income_rate_bonus
-			[REMOVED] trader_unlock_ferric_mining_rig_unit_item
-			[REMOVED] trader_unlock_fissile_plant_unit_item
-			[REMOVED] trader_unlock_harvesting_crawler_unit_item
-			[REMOVED] trader_unlock_ice_processor_unit_item
-			[REMOVED] trader_unlock_metal_smelting_plant_unit_item
-			[REMOVED] trader_unlock_resort_complex_unit_item
+			[NEW] Dlc2 trader upgrade loyalist super limit 0
+			[NEW] Dlc2 trader upgrade loyalist super limit 1
+			[NEW] Trader unlock high density district unit item
+			[NEW] Trader upgrade barren biosphere
+			[NEW] Trader upgrade barren biosphere credit rate
+			[NEW] Trader upgrade crystalline biosphere credit rate
+			[NEW] Trader upgrade ferrous biosphere credit rate
+			[NEW] Trader upgrade irradiated biosphere credit rate
+			[NEW] Trader upgrade magnetic biosphere
+			[NEW] Trader upgrade volcanic biosphere credit rate
+			[NEW] Trader unlock commodity exchange unit item
+			[NEW] Transit Taxation Policy
+			[REMOVED] Trader desert planet credit rate
+			[REMOVED] Trader terran planet credit rate
+			[REMOVED] Trader unlock aquaculture harvester unit item
+			[REMOVED] Trader unlock chemical plant unit item
+			[REMOVED] Trader unlock culture planet credit income rate bonus
+			[REMOVED] Trader unlock ferric mining rig unit item
+			[REMOVED] Trader unlock fissile plant unit item
+			[REMOVED] Trader unlock harvesting crawler unit item
+			[REMOVED] Trader unlock ice processor unit item
+			[REMOVED] Trader unlock metal smelting plant unit item
+			[REMOVED] Trader unlock resort complex unit item
 	planet_components
-		[NEW] trader_archaeology_center
-		[NEW] trader_commodity_exchange
+		[NEW] Trader archaeology center
+		[NEW] Trader commodity exchange
 	planet_types
 		asteroid
 			tracks
@@ -11344,32 +11344,32 @@
 							credits : 6400.0 -> 7500.0
 							metal : 1200.0 -> 750.0
 		research_subjects
-			[NEW] dlc2_trader_upgrade_rebel_super_limit_0
-			[NEW] dlc2_trader_upgrade_rebel_super_limit_1
-			[NEW] trader_unlock_high_density_district_unit_item
-			[NEW] trader_upgrade_barren_biosphere
-			[NEW] trader_upgrade_barren_biosphere_credit_rate
-			[NEW] trader_upgrade_crystalline_biosphere_credit_rate
-			[NEW] trader_upgrade_ferrous_biosphere_credit_rate
-			[NEW] trader_upgrade_irradiated_biosphere_credit_rate
-			[NEW] trader_upgrade_magnetic_biosphere
-			[NEW] trader_upgrade_volcanic_biosphere_credit_rate
-			[NEW] trader_unlock_commodity_exchange_unit_item
-			[NEW] trader_unlock_population_growth_ability
-			[REMOVED] trader_desert_planet_credit_rate
-			[REMOVED] trader_terran_planet_credit_rate
-			[REMOVED] trader_unlock_aquaculture_harvester_unit_item
-			[REMOVED] trader_unlock_chemical_plant_unit_item
-			[REMOVED] trader_unlock_culture_planet_credit_income_rate_bonus
-			[REMOVED] trader_unlock_ferric_mining_rig_unit_item
-			[REMOVED] trader_unlock_fissile_plant_unit_item
-			[REMOVED] trader_unlock_harvesting_crawler_unit_item
-			[REMOVED] trader_unlock_ice_processor_unit_item
-			[REMOVED] trader_unlock_metal_smelting_plant_unit_item
-			[REMOVED] trader_unlock_resort_complex_unit_item
+			[NEW] Dlc2 trader upgrade rebel super limit 0
+			[NEW] Dlc2 trader upgrade rebel super limit 1
+			[NEW] Trader unlock high density district unit item
+			[NEW] Trader upgrade barren biosphere
+			[NEW] Trader upgrade barren biosphere credit rate
+			[NEW] Trader upgrade crystalline biosphere credit rate
+			[NEW] Trader upgrade ferrous biosphere credit rate
+			[NEW] Trader upgrade irradiated biosphere credit rate
+			[NEW] Trader upgrade magnetic biosphere
+			[NEW] Trader upgrade volcanic biosphere credit rate
+			[NEW] Trader unlock commodity exchange unit item
+			[NEW] Transit Taxation Policy
+			[REMOVED] Trader desert planet credit rate
+			[REMOVED] Trader terran planet credit rate
+			[REMOVED] Trader unlock aquaculture harvester unit item
+			[REMOVED] Trader unlock chemical plant unit item
+			[REMOVED] Trader unlock culture planet credit income rate bonus
+			[REMOVED] Trader unlock ferric mining rig unit item
+			[REMOVED] Trader unlock fissile plant unit item
+			[REMOVED] Trader unlock harvesting crawler unit item
+			[REMOVED] Trader unlock ice processor unit item
+			[REMOVED] Trader unlock metal smelting plant unit item
+			[REMOVED] Trader unlock resort complex unit item
 	planet_components
-		[NEW] trader_archaeology_center
-		[NEW] trader_commodity_exchange
+		[NEW] Trader archaeology center
+		[NEW] Trader commodity exchange
 	planet_types
 		asteroid
 			tracks
@@ -12399,16 +12399,16 @@
 **Alliance Xeno Embassy**
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	player_modifiers
 		empire_modifiers
 			scalar
@@ -12453,9 +12453,9 @@
 **Crystal Seeking Nanites**
 	planet_type_groups
 		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic_moon
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Volcanic moon
 	[NEW] ability : vasari_crystal_refinery
 
 **Deconstruction Nanites**
@@ -12483,16 +12483,16 @@
 **Exodus Xeno Embassy**
 	planet_type_groups
 		planet_types
-			[NEW] barren
-			[NEW] crystalline
-			[NEW] ferrous
-			[NEW] ice
-			[NEW] ice_moon
-			[NEW] irradiated
-			[NEW] magnetic
-			[NEW] moon
-			[NEW] volcanic
-			[NEW] volcanic_moon
+			[NEW] Barren
+			[NEW] Crystalline
+			[NEW] Ferrous
+			[NEW] Ice
+			[NEW] Ice moon
+			[NEW] Irradiated
+			[NEW] Magnetic
+			[NEW] Moon
+			[NEW] Volcanic
+			[NEW] Volcanic moon
 	player_modifiers
 		empire_modifiers
 			scalar
@@ -12521,11 +12521,11 @@
 **Intercultural Exchange**
 	planet_type_groups
 		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] pirate_base
-			[NEW] ship_graveyard
-			[NEW] volcanic_moon
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Pirate base
+			[NEW] Ship graveyard
+			[NEW] Volcanic moon
 	planet_modifiers
 		commerce_track_credit_income_rate_per_population
 			values
@@ -12540,8 +12540,8 @@
 		crystal : 480.0 -> 90.0
 	planet_type_groups
 		planet_types
-			[NEW] ice_moon
-			[NEW] moon
+			[NEW] Ice moon
+			[NEW] Moon
 
 **Kortra Gravity Lab**
 	build_time : 90.0 -> 144.0
@@ -12556,8 +12556,8 @@
 **Labor Camp**
 	planet_type_groups
 		planet_types
-			[NEW] gas_giant
-			[NEW] ship_graveyard
+			[NEW] Gas giant
+			[NEW] Ship graveyard
 	planet_modifiers
 		mining_track_metal_income_rate_per_population
 			values
@@ -12574,15 +12574,15 @@
 		crystal : 240.0 -> 120.0
 	planet_type_groups
 		planet_types
-			[NEW] ship_graveyard
+			[NEW] Ship graveyard
 	other_item_requirements
 		mutually_exclusive_items
-			[NEW] vasari_surface_civilian_lab_2
+			[NEW] Vasari surface civilian lab 2
 
 **Matter Hypercompiler**
 	planet_type_groups
 		planet_types
-			[NEW] ship_graveyard
+			[NEW] Ship graveyard
 	planet_modifiers
 		mining_track_metal_income_rate
 			values : 0.96 -> 0.48
@@ -12594,9 +12594,9 @@
 **Metal Seeking Nanites**
 	planet_type_groups
 		planet_types
-			[NEW] ice_moon
-			[NEW] moon
-			[NEW] volcanic_moon
+			[NEW] Ice moon
+			[NEW] Moon
+			[NEW] Volcanic moon
 	[NEW] ability : vasari_metal_refinery
 
 **Mobile Adjunct Lab**
@@ -12627,7 +12627,7 @@
 		crystal : 360.0 -> 180.0
 	planet_type_groups
 		planet_types
-			[NEW] terran
+			[NEW] Terran
 	planet_modifiers
 		mining_track_metal_income_rate
 			values : 3.0 -> 1.8
@@ -12696,7 +12696,7 @@
 			count : 1 -> 2
 	planet_type_groups
 		planet_types
-			[NEW] volcanic_moon
+			[NEW] Volcanic moon
 
 **Xeno Settlement**
 	planet_modifiers
@@ -13250,7 +13250,7 @@
 						beam_duration : 0.24 -> 0.3
 	unit_factory
 		build_kinds
-			[NEW] super_capital_ship
+			[NEW] Super capital ship
 
 **Phase Gate**
 	ai_attack_target
@@ -13269,27 +13269,27 @@
 		time_to_max_angular_speed : 2.0 -> 1.2
 	ai
 		attack_target_type_groups
-			[NEW] flak
-			[NEW] light
-			[NEW] antiarmor_lrm
-			[NEW] carrier_support
-			[NEW] capital_supercapital_heavy
-			[NEW] defense
-			[NEW] corvette
-			[REMOVED] lrm_flak
+			[NEW] Flak
+			[NEW] Light
+			[NEW] Antiarmor lrm
+			[NEW] Carrier support
+			[NEW] Capital supercapital heavy
+			[NEW] Defense
+			[NEW] Corvette
+			[REMOVED] Lrm flak
 	weapons
 		weapons
 			vasari_light_frigate_pulse
 				medium_pulse
 					attack_target_type_groups
-						[NEW] flak
-						[NEW] light
-						[NEW] antiarmor_lrm
-						[NEW] carrier_support
-						[NEW] capital_supercapital_heavy
-						[NEW] defense
-						[NEW] corvette
-						[REMOVED] lrm_flak
+						[NEW] Flak
+						[NEW] Light
+						[NEW] Antiarmor lrm
+						[NEW] Carrier support
+						[NEW] Capital supercapital heavy
+						[NEW] Defense
+						[NEW] Corvette
+						[REMOVED] Lrm flak
 
 **Serevun Overseer**
 	ai_attack_target
@@ -14791,20 +14791,20 @@
 							metal : 2800.0 -> 3600.0
 							crystal : 3600.0 -> 2160.0
 		research_subjects
-			[NEW] dlc2_vasari_upgrade_loyalist_super_limit_0
-			[NEW] dlc2_vasari_upgrade_loyalist_super_limit_1
-			[NEW] vasari_unlock_deploy_phase_gate_unit_item
-			[NEW] vasari_upgrade_irradiated_biosphere_0
-			[NEW] vasari_upgrade_magnetic_biosphere_0
-			[NEW] vasari_unlock_population_growth_ability
-			[REMOVED] vasari_unlock_ocean_floor_miner_unit_item
-			[REMOVED] vasari_unlock_terran_mining_booster_unit_item
-			[REMOVED] vasari_upgrade_desert_biosphere_1
-			[REMOVED] vasari_upgrade_oceanic_biosphere_1
+			[NEW] Dlc2 vasari upgrade loyalist super limit 0
+			[NEW] Dlc2 vasari upgrade loyalist super limit 1
+			[NEW] Vasari unlock deploy phase gate unit item
+			[NEW] Vasari upgrade irradiated biosphere 0
+			[NEW] Vasari upgrade magnetic biosphere 0
+			[NEW] Orbital Labor Allocation
+			[REMOVED] Vasari unlock ocean floor miner unit item
+			[REMOVED] Vasari unlock terran mining booster unit item
+			[REMOVED] Vasari upgrade desert biosphere 1
+			[REMOVED] Vasari upgrade oceanic biosphere 1
 		faction_research_subjects
-			[NEW] vasari_unlock_deploy_phase_gate_unit_item
+			[NEW] Vasari unlock deploy phase gate unit item
 	ship_components
-		[NEW] vasari_deploy_phase_gate
+		[NEW] Vasari deploy phase gate
 	planet_types
 		asteroid
 			tracks
@@ -15596,15 +15596,15 @@
 							metal : 2800.0 -> 3600.0
 							crystal : 3600.0 -> 2160.0
 		research_subjects
-			[NEW] dlc2_vasari_upgrade_rebel_super_limit_0
-			[NEW] dlc2_vasari_upgrade_rebel_super_limit_1
-			[NEW] vasari_upgrade_irradiated_biosphere_0
-			[NEW] vasari_upgrade_magnetic_biosphere_0
-			[NEW] vasari_unlock_population_growth_ability
-			[REMOVED] vasari_unlock_ocean_floor_miner_unit_item
-			[REMOVED] vasari_unlock_terran_mining_booster_unit_item
-			[REMOVED] vasari_upgrade_desert_biosphere_1
-			[REMOVED] vasari_upgrade_oceanic_biosphere_1
+			[NEW] Dlc2 vasari upgrade rebel super limit 0
+			[NEW] Dlc2 vasari upgrade rebel super limit 1
+			[NEW] Vasari upgrade irradiated biosphere 0
+			[NEW] Vasari upgrade magnetic biosphere 0
+			[NEW] Orbital Labor Allocation
+			[REMOVED] Vasari unlock ocean floor miner unit item
+			[REMOVED] Vasari unlock terran mining booster unit item
+			[REMOVED] Vasari upgrade desert biosphere 1
+			[REMOVED] Vasari upgrade oceanic biosphere 1
 	planet_types
 		asteroid
 			tracks

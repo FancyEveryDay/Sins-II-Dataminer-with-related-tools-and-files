@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "action_data_source": "alutar_safeguard_shield_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "alutar_safeguard_shield_unit_item"
+    }
+}

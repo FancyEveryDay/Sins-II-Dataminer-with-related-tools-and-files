@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "advent_icon_of_influence_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_icon_of_influence_unit_item_on_planet"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_advent_culture_center_structure_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_empire_modifier",
+                "empire_modifier_id": "advent_icon_of_influence_recharge_rate_modifier"
+            }]
+        }]
+    }
+}

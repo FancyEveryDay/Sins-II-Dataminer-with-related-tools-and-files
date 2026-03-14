@@ -7,7 +7,7 @@ Serevun Overseer
 	Movespeed:	660.0
 	Acceleration:	150.0
 
-	Durability:	210.0
+	Durability:	270.0
 	Armor Strength:	72.0
 
 	Hull Points:	1590

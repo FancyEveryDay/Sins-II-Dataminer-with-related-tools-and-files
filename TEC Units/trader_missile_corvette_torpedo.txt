@@ -5,13 +5,13 @@ trader_missile_corvette_torpedo
 	Crystal:	
 
 	Movespeed:	1500.0
-	Acceleration:	600.0
+	Acceleration:	500.0
 
 	Durability:	
 	Armor Strength:	25.0
 
 	Hull Points:	1
-	Armor Points:	5
+	Armor Points:	1
 	Shield Points:	
 	   Shield Burst CD: nans
 

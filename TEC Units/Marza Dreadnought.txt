@@ -21,5 +21,5 @@ Marza Dreadnought
 		weapon name              	dps  	count	tdps 	pen   	range
 		heavy missile            	48.0 	x1    	48.0 	500   	12000
 		gauss                    	22.5 	x1    	22.5 	600   	12000
-		medium autocannon        	8.0  	x2    	16.0 	200   	8000 
+		medium autocannon        	8.0  	x2    	16.0 	250   	8000 
 		planet bombing           	5.0  	x1    	5.0  	0     	4000 

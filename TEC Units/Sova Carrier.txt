@@ -19,8 +19,8 @@ Sova Carrier
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		light autocannon         	6.7  	x1    	6.7  	100   	5000 
-		medium autocannon        	8.0  	x2    	16.0 	200   	8000 
+		light autocannon         	6.7  	x1    	6.7  	50    	5000 
+		medium autocannon        	8.0  	x2    	16.0 	250   	8000 
 		point defense autocannon 	4.0  	x9    	36.0 	0     	5000 
 		planet bombing           	5.0  	x1    	5.0  	0     	4000 
 

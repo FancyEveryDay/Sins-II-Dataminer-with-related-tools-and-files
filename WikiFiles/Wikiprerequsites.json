@@ -1286,6 +1286,11 @@
     "Vasari Lasurak Blueprint"
    ]
   ],
+  "Vasari Crystal Extractor": [
+   [
+    "Vasari Orbital Extraction"
+   ]
+  ],
   "Vasari Xeno Relations Center": [
    [
     "Vasari Xeno Relations Center Blueprint"
@@ -1314,6 +1319,11 @@
   "Vasari Vorastra Titan": [
    [
     "Vasari Vorastra Blueprint"
+   ]
+  ],
+  "Vasari Metal Extractor": [
+   [
+    "Vasari Orbital Extraction"
    ]
   ],
   "Vasari Serevun Overseer": [
@@ -2360,6 +2370,11 @@
     "TEC Immense Cargo Holds"
    ]
   ],
+  "TEC Privateer Persuasion": [
+   [
+    "TEC Gang of Freebooters"
+   ]
+  ],
   "TEC Truce Amongst Rogues": [
    [
     "TEC Sordid Intel"
@@ -2448,6 +2463,11 @@
   "TEC Auxiliary Supply Depot Blueprint": [
    [
     "TEC Prestigious Investments"
+   ]
+  ],
+  "TEC Backup Shield Generator Blueprint": [
+   [
+    "TEC Improved Shield Arrays"
    ]
   ],
   "TEC Ablative Armor Blueprint": [
@@ -2727,7 +2747,7 @@
   ],
   "TEC Enhanced Shield Cohesion": [
    [
-    "TEC Improved Shield Arrays"
+    "TEC Backup Shield Generator Blueprint"
    ]
   ],
   "TEC Barren Development": [
@@ -3413,6 +3433,11 @@
   "Vasari Administrative Specialists": [
    [
     "Vasari Administrative Uplink Blueprint"
+   ]
+  ],
+  "Vasari Improved Orbital Extraction": [
+   [
+    "Vasari Orbital Extraction"
    ]
   ],
   "Vasari Advanced Orbital Extraction": [

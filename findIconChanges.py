@@ -55,8 +55,8 @@ pastPatchNumber = pastPatchNumber.replace(".","-")
 
 
 ## Get files
-oldImages = glob.glob(f"{past_data_folder}\\**tooltip_picture200.png")
-newImages = glob.glob("f:\\SteamLibrary\\steamapps\\common\\Sins2\\textures\\**tooltip_picture200.png")
+oldImages = glob.glob(f"{past_data_folder}\\**.png") #tooltip_picture200.png")
+newImages = glob.glob("f:\\SteamLibrary\\steamapps\\common\\Sins2\\textures\\**.png") #tooltip_picture200.png")
 
 shutil.rmtree(f"{SINS_FILES_LOCATION}\\New Textures")
 os.mkdir(f"{SINS_FILES_LOCATION}\\New Textures")

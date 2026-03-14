@@ -7,7 +7,7 @@ Hoshiko Robotics Cruiser
 	Movespeed:	750.0
 	Acceleration:	150.0
 
-	Durability:	200.0
+	Durability:	250.0
 	Armor Strength:	25.0
 
 	Hull Points:	1235

@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "tooltip_icon": "offense_exotic_tooltip_icon",
+    "small_icon": "offense_exotic_small_icon",
+    "large_icon": "offense_exotic_large_icon",
+    "picture": "offense_exotic_picture",
+    "name": "exotic.offense.name",
+    "description": "exotic.offense.description",
+    "pip_color": "#DA0034",
+    "insufficient_exotics_player_sound_id": "insufficient_offense_exotics",
+    "ai_trade_value": 1000
+}

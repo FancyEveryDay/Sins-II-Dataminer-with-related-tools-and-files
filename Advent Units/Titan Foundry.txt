@@ -1,8 +1,8 @@
 Titan Foundry
 	Supply: 	
-	Credits:	1500.0
-	Metal:  	750.0
-	Crystal:	750.0
+	Credits:	2000.0
+	Metal:  	500.0
+	Crystal:	600.0
 
 	Movespeed:	
 	Acceleration:	

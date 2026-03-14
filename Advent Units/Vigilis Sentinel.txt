@@ -20,4 +20,4 @@ Vigilis Sentinel
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
 		point defense laser      	2.5  	x7    	17.5 	0     	6000 
-		light laser              	3.0  	x3    	9.0  	100   	6000 
+		light laser              	3.0  	x3    	9.0  	50    	6000 

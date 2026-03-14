@@ -1,0 +1,4695 @@
+
+
+# Advent Changes
+
+## Unit Changes
+
+**Acolyte Corvette**
+	physics
+		max_linear_speed : 1400.0 -> 1200.0
+		time_to_max_linear_speed : 2.8 -> 2.4
+	weapons
+		weapons
+			advent_gunship_corvette_laser
+				medium_laser
+					name : weapon_name.light_laser -> weapon_name.medium_laser
+					pitch_speed : 0.0 -> 1.0
+					yaw_speed : 0.0 -> 1.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					damage : 18.0 -> 10.0
+					penetration : 100.0 -> 150.0
+					[NEW] target_acquired_duration_required_to_fire : 0.5
+					firing
+						travel_speed : 5500.0 -> 7500.0
+					dps : 6.0 -> 3.3333333333333335
+			[NEW] advent_gunship_corvette_laser_turret : {'weapon': 'advent_gunship_corvette_laser_turret', 'mesh_point': 'child.advent_gunship_lightturret_mount_2', 'weapon_position': [8.6, -0.33, -2.4], 'forward': [-0.0, 0.0, 1.0], 'up': [-0.0, 1.0, 0.0], 'yaw_arc': {'min_angle': -15.0, 'max_angle': 210.0}, 'pitch_arc': {'min_angle': -85.0, 'max_angle': 3.0}}
+	health
+		levels
+			max_hull_points : 450.0 -> 325.0
+			max_shield_points : 425.0 -> 300.0
+	build
+		price
+			credits : 90.0 -> 75.0
+			metal : 40.0 -> 30.0
+
+**Coronata Titan**
+	[NEW] capture_points : 15
+
+**Destra Crusader**
+	weapons
+		weapons
+			advent_heavy_cruiser_plasma
+				very_heavy_plasma
+					pitch_speed : 0.0 -> 1.5
+					yaw_speed : 0.0 -> 1.5
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+
+**Disciple**
+	physics
+		max_angular_speed : 30.0 -> 25.0
+		time_to_max_angular_speed : 1.2 -> 1.25
+	weapons
+		weapons
+			advent_light_frigate_laser
+				medium_laser
+					pitch_speed : 0.0 -> 2.0
+					yaw_speed : 0.0 -> 2.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					penetration : 200.0 -> 250.0
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+	health
+		durability : 100.0 -> 150.0
+		levels
+			max_hull_points : 625.0 -> 650.0
+			max_armor_points : 215.0 -> 245.0
+			max_shield_points : 650.0 -> 700.0
+
+**Eradica Titan**
+	[NEW] capture_points : 15
+
+**Exoria Illuminator**
+	weapons
+		weapons
+			advent_long_range_cruiser_weapon_heavy_beam
+				medium_beam
+					pitch_speed : 0.0 -> 1.5
+					yaw_speed : 0.0 -> 1.5
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+
+**Halcyon Carrier**
+	[NEW] capture_points : 5
+
+**Justicia Dreadnought**
+	[NEW] capture_points : 10
+
+**Oblivia Dreadnought**
+	[NEW] capture_points : 10
+
+**Progenitor Mothership**
+	[NEW] capture_points : 5
+
+**Radiance Battleship**
+	[NEW] capture_points : 5
+
+**Rapture Battlecruiser**
+	[NEW] capture_points : 5
+
+**Revelation Battlecruiser**
+	[NEW] capture_points : 5
+
+**Transcencia Starbase**
+	weapons
+		weapons
+			advent_starbase_plasma
+				heavy_plasma
+					damage : 60.0 -> 150.0
+					turret
+						biaxial_base_mesh : advent_asset_titan_hvyplasma_mount_0 -> advent_starbase_super_heavy_plasma_mount_0
+						biaxial_barrel_mesh : advent_asset_titan_hvyplasma_barrel_0 -> advent_starbase_super_heavy_plasma_barrel_0
+						barrel_position
+							0 : 1.2e-05 -> 0.0
+							1 : 10.50313 -> 41.022766
+							2 : -6.289908 -> -24.566971
+						muzzle_positions
+							0 : -0.200244 -> -0.78206
+							1 : -0.380507 -> -1.486075
+							2 : 17.594662 -> 68.720535
+					dps : 5.0 -> 12.5
+				weapon_position
+					0 : 261.868469 -> 261.8685
+					1 : -160.407822 -> -160.407806
+					2 : -1275.75769 -> -1275.758057
+				forward
+					0 : 0.247342 -> 0.0
+					1 : -0.002533 -> 0.0
+					2 : -0.968925 -> -1.0
+				up
+					0 : 0.017285 -> 0.0
+					1 : -0.999826 -> -1.0
+					2 : 0.007026 -> 0.0
+				yaw_arc
+					max_angle : 60.0 -> 65.0
+			advent_starbase_point_defense_laser
+				weapon_position
+					0 : 312.145935 -> 312.145905
+					1 : -135.117172 -> -135.117203
+					2 : -1306.744385 -> -1306.744019
+				forward
+					0 : -0.123598 -> 0.0
+					1 : -0.007772 -> 0.0
+					2 : -0.992302 -> -1.0
+				up
+					0 : 0.046922 -> -0.0
+					1 : -0.998897 -> -1.0
+					2 : 0.001979 -> -0.0
+				yaw_arc
+					min_angle : -40.0 -> -45.0
+					max_angle : 100.0 -> 75.0
+	carrier
+		hangar_data
+			0
+				[NEW] launch_basis : {'position': [1.247278, -121.69973, 1413.392212], 'rotation': [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]}
+				[NEW] land_basis : {'position': [1.247278, -121.69973, 1413.392212], 'rotation': [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]}
+			1
+				[NEW] launch_basis : {'position': [1390.710571, -121.69973, 26.782059], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+				[NEW] land_basis : {'position': [1390.710571, -121.69973, 26.782059], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+				[NEW] required_unit_item : advent_starbase_hangar_0
+			2
+				[NEW] launch_basis : {'position': [-1394.276611, -121.69973, 26.782059], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, 0.0, -1.0, 0.0, 0.0]}
+				[NEW] land_basis : {'position': [-1394.276611, -121.69973, 26.782059], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, 0.0, -1.0, 0.0, 0.0]}
+				[NEW] required_unit_item : advent_starbase_hangar_0
+
+**Vigilis Sentinel**
+	weapons
+		weapons
+			advent_defense_cruiser_laser
+				light_laser
+					penetration : 100.0 -> 50.0
+	health
+		durability : 300.0 -> 250.0
+
+**ship_loot_advent**
+	[NEW] capturable_unit : {'type': 'destroy_on_capture', 'allow_surrender': False, 'capture_points_total': 750}
+
+## Unit_skin Changes
+
+**Acolyte Corvette**
+	skin_stages
+		[NEW] child_mesh_alias_bindings : {'map': [{'mesh_alias_name': 'advent_asset_cruiser_lightlaser_barrel_0', 'mesh_definition': {'mesh': 'advent_asset_cruiser_lightlaser_barrel_0', 'shader': 'ship', 'is_shadow_blocker': True}}, {'mesh_alias_name': 'advent_asset_cruiser_lightlaser_mount_0', 'mesh_definition': {'mesh': 'advent_asset_cruiser_lightlaser_mount_0', 'shader': 'ship', 'is_shadow_blocker': True}}]}
+		effects
+			effect_alias_bindings
+				[NEW] advent_gunship_corvette_light_laser_weapon_hit_hull : {'alias_name': 'advent_gunship_corvette_light_laser_weapon_hit_hull', 'alias_binding': {'particle_effect': 'advent_laser_bolt_light_impact', 'sounds': ['weapon_impact_energy_light_hithull', 'weapon_impact_energy_light_hithull_01', 'weapon_impact_energy_light_hithull_02']}}
+				[NEW] advent_gunship_corvette_light_laser_weapon_hit_shield : {'alias_name': 'advent_gunship_corvette_light_laser_weapon_hit_shield', 'alias_binding': {'particle_effect': 'advent_laser_bolt_light_impact', 'sounds': ['weapon_impact_generic_light_hitshields', 'weapon_impact_generic_light_hitshields_01', 'weapon_impact_generic_light_hitshields_02', 'weapon_impact_generic_light_hitshields_03']}}
+				[NEW] advent_gunship_corvette_light_laser_weapon_muzzle : {'alias_name': 'advent_gunship_corvette_light_laser_weapon_muzzle', 'alias_binding': {'particle_effect': 'advent_laser_bolt_light_muzzle', 'sounds': ['weapon_muzzle_psi_energy_light_laser', 'weapon_muzzle_psi_energy_light_laser_01', 'weapon_muzzle_psi_energy_light_laser_02', 'weapon_muzzle_psi_energy_light_laser_03']}}
+				[NEW] advent_gunship_corvette_light_laser_weapon_projectile_travel : {'alias_name': 'advent_gunship_corvette_light_laser_weapon_projectile_travel', 'alias_binding': {'particle_effect': 'advent_laser_bolt_light'}}
+
+**Assembly Drone**
+	skin_stages
+		gui
+			tooltip_picture : advent_constructor_ship_tooltip_picture -> advent_constructor_ship_tooltip_icon
+
+**Transcencia Starbase**
+	skin_stages
+		child_mesh_alias_bindings
+			map
+				[NEW] advent_starbase_super_heavy_plasma_barrel_0 : {'mesh_alias_name': 'advent_starbase_super_heavy_plasma_barrel_0', 'mesh_definition': {'mesh': 'advent_starbase_super_heavy_plasma_barrel_0', 'shader': 'ship', 'is_shadow_blocker': True}}
+				[NEW] advent_starbase_super_heavy_plasma_mount_0 : {'mesh_alias_name': 'advent_starbase_super_heavy_plasma_mount_0', 'mesh_definition': {'mesh': 'advent_starbase_super_heavy_plasma_mount_0', 'shader': 'ship', 'is_shadow_blocker': True}}
+
+## Research_subject Changes
+
+**advent_rebel_loot_collection**
+	unit_modifiers
+		[NEW] unit_capture_points : {'modifier_type': 'unit_capture_points', 'value_behavior': 'additive', 'value': 1.0}
+
+**advent_unlock_defense_cruiser**
+	tier : 2 -> 1
+	field_coord
+		0 : 5 -> 3
+		1 : 3 -> 4
+	research_time : 270.0 -> 150.0
+	price
+		credits : 850.0 -> 550.0
+		metal : 275.0 -> 150.0
+		crystal : 650.0 -> 350.0
+
+## Player Changes
+
+**advent_loyalist**
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_advent_reborn_bounty_taunt.0', 'player_ai_advent_reborn_bounty_taunt.2', 'player_ai_advent_reborn_bounty_taunt.3', 'player_ai_advent_reborn_bounty_taunt.4', 'player_ai_advent_reborn_bounty_taunt.5', 'player_ai_advent_reborn_bounty_taunt.6', 'player_ai_advent_reborn_bounty_taunt.8', 'player_ai_advent_reborn_bounty_taunt.9']
+
+**advent_rebel**
+	[NEW] starting_npc_detection : {'specific_npcs': ['alutar_sect_npc', 'nilari_cult_npc']}
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_advent_wrath_bounty_taunt.0', 'player_ai_advent_wrath_bounty_taunt.1', 'player_ai_advent_wrath_bounty_taunt.3', 'player_ai_advent_wrath_bounty_taunt.4', 'player_ai_advent_wrath_bounty_taunt.6', 'player_ai_advent_wrath_bounty_taunt.7', 'player_ai_advent_wrath_bounty_taunt.9']
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**Derelict Specialist Team**
+	unit_modifiers
+		[NEW] unit_capture_points : {'modifier_type': 'unit_capture_points', 'value_behavior': 'scalar', 'values': [1.5]}
+
+## Ability Changes
+
+**Mobile Trade Port**
+	gui
+		tooltip_line_groups
+			lines
+				[NEW] buff_trade_export_credits : {'rendering_type': 'buff_trade_export_credits', 'trade_export_credits_points_id': 'trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_modifier'}
+
+## Action_data_source Changes
+
+**Mobile Trade Port**
+	action_values
+		trader_colony_capital_ship_mobile_trade_port_trade_import_points_value
+			action_value
+				values
+					0 : 2.0 -> 1.0
+					1 : 4.0 -> 3.0
+					2 : 6.0 -> 5.0
+		[NEW] trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_value : {'action_value_id': 'trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_value', 'action_value': {'values': [1.0, 1.0, 1.0]}}
+	buff_unit_modifiers
+		[NEW] trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_modifier : {'buff_unit_modifier_id': 'trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_modifier', 'buff_unit_modifier': {'modifier_type': 'trade_export_credits_points', 'value_behavior': 'additive', 'value_id': 'trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_value'}}
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+
+**Mobile Trade Port**
+	unit_modifiers
+		[NEW] trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_modifier : {'buff_unit_modifier_id': 'trader_colony_capital_ship_mobile_trade_port_trade_export_credits_points_modifier'}
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Akkan Battlecruiser**
+	weapons
+		weapons
+			trader_colony_capital_ship_autocannon
+				weapon_position
+					0 : -80.313599 -> 80.313599
+					1 : -21.793007 -> -21.793011
+					2 : 64.301414 -> 64.301407
+				forward
+					0 : -1.0 -> 1.0
+				yaw_arc
+					min_angle : -45.0 -> -75.0
+					max_angle : 75.0 -> 45.0
+			trader_colony_capital_ship_point_defense_autocannon
+				weapon_position
+					0 : 80.460815 -> -80.460823
+				forward
+					0 : 1.0 -> -1.0
+			[NEW] trader_colony_capital_ship_light_autocannon : {'weapon': 'trader_colony_capital_ship_light_autocannon', 'mesh_point': 'child.lightturret_mount_5', 'weapon_position': [-37.30072, 70.953682, 143.1418], 'forward': [-1.0, -0.0, 0.0], 'up': [-0.0, 1.0, 0.0], 'yaw_arc': {'min_angle': -45.0, 'max_angle': 95.0}, 'pitch_arc': {'min_angle': -75.0, 'max_angle': 5.0}}
+			trader_colony_capital_ship_planet_bombing
+				weapon_position
+					0 : 1.6e-05 -> -1.6e-05
+				non_turret_muzzle_positions
+					0 : 1.6e-05 -> -1.6e-05
+	levels
+		levels
+			0
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 1.0
+			1
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 1.0
+			2
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 1.0
+			3
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 2.0
+			4
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 2.0
+			5
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 2.0
+			6
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 2.0
+			7
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 3.0
+			8
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 3.0
+			9
+				unit_modifiers
+					additive_values
+						[NEW] max_squadron_capacity : 3.0
+	[NEW] carrier : {'base_max_squadron_capacity': 0, 'strikecraft_kinds': ['interceptor', 'bomber'], 'launch_destination_formation': 'capital_ship_strikecraft', 'launch_destination_formation_offset': {'rank': 3, 'group': 2}, 'hangar_data': [{'launch_basis': {'position': [18.0, 18.0, -60.0], 'rotation': [0.0, 0.0, -1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0]}, 'land_basis': {'position': [18.0, 18.0, -60.0], 'rotation': [0.0, 0.0, -1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0]}}, {'launch_basis': {'position': [-18.0, 18.0, -60.0], 'rotation': [0.0, 0.0, 1.0, -0.0, 1.0, 0.0, -1.0, -0.0, 0.0]}, 'land_basis': {'position': [-18.0, 18.0, -60.0], 'rotation': [0.0, 0.0, 1.0, -0.0, 1.0, 0.0, -1.0, -0.0, 0.0]}}, {'launch_basis': {'position': [18.0, 18.0, -116.5], 'rotation': [0.0, 0.0, -1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0]}, 'land_basis': {'position': [18.0, 18.0, -116.5], 'rotation': [0.0, 0.0, -1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0]}}, {'launch_basis': {'position': [-18.0, 18.0, -116.5], 'rotation': [0.0, 0.0, 1.0, -0.0, 1.0, 0.0, -1.0, -0.0, 0.0]}, 'land_basis': {'position': [-18.0, 18.0, -116.5], 'rotation': [0.0, 0.0, 1.0, -0.0, 1.0, 0.0, -1.0, -0.0, 0.0]}}]}
+	[NEW] capture_points : 5
+
+**Ankylon Titan**
+	weapons
+		weapons
+			trader_loyalist_titan_medium_missile_side
+				forward
+					0 : 0.939693 -> 0.939692
+					2 : -0.34202 -> -0.342021
+			trader_loyalist_titan_point_defense_autocannon
+				mesh_point : child.pdturret_mount_17 -> child.pdturret_mount_21
+				weapon_position
+					0 : 435.530609 -> -459.800812
+					1 : -83.166557 -> -83.230118
+					2 : -524.324036 -> 375.449707
+				forward
+					0 : 0.939693 -> -0.990024
+					2 : -0.342019 -> 0.140901
+	carrier
+		hangar_data
+			0
+				[NEW] launch_basis : {'position': [499.249969, 41.810604, 16.122488], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+				[NEW] land_basis : {'position': [499.249969, 41.810604, 16.122488], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+			1
+				[NEW] launch_basis : {'position': [499.249969, 41.810604, -182.641739], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+				[NEW] land_basis : {'position': [499.249969, 41.810604, -182.641739], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+			2
+				[NEW] launch_basis : {'position': [499.249969, 41.810604, -81.979378], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+				[NEW] land_basis : {'position': [499.249969, 41.810604, -81.979378], 'rotation': [-0.0, 0.0, -1.0, -0.0, 1.0, 0.0, 1.0, 0.0, -0.0]}
+			3
+				[NEW] launch_basis : {'position': [-500.939362, 41.810604, -182.640427], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+				[NEW] land_basis : {'position': [-500.939362, 41.810604, -182.640427], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+			4
+				[NEW] launch_basis : {'position': [-500.939362, 41.810604, -81.97979], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+				[NEW] land_basis : {'position': [-500.939362, 41.810604, -81.97979], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+			5
+				[NEW] launch_basis : {'position': [-500.939362, 41.810604, 16.122271], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+				[NEW] land_basis : {'position': [-500.939362, 41.810604, 16.122271], 'rotation': [0.0, 0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+	[NEW] capture_points : 15
+
+**Cobalt Light Frigate**
+	physics
+		max_angular_speed : 30.0 -> 25.0
+		time_to_max_angular_speed : 1.2 -> 1.25
+	weapons
+		weapons
+			trader_light_frigate_medium_autocannon
+				medium_autocannon
+					pitch_speed : 0.0 -> 2.0
+					yaw_speed : 0.0 -> 2.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					cooldown_duration : 2.1 -> 2.0
+					penetration : 200.0 -> 250.0
+					dps : 9.523809523809524 -> 10.0
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+	health
+		durability : 100.0 -> 150.0
+		levels
+			max_hull_points : 610.0 -> 750.0
+			max_armor_points : 635.0 -> 825.0
+			armor_strength : 40.0 -> 50.0
+
+**Dunov Battlecruiser**
+	[NEW] capture_points : 5
+
+**Garda Flak Frigate**
+	weapons
+		weapons
+			trader_antifighter_frigate_point_defense_autocannon
+				mesh_point : child.pdturret_mount_3 -> child.pdturret_mount_5
+				weapon_position
+					0 : 10.778221 -> -10.86503
+					1 : 3.248879 -> -2.603801
+					2 : -15.852016 -> 6.799904
+				forward
+					2 : -1.0 -> 1.0
+				up
+					0 : 0.0 -> -0.139173
+					1 : 1.0 -> -0.990268
+				yaw_arc
+					min_angle : -160.0 -> -5.0
+					max_angle : 10.0 -> 185.0
+			trader_antifighter_frigate_light_autocannon
+				light_autocannon
+					cooldown_duration : 1.5 -> 2.0
+					penetration : 100.0 -> 50.0
+					dps : 5.333333333333333 -> 4.0
+				weapon_position
+					0 : 0.050043 -> 0.050044
+					1 : 7.761029 -> 7.761027
+	health
+		levels
+			max_hull_points : 325.0 -> 400.0
+			max_armor_points : 410.0 -> 450.0
+	unit_modifiers
+		max_shield_points
+			value : 400.0 -> 250.0
+
+**Kalev Gauss Frigate**
+	weapons
+		weapons
+			trader_antiarmor_frigate_gauss
+				gauss
+					pitch_speed : 0.0 -> 1.5
+					yaw_speed : 0.0 -> 1.5
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					target_acquired_duration_required_to_fire : 1.0 -> 0.5
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+
+**Khevarkov Modular Battlecruiser**
+	[NEW] capture_points : 10
+
+**Kol Battleship**
+	[NEW] capture_points : 5
+
+**Marza Dreadnought**
+	[NEW] capture_points : 5
+
+**Ragnarov Titan**
+	[NEW] capture_points : 15
+
+**Shriken Gunship Corvette**
+	physics
+		max_linear_speed : 1300.0 -> 1100.0
+		time_to_max_linear_speed : 2.6 -> 2.2
+	ai
+		pursuit
+			min_target_speed : 500.0 -> 200.0
+			min_distance_to_target : 1500.0 -> 750.0
+	weapons
+		weapons
+			trader_skirmisher_corvette_frigate_light_autocannon
+				medium_autocannon
+					name : weapon_name.light_autocannon -> weapon_name.medium_autocannon
+					pitch_speed : 0.0 -> 1.0
+					yaw_speed : 0.0 -> 1.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					cooldown_duration : 3.0 -> 2.0
+					damage : 10.0 -> 8.0
+					penetration : 100.0 -> 150.0
+					effects
+						muzzle_effect : trader_skirmisher_corvette_frigate_light_autocannon_weapon_muzzle -> trader_skirmisher_corvette_frigate_medium_autocannon_weapon_muzzle
+						projectile_travel_effect : trader_skirmisher_corvette_frigate_light_autocannon_weapon_projectile_travel -> trader_skirmisher_corvette_frigate_medium_autocannon_weapon_projectile_travel
+						hit_hull_effect : trader_skirmisher_corvette_frigate_light_autocannon_weapon_hit_hull -> trader_skirmisher_corvette_frigate_medium_autocannon_weapon_hit_hull
+						hit_shield_effect : trader_skirmisher_corvette_frigate_light_autocannon_weapon_hit_shield -> trader_skirmisher_corvette_frigate_medium_autocannon_weapon_hit_shield
+					dps : 3.3333333333333335 -> 4.0
+			trader_skirmisher_corvette_frigate_medium_autocannon
+				light_autocannon
+					cooldown_duration : 2.0 -> 1.5
+					damage : 5.0 -> 4.0
+					penetration : 100.0 -> 50.0
+					effects
+						muzzle_effect : trader_skirmisher_corvette_frigate_medium_autocannon_weapon_muzzle -> trader_skirmisher_corvette_frigate_light_autocannon_weapon_muzzle
+						projectile_travel_effect : trader_skirmisher_corvette_frigate_medium_autocannon_weapon_projectile_travel -> trader_skirmisher_corvette_frigate_light_autocannon_weapon_projectile_travel
+						hit_hull_effect : trader_skirmisher_corvette_frigate_medium_autocannon_weapon_hit_hull -> trader_skirmisher_corvette_frigate_light_autocannon_weapon_hit_hull
+						hit_shield_effect : trader_skirmisher_corvette_frigate_medium_autocannon_weapon_hit_shield -> trader_skirmisher_corvette_frigate_light_autocannon_weapon_hit_shield
+					dps : 2.5 -> 2.6666666666666665
+	health
+		levels
+			max_hull_points : 215.0 -> 275.0
+			max_armor_points : 200.0 -> 300.0
+	build
+		price
+			credits : 200.0 -> 185.0
+			crystal : 15.0 -> 10.0
+	unit_modifiers
+		max_shield_points
+			value : 250.0 -> 0.0
+
+**Sova Carrier**
+	[NEW] capture_points : 5
+
+**Stilat Missile Corvette**
+	physics
+		max_linear_speed : 1300.0 -> 1000.0
+		time_to_max_linear_speed : 2.6 -> 2.5
+	build
+		price
+			credits : 245.0 -> 215.0
+			crystal : 55.0 -> 40.0
+
+**Takadaran Command Fortress**
+	[NEW] capture_points : 10
+
+**[NEW] trader_capturable_civilian_research_lab_structure**
+	spatial
+		radius : 433.871063
+		box
+			center
+				0.0
+				-0.001022
+				-2.3e-05
+			extents
+				203.667984
+				433.843689
+				198.229095
+	physics
+	ai
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft
+	ai_attack_target
+		attack_priority : 25.0
+		attack_target_type : civilian
+	user_interface
+		pip_type : frigate
+		can_ever_be_selected
+		selection_priority : 100
+		has_sub_selection_grouping
+		selection_group_unit_type : civilian_structure
+	structure
+		slot_type : civilian
+		slots_required : 1
+		roles
+		build_group_id : civilian
+	formation
+		leader_priority : 3
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 4
+				group : 5
+	spawn_debris
+		spawn_debris_time : 1.0
+		generic_group_name : trader
+		generic_counts
+			small_debris
+				14
+				18
+			large_debris
+				3
+				5
+	health
+		release_time_after_death : 60.0
+		can_collide_duration_after_death : 3.8
+		durability : 500.0
+		levels
+				max_hull_points : 2500.0
+				hull_point_restore_rate : 3.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				max_armor_points : 1000.0
+				armor_point_restore_rate : 4.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 40.0
+				experience_given_on_death : 25.0
+	build
+		build_time : 50.0
+		price
+			credits : 750.0
+			metal : 50.0
+			crystal : 75.0
+		build_kind : structure
+		build_radius : 284.210175
+	research_provider
+		provided_research_points
+			civilian : 1.0
+	target_filter_unit_type : structure
+	tags
+		structure
+	virtual_supply_cost : 10
+	abilities
+			abilities
+				trader_research_lab_structure_phase_lane_detector
+	skin_groups
+			skins
+				trader_civilian_research_lab_structure
+	capturable_unit
+		type : change_owner_on_capture
+		capture_points_total : 450
+		is_recapturable
+	action_effect_size : medium_unit
+
+**[NEW] trader_capturable_crystal_extractor_structure**
+	spatial
+		radius : 273.638519
+		box
+			center
+				8e-06
+				83.187622
+				0.0
+			extents
+				156.086121
+				190.001343
+				155.922775
+	ai_attack_target
+		attack_priority : 25.0
+		attack_target_type : civilian
+	user_interface
+		pip_type : frigate
+		can_ever_be_selected
+		selection_priority : 100
+		has_sub_selection_grouping
+		selection_group_unit_type : civilian_structure
+	structure
+		slot_type : civilian
+		slots_required : 1
+		roles
+			extractor
+		asteroid_asset_type : crystal
+		build_group_id : civilian
+	formation
+		leader_priority : 3
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 4
+				group : 5
+	spawn_debris
+		spawn_debris_time : 1.0
+		generic_group_name : trader
+		generic_counts
+			small_debris
+				10
+				12
+			large_debris
+				1
+				2
+	health
+		release_time_after_death : 60.0
+		can_collide_duration_after_death : 3.8
+		durability : 400.0
+		levels
+				max_hull_points : 1500.0
+				hull_point_restore_rate : 3.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				max_armor_points : 750.0
+				armor_point_restore_rate : 4.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 25.0
+				experience_given_on_death : 25.0
+	build
+		build_time : 40.0
+		price
+			credits : 250.0
+			metal : 20.0
+		prerequisites
+				trader_unlock_resource_extractor_structures
+		build_kind : structure
+		build_radius : 220.623642
+	target_filter_unit_type : untargetable
+	tags
+		structure
+	virtual_supply_cost : 5
+	skin_groups
+			skins
+				trader_crystal_extractor_structure
+	action_effect_size : medium_unit
+	capturable_unit
+		type : change_owner_on_capture
+		capture_points_total : 225
+		is_recapturable
+	passive_income
+		base_income_rates
+			crystal : 0.4
+
+**[NEW] trader_capturable_metal_extractor_structure**
+	spatial
+		radius : 273.638519
+		box
+			center
+				8e-06
+				83.187622
+				0.0
+			extents
+				156.086121
+				190.001343
+				155.922775
+	ai_attack_target
+		attack_priority : 25.0
+		attack_target_type : civilian
+	user_interface
+		pip_type : frigate
+		can_ever_be_selected
+		selection_priority : 100
+		has_sub_selection_grouping
+		selection_group_unit_type : civilian_structure
+	structure
+		slot_type : civilian
+		slots_required : 1
+		roles
+			extractor
+		asteroid_asset_type : metal
+		build_group_id : civilian
+	formation
+		leader_priority : 3
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 4
+				group : 5
+	spawn_debris
+		spawn_debris_time : 1.0
+		generic_group_name : trader
+		generic_counts
+			small_debris
+				10
+				12
+			large_debris
+				1
+				2
+	health
+		release_time_after_death : 60.0
+		can_collide_duration_after_death : 3.8
+		durability : 400.0
+		levels
+				max_hull_points : 1500.0
+				hull_point_restore_rate : 3.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				max_armor_points : 750.0
+				armor_point_restore_rate : 4.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 25.0
+				experience_given_on_death : 25.0
+	build
+		build_time : 40.0
+		price
+			credits : 250.0
+			metal : 20.0
+		prerequisites
+				trader_unlock_resource_extractor_structures
+		build_kind : structure
+		build_radius : 220.623642
+	target_filter_unit_type : untargetable
+	tags
+		structure
+	virtual_supply_cost : 5
+	skin_groups
+			skins
+				trader_metal_extractor_structure
+	action_effect_size : medium_unit
+	capturable_unit
+		type : change_owner_on_capture
+		capture_points_total : 225
+		is_recapturable
+	passive_income
+		base_income_rates
+			metal : 0.4
+
+**[NEW] trader_capturable_military_research_lab_structure**
+	spatial
+		radius : 538.835327
+		box
+			center
+				0.0
+				-105.345459
+				0.0
+			extents
+				302.679626
+				433.468201
+				203.431549
+	physics
+	ai
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft
+	ai_attack_target
+		attack_priority : 25.0
+		attack_target_type : civilian
+	user_interface
+		pip_type : frigate
+		can_ever_be_selected
+		selection_priority : 100
+		has_sub_selection_grouping
+		selection_group_unit_type : civilian_structure
+	structure
+		slot_type : civilian
+		slots_required : 1
+		roles
+		build_group_id : civilian
+	formation
+		leader_priority : 3
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 4
+				group : 5
+	spawn_debris
+		spawn_debris_time : 1.0
+		generic_group_name : trader
+		generic_counts
+			small_debris
+				14
+				18
+			large_debris
+				3
+				5
+	health
+		release_time_after_death : 60.0
+		can_collide_duration_after_death : 3.8
+		durability : 500.0
+		levels
+				max_hull_points : 2500.0
+				hull_point_restore_rate : 3.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				max_armor_points : 1000.0
+				armor_point_restore_rate : 4.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 40.0
+				experience_given_on_death : 25.0
+	build
+		build_time : 50.0
+		price
+			credits : 750.0
+			metal : 50.0
+			crystal : 75.0
+		build_kind : structure
+		build_radius : 364.690765
+	research_provider
+		provided_research_points
+			military : 1.0
+	target_filter_unit_type : untargetable
+	tags
+		structure
+	capturable_unit
+		type : change_owner_on_capture
+		capture_points_total : 450
+		is_recapturable
+	virtual_supply_cost : 10
+	abilities
+			abilities
+				trader_research_lab_structure_phase_lane_detector
+	skin_groups
+			skins
+				trader_military_research_lab_structure
+	action_effect_size : medium_unit
+
+**ship_loot_trader**
+	[NEW] capturable_unit : {'type': 'destroy_on_capture', 'allow_surrender': False, 'capture_points_total': 750}
+
+## Unit_skin Changes
+
+**Akkan Battlecruiser**
+	skin_stages
+		child_mesh_alias_bindings
+			map
+				[NEW] turret_barrel_0 : {'mesh_alias_name': 'turret_barrel_0', 'mesh_definition': {'mesh': 'trader_asset_turret_barrel_0', 'shader': 'ship', 'is_shadow_blocker': True}}
+				[NEW] turret_mount_0 : {'mesh_alias_name': 'turret_mount_0', 'mesh_definition': {'mesh': 'trader_asset_turret_mount_0', 'shader': 'ship', 'is_shadow_blocker': True}}
+		effects
+			effect_alias_bindings
+				[NEW] trader_battle_capital_ship_light_autocannon_weapon_hit_hull : {'alias_name': 'trader_battle_capital_ship_light_autocannon_weapon_hit_hull', 'alias_binding': {'particle_effect': 'light_autocannon_impact', 'sounds': ['weapon_impact_physical_light_hithull', 'weapon_impact_physical_light_hithull_01', 'weapon_impact_physical_light_hithull_02', 'weapon_impact_physical_light_hithull_03', 'weapon_impact_physical_light_hithull_04']}}
+				[NEW] trader_battle_capital_ship_light_autocannon_weapon_hit_shield : {'alias_name': 'trader_battle_capital_ship_light_autocannon_weapon_hit_shield', 'alias_binding': {'particle_effect': 'light_autocannon_impact', 'sounds': ['weapon_impact_generic_light_hitshields', 'weapon_impact_generic_light_hitshields_01', 'weapon_impact_generic_light_hitshields_02', 'weapon_impact_generic_light_hitshields_03']}}
+				[NEW] trader_battle_capital_ship_light_autocannon_weapon_muzzle : {'alias_name': 'trader_battle_capital_ship_light_autocannon_weapon_muzzle', 'alias_binding': {'particle_effect': 'trader_capital_light_autocannon_weapon_muzzle', 'sounds': ['weapon_muzzle_tech_light_autocannon', 'weapon_muzzle_tech_light_autocannon_01', 'weapon_muzzle_tech_light_autocannon_02', 'weapon_muzzle_tech_light_autocannon_03']}}
+				[NEW] trader_battle_capital_ship_light_autocannon_weapon_projectile_travel : {'alias_name': 'trader_battle_capital_ship_light_autocannon_weapon_projectile_travel', 'alias_binding': {'particle_effect': 'trader_light_autocannon_weapon_projectile_travel'}}
+
+**Garda Flak Frigate**
+	skin_stages
+		effects
+			effect_alias_bindings
+				trader_antifighter_frigate_point_defense_autocannon_weapon_hit_shield
+					alias_binding
+						sounds
+							[NEW] weapon_impact_generic_pointdefense_hitshields_03
+
+**Trade Ship**
+	skin_stages
+		effects
+			hyperspace_effects
+				charge_effect : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_between_stars : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_destabilized : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				travel_effect : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_between_stars : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_destabilized : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				exit_effect : hyperspace_tech_frigate_exit -> hyperspace_tech_shuttle_exit
+
+**trader_traffic_ship_0**
+	skin_stages
+		effects
+			hyperspace_effects
+				charge_effect : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_between_stars : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_destabilized : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				travel_effect : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_between_stars : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_destabilized : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				exit_effect : hyperspace_tech_frigate_exit -> hyperspace_tech_shuttle_exit
+
+**trader_traffic_ship_1**
+	skin_stages
+		effects
+			hyperspace_effects
+				charge_effect : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_between_stars : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_destabilized : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				travel_effect : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_between_stars : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_destabilized : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				exit_effect : hyperspace_tech_frigate_exit -> hyperspace_tech_shuttle_exit
+
+**trader_traffic_ship_2**
+	skin_stages
+		effects
+			hyperspace_effects
+				charge_effect : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_between_stars : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_destabilized : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				travel_effect : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_between_stars : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_destabilized : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				exit_effect : hyperspace_tech_frigate_exit -> hyperspace_tech_shuttle_exit
+
+**trader_traffic_ship_3**
+	skin_stages
+		effects
+			hyperspace_effects
+				charge_effect : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_between_stars : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				charge_effect_destabilized : trader_chargeup_travel_traffic -> trader_chargeup_shuttle_portal_traffic
+				travel_effect : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_between_stars : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				travel_effect_destabilized : trader_chargeup_travel_traffic -> hyperspace_tech_shuttle_travel
+				exit_effect : hyperspace_tech_frigate_exit -> hyperspace_tech_shuttle_exit
+
+## Research_subject Changes
+
+**[NEW] trader_pirate_king_windfall**
+	domain : military
+	tier : 3
+	field : military_mobilization
+	field_coord
+		6
+		3
+	research_time : 360.0
+	price
+		credits : 1700.0
+		metal : 300.0
+		crystal : 500.0
+	exotic_price
+			exotic_type : offense
+			count : 1
+			exotic_type : economic
+			count : 2
+	prerequisites
+			trader_pirate_raid_supply
+	windfall
+		units_given
+			required_units
+					unit : pirate_king_capital_ship
+					count
+						1
+						1
+	name : Privateer Persuasion
+	name_uppercase : PRIVATEER PERSUASION
+	description : A Pirate Lord in command of a Galleon is persuaded to work with you through the offer of a letter of marque.
+	hud_icon : pirate_king_captial_ship_hud_icon
+	tooltip_picture : pirate_king_captial_ship_tooltip_picture
+	extra_text_filter_strings
+		faction
+		pirate
+		rebel
+
+**trader_shields_0**
+	tier : 3 -> 2
+	field_coord
+		0 : 6 -> 5
+	research_time : 360.0 -> 270.0
+	price
+		credits : 1700.0 -> 1250.0
+		metal : 300.0 -> 225.0
+		crystal : 500.0 -> 350.0
+	prerequisites
+		1 : trader_shields_cruiser -> trader_shields_frigate
+
+**trader_shields_corvette**
+	tier : 1 -> 2
+	field_coord
+		0 : 2 -> 4
+		1 : 8 -> 6
+	research_time : 120.0 -> 225.0
+	price
+		credits : 700.0 -> 1200.0
+		metal : 100.0 -> 200.0
+		crystal : 125.0 -> 300.0
+
+**trader_shields_cruiser**
+	field_coord
+		0 : 4 -> 5
+	research_time : 225.0 -> 270.0
+	price
+		credits : 1200.0 -> 1250.0
+		metal : 200.0 -> 225.0
+		crystal : 300.0 -> 350.0
+
+**trader_shields_frigate**
+	tier : 1 -> 2
+	field_coord
+		0 : 3 -> 4
+	research_time : 150.0 -> 225.0
+	price
+		credits : 750.0 -> 1200.0
+		metal : 125.0 -> 200.0
+		crystal : 150.0 -> 300.0
+
+**trader_unlock_backup_shield_generator_unit_item**
+	tier : 2 -> 3
+	field_coord
+		0 : 4 -> 6
+	research_time : 225.0 -> 360.0
+	price
+		credits : 1200.0 -> 1700.0
+		metal : 200.0 -> 300.0
+		crystal : 300.0 -> 500.0
+	[NEW] prerequisites : [['trader_shields_0']]
+
+**trader_unlock_pirate_mercenary_base_unit_item**
+	field_coord
+		1 : 3 -> 4
+
+**trader_upgrade_backup_shield_generator_unit_item**
+	tier : 3 -> 4
+	field_coord
+		0 : 7 -> 8
+	research_time : 420.0 -> 525.0
+	price
+		credits : 1750.0 -> 2200.0
+		metal : 325.0 -> 400.0
+		crystal : 550.0 -> 700.0
+	prerequisites
+		0 : trader_shields_0 -> trader_unlock_backup_shield_generator_unit_item
+
+**trader_upgrade_loot_experience_gain**
+	unit_modifiers
+		[NEW] unit_capture_points : {'modifier_type': 'unit_capture_points', 'value_behavior': 'additive', 'value': 1.0}
+
+## Player Changes
+
+**dlc_trader_loyalist**
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_tec_enclave_bounty_taunt.0', 'player_ai_tec_enclave_bounty_taunt.1', 'player_ai_tec_enclave_bounty_taunt.2', 'player_ai_tec_enclave_bounty_taunt.3', 'player_ai_tec_enclave_bounty_taunt.4', 'player_ai_tec_enclave_bounty_taunt.5', 'player_ai_tec_enclave_bounty_taunt.7', 'player_ai_tec_enclave_bounty_taunt.9', 'player_ai_tec_enclave_bounty_taunt.10']
+
+**trader_loyalist**
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_tec_enclave_bounty_taunt.0', 'player_ai_tec_enclave_bounty_taunt.1', 'player_ai_tec_enclave_bounty_taunt.2', 'player_ai_tec_enclave_bounty_taunt.3', 'player_ai_tec_enclave_bounty_taunt.4', 'player_ai_tec_enclave_bounty_taunt.5', 'player_ai_tec_enclave_bounty_taunt.7', 'player_ai_tec_enclave_bounty_taunt.9', 'player_ai_tec_enclave_bounty_taunt.10']
+
+**trader_rebel**
+	research
+		research_subjects
+			[NEW] trader_pirate_king_windfall
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_tec_primacy_bounty_taunt.0', 'player_ai_tec_primacy_bounty_taunt.1', 'player_ai_tec_primacy_bounty_taunt.3', 'player_ai_tec_primacy_bounty_taunt.4', 'player_ai_tec_primacy_bounty_taunt.5', 'player_ai_tec_primacy_bounty_taunt.6', 'player_ai_tec_primacy_bounty_taunt.7', 'player_ai_tec_primacy_bounty_taunt.8']
+
+
+# Vasari Changes
+
+## Action_data_source Changes
+
+**Phase Out Hull**
+	action_values
+		phase_out_hull_antimatter_cost_value
+			action_value
+				values
+					0 : 120.0 -> 90.0
+					1 : 90.0 -> 93.0
+					2 : 60.0 -> 96.0
+		phase_out_hull_cooldown_time_value
+			action_value
+				values
+					0 : 27.0 -> 21.0
+					2 : 9.0 -> 15.0
+
+## Unit Changes
+
+**Anarkrul Wanderer**
+	[NEW] capture_points : 10
+
+**Antorak Marauder**
+	[NEW] capture_points : 5
+
+**Crystal Extractor**
+	build
+		[NEW] prerequisites : [['vasari_unlock_resource_extractor_structures']]
+
+**Fleet Beacon**
+	action_effect_size : medium_unit -> large_unit
+
+**Jarrasul Evacuator**
+	weapons
+		weapons
+			vasari_colony_capital_ship_light_wave
+				mesh_point : child.vasari_asset_medwave_cap_barrel_0 -> child.vasari_asset_medwave_cap_barrel_5
+				weapon_position
+					0 : -0.237388 -> 214.800003
+					1 : -182.867645 -> -35.5
+					2 : 234.918961 -> -12.8
+				forward
+					0 : -0.0 -> 1.0
+					1 : 0.173648 -> 0.0
+					2 : 0.984808 -> -0.0
+				up
+					1 : -0.984808 -> 0.951056
+					2 : 0.173648 -> 0.309017
+				yaw_arc
+					min_angle : -110.0 -> -75.0
+					max_angle : 110.0 -> 75.0
+	carrier
+		hangar_data
+			[NEW] launch_basis : {'position': [0.0, -104.038559, 9.367535], 'rotation': [1.0, -0.0, -0.0, 0.0, 1.0, -0.0, 0.0, 0.0, 1.0]}
+			[NEW] land_basis : {'position': [0.0, -104.038559, 9.367535], 'rotation': [1.0, -0.0, -0.0, 0.0, 1.0, -0.0, 0.0, 0.0, 1.0]}
+	[NEW] capture_points : 5
+
+**Junsurak Warden**
+	weapons
+		weapons
+			vasari_antifighter_frigate_point_defense_pulse
+				point_defense_pulse
+					turret
+						gimbal_mesh : vasari_asset_medpulse_barrel_0 -> vasari_antifighter_pd_pulse_barrel_0
+						muzzle_positions
+							0 : -0.002941 -> 0.011272
+							1 : 0.685288 -> 1.205934
+							2 : 2.335301 -> 2.542391
+				weapon_position
+					0 : 0.000278 -> 0.0
+			vasari_antifighter_frigate_phase_missile
+				very_light_phase_missile
+					name : weapon_name.light_phase_missile -> weapon_name.very_light_phase_missile
+					cooldown_duration : 9.0 -> 12.0
+					damage : 12.0 -> 24.0
+					penetration : 120.0 -> 0.0
+					firing
+						torpedo_firing_definition
+							spawned_unit : vasari_phase_missile -> vasari_phase_missile_very_light
+					dps : 1.3333333333333333 -> 2.0
+				weapon_position
+					0 : 11.027935 -> 11.18
+					1 : 10.106067 -> 9.91
+					2 : -30.21825 -> -30.219999
+				non_turret_muzzle_positions
+					0 : 11.027935 -> 11.18
+					1 : 10.106067 -> 9.91
+					2 : -30.21825 -> -30.219999
+				forward
+					0 : 0.365871 -> 0.398749
+					1 : 0.222659 -> 0.21875
+					2 : -0.903638 -> -0.890589
+				up
+					0 : -0.157075 -> -0.154515
+					1 : 0.971803 -> 0.973276
+					2 : 0.175857 -> 0.169878
+	health
+		durability : 180.0 -> 240.0
+		levels
+			max_shield_points : 535.0 -> 635.0
+
+**Kortul Devastator**
+	[NEW] capture_points : 5
+
+**Kultorask Titan**
+	[NEW] capture_points : 15
+
+**Metal Extractor**
+	build
+		[NEW] prerequisites : [['vasari_unlock_resource_extractor_structures']]
+
+**Ravastra Skirmisher**
+	physics
+		max_angular_speed : 30.0 -> 24.0
+	weapons
+		weapons
+			vasari_light_frigate_pulse
+				medium_pulse
+					pitch_speed : 0.0 -> 2.0
+					yaw_speed : 0.0 -> 2.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					damage : 24.0 -> 27.0
+					penetration : 200.0 -> 270.0
+					dps : 12.0 -> 13.5
+				yaw_arc
+					min_angle : -5.0 -> -15.0
+					max_angle : 5.0 -> 15.0
+	health
+		durability : 120.0 -> 180.0
+		levels
+			max_hull_points : 910.0 -> 940.0
+			max_shield_points : 660.0 -> 720.0
+
+**Skirantra Carrier**
+	weapons
+		max_range_weapon_index : 2 -> 0
+	[NEW] capture_points : 5
+
+**Sularkon Tyrant**
+	[NEW] capture_points : 10
+
+**Sulsurak Defensor**
+	physics
+		max_linear_speed : 1200.0 -> 960.0
+		time_to_max_linear_speed : 2.5 -> 2.0
+	weapons
+		weapons
+			vasari_anticorvette_corvette_light_pulse
+				light_pulse
+					penetration : 90.0 -> 60.0
+			vasari_anticorvette_corvette_point_defense_pulse
+				point_defense_pulse
+					damage : 3.0 -> 6.0
+					dps : 2.0 -> 4.0
+	health
+		levels
+			max_hull_points : 460.0 -> 420.0
+			max_armor_points : 180.0 -> 120.0
+	build
+		price
+			metal : 60.0 -> 80.0
+			crystal : 35.0 -> 45.0
+
+**Tosurak Raider**
+	physics
+		max_linear_speed : 1080.0 -> 960.0
+		time_to_max_linear_speed : 3.0 -> 2.0
+	build
+		price
+			metal : 75.0 -> 95.0
+			crystal : 45.0 -> 60.0
+
+**Vorastra Titan**
+	[NEW] capture_points : 15
+
+**Vulkoras Desolator**
+	[NEW] capture_points : 5
+
+**Vulrak Penetrator**
+	weapons
+		weapons
+			vasari_antiarmor_cruiser_beam
+				very_heavy_beam
+					pitch_speed : 0.0 -> 1.5
+					yaw_speed : 0.0 -> 1.5
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+				yaw_arc
+					min_angle : -10.0 -> -15.0
+					max_angle : 10.0 -> 15.0
+				pitch_arc
+					min_angle : -2.5 -> -5.0
+					max_angle : 2.5 -> 5.0
+
+**[NEW] vasari_phase_missile_very_light**
+	spatial
+		radius : 3.0
+		box
+			center
+				-0.002537
+				-0.065923
+				-0.044599
+			extents
+				0.40965
+				0.156563
+				1.670115
+	physics
+		can_move_linear
+		max_linear_speed : 1800.0
+		time_to_max_linear_speed : 1.0
+		arrival_tolerance_spatial_radius_scalar : 1.0
+		death_linear_speed_range
+			1.0
+			2.0
+		can_move_angular
+		max_angular_speed : 240.0
+		time_to_max_angular_speed : 1.2
+		max_bank_angle : 89.0
+		death_angular_speed_range
+			5.0
+			10.0
+		linear_acceleration_angle : 180.0
+		linear_speed_floor_to_brake_for_turn : 1000.0
+		can_strafe_linear
+		strafe_max_linear_speed : 250.0
+		time_to_strafe_max_linear_speed : 1.5
+		strafe_max_linear_distance_spatial_radius_scalar : 3.0
+		strafe_stop_angle : 180.0
+		strafe_speed_start_angle : 10.0
+		strafe_max_start_turning_angle : 170.0
+	move
+		follow_distance : 35.015949
+	ai
+		attack_target_type_groups
+			corvette_light
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft
+	ai_attack_target
+		attack_priority : 50.0
+		is_always_a_threat
+		attack_target_type : torpedo
+	user_interface
+		can_ever_be_selected
+		has_sub_selection_grouping
+		selection_group_unit_type : torpedo
+		can_move
+		can_attack
+		can_show_distance_to_plane_line
+		skip_as_zoom_target_when_zooming_in_from_far
+		can_rotate
+	formation
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 1
+				group : 1
+	health
+		release_time_after_death : 5.0
+		levels
+				max_hull_points : 3.0
+				max_armor_points : 6.0
+				armor_strength : 18.0
+	torpedo
+	target_filter_unit_type : torpedo
+	tags
+		torpedo
+	skin_groups
+			skins
+				vasari_phase_missile_very_light
+	action_effect_size : small_unit
+
+**dlc_vasari_mad_titan**
+	[NEW] capture_points : 15
+
+**ship_loot_vasari**
+	[NEW] capturable_unit : {'type': 'destroy_on_capture', 'allow_surrender': False, 'capture_points_total': 750}
+
+## Unit_skin Changes
+
+**Junsurak Warden**
+	skin_stages
+		child_mesh_alias_bindings
+			map
+				[NEW] vasari_antifighter_pd_pulse_barrel_0 : {'mesh_alias_name': 'vasari_antifighter_pd_pulse_barrel_0', 'mesh_definition': {'mesh': 'vasari_antifighter_pd_pulse_barrel_0', 'shader': 'ship', 'is_shadow_blocker': True}}
+
+**[NEW] vasari_phase_missile_very_light**
+	skin_stages
+			is_main_view_icon_visible_camera_distance : 86911.688245
+			min_camera_distance : 8.659952
+			gui
+				hud_icon : vasari_phase_missile_hud_icon
+				hud_monochrome_icon : vasari_small_phase_missile_main_view_icon
+				name : Phase Missile
+				description : A powerful self-guided warhead that has a chance to bypass enemy shields by phasing out.
+			unit_mesh
+				mesh : vasari_asset_phase_missile_small
+				shader : ship
+				is_shadow_blocker
+			main_view_icon
+				group : strikecraft
+				icon : vasari_small_phase_missile_main_view_icon
+				selected_icon : vasari_small_phase_missile_main_view_icon_selected
+				sub_selected_icon : vasari_small_phase_missile_main_view_icon_sub_selected
+			effects
+				exhaust_effects
+					particle_effects
+							particle_effect : vasari_torpedo_exhaust
+					trail_effects
+							trail_effect : vasari_small_phase_missile
+			sounds
+				move_sounds
+					engine : engine_techsupportship
+			death_sequence_group : vasari_torpedo0
+
+## Research_subject Changes
+
+**vasari_unlock_heavy_turret_servos**
+	weapon_modifiers
+		scalar
+			modifier_type : range -> tracking_speed
+			value : 0.1 -> 0.48
+
+**vasari_unlock_precise_turret_servos**
+	weapon_modifiers
+		scalar
+			value : 0.15 -> 0.12
+
+**vasari_upgrade_orbital_extraction_0**
+	field_coord
+		0 : 0 -> 1
+	research_time : 60.0 -> 75.0
+	price
+		metal : 120.0 -> 150.0
+		crystal : 60.0 -> 90.0
+	[NEW] prerequisites : [['vasari_unlock_resource_extractor_structures']]
+
+## Player Changes
+
+**vasari_loyalist**
+	starting_units_in_hyperspace
+		required_units
+			vasari_colony_capital_ship
+				options
+					[NEW] forced_leveled_up_abilities : ['vasari_colony_capital_ship_colonize']
+	research
+		research_subjects
+			[NEW] vasari_unlock_resource_extractor_structures
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_vasari_alliance_bounty_taunt.1', 'player_ai_vasari_alliance_bounty_taunt.2', 'player_ai_vasari_alliance_bounty_taunt.4', 'player_ai_vasari_alliance_bounty_taunt.6', 'player_ai_vasari_alliance_bounty_taunt.7', 'player_ai_vasari_alliance_bounty_taunt.8', 'player_ai_vasari_alliance_bounty_taunt.9', 'player_ai_vasari_alliance_bounty_taunt.10']
+
+**vasari_rebel**
+	starting_units_in_hyperspace
+		required_units
+			vasari_colony_capital_ship
+				options
+					[NEW] forced_leveled_up_abilities : ['vasari_colony_capital_ship_colonize']
+	research
+		research_subjects
+			[NEW] vasari_unlock_resource_extractor_structures
+	ai
+		[NEW] bounty_placed_messages : ['player_ai_vasari_exodus_bounty_taunt.0', 'player_ai_vasari_exodus_bounty_taunt.1', 'player_ai_vasari_exodus_bounty_taunt.2', 'player_ai_vasari_exodus_bounty_taunt.3', 'player_ai_vasari_exodus_bounty_taunt.4', 'player_ai_vasari_exodus_bounty_taunt.7', 'player_ai_vasari_exodus_bounty_taunt.8']
+
+
+# Viturak Changes
+
+## Player Changes
+
+**viturak_cabal_npc**
+	npc
+		[NEW] can_survey_planets : False
+		visuals
+			npc_player.viturak_cabal.name
+				icon : faction_7 -> faction_13
+
+
+# Pirate Changes
+
+## Ability Changes
+
+**[NEW] Mag Blast Torpedo Salvo**
+	action_data_source : pirate_king_capital_ship_mag_blast_missile
+	is_ultimate_ability
+	level_source : internal_level
+	min_required_unit_levels
+		5
+		9
+	active_actions
+		cooldown_time : mag_blast_missile_cooldown_time_value
+		antimatter_cost : mag_blast_missile_antimatter_cost_value
+		actions
+			actions
+					constraint
+						constraint_type : unit_passes_target_filter
+						unit
+							unit_type : target
+						target_filter_id : mag_blast_missile_target_filter
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : current_spawner
+					operators
+							operator_type : apply_buff
+							buff : pirate_king_capital_ship_mag_blast_missile_on_self
+		targeting_type : unit_targeted
+		target_filters
+			mag_blast_missile_target_filter
+		range : mag_blast_missile_range_value
+		move_alignment
+			type : yaw
+		firing_angle : 30.0
+		auto_cast
+			enabled_by_default_behavior : always
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint
+				unit
+					unit_type : current_spawner
+				unit_constraint
+					constraint_type : weapon_has_target
+			target_definitions
+					target_filter : mag_blast_missile_auto_cast_high_priority_target_filter
+					target_filter : mag_blast_missile_auto_cast_low_priority_target_filter
+	gui
+		hud_icon : trader_torpedo_cruiser_heavy_torpedo_ability_hud_icon
+		tooltip_picture : trader_torpedo_cruiser_heavy_torpedo_ability_tooltip_picture
+		name : Mag Blast Torpedo Salvo
+		description : Fire a salvo of Mag Blast Torpedoes at the target, dealing significant shield damage in an area upon impact.
+		targeting
+			targeting_type : range_and_radius
+			values
+				range : mag_blast_missile_range_value
+				radius : mag_blast_missile_splash_radius_value
+		tooltip_line_groups
+				header_text : Salvo Properties:
+				lines
+						rendering_type : single_value
+						label_text : Missiles Fired:
+						value_id : mag_blast_missile_torpedo_count_value
+				header_text : Missile Properties:
+				lines
+						rendering_type : single_value
+						label_text : Damage:
+						value_id : mag_blast_missile_damage_value
+						value_color : negative
+						visible_if_value_zero
+						rendering_type : single_value
+						label_text : Pierce:
+						value_id : mag_blast_missile_armor_penetration_value
+						rendering_type : single_value
+						label_text : Missile Speed:
+						value_id : mag_blast_missile_torpedo_speed_value
+						rendering_type : single_value
+						label_text : Missile Hull Points:
+						value_id : mag_blast_missile_torpedo_hull_value
+						rendering_type : single_value
+						label_text : Missile Armor Points:
+						value_id : mag_blast_missile_torpedo_armor_value
+				header_text : Area Damage On Hit:
+				lines
+						rendering_type : single_value
+						label_text : Shield Damage:
+						value_id : mag_blast_missile_splash_damage_value
+						value_color : negative
+						visible_if_value_zero
+						rendering_type : single_value
+						label_text : Pierce:
+						value_id : mag_blast_missile_armor_penetration_value
+						rendering_type : single_value
+						label_text : Radius:
+						value_id : mag_blast_missile_splash_radius_value
+	ability_positions
+			position
+				-125.755096
+				9.678199
+				15.36973
+			position
+				-148.672195
+				-2.731733
+				15.36973
+			position
+				-111.961098
+				-13.32696
+				15.36973
+			position
+				-102.692101
+				21.16291
+				15.36973
+			position
+				-139.828705
+				32.50882
+				15.36973
+			position
+				125.542603
+				9.439618
+				15.36973
+			position
+				139.882797
+				32.186741
+				15.36973
+			position
+				102.162399
+				21.35161
+				15.36973
+			position
+				148.784302
+				-3.00209
+				15.36973
+			position
+				112.170502
+				-13.4422
+				15.36973
+
+**[NEW] Pillage**
+	action_data_source : pirate_king_capital_ship_pillage
+	is_ultimate_ability
+	level_source : internal_level
+	min_required_unit_levels
+		0
+		2
+		4
+		6
+		8
+	active_actions
+		cooldown_time : pillage_cooldown_time_value
+		antimatter_cost : pillage_antimatter_cost_value
+		actions
+			actions
+					constraint
+						constraint_type : unit_passes_target_filter
+						unit
+							unit_type : target
+						target_filter_id : pillage_target_filter
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					travel_time
+						travel_time_source : explicit_time
+						explicit_time_value : pillage_delay_time_value
+					operators
+							operator_type : apply_buff
+							buff : pirate_king_capital_ship_pillage_on_target
+							operator_type : play_weapon_effects
+							effect_alias_binding : unit_skin
+							mesh_point : aura
+							effects
+								projectile_travel_effect : trader_colony_shuttle
+								projectile_travel_easing_function : in_out_cubic
+		targeting_type : unit_targeted
+		target_filters
+			pillage_target_filter
+		range : pillage_range_value
+		auto_cast
+			enabled_by_default_behavior : always
+			target_definitions
+					target_filter : pillage_auto_cast_target_filter
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		tooltip_picture : trader_pirate_raid_supply_research_subject_tooltip_picture
+		name : Pillage
+		description : Send an elite pirate pillaging crew to the target structure or starbase to deal hull damage, loot credits and gain a unique buff for the Pirate Galleon depending on the type of structure attacked.
+		targeting
+			targeting_type : range
+			values
+				range : pillage_range_value
+		tooltip_line_groups
+				lines
+						rendering_type : single_value
+						label_text : Hull Damage Rate:
+						value_id : pillage_damage_rate_value
+						visible_if_value_zero
+						rendering_type : single_value
+						label_text : Pierce:
+						value_id : pillage_penetration_value
+
+**[NEW] Redline Navigation**
+	action_data_source : pirate_king_capital_ship_redline_navigation
+	level_source : internal_level
+	min_required_unit_levels
+		0
+		2
+		4
+		6
+		8
+	active_actions
+		cooldown_time : redline_navigation_cooldown_time_value
+		antimatter_cost : redline_navigation_antimatter_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : current_spawner
+					operators
+							operator_type : apply_buff
+							buff : pirate_king_capital_ship_redline_navigation_on_spawner
+		auto_cast
+			enabled_by_default_behavior : always
+			caster_constraint
+				constraint_type : unit_passes_unit_constraint
+				unit
+					unit_type : current_spawner
+				unit_constraint
+					constraint_type : has_mutation
+					mutation : phase_jump_disruption
+	gui
+		hud_icon : trader_unstoppable_phase_jump_research_subject_hud_icon
+		tooltip_picture : trader_unstoppable_phase_jump_research_subject_tooltip_picture
+		name : Redline Navigation
+		description : When activated, a jury-rigged phase drive and nav computer allows the Pirate Galleon and all nearby ships to ignore the effects of a Phase Jump Inhibitor for their next jump. \n\nFriendly ships under the effect of Redline Navigation will gain faster phase jump charge time, but suffer damage when they begin their jump. The Pirate Galleon is immune to this effect.
+		targeting
+			targeting_type : radius
+			values
+				radius : redline_navigation_radius_value
+		tooltip_line_groups
+				lines
+						rendering_type : single_value
+						label_text : Radius:
+						value_id : redline_navigation_radius_value
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : redline_navigation_duration_value
+						value_suffix : seconds
+				header_text : Pirate Galleon:
+				lines
+						rendering_type : single_line
+						label_text : Cannot Have Phase Engines Disrupted
+						value_color : positive
+				header_text : Other Ships:
+				lines
+						rendering_type : single_line
+						label_text : Cannot Have Phase Engines Disrupted
+						value_color : positive
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : redline_navigation_hyperspace_charge_time_modifier
+						rendering_type : single_value
+						label_text : Current Hull Lost on Phase Jump
+						value_id : redline_navigation_hull_damage_value
+						value_float_format : percentage
+						value_color : negative
+
+**[NEW] Twin Ion Bolt**
+	action_data_source : pirate_king_capital_ship_ion_bolt
+	level_source : internal_level
+	min_required_unit_levels
+		0
+		2
+		4
+		6
+		8
+	active_actions
+		cooldown_time : ion_bolt_cooldown_time_value
+		antimatter_cost : ion_bolt_antimatter_cost_value
+		actions
+			actions
+					action_type : use_unit_operators_on_single_unit
+					destination_unit
+						unit_type : target
+					travel_time
+						travel_time_source : speed_and_distance
+						travel_speed_value : ion_bolt_travel_speed_value
+					operators
+							operator_type : apply_buff
+							buff : pirate_king_capital_ship_ion_bolt
+							operator_type : play_weapon_effects
+							effect_alias_binding : unit_skin
+							mesh_point : weapon.0
+							effects
+								muzzle_effect : pirate_king_capital_ship_ion_bolt_muzzle
+								projectile_travel_effect : pirate_king_capital_ship_ion_bolt_weapon_projectile_travel
+		targeting_type : unit_targeted
+		target_filters
+			ion_bolt_target_filter
+		range : ion_bolt_range_value
+		move_alignment
+			type : yaw
+		firing_angle : 5.0
+		auto_cast
+			enabled_by_default_behavior : always
+			target_definitions
+					target_filter : ion_bolt_auto_cast_high_priority_target_filter
+					target_filter : ion_bolt_auto_cast_low_priority_target_filter
+	gui
+		hud_icon : trader_antiarmor_frigate_coil_shock_ability_hud_icon
+		tooltip_picture : trader_antiarmor_frigate_coil_shock_ability_tooltip_picture
+		name : Twin Ion Bolt
+		description : Ions disable the targetted unit, preventing it from moving, attacking or using abilities.
+		targeting
+			targeting_type : range
+			values
+				range : ion_bolt_range_value
+		tooltip_line_groups
+				header_text : Target:
+				lines
+						rendering_type : single_value
+						label_text : Duration:
+						value_id : ion_bolt_disable_duration_value
+						value_suffix : seconds
+						rendering_type : single_line
+						label_text : Weapons Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Abilities Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Cooldowns Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Shield Regen Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Armor Regen Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Hull Regen Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Build Ships Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Strikecraft Launch & Dock Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Cannot Restore Antimatter
+						value_color : negative
+						rendering_type : single_line
+						label_text : Cannot Passively Restore Antimatter
+						value_color : negative
+						rendering_type : single_line
+						label_text : Sub-light Engines Disabled
+						value_color : negative
+						rendering_type : single_line
+						label_text : Phase Engines Disabled
+						value_color : negative
+
+## Action_data_source Changes
+
+**[NEW] Mag Blast Torpedo Salvo**
+	level_count : 2
+	target_filters
+			target_filter_id : mag_blast_missile_auto_cast_high_priority_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					starbase
+					super_capital_ship
+					titan
+				ownerships
+					enemy
+				constraints
+						constraint_type : is_always_a_threat
+						constraint_type : has_shields
+			target_filter_id : mag_blast_missile_auto_cast_low_priority_target_filter
+			target_filter
+				unit_types
+					cruiser
+					frigate
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : is_always_a_threat
+						constraint_type : has_shields
+			target_filter_id : mag_blast_missile_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					cruiser
+					frigate
+					starbase
+					structure
+					super_capital_ship
+					titan
+				ownerships
+					enemy
+	action_values
+			action_value_id : mag_blast_missile_antimatter_cost_value
+			action_value
+				values
+					75.0
+					125.0
+			action_value_id : mag_blast_missile_armor_penetration_value
+			action_value
+				values
+					1000.0
+					1000.0
+			action_value_id : mag_blast_missile_cooldown_time_value
+			action_value
+				values
+					90.0
+					60.0
+			action_value_id : mag_blast_missile_damage_value
+			action_value
+				values
+					300.0
+					300.0
+			action_value_id : mag_blast_missile_range_value
+			action_value
+				values
+					20000.0
+					20000.0
+			action_value_id : mag_blast_missile_splash_damage_value
+			action_value
+				values
+					500.0
+					500.0
+			action_value_id : mag_blast_missile_splash_radius_value
+			action_value
+				values
+					1500.0
+					1500.0
+			action_value_id : mag_blast_missile_torpedo_count_value
+			action_value
+				values
+					5.0
+					10.0
+			action_value_id : mag_blast_missile_execution_interval_value
+			action_value
+				values
+					0.3
+					0.3
+			action_value_id : mag_blast_missile_torpedo_lifetime_value
+			action_value
+				values
+					30.0
+					30.0
+			action_value_id : mag_blast_missile_torpedo_steering_distance_radius_scalar_value
+			action_value
+				values
+					1.0
+					1.0
+			action_value_id : mag_blast_missile_torpedo_speed_value
+			action_value
+				values
+					1150.0
+					1150.0
+			action_value_id : mag_blast_missile_torpedo_hull_value
+			action_value
+				values
+					75.0
+					75.0
+			action_value_id : mag_blast_missile_torpedo_armor_value
+			action_value
+				values
+					100.0
+					100.0
+
+**[NEW] Pillage**
+	level_count : 5
+	target_filters
+			target_filter_id : pillage_auto_cast_target_filter
+			target_filter
+				unit_types
+					starbase
+					structure
+				ownerships
+					enemy
+			target_filter_id : pillage_target_filter
+			target_filter
+				unit_types
+					starbase
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : is_fully_built
+						constraint_type : composite_not
+						constraint
+							constraint_type : has_buff
+							buff : pirate_king_capital_ship_pillage_on_target_lockout
+							include_pending_buffs
+			target_filter_id : pillage_armed_structure_target_filter
+			target_filter
+				unit_types
+					starbase
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : has_weapon
+			target_filter_id : pillage_culture_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_culture_center_structure
+								constraint_type : has_definition
+								unit_definition : trader_culture_center_structure
+								constraint_type : has_definition
+								unit_definition : vasari_culture_center_structure
+			target_filter_id : pillage_exotic_refinery_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_exotic_factory_structure
+								constraint_type : has_definition
+								unit_definition : trader_exotic_factory_structure
+								constraint_type : has_definition
+								unit_definition : vasari_exotic_factory_structure
+			target_filter_id : pillage_extractor_crystal_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_crystal_extractor_structure
+								constraint_type : has_definition
+								unit_definition : trader_crystal_extractor_structure
+								constraint_type : has_definition
+								unit_definition : vasari_crystal_extractor_structure
+			target_filter_id : pillage_extractor_metal_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_metal_extractor_structure
+								constraint_type : has_definition
+								unit_definition : trader_metal_extractor_structure
+								constraint_type : has_definition
+								unit_definition : vasari_metal_extractor_structure
+			target_filter_id : pillage_research_civilian_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_civilian_research_lab_structure
+								constraint_type : has_definition
+								unit_definition : trader_civilian_research_lab_structure
+								constraint_type : has_definition
+								unit_definition : vasari_civilian_research_lab_structure
+			target_filter_id : pillage_research_military_target_filter
+			target_filter
+				unit_types
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : composite_or
+						constraints
+								constraint_type : has_definition
+								unit_definition : advent_military_research_lab_structure
+								constraint_type : has_definition
+								unit_definition : trader_military_research_lab_structure
+								constraint_type : has_definition
+								unit_definition : vasari_military_research_lab_structure
+	action_values
+			action_value_id : pillage_antimatter_cost_value
+			action_value
+				values
+					90.0
+					100.0
+					110.0
+					120.0
+					140.0
+			action_value_id : pillage_cooldown_time_value
+			action_value
+				values
+					40.0
+					35.0
+					30.0
+					25.0
+					15.0
+			action_value_id : pillage_lockout_duration
+			action_value
+				values
+					300.0
+					300.0
+					300.0
+					300.0
+					300.0
+			action_value_id : pillage_execution_interval_count_value
+			action_value
+				values
+					100.0
+					100.0
+					100.0
+					100.0
+					100.0
+			action_value_id : pillage_credits_value
+			action_value
+				values
+					5.0
+					6.0
+					7.0
+					8.0
+					10.0
+			action_value_id : pillage_damage_rate_value
+			action_value
+				values
+					5.0
+					6.0
+					7.0
+					8.0
+					10.0
+			action_value_id : pillage_penetration_value
+			action_value
+				values
+					1000.0
+					1000.0
+					1000.0
+					1000.0
+					1000.0
+			action_value_id : pillage_delay_time_value
+			action_value
+				values
+					3.0
+					3.0
+					3.0
+					3.0
+					3.0
+			action_value_id : pillage_range_value
+			action_value
+				values
+					5000.0
+					5000.0
+					5000.0
+					5000.0
+					5000.0
+			action_value_id : pillage_armed_structure_duration
+			action_value
+				values
+					60.0
+					60.0
+					60.0
+					60.0
+					60.0
+			action_value_id : pillage_armed_structure_value
+			action_value
+				values
+					0.1
+					0.15
+					0.2
+					0.25
+					0.35
+			action_value_id : pillage_culture_duration
+			action_value
+				values
+					300.0
+					300.0
+					300.0
+					300.0
+					300.0
+			action_value_id : pillage_culture_rate_value
+			action_value
+				values
+					0.01
+					0.015
+					0.02
+					0.025
+					0.035
+			action_value_id : pillage_extractor_crystal_value
+			action_value
+				values
+					100.0
+					150.0
+					200.0
+					250.0
+					350.0
+			action_value_id : pillage_extractor_metal_value
+			action_value
+				values
+					100.0
+					150.0
+					200.0
+					250.0
+					350.0
+			action_value_id : pillage_research_civilian_duration
+			action_value
+				values
+					300.0
+					300.0
+					300.0
+					300.0
+					300.0
+			action_value_id : pillage_research_civilian_value
+			action_value
+				values
+					0.25
+					0.3
+					0.35
+					0.4
+					0.5
+			action_value_id : pillage_research_military_duration
+			action_value
+				values
+					300.0
+					300.0
+					300.0
+					300.0
+					300.0
+			action_value_id : pillage_research_military_value
+			action_value
+				values
+					0.25
+					0.3
+					0.35
+					0.4
+					0.5
+	buff_unit_modifiers
+			buff_unit_modifier_id : pillage_culture_rate_modifier
+			buff_unit_modifier
+				modifier_type : culture_rate
+				value_behavior : additive
+				value_id : pillage_culture_rate_value
+	buff_weapon_modifiers
+			buff_weapon_modifier_id : pillage_weapon_cooldown_modifier
+			buff_weapon_modifier
+				modifier_type : cooldown_duration
+				value_behavior : scalar
+				value_id : pillage_armed_structure_value
+	buff_empire_modifiers
+			buff_empire_modifier_id : pillage_research_civilian_modifier
+			buff_empire_modifier
+				modifier_type : civilian_research_rate
+				value_behavior : scalar
+				value_id : pillage_research_civilian_value
+			buff_empire_modifier_id : pillage_research_military_modifier
+			buff_empire_modifier
+				modifier_type : military_research_rate
+				value_behavior : scalar
+				value_id : pillage_research_military_value
+
+**[NEW] Redline Navigation**
+	level_count : 5
+	target_filters
+			target_filter_id : redline_navigation_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					starbase
+					structure
+					super_capital_ship
+					titan
+				ownerships
+					friendly
+				constraints
+						constraint_type : not_self
+						constraint_type : can_ever_hyperspace
+	action_values
+			action_value_id : redline_navigation_antimatter_cost_value
+			action_value
+				values
+					150.0
+					155.0
+					160.0
+					165.0
+					175.0
+			action_value_id : redline_navigation_cooldown_time_value
+			action_value
+				values
+					400.0
+					360.0
+					320.0
+					280.0
+					200.0
+			action_value_id : redline_navigation_duration_value
+			action_value
+				values
+					200.0
+					200.0
+					200.0
+					200.0
+					200.0
+			action_value_id : redline_navigation_radius_value
+			action_value
+				values
+					7500.0
+					9000.0
+					10500.0
+					12000.0
+					15000.0
+			action_value_id : redline_navigation_hull_damage_value
+			action_value
+				transform_type : per_current_hull_points
+				transform_unit
+					unit_type : current_spawner
+				values
+					0.3
+					0.25
+					0.2
+					0.15
+					0.05
+			action_value_id : redline_navigation_penetration_value
+			action_value
+				values
+					1000.0
+					1000.0
+					1000.0
+					1000.0
+					1000.0
+			action_value_id : redline_navigation_hyperspace_charge_time_value
+			action_value
+				values
+					-0.15
+					-0.2
+					-0.25
+					-0.3
+					-0.4
+	buff_unit_modifiers
+			buff_unit_modifier_id : redline_navigation_hyperspace_charge_time_modifier
+			buff_unit_modifier
+				modifier_type : hyperspace_charge_time
+				value_behavior : scalar
+				value_id : redline_navigation_hyperspace_charge_time_value
+
+**[NEW] Twin Ion Bolt**
+	level_count : 5
+	target_filters
+			target_filter_id : ion_bolt_auto_cast_high_priority_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					super_capital_ship
+					titan
+				ownerships
+					enemy
+				constraints
+						constraint_type : is_always_a_threat
+						constraint_type : composite_not
+						constraint
+							constraint_type : has_buff
+							buff : pirate_king_capital_ship_ion_bolt
+							include_pending_buffs
+			target_filter_id : ion_bolt_auto_cast_low_priority_target_filter
+			target_filter
+				unit_types
+					cruiser
+					frigate
+					structure
+				ownerships
+					enemy
+				constraints
+						constraint_type : is_always_a_threat
+						constraint_type : composite_not
+						constraint
+							constraint_type : has_buff
+							buff : pirate_king_capital_ship_ion_bolt
+							include_pending_buffs
+			target_filter_id : ion_bolt_target_filter
+			target_filter
+				unit_types
+					capital_ship
+					corvette
+					cruiser
+					frigate
+					super_capital_ship
+					structure
+					titan
+				ownerships
+					enemy
+	action_values
+			action_value_id : ion_bolt_antimatter_cost_value
+			action_value
+				values
+					75.0
+					80.0
+					85.0
+					90.0
+					100.0
+			action_value_id : ion_bolt_cooldown_time_value
+			action_value
+				values
+					25.0
+					21.0
+					17.0
+					13.0
+					5.0
+			action_value_id : ion_bolt_disable_duration_value
+			action_value
+				values
+					4.0
+					6.0
+					8.0
+					10.0
+					14.0
+			action_value_id : ion_bolt_range_value
+			action_value
+				values
+					12000.0
+					12000.0
+					12000.0
+					12000.0
+					12000.0
+			action_value_id : ion_bolt_travel_speed_value
+			action_value
+				values
+					6000.0
+					6000.0
+					6000.0
+					6000.0
+					6000.0
+
+**[NEW] pirate_king_incursion**
+	effect_alias_bindings
+			alias_name : pirate_king_incursion_jollyroger_effect
+			alias_binding
+				particle_effect : pirate_jollyroger_status_effects
+
+**[NEW] pirate_king_on_spawn**
+
+## Buff Changes
+
+**[NEW] Twin Ion Bolt**
+	active_duration : ion_bolt_disable_duration_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect_by_size
+								small_unit : pirate_king_capital_ship_ion_bolt_buff_on_target_small
+								medium_unit : pirate_king_capital_ship_ion_bolt_buff_on_target_medium
+								large_unit : pirate_king_capital_ship_ion_bolt_buff_on_target_large
+						constraint
+							constraint_type : unit_passes_unit_constraint
+							unit
+								unit_type : current_spawner
+							unit_constraint
+								constraint_type : can_ever_move
+						action_type : start_brake_to_stop
+			trigger_event_type : on_buff_made_dead
+			action_group
+				constraint
+					constraint_type : unit_passes_unit_constraint
+					unit
+						unit_type : current_spawner
+					unit_constraint
+						constraint_type : can_ever_move
+				actions
+						action_type : stop_brake_to_stop
+	unit_mutations
+		disable_can_hyperspace
+		disable_can_launch_or_dock_strikecraft
+		disable_can_passively_regenerate_armor
+		disable_can_passively_regenerate_hull
+		disable_can_passively_regenerate_shields
+		disable_can_update_unit_production
+		disable_can_use_active_abilities
+		disable_can_update_ability_cooldown_progress
+		disable_can_use_weapons
+		disable_can_have_antimatter_restored
+		disable_can_passively_regenerate_antimatter
+	gui
+		hud_icon : trader_antiarmor_frigate_coil_shock_ability_hud_icon
+		name : Twin Ion Bolt
+		visibility_scope : negative
+		tooltip_line_groups
+				lines
+						rendering_type : single_line
+						label_text : Sub-light Engines Disabled
+						value_color : negative
+
+**[NEW] pirate_king_capital_ship_mag_blast_missile_on_self**
+	make_dead_on_all_finite_time_actions_done
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_current_spawner_spawned_torpedo
+			action_group
+				constraint
+					constraint_type : unit_passes_unit_constraint
+					unit
+						unit_type : trigger_event_destination
+					unit_constraint
+						constraint_type : has_definition
+						unit_definition : pirate_large_torpedo_ability
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : trigger_event_destination
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_mag_blast_missile_on_torpedo
+	time_actions
+			execution_interval_value : mag_blast_missile_execution_interval_value
+			execution_interval_count_value : mag_blast_missile_torpedo_count_value
+			action_group
+				actions
+						action_type : use_position_operators_on_single_position
+						position
+							position_type : ability_position
+							ability
+								ability_type : source_ability
+							ability_position_picking_type : next_sequential
+						position_operators
+								operator_type : create_torpedo
+								torpedo_to_create : pirate_large_torpedo_ability
+								torpedo_forward
+									direction_type : operand_position_forward
+								torpedo_source_unit
+									unit_type : current_spawner
+								torpedo_enable_steering_distance_as_radius_scalar_value : mag_blast_missile_torpedo_steering_distance_radius_scalar_value
+								torpedo_target_unit
+									unit_type : target
+								damage_affect_type : shields_only
+								damage_value : mag_blast_missile_damage_value
+								penetration_value : mag_blast_missile_armor_penetration_value
+								duration_value : mag_blast_missile_torpedo_lifetime_value
+								operator_type : play_point_effect
+								effect_definition
+									binding : unit_skin
+									mesh_point : center
+									effect : pirate_king_capital_ship_mag_blast_missile_muzzle
+								effect_destination_unit
+									unit_type : current_spawner
+								effect_forward
+									direction_type : operand_position_forward
+
+**[NEW] pirate_king_capital_ship_mag_blast_missile_on_torpedo**
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : preserve_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_unit_damaged_by_current_spawner
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_radius_of_unit
+						radius_origin_unit
+							unit_type : trigger_event_destination
+						radius_value : mag_blast_missile_splash_radius_value
+						operators_constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : operand_destination
+							target_filter_id : mag_blast_missile_target_filter
+						operators
+								operator_type : apply_damage
+								damage_source : ability
+								damage_affect_type : shields_only
+								damage_value : mag_blast_missile_splash_damage_value
+								penetration_value : mag_blast_missile_armor_penetration_value
+						action_type : make_buff_dead
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_armed_structure**
+	active_duration : pillage_armed_structure_duration
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect : pirate_king_capital_ship_pillage_armed_structure
+	weapon_modifiers
+			buff_weapon_modifier_id : pillage_weapon_cooldown_modifier
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		name : Pillage
+		visibility_scope : positive
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_culture**
+	active_duration : pillage_culture_duration
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect : pirate_king_capital_ship_pillage_culture
+	unit_modifiers
+			buff_unit_modifier_id : pillage_culture_rate_modifier
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		name : Pillage
+		visibility_scope : positive
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_exotic_refinery**
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : play_point_effect
+								effect_definition
+									binding : unit_skin
+									mesh_point : center
+									effect : pirate_king_capital_ship_pillage_exotic_refinery
+						action_type : give_exotics
+						player
+							player_type : buff_owner_player
+						exotics
+							exotics_source_type : explicit_amount
+							exotic_amounts
+									exotic_type : economic
+									count_value : fixed_one
+						action_type : make_buff_dead
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_extractor_crystal**
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : play_point_effect
+								effect_definition
+									binding : unit_skin
+									mesh_point : center
+									effect : pirate_king_capital_ship_pillage_extractor_crystal
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : give_assets
+								asset_type : crystal
+								asset_value : pillage_extractor_crystal_value
+						action_type : make_buff_dead
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_extractor_metal**
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : play_point_effect
+								effect_definition
+									binding : unit_skin
+									mesh_point : center
+									effect : pirate_king_capital_ship_pillage_extractor_metal
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : give_assets
+								asset_type : metal
+								asset_value : pillage_extractor_metal_value
+						action_type : make_buff_dead
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_research_civilian**
+	active_duration : pillage_research_civilian_duration
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect : pirate_king_capital_ship_pillage_research_civilian
+	empire_modifiers
+			buff_empire_modifier_id : pillage_research_civilian_modifier
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		name : Pillage
+		visibility_scope : positive
+
+**[NEW] pirate_king_capital_ship_pillage_on_self_research_military**
+	active_duration : pillage_research_military_duration
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect : pirate_king_capital_ship_pillage_research_military
+	empire_modifiers
+			buff_empire_modifier_id : pillage_research_military_modifier
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		name : Pillage
+		visibility_scope : positive
+
+**[NEW] pirate_king_capital_ship_pillage_on_target**
+	make_dead_on_all_finite_time_actions_done
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			execution_interval_count_value : pillage_execution_interval_count_value
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : apply_damage
+								damage_source : ability
+								damage_affect_type : hull_only
+								damage_value : pillage_damage_rate_value
+								penetration_value : pillage_penetration_value
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : first_spawner
+						operators
+								operator_type : give_assets
+								asset_type : credits
+								asset_value : pillage_credits_value
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : above
+							effect : pirate_king_capital_ship_pillage_on_target
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : target
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_target_lockout
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_armed_structure_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_armed_structure
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_culture_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_culture
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_exotic_refinery_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_exotic_refinery
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_extractor_crystal_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_extractor_crystal
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_extractor_metal_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_extractor_metal
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_research_civilian_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_research_civilian
+						constraint
+							constraint_type : unit_passes_target_filter
+							unit
+								unit_type : target
+							target_filter_id : pillage_research_military_target_filter
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : previous_spawner
+						operators
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_pillage_on_self_research_military
+	gui
+		hud_icon : trader_pirate_raid_supply_research_subject_hud_icon
+		name : Pillage
+		visibility_scope : negative
+
+**[NEW] pirate_king_capital_ship_pillage_on_target_lockout**
+	active_duration : pillage_lockout_duration
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	gui
+		hud_icon : dlc2_trader_rebel_super_modular_overdrive_hud_icon
+		name : Pillage
+		visibility_scope : negative
+
+**[NEW] pirate_king_capital_ship_redline_navigation_on_spawner**
+	active_duration : redline_navigation_duration_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : restart_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	time_actions
+			execution_interval_value : fixed_one
+			action_group
+				actions
+						action_type : use_unit_operators_on_units_in_radius_of_unit
+						radius_origin_unit
+							unit_type : current_spawner
+						radius_value : redline_navigation_radius_value
+						operators
+								constraint
+									constraint_type : unit_passes_target_filter
+									unit
+										unit_type : operand_destination
+									target_filter_id : redline_navigation_target_filter
+								operator_type : apply_buff
+								buff : pirate_king_capital_ship_redline_navigation_on_target
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect : pirate_king_capital_ship_redline_navigation_on_spawner
+						action_type : make_buff_dead
+						buff : all_buffs_on_current_spawner
+						buff_constraint
+							constraint_type : buff_has_mutation
+							buff : operand_buff
+							mutation : phase_jump_disruption
+			trigger_event_type : on_current_spawner_hyperspace_stopped
+			action_group
+				actions
+						action_type : make_buff_dead
+	unit_mutations
+		phase_jump_disruption_immune
+	gui
+		hud_icon : trader_unstoppable_phase_jump_research_subject_hud_icon
+		name : Redline Navigation
+		visibility_scope : positive
+
+**[NEW] pirate_king_capital_ship_redline_navigation_on_target**
+	make_dead_on_parent_buff_made_dead
+	make_dead_on_distance_to_parent_buff_exceeded
+		distance : redline_navigation_radius_value
+	stacking_limit
+		stacking_limit : fixed_one
+		stacking_limit_met_behavior : preserve_existing_buff
+	stacking_ownership_type : for_all_players
+	restart_other_stacked_buffs_when_started
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : unit_skin
+							mesh_point : center
+							effect_by_size
+								small_unit : pirate_king_capital_ship_redline_navigation_on_target_small
+								medium_unit : pirate_king_capital_ship_redline_navigation_on_target_medium
+								large_unit : pirate_king_capital_ship_redline_navigation_on_target_large
+						action_type : make_buff_dead
+						buff : all_buffs_on_current_spawner
+						buff_constraint
+							constraint_type : buff_has_mutation
+							buff : operand_buff
+							mutation : phase_jump_disruption
+			trigger_event_type : on_current_spawner_hyperspace_started
+			action_group
+				actions
+						action_type : use_unit_operators_on_single_unit
+						destination_unit
+							unit_type : current_spawner
+						operators
+								operator_type : apply_damage
+								damage_source : ability
+								damage_affect_type : hull_only
+								damage_value : redline_navigation_hull_damage_value
+								penetration_value : redline_navigation_penetration_value
+			trigger_event_type : on_current_spawner_hyperspace_stopped
+			action_group
+				actions
+						action_type : make_buff_dead
+	unit_mutations
+		phase_jump_disruption_immune
+	unit_modifiers
+			buff_unit_modifier_id : redline_navigation_hyperspace_charge_time_modifier
+	gui
+		hud_icon : trader_unstoppable_phase_jump_research_subject_hud_icon
+		name : Redline Navigation
+		visibility_scope : positive
+		tooltip_line_groups
+				lines
+						rendering_type : buff_unit_modifier
+						unit_modifier_id : redline_navigation_hyperspace_charge_time_modifier
+						rendering_type : single_value
+						label_text : Current Hull Lost on Phase Jump
+						value_id : redline_navigation_hull_damage_value
+						value_float_format : percentage
+						value_color : negative
+
+**[NEW] pirate_king_incursion**
+	stacking_ownership_type : for_all_players
+	trigger_event_actions
+			trigger_event_type : on_buff_started
+			action_group
+				actions
+						action_type : start_buff_effect
+						effect_definition
+							binding : action_data_source
+							mesh_point : above
+							effect : pirate_king_incursion_jollyroger_effect
+
+**[NEW] pirate_king_on_spawn**
+	stacking_ownership_type : for_all_players
+
+## Unit Changes
+
+**Pirate Rogue**
+	physics
+		max_angular_speed : 30.0 -> 25.0
+		time_to_max_angular_speed : 2.0 -> 1.25
+	weapons
+		weapons
+			pirate_light_frigate_light_autocannon
+				medium_autocannon
+					name : weapon_name.light_autocannon -> weapon_name.medium_autocannon
+					pitch_speed : 0.0 -> 2.0
+					yaw_speed : 0.0 -> 2.0
+					[NEW] pitch_firing_tolerance : 3.0
+					[NEW] yaw_firing_tolerance : 3.0
+					cooldown_duration : 1.5 -> 2.0
+					damage : 9.0 -> 15.0
+					penetration : 100.0 -> 150.0
+					dps : 6.0 -> 7.5
+				yaw_arc
+					min_angle : -10.0 -> -15.0
+					max_angle : 10.0 -> 15.0
+				pitch_arc
+					min_angle : -10.0 -> -5.0
+					max_angle : 10.0 -> 5.0
+			pirate_light_frigate_light_autocannon_turret_right
+				medium_autocannon
+					name : weapon_name.light_autocannon -> weapon_name.medium_autocannon
+					pitch_speed : 40.0 -> 30.0
+					yaw_speed : 40.0 -> 30.0
+					pitch_firing_tolerance : 4.0 -> 3.0
+					yaw_firing_tolerance : 4.0 -> 3.0
+					cooldown_duration : 2.0 -> 3.0
+					damage : 8.0 -> 10.0
+					penetration : 100.0 -> 150.0
+					effects
+						burst_pattern
+							1 : 0.1 -> 0.15
+					dps : 4.0 -> 3.3333333333333335
+			pirate_light_frigate_light_autocannon_turret_left
+				medium_autocannon
+					name : weapon_name.light_autocannon -> weapon_name.medium_autocannon
+					pitch_speed : 40.0 -> 30.0
+					yaw_speed : 40.0 -> 30.0
+					pitch_firing_tolerance : 4.0 -> 3.0
+					yaw_firing_tolerance : 4.0 -> 3.0
+					cooldown_duration : 2.0 -> 3.0
+					damage : 8.0 -> 10.0
+					penetration : 100.0 -> 150.0
+					effects
+						burst_pattern
+							1 : 0.1 -> 0.15
+					dps : 4.0 -> 3.3333333333333335
+	health
+		durability : 150.0 -> 100.0
+		levels
+			max_hull_points : 585.0 -> 685.0
+			max_armor_points : 730.0 -> 810.0
+
+**[NEW] Heavy Torpedo**
+	spatial
+		radius : 136.160538
+		box
+			center
+				0.0
+				2.8e-05
+				0.0
+			extents
+				9.701946
+				9.701998
+				136.04129
+	physics
+		can_move_linear
+		max_linear_speed : 1150.0
+		time_to_max_linear_speed : 2.0
+		arrival_tolerance_spatial_radius_scalar : 2.0
+		death_linear_speed_range
+			1.0
+			2.0
+		can_move_angular
+		max_angular_speed : 20.0
+		time_to_max_angular_speed : 2.0
+		max_bank_angle : 89.0
+		death_angular_speed_range
+			5.0
+			10.0
+		linear_acceleration_angle : 180.0
+		linear_speed_floor_to_brake_for_turn : 500.0
+		can_strafe_linear
+		strafe_max_linear_speed : 250.0
+		time_to_strafe_max_linear_speed : 1.5
+		strafe_max_linear_distance_spatial_radius_scalar : 3.0
+		strafe_stop_angle : 180.0
+		strafe_speed_start_angle : 10.0
+		strafe_max_start_turning_angle : 170.0
+	move
+		follow_distance : 35.015949
+	ai
+		attack_target_type_groups
+			heavy_capital
+			defense
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft
+	ai_attack_target
+		attack_priority : 50.0
+		is_always_a_threat
+		attack_target_type : torpedo
+	user_interface
+		can_ever_be_selected
+		has_sub_selection_grouping
+		selection_group_unit_type : torpedo
+		can_move
+		can_attack
+		can_show_distance_to_plane_line
+		skip_as_zoom_target_when_zooming_in_from_far
+		can_rotate
+	formation
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 1
+				group : 1
+	health
+		release_time_after_death : 5.0
+		levels
+				max_hull_points : 75.0
+				max_armor_points : 100.0
+				armor_strength : 30.0
+	torpedo
+	target_filter_unit_type : torpedo
+	tags
+		torpedo
+	skin_groups
+			skins
+				pirate_large_torpedo
+	action_effect_size : small_unit
+
+**[NEW] Mag Blast Torpedo**
+	spatial
+		radius : 136.160538
+		box
+			center
+				0.0
+				2.8e-05
+				0.0
+			extents
+				9.701946
+				9.701998
+				136.04129
+	physics
+		can_move_linear
+		max_linear_speed : 1150.0
+		time_to_max_linear_speed : 2.0
+		arrival_tolerance_spatial_radius_scalar : 2.0
+		death_linear_speed_range
+			1.0
+			2.0
+		can_move_angular
+		max_angular_speed : 20.0
+		time_to_max_angular_speed : 2.0
+		max_bank_angle : 89.0
+		death_angular_speed_range
+			5.0
+			10.0
+		linear_acceleration_angle : 180.0
+		linear_speed_floor_to_brake_for_turn : 500.0
+		can_strafe_linear
+		strafe_max_linear_speed : 250.0
+		time_to_strafe_max_linear_speed : 1.5
+		strafe_max_linear_distance_spatial_radius_scalar : 3.0
+		strafe_stop_angle : 180.0
+		strafe_speed_start_angle : 10.0
+		strafe_max_start_turning_angle : 170.0
+	move
+		follow_distance : 35.015949
+	ai
+		attack_target_type_groups
+			heavy_capital
+			defense
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft
+	ai_attack_target
+		attack_priority : 50.0
+		is_always_a_threat
+		attack_target_type : torpedo
+	user_interface
+		can_ever_be_selected
+		has_sub_selection_grouping
+		selection_group_unit_type : torpedo
+		can_move
+		can_attack
+		can_show_distance_to_plane_line
+		skip_as_zoom_target_when_zooming_in_from_far
+		can_rotate
+	formation
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 1
+				group : 1
+	health
+		release_time_after_death : 5.0
+		levels
+				max_hull_points : 75.0
+				max_armor_points : 100.0
+				armor_strength : 30.0
+	torpedo
+	target_filter_unit_type : torpedo
+	tags
+		torpedo
+	skin_groups
+			skins
+				pirate_large_torpedo_ability
+	action_effect_size : small_unit
+
+**[NEW] Pirate Galleon**
+	spatial
+		radius : 412.214142
+		box
+			center
+				0.0
+				1.085419
+				1.132095
+			extents
+				111.037498
+				119.2015
+				408.026306
+		collision_rank : 2
+	physics
+		can_move_linear
+		max_linear_speed : 800.0
+		time_to_max_linear_speed : 5.0
+		arrival_tolerance_spatial_radius_scalar : 0.25
+		death_linear_speed_range
+			0.75
+			1.25
+		can_move_angular
+		max_angular_speed : 19.5
+		time_to_max_angular_speed : 13.0
+		max_bank_angle : 15.0
+		death_angular_speed_range
+			2.0
+			4.0
+		linear_acceleration_angle : 75.0
+		can_strafe_linear
+		strafe_max_linear_speed : 262.5
+		time_to_strafe_max_linear_speed : 15.0
+		strafe_max_linear_distance_spatial_radius_scalar : 5.0
+		strafe_stop_angle : 180.0
+		strafe_speed_start_angle : 10.0
+		strafe_max_start_turning_angle : 170.0
+	hyperspace
+		speed : 215000.0
+		speed_between_stars : 752500.0
+		charge_time : 8.0
+		charge_time_variance : 1.0
+		min_charge_angle : 10.0
+		max_charge_angle : 45.0
+	move
+		follow_distance : 2281.230713
+	attack
+		attack_pattern
+			type : stop_and_fire
+	ai
+		attack_target_type_groups
+			capital_supercapital_heavy
+			antistructure_antiarmor
+			defense_civilian
+		attack_target_type_groups_to_ignore
+			torpedo_strikecraft_corvette
+		attack_target_type_groups_matching_weapon : pirate_king_capital_ship_gauss
+		auto_follow_target_priority : 5.0
+		pursuit
+			min_target_speed : 100.0
+			min_distance_to_target : 5000.0
+		attack_target_type_range_scalar : 1.5
+	ai_attack_target
+		attack_priority : 50.0
+		is_always_a_threat
+		attack_target_type : capital
+	user_interface
+		pip_type : capital_ship
+		can_ever_be_selected
+		selection_priority : 400
+		selection_group_unit_type : combat_ship
+		can_move
+		can_rotate
+		can_attack
+		can_show_max_weapon_range_in_tactical_view
+		can_show_distance_to_plane_line
+		bar_size : large
+	weapons
+		weapons
+				weapon : pirate_king_capital_ship_missile
+				mesh_point : weapon.1
+				weapon_position
+					-0.036655
+					9.382491
+					15.36973
+				non_turret_muzzle_positions
+						-125.755096
+						9.678199
+						15.36973
+						-148.672195
+						-2.731733
+						15.36973
+						-111.961098
+						-13.32696
+						15.36973
+						-102.692101
+						21.16291
+						15.36973
+						-139.828705
+						32.50882
+						15.36973
+						125.542603
+						9.439618
+						15.36973
+						139.882797
+						32.186741
+						15.36973
+						102.162399
+						21.35161
+						15.36973
+						148.784302
+						-3.00209
+						15.36973
+						112.170502
+						-13.4422
+						15.36973
+				forward
+					0.0
+					0.010796
+					0.999942
+				up
+					-0.0
+					0.999942
+					-0.010796
+				yaw_arc
+					min_angle : -45.0
+					max_angle : 45.0
+				pitch_arc
+					min_angle : -45.0
+					max_angle : 45.0
+				weapon : pirate_king_capital_ship_gauss
+				mesh_point : weapon.0
+				weapon_position
+					0.051453
+					37.402748
+					413.599396
+				non_turret_muzzle_positions
+						66.873596
+						37.402748
+						413.599396
+						-66.770691
+						37.402748
+						413.599396
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.0
+					1.0
+					0.0
+				yaw_arc
+					min_angle : -3.0
+					max_angle : 3.0
+				pitch_arc
+					min_angle : -3.0
+					max_angle : 3.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.0
+				weapon_position
+					-0.261438
+					100.401497
+					-292.556396
+				forward
+					-0.0
+					0.0
+					-1.0
+				up
+					0.0
+					1.0
+					0.0
+				yaw_arc
+					min_angle : -140.0
+					max_angle : 140.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 10.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.1
+				weapon_position
+					59.48175
+					16.54763
+					-275.988892
+				forward
+					0.0
+					0.0
+					-1.0
+				up
+					1.0
+					0.0
+					0.0
+				yaw_arc
+					min_angle : -100.0
+					max_angle : 100.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 3.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.2
+				weapon_position
+					-59.242401
+					16.54763
+					-275.988892
+				forward
+					0.0
+					0.0
+					-1.0
+				up
+					-1.0
+					0.0
+					-0.0
+				yaw_arc
+					min_angle : -100.0
+					max_angle : 100.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 3.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.3
+				weapon_position
+					0.091186
+					-110.131104
+					251.152298
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.0
+					-1.0
+					0.0
+				yaw_arc
+					min_angle : -160.0
+					max_angle : 160.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 15.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.4
+				weapon_position
+					79.34198
+					-22.19145
+					170.088898
+				forward
+					0.080396
+					-0.063737
+					0.994723
+				up
+					0.465477
+					0.884854
+					0.019076
+				yaw_arc
+					min_angle : -13.0
+					max_angle : 135.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 5.0
+				weapon : pirate_king_capital_ship_autocannon
+				mesh_point : child.pirate_asset_autocannon_mount.5
+				weapon_position
+					-79.320763
+					-22.19145
+					170.088898
+				forward
+					0.097818
+					0.030946
+					0.994723
+				up
+					-0.472701
+					0.881016
+					0.019076
+				yaw_arc
+					min_angle : -145.0
+					max_angle : 3.0
+				pitch_arc
+					min_angle : -85.0
+					max_angle : 5.0
+				weapon : pirate_king_capital_ship_point_defense_autocannon
+				mesh_point : child.pirate_asset_pdcannon_mount.0
+				weapon_position
+					0.08029
+					-117.1409
+					-54.662941
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.0
+					-1.0
+					0.0
+				yaw_arc
+					min_angle : -180.0
+					max_angle : 180.0
+				pitch_arc
+					min_angle : -75.0
+					max_angle : 3.0
+				weapon : pirate_king_capital_ship_point_defense_autocannon
+				mesh_point : child.pirate_asset_pdcannon_mount.1
+				weapon_position
+					43.462219
+					63.85416
+					-218.030899
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.692971
+					0.720966
+					-0.0
+				yaw_arc
+					min_angle : -180.0
+					max_angle : 180.0
+				pitch_arc
+					min_angle : -75.0
+				weapon : pirate_king_capital_ship_point_defense_autocannon
+				mesh_point : child.pirate_asset_pdcannon_mount.2
+				weapon_position
+					-43.188869
+					63.85416
+					-218.030899
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					-0.694934
+					0.719074
+					0.0
+				yaw_arc
+					min_angle : -180.0
+					max_angle : 180.0
+				pitch_arc
+					min_angle : -75.0
+				weapon : pirate_king_capital_ship_point_defense_autocannon
+				mesh_point : child.pirate_asset_pdcannon_mount.3
+				weapon_position
+					0.08029
+					56.069359
+					281.89621
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.0
+					1.0
+					0.0
+				yaw_arc
+					min_angle : -90.0
+					max_angle : 90.0
+				pitch_arc
+					min_angle : -75.0
+					max_angle : 3.0
+				weapon : pirate_king_capital_ship_planet_bombing
+				mesh_point : bomb
+				weapon_position
+					0.120753
+					-27.555731
+					371.81369
+				non_turret_muzzle_positions
+						0.120753
+						-27.555731
+						371.81369
+				forward
+					0.0
+					0.0
+					1.0
+				up
+					0.0
+					1.0
+					0.0
+				yaw_arc
+					min_angle : -10.0
+					max_angle : 10.0
+				pitch_arc
+					min_angle : -10.0
+					max_angle : 10.0
+	formation
+		leader_priority : 2
+		offsets_per_formation_type
+			ships_and_structures
+				rank : 3
+				group : 2
+	spawn_debris
+		spawn_debris_time : 5.5
+		generic_group_name : trader
+		generic_counts
+			small_debris
+				16
+				28
+			large_debris
+				4
+				7
+		custom_debris
+				unit : trader_colony_capital_ship_debris_front
+				basis
+					position
+						0.0
+						5.0
+						330.0
+					rotation
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+				unit : trader_colony_capital_ship_debris_mid
+				basis
+					position
+						100.0
+						50.0
+						110.0
+					rotation
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+				unit : trader_colony_capital_ship_debris_back
+				basis
+					position
+						5.0
+						15.0
+						-315.0
+					rotation
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+						0.0
+						0.0
+						0.0
+						1.0
+		spawn_loot
+			loot_unit : ship_loot_trader
+			loot_name : Galleon Wreckage
+			experience_given : 200.0
+			exotics
+					bundles
+							types
+								utility
+							counts
+								1
+								1
+					weight : 1.0
+					bundles
+							types
+								economic
+							counts
+								1
+								2
+					weight : 1.0
+			assets
+				credits
+					250
+					750
+				metal
+					85
+					225
+				crystal
+					60
+					180
+	health
+		release_time_after_death : 60.0
+		can_collide_duration_after_death : 6.0
+		durability : 500.0
+		can_ever_be_resurrected
+		levels
+				max_hull_points : 5170.0
+				hull_point_restore_rate : 3.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.5
+				max_armor_points : 2165.0
+				armor_point_restore_rate : 4.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 100.0
+				shield_point_restore_rate : 5.0
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 50.0
+					restore_percentage : 0.25
+				experience_given_on_death : 100.0
+				max_hull_points : 5690.0
+				hull_point_restore_rate : 3.5
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.55
+				max_armor_points : 2335.0
+				armor_point_restore_rate : 4.6
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 105.0
+				shield_point_restore_rate : 6.2
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 48.0
+					restore_percentage : 0.27
+				experience_given_on_death : 120.0
+				max_hull_points : 6205.0
+				hull_point_restore_rate : 4.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.6
+				max_armor_points : 2505.0
+				armor_point_restore_rate : 5.2
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 110.0
+				shield_point_restore_rate : 7.4
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 46.0
+					restore_percentage : 0.29
+				experience_given_on_death : 150.0
+				max_hull_points : 6725.0
+				hull_point_restore_rate : 4.5
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.65
+				max_armor_points : 2675.0
+				armor_point_restore_rate : 5.8
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 115.0
+				shield_point_restore_rate : 8.6
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 44.0
+					restore_percentage : 0.32
+				experience_given_on_death : 190.0
+				max_hull_points : 7240.0
+				hull_point_restore_rate : 5.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.7
+				max_armor_points : 2845.0
+				armor_point_restore_rate : 6.4
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 120.0
+				shield_point_restore_rate : 9.8
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 42.0
+					restore_percentage : 0.35
+				experience_given_on_death : 240.0
+				max_hull_points : 7755.0
+				hull_point_restore_rate : 5.5
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.75
+				max_armor_points : 3010.0
+				armor_point_restore_rate : 7.0
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 125.0
+				shield_point_restore_rate : 11.0
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 40.0
+					restore_percentage : 0.38
+				experience_given_on_death : 300.0
+				max_hull_points : 8275.0
+				hull_point_restore_rate : 6.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.8
+				max_armor_points : 3180.0
+				armor_point_restore_rate : 7.6
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 130.0
+				shield_point_restore_rate : 12.2
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 38.0
+					restore_percentage : 0.41
+				experience_given_on_death : 370.0
+				max_hull_points : 8790.0
+				hull_point_restore_rate : 6.5
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.85
+				max_armor_points : 3350.0
+				armor_point_restore_rate : 8.2
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 135.0
+				shield_point_restore_rate : 13.4
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 36.0
+					restore_percentage : 0.44
+				experience_given_on_death : 450.0
+				max_hull_points : 9310.0
+				hull_point_restore_rate : 7.0
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 0.92
+				max_armor_points : 3520.0
+				armor_point_restore_rate : 8.8
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 140.0
+				shield_point_restore_rate : 14.6
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 33.0
+					restore_percentage : 0.47
+				experience_given_on_death : 540.0
+				max_hull_points : 9825.0
+				hull_point_restore_rate : 7.5
+				hull_point_restore_cooldown_duration_after_damage_taken : 60.0
+				hull_crippled_percentage : 1.0
+				max_armor_points : 3685.0
+				armor_point_restore_rate : 9.4
+				armor_point_restore_cooldown_duration_after_damage_taken : 60.0
+				armor_strength : 145.0
+				shield_point_restore_rate : 15.8
+				shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+				shield_burst_restore
+					cooldown_duration : 30.0
+					restore_percentage : 0.5
+				experience_given_on_death : 640.0
+	antimatter
+	levels
+		type : experience
+		levels
+				experience_to_next_level : 200.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 260.0
+						antimatter_restore_rate : 0.85
+					scalar_values
+				experience_to_next_level : 500.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 295.0
+						antimatter_restore_rate : 0.95
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.02
+						cooldown_duration : -0.05
+				experience_to_next_level : 900.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 330.0
+						antimatter_restore_rate : 1.05
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.04
+						cooldown_duration : -0.1
+				experience_to_next_level : 1500.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 365.0
+						antimatter_restore_rate : 1.15
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.06
+						cooldown_duration : -0.15
+				experience_to_next_level : 2300.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 400.0
+						antimatter_restore_rate : 1.25
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.08
+						cooldown_duration : -0.2
+				experience_to_next_level : 3300.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 435.0
+						antimatter_restore_rate : 1.35
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.1
+						cooldown_duration : -0.25
+				experience_to_next_level : 4500.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 470.0
+						antimatter_restore_rate : 1.45
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.12
+						cooldown_duration : -0.3
+				experience_to_next_level : 6000.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 505.0
+						antimatter_restore_rate : 1.55
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.14
+						cooldown_duration : -0.35
+				experience_to_next_level : 7800.0
+				unit_modifiers
+					additive_values
+						max_antimatter : 540.0
+						antimatter_restore_rate : 1.65
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.16
+						cooldown_duration : -0.4
+				unit_modifiers
+					additive_values
+						max_antimatter : 575.0
+						antimatter_restore_rate : 1.75
+					scalar_values
+				weapon_modifiers
+					additive_values
+					scalar_values
+						damage : 0.18
+						cooldown_duration : -0.45
+	build
+		build_time : 75.0
+		price
+			credits : 2500.0
+			metal : 850.0
+			crystal : 600.0
+		exotic_price
+				exotic_type : offense
+				count : 1
+				exotic_type : economic
+				count : 2
+		build_kind : capital_ship
+		supply_cost : 50
+		build_group_id : capital_ship
+	culture_provider
+	items
+		levels
+				max_ship_component_count : 4
+	item_builds
+			build_group
+				trader_flak_burst
+				trader_high_yield_warheads
+				trader_targeting_array
+				trader_volatile_accelerants
+			weight : 10.0
+			build_group
+				trader_flak_burst
+			weight : 8.0
+			build_group
+				trader_combat_repair_system
+				trader_heavy_armor
+			weight : 5.0
+			build_group
+				trader_targeting_array
+			weight : 5.0
+			build_group
+				trader_high_yield_warheads
+			weight : 3.0
+			build_group
+				trader_radiation_bomb
+				trader_salvage_kit
+			weight : 3.0
+			build_group
+				trader_war_reporter
+			build_group
+				trader_capital_ship_insurance
+	target_filter_unit_type : capital_ship
+	tags
+		capital_ship
+	is_loot_collector
+	capture_points : 10
+	abilities
+			abilities
+				pirate_king_capital_ship_pillage
+				pirate_king_capital_ship_ion_bolt
+				pirate_king_capital_ship_redline_navigation
+				pirate_king_capital_ship_mag_blast_missile
+	ship_roles
+		attack_ship
+		bomb_planet
+	skin_groups
+			skins
+				pirate_king_capital_ship
+	action_effect_size : medium_unit
+	can_join_fleet
+	capturable_unit
+		type : change_owner_on_capture
+		allow_surrender
+		capture_points_total : 500
+		has_surrender_cooldown
+		surrender_cooldown_duration : 60
+
+## Unit_skin Changes
+
+**Pirate Rogue**
+	skin_stages
+		effects
+			[NEW] damage_effects : {'max_damage_effect_count': 4, 'damage_effects': [{'max_count': 2, 'weight': 4.0, 'hull_percentage_threshold': 0.99, 'particle_effect': 'tec_damage_embers'}, {'max_count': 2, 'weight': 4.0, 'hull_percentage_threshold': 0.99, 'particle_effect': 'damage_smoke_1'}, {'max_count': 1, 'weight': 3.0, 'hull_percentage_threshold': 0.75, 'particle_effect': 'tec_damage_plasma_sparks'}, {'max_count': 1, 'weight': 3.0, 'hull_percentage_threshold': 0.75, 'particle_effect': 'damage_electricity_2', 'sound': 'ambient_loop_electrical_damage_01'}, {'max_count': 1, 'weight': 2.0, 'hull_percentage_threshold': 0.75, 'particle_effect': 'damage_air_decompression', 'sound': 'ambient_loop_airdecompression'}]}
+			[NEW] shield_effect : trader_light_frigate
+			effect_alias_bindings
+				pirate_light_frigate_light_autocannon_weapon_hit_hull
+					alias_binding
+						particle_effect : light_autocannon_impact -> medium_autocannon_impact
+						sounds
+							[NEW] weapon_impact_physical_medium_hithull
+							[NEW] weapon_impact_physical_medium_hithull_01
+							[NEW] weapon_impact_physical_medium_hithull_02
+							[NEW] weapon_impact_physical_medium_hithull_03
+							[NEW] weapon_impact_physical_medium_hithull_04
+							[REMOVED] weapon_impact_physical_light_hithull
+							[REMOVED] weapon_impact_physical_light_hithull_01
+							[REMOVED] weapon_impact_physical_light_hithull_02
+							[REMOVED] weapon_impact_physical_light_hithull_03
+							[REMOVED] weapon_impact_physical_light_hithull_04
+				pirate_light_frigate_light_autocannon_weapon_hit_shield
+					alias_binding
+						particle_effect : light_autocannon_impact -> medium_autocannon_impact
+						sounds
+							[NEW] weapon_impact_generic_medium_hitshields
+							[NEW] weapon_impact_generic_medium_hitshields_01
+							[NEW] weapon_impact_generic_medium_hitshields_02
+							[NEW] weapon_impact_generic_medium_hitshields_03
+							[REMOVED] weapon_impact_generic_light_hitshields
+							[REMOVED] weapon_impact_generic_light_hitshields_01
+							[REMOVED] weapon_impact_generic_light_hitshields_02
+							[REMOVED] weapon_impact_generic_light_hitshields_03
+				pirate_light_frigate_light_autocannon_weapon_muzzle
+					alias_binding
+						particle_effect : trader_light_autocannon_weapon_muzzle -> trader_medium_autocannon_weapon_muzzle
+						sounds
+							[NEW] weapon_muzzle_tech_medium_autocannon
+							[NEW] weapon_muzzle_tech_medium_autocannon_01
+							[NEW] weapon_muzzle_tech_medium_autocannon_02
+							[NEW] weapon_muzzle_tech_medium_autocannon_03
+							[NEW] weapon_muzzle_tech_medium_autocannon_04
+							[REMOVED] weapon_muzzle_tech_light_autocannon
+							[REMOVED] weapon_muzzle_tech_light_autocannon_01
+							[REMOVED] weapon_muzzle_tech_light_autocannon_02
+							[REMOVED] weapon_muzzle_tech_light_autocannon_03
+				pirate_light_frigate_light_autocannon_weapon_projectile_travel
+					alias_binding
+						particle_effect : trader_light_autocannon_weapon_projectile_travel -> trader_medium_autocannon_weapon_projectile_travel
+				trader_antifighter_frigate_point_defense_autocannon_weapon_hit_hull
+					alias_binding
+						sounds
+							[NEW] weapon_impact_physical_pointdefense_hithull
+							[NEW] weapon_impact_physical_pointdefense_hithull_01
+							[NEW] weapon_impact_physical_pointdefense_hithull_02
+							[NEW] weapon_impact_physical_pointdefense_hithull_03
+							[REMOVED] weapon_impact_physical_light_hithull
+							[REMOVED] weapon_impact_physical_light_hithull_01
+							[REMOVED] weapon_impact_physical_light_hithull_02
+							[REMOVED] weapon_impact_physical_light_hithull_03
+							[REMOVED] weapon_impact_physical_light_hithull_04
+				trader_antifighter_frigate_point_defense_autocannon_weapon_projectile_travel
+					alias_binding
+						particle_effect : trader_light_autocannon_weapon_projectile_travel -> trader_point_defense_autocannon_weapon_projectile_travel
+		sounds
+			move_sounds
+				engine : engine_techcapitalship -> engine_techfrigateship
+
+**[NEW] Heavy Torpedo**
+	skin_stages
+			is_main_view_icon_visible_camera_distance : 46559.832989
+			min_camera_distance : 519.537414
+			gui
+				hud_icon : trader_torpedo_cruiser_torpedo_hud_icon
+				hud_monochrome_icon : trader_torpedo_cruiser_torpedo_main_view_icon
+				name : Heavy Torpedo
+				description : An extremely powerful self-guided and self-propelled warhead with a massive explosive payload.
+			unit_mesh
+				mesh : pirate_large_torpedo
+				shader : ship
+				is_shadow_blocker
+			main_view_icon
+				group : strikecraft
+				icon : trader_torpedo_cruiser_torpedo_main_view_icon
+			effects
+				exhaust_effects
+					particle_effects
+							particle_effect : pirate_large_torpedo_exhaust
+					trail_effects
+							trail_effect : pirate_large_torpedo
+			sounds
+				move_sounds
+					engine : ambient_loop_tech_neutrontorp_engine
+			death_sequence_group : pirate_torpedo0
+
+**[NEW] Mag Blast Torpedo**
+	skin_stages
+			is_main_view_icon_visible_camera_distance : 46559.832989
+			min_camera_distance : 519.537414
+			gui
+				hud_icon : trader_torpedo_cruiser_torpedo_hud_icon
+				hud_monochrome_icon : trader_torpedo_cruiser_torpedo_main_view_icon
+				name : Mag Blast Torpedo
+				description : An extremely powerful self-guided and self-propelled warhead with a massive explosive payload.
+			unit_mesh
+				mesh : pirate_large_torpedo
+				shader : ship
+				is_shadow_blocker
+			main_view_icon
+				group : strikecraft
+				icon : trader_torpedo_cruiser_torpedo_main_view_icon
+			effects
+				exhaust_effects
+					particle_effects
+							particle_effect : pirate_large_torpedo_exhaust_super
+					trail_effects
+							trail_effect : pirate_super_large_torpedo
+			sounds
+				move_sounds
+					engine : ambient_loop_tech_neutrontorp_engine
+			death_sequence_group : pirate_super_torpedo0
+
+**[NEW] Pirate Galleon**
+	name
+		group : capital_ship
+	skin_stages
+			is_main_view_icon_visible_camera_distance : 22391.391875
+			min_camera_distance : 764.70139
+			gui
+				hud_icon : pirate_king_captial_ship_hud_icon
+				hud_monochrome_icon : pirate_king_capital_ship_main_view_icon
+				hud_picture : pirate_king_capital_ship_hud_picture
+				tooltip_picture : pirate_king_captial_ship_tooltip_picture
+				name : Pirate Galleon
+				description : The ultimate pirate raider - no starbase is safe!.
+				hud_selection_window_icon_offet
+					-10
+					0
+			unit_mesh
+				mesh : pirate_capital_ship_king
+				shader : ship
+				is_shadow_blocker
+			child_mesh_alias_bindings
+				map
+						mesh_alias_name : pirate_asset_autocannon_barrel_0
+						mesh_definition
+							mesh : pirate_asset_autocannon_barrel_0
+							shader : ship
+							is_shadow_blocker
+						mesh_alias_name : pirate_asset_autocannon_mount_0
+						mesh_definition
+							mesh : pirate_asset_autocannon_mount_0
+							shader : ship
+							is_shadow_blocker
+						mesh_alias_name : pirate_asset_pdcannon_barrel_0
+						mesh_definition
+							mesh : pirate_asset_pdcannon_barrel_0
+							shader : ship
+							is_shadow_blocker
+						mesh_alias_name : pirate_asset_pdcannon_mount_0
+						mesh_definition
+							mesh : pirate_asset_pdcannon_mount_0
+							shader : ship
+							is_shadow_blocker
+			main_view_icon
+				group : capital_ship
+				icon : pirate_king_capital_ship_main_view_icon
+				selected_icon : pirate_king_capital_ship_main_view_icon_selected
+				sub_selected_icon : pirate_king_capital_ship_main_view_icon_sub_selected
+			effects
+				exhaust_effects
+					particle_effects
+							particle_effect : pirate_exhaust_large
+				hyperspace_effects
+					charge_effect : hyperspace_tech_capital_chargeup
+					charge_effect_between_stars : hyperspace_tech_capital_chargeup_interstellar
+					charge_effect_destabilized : hyperspace_tech_capital_chargeup_unstable
+					travel_effect : hyperspace_tech_capital_travel
+					travel_effect_between_stars : hyperspace_tech_capital_travel_interstellar
+					travel_effect_destabilized : hyperspace_tech_capital_travel_unstable
+					exit_effect : hyperspace_tech_capital_exit
+					charge_sound : hyperspace_chargeup
+					enter_sound : hyperspace_entry
+					exit_sound : hyperspace_exit
+				damage_effects
+					max_damage_effect_count : 20
+					damage_effects
+							max_count : 6
+							weight : 15.0
+							hull_percentage_threshold : 0.99
+							particle_effect : damage_air_decompression
+							sound : ambient_loop_airdecompression
+							max_count : 2
+							weight : 5.0
+							hull_percentage_threshold : 0.99
+							particle_effect : damage_smoke_2
+							max_count : 2
+							weight : 5.0
+							hull_percentage_threshold : 0.75
+							particle_effect : damage_smoke_3
+							max_count : 6
+							weight : 20.0
+							hull_percentage_threshold : 0.4
+							particle_effect : tec_damage_escaping_gas
+							sound : ambient_loop_tech_escaping_gas
+							max_count : 2
+							weight : 5.0
+							hull_percentage_threshold : 0.75
+							particle_effect : damage_electricity
+							sound : ambient_loop_electrical_damage
+							max_count : 2
+							weight : 5.0
+							hull_percentage_threshold : 0.5
+							particle_effect : damage_electricity_2
+							sound : ambient_loop_electrical_damage_01
+							max_count : 6
+							weight : 10.0
+							hull_percentage_threshold : 0.99
+							particle_effect : tec_damage_embers
+							max_count : 7
+							weight : 30.0
+							hull_percentage_threshold : 0.35
+							particle_effect : damage_fire
+							sound : ambient_loop_firedamage
+							max_count : 2
+							weight : 5.0
+							hull_percentage_threshold : 0.25
+							particle_effect : damage_fire_pillar
+							sound : ambient_loop_firepillar_damage
+				flair_effects
+						mesh_point_name : center
+						particle_effect : tec_damage_capital_1
+						constraint : is_crippled
+						mesh_point_name : center
+						particle_effect : pirate_surrender_status_effects
+						constraint : is_surrendered
+				level_up_effect : capitalship_levelup
+				level_up_sound : capitalship_levelup
+				shield_effect : pirate_king_capital_ship
+				effect_alias_bindings
+						alias_name : pirate_king_capital_ship_ion_bolt_buff_on_target_large
+						alias_binding
+							particle_effect : pirate_king_capital_ship_ion_bolt_buff_on_target_large
+							sounds
+								ability_impact_concussioncharge
+						alias_name : pirate_king_capital_ship_ion_bolt_buff_on_target_medium
+						alias_binding
+							particle_effect : pirate_king_capital_ship_ion_bolt_buff_on_target_medium
+							sounds
+								ability_impact_concussioncharge
+						alias_name : pirate_king_capital_ship_ion_bolt_buff_on_target_small
+						alias_binding
+							particle_effect : pirate_king_capital_ship_ion_bolt_buff_on_target_small
+							sounds
+								ability_impact_concussioncharge
+						alias_name : pirate_king_capital_ship_ion_bolt_muzzle
+						alias_binding
+							particle_effect : pirate_king_capital_ship_ion_bolt_muzzle
+							sounds
+								ability_muzzle_tech_concussioncharge
+						alias_name : pirate_king_capital_ship_ion_bolt_weapon_projectile_travel
+						alias_binding
+							particle_effect : pirate_king_capital_ship_ion_bolt_travel
+						alias_name : pirate_king_capital_ship_mag_blast_missile_muzzle
+						alias_binding
+							particle_effect : pirate_king_capital_ship_mag_blast_missile_muzzle_super
+							sounds
+								weapon_muzzle_tech_neutrontorp
+						alias_name : pirate_king_capital_ship_redline_navigation_on_spawner
+						alias_binding
+							particle_effect : pirate_redline_navigation_ability
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_redline_navigation_on_target_large
+						alias_binding
+							particle_effect : pirate_redline_navigation_status_large
+						alias_name : pirate_king_capital_ship_redline_navigation_on_target_medium
+						alias_binding
+							particle_effect : pirate_redline_navigation_status_medium
+						alias_name : pirate_king_capital_ship_redline_navigation_on_target_small
+						alias_binding
+							particle_effect : pirate_redline_navigation_status_small
+						alias_name : pirate_king_capital_ship_pillage_on_target
+						alias_binding
+							particle_effect : pirate_pillage_structure_status_effects
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_pillage_armed_structure
+						alias_binding
+							particle_effect : pirate_pillage_damage_status_effects
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_pillage_culture
+						alias_binding
+							particle_effect : pirate_pillage_culture_status_effects
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_pillage_extractor_crystal
+						alias_binding
+							particle_effect : pirate_pillage_crystals_status_effects
+							sounds
+								ability_impact_tech_empdroids_roboticscruiser
+						alias_name : pirate_king_capital_ship_pillage_extractor_metal
+						alias_binding
+							particle_effect : pirate_pillage_resources_status_effects
+							sounds
+								ability_impact_tech_empdroids_roboticscruiser
+						alias_name : pirate_king_capital_ship_pillage_exotic_refinery
+						alias_binding
+							particle_effect : pirate_pillage_exotic_status_effects
+							sounds
+								ability_impact_tech_empdroids_roboticscruiser
+						alias_name : pirate_king_capital_ship_pillage_research_civilian
+						alias_binding
+							particle_effect : pirate_pillage_research_status_effects
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_pillage_research_military
+						alias_binding
+							particle_effect : pirate_pillage_military_status_effects
+							sounds
+								ability_inspiring_broadcast_loop
+						alias_name : pirate_king_capital_ship_autocannon_weapon_hit_hull
+						alias_binding
+							particle_effect : medium_autocannon_impact
+							sounds
+								weapon_impact_physical_medium_hithull
+								weapon_impact_physical_medium_hithull_01
+								weapon_impact_physical_medium_hithull_02
+								weapon_impact_physical_medium_hithull_03
+								weapon_impact_physical_medium_hithull_04
+						alias_name : pirate_king_capital_ship_autocannon_weapon_hit_shield
+						alias_binding
+							particle_effect : medium_autocannon_impact
+							sounds
+								weapon_impact_generic_medium_hitshields
+								weapon_impact_generic_medium_hitshields_01
+								weapon_impact_generic_medium_hitshields_02
+								weapon_impact_generic_medium_hitshields_03
+						alias_name : pirate_king_capital_ship_autocannon_weapon_muzzle
+						alias_binding
+							particle_effect : trader_capital_medium_autocannon_weapon_muzzle
+							sounds
+								weapon_muzzle_tech_medium_autocannon
+								weapon_muzzle_tech_medium_autocannon_01
+								weapon_muzzle_tech_medium_autocannon_02
+								weapon_muzzle_tech_medium_autocannon_03
+								weapon_muzzle_tech_medium_autocannon_04
+								weapon_muzzle_tech_medium_autocannon_05
+						alias_name : pirate_king_capital_ship_autocannon_weapon_projectile_travel
+						alias_binding
+							particle_effect : trader_medium_autocannon_weapon_projectile_travel
+						alias_name : pirate_king_capital_ship_planet_bombing_weapon_hit_hull
+						alias_binding
+							particle_effect : pirate_bombardment_impact
+							sounds
+								weapon_impact_tech_planetbomb
+						alias_name : pirate_king_capital_ship_planet_bombing_weapon_hit_shield
+						alias_binding
+							particle_effect : pirate_bombardment_impact
+							sounds
+								weapon_impact_tech_planetbomb
+						alias_name : pirate_king_capital_ship_planet_bombing_weapon_muzzle
+						alias_binding
+							particle_effect : pirate_bombardment_muzzle
+							sounds
+								weapon_muzzle_tech_planetbomb
+						alias_name : pirate_king_capital_ship_planet_bombing_weapon_projectile_travel
+						alias_binding
+							particle_effect : pirate_bombardment_exhaust
+						alias_name : pirate_king_capital_ship_point_defense_autocannon_weapon_hit_hull
+						alias_binding
+							particle_effect : pd_autocannon_impact
+							sounds
+								weapon_impact_physical_pointdefense_hithull
+								weapon_impact_physical_pointdefense_hithull_01
+								weapon_impact_physical_pointdefense_hithull_02
+								weapon_impact_physical_pointdefense_hithull_03
+						alias_name : pirate_king_capital_ship_point_defense_autocannon_weapon_hit_shield
+						alias_binding
+							particle_effect : pd_autocannon_impact
+							sounds
+								weapon_impact_generic_pointdefense_hitshields
+								weapon_impact_generic_pointdefense_hitshields_01
+								weapon_impact_generic_pointdefense_hitshields_02
+								weapon_impact_generic_pointdefense_hitshields_03
+						alias_name : pirate_king_capital_ship_point_defense_autocannon_weapon_muzzle
+						alias_binding
+							particle_effect : trader_capital_point_defense_autocannon_weapon_muzzle
+							sounds
+								weapon_muzzle_tech_pointdefense_autocannon
+								weapon_muzzle_tech_pointdefense_autocannon_01
+								weapon_muzzle_tech_pointdefense_autocannon_02
+								weapon_muzzle_tech_pointdefense_autocannon_03
+						alias_name : pirate_king_capital_ship_point_defense_autocannon_weapon_projectile_travel
+						alias_binding
+							particle_effect : trader_point_defense_autocannon_weapon_projectile_travel
+						alias_name : trader_colony_shuttle
+						alias_binding
+							particle_effect : pirate_pillage_shuttle
+							sounds
+								ability_activate_tech_shuttlelaunch
+						alias_name : pirate_king_capital_ship_heavy_gauss_weapon_hit_hull
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_impact
+							sounds
+								weapon_impact_physical_heavy_hithull
+								weapon_impact_physical_heavy_hithull_01
+								weapon_impact_physical_heavy_hithull_02
+								weapon_impact_physical_heavy_hithull_03
+						alias_name : pirate_king_capital_ship_heavy_gauss_weapon_hit_shield
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_impact
+							sounds
+								weapon_impact_generic_heavy_hitshields
+								weapon_impact_generic_heavy_hitshields_01
+								weapon_impact_generic_heavy_hitshields_02
+								weapon_impact_generic_heavy_hitshields_03
+						alias_name : pirate_king_capital_ship_heavy_gauss_weapon_muzzle
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_muzzleflash
+							sounds
+								weapon_muzzle_tech_gausscannon
+								weapon_muzzle_tech_gausscannon_01
+								weapon_muzzle_tech_gausscannon_02
+								weapon_muzzle_tech_gausscannon_03
+						alias_name : pirate_king_capital_ship_heavy_gauss_weapon_projectile_travel
+						alias_binding
+							particle_effect : tech_capital_gauss_cannon_travel
+						alias_name : pirate_king_capital_ship_missile_weapon_muzzle
+						alias_binding
+							particle_effect : pirate_king_capital_ship_mag_blast_missile_muzzle
+							sounds
+								weapon_muzzle_tech_medium_missile_capship
+								weapon_muzzle_tech_medium_missile_capship_01
+								weapon_muzzle_tech_medium_missile_capship_02
+								weapon_muzzle_tech_medium_missile_capship_03
+			sounds
+				move_sounds
+					engine : engine_techcapitalship
+					hyperspace_travel : hyperspace_travel
+				dialogue
+					spawned
+						neutral
+							trader_colony_capital_ship_spawned_neutral_0
+					selected
+						neutral
+							trader_colony_capital_ship_selected_neutral_0
+							trader_colony_capital_ship_selected_neutral_1
+							trader_colony_capital_ship_selected_neutral_2
+						scared
+							trader_colony_capital_ship_selected_scared_0
+							trader_colony_capital_ship_selected_scared_1
+							trader_colony_capital_ship_selected_scared_2
+					order_issued
+						neutral
+							trader_colony_capital_ship_order_issued_neutral_0
+							trader_colony_capital_ship_order_issued_neutral_1
+							trader_colony_capital_ship_order_issued_neutral_2
+						scared
+							trader_colony_capital_ship_order_issued_scared_0
+							trader_colony_capital_ship_order_issued_scared_1
+							trader_colony_capital_ship_order_issued_scared_2
+					attack_order_issued
+						neutral
+							trader_colony_capital_ship_attack_order_issued_neutral_0
+							trader_colony_capital_ship_attack_order_issued_neutral_1
+							trader_colony_capital_ship_attack_order_issued_neutral_2
+							trader_colony_capital_ship_attack_order_issued_neutral_3_placeholder
+						scared
+							trader_colony_capital_ship_attack_order_issued_scared_0
+							trader_colony_capital_ship_attack_order_issued_scared_1
+							trader_colony_capital_ship_attack_order_issued_scared_2
+							trader_colony_capital_ship_attack_order_issued_scared_3_placeholder
+						smug
+							trader_colony_capital_ship_attack_order_issued_smug_0
+							trader_colony_capital_ship_attack_order_issued_smug_1
+							trader_colony_capital_ship_attack_order_issued_smug_2
+							trader_colony_capital_ship_attack_order_issued_smug_3_placeholder
+					retreat
+						neutral
+							trader_colony_capital_ship_retreat_neutral_0
+						scared
+							trader_colony_capital_ship_retreat_scared_0
+					hyperspace_charge_started
+						neutral
+							trader_colony_capital_ship_hyperspace_charge_started_neutral_0
+					cannot_hyperspace
+						neutral
+							trader_colony_capital_ship_cannot_hyperspace_neutral_0
+						scared
+							trader_colony_capital_ship_cannot_hyperspace_scared_0
+					shields_down
+						neutral
+							trader_colony_capital_ship_shields_down_neutral_0
+						scared
+							trader_colony_capital_ship_shields_down_scared_0
+					armor_down
+						scared
+							trader_colony_capital_ship_armor_down_scared_0
+					became_crippled
+						neutral
+							trader_colony_capital_ship_became_crippled_neutral_0
+						scared
+							trader_colony_capital_ship_became_crippled_scared_0
+					destroyed
+						neutral
+							trader_colony_capital_ship_destroyed_neutral_0
+						scared
+							trader_colony_capital_ship_destroyed_scared_0
+					ship_component_finished_building
+						neutral
+							trader_colony_capital_ship_ship_component_finished_building_neutral_0
+					ability_cooldown_is_not_completed
+						neutral
+							trader_colony_capital_ship_ability_cooldown_is_not_completed_neutral_0
+						scared
+							trader_colony_capital_ship_ability_cooldown_is_not_completed_scared_0
+					insufficient_antimatter
+						neutral
+							trader_colony_capital_ship_insufficient_antimatter_neutral_0
+						scared
+							trader_colony_capital_ship_insufficient_antimatter_scared_0
+			death_sequence_group : capitalshipcolony
+
+**pirate_base_planet_0**
+	name
+		[NEW] lowercase_group : planet_lowercase
+
+**pirate_base_planet_1**
+	name
+		[NEW] lowercase_group : planet_lowercase
+
+**pirate_base_planet_2**
+	name
+		[NEW] lowercase_group : planet_lowercase
+
+## Research_subject Changes
+
+**[NEW] trader_pirate_king_windfall**
+	domain : military
+	tier : 3
+	field : military_mobilization
+	field_coord
+		6
+		3
+	research_time : 360.0
+	price
+		credits : 1700.0
+		metal : 300.0
+		crystal : 500.0
+	exotic_price
+			exotic_type : offense
+			count : 1
+			exotic_type : economic
+			count : 2
+	prerequisites
+			trader_pirate_raid_supply
+	windfall
+		units_given
+			required_units
+					unit : pirate_king_capital_ship
+					count
+						1
+						1
+	name : Privateer Persuasion
+	name_uppercase : PRIVATEER PERSUASION
+	description : A Pirate Lord in command of a Galleon is persuaded to work with you through the offer of a letter of marque.
+	hud_icon : pirate_king_captial_ship_hud_icon
+	tooltip_picture : pirate_king_captial_ship_tooltip_picture
+	extra_text_filter_strings
+		faction
+		pirate
+		rebel
+
+**trader_unlock_pirate_mercenary_base_unit_item**
+	field_coord
+		1 : 3 -> 4
+
+## Player Changes
+
+**pirate_npc**
+	starting_units_in_formations
+		0
+			required_units
+				[NEW] pirate_king_capital_ship : {'unit': 'pirate_king_capital_ship', 'options': {'level': 5, 'forced_leveled_up_abilities': ['pirate_king_capital_ship_ion_bolt'], 'items': ['trader_antimatter_engine', 'trader_heavy_gauss_slugs', 'trader_missile_armor', 'trader_rapid_autoloader']}}
+		1
+			required_units
+				[NEW] pirate_king_capital_ship : {'unit': 'pirate_king_capital_ship', 'options': {'level': 5, 'forced_leveled_up_abilities': ['pirate_king_capital_ship_ion_bolt'], 'items': ['trader_antimatter_engine', 'trader_heavy_gauss_slugs', 'trader_missile_armor', 'trader_rapid_autoloader']}}
+		2
+			required_units
+				[NEW] pirate_king_capital_ship : {'unit': 'pirate_king_capital_ship', 'options': {'level': 5, 'forced_leveled_up_abilities': ['pirate_king_capital_ship_ion_bolt'], 'items': ['trader_antimatter_engine', 'trader_heavy_gauss_slugs', 'trader_missile_armor', 'trader_rapid_autoloader']}}
+	npc
+		[NEW] can_survey_planets : False
+		ai_params
+			max_jumps_from_home_planet_for_fleets : 1 -> 0
+		[NEW] bounty_market : {'market_weight': 15, 'bounty_cut': 0.3, 'metal_credit_value': 3.0, 'crystal_credit_value': 3.0, 'exotic_credit_values': [{'exotic_name': 'offense', 'credit_value': 750}, {'exotic_name': 'defense', 'credit_value': 750}, {'exotic_name': 'utility', 'credit_value': 750}, {'exotic_name': 'economic', 'credit_value': 750}, {'exotic_name': 'ultimate', 'credit_value': 1500}]}
+		[NEW] raid_arrival_taunt_chance : 1.0
+		[NEW] raid_arrival_messages : ['npc_pirate_raid_arrival_taunt.0', 'npc_pirate_raid_arrival_taunt.1', 'npc_pirate_raid_arrival_taunt.2', 'npc_pirate_raid_arrival_taunt.3', 'npc_pirate_raid_arrival_taunt.4', 'npc_pirate_raid_arrival_taunt.5']
+		[NEW] max_concurrent_raids : 5
+		[NEW] raid_types : [{'raid_type': 'collect_bounty', 'awakening_cooldown': [30.0, 90.0], 'standard_cooldown': [300.0, 900.0], 'initial_delay_from_game_start': [900.0, 900.0], 'max_jump_distance': 25, 'target_population_threshold': 20, 'dormant_target_search_interval': 10.0, 'arrival_delay_duration': 15.0, 'target_reevaluation_interval': 7.0, 'composition_brackets': [{'value_threshold': [0.0, 1500.0], 'units': {'required_units': [{'unit': 'pirate_siege_frigate', 'count': [2, 3]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 6.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 2.0}]}, 'supply_cap': 100, 'threat_level': 'low'}, {'value_threshold': [1500.0, 10000.0], 'units': {'required_units': [{'unit': 'pirate_heavy_cruiser', 'count': [2, 3]}, {'unit': 'pirate_siege_frigate', 'count': [3, 4]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 5.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}]}, 'supply_cap': 250, 'threat_level': 'moderate'}, {'value_threshold': [10000.0, 50000.0], 'units': {'required_units': [{'unit': 'pirate_heavy_cruiser', 'count': [3, 4]}, {'unit': 'pirate_siege_frigate', 'count': [4, 5]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 3.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}]}, 'supply_cap': 500, 'threat_level': 'high'}, {'value_threshold': [50000.0, 1000000.0], 'units': {'required_units': [{'unit': 'pirate_light_frigate', 'count': [5, 6]}, {'unit': 'pirate_heavy_cruiser', 'count': [4, 5]}, {'unit': 'pirate_siege_frigate', 'count': [5, 6]}, {'unit': 'pirate_king_capital_ship', 'options': {'level': 3, 'forced_leveled_up_abilities': ['pirate_king_capital_ship_redline_navigation']}}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 2.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}, {'unit': 'pirate_siege_frigate', 'weight': 1.0}]}, 'supply_cap': 900, 'threat_level': 'extreme'}]}, {'raid_type': 'destroy_planet', 'awakening_cooldown': [12.0, 24.0], 'standard_cooldown': [240.0, 360.0], 'initial_delay_from_game_start': [900.0, 900.0], 'max_jump_distance': 1, 'dormant_target_search_interval': 10.0, 'arrival_delay_duration': 150.0, 'composition_brackets': [{'value_threshold': [0.0, 100.0], 'units': {'required_units': [{'unit': 'pirate_siege_frigate', 'count': [4, 4]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 6.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 2.0}]}, 'supply_cap': 100, 'threat_level': 'low'}, {'value_threshold': [100.0, 500.0], 'units': {'required_units': [{'unit': 'pirate_siege_frigate', 'count': [10, 10]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 5.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}]}, 'supply_cap': 250, 'threat_level': 'moderate'}, {'value_threshold': [500.0, 1000.0], 'units': {'required_units': [{'unit': 'pirate_siege_frigate', 'count': [15, 15]}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 3.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}]}, 'supply_cap': 500, 'threat_level': 'high'}, {'value_threshold': [1000.0, 100000.0], 'units': {'required_units': [{'unit': 'pirate_siege_frigate', 'count': [20, 20]}, {'unit': 'pirate_king_capital_ship', 'options': {'level': 3, 'forced_leveled_up_abilities': ['pirate_king_capital_ship_pillage']}}], 'random_units': [{'unit': 'pirate_light_frigate', 'weight': 2.0}, {'unit': 'pirate_heavy_cruiser', 'weight': 3.0}, {'unit': 'pirate_siege_frigate', 'weight': 1.0}]}, 'supply_cap': 900, 'threat_level': 'extreme'}]}]
+		reputation
+			levels
+				0
+					npc_modifiers
+						[NEW] npc_bounty_fee : {'value_behavior': 'additive', 'value': -0.05}
+				1
+					npc_modifiers
+						[NEW] npc_bounty_fee : {'value_behavior': 'additive', 'value': -0.1}
+				2
+					npc_modifiers
+						[NEW] npc_bounty_fee : {'value_behavior': 'additive', 'value': -0.15}
+				3
+					npc_modifiers
+						[NEW] npc_bounty_fee : {'value_behavior': 'additive', 'value': -0.25}
+	[NEW] unit_names : [{'group_name': 'capital_ship', 'localized_text': {'id_prefix': 'capital_ship_name.pirate'}}]
+
+
+# Pranast Changes
+
+## Player Changes
+
+**pranast_united_npc**
+	npc
+		[NEW] can_survey_planets : False
+		visuals
+			npc_player.pranast_united.name
+				icon : faction_11 -> faction_4
+
+
+# Jiskun Changes
+
+## Player Changes
+
+**jiskun_force_npc**
+	npc
+		[NEW] can_survey_planets : False
+		visuals
+			npc_player.jiskun_force.name
+				icon : faction_13 -> faction_0
+
+
+# Eivonns Changes
+
+## Player Changes
+
+**eivonns_frigates_npc**
+	npc
+		[NEW] can_survey_planets : False
+		visuals
+			npc_player.eivonns_frigates.name
+				icon : faction_1 -> faction_9
+		[NEW] bounty_market : {'market_weight': 10, 'bounty_cut': 0.3, 'metal_credit_value': 3.0, 'crystal_credit_value': 3.0, 'exotic_credit_values': [{'exotic_name': 'offense', 'credit_value': 750}, {'exotic_name': 'defense', 'credit_value': 750}, {'exotic_name': 'utility', 'credit_value': 750}, {'exotic_name': 'economic', 'credit_value': 750}, {'exotic_name': 'ultimate', 'credit_value': 1500}]}
+
+
+# Aluxian Changes
+
+## Player Changes
+
+**aluxian_resurgence_npc**
+	npc
+		[NEW] can_survey_planets : False
+		visuals
+			npc_player.aluxian_resurgence.name
+				icon : faction_4 -> militia_0
+		[NEW] raid_arrival_taunt_chance : 0.75
+		[NEW] raid_arrival_messages : ['npc_aluxian_raid_arrival_taunt.0', 'npc_aluxian_raid_arrival_taunt.1', 'npc_aluxian_raid_arrival_taunt.2', 'npc_aluxian_raid_arrival_taunt.3', 'npc_aluxian_raid_arrival_taunt.4', 'npc_aluxian_raid_arrival_taunt.5']
+		[NEW] max_concurrent_raids : 2
+		[NEW] raid_types : [{'raid_type': 'claim_planet', 'awakening_cooldown': [20.0, 30.0], 'standard_cooldown': [300.0, 600.0], 'initial_delay_from_game_start': [0.0, 0.0], 'max_jump_distance': 1, 'dormant_target_search_interval': 10.0, 'arrival_delay_duration': 15.0, 'composition_brackets': [{'value_threshold': [0.0, 500.0], 'units': {'required_units': [{'unit': 'trader_light_frigate', 'count': [7, 10]}, {'unit': 'trader_siege_frigate', 'count': [7, 10]}, {'unit': 'trader_medium_cruiser', 'count': [7, 10]}, {'unit': 'trader_command_cruiser', 'count': [2, 4]}, {'unit': 'trader_robotics_cruiser', 'count': [2, 4]}, {'unit': 'trader_colony_frigate', 'count': [1, 2]}], 'random_units': []}, 'supply_cap': 450, 'threat_level': 'moderate'}]}, {'raid_type': 'destroy_planet', 'awakening_cooldown': [120.0, 240.0], 'standard_cooldown': [300.0, 600.0], 'initial_delay_from_game_start': [0.0, 0.0], 'dormant_target_search_interval': 10.0, 'max_jump_distance': 1, 'arrival_delay_duration': 15.0, 'composition_brackets': [{'value_threshold': [0.0, 100.0], 'units': {'required_units': [{'unit': 'trader_light_frigate', 'count': [4, 6]}, {'unit': 'trader_heavy_cruiser', 'count': [2, 3]}, {'unit': 'trader_siege_frigate', 'count': [2, 4]}], 'random_units': []}, 'supply_cap': 100, 'threat_level': 'low'}, {'value_threshold': [100.0, 500.0], 'units': {'required_units': [{'unit': 'trader_light_frigate', 'count': [8, 12]}, {'unit': 'trader_heavy_cruiser', 'count': [4, 6]}, {'unit': 'trader_siege_frigate', 'count': [2, 4]}], 'random_units': []}, 'supply_cap': 250, 'threat_level': 'high'}]}]
+		ai_params
+			max_jumps_from_home_planet_for_fleets : 1 -> 0
+			[NEW] will_fleet_colonize : False
+		max_fleet_supply
+			roam
+				0 : 75 -> 0
+		[NEW] bounty_market : {'market_weight': 10, 'bounty_cut': 0.5, 'metal_credit_value': 3.0, 'crystal_credit_value': 3.0, 'exotic_credit_values': [{'exotic_name': 'offense', 'credit_value': 750}, {'exotic_name': 'defense', 'credit_value': 750}, {'exotic_name': 'utility', 'credit_value': 750}, {'exotic_name': 'economic', 'credit_value': 750}, {'exotic_name': 'ultimate', 'credit_value': 1500}]}
+
+
+# Ancient Changes
+
+## Unit Changes
+
+**Ancient Starbase**
+	[NEW] capturable_unit : {'type': 'change_owner_on_capture', 'allow_surrender': True, 'capture_points_total': 2000, 'has_surrender_cooldown': True, 'surrender_cooldown_duration': 300}
+
+
+# Artifact Changes

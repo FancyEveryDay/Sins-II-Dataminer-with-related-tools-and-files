@@ -11,12 +11,12 @@ Kanrak Assailant
 	Armor Strength:	48.0
 
 	Hull Points:	825
-	Armor Points:	410
-	Shield Points:	820
+	Armor Points:	455
+	Shield Points:	940
 	   Shield Burst CD: 30.0s
 
 	Antimatter:	120.0
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium phase missile     	8.3  	x1    	8.3  	510   	9000 
+		medium phase missile     	15.0 	x1    	15.0 	420   	9000 

@@ -24,4 +24,4 @@ Progenitor Mothership
 		heavy laser              	7.5  	x7    	52.5 	300   	8000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
 
-	Strike Craft: 1 - 3
+	Strike Craft: 1 - 4

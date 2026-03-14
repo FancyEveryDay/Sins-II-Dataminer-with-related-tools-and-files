@@ -1,4 +1,4 @@
-from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM
+from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT
 import json, glob, shutil, pprint
 
 

@@ -19,8 +19,8 @@ Transcencia Starbase
 
 	Weapons:
 		weapon name              	dps  	count	tdps 	pen   	range
-		medium laser             	6.0  	x44   	264.0	200   	10000
-		heavy plasma             	5.0  	x16   	80.0 	750   	10000
+		medium laser             	6.0  	x44   	264.0	250   	10000
+		heavy plasma             	12.5 	x16   	200.0	750   	10000
 		point defense laser      	2.5  	x16   	40.0 	0     	6000 
 		heavy missile            	45.0 	x8    	360.0	400   	10000
 

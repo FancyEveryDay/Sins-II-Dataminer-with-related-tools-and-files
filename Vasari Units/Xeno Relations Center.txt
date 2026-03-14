@@ -2,7 +2,7 @@ Xeno Relations Center
 	Supply: 	
 	Credits:	
 	Metal:  	240.0
-	Crystal:	240.0
+	Crystal:	180.0
 
 	Movespeed:	
 	Acceleration:	

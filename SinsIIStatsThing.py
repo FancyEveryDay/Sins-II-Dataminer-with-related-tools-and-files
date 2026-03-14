@@ -172,28 +172,25 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                 startingHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
                 endingHP = int( unitDict["health"]["levels"][9]["max_hull_points"])
                 unitHP = f"{startingHP} - {endingHP}"
-            except IndexError:
+            except :
                 try: unitHP = int( unitDict["health"]["levels"][0]["max_hull_points"])
-                except KeyError: unitHP = ""   
+                except : unitHP = ""   
 
             try:
                 startingAP = int( unitDict["health"]["levels"][0]["max_armor_points"])
                 endingAP = int( unitDict["health"]["levels"][9]["max_armor_points"])
                 unitAP = f"{startingAP} - {endingAP}"
-            except IndexError:    
+            except :    
                 try: unitAP = int(unitDict["health"]["levels"][0]["max_armor_points"])
-                except KeyError: unitAP = ""
-            except KeyError: unitAP = ""
+                except : unitAP = ""
 
             try:
                 startingSP = int(unitDict["health"]["levels"][0]["max_shield_points"] )
                 endingSP = int(unitDict["health"]["levels"][9]["max_shield_points"] )
                 unitSP = f"{startingSP} - {endingSP}"
-            except IndexError:
+            except :
                 try: unitSP = int(unitDict["health"]["levels"][0]["max_shield_points"])
-                except KeyError: unitSP = ""
-            except KeyError: unitSP = ""
-
+                except : unitSP = ""
             
 
             try: unitShieldBurstCD = unitDict["health"]["levels"][0]["shield_burst_restore"]["cooldown_duration"]

@@ -1,8 +1,8 @@
 Temple of Unity
 	Supply: 	
 	Credits:	600.0
-	Metal:  	200.0
-	Crystal:	350.0
+	Metal:  	50.0
+	Crystal:	300.0
 
 	Movespeed:	
 	Acceleration:	

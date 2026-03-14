@@ -22,7 +22,7 @@ Revelation Battlecruiser
 		heavy plasma             	5.0  	x2    	10.0 	750   	8000 
 		medium missile           	15.0 	x2    	30.0 	200   	8000 
 		heavy laser              	0.0  	x1    	0.0  	0     	30000
-		medium laser             	6.0  	x4    	24.0 	200   	8000 
+		medium laser             	6.0  	x4    	24.0 	250   	8000 
 		planet bombing plasma    	5.0  	x1    	5.0  	0     	4000 
 
 	Strike Craft: 1 - 2

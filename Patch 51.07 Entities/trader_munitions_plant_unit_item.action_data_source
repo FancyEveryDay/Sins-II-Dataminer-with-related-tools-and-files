@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "munitions_plant_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "munitions_plant_weapon_damage_bonus",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "munitions_plant_weapon_damage_bonus"
+        }
+    }]
+}

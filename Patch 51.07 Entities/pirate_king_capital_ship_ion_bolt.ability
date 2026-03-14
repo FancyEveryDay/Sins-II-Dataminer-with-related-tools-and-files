@@ -1,0 +1,151 @@
+{
+    "version": 0,
+    "action_data_source": "pirate_king_capital_ship_ion_bolt",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "ion_bolt_cooldown_time_value",
+        "antimatter_cost": "ion_bolt_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "ion_bolt_travel_speed_value"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "pirate_king_capital_ship_ion_bolt"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "weapon.0",
+                    "effects":
+                    {
+                        "muzzle_effect": "pirate_king_capital_ship_ion_bolt_muzzle",
+                        "projectile_travel_effect": "pirate_king_capital_ship_ion_bolt_weapon_projectile_travel"
+                    }
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "ion_bolt_target_filter"
+        ],
+        "range": "ion_bolt_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 5.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "ion_bolt_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "ion_bolt_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_antiarmor_frigate_coil_shock_ability_hud_icon",
+        "tooltip_picture": "trader_antiarmor_frigate_coil_shock_ability_tooltip_picture",
+        "name": "pirate_king_capital_ship_ion_bolt_ability_name",
+        "description": "pirate_king_capital_ship_ion_bolt_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "ion_bolt_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.on_target_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "ion_bolt_disable_duration_value",
+                "value_suffix": "seconds"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_use_weapons",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_use_active_abilities",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_update_ability_cooldown_progress",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_shields",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_armor",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_hull",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_update_unit_production",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_launch_or_dock_strikecraft",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_have_antimatter_restored",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_antimatter",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_move",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_hyperspace",
+                "value_color": "negative"
+            }]
+        }]
+    }
+}
