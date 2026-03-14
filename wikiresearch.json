@@ -2855,6 +2855,30 @@
   ],
   "image": "Advent Phase Jump Inhibitor"
  },
+ "Advent Planetary Shield Projector Blueprint": {
+  "domain": "Hostility",
+  "tier": "Hostility III",
+  "field": "Energy",
+  "field_coord": [
+   4,
+   10
+  ],
+  "research_time": 225.0,
+  "hud_icon": "advent_planet_surface_shield_unit_item_hud_icon",
+  "tooltip_picture": "advent_planet_surface_shield_unit_item_tooltip_picture",
+  "name": "Planetary Shield Projector Blueprint",
+  "id": "advent_unlock_planet_surface_shield_unit_item",
+  "race": "Advent",
+  "credits": 800.0,
+  "metal": 250.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Planetary Shield Projector"
+   }
+  ],
+  "image": "Advent Planetary Shield Projector"
+ },
  "Advent Plasma Agitator Blueprint": {
   "domain": "Hostility",
   "tier": "Hostility II",
@@ -9447,6 +9471,9 @@
   "andvar": 1,
   "unlocks": [
    {
+    "research_subject": "TEC Privateer Persuasion"
+   },
+   {
     "research_subject": "TEC Pirate Mercenary Base Blueprint"
    }
   ],
@@ -9823,10 +9850,10 @@
     "research_subject": "TEC Superior Shield Emitters"
    },
    {
-    "research_subject": "TEC Planetary Shield Array Blueprint"
+    "research_subject": "TEC Backup Shield Generator Blueprint"
    },
    {
-    "research_subject": "TEC Enhanced Shield Cohesion"
+    "research_subject": "TEC Planetary Shield Array Blueprint"
    }
   ],
   "image": "TEC Improved Shield Arrays"
@@ -10577,6 +10604,16 @@
   "metal": 200.0,
   "crystal": 300.0,
   "kalanide": 1,
+  "prerequisites": [
+   [
+    "TEC Improved Shield Arrays"
+   ]
+  ],
+  "unlocks": [
+   {
+    "research_subject": "TEC Enhanced Shield Cohesion"
+   }
+  ],
   "image": "TEC Backup Shield Generator Blueprint"
  },
  "TEC Ablative Armor Blueprint": {
@@ -13736,7 +13773,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "TEC Improved Shield Arrays"
+    "TEC Backup Shield Generator Blueprint"
    ]
   ],
   "unit_modifiers": [
@@ -16221,21 +16258,21 @@
  },
  "Vasari Dark Fleet Tower Blueprint": {
   "domain": "Empire",
-  "tier": "Empire III",
+  "tier": "Empire IV",
   "field": "Phase",
   "field_coord": [
-   4,
+   6,
    4
   ],
-  "research_time": 225.0,
+  "research_time": 360.0,
   "hud_icon": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_hud_icon",
   "tooltip_picture": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_tooltip_picture",
   "name": "Dark Fleet Tower Blueprint",
   "id": "vasari_unlock_dark_fleet_tower_unit_item",
   "race": "Vasari",
   "credits": 0.0,
-  "metal": 420.0,
-  "crystal": 420.0,
+  "metal": 600.0,
+  "crystal": 660.0,
   "unlocks": [
    {
     "unit_item": "Vasari Dark Fleet Tower"
@@ -18176,6 +18213,17 @@
   "credits": 0.0,
   "metal": 120.0,
   "crystal": 60.0,
+  "unlocks": [
+   {
+    "unit": "Vasari Crystal Extractor"
+   },
+   {
+    "unit": "Vasari Metal Extractor"
+   },
+   {
+    "research_subject": "Vasari Improved Orbital Extraction"
+   }
+  ],
   "image": "Vasari Metal Extractor"
  },
  "Vasari Self-Repairing Armor Blueprint": {
@@ -20092,6 +20140,11 @@
   "credits": 0.0,
   "metal": 120.0,
   "crystal": 60.0,
+  "prerequisites": [
+   [
+    "Vasari Orbital Extraction"
+   ]
+  ],
   "unlocks": [
    {
     "research_subject": "Vasari Advanced Orbital Extraction"
