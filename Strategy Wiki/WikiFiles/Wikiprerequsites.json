@@ -1,10 +1,5 @@
 {
  "unit_item": {
-  "Advent Altar of Sacrifice": [
-   [
-    "Advent Altar of Sacrifice Blueprint"
-   ]
-  ],
   "Advent Atmospheric Shield Dome": [
    [
     "Advent Atmospheric Shield Dome Blueprint"
@@ -28,11 +23,6 @@
   "Advent Deploy Transcencia Starbase": [
    [
     "Advent Deploy Transcencia Blueprint"
-   ]
-  ],
-  "Advent Devotion Harvester": [
-   [
-    "Advent Devotion Harvester Blueprint"
    ]
   ],
   "Advent Empyrean City": [
@@ -80,11 +70,6 @@
     "Advent Harmony Circuit Blueprint"
    ]
   ],
-  "Advent Haven Dome": [
-   [
-    "Advent Haven Dome Blueprint"
-   ]
-  ],
   "Advent Heathen Quarter": [
    [
     "Advent Heathen Quarter Blueprint"
@@ -93,11 +78,6 @@
   "Advent Hydrostatic Shield Dome": [
    [
     "Advent Hydrostatic Shield Dome Blueprint"
-   ]
-  ],
-  "Advent Antimatter Phase Jump Panels": [
-   [
-    "Advent High Efficiency Jumps"
    ]
   ],
   "Advent Laminate Forge": [
@@ -160,11 +140,6 @@
     "Advent Sanctuary Spire Blueprint"
    ]
   ],
-  "Advent School of Evangelists": [
-   [
-    "Advent School of Evangelists Blueprint"
-   ]
-  ],
   "Advent Synchronous Shield": [
    [
     "Advent Synchronous Shield Blueprint"
@@ -173,11 +148,6 @@
   "Advent Evangelization Nodes": [
    [
     "Advent Evangelization Nodes Blueprint"
-   ]
-  ],
-  "Advent Final Judgment": [
-   [
-    "Advent Meteoroid Control"
    ]
   ],
   "Advent Meteor Storm": [
@@ -243,11 +213,6 @@
   "Advent Tithe Sanctum": [
    [
     "Advent Tithe Sanctum Blueprint"
-   ]
-  ],
-  "Advent Tranquil Refuge": [
-   [
-    "Advent Tranquil Refuge Blueprint"
    ]
   ],
   "Advent Unity Protectorate": [
@@ -338,11 +303,6 @@
   "TEC Deploy Argonev Starbase": [
    [
     "TEC Deploy Argonev Blueprint"
-   ]
-  ],
-  "TEC Derelict Specialist Team": [
-   [
-    "TEC Derelict Specialists"
    ]
   ],
   "TEC Flak Burst": [
@@ -540,11 +500,6 @@
     "TEC Starbase Missile Launchers"
    ]
   ],
-  "TEC Tactical Analyst": [
-   [
-    "TEC Tactical Analyst Training"
-   ]
-  ],
   "TEC Targeting Array": [
    [
     "TEC Targeting Array Blueprint"
@@ -605,11 +560,6 @@
     "Vasari Mobile Phase Gate Blueprint"
    ]
   ],
-  "Vasari Deploy Phase Resonator": [
-   [
-    "Vasari Deploy Phase Resonator Blueprint"
-   ]
-  ],
   "Vasari Deploy Orkulus Starbase": [
    [
     "Vasari Deploy Orkulus Blueprint"
@@ -623,11 +573,6 @@
   "Vasari Exodus Xeno Embassy": [
    [
     "Vasari Exodus Xeno Embassy Blueprint"
-   ]
-  ],
-  "Vasari Vask Tacticians": [
-   [
-    "Vasari Vask Tacticians Unlock"
    ]
   ],
   "Vasari Crystallizing Gas Refinery": [
@@ -733,11 +678,6 @@
   "Vasari Administrative Uplink": [
    [
     "Vasari Administrative Uplink Blueprint"
-   ]
-  ],
-  "Vasari Overseer Tower": [
-   [
-    "Vasari Overseer Tower Blueprint"
    ]
   ],
   "Vasari Phase Missile Augments": [
@@ -1091,11 +1031,6 @@
     "Advent Deliverance Engine Blueprint"
    ]
   ],
-  "Advent Herald Envoy": [
-   [
-    "Advent Herald Blueprint"
-   ]
-  ],
   "Advent Exotic Refinery": [
    [
     "Advent Exotic Refinery Blueprint"
@@ -1216,11 +1151,6 @@
     "Vasari Sularkon Blueprint"
    ]
   ],
-  "dlc_vasari_mad_titan": [
-   [
-    "Vasari Vorastra Blueprint"
-   ]
-  ],
   "TEC Kalev Gauss Frigate": [
    [
     "TEC Kalev Blueprint"
@@ -1244,11 +1174,6 @@
   "TEC Broadcast Center": [
    [
     "TEC Interstellar Networks"
-   ]
-  ],
-  "TEC Neruda Envoy Frigate": [
-   [
-    "TEC Neruda Blueprint"
    ]
   ],
   "TEC Exotic Refinery": [
@@ -1361,6 +1286,11 @@
     "Vasari Lasurak Blueprint"
    ]
   ],
+  "Vasari Crystal Extractor": [
+   [
+    "Vasari Orbital Extraction"
+   ]
+  ],
   "Vasari Xeno Relations Center": [
    [
     "Vasari Xeno Relations Center Blueprint"
@@ -1389,6 +1319,11 @@
   "Vasari Vorastra Titan": [
    [
     "Vasari Vorastra Blueprint"
+   ]
+  ],
+  "Vasari Metal Extractor": [
+   [
+    "Vasari Orbital Extraction"
    ]
   ],
   "Vasari Serevun Overseer": [
@@ -1480,16 +1415,6 @@
     "Advent Exotic Refinery Blueprint"
    ]
   ],
-  "Advent Wall of Faith": [
-   [
-    "Advent Unwavering Belief"
-   ]
-  ],
-  "Advent Fortress of Faith": [
-   [
-    "Advent Wall of Faith"
-   ]
-  ],
   "Advent Improved Meteoroid Control": [
    [
     "Advent Meteoroid Control"
@@ -1545,6 +1470,11 @@
     "Advent Total Assimilation"
    ]
   ],
+  "Advent Wall of Faith": [
+   [
+    "Advent Unwavering Belief"
+   ]
+  ],
   "Advent Soul Reclamation": [
    [
     "Advent Accumulated Will"
@@ -1573,16 +1503,6 @@
   "Advent Singular Resolve": [
    [
     "Advent Collective Focus"
-   ]
-  ],
-  "Advent Unity Ascendant": [
-   [
-    "Advent Temple of Unity Blueprint"
-   ]
-  ],
-  "Advent Unity Unleashed": [
-   [
-    "Advent Unity Ascendant"
    ]
   ],
   "Advent False Belief Monitoring": [
@@ -1665,16 +1585,6 @@
     "Advent Refined Laser Cannons"
    ]
   ],
-  "Advent Sanctify": [
-   [
-    "Advent Wall of Faith"
-   ]
-  ],
-  "Advent Epitaph of the Lost Blueprint": [
-   [
-    "Advent Irradiated Embrace"
-   ]
-  ],
   "Advent Essence Reservoir Blueprint": [
    [
     "Advent Adept Psi Training"
@@ -1701,11 +1611,6 @@
    ]
   ],
   "Advent Mend": [
-   [
-    "Advent Guardian Blueprint"
-   ]
-  ],
-  "Advent Will of the Unity": [
    [
     "Advent Guardian Blueprint"
    ]
@@ -1760,16 +1665,6 @@
     "Advent Eradica Blueprint"
    ]
   ],
-  "Advent NeuroPsion Purifier Blueprint": [
-   [
-    "Advent Primordial Embrace"
-   ]
-  ],
-  "Advent Pelagic Interface Relay Blueprint": [
-   [
-    "Advent Oceanic Embrace"
-   ]
-  ],
   "Advent Plasma Agitator Blueprint": [
    [
     "Advent Improved Containment"
@@ -1783,11 +1678,6 @@
   "Advent Orbital Habitation Blueprint": [
    [
     "Advent Orbital Congregation"
-   ]
-  ],
-  "Advent Prescience Filter Blueprint": [
-   [
-    "Advent Geomagnetic Embrace"
    ]
   ],
   "Advent PsiCredit Mint Blueprint": [
@@ -1820,11 +1710,6 @@
     "Advent Basic Shield Projection"
    ]
   ],
-  "Advent Silent Monastery Blueprint": [
-   [
-    "Advent Rich Ore Scrying"
-   ]
-  ],
   "Advent Evangelization Nodes Blueprint": [
    [
     "Advent Temple of Communion Blueprint"
@@ -1850,27 +1735,12 @@
     "Advent Transcencia Blueprint"
    ]
   ],
-  "Advent Starlight Augury Blueprint": [
-   [
-    "Advent Geomagnetic Embrace"
-   ]
-  ],
   "Advent Structural Force Fields Blueprint": [
    [
     "Advent Refined Frameworks"
    ]
   ],
-  "Advent Structural Shielding": [
-   [
-    "Advent Rotating Shield Frequencies"
-   ]
-  ],
   "Advent Nullify": [
-   [
-    "Advent Domina Blueprint"
-   ]
-  ],
-  "Advent Repulsion Field": [
    [
     "Advent Domina Blueprint"
    ]
@@ -1950,11 +1820,6 @@
     "Advent Beam Amplification"
    ]
   ],
-  "Advent Crystalline Development": [
-   [
-    "Advent Crystalline Embrace"
-   ]
-  ],
   "Advent Selective Harvesting": [
    [
     "Advent Orbital Extraction"
@@ -1962,7 +1827,7 @@
   ],
   "Advent Telekinetic Stasis": [
    [
-    "Advent Uniform Cultivation"
+    "Advent Selective Harvesting"
    ]
   ],
   "Advent Telekinetic Separation": [
@@ -2025,11 +1890,6 @@
     "Advent Energy Accelerator Blueprint"
    ]
   ],
-  "Advent Ferrous Development": [
-   [
-    "Advent Ferrous Embrace"
-   ]
-  ],
   "Advent Elegant Hull Design": [
    [
     "Advent Refined Frameworks"
@@ -2043,11 +1903,6 @@
   "Advent Kinetic Dampening": [
    [
     "Advent Hydrostatic Shield Dome Blueprint"
-   ]
-  ],
-  "Advent Arctic Development": [
-   [
-    "Advent Arctic Embrace"
    ]
   ],
   "Advent Empathic Alignment": [
@@ -2113,16 +1968,6 @@
   "Advent Anima Redirection": [
    [
     "Advent Refined Warheads"
-   ]
-  ],
-  "Advent Oceanic Development": [
-   [
-    "Advent Oceanic Embrace"
-   ]
-  ],
-  "Advent Anima Integration": [
-   [
-    "Advent Telekinetic Fracturing"
    ]
   ],
   "Advent Hardened Cities": [
@@ -2223,11 +2068,6 @@
   "Advent Telepathic Collectors": [
    [
     "Advent Willing Donations"
-   ]
-  ],
-  "Advent Volcanic Development": [
-   [
-    "Advent Volcanic Embrace"
    ]
   ],
   "Advent Oblivia Blueprint": [
@@ -2400,11 +2240,6 @@
     "TEC Addictive Consumerism"
    ]
   ],
-  "TEC Neruda Envoy Upgrade": [
-   [
-    "TEC Neruda Blueprint"
-   ]
-  ],
   "TEC Garrison Expansion": [
    [
     "TEC Garrison Recruitment"
@@ -2535,6 +2370,11 @@
     "TEC Immense Cargo Holds"
    ]
   ],
+  "TEC Privateer Persuasion": [
+   [
+    "TEC Gang of Freebooters"
+   ]
+  ],
   "TEC Truce Amongst Rogues": [
    [
     "TEC Sordid Intel"
@@ -2556,11 +2396,6 @@
    ]
   ],
   "TEC Superior Shield Emitters": [
-   [
-    "TEC Improved Shield Arrays"
-   ]
-  ],
-  "trader_shield_burst_restore": [
    [
     "TEC Improved Shield Arrays"
    ]
@@ -2625,19 +2460,14 @@
     "TEC Efficient Generators"
    ]
   ],
-  "TEC Aquaculture Harvester Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
-  "TEC Archaeology Center Blueprint": [
-   [
-    "TEC Desert Colonization"
-   ]
-  ],
   "TEC Auxiliary Supply Depot Blueprint": [
    [
     "TEC Prestigious Investments"
+   ]
+  ],
+  "TEC Backup Shield Generator Blueprint": [
+   [
+    "TEC Improved Shield Arrays"
    ]
   ],
   "TEC Ablative Armor Blueprint": [
@@ -2648,11 +2478,6 @@
   "TEC Quarnium Forging": [
    [
     "TEC Exotic Refinery Blueprint"
-   ]
-  ],
-  "TEC Chemical Plant Blueprint": [
-   [
-    "TEC Primordial Colonization"
    ]
   ],
   "TEC Combat Repair System Blueprint": [
@@ -2670,16 +2495,6 @@
     "TEC Orbital Commerce"
    ]
   ],
-  "TEC Cultural Market Bonus": [
-   [
-    "TEC Coalition Association"
-   ]
-  ],
-  "TEC Interstellar Commerce": [
-   [
-    "TEC Addictive Consumerism"
-   ]
-  ],
   "TEC Familiar Territory": [
    [
     "TEC Interstellar Networks"
@@ -2693,16 +2508,6 @@
   "TEC Deploy Argonev Blueprint": [
    [
     "TEC Argonev Blueprint"
-   ]
-  ],
-  "TEC Ferric Mining Rig Blueprint": [
-   [
-    "TEC Ferrous Colonization"
-   ]
-  ],
-  "TEC Fissile Enrichment Plant Blueprint": [
-   [
-    "TEC Irradiated Colonization"
    ]
   ],
   "TEC Fulfillment Warehouse Blueprint": [
@@ -2725,19 +2530,9 @@
     "TEC Hangar Defense Blueprint"
    ]
   ],
-  "TEC Harvesting Crawler Blueprint": [
-   [
-    "TEC Crystalline Colonization"
-   ]
-  ],
   "TEC Core Systems Armor Blueprint": [
    [
     "TEC Advanced Metallurgy"
-   ]
-  ],
-  "TEC Intercept": [
-   [
-    "TEC Harcka Blueprint"
    ]
   ],
   "TEC Heavy Garrison": [
@@ -2753,11 +2548,6 @@
   "TEC High Yield Warheads Blueprint": [
    [
     "TEC Submission Warheads"
-   ]
-  ],
-  "TEC Ice Processing Facility Blueprint": [
-   [
-    "TEC Arctic Colonization"
    ]
   ],
   "TEC Industrial District Blueprint": [
@@ -2813,11 +2603,6 @@
   "TEC Media Conglomerate Blueprint": [
    [
     "TEC Interstellar Networks"
-   ]
-  ],
-  "TEC Geothermal Smelter Blueprint": [
-   [
-    "TEC Volcanic Colonization"
    ]
   ],
   "TEC Reactive Plating Blueprint": [
@@ -2880,22 +2665,12 @@
     "TEC Orbital Extraction"
    ]
   ],
-  "TEC Resort Complex Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
   "TEC Hoshiko Blueprint": [
    [
     "TEC Repair Droid Blueprint"
    ]
   ],
   "TEC Recharger Droids Blueprint": [
-   [
-    "TEC Hoshiko Blueprint"
-   ]
-  ],
-  "TEC EMP Droids Blueprint": [
    [
     "TEC Hoshiko Blueprint"
    ]
@@ -2972,7 +2747,7 @@
   ],
   "TEC Enhanced Shield Cohesion": [
    [
-    "TEC Improved Shield Arrays"
+    "TEC Backup Shield Generator Blueprint"
    ]
   ],
   "TEC Barren Development": [
@@ -3290,11 +3065,6 @@
     "Vasari Phase Gate Blueprint"
    ]
   ],
-  "Vasari Deploy Phase Resonator Blueprint": [
-   [
-    "Vasari Phase Resonator"
-   ]
-  ],
   "Vasari Deploy Orkulus Blueprint": [
    [
     "Vasari Orkulus Blueprint"
@@ -3370,11 +3140,6 @@
     "Vasari Kultorask Blueprint"
    ]
   ],
-  "Vasari Vorastra Rulership": [
-   [
-    "Vasari Vorastra Blueprint"
-   ]
-  ],
   "Vasari Wave Cannon Restoration": [
    [
     "Vasari Vorastra Blueprint"
@@ -3395,17 +3160,7 @@
     "Vasari Resonance Mastery"
    ]
   ],
-  "Vasari Ocean Floor Miner Blueprint": [
-   [
-    "Vasari Oceanic Occupation"
-   ]
-  ],
   "Vasari Mobile Phase Detection": [
-   [
-    "Vasari Serevun Blueprint"
-   ]
-  ],
-  "Vasari Overseer Tower Blueprint": [
    [
     "Vasari Serevun Blueprint"
    ]
@@ -3505,11 +3260,6 @@
     "Vasari Atomic Engineering"
    ]
   ],
-  "Vasari Organic Reclamation Nanites Blueprint": [
-   [
-    "Vasari Terran Occupation"
-   ]
-  ],
   "Vasari Wave Modulator Blueprint": [
    [
     "Vasari Wave Densification"
@@ -3560,11 +3310,6 @@
     "Vasari Crystalline Occupation"
    ]
   ],
-  "Vasari Localized Phasing": [
-   [
-    "Vasari Silicate Adaptation"
-   ]
-  ],
   "Vasari Dark Fleet Tower Upgrade": [
    [
     "Vasari Dark Fleet Tower Blueprint"
@@ -3573,11 +3318,6 @@
   "Vasari Anhydrobiosis": [
    [
     "Vasari Desert Occupation"
-   ]
-  ],
-  "Vasari Hygroscopic Nanites": [
-   [
-    "Vasari Anhydrobiosis"
    ]
   ],
   "Vasari Improved Debris Reclamation": [
@@ -3690,14 +3430,14 @@
     "Vasari Oceanic Occupation"
    ]
   ],
-  "Vasari Nano Algae Reactors": [
-   [
-    "Vasari Self Constructing Domes"
-   ]
-  ],
   "Vasari Administrative Specialists": [
    [
     "Vasari Administrative Uplink Blueprint"
+   ]
+  ],
+  "Vasari Improved Orbital Extraction": [
+   [
+    "Vasari Orbital Extraction"
    ]
   ],
   "Vasari Advanced Orbital Extraction": [
