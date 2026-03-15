@@ -291,6 +291,14 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Fortress of Faith"
+   },
+   {
+    "research_subject": "Advent Sanctify"
+   }
+  ],
   "image": "Advent Wall of Faith"
  },
  "Advent Fortress of Faith": {
@@ -304,7 +312,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "advent_enemy_culture_suppression_0"
+    "Advent Wall of Faith"
    ]
   ],
   "planet_modifiers": [
@@ -365,6 +373,11 @@
   "credits": 1100.0,
   "metal": 425.0,
   "crystal": 900.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Antimatter Phase Jump Panels"
+   }
+  ],
   "image": "Advent High Efficiency Jumps"
  },
  "Advent Improved Meteoroid Control": {
@@ -635,6 +648,9 @@
   "crystal": 900.0,
   "unlocks": [
    {
+    "unit_item": "Advent Final Judgment"
+   },
+   {
     "unit_item": "Advent Meteor Storm"
    },
    {
@@ -743,7 +759,7 @@
   ],
   "research_time": 60.0,
   "unit_modifiers": [
-   "Derelict Capture Time -200%"
+   "unit_capture_points +1"
   ],
   "description": "Telepathic and telekinetic adepts work together to rapidly sift through the wreckage of battle, guiding the souls of the living and the dead alike to the Unity.",
   "hud_icon": "advent_rebel_loot_collection_research_subject_hud_icon",
@@ -1150,7 +1166,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "advent_unlock_unity_structure"
+    "Advent Temple of Unity Blueprint"
    ]
   ],
   "empire_modifiers": [
@@ -1165,6 +1181,11 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Unity Unleashed"
+   }
+  ],
   "image": "Advent Unity Ascendant"
  },
  "Advent Unity Unleashed": {
@@ -1178,7 +1199,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "advent_unity_points_0"
+    "Advent Unity Ascendant"
    ]
   ],
   "empire_modifiers": [
@@ -1241,7 +1262,12 @@
   "race": "Advent",
   "credits": 1400.0,
   "metal": 600.0,
-  "crystal": 1200.0
+  "crystal": 1200.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Altar of Sacrifice"
+   }
+  ]
  },
  "Advent Atmospheric Shield Dome Blueprint": {
   "domain": "Harmony",
@@ -1371,6 +1397,11 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Crystalline Development"
+   }
+  ],
   "image": "Advent Crystalline Embrace"
  },
  "Advent Crystal Enrichment Center Blueprint": {
@@ -1543,21 +1574,21 @@
  },
  "Advent Vigilis Blueprint": {
   "domain": "Hostility",
-  "tier": "Hostility III",
+  "tier": "Hostility II",
   "field": "Ascension",
   "field_coord": [
-   5,
-   3
+   3,
+   4
   ],
-  "research_time": 270.0,
+  "research_time": 150.0,
   "hud_icon": "advent_defense_cruiser_hud_icon",
   "tooltip_picture": "advent_defense_cruiser_tooltip_picture",
   "name": "Vigilis Blueprint",
   "id": "advent_unlock_defense_cruiser",
   "race": "Advent",
-  "credits": 850.0,
-  "metal": 275.0,
-  "crystal": 650.0,
+  "credits": 550.0,
+  "metal": 150.0,
+  "crystal": 350.0,
   "unlocks": [
    {
     "unit": "Advent Vigilis Sentinel"
@@ -1734,7 +1765,12 @@
   "race": "Advent",
   "credits": 800.0,
   "metal": 250.0,
-  "crystal": 600.0
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Devotion Harvester"
+   }
+  ]
  },
  "Advent Empyrean City Blueprint": {
   "domain": "Harmony",
@@ -1812,7 +1848,12 @@
   "race": "Advent",
   "credits": 300.0,
   "metal": 50.0,
-  "crystal": 100.0
+  "crystal": 100.0,
+  "unlocks": [
+   {
+    "unit": "Advent Herald Envoy"
+   }
+  ]
  },
  "Advent Sanctify": {
   "domain": "Harmony",
@@ -1825,7 +1866,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "advent_enemy_culture_suppression_0"
+    "Advent Wall of Faith"
    ]
   ],
   "description": "Grants the Sanctify ability to Herald Envoy frigate, allowing them to increase culture resistance for a moderate duration.",
@@ -1853,7 +1894,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "advent_unlock_irradiated_biosphere"
+    "Advent Irradiated Embrace"
    ]
   ],
   "hud_icon": "advent_epitaph_of_the_lost_unit_item_hud_icon",
@@ -1949,6 +1990,11 @@
   "credits": 500.0,
   "metal": 125.0,
   "crystal": 300.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Ferrous Development"
+   }
+  ],
   "image": "Advent Ferrous Embrace"
  },
  "Advent Brilliance Array Blueprint": {
@@ -2115,6 +2161,9 @@
    },
    {
     "research_subject": "Advent Mend"
+   },
+   {
+    "research_subject": "Advent Will of the Unity"
    }
   ],
   "image": "Advent Iconus Guardian"
@@ -2159,8 +2208,7 @@
   "research_time": 525.0,
   "prerequisites": [
    [
-    "advent_unlock_guardian_cruiser",
-    "advent_upgrade_spell_power_2"
+    "Advent Guardian Blueprint"
    ]
   ],
   "description": "Grants the Will of the Unity ability to Iconus Guardians, allowing them to grant a Unity bonus to friendly ships.",
@@ -2300,6 +2348,11 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Haven Dome"
+   }
+  ],
   "image": "Advent Haven Dome"
  },
  "Advent Heathen Quarter Blueprint": {
@@ -2461,6 +2514,9 @@
   "unlocks": [
    {
     "research_subject": "Advent Thermal Shield Dome Blueprint"
+   },
+   {
+    "research_subject": "Advent Arctic Development"
    }
   ],
   "image": "Advent Arctic Embrace"
@@ -2514,6 +2570,9 @@
   "metal": 150.0,
   "crystal": 350.0,
   "unlocks": [
+   {
+    "research_subject": "Advent Epitaph of the Lost Blueprint"
+   },
    {
     "research_subject": "Advent Radiation Shield Dome Blueprint"
    },
@@ -2684,6 +2743,12 @@
   "crystal": 300.0,
   "unlocks": [
    {
+    "research_subject": "Advent Prescience Filter Blueprint"
+   },
+   {
+    "research_subject": "Advent Starlight Augury Blueprint"
+   },
+   {
     "research_subject": "Advent Geomagnetic Specialization"
    }
   ],
@@ -2769,7 +2834,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "advent_unlock_swamp_biosphere"
+    "Advent Primordial Embrace"
    ]
   ],
   "hud_icon": "advent_neuropsion_purifier_unit_item_hud_icon",
@@ -2803,6 +2868,12 @@
   "unlocks": [
    {
     "research_subject": "Advent Hydrostatic Shield Dome Blueprint"
+   },
+   {
+    "research_subject": "Advent Pelagic Interface Relay Blueprint"
+   },
+   {
+    "research_subject": "Advent Oceanic Development"
    }
   ],
   "image": "Advent Oceanic Embrace"
@@ -2818,7 +2889,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "advent_unlock_oceanic_biosphere"
+    "Advent Oceanic Embrace"
    ]
   ],
   "hud_icon": "advent_pelagic_interface_relay_unit_item_hud_icon",
@@ -2945,10 +3016,10 @@
   "tier": "Harmony II",
   "field": "Reclamation",
   "field_coord": [
-   3,
+   2,
    11
   ],
-  "research_time": 150.0,
+  "research_time": 135.0,
   "prerequisites": [
    [
     "Advent Orbital Congregation"
@@ -2959,9 +3030,9 @@
   "name": "Orbital Habitation Blueprint",
   "id": "advent_unlock_population_growth_ability",
   "race": "Advent",
-  "credits": 550.0,
-  "metal": 150.0,
-  "crystal": 350.0,
+  "credits": 500.0,
+  "metal": 125.0,
+  "crystal": 300.0,
   "unlocks": [
    {
     "ability": "Advent Orbital Habitation"
@@ -3007,7 +3078,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "advent_unlock_magnetic_biosphere"
+    "Advent Geomagnetic Embrace"
    ]
   ],
   "hud_icon": "advent_prescience_filter_unit_item_hud_icon",
@@ -3247,7 +3318,12 @@
   "race": "Advent",
   "credits": 850.0,
   "metal": 275.0,
-  "crystal": 650.0
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent School of Evangelists"
+   }
+  ]
  },
  "Advent Lingering Presence": {
   "domain": "Hostility",
@@ -3297,6 +3373,7 @@
       "cruiser",
       "frigate",
       "starbase",
+      "strikecraft",
       "structure",
       "super_capital_ship",
       "titan"
@@ -3387,7 +3464,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "advent_upgrade_metal_extraction_0"
+    "Advent Rich Ore Scrying"
    ]
   ],
   "hud_icon": "advent_silent_monastery_unit_item_hud_icon",
@@ -3599,7 +3676,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "advent_unlock_magnetic_biosphere"
+    "Advent Geomagnetic Embrace"
    ]
   ],
   "hud_icon": "advent_starlight_augury_unit_item_hud_icon",
@@ -3652,7 +3729,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "advent_upgrade_shield_points_2"
+    "Advent Rotating Shield Frequencies"
    ]
   ],
   "buff_providers": [
@@ -3708,6 +3785,9 @@
    },
    {
     "research_subject": "Advent Nullify"
+   },
+   {
+    "research_subject": "Advent Repulsion Field"
    }
   ],
   "image": "Advent Domina Subjugator"
@@ -3753,7 +3833,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "advent_unlock_subjugator_cruiser"
+    "Advent Domina Blueprint"
    ]
   ],
   "description": "Grants the Repulsion Field ability to Dominus Subjugators, allowing them to slow enemy corvettes, strikecraft, and torpedoes within range.",
@@ -3789,6 +3869,9 @@
   "metal": 50.0,
   "crystal": 100.0,
   "unlocks": [
+   {
+    "research_subject": "Advent NeuroPsion Purifier Blueprint"
+   },
    {
     "research_subject": "Advent Primordial Specialization"
    }
@@ -4129,6 +4212,11 @@
   "credits": 800.0,
   "metal": 250.0,
   "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Tranquil Refuge"
+   }
+  ],
   "image": "Advent Tranquil Refuge"
  },
  "Advent Unity Protectorate Blueprint": {
@@ -4185,6 +4273,9 @@
     "research_subject": "Advent Unity Awakened"
    },
    {
+    "research_subject": "Advent Unity Ascendant"
+   },
+   {
     "research_subject": "Advent Cynosural Reservoir Blueprint"
    }
   ],
@@ -4208,6 +4299,11 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Volcanic Development"
+   }
+  ],
   "image": "Advent Volcanic Embrace"
  },
  "Advent Wormhole Passage": {
@@ -4609,7 +4705,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "advent_unlock_crystalline_biosphere"
+    "Advent Crystalline Embrace"
    ]
   ],
   "description": "Allows further development of crystalline planets.",
@@ -4654,9 +4750,6 @@
   "unlocks": [
    {
     "research_subject": "Advent Crystal Enrichment Center Blueprint"
-   },
-   {
-    "research_subject": "Advent Telekinetic Stasis"
    }
   ],
   "image": "Advent Selective Harvesting"
@@ -4672,7 +4765,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Selective Harvesting"
+    "Advent Uniform Cultivation"
    ]
   ],
   "planet_modifiers": [
@@ -5143,7 +5236,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "advent_unlock_ferrous_biosphere"
+    "Advent Ferrous Embrace"
    ]
   ],
   "description": "Allows further development of ferrous planets.",
@@ -5319,7 +5412,7 @@
   "research_time": 135.0,
   "prerequisites": [
    [
-    "advent_unlock_ice_biosphere"
+    "Advent Arctic Embrace"
    ]
   ],
   "description": "Allows further development of ice planets.",
@@ -5661,6 +5754,9 @@
   "crystal": 300.0,
   "unlocks": [
    {
+    "research_subject": "Advent Silent Monastery Blueprint"
+   },
+   {
     "research_subject": "Advent Telekinetic Extraction"
    }
   ],
@@ -5726,6 +5822,11 @@
    [
     "Advent Telekinetic Extraction"
    ]
+  ],
+  "unlocks": [
+   {
+    "research_subject": "Advent Anima Integration"
+   }
   ],
   "image": "Advent Telekinetic Fracturing"
  },
@@ -5885,7 +5986,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "advent_unlock_oceanic_biosphere"
+    "Advent Oceanic Embrace"
    ]
   ],
   "description": "Allows further development of oceanic planets.",
@@ -5920,6 +6021,11 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Telekinetic Stasis"
+   }
+  ],
   "image": "Advent Uniform Cultivation"
  },
  "Advent Anima Integration": {
@@ -5933,7 +6039,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "advent_upgrade_orbital_extraction_metal_0"
+    "Advent Telekinetic Fracturing"
    ]
   ],
   "planet_modifiers": [
@@ -6333,6 +6439,9 @@
   "metal": 275.0,
   "crystal": 650.0,
   "unlocks": [
+   {
+    "research_subject": "Advent Structural Shielding"
+   },
    {
     "research_subject": "Advent Raised Shield Harmonics"
    },
@@ -6765,7 +6874,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "advent_unlock_volcanic_biosphere"
+    "Advent Volcanic Embrace"
    ]
   ],
   "description": "Allows further development of volcanic planets.",
@@ -8137,6 +8246,9 @@
    },
    {
     "research_subject": "TEC Trade Port Culture"
+   },
+   {
+    "research_subject": "TEC Interstellar Commerce"
    }
   ],
   "image": "TEC Addictive Consumerism"
@@ -8309,7 +8421,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "trader_unlock_envoy_frigate"
+    "TEC Neruda Blueprint"
    ]
   ],
   "description": "Improves the Neruda Envoy's ability to acquire favor with minor factions.",
@@ -9447,6 +9559,36 @@
   "quarnium": 1,
   "image": "TEC Pervasive Economy"
  },
+ "TEC Privateer Persuasion": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Mobilization",
+  "field_coord": [
+   6,
+   3
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "TEC Gang of Freebooters"
+   ]
+  ],
+  "windfall": [
+   "Units given: 1 [[Sins of a Solar Empire II/Pirate Galleon|Pirate Galleon]]"
+  ],
+  "description": "A Pirate Lord in command of a Galleon is persuaded to work with you through the offer of a letter of marque.",
+  "hud_icon": "pirate_king_captial_ship_hud_icon",
+  "tooltip_picture": "pirate_king_captial_ship_tooltip_picture",
+  "name": "Privateer Persuasion",
+  "id": "trader_pirate_king_windfall",
+  "race": "TEC",
+  "credits": 1700.0,
+  "metal": 300.0,
+  "crystal": 500.0,
+  "tauranite": 1,
+  "andvar": 2,
+  "image": "TEC pirate_king_captial_ship_tooltip_picture"
+ },
  "TEC Gang of Freebooters": {
   "domain": "Military",
   "tier": "Military II",
@@ -9819,13 +9961,13 @@
  },
  "TEC Improved Shield Arrays": {
   "domain": "Military",
-  "tier": "Military IV",
+  "tier": "Military III",
   "field": "Engineering",
   "field_coord": [
-   6,
+   5,
    7
   ],
-  "research_time": 360.0,
+  "research_time": 270.0,
   "prerequisites": [
    [
     "TEC Corvette Shield Refit"
@@ -9841,13 +9983,16 @@
   "name": "Improved Shield Arrays",
   "id": "trader_shields_0",
   "race": "TEC",
-  "credits": 1700.0,
-  "metal": 300.0,
-  "crystal": 500.0,
+  "credits": 1250.0,
+  "metal": 225.0,
+  "crystal": 350.0,
   "kalanide": 1,
   "unlocks": [
    {
     "research_subject": "TEC Superior Shield Emitters"
+   },
+   {
+    "research_subject": "trader_shield_burst_restore"
    },
    {
     "research_subject": "TEC Backup Shield Generator Blueprint"
@@ -9890,22 +10035,22 @@
  },
  "TEC Corvette Shield Refit": {
   "domain": "Military",
-  "tier": "Military II",
+  "tier": "Military III",
   "field": "Engineering",
   "field_coord": [
-   2,
-   8
+   4,
+   6
   ],
-  "research_time": 120.0,
+  "research_time": 225.0,
   "description": "Grants shields to corvette class vessels.",
   "hud_icon": "trader_shields_corvette_research_subject_hud_icon",
   "tooltip_picture": "trader_shields_corvette_research_subject_tooltip_picture",
   "name": "Corvette Shield Refit",
   "id": "trader_shields_corvette",
   "race": "TEC",
-  "credits": 700.0,
-  "metal": 100.0,
-  "crystal": 125.0,
+  "credits": 1200.0,
+  "metal": 200.0,
+  "crystal": 300.0,
   "unlocks": [
    {
     "research_subject": "TEC Improved Shield Arrays"
@@ -9915,6 +10060,26 @@
  },
  "TEC Cruiser Shield Refit": {
   "domain": "Military",
+  "tier": "Military IV",
+  "field": "Engineering",
+  "field_coord": [
+   6,
+   8
+  ],
+  "research_time": 360.0,
+  "description": "Grants shields to cruiser class vessels.",
+  "hud_icon": "trader_shields_cruiser_research_subject_hud_icon",
+  "tooltip_picture": "trader_shields_cruiser_research_subject_tooltip_picture",
+  "name": "Cruiser Shield Refit",
+  "id": "trader_shields_cruiser",
+  "race": "TEC",
+  "credits": 1700.0,
+  "metal": 300.0,
+  "crystal": 500.0,
+  "image": "TEC Cruiser Shield Refit"
+ },
+ "TEC Frigate Shield Refit": {
+  "domain": "Military",
   "tier": "Military III",
   "field": "Engineering",
   "field_coord": [
@@ -9922,35 +10087,15 @@
    8
   ],
   "research_time": 225.0,
-  "description": "Grants shields to cruiser class vessels.",
-  "hud_icon": "trader_shields_cruiser_research_subject_hud_icon",
-  "tooltip_picture": "trader_shields_cruiser_research_subject_tooltip_picture",
-  "name": "Cruiser Shield Refit",
-  "id": "trader_shields_cruiser",
-  "race": "TEC",
-  "credits": 1200.0,
-  "metal": 200.0,
-  "crystal": 300.0,
-  "image": "TEC Cruiser Shield Refit"
- },
- "TEC Frigate Shield Refit": {
-  "domain": "Military",
-  "tier": "Military II",
-  "field": "Engineering",
-  "field_coord": [
-   3,
-   8
-  ],
-  "research_time": 150.0,
   "description": "Grants shields to frigate class vessels.",
   "hud_icon": "trader_shields_frigate_research_subject_hud_icon",
   "tooltip_picture": "trader_shields_frigate_research_subject_tooltip_picture",
   "name": "Frigate Shield Refit",
   "id": "trader_shields_frigate",
   "race": "TEC",
-  "credits": 750.0,
-  "metal": 125.0,
-  "crystal": 150.0,
+  "credits": 1200.0,
+  "metal": 200.0,
+  "crystal": 300.0,
   "image": "TEC Frigate Shield Refit"
  },
  "TEC trader_shield_burst_restore": {
@@ -10498,7 +10643,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "trader_unlock_oceanic_biosphere"
+    "TEC Oceanic Colonization"
    ]
   ],
   "hud_icon": "trader_aquaculture_harvester_unit_item_hud_icon",
@@ -10522,7 +10667,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "trader_unlock_desert_biosphere"
+    "TEC Desert Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_archaeology_center_unit_item_research_subject_hud_icon",
@@ -10566,13 +10711,18 @@
  },
  "TEC Backup Shield Generator Blueprint": {
   "domain": "Military",
-  "tier": "Military III",
+  "tier": "Military IV",
   "field": "Engineering",
   "field_coord": [
-   4,
+   6,
    6
   ],
-  "research_time": 225.0,
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "TEC Improved Shield Arrays"
+   ]
+  ],
   "buff_providers": [
    {
     "scope": "all_owned_units",
@@ -10600,15 +10750,10 @@
   "name": "Backup Shield Generator Blueprint",
   "id": "trader_unlock_backup_shield_generator_unit_item",
   "race": "TEC",
-  "credits": 1200.0,
-  "metal": 200.0,
-  "crystal": 300.0,
+  "credits": 1700.0,
+  "metal": 300.0,
+  "crystal": 500.0,
   "kalanide": 1,
-  "prerequisites": [
-   [
-    "TEC Improved Shield Arrays"
-   ]
-  ],
   "unlocks": [
    {
     "research_subject": "TEC Enhanced Shield Cohesion"
@@ -10708,7 +10853,7 @@
   "research_time": 75.0,
   "prerequisites": [
    [
-    "trader_unlock_swamp_biosphere"
+    "TEC Primordial Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_chemical_plant_unit_item_research_subject_hud_icon",
@@ -10853,6 +10998,9 @@
   "crystal": 150.0,
   "unlocks": [
    {
+    "research_subject": "TEC Harvesting Crawler Blueprint"
+   },
+   {
     "research_subject": "TEC Crystalline Mercantile Mandate"
    }
   ],
@@ -10937,7 +11085,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "trader_upgrade_influence_2"
+    "TEC Coalition Association"
    ]
   ],
   "description": "Provides benefits to any market where you have established dominant Culture. The Culture rate provided will be scaled based on active trade ships.",
@@ -10962,7 +11110,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "trader_culture_rate_0"
+    "TEC Addictive Consumerism"
    ]
   ],
   "description": "Provides a bonus to planet credit income where you have dominant Culture.",
@@ -11075,7 +11223,7 @@
   ],
   "research_time": 60.0,
   "unit_modifiers": [
-   "Derelict Capture Time -100%",
+   "unit_capture_points +1",
    "Derelict Capture Experience +50%"
   ],
   "description": "Reduces the time required to fully inspect derelicts and grants a bonus to experience gained from them.",
@@ -11087,6 +11235,11 @@
   "credits": 400.0,
   "metal": 25.0,
   "crystal": 50.0,
+  "unlocks": [
+   {
+    "unit_item": "TEC Derelict Specialist Team"
+   }
+  ],
   "image": "TEC Derelict Specialists"
  },
  "TEC Desert Colonization": {
@@ -11109,6 +11262,9 @@
   "crystal": 125.0,
   "unlocks": [
    {
+    "research_subject": "TEC Archaeology Center Blueprint"
+   },
+   {
     "research_subject": "TEC Desert Development"
    }
   ],
@@ -11129,7 +11285,15 @@
   "race": "TEC",
   "credits": 700.0,
   "metal": 100.0,
-  "crystal": 125.0
+  "crystal": 125.0,
+  "unlocks": [
+   {
+    "unit": "TEC Neruda Envoy Frigate"
+   },
+   {
+    "research_subject": "TEC Neruda Envoy Upgrade"
+   }
+  ]
  },
  "TEC Exotic Refinery Blueprint": {
   "domain": "Civilian",
@@ -11169,7 +11333,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "trader_unlock_ferrous_biosphere"
+    "TEC Ferrous Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_ferric_mining_rig_unit_item_research_subject_hud_icon",
@@ -11202,6 +11366,9 @@
   "crystal": 150.0,
   "unlocks": [
    {
+    "research_subject": "TEC Ferric Mining Rig Blueprint"
+   },
+   {
     "research_subject": "TEC Ferrous Mercantile Mandate"
    }
   ],
@@ -11218,7 +11385,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "trader_unlock_irradiated_biosphere"
+    "TEC Irradiated Colonization"
    ]
   ],
   "hud_icon": "trader_fissile_plant_unit_item_hud_icon",
@@ -11463,7 +11630,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "trader_unlock_crystalline_biosphere"
+    "TEC Crystalline Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_harvesting_crawler_unit_item_research_subject_hud_icon",
@@ -11527,6 +11694,9 @@
     "unit": "TEC Harcka Heavy Cruiser"
    },
    {
+    "research_subject": "TEC Intercept"
+   },
+   {
     "research_subject": "TEC Heavy Trade Escorts"
    }
   ],
@@ -11543,7 +11713,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "trader_unlock_heavy_cruiser"
+    "TEC Harcka Blueprint"
    ]
   ],
   "description": "Grants the Intercept ability to Harcka heavy cruisers, allowing them to gain a brief burst of speed and improved weapon tracking.",
@@ -11756,6 +11926,9 @@
   "crystal": 75.0,
   "unlocks": [
    {
+    "research_subject": "TEC Ice Processing Facility Blueprint"
+   },
+   {
     "research_subject": "TEC Ice Mercantile Mandate"
    }
   ],
@@ -11772,7 +11945,7 @@
   "research_time": 120.0,
   "prerequisites": [
    [
-    "trader_unlock_ice_biosphere"
+    "TEC Arctic Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_ice_processor_unit_item_research_subject_hud_icon",
@@ -11833,6 +12006,9 @@
   "metal": 125.0,
   "crystal": 150.0,
   "unlocks": [
+   {
+    "research_subject": "TEC Fissile Enrichment Plant Blueprint"
+   },
    {
     "research_subject": "TEC Irradiated Mercantile Mandate"
    }
@@ -12212,7 +12388,7 @@
   "research_time": 120.0,
   "prerequisites": [
    [
-    "trader_unlock_volcanic_biosphere"
+    "TEC Volcanic Colonization"
    ]
   ],
   "hud_icon": "trader_unlock_metal_smelting_plant_unit_item_research_subject_hud_icon",
@@ -12349,7 +12525,13 @@
   "crystal": 75.0,
   "unlocks": [
    {
+    "research_subject": "TEC Aquaculture Harvester Blueprint"
+   },
+   {
     "research_subject": "TEC High Pressure Domes"
+   },
+   {
+    "research_subject": "TEC Resort Complex Blueprint"
    },
    {
     "research_subject": "TEC Oceanic Development"
@@ -12517,7 +12699,7 @@
   "field": "Mobilization",
   "field_coord": [
    5,
-   3
+   4
   ],
   "research_time": 270.0,
   "prerequisites": [
@@ -12571,21 +12753,21 @@
  },
  "TEC Interplanetary Transit": {
   "domain": "Civilian",
-  "tier": "Civilian II",
+  "tier": "Civilian I",
   "field": "Policy",
   "field_coord": [
-   2,
+   1,
    7
   ],
-  "research_time": 120.0,
+  "research_time": 75.0,
   "hud_icon": "trader_population_structure_hud_icon",
   "tooltip_picture": "trader_population_structure_tooltip_picture",
   "name": "Interplanetary Transit",
   "id": "trader_unlock_population_structure",
   "race": "TEC",
-  "credits": 700.0,
-  "metal": 100.0,
-  "crystal": 125.0,
+  "credits": 450.0,
+  "metal": 50.0,
+  "crystal": 75.0,
   "unlocks": [
    {
     "unit": "TEC Orbital Transit Hub"
@@ -12848,7 +13030,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "trader_unlock_oceanic_biosphere"
+    "TEC Oceanic Colonization"
    ]
   ],
   "hud_icon": "trader_resort_complex_unit_item_hud_icon",
@@ -12880,6 +13062,12 @@
   "metal": 25.0,
   "crystal": 50.0,
   "unlocks": [
+   {
+    "unit": "trader_capturable_crystal_extractor_structure"
+   },
+   {
+    "unit": "trader_capturable_metal_extractor_structure"
+   },
    {
     "unit": "TEC Crystal Extractor"
    },
@@ -12960,6 +13148,9 @@
    },
    {
     "research_subject": "TEC Recharger Droids Blueprint"
+   },
+   {
+    "research_subject": "TEC EMP Droids Blueprint"
    }
   ],
   "image": "TEC Hoshiko Robotics Cruiser"
@@ -13005,7 +13196,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "trader_unlock_robotics_cruiser"
+    "TEC Hoshiko Blueprint"
    ]
   ],
   "description": "Grants the EMP Droids ability to Hoshiko robotics cruisers.",
@@ -13404,6 +13595,9 @@
   "crystal": 50.0,
   "unlocks": [
    {
+    "research_subject": "TEC Chemical Plant Blueprint"
+   },
+   {
     "research_subject": "TEC Primordial Development"
    }
   ],
@@ -13426,6 +13620,11 @@
   "credits": 1700.0,
   "metal": 300.0,
   "crystal": 500.0,
+  "unlocks": [
+   {
+    "unit_item": "TEC Tactical Analyst"
+   }
+  ],
   "image": "TEC Tactical Analyst Training"
  },
  "TEC Targeting Array Blueprint": {
@@ -13703,6 +13902,9 @@
   "crystal": 75.0,
   "unlocks": [
    {
+    "research_subject": "TEC Geothermal Smelter Blueprint"
+   },
+   {
     "research_subject": "TEC Volcanic Mercantile Mandate"
    }
   ],
@@ -13764,13 +13966,13 @@
  },
  "TEC Enhanced Shield Cohesion": {
   "domain": "Military",
-  "tier": "Military IV",
+  "tier": "Military V",
   "field": "Engineering",
   "field_coord": [
-   7,
+   8,
    6
   ],
-  "research_time": 420.0,
+  "research_time": 525.0,
   "prerequisites": [
    [
     "TEC Backup Shield Generator Blueprint"
@@ -13785,9 +13987,9 @@
   "name": "Enhanced Shield Cohesion",
   "id": "trader_upgrade_backup_shield_generator_unit_item",
   "race": "TEC",
-  "credits": 1750.0,
-  "metal": 325.0,
-  "crystal": 550.0,
+  "credits": 2200.0,
+  "metal": 400.0,
+  "crystal": 700.0,
   "kalanide": 1,
   "image": "TEC Enhanced Shield Cohesion"
  },
@@ -14311,6 +14513,11 @@
   "metal": 300.0,
   "crystal": 500.0,
   "andvar": 1,
+  "unlocks": [
+   {
+    "research_subject": "TEC Cultural Market Bonus"
+   }
+  ],
   "image": "TEC Coalition Association"
  },
  "TEC Ostentatious Displays": {
@@ -16346,7 +16553,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "vasari_unlock_phase_synchronizer_structure"
+    "Vasari Phase Resonator"
    ]
   ],
   "hud_icon": "vasari_deploy_phase_synchronizer_unit_item_hud_icon",
@@ -16355,7 +16562,12 @@
   "race": "Vasari",
   "credits": 0.0,
   "metal": 600.0,
-  "crystal": 660.0
+  "crystal": 660.0,
+  "unlocks": [
+   {
+    "unit_item": "Vasari Deploy Phase Resonator"
+   }
+  ]
  },
  "Vasari Deploy Orkulus Blueprint": {
   "domain": "Warfare",
@@ -16512,7 +16724,12 @@
   "race": "Vasari",
   "credits": 0.0,
   "metal": 150.0,
-  "crystal": 90.0
+  "crystal": 90.0,
+  "unlocks": [
+   {
+    "unit_item": "Vasari Vask Tacticians"
+   }
+  ]
  },
  "Vasari Jusotra Blueprint": {
   "domain": "Warfare",
@@ -16706,8 +16923,7 @@
    ]
   ],
   "weapon_modifiers": [
-   "Wave Weapon Tracking Speed +200%",
-   "Wave Weapon Range +10%"
+   "Wave Weapon Tracking Speed +48%"
   ],
   "description": "Increases the tracking speed and effective range of wave weapons.",
   "hud_icon": "vasari_unlock_heavy_turret_servos_research_subject_hud_icon",
@@ -16950,6 +17166,9 @@
   "quarnium": 1,
   "unlocks": [
    {
+    "unit": "dlc_vasari_mad_titan"
+   },
+   {
     "unit": "Vasari Vorastra Titan"
    },
    {
@@ -16960,6 +17179,9 @@
    },
    {
     "research_subject": "Vasari The Maw Enhancer Blueprint"
+   },
+   {
+    "research_subject": "Vasari Vorastra Rulership"
    },
    {
     "research_subject": "Vasari Wave Cannon Restoration"
@@ -17201,7 +17423,7 @@
   "research_time": 525.0,
   "prerequisites": [
    [
-    "vasari_unlock_loyalist_titan"
+    "Vasari Vorastra Blueprint"
    ]
   ],
   "description": "Your rulers relocate to your titan, preventing you from being defeated so long as your titan or Capital Planet remain intact.",
@@ -17498,6 +17720,9 @@
   "crystal": 420.0,
   "unlocks": [
    {
+    "research_subject": "Vasari Ocean Floor Miner Blueprint"
+   },
+   {
     "research_subject": "Vasari Self Constructing Domes"
    }
   ],
@@ -17514,8 +17739,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "vasari_unlock_oceanic_biosphere",
-    "vasari_unlock_terran_biosphere"
+    "Vasari Oceanic Occupation"
    ]
   ],
   "hud_icon": "vasari_unlock_ocean_floor_miner_unit_item_research_subject_hud_icon",
@@ -17578,6 +17802,9 @@
    },
    {
     "research_subject": "Vasari Mobile Phase Detection"
+   },
+   {
+    "research_subject": "Vasari Overseer Tower Blueprint"
    }
   ],
   "image": "Vasari Serevun Overseer"
@@ -17626,7 +17853,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "vasari_unlock_overseer_cruiser"
+    "Vasari Serevun Blueprint"
    ]
   ],
   "hud_icon": "vasari_unlock_overseer_tower_unit_item_research_subject_hud_icon",
@@ -17636,7 +17863,12 @@
   "credits": 0.0,
   "metal": 420.0,
   "crystal": 420.0,
-  "kalanide": 1
+  "kalanide": 1,
+  "unlocks": [
+   {
+    "unit_item": "Vasari Overseer Tower"
+   }
+  ]
  },
  "Vasari Phase Gate Blueprint": {
   "domain": "Empire",
@@ -17855,6 +18087,9 @@
     "unit": "Vasari Phase Resonator"
    },
    {
+    "research_subject": "Vasari Deploy Phase Resonator Blueprint"
+   },
+   {
     "research_subject": "Vasari Resonance Amplifier Blueprint"
    },
    {
@@ -17929,8 +18164,8 @@
   ],
   "research_time": 120.0,
   "weapon_modifiers": [
-   "Point Defense Weapon Tracking Speed +20%",
-   "Point Defense Weapon Range +15%"
+   "Point Defense Weapon Tracking Speed +24%",
+   "Point Defense Weapon Range +12%"
   ],
   "description": "Increases the tracking speed and effective range of point defense weapons.",
   "hud_icon": "vasari_unlock_precise_turret_servos_research_subject_hud_icon",
@@ -18635,6 +18870,9 @@
   "crystal": 480.0,
   "unlocks": [
    {
+    "research_subject": "Vasari Organic Reclamation Nanites Blueprint"
+   },
+   {
     "research_subject": "Vasari Civic Repurposing"
    }
   ],
@@ -18651,8 +18889,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "vasari_unlock_terran_biosphere",
-    "vasari_upgrade_swamp_biosphere_0"
+    "Vasari Terran Occupation"
    ]
   ],
   "hud_icon": "vasari_unlock_terran_mining_booster_unit_item_research_subject_hud_icon",
@@ -19038,6 +19275,11 @@
   "credits": 0.0,
   "metal": 270.0,
   "crystal": 240.0,
+  "unlocks": [
+   {
+    "research_subject": "Vasari Localized Phasing"
+   }
+  ],
   "image": "Vasari Silicate Adaptation"
  },
  "Vasari Localized Phasing": {
@@ -19051,7 +19293,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "vasari_upgrade_crystalline_biosphere_0"
+    "Vasari Silicate Adaptation"
    ]
   ],
   "description": "The unusually abundant resources of crystalline worlds are used to power small scale phase shifting devices, allowing local populations to improve their research efforts and survive attack more effectively.",
@@ -19116,6 +19358,11 @@
   "credits": 0.0,
   "metal": 420.0,
   "crystal": 420.0,
+  "unlocks": [
+   {
+    "research_subject": "Vasari Hygroscopic Nanites"
+   }
+  ],
   "image": "Vasari Anhydrobiosis"
  },
  "Vasari Hygroscopic Nanites": {
@@ -19129,7 +19376,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "vasari_upgrade_desert_biosphere_0"
+    "Vasari Anhydrobiosis"
    ]
   ],
   "description": "Specialized nanites bred to aggressively locate and reclaim water are deployed in arid environments, preventing wastage and allowing mining operations to be established in the deep desert.",
@@ -20065,6 +20312,11 @@
   "credits": 0.0,
   "metal": 600.0,
   "crystal": 660.0,
+  "unlocks": [
+   {
+    "research_subject": "Vasari Nano Algae Reactors"
+   }
+  ],
   "image": "Vasari Self Constructing Domes"
  },
  "Vasari Nano Algae Reactors": {
@@ -20078,7 +20330,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "vasari_upgrade_oceanic_biosphere_0"
+    "Vasari Self Constructing Domes"
    ]
   ],
   "description": "Reactors with specialized nanites evolved to support algae growth are deployed to all major population centers. While not popular as a food source, it does sustain a much larger mining workforce.",
@@ -20123,10 +20375,15 @@
   "tier": "Empire I",
   "field": "Nanotech",
   "field_coord": [
-   0,
+   1,
    0
   ],
-  "research_time": 60.0,
+  "research_time": 75.0,
+  "prerequisites": [
+   [
+    "Vasari Orbital Extraction"
+   ]
+  ],
   "planet_modifiers": [
    "{icon:metal} Orbital Extraction Rate +12%",
    "{icon:crystal} Orbital Extraction Rate +12%"
@@ -20138,13 +20395,8 @@
   "id": "vasari_upgrade_orbital_extraction_0",
   "race": "Vasari",
   "credits": 0.0,
-  "metal": 120.0,
-  "crystal": 60.0,
-  "prerequisites": [
-   [
-    "Vasari Orbital Extraction"
-   ]
-  ],
+  "metal": 150.0,
+  "crystal": 90.0,
   "unlocks": [
    {
     "research_subject": "Vasari Advanced Orbital Extraction"
@@ -20666,6 +20918,7 @@
       "cruiser",
       "frigate",
       "starbase",
+      "strikecraft",
       "structure",
       "super_capital_ship",
       "titan"

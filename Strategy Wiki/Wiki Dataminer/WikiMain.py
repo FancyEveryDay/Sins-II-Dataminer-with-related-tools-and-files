@@ -1,13 +1,16 @@
 import wikiPlanet 
 import wikiPlayer
 import wikiPrerequisites
+import wikiResearch
 import wikiUtilities
 
 def main():
     
     wikiPlanet.main()
     completeItemSet = wikiPlayer.main()
-    wikiPrerequisites.main(completeItemSet = completeItemSet)
+    prereqsDict = wikiPrerequisites.main(completeItemSet = completeItemSet)
+    wikiResearch.main(prereqsDict)
+
 
 
 if __name__ == "__main__":

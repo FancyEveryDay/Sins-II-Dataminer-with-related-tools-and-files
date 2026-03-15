@@ -35,16 +35,17 @@ Each has been updated to use a .env file which you will need to create in the pa
    This module contains the code for the dataminer which I am developing to replace the incomplete Java and Javascript miners I inherited when I joined the Sins 2 Wiki project. Also uses a .env but this one must be placed in the Wiki Dataminer folder. The .json format Wiki Files are created in the Wiki Data folder.
 
    ### Includes:
-   - wikiPlanet.py : exports all planet specific data
-   - wikiPlayer.py : exports data specific to each faction (such as lists of buildable units and research)
+   - WikiMaine.py : Runs all mining processes in sequence.
+   - wikiPlanet.py : exports all planet specific data.
+   - wikiPlayer.py : exports data specific to each faction (such as lists of buildable units and research).
    - wikiPrerequisites.py : finds and creates a file which lists all items in the game and their prerequisites.
-   - wikiResearchTesting.ipynb (Prototype) : Outputs research data. Needs to be condensed into wikiResearch.py and bundled with the others.
+   - wikiResearch.py : exports research data.
 
    ### Miner Backlog:
    - wikiShipItem.py - exports ship item data
    - wikiAbility.py - exports ability data for ships, structures, and items.
    
-   #### Covered by Daxos' Java dataminer but need replaced eventually
+   ### Covered by Daxos' Java dataminer but need replaced eventually
    - wikiUnit.py - exports unit data (including weapon data)
    - wikiStructure.py - (debating combining this with wikiUnit because of similarities) exports unit data
    - wikiPlanetItems.py - exports planet item data

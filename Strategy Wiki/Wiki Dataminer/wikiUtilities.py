@@ -13,4 +13,6 @@ with open(SINS_DIRECTORY / 'localized_text' / 'en.localized_text', 'r') as file:
     LOCALIZED_TEXT = json.load(file)
 
 ENTITIES = SINS_DIRECTORY / 'entities'
+UNIFORMS = SINS_DIRECTORY / 'uniforms'
+
 WIKIFILES_DICT = TOP_DICT / 'Strategy Wiki' / 'WikiFiles'
