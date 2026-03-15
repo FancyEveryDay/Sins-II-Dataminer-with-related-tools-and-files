@@ -1,4 +1,6 @@
 import glob, json
+from pathlib import Path
+from wikiUtilities import TOP_DICT, LOCALIZED_TEXT, SINS_DIRECTORY, PLANET_UNIFORMS
 
 SPECIAL_DEV_TRACK_DICT = {"max_military_structure_slots" : "Military Orbit Slots",
                           "max_civilian_structure_slots" : "Civilian Orbit Slots",
@@ -18,18 +20,9 @@ SPECIAL_DEV_TRACK_DICT = {"max_military_structure_slots" : "Military Orbit Slots
 def main():
     wiki_planet = {}
 
-    with open('.env', 'r') as env:
-        SINS_DIRECTORY = json.load(env)['sins2File']
-
-    with open(SINS_DIRECTORY + r'\uniforms\planet.uniforms', 'r') as file:
-        PLANET_UNIFORMS = json.load(file)
-
-    with open(SINS_DIRECTORY + r'\localized_text\en.localized_text', 'r') as file:
-        LOCALIZED_TEXT = json.load(file)
-
     # Get base dev track levels
 
-    with open(SINS_DIRECTORY + r'\entities\advent_rebel.player', 'r') as file:
+    with open(SINS_DIRECTORY / 'entities' / 'advent_rebel.player', 'r') as file:
         examplePlayer = json.load(file)
 
 
@@ -52,7 +45,7 @@ def main():
 
     # Create PlayerDict
 
-    playerFiles = glob.glob(SINS_DIRECTORY + r'\entities\**.player')
+    playerFiles = SINS_DIRECTORY.glob('entities/*.player')
 
     playerDict = {}
 
@@ -61,7 +54,7 @@ def main():
             playerDict[address] = json.load(file)
 
     # Get info from planet.unit file
-    planet_unit_glob = glob.glob(SINS_DIRECTORY + r'\entities\**_planet.unit')
+    planet_unit_glob = SINS_DIRECTORY.glob('entities/*_planet.unit')
 
     planetUnit = {}
 
@@ -75,7 +68,7 @@ def main():
             try:
                 planet = planetJson['planet']
             except KeyError:
-                print(f"{p.split("\\")[-1]} is not colonizable, contains no planet data.")
+                print(f"{p.name} is not colonizable, contains no planet data.")
                 continue
             
             name = LOCALIZED_TEXT.get(planetJson['planet']['planet_type'] + "_planet_name").capitalize()
@@ -230,7 +223,7 @@ def main():
 
 
     # Create wiki_planet file from dictionary
-    with open('WikiFiles\\Wikiplanet.json', 'w') as file:
+    with open(TOP_DICT / 'WikiFiles' / 'Wikiplanet.json', 'w') as file:
         json.dump(wiki_planet, file, indent=1)
 
     print(f"WikiPlanet.json saved")

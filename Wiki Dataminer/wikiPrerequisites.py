@@ -1,4 +1,8 @@
 import json, pprint, glob
+from pathlib import Path
+from wikiUtilities import TOP_DICT, LOCALIZED_TEXT, SINS_DIRECTORY, PLANET_UNIFORMS, ENTITIES
+
+
 
 def main(completeItemSet : set = set()):
     if len(completeItemSet) > 0:
@@ -6,17 +10,8 @@ def main(completeItemSet : set = set()):
     else:
         useSet = False
 
-    with open('.env', 'r') as env:
-        SINS_DIRECTORY = json.load(env)['sins2File']
-
-    with open(SINS_DIRECTORY + r'\localized_text\en.localized_text', 'r') as file:
-        LOCALIZED_TEXT = json.load(file)
-
-    ENTITIES_DIRECTORY = SINS_DIRECTORY + "\\entities"
-
-    subjectGlob = glob.glob(ENTITIES_DIRECTORY + r'\**.research_subject')
-    entitiesGlob = glob.glob(ENTITIES_DIRECTORY + r'\**')
-
+    subjectGlob = list(ENTITIES.glob('*.research_subject'))
+    entitiesGlob = list(ENTITIES.glob('*'))
 
     # Get all research subject names (research subjects have inconsistent naming conventions)
     subjectNameSearch = {}
@@ -28,7 +23,7 @@ def main(completeItemSet : set = set()):
         nameCall = subject.pop('name')
 
         name = LOCALIZED_TEXT.get(nameCall)
-        id = i.split('\\')[-1].split('.')[0]
+        id = i.name.split('.')[0]
 
         subjectNameSearch[id] = name
 
@@ -37,7 +32,7 @@ def main(completeItemSet : set = set()):
     prereqsDict = {}
 
     for i in entitiesGlob:
-        entityType = i.split('.')[-1]
+        entityType = i.name.split('.')[-1]
 
         if entityType not in prereqsDict.keys():
             prereqsDict[entityType] = {}
@@ -46,8 +41,8 @@ def main(completeItemSet : set = set()):
         with open(i, 'r') as file:
             entity = json.load(file)
 
-        entityType = i.split('.')[-1]
-        entityString = i.split("\\")[-1].split('.')[0]
+        entityType = i.name.split('.')[-1]
+        entityString = i.name.split('.')[0]
 
         buildable_item_types = set(["unit",
                                    "unit_item",
@@ -57,10 +52,10 @@ def main(completeItemSet : set = set()):
         if useSet and (entityType in buildable_item_types) and (entityString not in completeItemSet):
             continue
 
-        if "dlc" not in i:
-            race = i.split("\\")[-1].split("_")[0]
+        if "dlc" not in i.name:
+            race = i.name.split("_")[0]
         else:
-            race = i.split("\\")[-1].split("_")[1]
+            race = i.name.split("_")[1]
 
         # Create item name
         name = LOCALIZED_TEXT.get('player_race_name.' + race, race)
@@ -133,7 +128,7 @@ def main(completeItemSet : set = set()):
 
                 prereqsDict[entityType][name].append( tempList )
 
-    with open('WikiFiles\\Wikiprerequsites.json', 'w') as file:
+    with open(TOP_DICT / "WikiFiles" / "Wikiprerequsites.json", 'w') as file:
         json.dump(prereqsDict, file, indent=1)
 
     return(prereqsDict)

@@ -1,12 +1,8 @@
 import glob, json, pprint
+from pathlib import Path
+from wikiUtilities import TOP_DICT, LOCALIZED_TEXT, ENTITIES
 
-with open('.env', 'r') as env:
-    SINS_DIRECTORY = json.load(env)['sins2File']
 
-ENTITIES = SINS_DIRECTORY + r'\entities'
-
-with open(SINS_DIRECTORY + r'\localized_text\en.localized_text', 'r') as file:
-    LOCALIZED_TEXT = json.load(file)
 
 def getUniqueLists(subject : str, wiki_player : dict, playerDict : dict, itemDict : dict, allBuildableItems : set = set()):
     """Checks for general and unique subject items and creates generic lists at the race level, and unique lists at the faction level.
@@ -80,7 +76,7 @@ def itemDict(fileType):
 
     global ENTITIES
 
-    subjectGlob = glob.glob(f'{ENTITIES}\\**{fileType}')
+    subjectGlob = ENTITIES.glob(f'*{fileType}')
 
     itemDict = {}
 
@@ -88,7 +84,7 @@ def itemDict(fileType):
         with open(i, 'r') as file:
             subject = json.load(file)
 
-        name = i.split("\\")[-1].replace(fileType, "")
+        name = i.name.replace(fileType, "")
         itemDict[name] = subject.get('name', name + "_name")
 
     return itemDict
@@ -98,7 +94,7 @@ def main():
     wiki_player = {}
     playerDict = {}
 
-    playerGlob = glob.glob(f'{ENTITIES}\\**.player')
+    playerGlob = ENTITIES.glob('**/*.player')
 
     for fileName in playerGlob:
         fileName : str
@@ -107,7 +103,7 @@ def main():
 
         try:
             race = LOCALIZED_TEXT.get("player_race." + faction['race'] ,faction['race'].capitalize())
-            name = "player_faction_name." + fileName.split("\\")[-1].split('.')[0]
+            name = "player_faction_name." + fileName.name.split('.')[0]
             raceFaction = LOCALIZED_TEXT[name]
 
         except KeyError:
@@ -151,7 +147,7 @@ def main():
         
         getUniqueLists(subject= key, wiki_player= wiki_player, playerDict= playerDict, itemDict= itemDict(itemGroup), allBuildableItems = completeItemSet)
 
-    with open("WikiFiles\\Wikiplayer.json", "w") as file:
+    with open(TOP_DICT / "WikiFiles" / "Wikiplayer.json", "w") as file:
         json.dump(wiki_player, file, indent = 1)
 
     
