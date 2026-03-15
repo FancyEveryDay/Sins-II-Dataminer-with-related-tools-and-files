@@ -275,7 +275,11 @@ def FormatUnitEntries(UnitList, weaponDict, filter = "health", consolePrint = Tr
                     print(f"\tStrike Craft: {carrier}")
             
             if outputFile != False:
-                with open(outputFile + "\\" + outputName + ".txt", "w") as unitFile:
+
+                outputFile = Path(outputFile)
+                outputFile.mkdir(parents=True, exist_ok=True)
+
+                with open(outputFile / (outputName + ".txt"), "w") as unitFile:
                     unitFile.write(outputName + "\n")
 
                     unitFile.write(f"\tSupply: \t{unitSupply}\n")
@@ -329,10 +333,10 @@ def main():
     weaponList = getSinsData("",".weapon")
     weaponDict = createWeaponDict(weaponList)
 
-    FormatUnitEntries(tecUnitList, weaponDict, consolePrint= False, outputFile="TEC Units")
-    FormatUnitEntries(adventUnitList, weaponDict, consolePrint= False, outputFile="Advent Units")
-    FormatUnitEntries(vasariUnitList, weaponDict, consolePrint= False, outputFile="Vasari Units")
-    FormatUnitEntries(dlc_UnitList, weaponDict, consolePrint= False, outputFile="DLC Units")
-    
+    FormatUnitEntries(tecUnitList, weaponDict, consolePrint= False, outputFile=PARENT_DIR / "Unit Profiles" / "TEC Units")
+    FormatUnitEntries(adventUnitList, weaponDict, consolePrint= False, outputFile=PARENT_DIR / "Unit Profiles" / "Advent Units")
+    FormatUnitEntries(vasariUnitList, weaponDict, consolePrint= False, outputFile=PARENT_DIR / "Unit Profiles" / "Vasari Units")
+    FormatUnitEntries(dlc_UnitList, weaponDict, consolePrint= False, outputFile=PARENT_DIR / "Unit Profiles" / "DLC Units")
+
 if __name__ == "__main__":
     main()
