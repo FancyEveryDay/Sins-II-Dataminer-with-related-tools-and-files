@@ -1,13 +1,17 @@
-# Welcome to FancyEveryDay's Personal Sins of a Solar Empire II Data Tools
+# Welcome to FancyEveryDay's Sins of a Solar Empire II Data Tools
 
-This repository contains my personal tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use, but some of you technically inclined people may find them useful or inspirational.
+This repository contains the tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use, but some of you technically inclined people may find them useful or inspirational.
 
-The repository currently contains 5 modules, I've also uploaded the latest collection of unit stats files produced by the SinsIIStatsThing.py
+Contents:
+* 6 python modules/notebooks
+* Archive of patch changes and patch data
+* Collection of formatted data sheets for units
+* Current wiki-files
 
 Each has been updated to use a .env file which you will need to create in the parent folder on installation.
 
 {
-   'sins2File' : '<Address to sins2 file here>'
+   'sins2File' : '<Absolute path to sins2 file here>'
    'pastPatch' : '1.42.09'
 }
 
