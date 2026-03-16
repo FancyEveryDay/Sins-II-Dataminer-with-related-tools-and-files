@@ -65,10 +65,10 @@ Each has been updated to use a .env file which you will need to create in the pa
    This notebook hasn't been updated to use the .env file so there is also an address which needs to be changed in this file, in the second code cell.
 
    The existing test cells are, in order:
-      - Ship eHP per supply lvl 1
-      - Ship eHP per supply lvl 10
-      - Ship eHP per supply, lvl 10, variable piercing
-      - Ship DPS per supply, variable level and target durability - If you set durability to False it will use a collection of common durabilities and average them
-      - Several ship dps per cost comparisons
-      - Function which produces the table of stats/lvl for each lvling ship I have uploaded on my public google drive
-      - Function which produces the table of Strike Craft at each cap ship lvl which I have uploaded on my public google drive 
+      * Ship eHP per supply lvl 1
+      * Ship eHP per supply lvl 10
+      * Ship eHP per supply, lvl 10, variable piercing
+      * Ship DPS per supply, variable level and target durability - If you set durability to False it will use a collection of common durabilities and average them
+      * Several ship dps per cost comparisons...
+      * Function which produces the table of stats/lvl for each lvling ship I have uploaded on my public google drive
+      * Function which produces the table of Strike Craft at each cap ship lvl which I have uploaded on my public google drive 
