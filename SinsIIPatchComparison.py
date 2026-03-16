@@ -1,4 +1,4 @@
-from SinsIIStatsThing import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT, PARENT_DIR
+from SinsIIUnitStats import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT, PARENT_DIR
 import json, glob, shutil, pprint
 from pathlib import Path
 

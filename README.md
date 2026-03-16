@@ -15,13 +15,15 @@ Each has been updated to use a .env file which you will need to create in the pa
    'pastPatch' : '1.42.09'
 }
 
-## 1. SinsIIStatsThing.py and Unit Profiles
+## 1. SinsIIUnitStats.py and Unit Profiles
    
-   The core module, it contains functions for quickly and easily pulling and formatting data from the game.
+   The original core module, it contains functions for quickly and easily pulling and formatting data from the game.
    The script's Main() function will fill the Unit Profiles directory with a collection of .txt's formatted roughly like wiki entries for each unit in the game.
    This was made before the Strategy Wiki really got going, and a lot of the formatting I used here wound up being a good template for it.
 
    In order to use it on your machine you'll need to create the .env file mentioned above.
+
+   Functions from this script power or inspired pretty much every other script in this repo.
    
 ## 2. SinsIIPatchComparison.py and Patch Archive
    
