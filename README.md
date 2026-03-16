@@ -3,7 +3,7 @@
 This repository contains the tools I use for all my Sins of a Solar Empire II data needs, its messy, kind of sloppy, and not really meant for other people to try to use, but some of you technically inclined people may find them useful or inspirational.
 
 Contents:
-* 6 python modules/notebooks
+* 5 python modules/notebooks
 * Archive of patch changes and patch data
 * Collection of formatted data sheets for units
 * Current wiki-files
@@ -15,22 +15,24 @@ Each has been updated to use a .env file which you will need to create in the pa
    'pastPatch' : '1.42.09'
 }
 
-## 1. SinsIIStatsThing.py
+## 1. SinsIIStatsThing.py and Unit Profiles
    
    The core module, it contains functions for quickly and easily pulling and formatting data from the game.
-   The file's Main() function will produce a collection of files full of .txt's formatted roughly like wiki entries for each unit in the game.
+   The script's Main() function will fill the Unit Profiles directory with a collection of .txt's formatted roughly like wiki entries for each unit in the game.
    This was made before the Strategy Wiki really got going, and a lot of the formatting I used here wound up being a good template for it.
 
    In order to use it on your machine you'll need to create the .env file mentioned above.
    
-## 2. SinsIIPatchComparison.py
+## 2. SinsIIPatchComparison.py and Patch Archive
    
    This module leverages SinsIIStatsThing functions to produce a printout of all the data changes to entities.
    This is what I use to produce my Detailed Patch Notes I post to reddit.
 
+   Creates a record of the current patch files and the patch changes inside the Patch Archive directory.
+
    In order to use it on your machine you'll need to create the .env file mentioned above. On starting the program, users will need to input the patch number to compare to, and the patch number to output to. It is important that any new data folders added follow the same naming scheme.
 
-## 3. WikiMain.py and other wiki scripts
+## 3. WikiMain.py and Strategy Wiki scripts
 
    This module contains the code for the dataminer which I am developing to replace the incomplete Java and Javascript miners I inherited when I joined the Sins 2 Wiki project. Also uses a .env but this one must be placed in the Wiki Dataminer folder. The .json format Wiki Files are created in the Wiki Data folder.
 
@@ -67,6 +69,3 @@ Each has been updated to use a .env file which you will need to create in the pa
       - Ship  DPS per supply, variable level and target durability - If you set durability to False it will use a collection of common durabilities and average them
       - Function which produces the table of stats/lvl for each lvling ship I have uploaded on my public google drive
       - Function which produces the table of Strike Craft at each cap ship lvl which I have uploaded on my public google drive 
-
-## 6. jsonReading.ipnb
-   This notebook mostly contains experiments and doodles where I am attempting to pull and organize certain pieces of information from game files. May prove useful to someone inclined to learn directly from code but this notebook is not organized for public consumption
