@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "action_data_source": "advent_temple_of_assimilation",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_temple_of_assimilation_on_planet"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.conversion_chance",
+                "value_id": "temple_of_assimilation_random_chance_value",
+                "value_float_format": "percentage"
+            }]
+        }]
+    }
+}

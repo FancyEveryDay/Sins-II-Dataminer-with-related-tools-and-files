@@ -1,0 +1,103 @@
+{
+    "version": 0,
+    "action_data_source": "pirate_king_capital_ship_redline_navigation",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "redline_navigation_cooldown_time_value",
+        "antimatter_cost": "redline_navigation_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "pirate_king_capital_ship_redline_navigation_on_spawner"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "never",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "has_mutation",
+                    "mutation": "phase_jump_disruption"
+                }
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_unstoppable_phase_jump_research_subject_hud_icon",
+        "tooltip_picture": "trader_unstoppable_phase_jump_research_subject_tooltip_picture",
+        "name": "pirate_king_capital_ship_redline_navigation_ability_name",
+        "description": "pirate_king_capital_ship_redline_navigation_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "redline_navigation_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "redline_navigation_radius_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "redline_navigation_duration_value",
+                "value_suffix": "seconds"
+            }]
+        },
+        {
+            "header_text": "pirate_king_capital_ship_redline_navigation_pirate_king",
+            "lines": [
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.phase_jump_disruption_immune",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "header_text": "pirate_king_capital_ship_redline_navigation_other_ships",
+            "lines": [
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.phase_jump_disruption_immune",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "redline_navigation_hyperspace_charge_time_modifier"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "pirate_king_capital_ship_redline_navigation_hull_lost",
+                "value_id": "redline_navigation_hull_damage_value",
+                "value_float_format": "percentage",
+                "value_color": "negative"
+            }]
+        }]
+    }
+}

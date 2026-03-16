@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "metal_stockpile_npc_reward_2_hud_icon",
+        "tooltip_icon": "metal_stockpile_npc_reward_tooltip_icon",
+        "name": "npc_reward.metal_stockpile.name",
+        "description": "npc_reward.metal_stockpile.description"
+    },
+    "type": "assets",
+    "assets":
+    {
+        "metal": 4000.0
+    }
+}

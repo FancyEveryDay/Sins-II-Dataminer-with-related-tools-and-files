@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "active_duration": "frenzy_circuit_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "frenzy_circuit_weapon_cooldown_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_unity_fury_ability_hud_icon",
+        "name": "nilari_frenzy_circuit_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "frenzy_circuit_weapon_cooldown_modifier"
+            }]
+        }]
+    }
+}

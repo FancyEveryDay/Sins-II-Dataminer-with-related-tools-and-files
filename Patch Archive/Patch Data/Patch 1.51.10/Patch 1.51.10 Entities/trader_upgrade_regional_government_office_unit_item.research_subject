@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_industry",
+    "field_coord": [5, 9],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["trader_unlock_regional_government_unit_item"]
+    ],
+    "name": "trader_upgrade_regional_government_office_unit_item_research_subject_name",
+    "name_uppercase": "trader_upgrade_regional_government_office_unit_item_research_subject_name_uppercase",
+    "description": "trader_upgrade_regional_government_office_unit_item_research_subject_description",
+    "hud_icon": "trader_upgrade_regional_government_office_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "trader_upgrade_regional_government_office_unit_item_research_subject_tooltip_picture"
+}

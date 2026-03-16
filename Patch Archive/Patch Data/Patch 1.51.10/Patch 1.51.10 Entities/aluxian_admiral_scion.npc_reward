@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "aluxian_admiral_scion_hud_icon",
+        "name": "npc_reward.aluxian_admiral_scion.name",
+        "description": "npc_reward.aluxian_admiral_scion.description"
+    },
+    "type": "ship_component",
+    "item": "aluxian_admiral_scion"
+}

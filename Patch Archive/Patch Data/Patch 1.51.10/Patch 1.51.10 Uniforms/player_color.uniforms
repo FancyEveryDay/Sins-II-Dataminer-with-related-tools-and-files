@@ -1,0 +1,23 @@
+{
+    "minimal_team_color_primary_color": "707070",
+    "null_player_colors": "null",
+    "player_alliance_relationship_colors":
+    {
+        "self": "alliance_relationship_self",
+        "ally": "alliance_relationship_ally",
+        "enemy": "alliance_relationship_enemy",
+        "none": "alliance_relationship_none"
+    },
+    "playable_player_color_groups": [
+        "playable_red",
+        "playable_orange",
+        "playable_yellow",
+        "playable_blue",
+        "playable_aqua",
+        "playable_army_green",
+        "playable_green",
+        "playable_pink",
+        "playable_purple",
+        "playable_white"
+    ]
+}

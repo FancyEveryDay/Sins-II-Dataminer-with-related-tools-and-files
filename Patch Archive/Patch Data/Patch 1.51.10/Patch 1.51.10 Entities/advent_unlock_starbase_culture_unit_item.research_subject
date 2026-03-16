@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_protection",
+    "field_coord": [4, 8],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 250.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["advent_unlock_culture_center",
+        "advent_unlock_starbase"]
+    ],
+    "name": "advent_unlock_starbase_culture_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_starbase_culture_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_starbase_culture_unit_item_hud_icon",
+    "tooltip_picture": "advent_starbase_culture_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_starbase"]
+}

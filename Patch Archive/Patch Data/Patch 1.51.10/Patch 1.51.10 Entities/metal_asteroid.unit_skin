@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 39893.505521,
+        "min_camera_distance": 2023.082604,
+        "gui":
+        {
+            "hud_icon": "metal_asteroid_hud_icon",
+            "tooltip_icon": "metal_asteroid_tooltip_icon",
+            "name": "metal_asteroid_name",
+            "description": "metal_asteroid_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "metal_asteroid",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "asteroid",
+            "icon": "metal_asteroid_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        }
+    }]
+}

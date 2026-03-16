@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "action_data_source": "brown_dwarf_fixture_bonus",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "brown_dwarf_fixture_bonus_on_spawner"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "brown_dwarf_ability_range_modifier"
+            },
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "brown_dwarf_weapon_range_modifier"
+            }]
+        }]
+    }
+}

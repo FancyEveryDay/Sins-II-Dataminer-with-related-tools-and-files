@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_engineering",
+    "field_coord": [5, 2],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["trader_unlock_retrofit_bay_repair_ability"]
+    ],
+    "name": "trader_retrofit_bay_repair_rate_0_research_subject_name",
+    "name_uppercase": "trader_retrofit_bay_repair_rate_0_research_subject_name_uppercase",
+    "description": "trader_retrofit_bay_repair_rate_0_research_subject_description",
+    "hud_icon": "trader_retrofit_bay_repair_rate_0_research_subject_hud_icon",
+    "tooltip_picture": "trader_retrofit_bay_repair_rate_0_research_subject_tooltip_picture"
+}

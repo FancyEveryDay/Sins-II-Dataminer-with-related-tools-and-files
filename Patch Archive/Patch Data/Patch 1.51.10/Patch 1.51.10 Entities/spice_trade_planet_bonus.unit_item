@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "spice_trade_planet_bonus_hud_icon",
+    "tooltip_icon": "spice_trade_planet_bonus_hud_icon",
+    "name": "planet_bonus.spice_trade.name",
+    "description": "planet_bonus.spice_trade.desc",
+    "planet_types": [
+        "desert"
+    ],
+    "trade_capacity":
+    {
+        "export_points":
+        {
+            "credits": 3
+        }
+    }
+}

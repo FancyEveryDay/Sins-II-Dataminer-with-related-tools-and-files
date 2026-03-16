@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "pirate_king_capital_ship_pillage_exotic_refinery"
+                    }
+                }]
+            },
+            {
+                "action_type": "give_exotics",
+                "player":
+                {
+                    "player_type": "buff_owner_player"
+                },
+                "exotics":
+                {
+                    "exotics_source_type": "explicit_amount",
+                    "exotic_amounts": [
+                    {
+                        "exotic_type": "economic",
+                        "count_value": "fixed_one"
+                    }]
+                }
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}
