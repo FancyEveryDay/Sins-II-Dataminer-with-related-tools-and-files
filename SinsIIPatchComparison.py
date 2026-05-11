@@ -77,7 +77,7 @@ def checkForListOfDicts(obj) -> bool:
         pass
     return False
 
-def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better handle new and removed content.
+def recursiveCompare(obj1, obj2, level = 1):
     printTypes = (str, int, float)
 
     changeDict = {}
@@ -127,6 +127,17 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
             except IndexError:
                 changeDict[f"[NEW] {i}"] = str(j)
 
+        for i, j in enumerate(obj2):
+            try:
+                # print(f"{indents}{i+1}")
+                change = recursiveCompare(j, obj2[i], level = level + 1)
+
+                if change != False:
+                    changeDict[i] = change
+                else: change = False
+            except IndexError:
+                changeDict[f"[REMOVED] {i}"] = str(j)
+
     if (type(obj1) is dict) and type(obj2) is dict: #and (obj1 != obj2):
         for i, j in obj1.items():
             
@@ -160,6 +171,39 @@ def recursiveCompare(obj1, obj2, level = 1): # TODO needs updated to better hand
                 else: change = False
             except KeyError:
                 changeDict[f"[NEW] {i}"] = str(j)
+
+        for i, j in obj2.items():
+            
+            try:
+                if i == "weapon":
+                    # print(f"{indents}{j}")
+                    try:
+                        i = weaponDict[j]["name"].split('.')[-1]
+                        change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
+                    except KeyError:
+                        change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
+
+                ## Handle lists of strings (like planet names)
+                elif isinstance(j, list) and all(isinstance(item, str) for item in j) and all(isinstance(item, str) for item in obj2[i]):
+                    change = []
+                    for index, planet in enumerate(j):
+                        if planet not in obj1[i]:
+                            change.append("[REMOVED] " + planet)
+                    for index, planet in enumerate(obj1[i]):
+                        if planet not in j:
+                            change.append("[NEW] " + planet)
+                    if len(change) == 0:
+                        change = False
+
+                else:  #j != obj2[i]:
+                    # print(f"{indents}{i}")   
+                    change = recursiveCompare(obj1[i], j, level = level + 1)
+
+                if change != False:
+                    changeDict[i] = change
+                else: change = False
+            except KeyError:
+                changeDict[f"[REMOVED] {i}"] = str(j)
 
     if changeDict == {}:
         return False
@@ -251,6 +295,8 @@ if __name__ == "__main__":
     # Change number formatting (for reasons)
     newPatchNumber = newPatchNumber.replace(".","-")
     pastPatchNumber = pastPatchNumber.replace(".","-")
+    pastPatchDir = ("Patch " + pastPatchNumber.replace("-","."))
+    old_archive_path = archive_path / "Patch Data" / pastPatchDir
 
     # Get entity files
     filelist = ENTITIES_LOCATION.glob("*")
@@ -265,10 +311,10 @@ if __name__ == "__main__":
     with open(archive_path / f"{newPatchNumber}_changes.txt", 'w') as file:
         pass
 
-    raceList = ["advent", "trader", "vasari", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
+    raceList = ["advent", "trader", "vasari", "herald", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
 
     weaponDict = getSinsDataDict("",".weapon", file = ENTITIES_LOCATION)
-    oldWeaponDict = getSinsDataDict("",".weapon", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
+    oldWeaponDict = getSinsDataDict("",".weapon", file = old_archive_path / (pastPatchDir + " Entities"))
     
 
     for race in raceList:
@@ -281,8 +327,8 @@ if __name__ == "__main__":
         for obtype in objectTypes:
 
             shipDict = getSinsDataDict(race,f"{obtype}", file= ENTITIES_LOCATION)
-            oldShipDict = getSinsDataDict(race,f"{obtype}", file = "Patch " + pastPatchNumber[2:].replace("-",".") + " Entities")
 
+            oldShipDict = getSinsDataDict(race,f"{obtype}", file = old_archive_path / (pastPatchDir + " Entities") )
 
             unitChanges = compareShipDicts(shipDict, oldShipDict)
 
