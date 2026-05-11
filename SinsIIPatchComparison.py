@@ -184,7 +184,7 @@ def recursiveCompare(obj1, obj2, level = 1):
                         change = recursiveCompare(weaponDict[j], oldWeaponDict[j], level = level + 1)
 
                 ## Handle lists of strings (like planet names)
-                elif isinstance(j, list) and all(isinstance(item, str) for item in j) and all(isinstance(item, str) for item in obj2[i]):
+                elif isinstance(j, list) and all(isinstance(item, str) for item in j) and all(isinstance(item, str) for item in obj1[i]):
                     change = []
                     for index, planet in enumerate(j):
                         if planet not in obj1[i]:
