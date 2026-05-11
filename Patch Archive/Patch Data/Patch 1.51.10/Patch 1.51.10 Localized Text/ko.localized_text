@@ -5223,6 +5223,7 @@
   "settings_window.mod_folder.current_location_label": "현재 위치:",
   "settings_window.mod_folder.downloads_in_progress": "모드 다운로드 중에는 모드 폴더를 변경할 수 없습니다. 모든 다운로드가 완료될 때까지 기다려주세요.",
   "settings_window.mod_folder.migrating_mods_text": "mod.io 모드 데이터 이동 중... 잠시만 기다려주세요.",
+  "settings_window.mod_folder.migration_complete_text": "Migration complete. Please restart the game to apply changes.",
   "settings_window.mod_folder.quit_game_button": "게임 종료",
   "settings_window.mod_folder.reset_to_default_button": "기본값으로 초기화",
   "settings_window.mod_folder.restart_required_message_no_mods": "Mod.io 모드 폴더를 변경하려면 게임을 다시 시작해야 합니다.",

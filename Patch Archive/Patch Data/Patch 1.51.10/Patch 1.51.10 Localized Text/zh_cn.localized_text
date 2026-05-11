@@ -5223,6 +5223,7 @@
   "settings_window.mod_folder.current_location_label": "当前位置：",
   "settings_window.mod_folder.downloads_in_progress": "下载模组时，无法更改模组文件夹。请等待所有下载完成。",
   "settings_window.mod_folder.migrating_mods_text": "正在迁移 mod.io 模组数据...请稍候。",
+  "settings_window.mod_folder.migration_complete_text": "Migration complete. Please restart the game to apply changes.",
   "settings_window.mod_folder.quit_game_button": "退出游戏",
   "settings_window.mod_folder.reset_to_default_button": "恢复默认设置",
   "settings_window.mod_folder.restart_required_message_no_mods": "更改 mod.io 模组文件夹需要重启游戏。",

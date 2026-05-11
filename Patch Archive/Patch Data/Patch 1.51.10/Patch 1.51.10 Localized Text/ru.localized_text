@@ -5223,6 +5223,7 @@
   "settings_window.mod_folder.current_location_label": "Текущее местоположение:",
   "settings_window.mod_folder.downloads_in_progress": "Нельзя изменять папку с модами, пока моды загружаются. Пожалуйста, подождите завершения всех загрузок.",
   "settings_window.mod_folder.migrating_mods_text": "Перемещение данных модов mod.io... Пожалуйста, подождите.",
+  "settings_window.mod_folder.migration_complete_text": "Migration complete. Please restart the game to apply changes.",
   "settings_window.mod_folder.quit_game_button": "Выйти",
   "settings_window.mod_folder.reset_to_default_button": "Сброс к значениям по умолчанию",
   "settings_window.mod_folder.restart_required_message_no_mods": "Изменение папки модов mod.io требует перезагрузки игры.",

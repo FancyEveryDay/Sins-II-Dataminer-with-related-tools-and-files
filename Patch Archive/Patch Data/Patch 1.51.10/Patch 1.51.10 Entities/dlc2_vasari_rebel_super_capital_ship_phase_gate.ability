@@ -5,5 +5,33 @@
     "passive_actions":
     {
         "persistant_buff": "dlc2_vasari_rebel_super_capital_ship_phase_gate_active"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.unit_item_self_label",
+            "lines": [
+            {
+                "rendering_type": "single_line",
+                "label_text": "tooltip.has_any_phase_lane_stabilizer_line",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "header_text": "dlc2_vasari_rebel_super_capital_ship_phase_gate_wake",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "phase_gate_wake_duration",
+                "value_suffix": "seconds"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "tooltip.has_any_phase_lane_stabilizer_line",
+                "value_color": "positive"
+            }]
+        }]
     }
 }

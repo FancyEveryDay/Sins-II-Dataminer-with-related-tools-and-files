@@ -5223,6 +5223,7 @@
   "settings_window.mod_folder.current_location_label": "ตำแหน่งปัจจุบัน:",
   "settings_window.mod_folder.downloads_in_progress": "ไม่สามารถเปลี่ยนโฟลเดอร์ม็อดได้ระหว่างการดาวน์โหลดม็อด โปรดรอให้ดาวน์โหลดทั้งหมดเสร็จสิ้น",
   "settings_window.mod_folder.migrating_mods_text": "กำลังย้ายข้อมูล mod.io... โปรดรอสักครู่",
+  "settings_window.mod_folder.migration_complete_text": "Migration complete. Please restart the game to apply changes.",
   "settings_window.mod_folder.quit_game_button": "ออกเกม",
   "settings_window.mod_folder.reset_to_default_button": "รีเซ็ตเป็นค่าเริ่มต้น",
   "settings_window.mod_folder.restart_required_message_no_mods": "การเปลี่ยนโฟลเดอร์ mod ของ mod.io ต้องรีสตาร์ทเกมใหม่",

@@ -1,3 +1,11 @@
 {
-    "version": 0
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "phase_gate_wake_duration",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }]
 }

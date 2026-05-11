@@ -5223,6 +5223,7 @@
   "settings_window.mod_folder.current_location_label": "Localização atual:",
   "settings_window.mod_folder.downloads_in_progress": "Não é possível alterar a pasta de mods enquanto os mods estão sendo baixados. Aguarde a conclusão de todos os downloads.",
   "settings_window.mod_folder.migrating_mods_text": "Movendo os dados de mods do mod.io... Aguarde.",
+  "settings_window.mod_folder.migration_complete_text": "Migration complete. Please restart the game to apply changes.",
   "settings_window.mod_folder.quit_game_button": "Sair do jogo",
   "settings_window.mod_folder.reset_to_default_button": "Redefinir para Padrão",
   "settings_window.mod_folder.restart_required_message_no_mods": "Mudar a pasta de mods do mod.io requer reiniciar o jogo.",

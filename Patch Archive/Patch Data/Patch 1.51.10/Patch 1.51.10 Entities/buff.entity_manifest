@@ -593,6 +593,9 @@
         "nilari_empowering_sacrifice_on_target",
         "nilari_empowering_sacrifice_on_units",
         "alutar_safeguard_shield_unit_item",
-        "alutar_remote_planetary_shield"
+        "alutar_remote_planetary_shield",
+        "dlc2_vasari_rebel_super_capital_ship_phase_gate_on_agent",
+        "dlc2_vasari_rebel_super_capital_ship_phase_gate_on_spawner",
+        "dlc2_vasari_rebel_super_capital_ship_phase_gate_timer"
     ]
 }
