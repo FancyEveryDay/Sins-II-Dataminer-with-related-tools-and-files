@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "phase_lane":
+    {
+        "is_gravity_well_existence_known_when_other_explored": true,
+        "unit_group_distance_tolerance": 200000.0
+    },
+    "target_filter_unit_type": "phase_lane"
+}

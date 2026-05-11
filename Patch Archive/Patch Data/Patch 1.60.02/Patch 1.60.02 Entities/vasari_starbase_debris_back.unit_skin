@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2000000,
+        "min_camera_distance": 2143.217194,
+        "unit_mesh":
+        {
+            "mesh": "vasari_starbase_debris_back",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_starbase_back_damage_debris"
+            }]
+        }
+    }]
+}

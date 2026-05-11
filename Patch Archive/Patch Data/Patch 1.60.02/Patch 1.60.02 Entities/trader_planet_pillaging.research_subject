@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_armament",
+    "field_coord": [3, 7],
+    "research_time": 150.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon",
+                "weapon_type": "planet_bombing"
+            }]
+        },
+        "action_data_source": "trader_planet_pillaging_research_subject",
+        "buff": "trader_planet_pillaging_research_subject",
+        "tooltip_lines": [
+        {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.planet_pillaging_credits_gained_per_damage_dealt",
+            "value_id": "credits_gained_per_damage_dealt",
+            "value_float_format": "one_decimal_place",
+            "value_color": "positive"
+        }]
+    }],
+    "name": "trader_planet_pillaging_research_subject_name",
+    "name_uppercase": "trader_planet_pillaging_research_subject_name_uppercase",
+    "description": "trader_planet_pillaging_research_subject_description",
+    "hud_icon": "trader_planet_pillaging_research_subject_hud_icon",
+    "tooltip_picture": "trader_planet_pillaging_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_faction",
+        "research_text_filter_rebel"
+    ],
+    "arbitary_research_line":
+    {
+        "heading": "tooltip.research_subject.arbitary_planet_bomb_heading"
+    }
+}

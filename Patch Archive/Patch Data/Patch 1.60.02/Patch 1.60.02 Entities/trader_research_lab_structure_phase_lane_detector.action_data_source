@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "action_values": [
+    {
+        "action_value_id": "phase_lane_distance",
+        "action_value":
+        {
+            "values": [1.0, 2.0]
+        }
+    }]
+}

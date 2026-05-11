@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_protection",
+    "field_coord": [2, 7],
+    "research_time": 135.0,
+    "price":
+    {
+        "credits": 500.0,
+        "metal": 125.0,
+        "crystal": 300.0
+    },
+    "prerequisites": [
+        ["advent_unlock_hangar_defense_structure"]
+    ],
+    "name": "advent_unlock_hangar_defense_anima_ability_research_subject_name",
+    "name_uppercase": "advent_unlock_hangar_defense_anima_ability_research_subject_name_uppercase",
+    "hud_icon": "advent_hangar_defense_empowered_anima_hud_icon",
+    "tooltip_picture": "advent_hangar_defense_empowered_anima_tooltip_picture"
+}

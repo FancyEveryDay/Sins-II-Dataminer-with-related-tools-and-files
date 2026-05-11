@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "advent_starbase_upgrade_missile_weapon",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_starbase_upgrade_missile_weapon_on_self"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.splash_damage",
+                "value_id": "upgrade_missile_splash_damage_value",
+                "value_float_format": "percentage",
+                "ratio_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.splash_damage_radius",
+                "value_id": "upgrade_missile_splash_radius_value"
+            }]
+        }]
+    }
+}

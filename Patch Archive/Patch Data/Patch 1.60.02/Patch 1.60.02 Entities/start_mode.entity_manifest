@@ -1,0 +1,7 @@
+{
+    "ids": [
+        "basic_start_mode",
+        "normal_start_mode",
+        "quick_start_mode",
+        "advanced_start_mode"]
+}

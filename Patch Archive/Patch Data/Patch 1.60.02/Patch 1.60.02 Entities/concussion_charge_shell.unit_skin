@@ -1,0 +1,37 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1110.023154,
+        "min_camera_distance": 34.068601,
+        "gui":
+        {
+            "hud_icon": "concussion_charge_shell_hud_icon",
+            "hud_monochrome_icon": "concussion_charge_shell_main_view_icon",
+            "tooltip_icon": "concussion_charge_shell_tooltip_icon",
+            "name": "concussion_charge_shell_name",
+            "description": "concussion_charge_shell_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "concussion_charge_shell",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "strikecraft",
+            "icon": "concussion_charge_shell_main_view_icon"
+        },
+        "effects":
+        {},
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "engine_techsupportship"
+            }
+        },
+        "death_sequence_group": "torpedo1"
+    }]
+}

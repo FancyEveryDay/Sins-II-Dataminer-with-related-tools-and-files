@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "disruptor_nanites_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "disruptor_nanites_duration_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    }]
+}

@@ -1,0 +1,47 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "antimatter_restore_duration",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    },
+    {
+        "action_value_id": "antimatter_restore_rate_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_antimatter_pod_unit_item_buff_large",
+        "alias_binding":
+        {
+            "particle_effect": "advent_antimatter_pod_on_large"
+        }
+    },
+    {
+        "alias_name": "advent_antimatter_pod_unit_item_buff_medium",
+        "alias_binding":
+        {
+            "particle_effect": "advent_antimatter_pod_on_medium"
+        }
+    },
+    {
+        "alias_name": "advent_antimatter_pod_unit_item_buff_small",
+        "alias_binding":
+        {
+            "particle_effect": "advent_antimatter_pod_on_small"
+        }
+    }]
+}

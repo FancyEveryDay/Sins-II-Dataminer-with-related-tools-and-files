@@ -1,0 +1,61 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_antiarmor_cruiser_berserk_overcharge",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["vasari_unlock_antiarmor_cruiser_berserk_overcharge_ability"]
+        ]
+    ],
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_antiarmor_cruiser_berserk_overcharge"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_antiarmor_cruiser_berserk_overcharge_ability_hud_icon",
+        "tooltip_picture": "vasari_antiarmor_cruiser_berserk_overcharge_ability_tooltip_picture",
+        "name": "vasari_antiarmor_cruiser_berserk_overcharge_ability_name",
+        "description": "vasari_antiarmor_cruiser_berserk_overcharge_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.max_stack_count",
+                "value_id": "berserk_overcharge_max_stack_count"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.stack_duration",
+                "value_id": "berserk_overcharge_stack_duration_value",
+                "value_suffix": "seconds"
+            }]
+        },
+        {
+            "header_text": "vasari_antiarmor_cruiser_berserk_overcharge_bonus_header",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "weapon_modifier.damage",
+                "value_id": "berserk_overcharge_weapon_damage_bonus_value",
+                "value_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "unit_modifier.max_linear_speed",
+                "value_id": "berserk_overcharge_linear_speed_bonus_value",
+                "value_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "unit_modifier.max_angular_speed",
+                "value_id": "berserk_overcharge_angular_speed_bonus_value",
+                "value_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

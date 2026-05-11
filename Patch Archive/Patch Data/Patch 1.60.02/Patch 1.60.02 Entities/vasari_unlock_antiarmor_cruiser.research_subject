@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_revival",
+    "field_coord": [7, 1],
+    "research_time": 420.0,
+    "price":
+    {
+        "metal": 630.0,
+        "crystal": 720.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_unlock_heavy_cruiser",
+        "vasari_unlock_long_range_frigate"]
+    ],
+    "name": "vasari_unlock_antiarmor_cruiser_research_subject_name",
+    "name_uppercase": "vasari_unlock_antiarmor_cruiser_research_subject_name_uppercase",
+    "hud_icon": "vasari_antiarmor_cruiser_hud_icon",
+    "tooltip_picture": "vasari_antiarmor_cruiser_tooltip_picture"
+}

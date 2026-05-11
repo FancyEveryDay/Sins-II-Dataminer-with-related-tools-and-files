@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [90.0]
+        }
+    },
+    {
+        "action_value_id": "instant_build_strikecraft_count",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    }]
+}

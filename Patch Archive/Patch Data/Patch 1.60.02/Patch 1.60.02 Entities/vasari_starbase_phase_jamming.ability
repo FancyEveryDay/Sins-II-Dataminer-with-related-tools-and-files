@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_starbase_phase_jamming",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_starbase_phase_jamming_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_marauder_capital_ship_distort_gravity_ability_hud_icon",
+        "tooltip_picture": "vasari_marauder_capital_ship_distort_gravity_ability_tooltip_picture",
+        "name": "vasari_starbase_phase_jamming_ability_name",
+        "description": "vasari_starbase_phase_jamming_ability_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.gravity_well_aura_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "phase_jamming_hyperspace_charge_time_modifier"
+            }]
+        }]
+    }
+}

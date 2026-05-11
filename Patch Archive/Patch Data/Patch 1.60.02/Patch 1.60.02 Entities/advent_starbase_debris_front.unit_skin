@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2000000,
+        "min_camera_distance": 1644.756988,
+        "unit_mesh":
+        {
+            "mesh": "advent_starbase_debris_front",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_starbase_front_debris_damage"
+            }]
+        }
+    }]
+}

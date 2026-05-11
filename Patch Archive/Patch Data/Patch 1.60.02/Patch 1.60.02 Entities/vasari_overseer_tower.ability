@@ -1,0 +1,74 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_overseer_tower",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "cooldown_time_value",
+        "required_available_supply": "available_supply_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "spawn_units",
+                    "units":
+                    {
+                        "required_units": [
+                        {
+                            "unit": "vasari_overseer_cruiser",
+                            "count": [1, 1]
+                        },
+                        {
+                            "unit": "vasari_fabricator_cruiser",
+                            "count": [1, 1]
+                        }],
+                        "random_units": [
+                        {
+                            "unit": "vasari_light_frigate",
+                            "weight": 2.0
+                        },
+                        {
+                            "unit": "vasari_anticorvette_corvette",
+                            "weight": 3.0
+                        }]
+                    },
+                    "in_hyperspace": true,
+                    "arrival_delay_value": "arrival_delay_value",
+                    "owner_player":
+                    {
+                        "player_type": "unit_owner",
+                        "owned_unit":
+                        {
+                            "unit_type": "current_spawner"
+                        }
+                    },
+                    "available_supply_value": "available_supply_value",
+                    "constrain_available_supply_to_owner_player": true,
+                    "check_research_prerequisites": false
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "targeting_ui": "pick_gravity_well",
+        "target_alert": "targeted_by_ability",
+        "target_filters": [
+            "vasari_overseer_tower_target_filter"]
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_overseer_tower_unit_item_hud_icon",
+        "name": "vasari_overseer_tower_unit_item_name",
+        "description": "vasari_overseer_tower_unit_item_description",
+        "tooltip_line_groups": [
+        {
+            "lines": []
+        }]
+    }
+}
