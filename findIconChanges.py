@@ -71,14 +71,20 @@ newImagesDict = {}
 for i in newImages:
     newImagesDict[i.split("\\")[-1] ] = i
 
-for i, newImage in newImagesDict.items():
-    oldImage = oldImagesDict.get(i, False)
-    if oldImage:
-        if filecmp.cmp(newImage, oldImage, shallow=False):
-            continue
-        else:
-            print(i)
-    else:
-        print("[NEW] " + i)
+with open(f"Patch Archive\\{newPatchNumber}_new_textures.txt", "w") as file:
+    file.write(f"{"_"*40}\n{"New Textures for Patch " + newPatchNumber :^40}\n{"_"*40}\n\n")
 
-    shutil.copy2(newImage, f"{SINS_FILES_LOCATION}\\New Textures")
+with open(f"Patch Archive\\{newPatchNumber}_new_textures.txt", "a") as file:
+    for i, newImage in newImagesDict.items():
+        oldImage = oldImagesDict.get(i, False)
+        if oldImage:
+            if filecmp.cmp(newImage, oldImage, shallow=False):
+                continue
+            else:
+                print(i)
+                file.write(i + "\n")
+        else:
+            print("[NEW] " + i)
+            file.write("[NEW] " + i + "\n")
+
+        shutil.copy2(newImage, f"{SINS_FILES_LOCATION}\\New Textures")
