@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "media_conglomerate_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_definition",
+                "unit_definition": "trader_culture_center_structure"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "media_conglomerate_influence_bonus",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    }],
+    "buff_empire_modifiers": [
+    {
+        "buff_empire_modifier_id": "trader_media_conglomerate_influence_modifier",
+        "buff_empire_modifier":
+        {
+            "modifier_type": "max_influence_points",
+            "value_behavior": "additive",
+            "value_id": "media_conglomerate_influence_bonus"
+        }
+    }]
+}

@@ -1,0 +1,92 @@
+{
+    "version": 0,
+    "active_duration": "intimidating_presence_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "intimidating_presence_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "intimidating_presence_enemy_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_overseer_cruiser_intimidating_presence_on_target"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "only_visible_if_mesh_is_visible": false,
+                    "effect": "vasari_overseer_cruiser_intimidating_presence_on_self"
+                }
+            },
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "intimidating_presence_radius_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "intimidating_presence_enemy_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_overseer_cruiser_intimidating_presence_on_target"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            }]
+        }
+    }]
+}

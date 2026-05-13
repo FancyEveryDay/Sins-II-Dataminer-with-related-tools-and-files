@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 58394.006081,
+        "min_camera_distance": 612.990618,
+        "unit_mesh":
+        {
+            "mesh": "advent_battle_capital_ship_debris_front",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_battle_capital_front_debris_damage"
+            }]
+        }
+    }]
+}

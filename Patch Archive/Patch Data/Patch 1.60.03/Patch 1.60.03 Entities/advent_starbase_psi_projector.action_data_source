@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "psi_projector_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_ability"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "psi_projector_spellpower_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "psi_projector_spellpower_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "spell_power",
+            "value_behavior": "additive",
+            "value_id": "psi_projector_spellpower_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_starbase_psi_projector_passive",
+        "alias_binding":
+        {
+            "particle_effect": "advent_psi_projector"
+        }
+    }]
+}

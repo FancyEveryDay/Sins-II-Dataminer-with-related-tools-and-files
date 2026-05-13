@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "action_data_source": "trader_capital_ship_insurance_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_capital_ship_insurance_unit_item",
+        "only_if_owner_unit_operational": false
+    }
+}

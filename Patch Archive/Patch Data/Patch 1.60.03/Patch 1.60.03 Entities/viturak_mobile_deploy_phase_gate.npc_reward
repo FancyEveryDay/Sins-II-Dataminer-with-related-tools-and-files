@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "vasari_deploy_phase_gate_unit_item_hud_icon",
+        "name": "npc_reward.viturak_mobile_deploy_phase_gate.name",
+        "description": "npc_reward.viturak_mobile_deploy_phase_gate.description"        
+    },
+    "type": "ship_component",
+    "item": "viturak_mobile_deploy_phase_gate"
+}

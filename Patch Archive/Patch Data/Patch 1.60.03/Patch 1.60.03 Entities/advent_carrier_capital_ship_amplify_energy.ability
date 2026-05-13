@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "action_data_source": "advent_carrier_capital_ship_amplify_energy",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6],
+    "passive_actions":
+    {
+        "persistant_buff": "advent_carrier_capital_ship_amplify_energy_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "advent_carrier_capital_ship_amplify_energy_ability_hud_icon",
+        "name": "advent_carrier_capital_ship_amplify_energy_ability_name",
+        "description": "advent_carrier_capital_ship_amplify_energy_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "amplify_energy_apply_buff_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.aura_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "amplify_energy_weapon_damage_modifier"
+            }]
+        }]
+    }
+}

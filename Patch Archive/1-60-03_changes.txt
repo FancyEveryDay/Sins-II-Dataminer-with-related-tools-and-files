@@ -1,0 +1,141 @@
+
+
+# Advent Changes
+
+## Ability Changes
+
+**Phase Jamming**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+		tooltip_picture : vasari_marauder_capital_ship_distort_gravity_ability_tooltip_picture -> phase_jamming_tooltip_picture
+
+## Action_data_source Changes
+
+**Psionic Burst**
+	action_values
+		kinetic_blast_damage_value
+			action_value
+				ratio
+					ratio_values : 2.0 -> 1.0
+
+## Buff Changes
+
+**advent_starbase_phase_jamming_on_target**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+
+
+# TEC Changes
+
+## Ability Changes
+
+**Meson Bolt**
+	gui
+		tooltip_line_groups
+			0
+				lines
+					single_value
+						label_text : tooltip.ability.armor_penetration -> tooltip.ability.duration
+						value_id : meson_bolt_penetration_value -> meson_bolt_duration_value
+						[NEW] value_suffix : seconds
+						[REMOVED] visible_if_value_zero : True
+			[NEW] 1 : {'header_text': 'tooltip.ability.if_target_shields_down', 'lines': [{'rendering_type': 'single_value', 'label_text': 'tooltip.ability.bonus_armor_damage', 'value_id': 'meson_bolt_damage_value', 'value_color': 'negative'}, {'visible_if_value_zero': True, 'rendering_type': 'single_value', 'label_text': 'tooltip.ability.armor_penetration', 'value_id': 'meson_bolt_penetration_value'}]}
+
+**Phase Jamming**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+		tooltip_picture : vasari_marauder_capital_ship_distort_gravity_ability_tooltip_picture -> phase_jamming_tooltip_picture
+
+## Action_data_source Changes
+
+**Flechette Blast**
+	action_values
+		flechette_blast_cooldown_time_value
+			action_value
+				values : 10.0 -> 45.0
+		flechette_blast_arc_half_angle_value
+			action_value
+				values : 45.0 -> 15.0
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**trader_starbase_phase_jamming_on_target**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+
+## Unit_skin Changes
+
+**Ion Torpedo**
+	skin_stages
+		gui
+			name : trader_very_large_torpedo_name -> trader_very_large_torpedo_ability_name
+			description : trader_very_large_torpedo_description -> trader_very_large_torpedo_ability_description
+
+
+# Vasari Changes
+
+## Ability Changes
+
+**Phase Jamming**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+		tooltip_picture : vasari_marauder_capital_ship_distort_gravity_ability_tooltip_picture -> phase_jamming_tooltip_picture
+
+## Buff Changes
+
+**vasari_starbase_phase_jamming_on_target**
+	gui
+		hud_icon : vasari_marauder_capital_ship_distort_gravity_ability_hud_icon -> phase_jamming_hud_icon
+
+
+# Herald Changes
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+## Ability Changes
+
+**pirate_boarding_crew**
+	gui
+		[NEW] tooltip_line_groups : [{'lines': [{'rendering_type': 'single_value', 'label_text': 'tooltip.ability.hull_damage_rate', 'value_id': 'boarding_crew_damage_rate_value', 'value_suffix': 'per_second', 'value_color': 'negative'}, {'visible_if_value_zero': True, 'rendering_type': 'single_value', 'label_text': 'tooltip.ability.armor_penetration', 'value_id': 'boarding_crew_penetration_value'}, {'rendering_type': 'single_value', 'label_text': 'tooltip.ability.duration', 'value_id': 'boarding_crew_duration_value', 'value_suffix': 'seconds'}]}, {'header_text': 'tooltip.ability.on_target_death', 'lines': [{'rendering_type': 'single_line', 'label_text': 'tooltip.ability.unit_captured', 'value_color': 'positive'}, {'rendering_type': 'single_value', 'label_text': 'tooltip.ability.shield_restore', 'value_id': 'boarding_crew_shield_restore_value', 'value_float_format': 'percentage', 'value_color': 'positive'}, {'rendering_type': 'single_value', 'label_text': 'tooltip.ability.armor_restore', 'value_id': 'boarding_crew_armor_restore_value', 'value_float_format': 'percentage', 'value_color': 'positive'}, {'rendering_type': 'single_value', 'label_text': 'tooltip.ability.hull_restore', 'value_id': 'boarding_crew_hull_restore_value', 'value_float_format': 'percentage', 'value_color': 'positive'}]}]
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

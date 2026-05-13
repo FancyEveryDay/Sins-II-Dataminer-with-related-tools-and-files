@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "segments": [
+    {
+        "forward": [0.0, 1.0, 0.0],
+        "up": [0.0, 0.0, 1.0],
+        "linear_direction": [0.0, 0.0, 1.0],
+        "stop_at_goal": false,
+        "move_limits_scalars":
+        {
+            "max_linear_speed_scalar": 0.7,
+            "max_linear_acceleration_scalar": 1.0,
+            "max_linear_deceleration_scalar": 1.0,
+            "max_angular_speed_scalar": 2.0,
+            "max_angular_acceleration_scalar": 2.0,
+            "max_angular_deceleration_scalar": 2.0
+        }
+    },
+    {
+        "forward": [0.0, 0.0, 1.0],
+        "up": [0.0, -1.0, 0.0],
+        "linear_direction": [0.0, 0.0, 1.0],
+        "stop_at_goal": false,
+        "move_limits_scalars":
+        {
+            "max_linear_speed_scalar": 0.7,
+            "max_linear_acceleration_scalar": 1.0,
+            "max_linear_deceleration_scalar": 1.0,
+            "max_angular_speed_scalar": 2.0,
+            "max_angular_acceleration_scalar": 2.0,
+            "max_angular_deceleration_scalar": 2.0
+        }
+    },
+    {
+        "forward": [0.0, 0.0, 1.0],
+        "up": [0.0, 1.0, 0.0],
+        "linear_direction": [0.0, 0.0, 1.0],
+        "stop_at_goal": true,
+        "move_limits_scalars":
+        {
+            "max_linear_speed_scalar": 0.7,
+            "max_linear_acceleration_scalar": 1.0,
+            "max_linear_deceleration_scalar": 1.0,
+            "max_angular_speed_scalar": 2.0,
+            "max_angular_acceleration_scalar": 2.0,
+            "max_angular_deceleration_scalar": 2.0
+        }
+    }]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "loot_level_name.0",
+    "spawn_position_radius_percentage_from_center": 0.5,
+    "objective_based_structure_units": [
+        "dlc_ancient_starbase"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_data_source": "viturak_jump_field_stabilizer",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "viturak_jump_field_stabilizer"
+    },
+    "gui":
+    {}
+}

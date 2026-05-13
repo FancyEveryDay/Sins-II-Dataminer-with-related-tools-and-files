@@ -1,0 +1,17 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "advent_loyalist_homeworld_temple_of_pilgrimage_unit_item_hud_icon",
+    "tooltip_picture": "advent_loyalist_homeworld_temple_of_pilgrimage_unit_item_tooltip_picture",
+    "name": "advent_loyalist_homeworld_temple_of_pilgrimage_unit_item_name",
+    "description": "advent_loyalist_homeworld_temple_of_pilgrimage_unit_item_desc",
+    "price":
+    {},
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "desert"]
+    }],
+    "ability": "advent_loyalist_homeworld_temple_of_pilgrimage"
+}

@@ -1,0 +1,249 @@
+{
+    "player_count": {
+        "min":         1,
+        "extreme_min": 0,
+        "warning_min": 1,
+        "default":     4,
+        "warning_max": 11,
+        "extreme_max": 11,
+        "max":         10
+    },
+    "solar_system_count": {
+        "min":         1,
+        "extreme_min": 0,
+        "warning_min": 0,
+        "default":     1,
+        "warning_max": 6,
+        "extreme_max": 10,
+        "max":         10
+    },
+    "planet_count": {
+        "min":         10,
+        "extreme_min": 10,
+        "warning_min": 15,
+        "default":     30,
+        "warning_max": 100,
+        "extreme_max": 200,
+        "max":         500
+    },
+    "phase_lane_type": {
+        "min":         1,
+        "extreme_min": 0,
+        "warning_min": 0,
+        "default":     3,
+        "warning_max": 4,
+        "extreme_max": 4,
+        "max":         3
+    },
+    "artifacts": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     2,
+        "warning_max": 5,
+        "extreme_max": 8,
+        "max":         10
+    },
+    "phase_lane_density_percent": {
+        "min":         1,
+        "extreme_min": 2,
+        "warning_min": 5,
+        "default":     75,
+        "warning_max": 80,
+        "extreme_max": 99,
+        "max":         99
+    },
+    "home_planet_spread_percent": {
+        "min":         10,
+        "extreme_min": 10,
+        "warning_min": 40,
+        "default":     80,
+        "warning_max": 95,
+        "extreme_max": 99,
+        "max":         99
+    },
+    "wormholes": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 1,
+        "extreme_max": 2,
+        "max":         3
+    },
+    "npc_planets": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 2,
+        "extreme_max": 4,
+        "max":         5
+    },
+    "min_home_distance": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     3,
+        "warning_max": 6,
+        "extreme_max": 8,
+        "max":         10
+    },
+    "loot_chance_percent": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     20,
+        "warning_max": 25,
+        "extreme_max": 40,
+        "max":         50
+    },
+    "bonus_chance_percent": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     25,
+        "warning_max": 25,
+        "extreme_max": 40,
+        "max":         50
+    },
+    "system_spacing_percent": {
+        "min":         45,
+        "extreme_min": 75,
+        "warning_min": 100,
+        "default":     125,
+        "warning_max": 130,
+        "extreme_max": 140,
+        "max":         150
+    },
+    "lane_reach_percent": {
+        "min":         1,
+        "extreme_min": 5,
+        "warning_min": 10,
+        "default":     50,
+        "warning_max": 99,
+        "extreme_max": 99,
+        "max":         99
+    },
+    "moons": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     1,
+        "warning_max": 1,
+        "extreme_max": 2,
+        "max":         3
+    },
+    "rich_planet_percent": {
+        "min":         0,
+        "extreme_min": 5,
+        "warning_min": 10,
+        "default":     25,
+        "warning_max": 50,
+        "extreme_max": 95,
+        "max":         100
+    },
+    "poor_planet_percent": {
+        "min":         0,
+        "extreme_min": 5,
+        "warning_min": 50,
+        "default":     75,
+        "warning_max": 90,
+        "extreme_max": 95,
+        "max":         100
+    },
+    "retrograde_percent": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     10,
+        "warning_max": 50,
+        "extreme_max": 75,
+        "max":         99
+    },
+    "orbit_speed_percent": {
+        "min":         1,
+        "extreme_min": 10,
+        "warning_min": 25,
+        "default":     100,
+        "warning_max": 200,
+        "extreme_max": 400,
+        "max":         500
+    },
+    "team_count": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 6,
+        "extreme_max": 6,
+        "max":         5
+    },
+    "guardian_npcs": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 4,
+        "extreme_max": 8,
+        "max":         10
+    },
+    "enemy_factions": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 4,
+        "extreme_max": 8,
+        "max":         10
+    },
+    "pirate_npcs": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 4,
+        "extreme_max": 8,
+        "max":         10
+    },
+    "planet_radius_percent": {
+        "min":         1,
+        "extreme_min": 2,
+        "warning_min": 5,
+        "default":     10,
+        "warning_max": 50,
+        "extreme_max": 75,
+        "max":         100
+    },
+    "system_radius": {
+        "min":         45,
+        "extreme_min": 100,
+        "warning_min": 200,
+        "default":     500,
+        "warning_max": 5000,
+        "extreme_max": 6500,
+        "max":         7500
+    },
+    "random_stars": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 2,
+        "extreme_max": 5,
+        "max":         10
+    },
+    "orbit_overlap": {
+        "min":         0,
+        "extreme_min": -1,
+        "warning_min": -1,
+        "default":     0,
+        "warning_max": 2,
+        "extreme_max": 2,
+        "max":         1
+    },
+
+    "normal_value_color":  "neutral_value",
+    "warning_value_color": "warning_value",
+    "extreme_value_color": "negative_value"
+}

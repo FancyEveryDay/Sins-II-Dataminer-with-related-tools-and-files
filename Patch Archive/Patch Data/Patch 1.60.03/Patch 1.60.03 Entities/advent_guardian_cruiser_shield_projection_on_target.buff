@@ -1,0 +1,184 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_guardian_cruiser_shield_projection_buff_on_target_small",
+                        "medium_unit": "advent_guardian_cruiser_shield_projection_buff_on_target_medium",
+                        "large_unit": "advent_guardian_cruiser_shield_projection_buff_on_target_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_player_ownership_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "damage_can_be_propagated"
+            },
+            "actions": [
+            {
+                "action_type": "prevent_damage",
+                "damage_prevented_value": "shield_projection_damage_prevented_value"
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "shield_projection_damage_prevented_value",
+                    "penetration_value": "uniforms_damage_event_penetration_value",
+                    "can_damage_be_propagated": false
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "total_damage",
+                "math_operators": [
+                {
+                    "operator_type": "add",
+                    "operand_value": "shield_projection_damage_prevented_value"
+                }]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "time_since_sent_effect",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "common_simulation_time_value"
+                },
+                {
+                    "operator_type": "subtract",
+                    "operand_value": "shield_projection_last_sent_effect_time_value"
+                },
+                {
+                    "operator_type": "max",
+                    "operand_value": "fixed_zero"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "composite_and",
+                    "constraints": [
+                    {
+                        "constraint_type": "value_comparison",
+                        "value_a": "shield_projection_total_damage_value",
+                        "comparison_type": "greater_than_equal_to",
+                        "value_b": "shield_projection_total_damage_threshold_value"
+                    },
+                    {
+                        "constraint_type": "value_comparison",
+                        "value_a": "shield_projection_time_since_sent_effect_value",
+                        "comparison_type": "greater_than_equal_to",
+                        "value_b": "shield_projection_min_time_between_effects_value"
+                    }]
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effects":
+                    {
+                        "beam_effect": "advent_guardian_cruiser_shield_projection_beam",
+                        "hit_hull_effect": "advent_guardian_cruiser_shield_projection_beam_hit_hull",
+                        "hit_shield_effect": "advent_guardian_cruiser_shield_projection_beam_hit_shield",
+                        "hit_shield_impact_radius_t": 1.0
+                    },
+                    "charge_duration": "fixed_zero",
+                    "beam_duration": "shield_projection_damage_sent_effect_duration"
+                },
+                {
+                    "operator_type": "change_buff_memory_float_value",
+                    "float_variable": "total_damage",
+                    "math_operators": [
+                    {
+                        "operator_type": "assign",
+                        "operand_value": "fixed_zero"
+                    }]
+                },
+                {
+                    "operator_type": "change_buff_memory_float_value",
+                    "float_variable": "last_sent_effect_time",
+                    "math_operators": [
+                    {
+                        "operator_type": "assign",
+                        "operand_value": "common_simulation_time_value"
+                    }]
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_guardian_cruiser_shield_projection_ability_hud_icon",
+        "name": "advent_guardian_cruiser_shield_projection_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_redirected",
+                "value_id": "shield_projection_damage_prevented_value",
+                "value_color": "positive",
+                "value_float_format": "percentage"
+            }]
+        }]
+    }
+}
