@@ -175,6 +175,11 @@
     "Advent Psi Projector Blueprint"
    ]
   ],
+  "Advent Psionic Shield": [
+   [
+    "Advent Psionic Shield Blueprint"
+   ]
+  ],
   "Advent Kinetic Surge Missiles": [
    [
     "Advent Kinetic Surge Missile Blueprint"
@@ -1742,7 +1747,7 @@
   ],
   "Advent Shield Booster Blueprint": [
    [
-    "Advent Transcencia Blueprint"
+    "Advent Eradica Blueprint"
    ]
   ],
   "Advent Plasma Agitator Blueprint": [
@@ -1792,7 +1797,7 @@
   ],
   "Advent Area Shield Blueprint": [
    [
-    "Advent Shield Booster Blueprint"
+    "Advent Psionic Shield Blueprint"
    ]
   ],
   "Advent Lethargy": [
@@ -1811,6 +1816,11 @@
    ]
   ],
   "Advent Psi Projector Blueprint": [
+   [
+    "Advent Transcencia Blueprint"
+   ]
+  ],
+  "Advent Psionic Shield Blueprint": [
    [
     "Advent Transcencia Blueprint"
    ]

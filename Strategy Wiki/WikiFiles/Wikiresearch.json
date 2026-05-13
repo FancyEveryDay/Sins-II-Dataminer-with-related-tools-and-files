@@ -2727,34 +2727,32 @@
  },
  "Advent Shield Booster Blueprint": {
   "domain": "Hostility",
-  "tier": "Hostility III",
-  "field": "Protection",
+  "tier": "Hostility V",
+  "field": "Ascension",
   "field_coord": [
-   5,
-   7
+   8,
+   10
   ],
-  "research_time": 270.0,
+  "research_time": 525.0,
   "prerequisites": [
    [
-    "Advent Transcencia Blueprint"
+    "Advent Eradica Blueprint"
    ]
   ],
-  "hud_icon": "advent_starbase_shield_booster_unit_item_hud_icon",
-  "tooltip_icon": "advent_starbase_shield_booster_unit_item_tooltip_picture",
+  "hud_icon": "advent_rebel_titan_shield_booster_unit_item_hud_icon",
+  "tooltip_picture": "advent_rebel_titan_shield_booster_unit_item_tooltip_picture",
   "name": "Shield Booster Blueprint",
-  "id": "advent_unlock_starbase_shield_booster_unit_item",
+  "id": "advent_unlock_rebel_titan_shield_booster_unit_item",
   "race": "Advent",
-  "credits": 850.0,
-  "metal": 275.0,
-  "crystal": 650.0,
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 1200.0,
   "unlocks": [
    {
     "unit_item": "Advent Shield Booster"
-   },
-   {
-    "research_subject": "Advent Area Shield Blueprint"
    }
-  ]
+  ],
+  "image": "Advent Shield Booster"
  },
  "Advent Geomagnetic Embrace": {
   "domain": "Harmony",
@@ -3230,6 +3228,9 @@
     "research_subject": "Advent Additional Armor Blueprint"
    },
    {
+    "research_subject": "Advent Shield Booster Blueprint"
+   },
+   {
     "research_subject": "Advent Eradica Swarm Missiles Blueprint"
    }
   ],
@@ -3514,9 +3515,6 @@
     "research_subject": "Advent Meteoroid Control"
    },
    {
-    "research_subject": "Advent Shield Booster Blueprint"
-   },
-   {
     "research_subject": "Advent Lethargy"
    },
    {
@@ -3524,6 +3522,9 @@
    },
    {
     "research_subject": "Advent Psi Projector Blueprint"
+   },
+   {
+    "research_subject": "Advent Psionic Shield Blueprint"
    },
    {
     "research_subject": "Advent Kinetic Surge Missile Blueprint"
@@ -3545,7 +3546,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Shield Booster Blueprint"
+    "Advent Psionic Shield Blueprint"
    ]
   ],
   "hud_icon": "advent_starbase_area_shield_unit_item_hud_icon",
@@ -3681,6 +3682,37 @@
    }
   ],
   "image": "Advent advent_starbase_psi_projector_unit_item_tooltip_picture"
+ },
+ "Advent Psionic Shield Blueprint": {
+  "domain": "Hostility",
+  "tier": "Hostility III",
+  "field": "Protection",
+  "field_coord": [
+   5,
+   7
+  ],
+  "research_time": 270.0,
+  "prerequisites": [
+   [
+    "Advent Transcencia Blueprint"
+   ]
+  ],
+  "hud_icon": "advent_starbase_shield_booster_unit_item_hud_icon",
+  "tooltip_icon": "advent_starbase_shield_booster_unit_item_tooltip_picture",
+  "name": "Psionic Shield Blueprint",
+  "id": "advent_unlock_starbase_shield_booster_unit_item",
+  "race": "Advent",
+  "credits": 850.0,
+  "metal": 275.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "unit_item": "Advent Psionic Shield"
+   },
+   {
+    "research_subject": "Advent Area Shield Blueprint"
+   }
+  ]
  },
  "Advent Starbase Missile Launchers": {
   "domain": "Hostility",
