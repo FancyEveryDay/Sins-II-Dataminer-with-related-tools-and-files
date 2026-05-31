@@ -12,9 +12,8 @@ def main():
     completeItemSet = wikiPlayer.main()
     prereqsDict = wikiPrerequisites.main(completeItemSet = completeItemSet)
     wikiResearch.main(prereqsDict)
-
-
     wikiUnit.main()
+    wikiStructure.main()
 
 if __name__ == "__main__":
     main()
