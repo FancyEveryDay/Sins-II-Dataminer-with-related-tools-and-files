@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-TOP_DICT = Path(__file__).parent.parent.parent.resolve()
+TOP_DIR = Path(__file__).parent.parent.parent.resolve()
 
 with open('.env', 'r') as env:
     SINS_DIRECTORY = Path(json.load(env)['sins2File'])
@@ -15,4 +15,4 @@ with open(SINS_DIRECTORY / 'localized_text' / 'en.localized_text', 'r') as file:
 ENTITIES = SINS_DIRECTORY / 'entities'
 UNIFORMS = SINS_DIRECTORY / 'uniforms'
 
-WIKIFILES_DICT = TOP_DICT / 'Strategy Wiki' / 'WikiFiles'
+WIKIFILES_DIR = TOP_DIR / 'Strategy Wiki' / 'WikiFiles'

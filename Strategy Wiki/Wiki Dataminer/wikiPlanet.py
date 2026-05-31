@@ -1,6 +1,6 @@
 import glob, json
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, SINS_DIRECTORY, PLANET_UNIFORMS, WIKIFILES_DICT
+from wikiUtilities import LOCALIZED_TEXT, SINS_DIRECTORY, PLANET_UNIFORMS, WIKIFILES_DIR
 
 SPECIAL_DEV_TRACK_DICT = {"max_military_structure_slots" : "Military Orbit Slots",
                           "max_civilian_structure_slots" : "Civilian Orbit Slots",
@@ -223,7 +223,7 @@ def main():
 
 
     # Create wiki_planet file from dictionary
-    with open(WIKIFILES_DICT / 'Wikiplanet.json', 'w') as file:
+    with open(WIKIFILES_DIR / 'Wikiplanet.json', 'w') as file:
         json.dump(wiki_planet, file, indent=1)
 
     print(f"WikiPlanet.json saved")

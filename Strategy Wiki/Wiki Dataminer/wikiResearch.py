@@ -1,6 +1,6 @@
 import json, pprint, glob
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, UNIFORMS, ENTITIES, WIKIFILES_DICT
+from wikiUtilities import LOCALIZED_TEXT, UNIFORMS, ENTITIES, WIKIFILES_DIR
 
 with open(UNIFORMS / 'gui.uniforms', 'r') as file:
     GUI_UNIFORMS = json.load(file)
@@ -311,7 +311,7 @@ def main(prereqsDict):
         # Finally, add processed subject to subject
         subjectDict[name] = subject
 
-    with open(WIKIFILES_DICT / 'Wikiresearch.json', 'w') as file:
+    with open(WIKIFILES_DIR / 'Wikiresearch.json', 'w') as file:
         json.dump(subjectDict, file, indent=1)
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 import json, pprint, glob
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, ENTITIES, WIKIFILES_DICT
+from wikiUtilities import LOCALIZED_TEXT, ENTITIES, WIKIFILES_DIR
 
 
 
@@ -128,7 +128,7 @@ def main(completeItemSet : set = set()):
 
                 prereqsDict[entityType][name].append( tempList )
 
-    with open(WIKIFILES_DICT / "Wikiprerequsites.json", 'w') as file:
+    with open(WIKIFILES_DIR / "Wikiprerequsites.json", 'w') as file:
         json.dump(prereqsDict, file, indent=1)
 
     return(prereqsDict)

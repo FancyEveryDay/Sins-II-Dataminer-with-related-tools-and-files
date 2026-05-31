@@ -1,6 +1,6 @@
 import glob, json, pprint
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, ENTITIES, WIKIFILES_DICT
+from wikiUtilities import LOCALIZED_TEXT, ENTITIES, WIKIFILES_DIR
 
 
 
@@ -147,7 +147,7 @@ def main():
         
         getUniqueLists(subject= key, wiki_player= wiki_player, playerDict= playerDict, itemDict= itemDict(itemGroup), allBuildableItems = completeItemSet)
 
-    with open(WIKIFILES_DICT / "Wikiplayer.json", "w") as file:
+    with open(WIKIFILES_DIR / "Wikiplayer.json", "w") as file:
         json.dump(wiki_player, file, indent = 1)
 
     
