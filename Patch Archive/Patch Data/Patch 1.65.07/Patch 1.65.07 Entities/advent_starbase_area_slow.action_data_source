@@ -1,0 +1,72 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "area_slow_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_move"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "area_slow_max_linear_speed_value",
+        "action_value":
+        {
+            "values": [-0.1],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [-0.001]
+            }
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "area_slow_max_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "area_slow_max_linear_speed_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_starbase_area_slow_on_target_small",
+        "alias_binding":
+        {
+            "particle_effect": "advent_slow_area_status_small"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_slow_on_target_medium",
+        "alias_binding":
+        {
+            "particle_effect": "advent_slow_area_status_medium"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_slow_on_target_large",
+        "alias_binding":
+        {
+            "particle_effect": "advent_slow_area_status_large"
+        }
+    }]
+}

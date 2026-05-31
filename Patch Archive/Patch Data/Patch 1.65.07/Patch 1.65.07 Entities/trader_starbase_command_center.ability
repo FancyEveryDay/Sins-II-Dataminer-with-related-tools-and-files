@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "trader_starbase_command_center",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_starbase_command_center_on_self"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.gravity_well_aura_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "command_center_damage_taken_modifier"
+            },
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "command_center_weapon_range_modifier"
+            },
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "command_center_weapon_damage_modifier"
+            }]
+        }]
+    }
+}

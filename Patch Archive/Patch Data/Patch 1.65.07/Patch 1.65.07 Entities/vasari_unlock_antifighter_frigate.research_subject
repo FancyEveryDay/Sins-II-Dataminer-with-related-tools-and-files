@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_revival",
+    "field_coord": [1, 4],
+    "research_time": 75.0,
+    "price":
+    {
+        "metal": 150.0,
+        "crystal": 90.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_antifighter_frigate_research_subject_name",
+    "name_uppercase": "vasari_unlock_antifighter_frigate_research_subject_name_uppercase",
+    "hud_icon": "vasari_antifighter_frigate_hud_icon",
+    "tooltip_picture": "vasari_antifighter_frigate_tooltip_picture",
+    "ai_build_tags": ["factory_light", "research_military"]
+}

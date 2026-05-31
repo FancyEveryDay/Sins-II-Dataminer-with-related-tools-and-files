@@ -1,0 +1,3352 @@
+
+
+# Advent Changes
+
+## Unit_item Changes
+
+**Additional Armor**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Altar of Sacrifice**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Antimatter Phase Jump Panels**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Antimatter Pod**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Atmospheric Shield Dome**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'population']
+
+**Auxiliary Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Auxiliary Hangar II**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Auxiliary Hangar III**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Brilliance Array**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Coalescence Sanctum**
+	[NEW] ai_build_tags : ['unity', 'culture', 'influence']
+
+**Consecration Inducer**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Coronata Beams**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Crystal Enrichment Center**
+	[NEW] ai_build_tags : ['economy_crystal']
+
+**Cynosural Reservoir**
+	[NEW] ai_build_tags : ['utility_support', 'economy_crystal', 'unity']
+
+**Deploy Transcencia Starbase**
+	[NEW] ai_build_tags : ['defense_starbase']
+
+**Devotion Harvester**
+	[NEW] ai_build_tags : ['unity']
+
+**Empyrean City**
+	[NEW] ai_build_tags : ['population']
+
+**Energy Accelerator**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Epitaph of the Lost**
+	[NEW] ai_build_tags : ['culture', 'unity']
+
+**Eradica Plasma**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Eradica Swarm Missiles**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Essence Reservoir**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Evangelization Nodes**
+	[NEW] ai_build_tags : ['culture']
+
+**Final Judgment**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Greater Temple of Pilgrimage**
+	[NEW] ai_build_tags : ['culture', 'transient_early_game']
+
+**Greater Temple of Purification**
+	[NEW] ai_build_tags : ['culture']
+
+**Guiding Mentor**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Harmony Circuit**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Haven Dome**
+	[NEW] ai_build_tags : ['economy_credits']
+
+**Heathen Quarter**
+	[NEW] ai_build_tags : ['population']
+
+**Hydrostatic Shield Dome**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'population']
+
+**Icon of Control**
+	[NEW] ai_build_tags : ['influence']
+
+**Icon of Revelation**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**Icon of Unity**
+	[NEW] ai_build_tags : ['unity']
+
+**Kinetic Surge Missiles**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Kinetic Surge Warheads**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Laminate Forge**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Meteor Storm**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Neural Stimulator**
+	[NEW] ai_build_tags : ['unity', 'utility_support']
+
+**NeuroAugment Center**
+	[NEW] ai_build_tags : ['utility_support', 'population']
+
+**NeuroPsion Purifier**
+	[NEW] ai_build_tags : ['utility_support', 'unity']
+
+**Nomadic Arch-Coalescence**
+	[NEW] ai_build_tags : ['mobile_infrastructure']
+
+**Pelagic Interface Relay**
+	[NEW] ai_build_tags : ['utility_support', 'unity', 'transient_early_game']
+
+**Planetary Shield Array**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Planetary Shield Projector**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification']
+
+**Plasma Agitator**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Plasma Furnace**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Plasma Nova Generator**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Plaza of Empathy**
+	[NEW] ai_build_tags : ['culture', 'influence']
+
+**Prescience Filter**
+	[NEW] ai_build_tags : ['utility_support', 'unity']
+
+**PsiCredit Mint**
+	[NEW] ai_build_tags : ['economy_credits']
+
+**PsiKinetic Plating**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Psintegrat Choir**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Psionic Dynamo**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Psionic Shield**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Radiation Shield Dome**
+	[NEW] ai_build_tags : ['planet_fortification', 'population']
+
+**Sanctuary Spire**
+	[NEW] ai_build_tags : ['population']
+
+**School of Evangelists**
+	[NEW] ai_build_tags : ['culture']
+
+**Shield Battery**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Shield Booster**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Shrine of Concordance**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**Shrine of Harmony**
+	[NEW] ai_build_tags : ['research_civilian']
+
+**Shrine of Hostility**
+	[NEW] ai_build_tags : ['research_military']
+
+**Shrine of Prophecy**
+	[NEW] ai_build_tags : ['research_military']
+
+**Shrine of Revelation**
+	[NEW] ai_build_tags : ['research_civilian']
+
+**Silent Monastery**
+	[NEW] ai_build_tags : ['population', 'unity']
+
+**Starbase Plasma**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Starbase Swarm Missiles**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Starlight Augury**
+	[NEW] ai_build_tags : ['culture', 'influence', 'utility_support']
+
+**Structural Force Fields**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Structural Integrity**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Structural Integrity II**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Structural Integrity III**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Synchronous Shield**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Telepathic Guidance Amp**
+	[NEW] ai_build_tags : ['factory_heavy', 'mobile_infrastructure']
+
+**Telepathic Relay**
+	[NEW] ai_build_tags : ['culture', 'influence', 'utility_support']
+
+**Temple of Assimilation**
+	[NEW] ai_build_tags : ['culture']
+
+**Temple of Pilgrimage**
+	[NEW] ai_build_tags : ['culture', 'transient_early_game']
+
+**Temple of Purification**
+	[NEW] ai_build_tags : ['culture']
+
+**Temple of Resurrection**
+	[NEW] ai_build_tags : ['defense_support']
+
+**Thermal Shield Dome**
+	[NEW] ai_build_tags : ['planet_fortification', 'population']
+
+**Tithe Sanctum**
+	[NEW] ai_build_tags : ['economy_credits']
+
+**Tranquil Refuge**
+	[NEW] ai_build_tags : ['planet_health', 'unity']
+
+**Unity Protectorate**
+	[NEW] ai_build_tags : ['unity', 'defense_shields', 'utility_support']
+
+**Vex Amplifier**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Votary Siphon**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Zealous Labor**
+	[NEW] ai_build_tags : ['logistics']
+
+## Unit Changes
+
+**Acolyte Corvette**
+	player_ai
+		[NEW] ai_build_tags : ['ship_corvette', 'ship_light']
+
+**Aeria Drone Host**
+	[NEW] player_ai : {'ai_build_tags': ['ship_carrier', 'ship_cruiser', 'ship_heavy']}
+
+**Beam Defense Platform**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_heavy']
+
+**Crystal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'transient_early_game']
+
+**Deliverance Engine**
+	structure
+		[NEW] ai_build_tags : ['super_weapon']
+
+**Destra Crusader**
+	player_ai
+		[NEW] ai_build_tags : ['ship_heavy', 'ship_cruiser']
+
+**Disciple**
+	player_ai
+		[NEW] ai_build_tags : ['ship_light']
+
+**Domina Subjugator**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Exoria Illuminator**
+	[NEW] player_ai : {'ai_build_tags': ['ship_long_range', 'ship_anti_structure', 'ship_cruiser', 'ship_heavy']}
+
+**Exotic Refinery**
+	structure
+		[NEW] ai_build_tags : ['exotic_production']
+
+**Greater Factory**
+	structure
+		[NEW] ai_build_tags : ['factory_heavy']
+
+**Hangar Defense**
+	structure
+		[NEW] ai_build_tags : ['defense_hangar']
+
+**Iconus Guardian**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Laser Defense Platform**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_light']
+
+**Lesser Factory**
+	structure
+		[NEW] ai_build_tags : ['factory_light']
+
+**Metal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'transient_early_game']
+
+**Phase Jump Inhibitor**
+	structure
+		[NEW] ai_build_tags : ['defense_inhibitor']
+
+**Purge**
+	player_ai
+		[NEW] ai_build_tags : ['ship_siege', 'ship_light']
+
+**Tempest Vessel**
+	player_ai
+		[NEW] ai_build_tags : ['ship_light', 'ship_missile']
+
+**Temple of Communion**
+	structure
+		[NEW] ai_build_tags : ['culture']
+
+**Temple of Congregation**
+	structure
+		[NEW] ai_build_tags : ['population']
+
+**Temple of Harmony**
+	structure
+		[NEW] ai_build_tags : ['research_civilian', 'research_general']
+
+**Temple of Hostility**
+	structure
+		[NEW] ai_build_tags : ['research_military', 'research_general']
+
+**Temple of Renewal**
+	structure
+		[NEW] ai_build_tags : ['defense_support']
+
+**Temple of Unity**
+	structure
+		[NEW] ai_build_tags : ['unity']
+
+**Titan Foundry**
+	structure
+		[NEW] ai_build_tags : ['factory_titan']
+
+**Transcencia Starbase**
+	structure
+		[NEW] ai_build_tags : ['starbase']
+
+**Vigilis Sentinel**
+	player_ai
+		[NEW] ai_build_tags : ['ship_point_defense', 'ship_support', 'ship_cruiser', 'ship_heavy']
+
+## Research_subject Changes
+
+**Orbital Habitation Blueprint**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_capital_ship_starting_level_0**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**advent_capital_ship_starting_level_1**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**advent_clone_dead_enemy_units**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**advent_commerce_0**
+	[NEW] ai_build_tags : ['research_civilian', 'economy_credits', 'economy_trade']
+
+**advent_commerce_1**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_commerce_2**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_culture_phase_lane_detection_0**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_culture_phase_lane_detection_1**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_economic_exotic_build_rate**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**advent_enemy_culture_suppression_0**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_enemy_culture_suppression_1**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_hyperspace_antimatter**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_improved_meteoroid_control**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_loyalist_acclimatization_of_will**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_loyalist_clarity_of_purpose**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_loyalist_global_unity**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_max_supply_0**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_max_supply_1**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_max_supply_2**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_max_supply_3**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_max_supply_4**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_meteoroid_control**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_offense_exotic_build_rate**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**advent_passive_experience**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**advent_planet_culture_resistance**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_rebel_loot_collection**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_reduce_cost_of_culture_center**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_reimagine_ancient_retribution**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_reimagine_assimilated_population**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_reimagine_cleanse_and_renew**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_reimagine_explusion**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_reimagine_wail_of_the_sacrificed**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_resurrection_at_home_planet**
+	[NEW] ai_build_tags : ['defense_support', 'research_civilian']
+
+**advent_soul_reclamation**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian', 'unity']
+
+**advent_temple_of_renewal_structure_antimatter_restore_rate**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**advent_unity_mana_0**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unity_mana_1**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unity_mana_2**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unity_mana_3**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unity_points_0**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unity_points_1**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unlock_all_culture_known**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_altar_of_sacrifice_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_unlock_atmospheric_shield_dome_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'population', 'research_civilian']
+
+**advent_unlock_build_ultimate_exotic**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**advent_unlock_carrier_cruiser**
+	[NEW] ai_build_tags : ['carrier_capacity', 'factory_light', 'research_military']
+
+**advent_unlock_coalescence_sanctum_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'unity', 'culture', 'influence']
+
+**advent_unlock_crystal_enricher_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**advent_unlock_crystalline_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_culture_center**
+	[NEW] ai_build_tags : ['research_civilian', 'culture']
+
+**advent_unlock_culture_crystal**
+	[NEW] ai_build_tags : ['culture', 'economy_crystal', 'research_civilian']
+
+**advent_unlock_culture_improve_regeneration**
+	[NEW] ai_build_tags : ['culture', 'defense_support', 'research_civilian']
+
+**advent_unlock_culture_improve_weapon_damage**
+	[NEW] ai_build_tags : ['culture', 'offense_boost', 'research_civilian']
+
+**advent_unlock_culture_spread_from_all_planets**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_cynosural_reservoir_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support', 'economy_crystal', 'unity']
+
+**advent_unlock_defense_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_deliverance_engine_structure**
+	[NEW] ai_build_tags : ['culture', 'research_civilian', 'super_weapon']
+
+**advent_unlock_deliverance_engine_structure_loyalist_ability**
+	[NEW] ai_build_tags : ['culture', 'research_civilian', 'super_weapon']
+
+**advent_unlock_deliverance_engine_structure_rebel_ability**
+	[NEW] ai_build_tags : ['culture', 'research_civilian', 'super_weapon']
+
+**advent_unlock_deploy_starbase_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**advent_unlock_detection_with_culture**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_devotion_harvester_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unlock_empyrean_city_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_energy_booster_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'offense_boost']
+
+**advent_unlock_envoy_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_civilian']
+
+**advent_unlock_envoy_frigate_culture_resistance_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_civilian']
+
+**advent_unlock_epitaph_of_the_lost_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'unity', 'culture']
+
+**advent_unlock_essence_reservoir_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_unlock_exotic_factory_structure**
+	[NEW] ai_build_tags : ['research_civilian', 'exotic_production']
+
+**advent_unlock_ferrous_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_focus_antimatter_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_unlock_focus_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_unlock_focus_shields_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_unlock_focus_weapons_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_unlock_gas_giant_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_guardian_cruiser**
+	[NEW] ai_build_tags : ['defense_support', 'factory_light', 'research_military']
+
+**advent_unlock_guardian_cruiser_renewal_ability**
+	[NEW] ai_build_tags : ['defense_support', 'factory_light', 'research_military']
+
+**advent_unlock_guardian_cruiser_will_of_the_unity_ability**
+	[NEW] ai_build_tags : ['defense_support', 'factory_light', 'research_military']
+
+**advent_unlock_guiding_mentor_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_unlock_gunship_corvette**
+	[NEW] ai_build_tags : ['factory_light', 'ship_corvette', 'research_military']
+
+**advent_unlock_hangar_defense_structure**
+	[NEW] ai_build_tags : ['research_military', 'defense_hangar', 'carrier_capacity']
+
+**advent_unlock_harmony_circuit_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_unlock_haven_dome_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_unlock_heathen_quarter_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_heavy_cruiser**
+	[NEW] ai_build_tags : ['research_military', 'factory_heavy']
+
+**advent_unlock_heavy_cruiser_ruthlessness_ability**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**advent_unlock_hydrostatic_shield_dome_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'population', 'research_civilian']
+
+**advent_unlock_hyperspace_between_stars**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**advent_unlock_ice_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_improved_culture_propagation**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_irradiated_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_laminate_forge_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**advent_unlock_long_range_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_loyalist_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_loyalist_titan_hull_plating_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_loyalist_titan_shield_booster_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_magnetic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_mind_control_fleeing_enemies**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_unlock_missile_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'ship_missile', 'research_military']
+
+**advent_unlock_neuroaugment_center_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support', 'population']
+
+**advent_unlock_neuropsion_purifier_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_unlock_oceanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_pelagic_interface_relay_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_unlock_phase_jump_inhibitor_structure**
+	[NEW] ai_build_tags : ['research_military', 'defense_inhibitor', 'planet_fortification']
+
+**advent_unlock_planet_surface_shield_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'research_military']
+
+**advent_unlock_plasma_booster_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_unlock_plasma_furnace_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**advent_unlock_population_structure**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_prescience_filter_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**advent_unlock_psicredit_mint_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_unlock_psionic_dynamo_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_unlock_radiation_shield_dome_unit_item**
+	[NEW] ai_build_tags : ['planet_fortification', 'population', 'research_civilian']
+
+**advent_unlock_rebel_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_rebel_titan_hull_plating_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_rebel_titan_missile_weapon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'military_weapons']
+
+**advent_unlock_rebel_titan_shield_booster_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_resource_extractor_structures**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**advent_unlock_sanctuary_spire_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_school_of_evangelists_unit_item**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_scout_corvette_lingering_presence_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_shield_burst_restore**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_unlock_ship_factory_structure_repair**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_siege_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_silent_monastery_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'unity', 'population']
+
+**advent_unlock_starbase**
+	[NEW] ai_build_tags : ['research_military', 'defense_starbase']
+
+**advent_unlock_starbase_culture_unit_item**
+	[NEW] ai_build_tags : ['culture', 'defense_starbase', 'research_military']
+
+**advent_unlock_starbase_planetary_shield_array_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'defense_starbase', 'research_military']
+
+**advent_unlock_starbase_unlock_missile_weapon_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military', 'military_weapons']
+
+**advent_unlock_starbase_unlock_plasma_weapon_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military', 'military_weapons']
+
+**advent_unlock_starbase_zealous_labor_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military', 'logistics']
+
+**advent_unlock_starlight_augury_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support', 'culture', 'influence']
+
+**advent_unlock_structural_forcefields_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_unlock_structure_shields**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_unlock_subjugator_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_subjugator_cruiser_nullify_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_subjugator_cruiser_repulsion_field_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**advent_unlock_swamp_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_synchronous_shield_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_unlock_telepathic_relay_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support', 'culture', 'influence']
+
+**advent_unlock_temple_of_assimilation_unit_item**
+	[NEW] ai_build_tags : ['culture', 'research_military']
+
+**advent_unlock_temple_of_pilgrimage_unit_item**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**advent_unlock_temple_of_purification_unit_item**
+	[NEW] ai_build_tags : ['culture', 'research_military']
+
+**advent_unlock_temple_of_renewal_structure**
+	[NEW] ai_build_tags : ['defense_shields', 'defense_support', 'research_military']
+
+**advent_unlock_temple_of_renewal_structure_recharge_shields_ability**
+	[NEW] ai_build_tags : ['defense_shields', 'defense_support', 'research_military']
+
+**advent_unlock_temple_of_resurrection_unit_item**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**advent_unlock_thermal_shield_dome_unit_item**
+	[NEW] ai_build_tags : ['planet_fortification', 'population', 'research_civilian']
+
+**advent_unlock_titan_factory**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**advent_unlock_tithe_collector_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_unlock_tranquil_refuge_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'unity', 'planet_health']
+
+**advent_unlock_unity_protectorate_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'unity', 'defense_shields', 'utility_support']
+
+**advent_unlock_unity_structure**
+	[NEW] ai_build_tags : ['research_civilian', 'unity']
+
+**advent_unlock_volcanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_unlock_wormhole_travel**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**advent_unstoppable_phase_jump**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_antimatter_0**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_antimatter_1**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_antimatter_2**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_armor_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_upgrade_armor_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_upgrade_armor_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_upgrade_barren_biosphere**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_beam_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_beam_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_beam_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_beam_weapon_range**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_crystal_extraction_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_crystal_extraction_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_crystal_extraction_2**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_crystalline_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_upgrade_culture_allegiance**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**advent_upgrade_culture_crystal_0**
+	[NEW] ai_build_tags : ['culture', 'economy_crystal', 'research_civilian']
+
+**advent_upgrade_culture_crystal_1**
+	[NEW] ai_build_tags : ['culture', 'economy_crystal', 'research_civilian']
+
+**advent_upgrade_culture_rate_0**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**advent_upgrade_culture_rate_1**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**advent_upgrade_culture_rate_2**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**advent_upgrade_deliverance_engine_structure_loyalist_ability**
+	[NEW] ai_build_tags : ['culture', 'research_civilian', 'super_weapon']
+
+**advent_upgrade_deliverance_engine_structure_rebel_ability**
+	[NEW] ai_build_tags : ['culture', 'research_civilian', 'super_weapon']
+
+**advent_upgrade_desert_biosphere**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_desert_planets_0**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**advent_upgrade_desert_planets_1**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**advent_upgrade_dps_on_planet_death**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_energy_booster_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'offense_boost']
+
+**advent_upgrade_ferrous_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_upgrade_home_planet**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian', 'planet_development']
+
+**advent_upgrade_hull_points_0**
+	[NEW] ai_build_tags : ['research_military', 'defense_hull_armor']
+
+**advent_upgrade_hull_points_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_upgrade_hull_points_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**advent_upgrade_hydrostatic_shield_dome_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'planet_fortification', 'population', 'research_civilian']
+
+**advent_upgrade_ice_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_upgrade_influence_0**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**advent_upgrade_influence_1**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**advent_upgrade_influence_2**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**advent_upgrade_influence_3**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**advent_upgrade_irradiated_biosphere**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_laser_weapon_damage_0**
+	[NEW] ai_build_tags : ['research_military', 'offense_boost']
+
+**advent_upgrade_laser_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_laser_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_magnetic_biosphere**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_metal_extraction_0**
+	[NEW] ai_build_tags : ['research_civilian', 'economy_metal', 'economy_extractor']
+
+**advent_upgrade_metal_extraction_1**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_metal_extraction_2**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_missile_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_missile_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_missile_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_missile_weapon_targeting**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_oceanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**advent_upgrade_orbital_extraction_crystal_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_orbital_extraction_crystal_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_orbital_extraction_metal_0**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_orbital_extraction_metal_1**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**advent_upgrade_planet_bombing_defense**
+	[NEW] ai_build_tags : ['planet_fortification', 'research_military']
+
+**advent_upgrade_planet_max_military_structure_slots**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**advent_upgrade_plasma_booster_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_plasma_weapon_cooldown**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_plasma_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_plasma_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_plasma_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**advent_upgrade_research_rate**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_shield_burst_restore_0**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_shield_burst_restore_1**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_shield_points_0**
+	[NEW] ai_build_tags : ['research_military', 'defense_shields']
+
+**advent_upgrade_shield_points_1**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_shield_points_2**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_shield_points_3**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_spell_power_0**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_spell_power_1**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_spell_power_2**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**advent_upgrade_starbase_culture_unit_item**
+	[NEW] ai_build_tags : ['culture', 'defense_starbase', 'research_military']
+
+**advent_upgrade_structure_shield_points_0**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_structure_shield_points_1**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_surveying_track**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_swamp_biosphere**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**advent_upgrade_synchronous_shield_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**advent_upgrade_temple_of_purification_unit_item**
+	[NEW] ai_build_tags : ['culture', 'research_military']
+
+**advent_upgrade_terran_planets_0**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_upgrade_tithe_collector_unit_item_0**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_upgrade_tithe_collector_unit_item_1**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**advent_upgrade_volcanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+
+# TEC Changes
+
+## Unit_item Changes
+
+**Ablative Armor**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Additional Shield Generator**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Alloy Foundry**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_trade']
+
+**Ankylon Beams**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Ankylon Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Ankylon Missile Batteries**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Ankylon Planetary Shield Array**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Antimatter Engine**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Applied Radioactives Lab**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**Aquaculture Harvester**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade', 'population']
+
+**Archaeology Center**
+	[NEW] ai_build_tags : ['economy_credits', 'influence']
+
+**Argonev Planetary Shield Array**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Armor Patch Kit**
+	[NEW] ai_build_tags : ['defense_support']
+
+**Auxiliary Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Auxiliary Hangar II**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Auxiliary Hangar III**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Auxiliary Supply Depot**
+	[NEW] ai_build_tags : ['logistics']
+
+**Backup Shield Generator**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Center for Human Doctrine**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Chemical Plant**
+	[NEW] ai_build_tags : ['economy_credits', 'logistics']
+
+**Civic University**
+	[NEW] ai_build_tags : ['research_civilian', 'influence']
+
+**Combat Repair System**
+	[NEW] ai_build_tags : ['defense_support']
+
+**Command Bunker**
+	[NEW] ai_build_tags : ['garrison', 'logistics', 'planet_fortification', 'planet_health']
+
+**Commercial District**
+	[NEW] ai_build_tags : ['economy_credits']
+
+**Commodity Exchange**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade']
+
+**Construction Bays**
+	[NEW] ai_build_tags : ['factory_light']
+
+**Core Systems Armor**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Defensive Overhaul I**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Defensive Overhaul II**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Defensive Overhaul III**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Deploy Argonev Starbase**
+	[NEW] ai_build_tags : ['defense_starbase']
+
+**Derelict Specialist Team**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Directed Energy Lab**
+	[NEW] ai_build_tags : ['research_military']
+
+**Docking Booms**
+	[NEW] ai_build_tags : ['defense_support', 'utility_support']
+
+**Exotics Salvage Policy**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Experimental Economics Lab**
+	[NEW] ai_build_tags : ['research_civilian']
+
+**Extra Armor Plating I**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Extra Armor Plating II**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Extra Armor Plating III**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Ferric Mining Rig**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Fissile Enrichment Plant**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Flak Burst**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Fulfillment Warehouse**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade']
+
+**Garrison Command**
+	[NEW] ai_build_tags : ['garrison']
+
+**Gas Crystalizer**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_trade', 'exotic_production']
+
+**Gas Harvester**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade']
+
+**Geothermal Smelter**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Harvesting Crawler**
+	[NEW] ai_build_tags : ['economy_crystal']
+
+**Heavy Gauss Slugs**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**High Density District**
+	[NEW] ai_build_tags : ['population']
+
+**High Pressure Domes**
+	[NEW] ai_build_tags : ['population']
+
+**High Yield Warheads**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Home Guard Command Center**
+	[NEW] ai_build_tags : ['garrison']
+
+**Home Guard Outpost**
+	[NEW] ai_build_tags : ['garrison']
+
+**Ice Processing Facility**
+	[NEW] ai_build_tags : ['economy_crystal', 'influence']
+
+**Industrial District**
+	[NEW] ai_build_tags : ['economy_credits']
+
+**Media Conglomerate**
+	[NEW] ai_build_tags : ['culture', 'influence']
+
+**Military Research Base**
+	[NEW] ai_build_tags : ['research_military']
+
+**Missile Guidance Computer**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Munitions Plant**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Novalith Targeting Computer**
+	[NEW] ai_build_tags : ['super_weapon']
+
+**Orbital Mining Control**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Pirate Mercenary Base**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Radiation Bomb**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Ragnarov Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Ragnarov Missile Launchers**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Ragnarov Railgun Accelerator**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Rapid Autoloader**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Reactive Plating**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Regional Government Office**
+	[NEW] ai_build_tags : ['logistics', 'population']
+
+**Reserve Squadron Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Resort Complex**
+	[NEW] ai_build_tags : ['influence']
+
+**Safety Override Protocol**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Secret Weapons Lab**
+	[NEW] ai_build_tags : ['research_military']
+
+**Sector Communications Array**
+	[NEW] ai_build_tags : ['factory_heavy', 'mobile_infrastructure']
+
+**Sector Fleet Admiral**
+	[NEW] ai_build_tags : ['mobile_infrastructure']
+
+**Starbase Beams**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Starbase Missile Launchers**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Supreme Center for Human Doctrine**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Synthetic Crystal Farm**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_trade']
+
+**Tactical Analyst**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Targeting Array**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Trade Facilities**
+	[NEW] ai_build_tags : ['economy_trade']
+
+**Volatile Accelerants**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**War Reporter**
+	[NEW] ai_build_tags : ['influence']
+
+**Xeno Emporium**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade']
+
+**Xeno Tech Lab**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**trader_loyalist_garrison_recruitment_center**
+	[NEW] ai_build_tags : ['garrison']
+
+**trader_rebel_garrison_recruitment_center**
+	[NEW] ai_build_tags : ['garrison']
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Arcova Scout Frigate**
+	[NEW] player_ai : {'ai_build_tags': ['ship_point_defense', 'ship_light']}
+
+**Argonev Starbase**
+	structure
+		[NEW] ai_build_tags : ['starbase']
+
+**Autocannon Defense Platform**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_light']
+
+**Broadcast Center**
+	structure
+		[NEW] ai_build_tags : ['culture']
+
+**Cielo Command Cruiser**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Civic Research Station**
+	structure
+		[NEW] ai_build_tags : ['research_civilian', 'research_general']
+
+**Cobalt Light Frigate**
+	player_ai
+		[NEW] ai_build_tags : ['ship_light']
+
+**Crystal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'transient_early_game']
+
+**Exotic Refinery**
+	structure
+		[NEW] ai_build_tags : ['exotic_production']
+
+**Garda Flak Frigate**
+	player_ai
+		[NEW] ai_build_tags : ['ship_point_defense', 'ship_light']
+
+**Gauss Defense Platform**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_heavy']
+
+**Hangar Defense**
+	structure
+		[NEW] ai_build_tags : ['defense_hangar']
+
+**Harcka Heavy Cruiser**
+	player_ai
+		[NEW] ai_build_tags : ['ship_heavy', 'ship_cruiser']
+
+**Heavy Factory**
+	structure
+		[NEW] ai_build_tags : ['factory_heavy']
+
+**Hoshiko Robotics Cruiser**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Javelis LRM Cruiser**
+	[NEW] player_ai : {'ai_build_tags': ['ship_long_range', 'ship_missile', 'ship_cruiser', 'ship_heavy']}
+
+**Kalev Gauss Frigate**
+	[NEW] player_ai : {'ai_build_tags': ['ship_anti_structure', 'ship_light']}
+
+**Kodiak Medium Cruiser**
+	[NEW] player_ai : {'ai_build_tags': ['ship_cruiser', 'ship_heavy']}
+
+**Krosov Siege Frigate**
+	player_ai
+		[NEW] ai_build_tags : ['ship_siege', 'ship_light']
+
+**Light Factory**
+	structure
+		[NEW] ai_build_tags : ['factory_light']
+
+**Metal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'transient_early_game']
+
+**Military Research Station**
+	structure
+		[NEW] ai_build_tags : ['research_military', 'research_general']
+
+**Missile Battery**
+	[NEW] player_ai : {'ai_build_tags': ['ship_point_defense', 'ship_missile', 'ship_light']}
+
+**Novalith Cannon**
+	structure
+		[NEW] ai_build_tags : ['super_weapon']
+
+**Ogrov Torpedo Cruiser**
+	player_ai
+		[NEW] ai_build_tags : ['ship_anti_structure', 'ship_cruiser', 'ship_heavy']
+
+**Orbital Transit Hub**
+	structure
+		[NEW] ai_build_tags : ['population']
+
+**Percheron Carrier Cruiser**
+	[NEW] player_ai : {'ai_build_tags': ['ship_carrier', 'ship_cruiser', 'ship_heavy']}
+
+**Phase Jump Inhibitor**
+	structure
+		[NEW] ai_build_tags : ['defense_inhibitor']
+
+**Retrofit Bay**
+	structure
+		[NEW] ai_build_tags : ['offense_boost', 'defense_support']
+
+**Shriken Gunship Corvette**
+	[NEW] player_ai : {'ai_build_tags': ['ship_corvette', 'ship_light']}
+
+**Stilat Missile Corvette**
+	[NEW] player_ai : {'ai_build_tags': ['ship_corvette', 'ship_missile', 'ship_light']}
+
+**Titan Foundry**
+	structure
+		[NEW] ai_build_tags : ['factory_titan']
+
+**Trade Port**
+	structure
+		[NEW] ai_build_tags : ['economy_trade', 'economy_credits']
+
+## Research_subject Changes
+
+**Transit Taxation Policy**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_antimatter_0**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**trader_antimatter_1**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**trader_asteroid_planet_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_autocannon_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_autocannon_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_autocannon_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_autocannon_weapon_damage_3**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_beam_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_beam_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_capital_ship_starting_level_0**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**trader_capital_ship_starting_level_1**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**trader_commerce_culture**
+	[NEW] ai_build_tags : ['culture', 'economy_credits', 'research_civilian']
+
+**trader_commercial_district_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_corvette_speed**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_counter_deployment**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_culture_insurgency**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**trader_culture_rate_0**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**trader_culture_rate_1**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**trader_defense_structure_culture_resistance**
+	[NEW] ai_build_tags : ['culture', 'planet_fortification', 'research_military']
+
+**trader_desert_planet_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_economic_exotic_build_rate**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**trader_enemy_culture_suppression**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**trader_envoy_frigate_reputation_rate**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_find_npc_explore**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_fortification_specialist**
+	[NEW] ai_build_tags : ['logistics', 'planet_fortification', 'research_civilian']
+
+**trader_garrison_max_supply**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_heavy_fallout**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_heavy_maneuvering_thrusters**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_high_order_explosives**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_hull_damage_reduction_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_hull_damage_reduction_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_hull_damage_reduction_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_improve_culture_propagation**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**trader_improve_gauss_defense_cooldown**
+	[NEW] ai_build_tags : ['defense_anti_heavy', 'offense_boost', 'research_military']
+
+**trader_improve_gauss_defense_range**
+	[NEW] ai_build_tags : ['defense_anti_heavy', 'offense_boost', 'research_military']
+
+**trader_labor_negotiations**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_loyalist_garrison_max_supply**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_max_hull_points_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_max_hull_points_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_max_hull_points_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_max_supply_0**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_max_supply_1**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_max_supply_2**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_max_supply_3**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_max_supply_4**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**trader_mining_track_crystal_rate_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**trader_mining_track_crystal_rate_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**trader_mining_track_metal_rate_0**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_mining_track_metal_rate_1**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_missile_weapon_armor**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_missile_weapon_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_missile_weapon_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_missile_weapon_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_missile_weapon_range**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_npc_market_discounts**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_crystal', 'economy_metal', 'research_civilian']
+
+**trader_orbital_cannon_structure_range**
+	[NEW] ai_build_tags : ['research_military', 'super_weapon']
+
+**trader_orbital_extraction_crystal_rate_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**trader_orbital_extraction_crystal_rate_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'research_civilian']
+
+**trader_orbital_extraction_metal_rate_0**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**trader_orbital_extraction_metal_rate_1**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'research_civilian']
+
+**trader_pervasive_economy**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_pirate_king_windfall**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_pirate_raid_supply**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_planet_bombing_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_planet_civilian_slots**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_planet_health_restore_rate**
+	[NEW] ai_build_tags : ['defense_support', 'research_civilian']
+
+**trader_planet_pillaging**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_planet_track_upgrade_rate**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian', 'economy_extractor', 'economy_metal', 'economy_crystal']
+
+**trader_quick_phase_jump**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_rebel_pirate_cease_fire**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_rebel_pirate_share_vision**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_retrofit_bay_repair_rate_0**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**trader_savage_thrill**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_scout_corvette_hyperspace_charge_time**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_shield_burst_restore**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_shields_0**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_shields_1**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_shields_corvette**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_shields_cruiser**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_shields_frigate**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_starbase_item_price**
+	[NEW] ai_build_tags : ['defense_starbase', 'logistics', 'research_military']
+
+**trader_structure_build_rate**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_structure_hull**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'planet_fortification', 'research_military']
+
+**trader_structure_price_decrease**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian', 'economy_trade', 'economy_credits', 'economy_metal', 'economy_crystal', 'economy_extractor']
+
+**trader_terran_planet_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_trade_port_culture**
+	[NEW] ai_build_tags : ['culture', 'economy_trade', 'research_civilian']
+
+**trader_trade_port_income_rate_0**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_trade_port_income_rate_1**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_twin_fortresses**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**trader_unit_factory_build_rate**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_unlock_alloy_foundry_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_unlock_antiarmor_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_antiarmor_frigate_coil_shock_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_antifighter_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_antifighter_frigate_light_autocannon_weapon**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_antimatter_engine_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**trader_unlock_aquaculture_harvester_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_archaeology_center_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'influence', 'research_civilian']
+
+**trader_unlock_auxiliary_supply_depot_unit_item**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**trader_unlock_backup_shield_generator_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_unlock_beam_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_unlock_build_ultimate_exotic**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**trader_unlock_carrier_cruiser**
+	[NEW] ai_build_tags : ['carrier_capacity', 'factory_light', 'research_military']
+
+**trader_unlock_chemical_plant_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'logistics', 'research_civilian']
+
+**trader_unlock_combat_repair_system_unit_item**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**trader_unlock_command_bunker_unit_item**
+	[NEW] ai_build_tags : ['garrison', 'logistics', 'planet_fortification', 'planet_health', 'research_civilian']
+
+**trader_unlock_commercial_district_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_unlock_commodity_exchange_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_unlock_crystal_synthesizer_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**trader_unlock_crystalline_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_culture_center**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**trader_unlock_culture_npc_bonus**
+	[NEW] ai_build_tags : ['culture', 'influence', 'research_civilian']
+
+**trader_unlock_culture_planet_credit_income_rate_bonus**
+	[NEW] ai_build_tags : ['culture', 'economy_credits', 'research_civilian']
+
+**trader_unlock_culture_ship_max_linear_speed_bonus**
+	[NEW] ai_build_tags : ['culture', 'offense_boost', 'research_civilian']
+
+**trader_unlock_culture_unit_factory_production_penalty**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**trader_unlock_deploy_starbase_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**trader_unlock_derelict_specialist_unit_item**
+	[NEW] ai_build_tags : ['utility_support', 'research_civilian']
+
+**trader_unlock_desert_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_envoy_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_civilian']
+
+**trader_unlock_exotic_factory_structure**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**trader_unlock_ferric_mining_rig_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_unlock_ferrous_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_fissile_plant_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_unlock_flak_burst_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_fulfilment_warehouse_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_unlock_garrison_recruitment_center**
+	[NEW] ai_build_tags : ['garrison', 'research_military']
+
+**trader_unlock_gas_crystalizer_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'exotic_production', 'research_civilian']
+
+**trader_unlock_gas_giant_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_gas_harvester_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'economy_trade', 'research_civilian']
+
+**trader_unlock_hangar_defense_point_defense_autocannon_weapon**
+	[NEW] ai_build_tags : ['defense_hangar', 'research_military']
+
+**trader_unlock_hangar_defense_structure**
+	[NEW] ai_build_tags : ['carrier_capacity', 'defense_hangar', 'research_military']
+
+**trader_unlock_harvesting_crawler_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**trader_unlock_heavy_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_unlock_heavy_cruiser**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**trader_unlock_heavy_cruiser_intercept_ability**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**trader_unlock_heavy_garrison**
+	[NEW] ai_build_tags : ['garrison', 'research_military']
+
+**trader_unlock_heavy_gauss_slugs_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_high_density_district_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_high_yield_warheads_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_home_guard_outpost_unit_item**
+	[NEW] ai_build_tags : ['garrison', 'research_military']
+
+**trader_unlock_human_doctrine_center_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_hyperspace_between_stars**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_military']
+
+**trader_unlock_ice_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_ice_processor_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'influence', 'research_civilian']
+
+**trader_unlock_industrial_complex_unit_item**
+	[NEW] ai_build_tags : ['economy_credits', 'research_civilian']
+
+**trader_unlock_irradiated_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_long_range_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_long_range_cruiser_breaker_missile_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_loyalist_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**trader_unlock_loyalist_titan_beam_weapon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'military_weapons']
+
+**trader_unlock_loyalist_titan_hangar_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'carrier_capacity']
+
+**trader_unlock_loyalist_titan_hull_plating_0_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**trader_unlock_loyalist_titan_hull_plating_1_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**trader_unlock_loyalist_titan_hull_plating_2_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**trader_unlock_loyalist_titan_missile_weapon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'military_weapons']
+
+**trader_unlock_loyalist_titan_shield_array_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_shields']
+
+**trader_unlock_magnetic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_media_conglomerate_unit_item**
+	[NEW] ai_build_tags : ['culture', 'influence', 'research_civilian']
+
+**trader_unlock_metal_smelting_plant_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**trader_unlock_missile_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**trader_unlock_missile_corvette**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_missile_guidance_computer_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_munitions_plant_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_oceanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_oceanic_domes_unit_item**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_orbital_cannon_structure**
+	[NEW] ai_build_tags : ['research_military', 'super_weapon']
+
+**trader_unlock_phase_jump_inhibitor**
+	[NEW] ai_build_tags : ['defense_inhibitor', 'research_military']
+
+**trader_unlock_phase_lane_detector**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**trader_unlock_phase_lane_detector_extended_range**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**trader_unlock_pirate_mercenary_base_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_population_structure**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_rapid_autoloader_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_rebel_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**trader_unlock_rebel_titan_hangar_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'carrier_capacity']
+
+**trader_unlock_rebel_titan_hull_plating_0_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**trader_unlock_rebel_titan_hull_plating_1_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**trader_unlock_rebel_titan_missile_weapon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'military_weapons']
+
+**trader_unlock_rebel_titan_rail_gun_weapon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'offense_boost', 'research_military', 'military_weapons']
+
+**trader_unlock_regional_government_unit_item**
+	[NEW] ai_build_tags : ['logistics', 'population', 'research_civilian']
+
+**trader_unlock_remote_drone_refinery_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**trader_unlock_reserve_squadron_hangar_unit_item**
+	[NEW] ai_build_tags : ['carrier_capacity', 'research_military']
+
+**trader_unlock_resort_complex_unit_item**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_unlock_resource_extractor_structures**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**trader_unlock_retrofit_bay_repair_ability**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**trader_unlock_robotics_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_robotics_cruiser_antimatter_droids_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_robotics_cruiser_emp_droids_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_siege_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_skirmisher_corvette_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_starbase**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**trader_unlock_starbase_docking_booms_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'utility_support', 'research_military']
+
+**trader_unlock_starbase_improve_weapon_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military']
+
+**trader_unlock_starbase_planetary_shield_array_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'defense_starbase', 'research_military']
+
+**trader_unlock_starbase_self_destruct_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**trader_unlock_starbase_structural_integrity_2_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_starbase', 'research_military']
+
+**trader_unlock_starbase_trade_port_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'economy_trade', 'research_military']
+
+**trader_unlock_starbase_unit_factory_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'factory_light', 'research_military']
+
+**trader_unlock_starbase_unlock_beam_weapon_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military', 'military_weapons']
+
+**trader_unlock_starbase_unlock_torpedo_weapon_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military', 'military_weapons']
+
+**trader_unlock_swamp_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_tactical_analyst_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_targeting_array_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_titan_factory**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**trader_unlock_torpedo_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_torpedo_cruiser_heavy_torpedo**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**trader_unlock_trade_escorts_0**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_unlock_trade_escorts_1**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_unlock_trade_port**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_unlock_trade_ship_detection**
+	[NEW] ai_build_tags : ['economy_trade', 'research_civilian']
+
+**trader_unlock_volatile_accelerants_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_unlock_volcanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_unlock_war_reporter_unit_item**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_unstoppable_phase_jump**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_backup_shield_generator_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**trader_upgrade_barren_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_barren_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_upgrade_command_bunker_unit_item**
+	[NEW] ai_build_tags : ['garrison', 'logistics', 'planet_fortification', 'planet_health', 'research_civilian']
+
+**trader_upgrade_consumables_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_consumables_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_crystalline_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_crystalline_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_upgrade_culture_ship_max_linear_speed_bonus**
+	[NEW] ai_build_tags : ['culture', 'offense_boost', 'research_civilian']
+
+**trader_upgrade_desert_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_experience_gain_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_experience_gain_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_ferrous_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_ferrous_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_upgrade_ice_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_ice_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_upgrade_influence_0**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_upgrade_influence_1**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_upgrade_influence_2**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_upgrade_influence_rate**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**trader_upgrade_irradiated_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_irradiated_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_upgrade_loot_experience_gain**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**trader_upgrade_magnetic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_oceanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_oceanic_domes_unit_item_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_oceanic_domes_unit_item_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_radiation_bomb_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_rapid_autoloader_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**trader_upgrade_regional_government_office_unit_item**
+	[NEW] ai_build_tags : ['logistics', 'population', 'research_civilian']
+
+**trader_upgrade_swamp_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_volcanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**trader_upgrade_volcanic_biosphere_credit_rate**
+	[NEW] ai_build_tags : ['economy_credits', 'population', 'research_civilian']
+
+**trader_war_measures_act**
+	[NEW] ai_build_tags : ['economy_credits', 'logistics', 'research_civilian']
+
+**trader_wormhole_travel**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_military']
+
+
+# Vasari Changes
+
+## Unit_item Changes
+
+**Administrative Uplink**
+	[NEW] ai_build_tags : ['influence', 'logistics']
+
+**Alliance Consulate**
+	[NEW] ai_build_tags : ['influence']
+
+**Alliance Xeno Embassy**
+	[NEW] ai_build_tags : ['influence']
+
+**Antimatter Recharger**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Beam Modulator**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Cloning Vats**
+	[NEW] ai_build_tags : ['population']
+
+**Closed Cycle Exotic Refinery**
+	[NEW] ai_build_tags : ['exotic_production']
+
+**Compliance Inducer**
+	[NEW] ai_build_tags : ['culture', 'population']
+
+**Core Stripper**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Crystal Seeking Nanites**
+	[NEW] ai_build_tags : ['economy_crystal']
+
+**Crystallizing Gas Refinery**
+	[NEW] ai_build_tags : ['economy_crystal']
+
+**Dark Fleet Tower**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Debris Reclamation Center**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Debris Reintegration**
+	[NEW] ai_build_tags : ['defense_support']
+
+**Deconstruction Nanites**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Defensive Uplink**
+	[NEW] ai_build_tags : ['logistics', 'offense_boost', 'planet_fortification']
+
+**Deploy Orkulus Starbase**
+	[NEW] ai_build_tags : ['defense_starbase']
+
+**Deploy Phase Gate**
+	[NEW] ai_build_tags : ['phase_infrastructure']
+
+**Deploy Phase Resonator**
+	[NEW] ai_build_tags : ['phase_resonance']
+
+**Efficient Hangars I**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Efficient Hangars II**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Efficient Hangars III**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Enhanced Nano Emitters**
+	[NEW] ai_build_tags : ['offense_boost', 'defense_support', 'utility_support']
+
+**Exodus Dark Fleet Tower**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Exodus Debris Reclamation Center**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Exodus Overseer Tower**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Exodus Supplies**
+	[NEW] ai_build_tags : ['colonize']
+
+**Exodus Xeno Embassy**
+	[NEW] ai_build_tags : ['influence']
+
+**Gravity Pulse Enhancer**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Gravity Stabilizer**
+	[NEW] ai_build_tags : ['military_speed']
+
+**Hygroscopic Nanites**
+	[NEW] ai_build_tags : ['population']
+
+**Indoctrination Center**
+	[NEW] ai_build_tags : ['culture', 'population']
+
+**Industrial Nanoforge**
+	[NEW] ai_build_tags : ['logistics']
+
+**Inertial Anchor**
+	[NEW] ai_build_tags : ['defense_support']
+
+**Intelligent Armor I**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Intelligent Armor II**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Intelligent Armor III**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields']
+
+**Intercultural Exchange**
+	[NEW] ai_build_tags : ['culture', 'economy_credits']
+
+**Jitra Stasis Lab**
+	[NEW] ai_build_tags : ['research_civilian']
+
+**Kortra Gravity Lab**
+	[NEW] ai_build_tags : ['research_military']
+
+**Kultorask Hangar Expansion**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Kultorask Hull Plating**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Kultorask Hull Plating II**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Kultorask Phase Cannon**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Kultorask Phase Missile Launchers**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Labor Camp**
+	[NEW] ai_build_tags : ['economy_metal', 'logistics']
+
+**Lava Scoop**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Lirtra Adjunct Lab**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**Matter Hypercompiler**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Metal Seeking Nanites**
+	[NEW] ai_build_tags : ['economy_metal']
+
+**Micro Phase Jump Enhancer**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Mobile Adjunct Lab**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian', 'research_military']
+
+**Mobile Empire Lab**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian']
+
+**Mobile Exotic Refinery**
+	[NEW] ai_build_tags : ['exotic_production', 'mobile_infrastructure']
+
+**Mobile Fleet Beacon**
+	[NEW] ai_build_tags : ['factory_heavy', 'mobile_infrastructure']
+
+**Mobile Research Complex**
+	[NEW] ai_build_tags : ['research_civilian', 'research_military']
+
+**Mobile Resonance Capacitor**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'phase_resonance']
+
+**Mobile Rulership**
+	[NEW] ai_build_tags : ['mobile_infrastructure']
+
+**Mobile Warfare Lab**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_military']
+
+**Nano Algae Reactors**
+	[NEW] ai_build_tags : ['population']
+
+**Nano Attack Swarm**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Nano Catalyzer Swarm**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Nano Repair Swarm**
+	[NEW] ai_build_tags : ['utility_support', 'defense_support']
+
+**Ocean Floor Miner**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Organic Reclamation Nanites**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal']
+
+**Orkulus Phase Jump Drive**
+	[NEW] ai_build_tags : ['military_speed']
+
+**Overseer Tower**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Phase Attenuated Shield**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Phase Missile Augments**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Phase Missile Restoration**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Planetary Shield Array**
+	[NEW] ai_build_tags : ['defense_shields']
+
+**Resonance Amplifier**
+	[NEW] ai_build_tags : ['phase_resonance']
+
+**Self-Repairing Armor**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Sevistra Biology Lab**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**Sevra Genetics Lab**
+	[NEW] ai_build_tags : ['research_civilian']
+
+**Stabilization Nanites**
+	[NEW] ai_build_tags : ['economy_crystal', 'population']
+
+**Strikecraft Armor**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**The Maw Enhancer**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Vask Tacticians**
+	[NEW] ai_build_tags : ['utility_support']
+
+**Vitra Weapons Lab**
+	[NEW] ai_build_tags : ['research_military']
+
+**Vorastra Hangar**
+	[NEW] ai_build_tags : ['carrier_capacity']
+
+**Vorastra Hull Plating**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Vorastra Hull Plating II**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Vorastra Hull Plating III**
+	[NEW] ai_build_tags : ['defense_hull_armor']
+
+**Vorastra Phase Cannon**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Vorastra Super Heavy Wave Cannons**
+	[NEW] ai_build_tags : ['offense_boost', 'military_weapons']
+
+**Wave Cannon Restoration**
+	[NEW] ai_build_tags : ['military_weapons']
+
+**Wave Modulator**
+	[NEW] ai_build_tags : ['offense_boost']
+
+**Xeno Settlement**
+	[NEW] ai_build_tags : ['influence', 'population']
+
+## Unit Changes
+
+**Bombardment Platform**
+	[NEW] player_ai : {'ai_build_tags': ['ship_siege', 'ship_light']}
+
+**Crystal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_crystal', 'economy_extractor', 'transient_early_game']
+
+**Exotic Refinery**
+	structure
+		[NEW] ai_build_tags : ['exotic_production']
+
+**Fleet Beacon**
+	structure
+		[NEW] ai_build_tags : ['factory_heavy', 'factory_titan']
+
+**Junsurak Warden**
+	player_ai
+		[NEW] ai_build_tags : ['ship_point_defense', 'ship_light']
+
+**Jusotra Fabricator Cruiser**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Kanrak Assailant**
+	[NEW] player_ai : {'ai_build_tags': ['ship_long_range', 'ship_missile', 'ship_light']}
+
+**Karrastra Destructor**
+	player_ai
+		[NEW] ai_build_tags : ['ship_siege', 'ship_cruiser', 'ship_heavy']
+
+**Kortovas Oppressor**
+	[NEW] player_ai : {'ai_build_tags': ['ship_heavy', 'ship_cruiser']}
+
+**Labor Distribution Center**
+	structure
+		[NEW] ai_build_tags : ['population']
+
+**Lasurak Transporter**
+	player_ai
+		[NEW] ai_build_tags : ['ship_carrier', 'ship_cruiser', 'ship_heavy']
+
+**Lirtestra Warfare Lab**
+	structure
+		[NEW] ai_build_tags : ['research_military', 'research_general']
+
+**Metal Extractor**
+	structure
+		[NEW] ai_build_tags : ['economy_metal', 'economy_extractor', 'transient_early_game']
+
+**Nano Assembly Factory**
+	structure
+		[NEW] ai_build_tags : ['factory_light']
+
+**Orkulus Starbase**
+	structure
+		[NEW] ai_build_tags : ['starbase']
+
+**Phase Gate**
+	structure
+		[NEW] ai_build_tags : ['phase_infrastructure']
+
+**Phase Jump Inhibitor**
+	structure
+		[NEW] ai_build_tags : ['defense_inhibitor']
+
+**Phase Missile Platform**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_heavy']
+
+**Phase Resonator**
+	structure
+		[NEW] ai_build_tags : ['phase_infrastructure', 'phase_resonance']
+
+**Pulse Gun Defense**
+	structure
+		[NEW] ai_build_tags : ['defense_anti_light']
+
+**Ravastra Skirmisher**
+	player_ai
+		[NEW] ai_build_tags : ['ship_light']
+
+**Regeneration Bay**
+	structure
+		[NEW] ai_build_tags : ['defense_support']
+
+**Serevun Overseer**
+	player_ai
+		[NEW] ai_build_tags : ['ship_support', 'ship_cruiser', 'ship_heavy']
+
+**Sulsurak Defensor**
+	player_ai
+		[NEW] ai_build_tags : ['ship_point_defense', 'ship_corvette', 'ship_light']
+
+**Tosurak Raider**
+	player_ai
+		[NEW] ai_build_tags : ['ship_point_defense', 'ship_corvette', 'ship_light']
+
+**Viturska Empire Lab**
+	structure
+		[NEW] ai_build_tags : ['research_civilian', 'research_general']
+
+**Vulrak Penetrator**
+	player_ai
+		[NEW] ai_build_tags : ['ship_anti_structure', 'ship_cruiser', 'ship_heavy']
+
+**Xeno Relations Center**
+	structure
+		[NEW] ai_build_tags : ['culture']
+
+## Research_subject Changes
+
+**Orbital Labor Allocation**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_all_for_one**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_antimatter_0**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_antimatter_1**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_antimatter_2**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_asteroid_extraction_rate_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'economy_extractor', 'research_civilian']
+
+**vasari_asteroid_extraction_rate_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'economy_extractor', 'research_civilian']
+
+**vasari_asteroid_extraction_rate_2**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'economy_extractor', 'research_civilian']
+
+**vasari_asteroid_extraction_rate_3**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'economy_extractor', 'research_civilian']
+
+**vasari_capital_ship_starting_level_0**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**vasari_capital_ship_starting_level_1**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**vasari_construction_price_decrease**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**vasari_culture_defense_boost**
+	[NEW] ai_build_tags : ['culture', 'planet_fortification', 'research_civilian']
+
+**vasari_culture_factory_unit_build_time_bonus**
+	[NEW] ai_build_tags : ['culture', 'logistics', 'research_civilian']
+
+**vasari_culture_factory_unit_build_time_penalty**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**vasari_culture_income_penalty**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**vasari_culture_mining_extraction_rate_bonus**
+	[NEW] ai_build_tags : ['culture', 'economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_culture_planet_heal**
+	[NEW] ai_build_tags : ['culture', 'planet_health', 'population', 'research_civilian']
+
+**vasari_defensive_tower_unlock**
+	[NEW] ai_build_tags : ['defense_anti_heavy', 'defense_anti_light', 'research_military']
+
+**vasari_defensive_tower_upgrade**
+	[NEW] ai_build_tags : ['defense_anti_heavy', 'defense_anti_light', 'research_military']
+
+**vasari_enslaved_labor**
+	[NEW] ai_build_tags : ['economy_credits', 'logistics', 'research_civilian']
+
+**vasari_friendly_jump_telemetry**
+	[NEW] ai_build_tags : ['military_speed', 'research_civilian']
+
+**vasari_global_phase_lane_detection**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_improve_phase_lane_detection**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_improve_starbase_build_time**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**vasari_improve_surveying_planet_track**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian', 'economy_extractor', 'economy_metal', 'economy_crystal']
+
+**vasari_loyalist_culture_rate_0**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**vasari_loyalist_culture_rate_1**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**vasari_max_supply_0**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_max_supply_1**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_max_supply_2**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_max_supply_3**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_max_supply_4**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_max_supply_5**
+	[NEW] ai_build_tags : ['logistics', 'research_military']
+
+**vasari_planet_bombing_damage_reduction**
+	[NEW] ai_build_tags : ['planet_fortification', 'research_civilian']
+
+**vasari_planet_component_cost_reduction**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian', 'economy_metal', 'economy_crystal', 'population', 'culture']
+
+**vasari_rebel_culture_rate_0**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**vasari_rebel_culture_rate_1**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**vasari_repair_platform_structure_repair_rate_0**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**vasari_shock_and_awe**
+	[NEW] ai_build_tags : ['offense_boost', 'logistics', 'research_civilian']
+
+**vasari_unlock_alliance_xeno_embassy_unit_item**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**vasari_unlock_antiarmor_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'offense_boost', 'research_military']
+
+**vasari_unlock_antiarmor_cruiser_berserk_overcharge_ability**
+	[NEW] ai_build_tags : ['factory_light', 'offense_boost', 'research_military']
+
+**vasari_unlock_anticorvette_corvette**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_antifighter_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_antimatter_recharger_unit_item**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_unlock_bazaar_unit_item**
+	[NEW] ai_build_tags : ['culture', 'economy_credits', 'research_civilian']
+
+**vasari_unlock_beam_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_unlock_build_ultimate_exotic**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**vasari_unlock_carrier_cruiser**
+	[NEW] ai_build_tags : ['carrier_capacity', 'factory_light', 'research_military']
+
+**vasari_unlock_crystal_refinery_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'research_civilian']
+
+**vasari_unlock_crystalline_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_culture_center**
+	[NEW] ai_build_tags : ['culture', 'research_civilian']
+
+**vasari_unlock_dark_fleet_tower_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**vasari_unlock_debris_reclamation_center_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'economy_crystal', 'research_civilian']
+
+**vasari_unlock_deploy_phase_gate_unit_item**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**vasari_unlock_deploy_phase_synchronizer_unit_item**
+	[NEW] ai_build_tags : ['phase_resonance', 'research_civilian']
+
+**vasari_unlock_deploy_starbase_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**vasari_unlock_desert_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_engine_boost_unit_item**
+	[NEW] ai_build_tags : ['military_speed', 'research_civilian']
+
+**vasari_unlock_exodus_xeno_embassy_unit_item**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**vasari_unlock_exotic_factory_structure**
+	[NEW] ai_build_tags : ['exotic_production', 'research_civilian']
+
+**vasari_unlock_experience_boost_unit_item**
+	[NEW] ai_build_tags : ['utility_support', 'research_military']
+
+**vasari_unlock_fabricator_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_fabricator_cruiser_debris_reclamation_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_fabricator_cruiser_ship_component_shop**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_gas_giant_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_gas_harvester_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_unlock_heavy_cruiser**
+	[NEW] ai_build_tags : ['factory_heavy', 'research_military']
+
+**vasari_unlock_heavy_turret_servos**
+	[NEW] ai_build_tags : ['defense_anti_heavy', 'offense_boost', 'research_military']
+
+**vasari_unlock_hyperspace_between_stars**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**vasari_unlock_ice_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_indoctrination_center_unit_item**
+	[NEW] ai_build_tags : ['culture', 'population', 'research_civilian']
+
+**vasari_unlock_inertial_anchor_unit_item**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**vasari_unlock_irradiated_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_labor_camp_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'logistics', 'research_civilian']
+
+**vasari_unlock_long_range_frigate**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_long_range_frigate_charged_phase_missile_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_loyalist_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_loyalist_titan_hangar_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'carrier_capacity']
+
+**vasari_unlock_loyalist_titan_hull_plating_0_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**vasari_unlock_loyalist_titan_hull_plating_1_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**vasari_unlock_loyalist_titan_hull_plating_2_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**vasari_unlock_loyalist_titan_improve_micro_phase_jump_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_loyalist_titan_improve_the_maw_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_loyalist_titan_phase_cannon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'offense_boost', 'research_military', 'military_weapons']
+
+**vasari_unlock_loyalist_titan_ruler_ship**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_loyalist_titan_wave_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'offense_boost', 'research_military', 'military_weapons']
+
+**vasari_unlock_magnetic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_metal_refinery_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**vasari_unlock_mobile_civilian_research_lab_unit_item**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian']
+
+**vasari_unlock_mobile_exotic_factory_unit_item**
+	[NEW] ai_build_tags : ['exotic_production', 'mobile_infrastructure', 'research_civilian']
+
+**vasari_unlock_mobile_fleet_beacon_unit_item**
+	[NEW] ai_build_tags : ['factory_heavy', 'mobile_infrastructure', 'research_military']
+
+**vasari_unlock_mobile_military_research_lab_unit_item**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian', 'research_military']
+
+**vasari_unlock_mobile_resonance_collector_unit_item**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'phase_resonance', 'research_civilian']
+
+**vasari_unlock_mobile_ruler_ship_unit_item**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_military']
+
+**vasari_unlock_mobile_speed_research_lab_unit_item**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian']
+
+**vasari_unlock_ocean_floor_miner_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_unlock_oceanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_orbital_administration_unit_item**
+	[NEW] ai_build_tags : ['influence', 'logistics', 'research_civilian']
+
+**vasari_unlock_overseer_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_overseer_cruiser_phase_lane_detection_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_overseer_tower_unit_item**
+	[NEW] ai_build_tags : ['research_military', 'utility_support']
+
+**vasari_unlock_phase_gate_structure**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**vasari_unlock_phase_jump_inhibitor**
+	[NEW] ai_build_tags : ['defense_inhibitor', 'research_civilian']
+
+**vasari_unlock_phase_lane_detection**
+	[NEW] ai_build_tags : ['research_civilian', 'utility_support']
+
+**vasari_unlock_phase_missile_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_unlock_phase_resonance_amplifier_unit_item**
+	[NEW] ai_build_tags : ['phase_resonance', 'research_civilian']
+
+**vasari_unlock_phase_shield_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**vasari_unlock_phase_synchronizer_structure**
+	[NEW] ai_build_tags : ['phase_resonance', 'research_civilian']
+
+**vasari_unlock_population_structure**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_precise_turret_servos**
+	[NEW] ai_build_tags : ['defense_anti_light', 'offense_boost', 'research_military']
+
+**vasari_unlock_raider_corvette**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_rebel_titan**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_rebel_titan_hangar_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'carrier_capacity']
+
+**vasari_unlock_rebel_titan_hull_plating_0_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**vasari_unlock_rebel_titan_hull_plating_1_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military', 'defense_hull_armor']
+
+**vasari_unlock_rebel_titan_improve_gravity_pulse_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_rebel_titan_improve_nano_emitters_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'research_military']
+
+**vasari_unlock_rebel_titan_phase_cannon_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'offense_boost', 'research_military', 'military_weapons']
+
+**vasari_unlock_rebel_titan_phase_missile_unit_item**
+	[NEW] ai_build_tags : ['factory_titan', 'offense_boost', 'research_military', 'military_weapons']
+
+**vasari_unlock_repair_platform_structure**
+	[NEW] ai_build_tags : ['defense_support', 'research_military']
+
+**vasari_unlock_resource_booster_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_unlock_resource_extractor_structures**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_unlock_self_repairing_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_unlock_siege_cruiser**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_unlock_starbase**
+	[NEW] ai_build_tags : ['defense_starbase', 'research_military']
+
+**vasari_unlock_starbase_debris_vortex_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'defense_support', 'research_military']
+
+**vasari_unlock_starbase_hangar_unit_item**
+	[NEW] ai_build_tags : ['carrier_capacity', 'defense_starbase', 'research_military']
+
+**vasari_unlock_starbase_hyperspace_engines_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'military_speed', 'research_military']
+
+**vasari_unlock_starbase_planetary_shield_array_unit_item**
+	[NEW] ai_build_tags : ['defense_shields', 'defense_starbase', 'research_military']
+
+**vasari_unlock_starbase_structural_integrity_0_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields', 'defense_starbase', 'research_military']
+
+**vasari_unlock_starbase_structural_integrity_1_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'defense_shields', 'defense_starbase', 'research_military']
+
+**vasari_unlock_starbase_weapon_unit_item**
+	[NEW] ai_build_tags : ['defense_starbase', 'offense_boost', 'research_military', 'military_weapons']
+
+**vasari_unlock_strikecraft_armor_unit_item**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_unlock_stripped_to_the_core_unit_item**
+	[NEW] ai_build_tags : ['economy_metal', 'research_civilian']
+
+**vasari_unlock_swamp_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_terran_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_terran_mining_booster_unit_item**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_unlock_volcanic_biosphere**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_unlock_wave_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_unlock_wormhole_travel**
+	[NEW] ai_build_tags : ['phase_infrastructure', 'research_civilian']
+
+**vasari_unlock_xeno_settlement_unit_item**
+	[NEW] ai_build_tags : ['influence', 'population', 'research_civilian']
+
+**vasari_unstoppable_phase_jump**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**vasari_upgrade_bazaar_unit_item_0**
+	[NEW] ai_build_tags : ['culture', 'economy_credits', 'research_civilian']
+
+**vasari_upgrade_bazaar_unit_item_1**
+	[NEW] ai_build_tags : ['culture', 'economy_credits', 'research_civilian']
+
+**vasari_upgrade_beam_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_beam_weapons_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_beam_weapons_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_beam_weapons_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_beam_weapons_3**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_crystalline_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_crystalline_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_dark_fleet_tower_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_civilian']
+
+**vasari_upgrade_desert_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_desert_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_experience_gain**
+	[NEW] ai_build_tags : ['utility_support', 'research_military']
+
+**vasari_upgrade_fabricator_cruiser_debris_reclamation_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_upgrade_ferrous_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_ferrous_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_hull_armor_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'offense_boost', 'research_military']
+
+**vasari_upgrade_hull_armor_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'offense_boost', 'research_military']
+
+**vasari_upgrade_hull_armor_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_base**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_point_restore_rate_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_point_restore_rate_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_point_restore_rate_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_points_0**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_points_1**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_points_2**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hull_with_trader**
+	[NEW] ai_build_tags : ['defense_hull_armor', 'research_military']
+
+**vasari_upgrade_hyperspace_charge_time**
+	[NEW] ai_build_tags : ['military_speed', 'research_civilian']
+
+**vasari_upgrade_ice_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_ice_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_influence_0**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**vasari_upgrade_influence_1**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**vasari_upgrade_irradiated_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_labor_camp_0**
+	[NEW] ai_build_tags : ['economy_metal', 'logistics', 'research_civilian']
+
+**vasari_upgrade_labor_camp_1**
+	[NEW] ai_build_tags : ['economy_metal', 'logistics', 'research_civilian']
+
+**vasari_upgrade_magnetic_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_missile_damage_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_missile_damage_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_missile_damage_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_mobile_research_lab_unit_item_0**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian']
+
+**vasari_upgrade_mobile_research_lab_unit_item_1**
+	[NEW] ai_build_tags : ['mobile_infrastructure', 'research_civilian']
+
+**vasari_upgrade_npc_ability_cooldown**
+	[NEW] ai_build_tags : ['influence', 'research_civilian']
+
+**vasari_upgrade_oceanic_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_oceanic_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_orbital_administration_unit_item**
+	[NEW] ai_build_tags : ['influence', 'logistics', 'research_civilian']
+
+**vasari_upgrade_orbital_extraction_0**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_upgrade_orbital_extraction_1**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_upgrade_orbital_extraction_2**
+	[NEW] ai_build_tags : ['economy_crystal', 'economy_metal', 'research_civilian']
+
+**vasari_upgrade_overseer_cruiser_phase_lane_detection_ability**
+	[NEW] ai_build_tags : ['factory_light', 'research_military']
+
+**vasari_upgrade_phase_missile_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_phase_missile_bypass_shields_chance**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_phase_resonance_bonus_duration_0**
+	[NEW] ai_build_tags : ['phase_resonance', 'research_civilian']
+
+**vasari_upgrade_phase_resonance_bonus_duration_1**
+	[NEW] ai_build_tags : ['phase_resonance', 'research_civilian']
+
+**vasari_upgrade_planet_bombing_range**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_planet_health_restore**
+	[NEW] ai_build_tags : ['planet_health', 'population', 'research_civilian']
+
+**vasari_upgrade_pulse_weapons_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_pulse_weapons_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_pulse_weapons_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_pulse_weapons_3**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_shields_0**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**vasari_upgrade_shields_1**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**vasari_upgrade_shields_regeneration**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**vasari_upgrade_shields_with_advent**
+	[NEW] ai_build_tags : ['defense_shields', 'research_military']
+
+**vasari_upgrade_starbase_engines**
+	[NEW] ai_build_tags : ['defense_starbase', 'military_speed', 'research_military']
+
+**vasari_upgrade_structure_build_time**
+	[NEW] ai_build_tags : ['logistics', 'research_civilian']
+
+**vasari_upgrade_swamp_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_swamp_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_terran_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_terran_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_volcanic_biosphere_0**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_volcanic_biosphere_1**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_volcanic_biosphere_2**
+	[NEW] ai_build_tags : ['population', 'research_civilian']
+
+**vasari_upgrade_wave_boost_unit_item**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_wave_weapons_0**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_wave_weapons_1**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_wave_weapons_2**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+**vasari_upgrade_wave_weapons_3**
+	[NEW] ai_build_tags : ['offense_boost', 'research_military']
+
+
+# Herald Changes
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+## Unit Changes
+
+**Pirate Corsair**
+	[NEW] player_ai : {'ai_build_tags': ['ship_heavy', 'ship_cruiser']}
+
+**Pirate Pillager**
+	[NEW] player_ai : {'ai_build_tags': ['ship_siege', 'ship_light']}
+
+**Pirate Rogue**
+	[NEW] player_ai : {'ai_build_tags': ['ship_light', 'ship_point_defense']}
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

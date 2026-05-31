@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "first_action_delay_time_value": "coil_shock_beam_charge_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "shields_only",
+                    "damage_value": "coil_shock_damage_value",
+                    "penetration_value": "coil_shock_penetration_value"
+                }]
+            }]
+        }
+    }]
+}

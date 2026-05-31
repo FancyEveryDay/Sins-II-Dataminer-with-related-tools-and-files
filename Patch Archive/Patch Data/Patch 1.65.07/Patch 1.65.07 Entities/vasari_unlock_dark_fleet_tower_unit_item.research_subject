@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_phase_mastery",
+    "field_coord": [6, 4],
+    "research_time": 360.0,
+    "price":
+    {
+        "metal": 600.0,
+        "crystal": 660.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_dark_fleet_tower_unit_item_research_subject_tooltip_picture",
+    "ai_build_tags": ["offense_boost", "research_civilian"]
+}

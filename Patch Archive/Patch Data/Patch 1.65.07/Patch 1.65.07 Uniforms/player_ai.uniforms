@@ -1,0 +1,1535 @@
+{
+    "difficulties":
+    {
+        "easy":
+        {
+            "icon": "ai_difficulty_easy",
+            "name": "ai_difficulty.name.easy",
+            "description": "ai_difficulty.description.easy",
+            "update_interval": 30,
+            "fleet_attack_timeout_duration_in_minutes": 15,
+            "fleet_colonize_timeout_duration_in_minutes": 10,
+            "will_fleet_retreat": false,
+            "will_attack_other_ai_before_human_players": true,
+            "will_build_super_weapons": false,
+            "fleet_will_probably_defeat_ratio_range": [
+                0.8,
+                0.9
+            ],
+            "chaos_factor_range": [
+                0.5,
+                1.0
+            ],
+            "chaos_factor_update_interval": 100,
+            "max_supply_percentage_relative_to_human_players": 0.75,
+            "max_fleet_capital_ship_count": 1,
+            "max_fleet_super_capital_ship_count": 1,
+            "when_build_titan_in_minutes": [180, 240],
+            "chance_for_full_bid_on_auctions": 0.1,
+            "unit_pathfinding_danger_weight_scalar": 0.5,
+            "will_regroup_on_losing_engagement": false,
+            "bounty_max_budget_percentage": 1.0,
+            "bounty_min_bank_threshold": 0.2,
+            "bounty_check_interval_seconds": 1.0,
+            "bounty_size_percentage_range": [0.01, 0.03],
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 60.0,
+            "max_concurrent_war_goals": 1,
+            "max_concurrent_economic_goals": 2,
+            "goal_attrition_critical_seconds": 70.0,
+            "goal_utility_noise_range": 0.3,
+            "goal_switch_inertia": 0.5,
+            "target_attractiveness_vulnerability_weight": 0.3,
+            "target_attractiveness_threat_weight": 0.7,
+            "commitment_duration_seconds": [10.0, 15.0],
+            "commitment_immediate_retreat_ratio": 1.5,
+            "commitment_appetite_multiplier": 0.3,
+            "force_project_min_supply_threshold_fraction": 0.4,
+            "force_project_max_staging_duration_seconds": 90.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 30.0,
+                "enemy_economy_estimate_error_range": 0.5,
+                "enemy_research_visibility_delay_seconds": 60.0,
+                "gravity_well_evaluation_coverage": 0.5,
+                "can_detect_chokepoints": false,
+                "can_estimate_enemy_income": false,
+                "can_identify_enemy_fleet_composition": false,
+                "can_track_enemy_research": false,
+                "intel_refresh_interval_seconds": 30.0,
+                "self_military_strength_accuracy": 1.3,
+                "self_economy_accuracy": 1.3,
+                "war_goal_score_error_range": [0.5, 1.5],
+                "gravity_well_evaluation_accuracy": 0.7
+            }
+        },
+        "medium":
+        {
+            "icon": "ai_difficulty_medium",
+            "name": "ai_difficulty.name.medium",
+            "description": "ai_difficulty.description.medium",
+            "update_interval": 15,
+            "fleet_attack_timeout_duration_in_minutes": 5,
+            "fleet_colonize_timeout_duration_in_minutes": 5,
+            "will_fleet_retreat": false,
+            "will_attack_other_ai_before_human_players": true,
+            "will_build_super_weapons": false,
+            "fleet_will_probably_defeat_ratio_range": [0.85, 0.95],
+            "chaos_factor_range": [0.65, 1.0],
+            "chaos_factor_update_interval": 100,
+            "max_supply_percentage_relative_to_human_players": 1.0,
+            "max_fleet_capital_ship_count": 2,
+            "max_fleet_super_capital_ship_count": 2,
+            "when_build_titan_in_minutes": [120, 180],
+            "chance_for_full_bid_on_auctions": 0.35,
+            "unit_pathfinding_danger_weight_scalar": 0.6,
+            "will_regroup_on_losing_engagement": false,
+            "bounty_max_budget_percentage": 0.0,
+            "bounty_min_bank_threshold": 0.0,
+            "bounty_size_percentage_range": [0.05, 0.10],
+            "bounty_check_interval_seconds": 90.0,
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 50.0,
+            "max_concurrent_war_goals": 2,
+            "max_concurrent_economic_goals": 2,
+            "goal_attrition_critical_seconds": 80.0,
+            "goal_utility_noise_range": 0.2,
+            "goal_switch_inertia": 0.4,
+            "target_attractiveness_vulnerability_weight": 0.5,
+            "target_attractiveness_threat_weight": 0.5,
+            "commitment_duration_seconds": [15.0, 25.0],
+            "commitment_immediate_retreat_ratio": 2.0,
+            "commitment_appetite_multiplier": 0.4,
+            "force_project_min_supply_threshold_fraction": 0.5,
+            "force_project_max_staging_duration_seconds": 150.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 15.0,
+                "enemy_economy_estimate_error_range": 0.3,
+                "enemy_research_visibility_delay_seconds": 30.0,
+                "gravity_well_evaluation_coverage": 0.7,
+                "can_detect_chokepoints": false,
+                "can_estimate_enemy_income": true,
+                "can_identify_enemy_fleet_composition": false,
+                "can_track_enemy_research": false,
+                "intel_refresh_interval_seconds": 15.0,
+                "self_military_strength_accuracy": 1.15,
+                "self_economy_accuracy": 1.15,
+                "war_goal_score_error_range": [0.7, 1.3],
+                "gravity_well_evaluation_accuracy": 0.85
+            }
+        },
+        "hard":
+        {
+            "icon": "ai_difficulty_hard",
+            "name": "ai_difficulty.name.hard",
+            "description": "ai_difficulty.description.hard",
+            "update_interval": 0,
+            "fleet_will_probably_defeat_ratio_range": [0.9, 1.0],
+            "chaos_factor_range": [0.8, 1.0],
+            "chaos_factor_update_interval": 100,
+            "when_build_titan_in_minutes": [90, 150],
+            "chance_for_full_bid_on_auctions": 0.5,
+            "fleet_regroup_await_units_time_in_minutes": 10.0,
+            "will_regroup_on_losing_engagement": false,
+            "unit_pathfinding_danger_weight_scalar": 0.65,
+            "bounty_max_budget_percentage": 0.05,
+            "bounty_min_bank_threshold": 5000.0,
+            "bounty_check_interval_seconds": 60.0,
+            "bounty_size_percentage_range": [0.05, 0.10],
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 45.0,
+            "max_concurrent_war_goals": 3,
+            "max_concurrent_economic_goals": 3,
+            "goal_attrition_critical_seconds": 90.0,
+            "goal_utility_noise_range": 0.15,
+            "goal_switch_inertia": 0.3,
+            "target_attractiveness_vulnerability_weight": 0.7,
+            "target_attractiveness_threat_weight": 0.3,
+            "commitment_duration_seconds": [20.0, 35.0],
+            "commitment_immediate_retreat_ratio": 2.5,
+            "commitment_appetite_multiplier": 0.5,
+            "force_project_min_supply_threshold_fraction": 0.6,
+            "force_project_max_staging_duration_seconds": 180.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 5.0,
+                "enemy_economy_estimate_error_range": 0.15,
+                "enemy_research_visibility_delay_seconds": 10.0,
+                "gravity_well_evaluation_coverage": 0.85,
+                "can_detect_chokepoints": true,
+                "can_estimate_enemy_income": true,
+                "can_identify_enemy_fleet_composition": true,
+                "can_track_enemy_research": false,
+                "intel_refresh_interval_seconds": 10.0,
+                "self_military_strength_accuracy": 1.05,
+                "self_economy_accuracy": 1.05,
+                "war_goal_score_error_range": [0.85, 1.15],
+                "gravity_well_evaluation_accuracy": 0.95
+            }
+        },
+        "unfair":
+        {
+            "icon": "ai_difficulty_unfair",
+            "name": "ai_difficulty.name.unfair",
+            "description": "ai_difficulty.description.unfair",
+            "update_interval": 0,
+            "fleet_will_probably_defeat_ratio_range": [0.9, 1.0],
+            "chaos_factor_range": [0.75, 1.0],
+            "chaos_factor_update_interval": 100,
+            "when_build_titan_in_minutes": [90, 150],
+            "chance_for_full_bid_on_auctions": 0.5,
+            "fleet_regroup_await_units_time_in_minutes": 10.0,
+            "will_regroup_on_losing_engagement": false,
+            "unit_pathfinding_danger_weight_scalar": 0.65,
+            "bounty_max_budget_percentage": 0.08,
+            "bounty_min_bank_threshold": 4000.0,
+            "bounty_check_interval_seconds": 50.0,
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "bounty_size_percentage_range": [0.05, 0.10],
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 42.0,
+            "max_concurrent_war_goals": 3,
+            "max_concurrent_economic_goals": 3,
+            "goal_attrition_critical_seconds": 100.0,
+            "goal_utility_noise_range": 0.1,
+            "goal_switch_inertia": 0.25,
+            "target_attractiveness_vulnerability_weight": 0.8,
+            "target_attractiveness_threat_weight": 0.2,
+            "commitment_duration_seconds": [25.0, 40.0],
+            "commitment_immediate_retreat_ratio": 3.0,
+            "commitment_appetite_multiplier": 0.6,
+            "force_project_min_supply_threshold_fraction": 0.65,
+            "force_project_max_staging_duration_seconds": 240.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 2.0,
+                "enemy_economy_estimate_error_range": 0.1,
+                "enemy_research_visibility_delay_seconds": 5.0,
+                "gravity_well_evaluation_coverage": 0.95,
+                "can_detect_chokepoints": true,
+                "can_estimate_enemy_income": true,
+                "can_identify_enemy_fleet_composition": true,
+                "can_track_enemy_research": true,
+                "intel_refresh_interval_seconds": 5.0,
+                "self_military_strength_accuracy": 1.0,
+                "self_economy_accuracy": 1.0,
+                "war_goal_score_error_range": [0.9, 1.1],
+                "gravity_well_evaluation_accuracy": 1.0
+            }
+        },
+        "nightmare":
+        {
+            "icon": "ai_difficulty_nightmare",
+            "name": "ai_difficulty.name.nightmare",
+            "description": "ai_difficulty.description.nightmare",
+            "update_interval": 0,
+            "fleet_will_probably_defeat_ratio_range": [0.9, 1.0],
+            "chaos_factor_range": [0.8, 1.0],
+            "chaos_factor_update_interval": 100,
+            "when_build_titan_in_minutes": [90, 150],
+            "will_regroup_on_losing_engagement": false,
+            "chance_for_full_bid_on_auctions": 0.5,
+            "fleet_regroup_await_units_time_in_minutes": 10.0,
+            "unit_pathfinding_danger_weight_scalar": 0.65,
+            "bounty_max_budget_percentage": 0.10,
+            "bounty_min_bank_threshold": 3000.0,
+            "bounty_check_interval_seconds": 45.0,
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "bounty_size_percentage_range": [0.17, 0.20],
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 40.0,
+            "max_concurrent_war_goals": 4,
+            "max_concurrent_economic_goals": 4,
+            "goal_attrition_critical_seconds": 110.0,
+            "goal_utility_noise_range": 0.05,
+            "goal_switch_inertia": 0.2,
+            "target_attractiveness_vulnerability_weight": 0.85,
+            "target_attractiveness_threat_weight": 0.15,
+            "commitment_duration_seconds": [30.0, 45.0],
+            "commitment_immediate_retreat_ratio": 3.5,
+            "commitment_appetite_multiplier": 0.7,
+            "force_project_min_supply_threshold_fraction": 0.7,
+            "force_project_max_staging_duration_seconds": 300.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 0.0,
+                "enemy_economy_estimate_error_range": 0.05,
+                "enemy_research_visibility_delay_seconds": 2.0,
+                "gravity_well_evaluation_coverage": 1.0,
+                "can_detect_chokepoints": true,
+                "can_estimate_enemy_income": true,
+                "can_identify_enemy_fleet_composition": true,
+                "can_track_enemy_research": true,
+                "intel_refresh_interval_seconds": 5.0,
+                "self_military_strength_accuracy": 1.0,
+                "self_economy_accuracy": 1.0,
+                "war_goal_score_error_range": [0.95, 1.05],
+                "gravity_well_evaluation_accuracy": 1.0
+            }
+        },
+        "impossible":
+        {
+            "icon": "ai_difficulty_impossible",
+            "name": "ai_difficulty.name.test",
+            "description": "ai_difficulty.description.test",
+            "update_interval": 0,
+            "fleet_will_probably_defeat_ratio_range": [0.9, 1.0],
+            "chaos_factor_range": [0.8, 1.0],
+            "chaos_factor_update_interval": 100,
+            "when_build_titan_in_minutes": [90, 150],
+            "will_regroup_on_losing_engagement": false,
+            "chance_for_full_bid_on_auctions": 0.5,
+            "fleet_regroup_await_units_time_in_minutes": 10.0,
+            "unit_pathfinding_danger_weight_scalar": 0.65,
+            "bounty_max_budget_percentage": 0.15,
+            "bounty_min_bank_threshold": 2000.0,
+            "bounty_check_interval_seconds": 30.0,
+            "ownership_time_in_minutes_before_static_defenses": 0.0,
+            "bounty_size_percentage_range": [0.0, 0.0],
+            "time_after_game_start_allowing_static_defenses_in_minutes": 0.0,
+            "bounty_dominance_threshold_percentage": 0.1,
+            "is_ares_enabled": true,
+            "ares_reevaluation_interval_seconds": 35.0,
+            "max_concurrent_war_goals": 5,
+            "max_concurrent_economic_goals": 5,
+            "goal_attrition_critical_seconds": 120.0,
+            "goal_utility_noise_range": 0.0,
+            "goal_switch_inertia": 0.15,
+            "target_attractiveness_vulnerability_weight": 0.9,
+            "target_attractiveness_threat_weight": 0.1,
+            "commitment_duration_seconds": [30.0, 50.0],
+            "commitment_immediate_retreat_ratio": 4.0,
+            "commitment_appetite_multiplier": 0.8,
+            "force_project_min_supply_threshold_fraction": 0.75,
+            "force_project_max_staging_duration_seconds": 420.0,
+            "perception":
+            {
+                "enemy_fleet_position_stale_seconds": 0.0,
+                "enemy_economy_estimate_error_range": 0.0,
+                "enemy_research_visibility_delay_seconds": 0.0,
+                "gravity_well_evaluation_coverage": 1.0,
+                "can_detect_chokepoints": true,
+                "can_estimate_enemy_income": true,
+                "can_identify_enemy_fleet_composition": true,
+                "can_track_enemy_research": true,
+                "intel_refresh_interval_seconds": 5.0,
+                "self_military_strength_accuracy": 1.0,
+                "self_economy_accuracy": 1.0,
+                "war_goal_score_error_range": [1.0, 1.0],
+                "gravity_well_evaluation_accuracy": 1.0
+            }
+        }
+    },
+    "behaviors":
+    {
+        "aggressive":
+        {
+            "desired_explore_ship_count":
+            {
+                "type": "constant",
+                "value": 3
+            },
+            "steal_ships_from_roam_fleets_to_defend_supply_percentage": 0.7,
+            "chance_to_ally_with_other_players": [0.2, 0.4],
+            "defense_to_offsense_spend_ratio": 0.2,
+            "retreat_base_relationship_score_self": 100,
+            "retreat_base_relationship_score_ally": 75,
+            "retreat_base_relationship_score_neutral": 50,
+            "retreat_base_relationship_score_enemy": 0,
+            "retreat_enemy_supply_penalty_max": 100,
+            "retreat_enemy_supply_for_max_penalty": 2000,
+            "retreat_jump_node_proximity_bonus_max": 10,
+            "retreat_flee_away_from_enemy_score_per_jump": 30,
+            "retreat_flee_toward_friendly_score_per_jump": 30,
+            "bounty_taunt_chance": 0.03,
+            "bounty_placement_probability": 0.35,
+            "bounty_aggression_multiplier": 1.5,
+            "bounty_attack_priority_per_1000_credits": 25.0,
+            "personality_defaults":
+            {
+		        "aggression": 1.6,
+                "expansion": 1.2,
+                "economy_focus": 0.7,
+                "research_focus": 0.8,
+                "diplomacy": 0.5,
+                "risk_tolerance": 1.3,
+                "defense_priority": 0.6,
+                "culture_focus": 0.4,
+                "naval_quality_preference": 0.8,
+                "opportunism": 1.3,
+                "patience": 0.6
+            }
+        },
+        "defensive":
+        {
+            "desired_explore_ship_count":
+            {
+                "type": "constant",
+                "value": 3
+            },
+            "steal_ships_from_roam_fleets_to_defend_supply_percentage": 0.9,
+            "chance_to_ally_with_other_players": [0.4, 0.6],
+            "defense_to_offsense_spend_ratio": 1,
+            "retreat_base_relationship_score_self": 100,
+            "retreat_base_relationship_score_ally": 75,
+            "retreat_base_relationship_score_neutral": 50,
+            "retreat_base_relationship_score_enemy": 0,
+            "retreat_enemy_supply_penalty_max": 100,
+            "retreat_enemy_supply_for_max_penalty": 2000,
+            "retreat_jump_node_proximity_bonus_max": 10,
+            "retreat_flee_away_from_enemy_score_per_jump": 30,
+            "retreat_flee_toward_friendly_score_per_jump": 30,
+            "bounty_placement_probability": 0.30,
+            "bounty_taunt_chance": 0.03,
+            "bounty_aggression_multiplier": 0.75,
+            "bounty_attack_priority_per_1000_credits": 20.0,
+            "personality_defaults":
+            {
+		        "aggression": 0.9,
+                "expansion": 0.8,
+                "economy_focus": 1.3,
+                "research_focus": 1.2,
+                "diplomacy": 1.3,
+                "risk_tolerance": 0.6,
+                "defense_priority": 1.4,
+                "culture_focus": 1.0,
+                "naval_quality_preference": 1.2,
+                "opportunism": 0.7,
+                "patience": 1.3
+            }
+        }
+    },
+    "ship_factory_build_kinds": [
+        "capital_ship",
+        "corvette",
+        "cruiser",
+        "frigate"
+    ],
+    "capital_ship_build_kind": "capital_ship",
+    "super_capital_ship_build_kind": "super_capital_ship",
+    "titan_build_kind": "titan",
+    "random_exotics": [
+        "defense",
+        "economic",
+        "offense",
+        "utility"
+    ],
+    "asset_ai_trade_values":
+    {
+        "credits": 1,
+        "metal": 1.5,
+        "crystal": 1.5
+    },
+    "engagement_appetite":
+    {
+        "base_appetite": 0.5,
+        "military_advantage_weight": 1.0,
+        "economic_advantage_weight": 0.5,
+        "territory_threat_weight": 1.0,
+        "force_engagement_threshold": 0.7,
+        "accept_bad_odds_threshold": 0.6,
+        "passive_growth_per_second": 0.01,
+        "satisfaction_per_combat_supply": 0.0,
+        "satisfaction_max": 0.0,
+        "loss_penalty_attrition_threshold": 0.0,
+        "loss_penalty_scale": 0.0,
+        "loss_penalty_max": 0.0,
+        "military_advantage_scale": 0.0,
+        "military_advantage_clamp": 0.0,
+        "territory_threat_scale": 0.0,
+        "territory_threat_max": 0.0,
+        "utilization_bonus_midpoint": 0.0,
+        "utilization_bonus_scale": 0.0,
+        "utilization_bonus_min": 0.0,
+        "utilization_bonus_max": 0.0
+    },
+    "world_state":
+    {
+        "mid_game_phase_min_supply": 1000,
+        "late_game_phase_min_supply": 2000,
+        "endgame_phase_min_supply": 2000,
+        "endgame_phase_max_alive_players": 3,
+        "late_game_phase_min_planets": 7,
+        "late_game_phase_min_research_tier": 3,
+        "economic_phase_opening_max_duration_seconds": 300.0,
+        "economic_phase_developing_min_planets": 4,
+        "economic_phase_established_min_planets": 8,
+        "economic_emergency_negative_income_seconds": 60.0,
+        "economic_emergency_enter_income_ratio": 0.5,
+        "economic_emergency_exit_income_ratio": 0.7,
+        "human_player_threat_bias": 1.35,
+        "supply_deficit_enter_ratio": 1.1,
+        "supply_deficit_exit_ratio": 1.0,
+        "research_tier_stale_seconds": 600.0,
+        "research_deficit_escalation_delay_seconds": 300.0,
+        "research_upgrade_bias_per_owned": 0.1,
+        "research_upgrade_bias_max": 3.0,
+        "research_relevance_unit_modifier_weight": 1.0,
+        "research_relevance_planet_modifier_weight": 1.0,
+        "research_relevance_weapon_modifier_weight": 1.0,
+        "research_relevance_strikecraft_modifier_weight": 1.0,
+        "research_relevance_unit_factory_modifier_weight": 0.7,
+        "research_relevance_exotic_factory_modifier_weight": 0.7,
+        "research_relevance_npc_modifier_weight": 0.3,
+        "research_relevance_empire_modifier_baseline": 3.0,
+        "research_relevance_bonus_unit_limit_owned_weight": 1.5,
+        "research_relevance_bonus_unit_limit_wanted_weight": 1.0,
+        "research_relevance_per_match": 0.05,
+        "research_relevance_max": 4.0,
+        "research_unlock_owned_weight": 0.5,
+        "research_unlock_wanted_weight": 1.5,
+        "research_unlock_per_match": 0.4,
+        "research_unlock_max": 3.0,
+        "expansion_throttle_undeveloped_planet_count": 1,
+        "min_seconds_between_militia_goal_activations": 60.0,
+        "emergency_income_weight": 0.4,
+        "emergency_reserves_weight": 0.25,
+        "emergency_supply_weight": 0.2,
+        "emergency_territory_weight": 0.15,
+        "emergency_income_steepness": 8.0,
+        "emergency_income_midpoint": 0.5,
+        "emergency_reserves_steepness": 6.0,
+        "emergency_reserves_midpoint": 0.4,
+        "emergency_reserves_critical_seconds": 120.0,
+        "emergency_supply_steepness": 6.0,
+        "emergency_supply_midpoint": 0.7,
+        "emergency_territory_baseline": 4.0,
+        "emergency_territory_threshold": 0.3,
+        "emergency_territory_slope": 1.5,
+        "emergency_enter_threshold": 0.6,
+        "emergency_exit_threshold": 0.35,
+        "phase_transition_blend_seconds": 90.0,
+        "vulnerability_peak_decay_rate": 0.005,
+        "vulnerability_window_threshold": 0.3,
+        "value_model_fortress_gateway_weight": 15.0,
+        "value_model_fortress_starbase_weight": 10.0,
+        "value_model_fortress_defense_weight": 5.0,
+        "value_model_colonization_slot_weight": 1.0,
+        "value_model_colonization_asteroid_weight": 0.8,
+        "value_model_colonization_track_potential_weight": 0.5,
+        "value_model_colonization_resource_fit_weight": 1.5,
+        "value_model_colonization_distance_falloff": 0.3,
+        "value_model_vulnerability_supply_decay": 0.01,
+        "value_model_vulnerability_defense_weight": 40.0,
+        "value_model_vulnerability_window_weight": 40.0,
+        "value_model_vulnerability_per_well": 3.0,
+        "value_model_vulnerability_undefended_max": 20.0,
+        "value_model_attractiveness_hatred_weight": 0.2,
+        "spectacle_early":
+        {
+            "min_capital_supply_fraction": 0.0,
+            "max_corvette_frigate_supply_fraction": 1.0,
+            "desired_titan_threshold_supply": 99999,
+            "min_distinct_ship_types": 2
+        },
+        "spectacle_mid":
+        {
+            "min_capital_supply_fraction": 0.15,
+            "max_corvette_frigate_supply_fraction": 0.65,
+            "desired_titan_threshold_supply": 400,
+            "min_distinct_ship_types": 4
+        },
+        "spectacle_late":
+        {
+            "min_capital_supply_fraction": 0.20,
+            "max_corvette_frigate_supply_fraction": 0.50,
+            "desired_titan_threshold_supply": 300,
+            "min_distinct_ship_types": 5
+        },
+        "spectacle_endgame":
+        {
+            "min_capital_supply_fraction": 0.20,
+            "max_corvette_frigate_supply_fraction": 0.50,
+            "desired_titan_threshold_supply": 300,
+            "min_distinct_ship_types": 5
+        }
+    },
+    "scoring":
+    {
+        "war_attack_economy": { "dimensions": [], "phase_weights": [0.6, 1.0, 1.3, 1.5], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_capture_territory": { "dimensions": [], "phase_weights": [0.5, 1.0, 1.2, 1.3], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_defend_territory": { "dimensions": [], "phase_weights": [1.2, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_counter_attack": { "dimensions": [], "phase_weights": [0.8, 1.0, 1.2, 1.3], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_destroy_military": { "dimensions": [], "phase_weights": [0.4, 0.8, 1.2, 1.5], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_bide_time": { "dimensions": [], "phase_weights": [1.0, 1.0, 0.8, 0.5], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_assist_ally": { "dimensions": [], "phase_weights": [0.5, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_harass_supply_lines": { "dimensions": [], "phase_weights": [0.8, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_raid_harassment": { "dimensions": [], "phase_weights": [0.8, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_secure_chokepoint": { "dimensions": [], "phase_weights": [0.6, 1.0, 1.2, 1.3], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "war_seek_engagement": { "dimensions": [], "phase_weights": [0.3, 0.8, 1.2, 1.5], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_increase_income": { "dimensions": [], "phase_weights": [1.3, 1.0, 0.8, 0.6], "phase_expected_values": [1.0, 2.0, 3.0, 4.0] },
+        "econ_increase_supply": {
+            "dimensions": [
+                { "curve_type": "logistic", "curve": { "steepness": 6.0, "midpoint": 0.5, "weight": 1.5 } },
+                { "curve_type": "logistic", "curve": { "steepness": 4.0, "midpoint": 0.4, "weight": 0.7 } },
+                { "curve_type": "logistic", "curve": { "steepness": 6.0, "midpoint": 0.3, "weight": 0.4 } }
+            ],
+            "phase_weights": [1.0, 1.2, 1.0, 0.8],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_acquire_exotics": {
+            "dimensions": [
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.4, "weight": 1.2 } },
+                { "curve_type": "polynomial", "curve": { "exponent": 1.5, "weight": 0.6 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.4, "weight": 0.5 } }
+            ],
+            "phase_weights": [0.8, 1.0, 1.2, 1.0],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_boost_research_rate": {
+            "dimensions": [
+                { "curve_type": "polynomial", "curve": { "exponent": 1.8, "weight": 0.7 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.5, "weight": 0.5 } }
+            ],
+            "phase_weights": [1.0, 1.2, 1.0, 0.8],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_advance_military_technology": {
+            "dimensions": [
+                { "curve_type": "polynomial", "curve": { "exponent": 1.5, "weight": 0.8 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.5, "weight": 0.6 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.3, "weight": 0.8 } }
+            ],
+            "phase_weights": [0.6, 1.0, 1.3, 1.5],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_advance_civilian_technology": {
+            "dimensions": [
+                { "curve_type": "polynomial", "curve": { "exponent": 1.5, "weight": 0.7 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.5, "weight": 0.6 } },
+                { "curve_type": "piecewise_linear", "curve": { "threshold": 0.3, "slope": 1.5, "weight": 0.5 } }
+            ],
+            "phase_weights": [1.0, 1.2, 1.0, 0.8],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_tech_rush": {
+            "dimensions": [
+                { "curve_type": "polynomial", "curve": { "exponent": 2.0, "weight": 0.7 } },
+                { "curve_type": "piecewise_linear", "curve": { "threshold": 0.5, "slope": 2.0, "weight": 1.0 } },
+                { "curve_type": "polynomial", "curve": { "exponent": 1.0, "weight": 0.4 } }
+            ],
+            "phase_weights": [0.5, 1.0, 1.3, 1.5],
+            "phase_expected_values": [1.0, 0.6, 0.2, 0.0]
+        },
+        "econ_unlock_ship_classes": {
+            "dimensions": [
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.4, "weight": 1.2 } },
+                { "curve_type": "logistic", "curve": { "steepness": 6.0, "midpoint": 0.3, "weight": 0.6 } },
+                { "curve_type": "logistic", "curve": { "steepness": 5.0, "midpoint": 0.3, "weight": 1.2 } }
+            ],
+            "phase_weights": [0.8, 1.2, 1.0, 0.8],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_build_capital_fleet": {
+            "dimensions": [
+                { "curve_type": "logistic", "curve": { "steepness": 6.0, "midpoint": 0.5, "weight": 1.0 } },
+                { "curve_type": "polynomial", "curve": { "exponent": 2.0, "weight": 0.8 } },
+                { "curve_type": "piecewise_linear", "curve": { "threshold": 0.2, "slope": 1.0, "weight": 0.6 } },
+                { "curve_type": "logistic", "curve": { "steepness": 4.0, "midpoint": 0.4, "weight": 1.5 } }
+            ],
+            "phase_weights": [1.2, 1.0, 1.0, 1.0],
+            "phase_expected_values": [0.2, 0.5, 0.8, 1.0]
+        },
+        "econ_establish_npc_contacts": {
+            "dimensions": [
+                { "curve_type": "piecewise_linear", "curve": { "threshold": 0.2, "slope": 1.5, "weight": 1.0 } },
+                { "curve_type": "logistic", "curve": { "steepness": 4.0, "midpoint": 0.5, "weight": 0.6 } },
+                { "curve_type": "logistic", "curve": { "steepness": 4.0, "midpoint": 0.4, "weight": 0.7 } }
+            ],
+            "phase_weights": [1.0, 1.0, 0.8, 0.5],
+            "phase_expected_values": [0.0, 0.0, 0.0, 0.0]
+        },
+        "econ_fill_fleet_capacity": { "dimensions": [], "phase_weights": [1.0, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_culture_hub": { "dimensions": [], "phase_weights": [0.5, 1.0, 1.2, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_economic_world": { "dimensions": [], "phase_weights": [1.2, 1.0, 0.8, 0.6], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_factory_world": { "dimensions": [], "phase_weights": [0.8, 1.2, 1.0, 0.8], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_fortress": { "dimensions": [], "phase_weights": [0.5, 1.0, 1.2, 1.3], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_general_world": { "dimensions": [], "phase_weights": [1.0, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_homeworld": { "dimensions": [], "phase_weights": [1.5, 1.0, 0.8, 0.8], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_refinery_world": { "dimensions": [], "phase_weights": [0.8, 1.2, 1.0, 0.8], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_establish_research_hub": { "dimensions": [], "phase_weights": [0.8, 1.2, 1.0, 0.8], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "econ_expand_territory": { "dimensions": [], "phase_weights": [1.5, 1.0, 0.6, 0.4], "phase_expected_values": [3.0, 6.0, 9.0, 12.0] },
+        "econ_resolve_civilian_research_deficit": { "dimensions": [], "phase_weights": [1.0, 1.0, 1.0, 1.0], "phase_expected_values": [1.0, 3.0, 5.0, 7.0] },
+        "econ_resolve_military_research_deficit": { "dimensions": [], "phase_weights": [1.0, 1.0, 1.0, 1.0], "phase_expected_values": [1.0, 3.0, 5.0, 7.0] },
+        "econ_unlock_research_subject": { "dimensions": [], "phase_weights": [0.8, 1.0, 1.2, 1.0], "phase_expected_values": [2.0, 4.0, 6.0, 8.0] },
+        "opportunity_cost": { "dimensions": [], "phase_weights": [1.0, 1.0, 1.0, 1.0], "phase_expected_values": [0.0, 0.0, 0.0, 0.0] },
+        "opportunity_cost_personality_midpoint_shift": 0.15,
+        "downstream_boost_max": 1.5,
+        "feasibility_capture_territory": 1.5,
+        "feasibility_attack_economy": 1.5,
+        "feasibility_destroy_military": 1.5,
+        "feasibility_counter_attack": 1.5,
+        "feasibility_harass_supply_lines": 3.0,
+        "feasibility_raid_harassment": 3.0,
+        "feasibility_secure_chokepoint": 2.0,
+        "feasibility_assist_ally": 2.0,
+        "preferred_enemy_inertia_bonus": 0.3,
+        "preferred_enemy_reassessment_threshold": 1.5,
+        "defense_pressure_reassessment_count": 3,
+        "preferred_enemy_human_bias": 0.15,
+        "retreat_net_attrition_threshold": -0.5,
+        "retreat_supply_fraction_threshold": 0.4,
+        "path_safety_structure_weight": 0.5,
+        "path_safety_max_danger": 500.0,
+        "path_safety_max_depth": 4,
+        "synergy_boost_multiplier": 1.3,
+        "max_synergy_boost": 2.0,
+        "battle_supply_loss_threshold": 0.3,
+        "battle_min_age_seconds": 15.0,
+        "battle_win_offensive_boost": 1.4,
+        "battle_loss_offensive_suppression": 0.5,
+        "battle_loss_defensive_boost": 1.5,
+        "battle_modifier_duration_cycles": 2,
+        "kill_stroke_enter_ratio": 3.0,
+        "kill_stroke_exit_ratio": 2.0,
+        "skip_probe_feasibility_threshold": 2.0,
+        "opportunistic_capture_max_defense_supply": 0,
+        "opportunistic_capture_base_priority": 0.6,
+        "opportunistic_capture_max_travel_jumps": 4,
+        "capture_cooldown_ratio_threshold": 1.5,
+        "capture_cooldown_base_seconds": 300.0,
+        "capture_cooldown_max_multiplier": 3.0,
+        "capital_staleness_normalization_seconds": 300.0,
+        "capital_staleness_count_scale_per_ship": 0.25,
+        "economic_readiness_planet_scale": 6.0,
+        "economic_readiness_income_scale": 15.0,
+        "econ_increase_income_deficit_scale": 5.0,
+        "econ_increase_income_max_utility": 7.0,
+        "econ_increase_income_colonization_urgency_window_seconds": 45.0,
+        "econ_increase_income_colonization_urgency_multiplier": 2.25,
+        "econ_reactive_exotic_factory_blocked_requests_per_factory": 3.0,
+        "econ_reactive_exotic_factory_max_per_player": 4,
+        "econ_reactive_exotic_factory_goal_priority_scale": 3.0,
+        "econ_reactive_exotic_factory_blocked_per_priority_step": 3.0,
+        "engagement_appetite_spectacle_weight": 0.0,
+        "seek_engagement_satisfaction_exit_threshold": 0.0,
+        "retreat_cooldown_base_seconds": 90.0,
+        "retreat_cooldown_max_multiplier": 2.5,
+        "retreat_cooldown_ratio_threshold": 1.0,
+        "retreat_cooldown_min_losses_fraction": 0.15,
+        "retreat_cooldown_bad_exchange_ratio": 2.0,
+        "max_track_requests_per_planet": 3,
+        "max_track_requests_floor": 8,
+        "max_underdeveloped_track_requests": 6,
+        "military_posture_track_demotion_cap": 3,
+        "fresh_colony_track_boost_window_seconds": 600.0,
+        "attack_economy_min_target_value": 30.0,
+        "attack_economy_min_target_share": 0.15
+    },
+    "faction_tag_multipliers": [
+        {
+          "faction": "trader_loyalist",
+          "multipliers": [
+              { "tag": "economy_trade", "weight": 1.8, "limiters": ["structure", "planet_component", "research_subject"] },
+              { "tag": "economy_credits", "weight": 1.3, "limiters": ["structure", "research_subject"] }
+          ]
+        },
+        {
+          "faction": "trader_rebel",
+          "multipliers": [
+              { "tag": "economy_trade", "weight": 1.8, "limiters": ["structure", "planet_component", "research_subject"]  },
+              { "tag": "economy_credits", "weight": 1.3, "limiters": ["structure", "research_subject"] }
+          ]
+        },
+        {
+          "faction": "advent_loyalist",
+          "multipliers": [
+              { "tag": "culture", "weight": 1.9, "limiters": ["structure", "planet_component", "research_subject"] },
+              { "tag": "population", "weight": 1.6, "limiters": ["structure", "planet_component", "research_subject"] },
+              { "tag": "planet_development", "weight": 40.0, "limiters": ["research_subject"] }
+          ]
+        },
+        {
+          "faction": "advent_rebel",
+          "multipliers": [
+              { "tag": "culture", "weight": 1.9, "limiters": ["structure", "planet_component", "research_subject"] },
+              { "tag": "population", "weight": 1.6, "limiters": ["structure", "planet_component", "research_subject"] },
+              { "tag": "planet_development", "weight": 40.0, "limiters": ["research_subject"] }
+          ]
+        },
+        {
+          "faction": "vasari_loyalist",
+          "multipliers": [
+              { "tag": "economy_metal", "weight": 1.3, "limiters": ["planet_component", "research_subject"] },
+              { "tag": "economy_crystal", "weight": 1.3, "limiters": ["planet_component", "research_subject"] },
+              { "tag": "economy_extractor", "weight": 1.2, "limiters": ["research_subject"] }
+          ]
+        },
+        {
+          "faction": "vasari_rebel",
+          "multipliers": [
+              { "tag": "economy_metal", "weight": 1.3, "limiters": ["planet_component", "research_subject"] },
+              { "tag": "economy_crystal", "weight": 1.3, "limiters": ["planet_component", "research_subject"] },
+              { "tag": "economy_extractor", "weight": 1.2, "limiters": ["research_subject"] }
+          ]
+        }
+    ],
+    "faction_must_haves": [
+        {
+          "faction": "advent_loyalist",
+          "structures": [
+              "advent_culture_center_structure",
+              "advent_population_structure"
+          ],
+          "researches": [
+              "advent_unlock_resource_extractor_structures",
+              "advent_unlock_culture_center",
+              "advent_unlock_population_structure",
+              "advent_upgrade_home_planet",
+              "advent_unlock_sanctuary_spire_unit_item",
+              "advent_commerce_0",
+              "advent_unlock_culture_crystal",
+              "advent_upgrade_culture_crystal_0",
+              "advent_upgrade_desert_planets_0"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        },
+        {
+          "faction": "advent_rebel",
+          "structures": [
+              "advent_culture_center_structure",
+              "advent_population_structure"
+          ],
+          "researches": [
+              "advent_unlock_resource_extractor_structures",
+              "advent_unlock_culture_center",
+              "advent_unlock_population_structure",
+              "advent_upgrade_home_planet",
+              "advent_unlock_sanctuary_spire_unit_item",
+              "advent_commerce_0",
+              "advent_unlock_culture_crystal",
+              "advent_upgrade_culture_crystal_0",
+              "advent_upgrade_desert_planets_0"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        },
+        {
+          "faction": "trader_loyalist",
+          "structures": [
+              "trader_trade_port_structure"
+          ],
+          "researches": [
+              "trader_unlock_resource_extractor_structures",
+              "trader_unlock_trade_port",
+              "trader_structure_price_decrease",
+              "trader_planet_track_upgrade_rate",
+              "trader_orbital_extraction_metal_rate_0",
+              "trader_orbital_extraction_crystal_rate_0",
+              "trader_trade_port_income_rate_0"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        },
+        {
+          "faction": "trader_rebel",
+          "structures": [
+              "trader_trade_port_structure"
+          ],
+          "researches": [
+              "trader_unlock_resource_extractor_structures",
+              "trader_unlock_trade_port",
+              "trader_structure_price_decrease",
+              "trader_planet_track_upgrade_rate",
+              "trader_orbital_extraction_metal_rate_0",
+              "trader_orbital_extraction_crystal_rate_0",
+              "trader_trade_port_income_rate_0"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        },
+        {
+          "faction": "vasari_loyalist",
+          "researches": [
+              "vasari_unlock_resource_extractor_structures",
+              "vasari_asteroid_extraction_rate_0",
+              "vasari_asteroid_extraction_rate_1",
+              "vasari_asteroid_extraction_rate_2",
+              "vasari_improve_surveying_planet_track",
+              "vasari_planet_component_cost_reduction"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        },
+        {
+          "faction": "vasari_rebel",
+          "researches": [
+              "vasari_unlock_resource_extractor_structures",
+              "vasari_asteroid_extraction_rate_0",
+              "vasari_asteroid_extraction_rate_1",
+              "vasari_asteroid_extraction_rate_2",
+              "vasari_improve_surveying_planet_track",
+              "vasari_planet_component_cost_reduction"
+          ],
+        "priority_ramp_start_seconds": 30.0,
+        "priority_ramp_end_seconds": 30.0,
+        "priority_max": 10
+        }
+    ],
+    "planet_role_templates": [
+    {
+        "role": "homeworld",
+        "tag_profile": "homeworld",
+        "desired_planet_tracks": ["commerce", "mining", "logistics"],
+        "establish_economic_goal_type": "establish_homeworld",
+        "prefer_homeworld": true
+    },
+    {
+        "role": "general",
+        "tag_profile": "general_world",
+        "desired_planet_tracks": ["commerce", "mining", "logistics"],
+        "establish_economic_goal_type": "establish_general_world",
+        "base_score": 0.1
+    },
+    {
+        "role": "factory",
+        "tag_profile": "factory_world",
+        "desired_planet_tracks": ["logistics"],
+        "establish_economic_goal_type": "establish_factory_world",
+        "desired_planet_ratio": 0.2,
+        "minimum_planet_count_threshold": 5,
+        "personality_affinity": [
+            { "trait": "economy_focus", "value": 0.3 }
+	],
+        "prefer_near_front_line": true
+    },
+    {
+        "role": "economic",
+        "tag_profile": "economic_world",
+        "desired_planet_tracks": ["commerce", "mining", "logistics"],
+        "establish_economic_goal_type": "establish_economic_world",
+        "desired_planet_ratio": 0.4,
+        "minimum_planet_count_threshold": 1,
+        "personality_affinity": [
+            { "trait": "economy_focus", "value": 0.4 }
+	],
+        "base_score": 0.2
+    },
+    {
+        "role": "refinery",
+        "tag_profile": "refinery_world",
+        "desired_planet_tracks": ["commerce", "mining", "logistics"],
+        "establish_economic_goal_type": "establish_refinery_world",
+        "personality_affinity": [
+            { "trait": "economy_focus", "value": 0.3 }
+        ]
+    },
+    {
+        "role": "research",
+        "tag_profile": "research_world",
+        "desired_planet_tracks": ["research", "logistics"],
+        "establish_economic_goal_type": "establish_research_hub",
+        "personality_affinity": [
+            { "trait": "research_focus", "value": 0.4 }
+        ]
+    },
+    {
+        "role": "fortress",
+        "tag_profile": "fortress_world",
+        "desired_planet_tracks": ["defense", "logistics"],
+        "establish_economic_goal_type": "establish_fortress",
+        "prefer_front_line": true,
+        "personality_affinity": [
+            { "trait": "defense_priority", "value": 0.4 },
+            { "trait": "patience", "value": 0.2 }
+        ]
+    },
+    {
+        "role": "culture",
+        "tag_profile": "culture_world",
+        "desired_planet_tracks": ["logistics", "commerce", "mining"],
+        "establish_economic_goal_type": "establish_culture_hub",
+        "personality_affinity": [
+            { "trait": "culture_focus", "value": 0.4 }
+        ]
+    }],
+    "tag_profiles": [
+    {
+        "name": "general_world",
+        "tag_weights": [
+            { "tag": "economy_credits", "value": 1.0 },
+            { "tag": "economy_metal", "value": 1.0, "min_item_count": 1 },
+            { "tag": "economy_crystal", "value": 1.0, "min_item_count": 1 },
+            { "tag": "logistics", "value": 0.8 },
+            { "tag": "population", "value": 0.5 },
+            { "tag": "planet_health", "value": 0.3 }
+        ]
+    },
+    {
+        "name": "homeworld",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "economy_credits", "value": 1.7 },
+            { "tag": "economy_metal", "value": 1.7 },
+            { "tag": "economy_crystal", "value": 1.7 },
+            { "tag": "economy_trade", "value": 1.7, "min_structure_count": 1 },
+            { "tag": "research_military", "value": 1.2, "min_structure_count": 1 },
+            { "tag": "research_civilian", "value": 1.2, "min_structure_count": 1 },
+            { "tag": "factory_light", "value": 1.5, "min_structure_count": 1 },
+            { "tag": "factory_heavy", "value": 1.5, "min_structure_count": 1 },
+            { "tag": "factory_titan", "value": 1.4, "max_structure_count": 1 },
+            { "tag": "logistics", "value": 0.9},
+            { "tag": "population", "value": 0.6, "min_structure_count": 1, "min_item_count": 2 },
+            { "tag": "culture", "value": 1.2 },
+            { "tag": "defense_anti_light", "value": 0.05 },
+            { "tag": "defense_anti_heavy", "value": 0.05 },
+            { "tag": "planet_fortification", "value": 0.05 }
+        ]
+    },
+    {
+        "name": "factory_world",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "factory_heavy", "value": 2.0 },
+            { "tag": "factory_titan", "value": 1.0 },
+            { "tag": "carrier_capacity", "value": 1.0 },
+            { "tag": "exotic_production", "value": 2.0 },
+            { "tag": "economy_extractor", "value": 2.0 },
+            { "tag": "economy_metal", "value": 1.0, "min_item_count": 1 },
+            { "tag": "economy_trade", "value": 0.3 },
+            { "tag": "logistics", "value": 1.5 },
+            { "tag": "population", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "economic_world",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "economy_credits", "value": 2.0 },
+            { "tag": "research_general", "value": 1.6 },
+            { "tag": "economy_metal", "value": 2.0 },
+            { "tag": "economy_extractor", "value": 1.7 },
+            { "tag": "culture", "value": 1.5 },
+            { "tag": "economy_crystal", "value": 2.0 },
+            { "tag": "economy_trade", "value": 2.0, "min_structure_count": 1 },
+            { "tag": "population", "value": 0.5, "min_structure_count": 1, "min_item_count": 1 },
+            { "tag": "exotic_production", "value": 2.0 }
+        ]
+    },
+    {
+        "name": "refinery_world",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "economy_trade", "value": 2.0 },
+            { "tag": "economy_metal", "value": 2.0, "min_item_count": 1 },
+            { "tag": "economy_crystal", "value": 2.0, "min_item_count": 1 },
+            { "tag": "economy_extractor", "value": 1.7 },
+            { "tag": "exotic_production", "value": 2.0, "min_structure_count": 1 }
+        ]
+    },
+    {
+        "name": "research_world",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "research_civilian", "value": 2.0 },
+            { "tag": "research_military", "value": 2.0 },
+            { "tag": "population", "value": 0.2 },
+            { "tag": "economy_extractor", "value": 1.7 },
+            { "tag": "economy_metal", "value": 0.05 },
+            { "tag": "economy_crystal", "value": 0.05 },
+            { "tag": "economy_trade", "value": 0.4 }
+        ]
+    },
+    {
+        "name": "fortress_world",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_anti_light", "value": 2.0 },
+            { "tag": "defense_anti_heavy", "value": 2.0 },
+            { "tag": "defense_hangar", "value": 1.5 },
+            { "tag": "defense_support", "value": 1.5 },
+            { "tag": "economy_extractor", "value": 1.7 },
+            { "tag": "economy_trade", "value": 0.3 },
+            { "tag": "planet_fortification", "value": 2.5 },
+            { "tag": "defense_inhibitor", "value": 2.5 },
+            { "tag": "planet_health", "value": 1.5 },
+            { "tag": "garrison", "value": 2.0 },
+            { "tag": "offense_boost", "value": 1.5 }
+        ]
+    },
+    {
+        "name": "culture_world",
+        "min_structure_score_ratio": 0.15,
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "culture", "value": 2.0, "min_item_count": 1 },
+            { "tag": "economy_extractor", "value": 1.7 },
+            { "tag": "economy_trade", "value": 0.5 },
+            { "tag": "influence", "value": 2.0 },
+            { "tag": "unity", "value": 1.5 },
+            { "tag": "population", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "anti_capital",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_anti_heavy", "value": 2.0 },
+            { "tag": "defense_support", "value": 1.5 },
+            { "tag": "defense_starbase", "value": 1.5 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 1.0 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "garrison", "value": 0.5 },
+            { "tag": "planet_fortification", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "anti_swarm",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_anti_light", "value": 2.0 },
+            { "tag": "defense_hangar", "value": 1.5 },
+            { "tag": "carrier_capacity", "value": 1.5 },
+            { "tag": "defense_support", "value": 1.0 },
+            { "tag": "defense_starbase", "value": 1.0 },
+            { "tag": "garrison", "value": 0.5 },
+            { "tag": "planet_fortification", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "lockdown",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_inhibitor", "value": 2.0 },
+            { "tag": "planet_fortification", "value": 2.0 },
+            { "tag": "defense_anti_light", "value": 1.0 },
+            { "tag": "defense_anti_heavy", "value": 1.0 },
+            { "tag": "defense_starbase", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 1.0 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "garrison", "value": 1.0 },
+            { "tag": "phase_infrastructure", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "balanced_defense",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_anti_light", "value": 1.0 },
+            { "tag": "defense_anti_heavy", "value": 1.0 },
+            { "tag": "defense_hangar", "value": 1.0 },
+            { "tag": "defense_support", "value": 1.0 },
+            { "tag": "defense_starbase", "value": 1.0 },
+            { "tag": "defense_inhibitor", "value": 0.5 },
+            { "tag": "defense_hull_armor", "value": 0.5 },
+            { "tag": "defense_shields", "value": 0.5 },
+            { "tag": "offense_boost", "value": 0.5 },
+            { "tag": "planet_fortification", "value": 0.5 },
+            { "tag": "garrison", "value": 0.5 },
+            { "tag": "utility_support", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "starbase_heavy",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_anti_heavy", "value": 1.5 },
+            { "tag": "defense_anti_light", "value": 1.0 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 1.0 },
+            { "tag": "utility_support", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "research_military",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "research_military", "value": 2.0 },
+            { "tag": "factory_heavy", "value": 1.5, "max_structure_count": 1 },
+            { "tag": "factory_light", "value": 1.0, "max_structure_count": 1 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "carrier_capacity", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 0.5 },
+            { "tag": "defense_shields", "value": 0.5 },
+            { "tag": "super_weapon", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "research_economic",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "research_civilian", "value": 2.0 },
+            { "tag": "economy_credits", "value": 1.5 },
+            { "tag": "economy_metal", "value": 1.5 },
+            { "tag": "economy_crystal", "value": 1.5 },
+            { "tag": "economy_trade", "value": 1.0 },
+            { "tag": "exotic_production", "value": 1.0 },
+            { "tag": "population", "value": 0.8 },
+            { "tag": "mobile_infrastructure", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "research_defensive",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "research_military", "value": 1.5 },
+            { "tag": "defense_anti_heavy", "value": 1.0 },
+            { "tag": "defense_anti_light", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 1.0 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "planet_fortification", "value": 1.0 },
+            { "tag": "starbase", "value": 1.0 },
+            { "tag": "garrison", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "research_culture",
+        "tag_weights": [
+            { "tag": "research_civilian", "value": 1.5 },
+            { "tag": "culture", "value": 2.0 },
+            { "tag": "influence", "value": 2.0 },
+            { "tag": "unity", "value": 1.5 },
+            { "tag": "population", "value": 0.8 }
+        ]
+    },
+    {
+        "name": "research_expansion",
+        "tag_weights": [
+            { "tag": "research_civilian", "value": 1.5 },
+            { "tag": "mobile_infrastructure", "value": 2.0 },
+            { "tag": "phase_infrastructure", "value": 1.5 },
+            { "tag": "phase_resonance", "value": 1.5 },
+            { "tag": "factory_light", "value": 1.0 },
+            { "tag": "population", "value": 0.8 }
+        ]
+    },
+    {
+        "name": "research_titan",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "research_military", "value": 2.0 },
+            { "tag": "factory_titan", "value": 2.0 },
+            { "tag": "factory_heavy", "value": 1.0, "max_structure_count": 1 },
+            { "tag": "super_weapon", "value": 1.0 },
+            { "tag": "offense_boost", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "attack_economy_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "offense_boost", "value": 2.0 },
+            { "tag": "carrier_capacity", "value": 1.5 },
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "military_weapons", "value": 1.0 },
+            { "tag": "military_speed", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "capture_territory_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "defense_starbase", "value": 1.0 },
+            { "tag": "garrison", "value": 1.0 },
+            { "tag": "colonize", "value": 1.0 },
+            { "tag": "mobile_infrastructure", "value": 1.0 },
+            { "tag": "offense_boost", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "destroy_military_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "offense_boost", "value": 3.0 },
+            { "tag": "factory_heavy", "value": 2.0 },
+            { "tag": "factory_titan", "value": 2.0 },
+            { "tag": "defense_anti_heavy", "value": 2.0 },
+            { "tag": "carrier_capacity", "value": 1.0 },
+            { "tag": "research_military", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "defend_territory_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_starbase", "value": 2.5 },
+            { "tag": "defense_anti_light", "value": 2.0 },
+            { "tag": "garrison", "value": 2.0 },
+            { "tag": "defense_hangar", "value": 1.5 },
+            { "tag": "planet_fortification", "value": 1.5 },
+            { "tag": "defense_anti_heavy", "value": 1.0 },
+            { "tag": "defense_shields", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "harass_supply_demand",
+        "tag_weights": [
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "military_speed", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "counter_attack_demand",
+        "tag_weights": [
+            { "tag": "offense_boost", "value": 2.0 },
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "factory_heavy", "value": 1.5 },
+            { "tag": "carrier_capacity", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "secure_chokepoint_demand",
+        "tag_weights": [
+            { "tag": "defense_starbase", "value": 3.0 },
+            { "tag": "defense_anti_light", "value": 2.5 },
+            { "tag": "defense_anti_heavy", "value": 2.5 },
+            { "tag": "planet_fortification", "value": 2.0 },
+            { "tag": "defense_inhibitor", "value": 1.5 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "defense_hull_armor", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "assist_ally_demand",
+        "tag_weights": [
+            { "tag": "factory_light", "value": 1.0 },
+            { "tag": "factory_heavy", "value": 1.0 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "carrier_capacity", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "raid_harassment_demand",
+        "tag_weights": [
+            { "tag": "factory_light", "value": 1.5 },
+            { "tag": "offense_boost", "value": 1.0 },
+            { "tag": "military_speed", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "increase_supply_demand",
+        "tag_weights": [
+            { "tag": "military", "value": 0.5 }
+        ]
+    },
+    {
+        "name": "increase_income_demand",
+        "tag_weights": [
+            { "tag": "research_general", "value": 1.0 },
+            { "tag": "planet_development", "value": 1.0 },
+            { "tag": "culture", "value": 1.0 },
+            { "tag": "economy_credits", "value": 1.5 },
+            { "tag": "economy_metal", "value": 1.3 },
+            { "tag": "economy_crystal", "value": 1.3 }
+        ]
+    },
+    {
+        "name": "boost_research_demand",
+        "tag_weights": [
+            { "tag": "research_civilian", "value": 0.9 },
+            { "tag": "research_military", "value": 0.9 }
+        ]
+    },
+    {
+        "name": "resolve_civilian_research_deficit_demand",
+        "tag_weights": [
+            { "tag": "research_civilian", "value": 2.8 }
+        ]
+    },
+    {
+        "name": "resolve_military_research_deficit_demand",
+        "tag_weights": [
+            { "tag": "research_military", "value": 2.8 }
+        ]
+    },
+    {
+        "name": "acquire_exotics_demand",
+        "tag_weights": [
+            { "tag": "exotic_production", "value": 0.6 }
+        ]
+    },
+    {
+        "name": "bide_time_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "defense_starbase", "value": 2.0 },
+            { "tag": "garrison", "value": 1.5 },
+            { "tag": "defense_anti_light", "value": 1.5 },
+            { "tag": "defense_shields", "value": 1.0 },
+            { "tag": "planet_fortification", "value": 1.0 }
+        ]
+    },
+    {
+        "name": "fill_supply_demand",
+        "tag_weights": [
+            { "tag": "starbase", "value": 2.0 },
+            { "tag": "factory_heavy", "value": 1.5 },
+            { "tag": "factory_light", "value": 1.2 },
+            { "tag": "ship_support", "value": 1.4 },
+            { "tag": "ship_heavy", "value": 1.4 },
+            { "tag": "ship_anti_structure", "value": 1.4 },
+            { "tag": "ship_siege", "value": 2.0 },
+            { "tag": "ship_corvette", "value": 1.5 },
+            { "tag": "ship_cruiser", "value": 1.5 },
+            { "tag": "ship_carrier", "value": 1.5 },
+            { "tag": "ship_long_range", "value": 1.5 },
+            { "tag": "ship_light", "value": 1.2 },
+            { "tag": "ship_missile", "value": 1.8 },
+            { "tag": "ship_point_defense", "value": 1.5 }
+        ]
+    }],
+    "war_goal_demand_profiles":
+    {
+        "attack_economy": "attack_economy_demand",
+        "capture_territory": "capture_territory_demand",
+        "destroy_military": "destroy_military_demand",
+        "defend_territory": "defend_territory_demand",
+        "harass_supply_lines": "harass_supply_demand",
+        "counter_attack": "counter_attack_demand",
+        "secure_chokepoint": "secure_chokepoint_demand",
+        "assist_ally": "assist_ally_demand",
+        "raid_harassment": "raid_harassment_demand",
+        "bide_time": "bide_time_demand",
+        "seek_engagement": "destroy_military_demand",
+        "eliminate_scripted_threat": "destroy_military_demand"
+    },
+    "economic_goal_demand_profiles":
+    {
+        "establish_factory_world": "factory_world",
+        "establish_refinery_world": "refinery_world",
+        "establish_research_hub": "research_world",
+        "establish_fortress": "fortress_world",
+        "establish_culture_hub": "culture_world",
+        "establish_economic_world": "economic_world",
+        "expand_territory": "",
+        "increase_supply": "increase_supply_demand",
+        "increase_income": "increase_income_demand",
+        "acquire_exotics": "acquire_exotics_demand",
+        "tech_rush": "",
+        "unlock_research_subject": "",
+        "boost_research_rate": "",
+        "establish_homeworld": "homeworld",
+        "establish_general_world": "general_world",
+        "advance_military_technology": "research_military",
+        "advance_civilian_technology": "research_civilian",
+        "unlock_ship_classes": "",
+        "build_capital_fleet": "destroy_military_demand",
+        "resolve_civilian_research_deficit": "resolve_civilian_research_deficit_demand",
+        "resolve_military_research_deficit": "resolve_military_research_deficit_demand",
+        "establish_npc_contacts": "",
+        "fill_fleet_capacity": "fill_supply_demand"
+        
+    },
+    "resource_need_research_tags": [
+        {
+            "need": "influence",
+            "tags": ["influence"]
+        }
+    ],
+    "spending_posture":
+    {
+        "supply_fill_military_threshold": 1.0,
+        "development_posture_war_goal_multiplier": 0.7,
+        "development_posture_econ_goal_multiplier": 1.15,
+        "military_posture_war_goal_multiplier": 1.3,
+        "military_posture_econ_goal_multiplier": 0.5,
+        "preferred_category_priority_offset": 1,
+        "military_posture_ship_priority_offset": 3,
+        "min_posture_duration_seconds": 30.0,
+        "snowball_dampener_threshold": 2.0,
+        "snowball_dampener_factor": 1.0,
+        "ship_starvation_threshold_seconds": 30.0,
+        "military_boost_cap": 4,
+        "development_posture_development_deposit_rate": 0.25,
+        "development_posture_military_deposit_rate": 0.18,
+        "military_posture_military_deposit_rate": 0.20,
+        "military_posture_development_deposit_rate": 0.15,
+        "balanced_posture_deposit_rate": 0.22,
+        "propagated_threat_posture_threshold": 125.0,
+        "attitudes":
+        {
+            "development": [
+                "economy_credits", "economy_metal", "economy_crystal", "economy_trade",
+                "factory_light", "factory_heavy",
+                "culture", "influence", "unity",
+                "logistics", "population", "planet_health",
+                "starbase", "exotic_production", "colonize",
+                "phase_resonance", "phase_infrastructure", "mobile_infrastructure",
+                "carrier_capacity", "offense_boost", "utility_support",
+                "military_weapons", "military_speed"
+            ],
+            "balanced": [
+                "economy_credits", "economy_metal", "economy_crystal", "economy_trade",
+                "factory_light", "factory_heavy", "factory_titan",
+                "culture", "influence", "unity",
+                "logistics", "population", "planet_health",
+                "starbase", "exotic_production", "colonize",
+                "phase_resonance", "phase_infrastructure", "mobile_infrastructure",
+                "carrier_capacity", "offense_boost", "utility_support",
+                "super_weapon", "military_weapons", "military_speed"
+            ],
+            "military": [
+                "economy_credits", "economy_metal", "economy_crystal", "economy_trade",
+                "factory_light", "factory_heavy", "factory_titan",
+                "logistics", "population", "planet_health",
+                "starbase", "exotic_production",
+                "defense_anti_light", "defense_anti_heavy", "defense_hangar",
+                "defense_support", "defense_inhibitor", "defense_starbase",
+                "defense_shields", "defense_hull_armor",
+                "planet_fortification", "garrison",
+                "carrier_capacity", "offense_boost", "utility_support",
+                "super_weapon", "military_weapons", "military_speed"
+            ]
+        }
+    },
+    "goal_role_urgency":
+    {
+        "entries": [
+            { "goal_type": "tech_rush",                         "role": "research",  "priority_boost": 3 },
+            { "goal_type": "tech_rush",                         "role": "culture",   "priority_boost": 1 },
+            { "goal_type": "advance_civilian_technology",       "role": "research",  "priority_boost": 2 },
+            { "goal_type": "advance_civilian_technology",       "role": "culture",   "priority_boost": 1 },
+            { "goal_type": "advance_military_technology",       "role": "research",  "priority_boost": 2 },
+            { "goal_type": "advance_military_technology",       "role": "factory",   "priority_boost": 1 },
+            { "goal_type": "boost_research_rate",               "role": "research",  "priority_boost": 2 },
+            { "goal_type": "resolve_civilian_research_deficit", "role": "research",  "priority_boost": 3 },
+            { "goal_type": "resolve_military_research_deficit", "role": "research",  "priority_boost": 3 },
+            { "goal_type": "unlock_ship_classes",               "role": "factory",   "priority_boost": 2 },
+            { "goal_type": "unlock_ship_classes",               "role": "research",  "priority_boost": 1 },
+            { "goal_type": "unlock_research_subject",           "role": "research",  "priority_boost": 2 },
+            { "goal_type": "build_capital_fleet",               "role": "factory",   "priority_boost": 3 },
+            { "goal_type": "acquire_exotics",                   "role": "refinery",  "priority_boost": 3 },
+            { "goal_type": "acquire_exotics",                   "role": "economic",  "priority_boost": 1 },
+            { "goal_type": "increase_income",                   "role": "economic",  "priority_boost": 3 },
+            { "goal_type": "increase_income",                   "role": "refinery",  "priority_boost": 1 },
+            { "goal_type": "increase_supply",                   "role": "general",   "priority_boost": 1 },
+            { "goal_type": "expand_territory",                  "role": "general",   "priority_boost": 1 },
+            { "goal_type": "expand_territory",                  "role": "economic",  "priority_boost": 1 },
+            { "goal_type": "establish_factory_world",           "role": "factory",   "priority_boost": 3 },
+            { "goal_type": "establish_refinery_world",          "role": "refinery",  "priority_boost": 3 },
+            { "goal_type": "establish_research_hub",            "role": "research",  "priority_boost": 3 },
+            { "goal_type": "establish_fortress",                "role": "fortress",  "priority_boost": 3 },
+            { "goal_type": "establish_culture_hub",             "role": "culture",   "priority_boost": 3 },
+            { "goal_type": "establish_economic_world",          "role": "economic",  "priority_boost": 3 },
+            { "goal_type": "establish_homeworld",               "role": "homeworld", "priority_boost": 3 },
+            { "goal_type": "establish_homeworld",               "role": "economic",  "priority_boost": 1 },
+            { "goal_type": "establish_general_world",           "role": "general",   "priority_boost": 2 },
+            { "goal_type": "fill_fleet_capacity",               "role": "factory",   "priority_boost": 2 }
+        ]
+    }
+}

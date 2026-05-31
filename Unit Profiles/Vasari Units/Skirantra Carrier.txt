@@ -1,8 +1,8 @@
 Skirantra Carrier
 	Supply: 	50
 	Credits:	
-	Metal:  	1680.0
-	Crystal:	1320.0
+	Metal:  	1950.0
+	Crystal:	1440.0
 
 	Movespeed:	600.0
 	Acceleration:	120.0

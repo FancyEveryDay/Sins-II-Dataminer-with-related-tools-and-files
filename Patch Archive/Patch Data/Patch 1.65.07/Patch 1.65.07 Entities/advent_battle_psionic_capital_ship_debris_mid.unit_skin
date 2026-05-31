@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 67276.895463,
+        "min_camera_distance": 654.658361,
+        "unit_mesh":
+        {
+            "mesh": "advent_battle_psionic_capital_ship_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_battle_psionic_capital_mid_debris_damage"
+            }]
+        }
+    }]
+}

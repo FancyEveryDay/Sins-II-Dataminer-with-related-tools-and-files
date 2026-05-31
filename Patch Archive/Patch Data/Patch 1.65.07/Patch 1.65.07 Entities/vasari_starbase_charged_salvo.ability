@@ -1,0 +1,282 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_starbase_charged_salvo",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "charged_salvo_cooldown_time_value",
+        "stop_use_type": "on_spawned_buff_removed",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "charged_salvo_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_starbase_charged_salvo_on_self"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "charged_salvo_target_filter"
+        ],
+        "range": "charged_salvo_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 30.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "charged_salvo_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "charged_salvo_auto_cast_low_priority_target_filter"
+            }]
+        },
+        "watched_buff": "vasari_starbase_charged_salvo_on_self"
+    },
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "charged_salvo_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.salvo_properties",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_count",
+                "value_id": "charged_salvo_torpedo_count_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.charge_delay",
+                "value_id": "charged_salvo_charge_value",
+                "value_suffix": "seconds"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.missile_properties",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "charged_salvo_damage_value",
+                "value_color": "negative"
+            },
+            {
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "charged_salvo_armor_penetration_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.bypass_shields_chance",
+                "value_id": "charged_salvo_bypass_shields_chance_value",
+                "value_float_format": "percentage",
+                "ratio_float_format": "percentage_with_sign"
+            }]
+        }]
+    },
+    "ability_positions": [
+    {
+            "position": [1418.041016, 653.822205, 241.265503],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1443.271484, 649.449585, 246.389038],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1472.893799, 644.236633, 240.633789],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1503.690918, 636.937561, 236.520020],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1433.863159, 664.043579, 218.129028],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1461.470093, 659.516113, 211.465820],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1491.650269, 653.775269, 209.358154],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1449.747314, 673.548828, 183.159424],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1479.834229, 669.409912, 182.945923],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1508.385132, 662.519836, 176.836548],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1503.123169, 636.898071, 231.237915],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1472.271118, 644.023010, 239.952026],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1442.688354, 649.695435, 239.952026],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1417.740234, 654.576843, 241.577759],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1490.666138, 654.315369, 209.601318],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1459.156860, 660.142639, 209.601318],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1432.507690, 664.488525, 214.538452],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1508.057739, 663.072998, 177.457397],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1477.178345, 668.215210, 182.358276],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1448.610229, 673.931885, 182.781372],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1581.257202, 613.144714, 235.830688],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1607.013062, 607.334045, 233.126587],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1613.40210, 636.748718, 175.332764],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1637.478882, 603.566040, 235.211426],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1666.511353, 595.718140, 230.881958],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1571.010376, 631.122192, 212.891235],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1595.677246, 625.347168, 203.702637],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1626.016602, 620.520508, 203.944702],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1656.293457, 613.604919, 203.003662],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [1588.018555, 644.834229, 174.980713],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1665.200073, 596.309509, 229.503052],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1634.559326, 601.645630, 234.176147],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1605.766724, 607.780640, 229.503052],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1579.225830, 613.116760, 234.176147],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1655.003174, 614.056091, 202.244263],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1624.282959, 620.252258, 202.244263],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1594.865479, 626.096802, 202.740723],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1569.112793, 631.016418, 211.308960],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1612.688354, 638.187866, 173.355713],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    },
+    {
+            "position": [-1586.761353, 644.570312, 173.355713],
+            "rotation": [1.0, 0.0, -0.0, -0.0, 1.0, -0.0, 0.0, 0.0, 1.0]
+    }]
+}
