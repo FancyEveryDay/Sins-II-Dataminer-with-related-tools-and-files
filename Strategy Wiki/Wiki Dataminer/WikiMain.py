@@ -5,6 +5,7 @@ import wikiResearch
 import wikiUtilities
 import wikiUnit
 import wikiStructure
+import wikiPlanetItem
 
 def main():
     
@@ -14,6 +15,7 @@ def main():
     wikiResearch.main(prereqsDict)
     wikiUnit.main()
     wikiStructure.main()
+    wikiPlanetItem.main()
 
 if __name__ == "__main__":
     main()

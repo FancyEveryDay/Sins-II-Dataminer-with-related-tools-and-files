@@ -54,14 +54,52 @@ def getRace(unitName):
 
     return race
 
-def formatModifier(modifier_value, modifier_format):
-    match modifier_format:
-        case "no_decimal_place_with_sign":
-            return f"{modifier_value:.0f}"
-        case "percentage_with_sign":
-            return f"{modifier_value:.0f}%"
-        case _:
-            return str(modifier_value)
+# def formatModifier(modifier_value, modifier_format):
+#     match modifier_format:
+#         case "no_decimal_place_with_sign":
+#             return f"{modifier_value:.0f}"
+#         case "percentage_with_sign":
+#             return f"{modifier_value:.0f}%"
+#         case _:
+#             return str(modifier_value)
+
+class ModifierEnum:
+    EMPIRE_MODIFIER = "empire_modifier_names"
+    PLANET_MODIFIER = "planet_modifier_names"
+
+def formatModifier(modifier, modifierType : ModifierEnum):
+    if modifier is None:
+        return None
+    
+    modifiers = []
+    
+    for m in modifier:
+        formated_modifier = LOCALIZED_TEXT[UNIT_MODIFIERS["modifier"][modifierType][m["modifier_type"]]]
+        
+        values = ""
+
+        if m["value_behavior"] == "additive" and m.get("values",False):
+            for i in m['values']:
+                values += f"{"+" if i > 0 else ""}{i} → "
+
+            values = values[:-3]
+
+        elif m["value_behavior"] == "additive" and m.get("value",False):
+            values = f"{'+' if m['value'] > 0 else ''}{m['value']}"
+
+        elif m["value_behavior"] == "scalar"and m.get("values",False):
+            for i in m['values']:
+                values += f"{"+" if i > 0 else ""}{i*100}% → "
+
+            values = values[:-3]
+
+        elif m["value_behavior"] == "scalar"and m.get("value",False):
+            values = f"{'+' if m['value'] > 0 else ''}{m['value']*100}%"
+
+        modifiers.append(f"{formated_modifier} {values}")
+
+
+    return modifiers
 
 def formatPlanetItemEntries(planetDict : dict, outputFile = WIKIFILES_DIR / "Wikiplanetitem"):
 
@@ -104,13 +142,16 @@ def formatPlanetItemEntries(planetDict : dict, outputFile = WIKIFILES_DIR / "Wik
         itemPlanetTypes = []
         if planetTypes != None:
             for planet in planetTypes:
-                itemPlanetTypes.append(LOCALIZED_TEXT.get(planet + "_planet_name", planet))
+                itemPlanetTypes.append(LOCALIZED_TEXT.get(planet + "_planet_name", planet).capitalize())
 
         if item.get('player_modifiers', False):
             itemPlanetEffect = item['player_modifiers'].get('planet_modifiers', None)
             itemEmpireEffect = item['player_modifiers'].get('empire_modifiers', None)
         else: 
             itemPlanetEffect = itemEmpireEffect = None
+
+        if item.get('planet_modifiers', False):
+            itemPlanetEffect = item.get('planet_modifiers', None)
 
         ability = item.get('ability', None)
         if ability != None:
@@ -128,6 +169,17 @@ def formatPlanetItemEntries(planetDict : dict, outputFile = WIKIFILES_DIR / "Wik
                 itemPrerequisites = (prerequisites[0][0])
         else: itemPrerequisites = None
 
+        if item.get('item_level_source'):
+            levelPrerequisites = []
+            for research in item["item_level_prerequisites"]:
+                levelPrerequisites.append(
+                    LOCALIZED_TEXT[f"{research[0][0]}_research_subject_name"]
+                )
+        else:
+            levelPrerequisites = None
+
+        planetLevelRequirement = item.get("required_planet_level", None)
+
         # Produce final output
 
         output = outputDict[outputName] = {}
@@ -137,19 +189,21 @@ def formatPlanetItemEntries(planetDict : dict, outputFile = WIKIFILES_DIR / "Wik
         output['description'] = itemDescription
         output['faction'] = itemFaction 
         output['build_time'] = itemBuildTime
-        output['credit_cost'] = itemCreditCost
-        output['metal_cost'] = itemMetalCost
-        output['crystal_cost'] = itemCrystalCost
+        output['credits'] = itemCreditCost
+        output['metal'] = itemMetalCost
+        output['crystal'] = itemCrystalCost
         formatExoticPrice(output, itemExoticCost)
 
         output['planettypes'] = itemPlanetTypes
-        output['empireeffects'] = itemEmpireEffect
-        output['planeteffects'] = itemPlanetEffect
+        output['required_planet_level'] = planetLevelRequirement
+        output['empireeffects'] = formatModifier(itemEmpireEffect, ModifierEnum().EMPIRE_MODIFIER)
+        output['planeteffects'] = formatModifier(itemPlanetEffect, ModifierEnum().PLANET_MODIFIER)
         output['ability'] = itemAbility
         output['prerequisites'] = itemPrerequisites
+        output['level_prerequisites'] = levelPrerequisites
 
-    with open(outputFile, 'w') as file:
-        json.dump(outputDict, file, indent = 1)
+    with open(outputFile, 'w', encoding = "utf-8") as file:
+        json.dump(outputDict, file, indent = 1, ensure_ascii=False)
 
 
 def main():
