@@ -1,0 +1,236 @@
+{
+    "version": 0,
+    "action_data_source": "trader_starbase_stun_torpedo",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "stun_torpedo_cooldown_time_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_starbase_stun_torpedo_on_self"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "stun_torpedo_target_filter"
+        ],
+        "range": "stun_torpedo_range_value",
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "mag_blast_missile_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "mag_blast_missile_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "stun_torpedo_range_value",
+                "radius": "stun_torpedo_splash_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.salvo_properties",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_count",
+                "value_id": "stun_torpedo_torpedo_count_value"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.missile_properties",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "stun_torpedo_damage_value",
+                "value_color": "negative"
+            },
+            {
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "stun_torpedo_armor_penetration_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_speed",
+                "value_id": "stun_torpedo_torpedo_speed_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_hull",
+                "value_id": "stun_torpedo_torpedo_hull_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_armor",
+                "value_id": "stun_torpedo_torpedo_armor_value"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.area_effect_on_hit",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "stun_torpedo_splash_radius_value"
+            }]
+        }]
+    },
+    "ability_positions": [
+    {
+        "position": [701.983398, 602.856628, 750.326782],
+        "rotation": [0.707107, -0.0, -0.707107, -0.640856, 0.422619, -0.640856, 0.298837,
+            0.906308, 0.298836
+        ]
+    },
+    {
+        "position": [-750.398193, 602.857239, 701.669556],
+        "rotation": [0.707107, -0.0, 0.707107, 0.640856, 0.422618, -0.640856, -0.298836,
+            0.906308, 0.298837
+        ]
+    },
+    {
+        "position": [-701.741516, 602.8573, -750.711243],
+        "rotation": [-0.707108, 0.0, 0.707106, 0.640856, 0.422618, 0.640857, -0.298835,
+            0.906308, -0.298837
+        ]
+    },
+    {
+        "position": [750.639893, 602.856567, -702.05481],
+        "rotation": [-0.707107, 0.0, -0.707107, -0.640856, 0.422619, 0.640856, 0.298837,
+            0.906307, -0.298837
+        ]
+    },
+    {
+        "position": [743.744507, 602.856628, 708.56543],
+        "rotation": [0.707107, -0.0, -0.707107, -0.640856, 0.422619, -0.640856, 0.298837,
+            0.906308, 0.298836
+        ]
+    },
+    {
+        "position": [-708.63623, 602.8573, 743.430298],
+        "rotation": [0.707107, -0.0, 0.707107, 0.640856, 0.422618, -0.640856, -0.298836,
+            0.906308, 0.298837
+        ]
+    },
+    {
+        "position": [-743.501343, 602.857239, -708.950439],
+        "rotation": [-0.707108, 0.0, 0.707106, 0.640856, 0.422618, 0.640857, -0.298835,
+            0.906308, -0.298837
+        ]
+    },
+    {
+        "position": [708.878906, 602.856567, -743.815063],
+        "rotation": [-0.707107, 0.0, -0.707107, -0.640856, 0.422619, 0.640856, 0.298837,
+            0.906307, -0.298837
+        ]
+    },
+    {
+        "position": [807.083801, 574.361328, 733.45343],
+        "rotation": [0.707107, -0.0, -0.707107, -0.640856, 0.422619, -0.640856, 0.298837,
+            0.906308, 0.298836
+        ]
+    },
+    {
+        "position": [-733.524658, 574.362, 806.770386],
+        "rotation": [0.707107, -0.0, 0.707107, 0.640856, 0.422618, -0.640856, -0.298836,
+            0.906308, 0.298837
+        ]
+    },
+    {
+        "position": [-806.841431, 574.361938, -733.838379],
+        "rotation": [-0.707108, 0.0, 0.707106, 0.640856, 0.422618, 0.640857, -0.298835,
+            0.906308, -0.298837
+        ]
+    },
+    {
+        "position": [733.767334, 574.361267, -807.155151],
+        "rotation": [-0.707107, 0.0, -0.707107, -0.640856, 0.422619, 0.640856, 0.298837,
+            0.906307, -0.298837
+        ]
+    },
+    {
+        "position": [767.344055, 574.361267, 773.191711],
+        "rotation": [0.707107, -0.0, -0.707107, -0.640856, 0.422619, -0.640856, 0.298837,
+            0.906308, 0.298836
+        ]
+    },
+    {
+        "position": [-773.263916, 574.362, 767.030884],
+        "rotation": [0.707107, -0.0, 0.707107, 0.640856, 0.422618, -0.640856, -0.298836,
+            0.906308, 0.298837
+        ]
+    },
+    {
+        "position": [-767.100952, 574.361938, -773.576416],
+        "rotation": [-0.707108, 0.0, 0.707106, 0.640856, 0.422618, 0.640857, -0.298835,
+            0.906308, -0.298837
+        ]
+    },
+    {
+        "position": [773.505615, 574.361267, -767.415405],
+        "rotation": [-0.707107, 0.0, -0.707107, -0.640856, 0.422619, 0.640856, 0.298837,
+            0.906307, -0.298837
+        ]
+    },
+    {
+        "position": [727.095703, 574.361267, 813.441772],
+        "rotation": [0.707107, -0.0, -0.707107, -0.640856, 0.422619, -0.640856, 0.298837,
+            0.906308, 0.298836
+        ]
+    },
+    {
+        "position": [-813.513184, 574.362061, 726.78186],
+        "rotation": [0.707107, -0.0, 0.707107, 0.640856, 0.422618, -0.640856, -0.298836,
+            0.906308, 0.298837
+        ]
+    },
+    {
+        "position": [-726.852783, 574.362, -813.827026],
+        "rotation": [-0.707108, 0.0, 0.707106, 0.640856, 0.422618, 0.640857, -0.298835,
+            0.906308, -0.298837
+        ]
+    },
+    {
+        "position": [813.755371, 574.361206, -727.166626],
+        "rotation": [-0.707107, 0.0, -0.707107, -0.640856, 0.422619, 0.640856, 0.298837,
+            0.906307, -0.298837
+        ]
+    }]
+}

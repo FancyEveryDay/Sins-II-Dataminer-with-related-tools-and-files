@@ -1,0 +1,2016 @@
+
+
+# Advent Changes
+
+## Ability Changes
+
+**Cleansing Brilliance**
+	active_actions
+		auto_cast
+			target_definitions
+				cleansing_brilliance_auto_cast_target_filter
+					[NEW] target_constraint : {'constraint_type': 'has_valid_targets_in_radius', 'radius_origin_unit': {'unit_type': 'target'}, 'radius_value': 'cleansing_brilliance_radius_value', 'target_count_value': 'cleansing_brilliance_auto_cast_target_count_value', 'target_filter_id': 'cleansing_brilliance_auto_cast_radius_target_filter'}
+
+**Detonate Antimatter**
+	active_actions
+		[NEW] ai_only_auto_cast : {'caster_constraint': {'constraint_type': 'unit_passes_unit_constraint', 'unit': {'unit_type': 'current_spawner'}, 'unit_constraint': {'constraint_type': 'weapon_has_target'}}, 'target_definitions': [{'target_filter': 'detonate_antimatter_ai_only_auto_cast_target_filter'}]}
+	[NEW] unit_constraint_params : {'unit_level_for_has_unit_level_constraint_value': 'detonate_antimatter_auto_cast_level_minimum'}
+
+## Action_data_source Changes
+
+**Cleansing Brilliance**
+	target_filters
+		[NEW] cleansing_brilliance_auto_cast_radius_target_filter : {'target_filter_id': 'cleansing_brilliance_auto_cast_radius_target_filter', 'target_filter': {'unit_types': ['corvette', 'cruiser', 'frigate'], 'ownerships': ['enemy'], 'constraints': [{'constraint_type': 'is_always_a_threat'}]}}
+	action_values
+		[NEW] cleansing_brilliance_auto_cast_target_count_value : {'action_value_id': 'cleansing_brilliance_auto_cast_target_count_value', 'action_value': {'values': [20.0]}}
+
+**Detonate Antimatter**
+	target_filters
+		[NEW] detonate_antimatter_ai_only_auto_cast_target_filter : {'target_filter_id': 'detonate_antimatter_ai_only_auto_cast_target_filter', 'target_filter': {'unit_types': ['capital_ship', 'starbase', 'super_capital_ship', 'titan'], 'ownerships': ['enemy'], 'constraints': [{'constraint_type': 'has_antimatter'}, {'constraint_type': 'composite_or', 'constraints': [{'constraint_type': 'has_unit_level', 'comparison_type': 'greater_than_equal_to', 'value_source': 'constraint_params'}, {'constraint_type': 'is_channeling_ability'}]}]}}
+		detonate_antimatter_auto_cast_target_filter
+			target_filter
+				unit_types
+					[REMOVED] cruiser
+					[REMOVED] frigate
+	action_values
+		[NEW] detonate_antimatter_auto_cast_level_minimum : {'action_value_id': 'detonate_antimatter_auto_cast_level_minimum', 'action_value': {'values': [5.0, 5.0, 5.0]}}
+
+## Loadout Changes
+
+**[NEW] Coronata Titan**
+	loadouts
+			name : sniper
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : advent_loyalist_titan_hull_plating
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_armor
+							priority : 2
+							item : advent_structural_forcefields
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_loyalist_titan_shield_booster
+							priority : 3
+							item : advent_focus_shields
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 3
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 3
+							item : aluxian_admiral_scion
+							priority : 3
+							item : aluxian_military_observers
+							priority : 2
+							item : advent_shield_boost
+							priority : 1
+					slot_index : 4
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 5
+					candidates
+							item : advent_psionic_dynamo
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 6
+					candidates
+							item : advent_focus_antimatter
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 7
+					candidates
+							item : exoforce_matrix_ship_artifact
+							priority : 3
+							item : weapon_symbiote_ship_artifact
+							priority : 3
+							item : advent_focus_weapons
+							priority : 2
+							item : advent_energy_booster
+							priority : 1
+	weighted_random_loadouts
+			loadout : sniper
+			weight : 1.0
+
+**[NEW] Eradica Titan**
+	loadouts
+			name : area_damage
+			ability_picking_order
+				1
+				2
+				1
+				0
+				1
+				3
+				2
+				0
+				2
+				0
+			required_items
+					candidates
+							item : advent_rebel_titan_hull_plating
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_rebel_titan_shield_booster
+							priority : 3
+							item : advent_focus_shields
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_rebel_titan_unlock_missile_weapon
+							priority : 2
+							item : advent_structural_forcefields
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 4
+					candidates
+							item : advent_psionic_dynamo
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 5
+					candidates
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : aluxian_admiral_scion
+							priority : 4
+							item : aluxian_military_observers
+							priority : 3
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 6
+					candidates
+							item : advent_energy_booster
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 7
+					candidates
+							item : advent_focus_weapons
+							priority : 3
+							item : advent_plasma_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+	weighted_random_loadouts
+			loadout : area_damage
+			weight : 1.0
+
+**[NEW] Halcyon Carrier**
+	loadouts
+			name : defensive
+			ability_picking_order
+				0
+				1
+				0
+				1
+				0
+				3
+				1
+				2
+				2
+				2
+			required_items
+					candidates
+							item : aluxian_admiral_scion
+							priority : 4
+							item : aluxian_military_observers
+							priority : 3
+							item : alutar_vigor_engine
+							priority : 3
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : kinetic_intensifier_ship_artifact
+							priority : 3
+							item : advent_energy_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 3
+					candidates
+							item : alutar_safeguard_shield
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+	required_loadouts
+			loadout : defensive
+			priority : 1
+			target_count_in_empire : 3
+	weighted_random_loadouts
+			loadout : defensive
+			weight : 1.0
+
+**[NEW] Progenitor Mothership**
+	loadouts
+			name : colonizer
+			ability_picking_order
+				0
+				1
+				0
+				2
+				0
+				3
+				1
+				1
+				2
+				2
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_antimatter
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_shield_boost
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_energy_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+			name : commander
+			ability_picking_order
+				1
+				2
+				1
+				0
+				2
+				3
+				1
+				2
+				0
+				0
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_antimatter
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_focus_shields
+							priority : 3
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_guiding_mentor
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+			name : protector
+			ability_picking_order
+				1
+				0
+				1
+				2
+				1
+				3
+				2
+				2
+				0
+				0
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_plasma_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+	required_loadouts
+			loadout : colonizer
+			priority : 2
+			target_count_in_empire : 1
+			loadout : commander
+			priority : 1
+			target_count_in_empire : 2
+	weighted_random_loadouts
+			loadout : commander
+			weight : 20.0
+			loadout : protector
+			weight : 80.0
+
+**[NEW] Radiance Battleship**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				0
+				1
+				0
+				2
+				0
+				3
+				1
+				2
+				1
+				2
+			required_items
+					candidates
+							item : advent_psionic_dynamo
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_armor
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_focus_weapons
+							priority : 3
+							item : advent_plasma_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+			name : defender
+			ability_picking_order
+				1
+				2
+				1
+				2
+				1
+				3
+				2
+				0
+				0
+				0
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_armor
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_focus_shields
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+			name : aggressor
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_energy_booster
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_plasma_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_shield_boost
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+	required_loadouts
+			loadout : disruptor
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 20.0
+			loadout : defender
+			weight : 40.0
+			loadout : aggressor
+			weight : 40.0
+
+**[NEW] Rapture Battlecruiser**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				2
+				0
+				2
+				0
+				2
+				3
+				0
+				1
+				1
+				1
+			required_items
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_focus_armor
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+					slot_index : 2
+					candidates
+							item : advent_focus_weapons
+							priority : 3
+							item : advent_energy_booster
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_psionic_dynamo
+							priority : 3
+							item : advent_shield_boost
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+	required_loadouts
+			loadout : disruptor
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 1.0
+
+**[NEW] Revelation Battlecruiser**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : advent_psionic_dynamo
+							priority : 2
+							item : advent_votary_siphon
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_harmony_circuit
+							priority : 2
+							item : advent_shield_battery
+							priority : 1
+					slot_index : 2
+					candidates
+							item : exoforce_matrix_ship_artifact
+							priority : 6
+							item : aluxian_admiral_scion
+							priority : 6
+							item : aluxian_military_observers
+							priority : 5
+							item : advent_focus_shields
+							priority : 4
+							item : advent_shield_boost
+							priority : 3
+							item : advent_structural_forcefields
+							priority : 2
+							item : advent_plasma_pulse
+							priority : 1
+					slot_index : 3
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 4
+							item : advent_focus_antimatter
+							priority : 3
+							item : alutar_vigor_engine
+							priority : 2
+							item : advent_antimatter_pod
+							priority : 1
+	required_loadouts
+			loadout : disruptor
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 1.0
+
+**[NEW] Transcencia Starbase**
+	loadouts
+			name : default
+			ability_picking_order
+			required_items
+					candidates
+							item : advent_starbase_planetary_shield_array
+							priority : 1
+					slot_index : 1
+					candidates
+							item : advent_starbase_structural_integrity_0
+							priority : 1
+					slot_index : 2
+					candidates
+							item : pranast_bastion_module
+							priority : 2
+							item : advent_starbase_unlock_plasma_weapon
+							priority : 1
+					slot_index : 3
+					candidates
+							item : advent_starbase_unlock_missile_weapon
+							priority : 1
+					slot_index : 4
+					candidates
+							item : advent_starbase_structural_integrity_1
+							priority : 1
+					slot_index : 5
+					candidates
+							item : advent_starbase_structural_integrity_2
+							priority : 1
+					slot_index : 6
+					candidates
+							item : advent_starbase_shield_booster
+							priority : 1
+					slot_index : 7
+					candidates
+							item : advent_starbase_area_shield
+							priority : 1
+	required_loadouts
+			loadout : default
+			priority : 5
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : default
+			weight : 1.0
+
+
+# TEC Changes
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+## Loadout Changes
+
+**[NEW] Akkan Battlecruiser**
+	loadouts
+			name : colonizer
+			ability_picking_order
+				0
+				2
+				0
+				1
+				0
+				3
+				2
+				2
+				1
+				1
+			required_items
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 6
+							item : viturak_phase_shifter
+							priority : 5
+							item : trader_missile_armor
+							priority : 4
+							item : trader_beam_armor
+							priority : 4
+							item : alutar_safeguard_shield
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_flak_burst
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_targeting_array
+							priority : 3
+							item : trader_reserve_squadron_hangar
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : kinetic_intensifier_ship_artifact
+							priority : 3
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : mass_negation_core_ship_artifact
+							priority : 3
+							item : aluxian_admiral_scion
+							priority : 3
+							item : trader_high_yield_warheads
+							priority : 2
+							item : trader_war_reporter
+							priority : 1
+			name : economic_support
+			ability_picking_order
+				2
+				0
+				2
+				1
+				2
+				3
+				1
+				1
+				0
+				0
+			required_items
+					candidates
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_reserve_squadron_hangar
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_high_yield_warheads
+							priority : 1
+							item : trader_targeting_array
+							priority : 1
+					slot_index : 3
+					candidates
+							item : viturak_jump_field_stabilizer
+							priority : 4
+							item : trader_volatile_accelerants
+							priority : 3
+							item : trader_war_reporter
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+			name : combat_support
+			ability_picking_order
+				1
+				2
+				1
+				2
+				1
+				3
+				2
+				0
+				0
+				0
+			required_items
+					candidates
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 1
+					candidates
+							item : kinetic_intensifier_ship_artifact
+							priority : 3
+							item : trader_rapid_autoloader
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_reserve_squadron_hangar
+							priority : 2
+							item : trader_flak_burst
+							priority : 1
+					slot_index : 3
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : alutar_safeguard_shield
+							priority : 3
+							item : trader_combat_repair_system
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+	required_loadouts
+			loadout : colonizer
+			priority : 2
+			target_count_in_empire : 1
+			loadout : economic_support
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : economic_support
+			weight : 70.0
+			loadout : combat_support
+			weight : 30.0
+
+**[NEW] Ankylon Titan**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				0
+				1
+				2
+				0
+				1
+				3
+				0
+				1
+				2
+				2
+			required_items
+					candidates
+							item : trader_loyalist_titan_hull_plating_0
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_loyalist_titan_hull_plating_1
+							priority : 2
+							item : trader_heavy_armor
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_loyalist_titan_hull_plating_2
+							priority : 2
+							item : trader_combat_repair_system
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_loyalist_titan_unlock_beam_weapon
+							priority : 1
+					slot_index : 4
+					candidates
+							item : trader_loyalist_titan_unlock_missile_weapon
+							priority : 2
+							item : trader_loyalist_titan_hangar
+							priority : 1
+					slot_index : 5
+					candidates
+							item : trader_targeting_array
+							priority : 2
+							item : trader_rapid_autoloader
+							priority : 1
+					slot_index : 6
+					candidates
+							item : trader_missile_guidance_computer
+							priority : 2
+							item : trader_antimatter_engine
+							priority : 1
+					slot_index : 7
+					candidates
+							item : trader_loyalist_titan_planetary_shield_array
+							priority : 2
+							item : trader_beam_armor
+							priority : 1
+							item : trader_missile_armor
+							priority : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 1.0
+
+**[NEW] Argonev Starbase**
+	loadouts
+			name : defense
+			ability_picking_order
+			required_items
+					candidates
+							item : trader_starbase_planetary_shield_array
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_starbase_structural_integrity_0
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_starbase_unlock_beam_weapon
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_starbase_unlock_torpedo_weapon
+							priority : 1
+					slot_index : 4
+					candidates
+							item : trader_starbase_flak_field
+							priority : 1
+					slot_index : 5
+					candidates
+							item : trader_starbase_structural_integrity_1
+							priority : 1
+					slot_index : 6
+					candidates
+							item : trader_starbase_structural_integrity_2
+							priority : 1
+					slot_index : 7
+					candidates
+							item : pranast_bastion_module
+							priority : 2
+							item : trader_starbase_self_destruct
+							priority : 1
+	required_loadouts
+			loadout : defense
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : defense
+			weight : 1.0
+
+**[NEW] Dunov Battlecruiser**
+	loadouts
+			name : support
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : trader_antimatter_engine
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : kinetic_intensifier_ship_artifact
+							priority : 3
+							item : trader_rapid_autoloader
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_missile_guidance_computer
+							priority : 4
+							item : trader_combat_repair_system
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_war_reporter
+							priority : 1
+	required_loadouts
+			loadout : support
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : support
+			weight : 1.0
+
+**[NEW] Kol Battleship**
+	loadouts
+			name : beam
+			ability_picking_order
+				0
+				1
+				0
+				1
+				0
+				3
+				1
+				2
+				2
+				2
+			required_items
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : trader_antimatter_engine
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : alutar_vigor_engine
+							priority : 4
+							item : alutar_safeguard_shield
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : aluxian_admiral_scion
+							priority : 3
+							item : aluxian_military_observers
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+			name : gunnery
+			ability_picking_order
+				1
+				2
+				1
+				2
+				1
+				3
+				2
+				0
+				0
+				0
+			required_items
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : trader_antimatter_engine
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 3
+							item : trader_rapid_autoloader
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_heavy_gauss_slugs
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+	required_loadouts
+			loadout : gunnery
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : beam
+			weight : 60.0
+			loadout : gunnery
+			weight : 40.0
+
+**[NEW] Marza Dreadnought**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 3
+							item : trader_rapid_autoloader
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_heavy_gauss_slugs
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_missile_guidance_computer
+							priority : 4
+							item : trader_combat_repair_system
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_war_reporter
+							priority : 1
+	required_loadouts
+			loadout : disruptor
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 1.0
+
+**[NEW] Novalith Cannon**
+	loadouts
+			name : default
+			ability_picking_order
+			required_items
+	required_loadouts
+			loadout : default
+			priority : 5
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : default
+			weight : 1.0
+
+**[NEW] Ragnarov Titan**
+	loadouts
+			name : sniper
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : trader_rebel_titan_hull_plating_0
+							priority : 1
+					slot_index : 1
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : trader_rebel_titan_hull_plating_1
+							priority : 3
+							item : trader_beam_armor
+							priority : 2
+							item : trader_missile_armor
+							priority : 2
+							item : trader_heavy_armor
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_rapid_autoloader
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_heavy_gauss_slugs
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 4
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 5
+							item : exoforce_matrix_ship_artifact
+							priority : 5
+							item : aluxian_admiral_scion
+							priority : 4
+							item : aluxian_military_observers
+							priority : 3
+							item : trader_targeting_array
+							priority : 2
+							item : trader_war_reporter
+							priority : 1
+					slot_index : 5
+					candidates
+							item : trader_rebel_titan_unlock_missile_weapon
+							priority : 1
+					slot_index : 6
+					candidates
+							item : trader_missile_guidance_computer
+							priority : 1
+							item : trader_antimatter_engine
+							priority : 1
+					slot_index : 7
+					candidates
+							item : trader_rebel_titan_unlock_rail_gun_weapon
+							priority : 2
+							item : trader_rebel_titan_hangar
+							priority : 1
+	weighted_random_loadouts
+			loadout : sniper
+			weight : 1.0
+
+**[NEW] Sova Carrier**
+	loadouts
+			name : construction
+			ability_picking_order
+				2
+				0
+				1
+				1
+				1
+				3
+				2
+				2
+				0
+				0
+			required_items
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 6
+							item : viturak_phase_shifter
+							priority : 5
+							item : trader_missile_armor
+							priority : 4
+							item : trader_beam_armor
+							priority : 4
+							item : alutar_safeguard_shield
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_reserve_squadron_hangar
+							priority : 3
+							item : trader_flak_burst
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_targeting_array
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 3
+					candidates
+							item : kinetic_intensifier_ship_artifact
+							priority : 3
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : mass_negation_core_ship_artifact
+							priority : 3
+							item : aluxian_admiral_scion
+							priority : 3
+							item : trader_high_yield_warheads
+							priority : 2
+							item : trader_war_reporter
+							priority : 1
+			name : point_defense
+			ability_picking_order
+				0
+				2
+				0
+				1
+				0
+				3
+				1
+				2
+				1
+				2
+			required_items
+					candidates
+							item : trader_flak_burst
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_rapid_autoloader
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 2
+					candidates
+							item : trader_reserve_squadron_hangar
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+					slot_index : 3
+					candidates
+							item : trader_targeting_array
+							priority : 2
+							item : trader_heavy_armor
+							priority : 1
+			name : superiority
+			ability_picking_order
+				0
+				2
+				0
+				1
+				0
+				3
+				2
+				2
+				1
+				1
+			required_items
+					candidates
+							item : trader_reserve_squadron_hangar
+							priority : 2
+							item : trader_capital_ship_insurance
+							priority : 1
+					slot_index : 1
+					candidates
+							item : trader_flak_burst
+							priority : 2
+							item : trader_radiation_bomb
+							priority : 1
+					slot_index : 2
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : trader_missile_armor
+							priority : 3
+							item : trader_beam_armor
+							priority : 3
+							item : trader_heavy_armor
+							priority : 2
+					slot_index : 3
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : alutar_safeguard_shield
+							priority : 3
+							item : trader_combat_repair_system
+							priority : 2
+							item : trader_salvage_kit
+							priority : 1
+	required_loadouts
+			loadout : construction
+			priority : 2
+			target_count_in_empire : 1
+			loadout : superiority
+			priority : 1
+			target_count_in_empire : 2
+	weighted_random_loadouts
+			loadout : construction
+			weight : 10.0
+			loadout : point_defense
+			weight : 35.0
+			loadout : superiority
+			weight : 55.0
+
+
+# Vasari Changes
+
+## Loadout Changes
+
+**[NEW] Antorak Marauder**
+	loadouts
+			name : support
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : vasari_self_repairing_armor
+							priority : 2
+							item : vasari_nano_repair_kit
+							priority : 1
+					slot_index : 1
+					candidates
+							item : vasari_engine_boost
+							priority : 3
+							item : vasari_inertial_anchor
+							priority : 2
+							item : vasari_nano_swarm
+							priority : 1
+					slot_index : 2
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 4
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : vasari_antimatter_recharger
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 3
+					candidates
+							item : mass_negation_core_ship_artifact
+							priority : 4
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : kinetic_intensifier_ship_artifact
+							priority : 4
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_phase_shield
+							priority : 2
+							item : vasari_phase_resonance_amplifier
+							priority : 1
+	required_loadouts
+			loadout : support
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : support
+			weight : 1.0
+
+**[NEW] Jarrasul Evacuator**
+	loadouts
+			name : colonizer
+			ability_picking_order
+				0
+				2
+				1
+				0
+				0
+				3
+				2
+				1
+				2
+				1
+			required_items
+					candidates
+							item : vasari_loyalist_exodus_package
+							priority : 10
+							item : vasari_rebel_exodus_package
+							priority : 10
+							item : vasari_self_repairing_armor
+							priority : 2
+							item : vasari_nano_repair_kit
+							priority : 1
+					slot_index : 1
+					candidates
+							item : vasari_wave_boost
+							priority : 2
+							item : vasari_nano_swarm
+							priority : 1
+					slot_index : 2
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 4
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : vasari_antimatter_recharger
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 3
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : kinetic_intensifier_ship_artifact
+							priority : 4
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_phase_resonance_amplifier
+							priority : 2
+							item : vasari_inertial_anchor
+							priority : 1
+	required_loadouts
+			loadout : colonizer
+			priority : 2
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : colonizer
+			weight : 1.0
+
+**[NEW] Jarun Migrator**
+	loadouts
+			name : default
+			ability_picking_order
+			required_items
+	required_loadouts
+			loadout : default
+			priority : 5
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : default
+			weight : 1.0
+
+**[NEW] Kortul Devastator**
+	loadouts
+			name : combat
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : vasari_beam_boost
+							priority : 2
+							item : vasari_nano_swarm
+							priority : 1
+					slot_index : 1
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : kinetic_intensifier_ship_artifact
+							priority : 4
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_wave_boost
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 2
+					candidates
+							item : vasari_self_repairing_armor
+							priority : 2
+							item : vasari_nano_repair_kit
+							priority : 1
+					slot_index : 3
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 4
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : vasari_antimatter_recharger
+							priority : 2
+							item : vasari_phase_resonance_amplifier
+							priority : 1
+	required_loadouts
+			loadout : combat
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : combat
+			weight : 1.0
+
+**[NEW] Kultorask Titan**
+	loadouts
+			name : disruptor
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : vasari_rebel_titan_hull_plating_0
+							priority : 1
+					slot_index : 1
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 3
+							item : vasari_rebel_titan_hull_plating_1
+							priority : 2
+							item : vasari_self_repairing_armor
+							priority : 1
+					slot_index : 2
+					candidates
+							item : vasari_rebel_titan_improve_nano_emitters
+							priority : 1
+					slot_index : 3
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : vasari_rebel_titan_improve_gravity_pulse
+							priority : 3
+							item : vasari_phase_missile_boost
+							priority : 2
+							item : vasari_rebel_titan_hangar
+							priority : 1
+					slot_index : 4
+					candidates
+							item : exoforce_matrix_ship_artifact
+							priority : 3
+							item : power_core_relic_ship_artifact
+							priority : 3
+							item : vasari_antimatter_recharger
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 5
+					candidates
+							item : mass_negation_core_ship_artifact
+							priority : 3
+							item : vasari_engine_boost
+							priority : 2
+							item : vasari_phase_resonance_amplifier
+							priority : 1
+					slot_index : 6
+					candidates
+							item : vasari_rebel_titan_unlock_extra_phase_missile_weapons
+							priority : 2
+							item : vasari_beam_boost
+							priority : 1
+					slot_index : 7
+					candidates
+							item : vasari_rebel_titan_unlock_phase_cannon_weapon
+							priority : 2
+							item : vasari_wave_boost
+							priority : 1
+	required_loadouts
+			loadout : disruptor
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : disruptor
+			weight : 1.0
+
+**[NEW] Orkulus Starbase**
+	loadouts
+			name : defense
+			ability_picking_order
+			required_items
+					candidates
+							item : vasari_starbase_planetary_shield_array
+							priority : 1
+					slot_index : 1
+					candidates
+							item : vasari_starbase_structural_integrity_0
+							priority : 1
+					slot_index : 2
+					candidates
+							item : vasari_starbase_structural_integrity_1
+							priority : 1
+					slot_index : 3
+					candidates
+							item : vasari_starbase_unlock_extra_wave_weapons
+							priority : 1
+					slot_index : 4
+					candidates
+							item : pranast_bastion_module
+							priority : 2
+							item : vasari_starbase_upgrade_wave_weapons
+							priority : 1
+					slot_index : 5
+					candidates
+							item : vasari_starbase_unlock_extra_phase_missile_weapons
+							priority : 1
+					slot_index : 6
+					candidates
+							item : vasari_starbase_structural_integrity_2
+							priority : 1
+					slot_index : 7
+					candidates
+							item : vasari_starbase_charged_salvo
+							priority : 1
+	required_loadouts
+			loadout : defense
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : defense
+			weight : 1.0
+
+**[NEW] Skirantra Carrier**
+	loadouts
+			name : repair
+			ability_picking_order
+				0
+				1
+				0
+				1
+				0
+				3
+				1
+				2
+				2
+				2
+			required_items
+					candidates
+							item : vasari_self_repairing_armor
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 1
+					candidates
+							item : vasari_phase_missile_boost
+							priority : 2
+							item : vasari_nano_repair_kit
+							priority : 1
+					slot_index : 2
+					candidates
+							item : power_core_relic_ship_artifact
+							priority : 4
+							item : exoforce_matrix_ship_artifact
+							priority : 4
+							item : vasari_antimatter_recharger
+							priority : 2
+							item : vasari_nano_swarm
+							priority : 1
+					slot_index : 3
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : kinetic_intensifier_ship_artifact
+							priority : 4
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_engine_boost
+							priority : 2
+							item : vasari_inertial_anchor
+							priority : 1
+	required_loadouts
+			loadout : repair
+			priority : 1
+			target_count_in_empire : 3
+	weighted_random_loadouts
+			loadout : repair
+			weight : 1.0
+
+**[NEW] Vorastra Titan**
+	loadouts
+			name : area_damage
+			ability_picking_order
+				1
+				0
+				2
+				1
+				1
+				3
+				2
+				2
+				0
+				0
+			required_items
+					candidates
+							item : vasari_loyalist_titan_hull_plating_0
+							priority : 10
+					slot_index : 1
+					candidates
+							item : vasari_loyalist_titan_hull_plating_1
+							priority : 2
+							item : vasari_self_repairing_armor
+							priority : 1
+					slot_index : 2
+					candidates
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_loyalist_titan_hull_plating_2
+							priority : 3
+							item : vasari_phase_shield
+							priority : 2
+							item : vasari_inertial_anchor
+							priority : 1
+					slot_index : 3
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 3
+							item : vasari_phase_missile_boost
+							priority : 2
+							item : vasari_wave_boost
+							priority : 1
+					slot_index : 4
+					candidates
+							item : vasari_loyalist_titan_improve_the_maw
+							priority : 2
+							item : vasari_loyalist_titan_improve_micro_phase_jump
+							priority : 1
+					slot_index : 5
+					candidates
+							item : vasari_mobile_ruler_ship
+							priority : 2
+							item : vasari_loyalist_titan_mobile_research_complex
+							priority : 1
+					slot_index : 6
+					candidates
+							item : vasari_loyalist_titan_unlock_phase_cannon_weapon
+							priority : 2
+							item : vasari_loyalist_titan_unlock_wave_weapon
+							priority : 1
+					slot_index : 7
+					candidates
+							item : mass_negation_core_ship_artifact
+							priority : 3
+							item : vasari_engine_boost
+							priority : 2
+							item : vasari_phase_resonance_amplifier
+							priority : 1
+	required_loadouts
+			loadout : area_damage
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : area_damage
+			weight : 1.0
+
+**[NEW] Vulkoras Desolator**
+	loadouts
+			name : missile
+			ability_picking_order
+				0
+				2
+				0
+				2
+				0
+				3
+				2
+				1
+				1
+				1
+			required_items
+					candidates
+							item : vasari_phase_missile_boost
+							priority : 2
+							item : vasari_nano_swarm
+							priority : 1
+					slot_index : 1
+					candidates
+							item : vasari_beam_boost
+							priority : 2
+							item : vasari_nano_antimatter_restore
+							priority : 1
+					slot_index : 2
+					candidates
+							item : vasari_self_repairing_armor
+							priority : 2
+							item : vasari_nano_repair_kit
+							priority : 1
+					slot_index : 3
+					candidates
+							item : weapon_symbiote_ship_artifact
+							priority : 4
+							item : kinetic_intensifier_ship_artifact
+							priority : 4
+							item : resilient_metaloids_ship_artifact
+							priority : 4
+							item : vasari_phase_shield
+							priority : 2
+							item : vasari_phase_resonance_amplifier
+							priority : 1
+	required_loadouts
+			loadout : missile
+			priority : 1
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : missile
+			weight : 1.0
+
+
+# Herald Changes
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+## Loadout Changes
+
+**[NEW] Pirate Galleon**
+	loadouts
+			name : default
+			ability_picking_order
+				0
+				1
+				2
+				0
+				1
+				3
+				2
+				0
+				1
+				2
+			required_items
+					candidates
+							item : trader_flak_burst
+							priority : 10
+							item : trader_high_yield_warheads
+							priority : 6
+							item : trader_targeting_array
+							priority : 3
+					slot_index : 1
+					candidates
+							item : trader_volatile_accelerants
+							priority : 10
+							item : trader_targeting_array
+							priority : 6
+							item : trader_flak_burst
+							priority : 3
+					slot_index : 2
+					candidates
+							item : trader_heavy_armor
+							priority : 10
+							item : trader_combat_repair_system
+							priority : 6
+							item : trader_war_reporter
+							priority : 3
+					slot_index : 3
+					candidates
+							item : trader_combat_repair_system
+							priority : 10
+							item : trader_radiation_bomb
+							priority : 6
+							item : trader_salvage_kit
+							priority : 3
+							item : trader_capital_ship_insurance
+							priority : 1
+	required_loadouts
+			loadout : default
+			priority : 5
+			target_count_in_empire : 1
+	weighted_random_loadouts
+			loadout : default
+			weight : 1.0
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_nanotech",
+    "field_coord": [2, 4],
+    "research_time": 120.0,
+    "price":
+    {
+        "metal": 240.0,
+        "crystal": 210.0,
+        "credits": 0.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_antimatter",
+        "value_behavior": "scalar",
+        "value": 0.12
+    },
+    {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value": 0.12
+    }],
+    "name": "vasari_antimatter_0_research_subject_name",
+    "name_uppercase": "vasari_antimatter_0_research_subject_name_uppercase",
+    "description": "vasari_antimatter_0_research_subject_description",
+    "hud_icon": "vasari_antimatter_0_research_subject_hud_icon",
+    "tooltip_picture": "vasari_antimatter_0_research_subject_tooltip_picture"
+}

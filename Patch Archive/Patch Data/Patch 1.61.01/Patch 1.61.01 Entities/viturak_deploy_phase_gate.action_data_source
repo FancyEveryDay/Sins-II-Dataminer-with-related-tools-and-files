@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "owned_planet",
+        "target_filter":
+        {
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "max_count_in_empire",
+        "action_value":
+        {
+            "values": [3.0]
+        }
+    }]
+}

@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 473711.28408,
+        "min_camera_distance": 4177.892881,
+        "unit_mesh":
+        {
+            "mesh": "ancient_starbase_debris_0",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "ancient_starbase_debris_0_damage_fire"
+            }]
+        }
+    }]
+}

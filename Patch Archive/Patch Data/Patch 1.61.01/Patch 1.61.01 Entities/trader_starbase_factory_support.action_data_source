@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "factory_support_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_unit_factory",
+                "must_be_functional": true
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "factory_support_ship_build_time_value",
+        "action_value":
+        {
+            "values": [-0.25]
+        }
+    }],
+    "buff_unit_factory_modifiers": [
+    {
+        "buff_unit_factory_modifier_id": "factory_support_ship_build_time_modifier",
+        "buff_unit_factory_modifier":
+        {
+            "modifier_type": "build_time",
+            "value_behavior": "scalar",
+            "value_id": "factory_support_ship_build_time_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "tec_starbase_factory_support_passive",
+        "alias_binding":
+        {
+            "particle_effect": "tec_manufacturing_support"
+        }
+    }]
+}
