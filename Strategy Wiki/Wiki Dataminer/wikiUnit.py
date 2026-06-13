@@ -319,11 +319,11 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
             except KeyError: unitAntimatterAmt = None
 
         try:
-            startingAntimatterRegen = int(unitDict["levels"]["levels"][0]["unit_modifiers"]["additive_values"]["max_antimatter"] )
-            endingAntimatterRegen = int(unitDict["levels"]["levels"][9]["unit_modifiers"]["additive_values"]["max_antimatter"] )
+            startingAntimatterRegen = int(unitDict["levels"]["levels"][0]["unit_modifiers"]["additive_values"]["antimatter_restore_rate"] )
+            endingAntimatterRegen = int(unitDict["levels"]["levels"][9]["unit_modifiers"]["additive_values"]["antimatter_restore_rate"] )
             unitAntimatterRegen = f"{startingAntimatterRegen} - {endingAntimatterRegen} (+{round((endingAntimatterRegen - startingAntimatterRegen) / 9, 2)}/lvl)"
         except:
-            try: unitAntimatterRegen = unitDict["antimatter"]["max_antimatter"]
+            try: unitAntimatterRegen = unitDict["antimatter"]["antimatter_restore_rate"]
             except KeyError: unitAntimatterRegen = None
         
         try: unitWeaponsBlock = unitDict["weapons"]["weapons"]  
@@ -449,7 +449,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
 
     sortedDict =  {k: outputDict[k] for k in sorted(outputDict) }
 
-    with open(f"{outputFile}.json", "w") as file:
+    with open(f"{outputFile}.json", "w", encoding = "utf-8") as file:
         json.dump(sortedDict, file, indent=1)
 
 def main():
