@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2000000,
+        "min_camera_distance": 626.03315,
+        "unit_mesh":
+        {
+            "mesh": "trader_rebel_titan_debris_mid_0",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "trader_rebel_titan_debris_damage_mid0"
+            },
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "corpses"
+            }]
+        }
+    }]
+}

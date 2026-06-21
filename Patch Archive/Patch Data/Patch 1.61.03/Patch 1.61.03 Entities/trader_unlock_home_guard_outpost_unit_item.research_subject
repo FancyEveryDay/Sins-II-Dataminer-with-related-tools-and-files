@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_mobilization",
+    "field_coord": [4, 2],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 200.0,
+        "crystal": 300.0
+    },
+    "name": "trader_loyalist_home_guard_outpost_unit_item_research_subject_name",
+    "name_uppercase": "trader_loyalist_home_guard_outpost_unit_item_research_subject_name_uppercase",
+    "hud_icon": "trader_loyalist_homeworld_home_guard_command_unit_item_hud_icon",
+    "tooltip_picture": "trader_loyalist_homeworld_home_guard_command_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense",
+        "research_text_filter_faction",
+        "research_text_filter_loyalist"
+    ]
+}

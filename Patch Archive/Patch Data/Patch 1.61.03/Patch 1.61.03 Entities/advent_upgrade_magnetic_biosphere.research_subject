@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_reclamation",
+    "field_coord": [4, 8],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 250.0,
+        "crystal": 600.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["advent_unlock_magnetic_biosphere"]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "max_civilian_structure_slots",
+        "value_behavior": "additive",
+        "value": 2.0,
+        "planet_types": [
+            "magnetic"]
+    },
+    {
+        "modifier_type": "max_planet_component_slots",
+        "value_behavior": "additive",
+        "value": 1.0,
+        "planet_types": [
+            "magnetic"]
+    }],
+    "name": "advent_upgrade_magnetic_biosphere_research_subject_name",
+    "name_uppercase": "advent_upgrade_magnetic_biosphere_research_subject_name_uppercase",
+    "description": "advent_upgrade_magnetic_biosphere_research_subject_description",
+    "hud_icon": "advent_upgrade_magnetic_biosphere_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_magnetic_biosphere_research_subject_tooltip_picture"
+}

@@ -1,0 +1,99 @@
+{
+    "min_mesh_view_width": 10,
+    "max_mesh_view_width": 300,
+    "max_shield_to_armor_width_ratio": 0.9,
+    "planet_health_to_shield_width_ratio": 0.75,
+    "shield_burst_blink_visible_duration": 5,
+    "shield_burst_blink_duration": 1,
+    "crippled_hull_blink_duration": 0.5,
+    "scuttle_blink_duration": 0.5,
+    "flat_bar_contexts":
+    {
+        "main_view_mesh":
+        {
+            "sizes":
+            {
+                "normal":
+                {
+                    "thin_bar_height": 1,
+                    "thick_bar_height": 2,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1
+                },
+                "large":
+                {
+                    "thin_bar_height": 2,
+                    "thick_bar_height": 4,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1
+                }
+            }
+        },
+        "main_view_icon":
+        {
+            "sizes":
+            {
+                "normal":
+                {
+                    "thin_bar_height": 1,
+                    "thick_bar_height": 2,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1
+                },
+                "large":
+                {
+                    "thin_bar_height": 2,
+                    "thick_bar_height": 4,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1
+                }
+            }
+        },
+        "hud_icon":
+        {
+            "background_color": "BF000000",
+            "sizes":
+            {
+                "normal":
+                {
+                    "thin_bar_height": 1,
+                    "thick_bar_height": 3,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1,
+                    "background_gap": 1
+                },
+                "large":
+                {
+                    "thin_bar_height": 1,
+                    "thick_bar_height": 3,
+                    "vertical_gap": 1,
+                    "horizontal_gap": 1,
+                    "background_gap": 1
+                }
+            }
+        },
+        "ship_window":
+        {
+            "background_color": "BF000000",
+            "sizes":
+            {
+                "normal":
+                {
+                    "thin_bar_height": 2,
+                    "thick_bar_height": 4,
+                    "vertical_gap": 2,
+                    "horizontal_gap": 2,
+                    "background_gap": 2
+                },
+                "large":
+                {
+                    "thin_bar_height": 2,
+                    "thick_bar_height": 4,
+                    "vertical_gap": 2,
+                    "horizontal_gap": 2,
+                    "background_gap": 2
+                }
+            }
+        }
+    }
+}

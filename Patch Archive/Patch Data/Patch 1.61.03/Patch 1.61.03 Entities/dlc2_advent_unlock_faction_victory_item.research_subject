@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_ascension",
+    "field_coord": [7, 7],
+    "research_time": 420.0,
+    "price":
+    {
+        "credits": 1150.0,
+        "metal": 450.0,
+        "crystal": 950.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "name": "dlc2_advent_unlock_faction_victory_item_research_subject_name",
+    "name_uppercase": "dlc2_advent_unlock_faction_victory_item_research_subject_name_uppercase",
+    "hud_icon": "advent_mobile_fleet_beacon_unit_item_hud_icon",
+    "tooltip_picture": "advent_mobile_fleet_beacon_unit_item_tooltip_picture",
+    "simulation_option_is_active": "factional_victory_enabled"
+}

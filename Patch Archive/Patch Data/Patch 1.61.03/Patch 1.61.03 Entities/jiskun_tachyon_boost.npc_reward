@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "jiskun_tachyon_boost_hud_icon",
+        "name": "npc_reward.jiskun_tachyon_boost.name",
+        "description": "npc_reward.jiskun_tachyon_boost.description"
+    },
+    "type": "ability",
+    "ability": "jiskun_tachyon_boost"
+}

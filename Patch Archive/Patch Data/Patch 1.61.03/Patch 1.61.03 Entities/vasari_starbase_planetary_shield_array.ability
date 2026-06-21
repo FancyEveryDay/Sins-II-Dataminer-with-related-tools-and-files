@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_starbase_planetary_shield_array",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_starbase_planetary_shield_array_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_starbase_planetary_shield_array_unit_item_hud_icon",
+        "name": "vasari_starbase_planetary_shield_array_unit_item_name",
+        "description": "vasari_starbase_planetary_shield_array_unit_item_description"
+    }
+}

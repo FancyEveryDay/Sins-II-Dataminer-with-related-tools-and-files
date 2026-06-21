@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "buff_actions": [
+    {
+        "action_id": "try_apply_buff_on_gravity_well",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit":
+            {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well"
+            },
+            "operators": [
+            {
+                "operator_type": "apply_buff",
+                "buff": "pirate_raid_share_vision_on_node"
+            }]
+        }
+    },
+    {
+        "action_id": "try_apply_buff_on_phase_lane",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit":
+            {
+                "unit_type": "current_spawner",
+                "redirection": "current_phase_lane"
+            },
+            "operators": [
+            {
+                "operator_type": "apply_buff",
+                "buff": "pirate_raid_share_vision_on_node"
+            }]
+        }
+    }]
+}

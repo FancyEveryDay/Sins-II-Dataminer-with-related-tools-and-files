@@ -1,0 +1,41 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "wormhole"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1718550.287522,
+        "min_camera_distance": 18510.658849,
+        "unit_radius_when_mesh_visible": 20000.0,        
+        "gui":
+        {
+            "hud_icon": "wormhole_fixture_0_hud_icon",
+            "hud_picture": "wormhole_fixture_hud_picture",
+            "tooltip_icon": "wormhole_fixture_0_tooltip_icon",
+            "name": "wormhole_fixture_name",
+            "description": ""
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "wormhole_fixture_0_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "proxy_mesh_effect": "wormhole"
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "8fffdacc",
+            "intensity": 0.37
+        }
+    }],
+    "gravity_well_props": [
+        "sparse_asteroids",
+        "sparse_clouds"]
+}

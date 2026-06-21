@@ -1,0 +1,62 @@
+________________________________________
+    Entity Changes for Patch 1-61-03    
+________________________________________
+
+
+
+# Advent Changes
+
+
+# TEC Changes
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+
+# Vasari Changes
+
+
+# Herald Changes
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

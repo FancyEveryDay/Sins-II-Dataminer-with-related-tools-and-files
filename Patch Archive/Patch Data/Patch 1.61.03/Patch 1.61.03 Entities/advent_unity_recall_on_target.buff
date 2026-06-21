@@ -1,0 +1,127 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_current_spawner_ownership_changed_from_buff_ownership": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "advent_unity_recall_buff_small",
+                        "medium_unit": "advent_unity_recall_buff_medium",
+                        "large_unit": "advent_unity_recall_buff_large"
+                    }
+                }
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "can_ever_move"
+                    }
+                },
+                "action_type": "start_brake_to_stop"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "hull_only",
+                    "repair_value": "recall_hull_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_only",
+                    "repair_value": "recall_armor_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "shields_only",
+                    "repair_value": "recall_shield_restore_value"
+                }]
+            },
+            {
+                "action_type": "stop_brake_to_stop"
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "disable_can_hyperspace",
+        "disable_can_use_active_abilities",
+        "disable_can_use_weapons"
+    ],
+    "gui":
+    {
+        "hud_icon": "advent_unity_recall_ability_hud_icon",
+        "name": "advent_unity_recall_ability_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.charge_delay",
+                "value_id": "recall_charge_time_value",
+                "value_suffix": "seconds"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.shield_restore",
+                "value_id": "recall_shield_restore_value",
+                "value_float_format": "percentage"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_restore",
+                "value_id": "recall_armor_restore_value",
+                "value_float_format": "percentage"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.hull_restore",
+                "value_id": "recall_hull_restore_value",
+                "value_float_format": "percentage"
+            }]
+        }]
+    }
+}
