@@ -309,6 +309,7 @@ if __name__ == "__main__":
     print(objectTypes)
 
     with open(archive_path / f"{newPatchNumber}_changes.txt", 'w') as file:
+        file.write(f"{"_"*40}\n{"Entity Changes for Patch " + newPatchNumber :^40}\n{"_"*40}\n\n")
         pass
 
     raceList = ["advent", "trader", "vasari", "herald", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
