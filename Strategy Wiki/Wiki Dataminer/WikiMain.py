@@ -6,6 +6,7 @@ import wikiUtilities
 import wikiUnit
 import wikiStructure
 import wikiPlanetItem
+import wikiShipItem
 
 def main():
     
@@ -16,6 +17,7 @@ def main():
     wikiUnit.main()
     wikiStructure.main()
     wikiPlanetItem.main()
+    wikiShipItem.main()
 
 if __name__ == "__main__":
     main()
