@@ -1,8 +1,6 @@
 import glob, json
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, SINS_DIRECTORY, UNIFORMS, WIKIFILES_DIR
-
-SOURCES = {"DLC" : "Paths to Power", "DLC2" : "Reinforcements"}
+from wikiUtilities import *
 
 def getSinsData(race, type, output = False, file = SINS_DIRECTORY / "entities" ):
     file = Path(file) # just in case
@@ -17,13 +15,6 @@ def getSinsData(race, type, output = False, file = SINS_DIRECTORY / "entities" )
             listODatas.append([unitfile.name.split(".")[0], d])
 
     return listODatas
-
-def formatExoticPrice(outputDict : dict, exoticDict : dict):
-    lookup = {item["exotic_type"] : item["count"] for item in exoticDict}
-    for exotic in ['economic', 'offense', 'defense', 'utility', 'ultimate']:
-        ingameText = LOCALIZED_TEXT.get(f"exotic.{exotic}.name", exotic).lower()
-        outputDict[ingameText] = lookup.get(exotic, None)
-    
 
 def createWeaponDict(WeaponList):
     WeaponsDict = {}
@@ -48,18 +39,6 @@ def getUnitName(unitName):
     except KeyError: outputName = "_".join(unitName.split("_")[1:]).replace("_", " ").title()
 
     return outputName
-
-def getUnitRace(unitName):
-    if "dlc" in unitName:
-        race = LOCALIZED_TEXT.get(f"player_race_name.{unitName.split("_")[1]}", 
-                                    LOCALIZED_TEXT.get(f"npc_race_name.{unitName.split("_")[1]}",
-                                                        ""))
-    else:
-        race = LOCALIZED_TEXT.get(f"player_race_name.{unitName.split("_")[0]}", 
-                                    LOCALIZED_TEXT.get(f"npc_player_name.{unitName.split("_")[0]}",
-                                                        ""))
-
-    return race
 
 def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs):
 
@@ -98,7 +77,7 @@ def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs):
             weaponMissile = weapon["firing"]["torpedo_firing_definition"]
         except KeyError:
             weaponMissile = None
-        unitWeapon["spawned_unit"] = (getUnitRace(weaponMissile.get('spawned_unit',"")) + " " + getUnitName( weaponMissile.get('spawned_unit')).replace("_", " ").title()).strip() if weaponMissile else None
+        unitWeapon["spawned_unit"] = (getRace(weaponMissile.get('spawned_unit',"")) + " " + getUnitName( weaponMissile.get('spawned_unit')).replace("_", " ").title()).strip() if weaponMissile else None
         unitWeapon["missile_duration"] = weaponMissile.get("duration", None) if weaponMissile else None
         unitWeapon["bypass_shields_chance"] = weaponMissile.get("bypass_shields_chance", None) if weaponMissile else None
 
@@ -305,9 +284,6 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
                 except KeyError:
                     unitHealthLevels[i]["weapon_damage"] = None
                     unitHealthLevels[i]["weapon_cooldown"] = None
-        
-        else:
-            unitLevelScalings = None
 
         #Ship Weapons Block
         try:
@@ -374,7 +350,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
 
         if unitAbilities:
             for stats, ability in enumerate(unitAbilities):
-                with open(SINS_DIRECTORY / "entities" / (ability + ".ability") ) as file:
+                with open(SINS_DIRECTORY / "entities" / (ability + ".ability"), "r", encoding="utf-8") as file:
                     ability_file = json.load(file)
 
                 nameCall = ability_file["gui"]["name"]
@@ -389,7 +365,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         else:
             source = "Base Game"
             
-        race = getUnitRace(unitName)
+        race = getRace(unitName)
 
         source = SOURCES.get(source, "Base Game")
 
