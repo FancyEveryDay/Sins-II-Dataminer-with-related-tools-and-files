@@ -1,8 +1,8 @@
 import json, pprint, glob
 from pathlib import Path
-from wikiUtilities import LOCALIZED_TEXT, UNIFORMS, ENTITIES, WIKIFILES_DIR
+from wikiUtilities import *
 
-with open(UNIFORMS / 'gui.uniforms', 'r') as file:
+with open(UNIFORMS / 'gui.uniforms', 'r', encoding='utf-8') as file:
     GUI_UNIFORMS = json.load(file)
 
 def getTierNumerals(tier):
@@ -15,14 +15,6 @@ def getTierNumerals(tier):
                     '4' : 'V'
                     }
         return tierDict[tier]
-
-def unpackPrice(price : dict):
-    price = (price.get('credits', 0), price.get('metal', 0), price.get('crystal', 0))
-    
-    # 'price': {'credits': 850.0,
-    #             'crystal': 650.0,
-    #             'metal': 275.0},
-    return price
 
 def getModifierName(modifierID, modifierType):
     # modifierClasses = ["unit_modifiers",
@@ -117,7 +109,7 @@ def main(prereqsDict):
     subjectDict = {}
 
     for i in subjectGlob:
-        with open(i, 'r') as file:
+        with open(i, 'r', encoding='utf-8') as file:
             subject = json.load(file)
 
         # Get Basic Info
@@ -136,15 +128,7 @@ def main(prereqsDict):
             print(f"{i} has no name")
             name = i.name.replace(".research_subject", "")
 
-        if 'vasari' in i.name:
-            race = 'Vasari'
-        elif 'trader' in i.name:
-            race = 'TEC'
-        elif 'advent' in i.name:
-            race = 'Advent'
-        else:
-            print(f"Error: {i.name} has no recognized race")
-            continue
+        race = getRace(subject['id'])
 
         if race:
             name = race + ' ' + name
@@ -156,7 +140,7 @@ def main(prereqsDict):
 
         try:
             subject['description'] = LOCALIZED_TEXT.get(subject['description'], None)
-        except:
+        except KeyError:
             pass
 
         # Unpack price for some reason
@@ -311,8 +295,8 @@ def main(prereqsDict):
         # Finally, add processed subject to subject
         subjectDict[name] = subject
 
-    with open(WIKIFILES_DIR / 'Wikiresearch.json', 'w') as file:
-        json.dump(subjectDict, file, indent=1)
+    with open(WIKIFILES_DIR / 'Wikiresearch.json', 'w', encoding='utf-8') as file:
+        json.dump(subjectDict, file, indent=1, ensure_ascii=False)
 
 if __name__ == "__main__":
     import wikiPrerequisites
