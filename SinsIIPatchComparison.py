@@ -1,6 +1,7 @@
 from SinsIIUnitStats import getSinsData, createWeaponDict, FormatUnitEntries, SINS_DIRECTORY, LAST_PATCH_NUM, LOCALIZED_TEXT, PARENT_DIR
 import json, glob, shutil, pprint
 from pathlib import Path
+from findIconChanges import find_icon_changes
 
 
 def recursiveprint(collection, output, localText = {}, level = 0):
@@ -385,3 +386,5 @@ if __name__ == "__main__":
 
     with open(PARENT_DIR / ".env", 'w') as file:
         json.dump(env, file)
+
+    find_icon_changes(newPatchNumber, pastPatchNumber)
