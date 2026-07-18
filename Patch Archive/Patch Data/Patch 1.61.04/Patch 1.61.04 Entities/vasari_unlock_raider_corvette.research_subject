@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_revival",
+    "field_coord": [0, 2],
+    "research_time": 60.0,
+    "price":
+    {
+        "metal": 120.0,
+        "crystal": 60.0,
+        "credits": 0.0
+    },
+    "name": "vasari_unlock_raider_corvette_research_subject_name",
+    "name_uppercase": "vasari_unlock_raider_corvette_research_subject_name_uppercase",
+    "hud_icon": "vasari_raider_corvette_hud_icon",
+    "tooltip_picture": "vasari_raider_corvette_tooltip_picture"
+}

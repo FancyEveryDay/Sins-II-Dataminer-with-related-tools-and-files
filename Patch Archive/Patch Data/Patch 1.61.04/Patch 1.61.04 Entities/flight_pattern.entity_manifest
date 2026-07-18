@@ -1,0 +1,11 @@
+{
+    "ids": [
+        "mirror_down",
+        "mirror_left",
+        "mirror_quick_flip",
+        "mirror_right",
+        "mirror_up",
+        "roll_left",
+        "roll_right"
+    ]
+}

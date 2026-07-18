@@ -1,0 +1,64 @@
+{
+    "weapon_tags": [
+    {
+        "name": "energy",
+        "localized_name": "weapon_tag_name.energy"
+    },
+    {
+        "name": "physical",
+        "localized_name": "weapon_tag_name.physical"
+    },
+    {
+        "name": "wave",
+        "localized_name": "weapon_tag_name.wave"
+    },
+    {
+        "name": "phasemissile",
+        "localized_name": "weapon_tag_name.phasemissile"
+    },
+    {
+        "name": "pulse",
+        "localized_name": "weapon_tag_name.pulse"
+    },
+    {
+        "name": "laser",
+        "localized_name": "weapon_tag_name.laser"
+    },
+    {
+        "name": "beam",
+        "localized_name": "weapon_tag_name.beam"
+    },
+    {
+        "name": "plasma",
+        "localized_name": "weapon_tag_name.plasma"
+    },
+    {
+        "name": "autocannon",
+        "localized_name": "weapon_tag_name.autocannon"
+    },
+    {
+        "name": "missile",
+        "localized_name": "weapon_tag_name.missile"
+    },
+    {
+        "name": "gauss",
+        "localized_name": "weapon_tag_name.gauss"
+    },
+    {
+        "name": "rail_gun",
+        "localized_name": "weapon_tag_name.rail_gun"
+    },
+    {
+        "name": "flak",
+        "localized_name": "weapon_tag_name.flak"
+    },
+    {
+        "name": "point_defense",
+        "localized_name": "weapon_tag_name.point_defense"
+    },
+    {
+        "name": "phase_cannon",
+        "localized_name": "weapon_tag_name.phase_cannon"
+    }],
+    "recently_fired_time_threshold": 10.0
+}

@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "helium_atmosphere_planet_bonus_hud_icon",
+    "tooltip_icon": "helium_atmosphere_planet_bonus_hud_icon",
+    "name": "planet_bonus.helium_atmosphere.name",
+    "description": "planet_bonus.helium_atmosphere.desc",
+    "planet_types": [
+        "ferrous",
+        "gas_giant",
+        "volcanic"
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "commerce_track_credit_income_rate",
+        "value_behavior": "additive",
+        "values": [1.1]
+    }]
+}

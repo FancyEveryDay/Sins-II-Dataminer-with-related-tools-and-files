@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "action_data_source": "advent_cynosural_reservoir",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_cynosural_reservoir"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_planet_current_focus_track_level_header",
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "cynosural_reservoir_crystal_income_rate_modifier"
+            },
+            {
+                "rendering_type": "buff_empire_modifier",
+                "empire_modifier_id": "cynosural_reservoir_unity_max_mana_points_modifier"
+            }]
+        }]
+    }
+}

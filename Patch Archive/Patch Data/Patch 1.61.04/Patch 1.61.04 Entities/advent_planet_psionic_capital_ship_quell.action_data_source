@@ -1,0 +1,84 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "quell_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_planet_psionic_capital_ship_quell",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "quell_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "quell_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [75.0, 75.0, 75.0]
+        }
+    },
+    {
+        "action_value_id": "quell_cooldown_time_value",
+        "action_value":
+        {
+            "values": [120.0, 100.0, 80.0]
+        }
+    },
+    {
+        "action_value_id": "quell_duration_value",
+        "action_value":
+        {
+            "values": [20.0, 40.0, 60.0],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [0.25, 0.25, 0.25]
+            }
+        }
+    },
+    {
+        "action_value_id": "quell_radius_value",
+        "action_value":
+        {
+            "values": [5000.0, 5000.0, 5000.0]
+        }
+    },
+    {
+        "action_value_id": "quell_range_value",
+        "action_value":
+        {
+            "values": [9000.0, 9000.0, 9000.0]
+        }
+    }]
+}

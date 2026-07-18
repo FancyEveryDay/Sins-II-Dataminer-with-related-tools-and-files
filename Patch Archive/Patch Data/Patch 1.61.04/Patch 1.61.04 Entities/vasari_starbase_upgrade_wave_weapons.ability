@@ -1,0 +1,45 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_starbase_upgrade_wave_weapons",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_starbase_upgrade_wave_weapons_on_self"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.random_chance",
+                "value_id": "upgrade_wave_chance_value",
+                "value_float_format": "percentage",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "upgrade_wave_splash_radius_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.splash_damage",
+                "value_id": "upgrade_wave_splash_damage_value",
+                "value_float_format": "percentage",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "upgrade_wave_linear_speed_modifier"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "upgrade_wave_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

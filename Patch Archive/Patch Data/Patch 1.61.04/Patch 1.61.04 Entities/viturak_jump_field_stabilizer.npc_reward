@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "viturak_jump_field_stabilizer_hud_icon",
+        "name": "npc_reward.viturak_jump_field_stabilizer.name",
+        "description": "npc_reward.viturak_jump_field_stabilizer.description"
+    },
+    "type": "ship_component",
+    "item": "viturak_jump_field_stabilizer"
+}

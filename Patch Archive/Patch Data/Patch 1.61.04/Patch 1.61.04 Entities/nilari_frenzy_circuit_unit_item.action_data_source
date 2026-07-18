@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "frenzy_circuit_duration_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "frenzy_circuit_cooldown_time_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "frenzy_circuit_weapon_cooldown_value",
+        "action_value":
+        {
+            "values": [-0.25]
+        }
+    },
+    {
+        "action_value_id": "frenzy_circuit_shield_cost_value",
+        "action_value":
+        {
+            "values": [2500.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "frenzy_circuit_weapon_cooldown_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "frenzy_circuit_weapon_cooldown_value"
+        }
+    }]
+}

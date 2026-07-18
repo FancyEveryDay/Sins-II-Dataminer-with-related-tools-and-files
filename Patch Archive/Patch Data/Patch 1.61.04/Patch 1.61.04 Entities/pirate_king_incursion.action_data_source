@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "effect_alias_bindings": [
+    {
+        "alias_name": "pirate_king_incursion_jollyroger_effect",
+        "alias_binding":
+        {
+            "particle_effect": "pirate_jollyroger_status_effects"
+        }
+    }]
+}

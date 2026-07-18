@@ -1,0 +1,126 @@
+________________________________________
+    Entity Changes for Patch 1-61-04    
+________________________________________
+
+
+
+# Advent Changes
+
+## Unit Changes
+
+**Phase Jump Inhibitor**
+	health
+		levels
+			[NEW] shield_point_restore_rate : 5.0
+			[NEW] shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+			[NEW] shield_point_restore_scalar_after_damage_taken : 0.0
+			[NEW] shield_burst_restore : {'cooldown_duration': 60.0, 'restore_percentage': 0.5}
+
+**Tempest Vessel**
+	weapons
+		weapons
+			advent_missile_frigate_light_missile
+				light_missile
+					damage : 20.0 -> 18.0
+					dps : 9.09090909090909 -> 8.181818181818182
+
+**Vigilis Sentinel**
+	weapons
+		weapons
+			advent_defense_cruiser_point_defense_laser
+				point_defense_laser
+					pitch_firing_tolerance : 3.0 -> 7.5
+					yaw_firing_tolerance : 3.0 -> 7.5
+
+
+# TEC Changes
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+## Unit Changes
+
+**Garda Flak Frigate**
+	weapons
+		weapons
+			trader_antifighter_frigate_point_defense_autocannon
+				point_defense_autocannon
+					pitch_firing_tolerance : 3.0 -> 7.5
+					yaw_firing_tolerance : 3.0 -> 7.5
+
+**Gauss Defense Platform**
+	health
+		levels
+			[NEW] shield_point_restore_rate : 5.0
+			[NEW] shield_point_restore_cooldown_duration_after_damage_taken : 20.0
+			[NEW] shield_point_restore_scalar_after_damage_taken : 0.0
+			[NEW] shield_burst_restore : {'cooldown_duration': 60.0, 'restore_percentage': 0.5}
+
+
+# Vasari Changes
+
+## Unit Changes
+
+**Junsurak Warden**
+	weapons
+		weapons
+			vasari_antifighter_frigate_point_defense_pulse
+				point_defense_pulse
+					pitch_speed : 125.0 -> 180.0
+					yaw_speed : 125.0 -> 180.0
+					pitch_firing_tolerance : 3.0 -> 9.0
+					yaw_firing_tolerance : 3.0 -> 9.0
+					range : 5100.0 -> 7200.0
+					cooldown_duration : 1.5 -> 1.0
+					damage : 6.0 -> 4.0
+					firing
+						travel_speed : 4800.0 -> 9600.0
+			vasari_antifighter_frigate_phase_missile
+				very_light_phase_missile
+					range : 5100.0 -> 7200.0
+
+
+# Herald Changes
+
+
+# Viturak Changes
+
+
+# Pirate Changes
+
+
+# Pranast Changes
+
+
+# Jiskun Changes
+
+
+# Eivonns Changes
+
+
+# Aluxian Changes
+
+
+# Ancient Changes
+
+
+# Artifact Changes

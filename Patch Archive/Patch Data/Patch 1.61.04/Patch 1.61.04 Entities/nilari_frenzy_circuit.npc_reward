@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "advent_unity_fury_ability_hud_icon",
+        "name": "nilari_frenzy_circuit_unit_item_name",
+        "description": "nilari_frenzy_circuit_unit_item_description"
+    },
+    "type": "ship_component",
+    "item": "nilari_frenzy_circuit"
+}

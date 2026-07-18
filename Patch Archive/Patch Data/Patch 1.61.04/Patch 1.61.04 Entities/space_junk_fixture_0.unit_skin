@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1718550.287522,
+        "min_camera_distance": 18510.658849,
+        "unit_radius_when_mesh_visible": 20000.0,        
+        "gui":
+        {
+            "hud_icon": "space_junk_main_view_icon",
+            "hud_picture": "space_junk_hud_picture",
+            "tooltip_icon": "space_junk_tooltip_icon",
+            "name": "space_junk_fixture_name",
+            "description": ""
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "space_junk_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        }
+    }],
+    "gravity_well_props": [
+        "dense_debris"]
+}

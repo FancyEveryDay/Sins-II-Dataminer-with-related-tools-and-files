@@ -1,0 +1,94 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "repulsion_field_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "strikecraft",
+                "torpedo"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_subjugator_cruiser_repulsion_field_on_target",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "repulsion_field_enemy_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "strikecraft",
+                "torpedo"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "repulsion_field_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [75.0]
+        }
+    },
+    {
+        "action_value_id": "repulsion_field_auto_cast_target_count_value",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    },
+    {
+        "action_value_id": "repulsion_field_cooldown_time_value",
+        "action_value":
+        {
+            "values": [40.0]
+        }
+    },
+    {
+        "action_value_id": "repulsion_field_duration_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "repulsion_field_linear_speed_modifier_value",
+        "action_value":
+        {
+            "values": [-0.4]
+        }
+    },
+    {
+        "action_value_id": "repulsion_field_radius_value",
+        "action_value":
+        {
+            "values": [6000.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "repulsion_field_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "repulsion_field_linear_speed_modifier_value"
+        }
+    }]
+}
