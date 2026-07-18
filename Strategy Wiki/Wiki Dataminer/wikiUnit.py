@@ -313,9 +313,15 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
             for weapon in unitWeaponsBlock:           
 
                 weaponName = weapon['weapon']
-                if weaponName in weaponCollection:
-                    weaponCollection[weaponName] += 1
-                else:
+                num = 2
+                while weaponName in weaponCollection:
+                    if unitWeaponsBlock [weaponName]["damage"] == weapon["damage"] and weaponCollection[weaponName]["pen"] == weapon["pen"]:
+                        weaponCollection[weaponName] += 1
+                    else:
+                        weaponName = f"{weapon['weapon']}{num}"
+                        num += 1
+                
+                if weaponName not in weaponCollection:
                     weaponCollection[weaponName] = 1
                     weaponPrereqs[weaponName] = weapon.get('required_unit_item', None)
 
