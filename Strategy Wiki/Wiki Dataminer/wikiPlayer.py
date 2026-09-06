@@ -102,11 +102,12 @@ def main():
             faction = json.load(file)
 
         try:
-            race = LOCALIZED_TEXT.get("player_race." + faction['race'] ,faction['race'].capitalize())
+            race = LOCALIZED_TEXT.get(faction["gui"]['race_name'] ,faction['race'].capitalize())
             name = "player_faction_name." + fileName.name.split('.')[0]
-            raceFaction = LOCALIZED_TEXT[name]
+            raceFaction = LOCALIZED_TEXT.get(faction["gui"]['faction_name'] , name.capitalize())
 
-        except KeyError:
+        except KeyError as e:
+            print(f"Just couldnt with {faction["race"]} {e}")
             continue
 
         playerDict[raceFaction] = {'research_subjects' : faction["research"]["research_subjects"],
