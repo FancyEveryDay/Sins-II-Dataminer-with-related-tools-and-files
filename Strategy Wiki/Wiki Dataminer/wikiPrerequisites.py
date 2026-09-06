@@ -52,7 +52,9 @@ def main(completeItemSet : set = set()):
         if useSet and (entityType in buildable_item_types) and (entityString not in completeItemSet):
             continue
 
-        if "dlc" not in i.name:
+        if "dlc3" in i.name:
+            race = "_".join(i.name.split("_")[:2])
+        elif "dlc" not in i.name:
             race = i.name.split("_")[0]
         else:
             race = i.name.split("_")[1]
