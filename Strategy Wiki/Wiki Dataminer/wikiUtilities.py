@@ -50,7 +50,9 @@ def getRace(entityName):
         "jiskun" : "jiskun_force",
         "nilari" : "nilari_cult",
         "pranast" : "pranast_united",
-        "viturak" : "viturak_cabal"
+        "viturak" : "viturak_cabal",
+        "herald" : "eidolon",
+        "pirate" : "pirates!"
     }
 
     if "dlc" in entityName:
