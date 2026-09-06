@@ -62,7 +62,7 @@ def find_icon_changes(newPatchNumber, pastPatchNumber):
     oldImages = glob.glob(f"{past_data_folder}\\**.png") #tooltip_picture200.png")
     newImages = glob.glob("f:\\SteamLibrary\\steamapps\\common\\Sins2\\textures\\**.png") #tooltip_picture200.png")
 
-    shutil.rmtree(f"{SINS_FILES_LOCATION}\\New Textures")
+    shutil.rmtree(f"{SINS_FILES_LOCATION}\\New Textures", ignore_errors=True)
     os.mkdir(f"{SINS_FILES_LOCATION}\\New Textures")
 
     oldImagesDict = {}
