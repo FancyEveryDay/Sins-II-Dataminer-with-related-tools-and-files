@@ -137,3 +137,11 @@ def formatModifier(modifier, modifierType : ModifierEnum):
 
 
     return modifiers
+
+def getFile(file_path):
+    file_path = list(ENTITIES.glob(file_path + ".*"))[0]
+
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    return data
