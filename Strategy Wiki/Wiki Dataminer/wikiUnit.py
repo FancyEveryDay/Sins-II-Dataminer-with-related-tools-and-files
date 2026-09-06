@@ -83,6 +83,10 @@ def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs, weaponResearc
         unitWeapon["missile_duration"] = weaponMissile.get("duration", None) if weaponMissile else None
         unitWeapon["bypass_shields_chance"] = weaponMissile.get("bypass_shields_chance", None) if weaponMissile else None
 
+        if weaponMissile is None:
+            try: unitWeapon["bypass_shields_chance"] = weapon["firing"].get("bypass_shields_chance", None)
+            except KeyError: pass
+
         unitWeapons.append(unitWeapon)
 
     return unitWeapons
