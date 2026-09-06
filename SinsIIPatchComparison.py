@@ -313,7 +313,7 @@ if __name__ == "__main__":
         file.write(f"{"_"*40}\n{"Entity Changes for Patch " + newPatchNumber :^40}\n{"_"*40}\n\n")
         pass
 
-    raceList = ["advent", "trader", "vasari", "herald", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
+    raceList = ["advent", "trader", "vasari", "dlc3_herald", "viturak", "pirate", "pranast", "jiskun", "eivonns", "aluxian", "ancient", "artifact"] # TODO Add Minor races and general changes
 
     weaponDict = getSinsDataDict("",".weapon", file = ENTITIES_LOCATION)
     oldWeaponDict = getSinsDataDict("",".weapon", file = old_archive_path / (pastPatchDir + " Entities"))
