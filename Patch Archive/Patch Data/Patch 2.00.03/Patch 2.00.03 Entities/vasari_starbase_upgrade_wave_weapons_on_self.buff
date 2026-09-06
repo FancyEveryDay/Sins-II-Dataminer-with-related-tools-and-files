@@ -1,0 +1,83 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "damage_has_damage_source",
+                    "damage_source": "weapon"
+                },
+				{
+					"constraint_type": "damage_has_weapon_tag",
+					"weapon_tag": "wave"
+				},
+                {
+                    "constraint_type": "random_chance",
+                    "chance_value": "upgrade_wave_chance_value"
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "action_data_source",
+                        "mesh_point": "center",
+                        "effect": "vasari_starbase_upgrade_wave_radius"
+                    }
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "include_radius_origin_unit": false,
+                "radius_value": "upgrade_wave_splash_radius_value",
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "upgrade_wave_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "upgrade_wave_splash_damage_value",
+                    "penetration_value": "uniforms_damage_event_penetration_value"
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "vasari_starbase_upgrade_wave_weapons_on_target"
+                }]
+            }]
+        }
+    }]
+}

@@ -1,0 +1,103 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "shadow_bolt_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"
+			}]
+        }
+    },
+    {
+        "target_filter_id": "shadow_bolt_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"
+			}]
+        }
+    },
+    {
+        "target_filter_id": "shadow_bolt_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "shadow_bolt_corruption_cost",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "shadow_bolt_cooldown_time",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "shadow_bolt_range",
+        "action_value":
+        {
+            "values": [5000.0]
+        }
+    },
+	{
+        "action_value_id": "shadow_bolt_damage_amount",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+	{
+        "action_value_id": "shadow_bolt_damage_pierce_amount",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "shadow_bolt_travel_speed",
+        "action_value":
+        {
+            "values": [3000.0]
+        }
+    }]
+}

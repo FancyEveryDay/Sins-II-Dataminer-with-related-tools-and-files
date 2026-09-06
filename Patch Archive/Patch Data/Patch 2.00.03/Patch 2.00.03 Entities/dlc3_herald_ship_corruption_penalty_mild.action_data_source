@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_corruption_penalty_restore_slow_value",
+        "action_value":
+        {
+            "values": [-0.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_hull_restore_slow",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hull_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_penalty_restore_slow_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_armor_restore_slow",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_penalty_restore_slow_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_shield_restore_slow",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "shield_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_penalty_restore_slow_value"
+        }
+    }]
+}

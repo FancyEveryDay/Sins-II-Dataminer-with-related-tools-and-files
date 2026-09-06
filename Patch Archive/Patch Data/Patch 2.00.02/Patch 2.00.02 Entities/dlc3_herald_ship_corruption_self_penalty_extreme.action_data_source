@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_self_corruption_hull_drain_rate_value",
+        "action_value":
+        {
+            "transform_type": "per_max_hull_points",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [0.0025]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_self_corruption_zero_penetration_value",
+        "action_value":
+        {
+            "values": [0.0]
+        }
+    }]
+}

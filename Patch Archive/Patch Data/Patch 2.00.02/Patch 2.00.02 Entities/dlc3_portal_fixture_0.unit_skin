@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1718550.287522,
+        "min_camera_distance": 4000.0,
+        "unit_radius_when_mesh_visible": 14000.0,
+        "gui":
+        {
+            "hud_icon": "wormhole_fixture_0_hud_icon",
+            "hud_picture": "dlc3_portal_fixture_0_hud_picture",
+            "tooltip_icon": "wormhole_fixture_0_tooltip_icon",
+            "name": "dlc3_portal_fixture_name",
+            "description": "dlc3_portal_fixture_description",
+            "show_description_in_unit_tooltip": true
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "wormhole_fixture_0_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "proxy_mesh_effect": "dlc3_herald_portal_rift_ambient",
+            "portal_effects":
+            {
+                "ambient_sound": "dlc3_herald_portal_rift_ambient",
+                "open_effect": "dlc3_herald_portal_rift_open",
+                "open_sound": "dlc3_herald_portal_rift_open",
+                "close_effect": "dlc3_herald_portal_rift_close",
+                "close_sound": "dlc3_herald_portal_rift_close",
+                "scar_effect": "dlc3_herald_portal_rift_scar",
+                "scar_sound": "dlc3_herald_portal_rift_scar",
+                "open_muzzle_effect": "dlc3_shrouding_muzzle",
+                "open_muzzle_sound": "dlc3_shrouding_muzzle",
+                "open_projectile_effect": "dlc3_shrouding_travel",
+                "open_projectile_sound": "dlc3_shrouding_travel",
+                "open_impact_effect": "dlc3_shrouding_impact",
+                "open_impact_sound": "dlc3_shrouding_impact"
+            }
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "8fffdacc",
+            "intensity": 0.37
+        }
+    }]
+}

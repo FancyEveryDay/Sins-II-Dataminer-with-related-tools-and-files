@@ -1,0 +1,148 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_support_capital_ship_mirror_field",
+	"level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "mirror_field_cooldown_time",
+        "antimatter_cost": "mirror_field_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.5
+                    }
+				},
+				"action_type": "use_position_operators_on_single_position",
+                "position":
+                {
+                    "position_type": "target_position"
+                },
+                "position_operators": [
+                {
+                    "operator_type": "create_buff_agent",
+                    "buff_on_agent": "dlc3_herald_support_capital_ship_mirror_field_corruption_on_spawner"
+                }]
+            },
+			{
+                "constraint":
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "current_spawner"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_corruption_at_or_above_threshold",
+							"threshold": 0.5
+						}
+					}
+				},
+				"action_type": "use_position_operators_on_single_position",
+                "position":
+                {
+                    "position_type": "target_position"
+                },
+                "position_operators": [
+                {
+                    "operator_type": "create_buff_agent",
+                    "buff_on_agent": "dlc3_herald_support_capital_ship_mirror_field_on_spawner"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "mirror_field_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "position_targeted",
+        "range": "mirror_field_range",
+        "auto_cast":
+        {
+			"enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+			"target_definitions": [
+            {
+                "target_filter": "mirror_field_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "mirror_field_hud_icons",
+        "tooltip_picture": "mirror_field_tooltip_picture",
+        "name": "dlc3_herald_support_capital_ship_mirror_field_ability_name",
+        "description": "dlc3_herald_support_capital_ship_mirror_field_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "mirror_field_range",
+				"radius": "mirror_field_aoe_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [			
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "mirror_field_damage_reduction_scalar_modifier"
+            },
+			{
+				"rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "mirror_field_aoe_radius"
+			},
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "mirror_field_duration",
+                "value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_medium"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_reflected",
+                "value_id": "mirror_field_damage_reflection_amount",
+                "value_float_format": "one_decimal_place"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "advent_unity_fury_ability_hud_icon",
+    "tooltip_picture": "advent_unity_fury_ability_tooltip_picture",
+    "name": "nilari_frenzy_circuit_unit_item_name",
+    "description": "nilari_frenzy_circuit_unit_item_description",
+    "always_show_in_shop": true,
+    "is_finite": true,
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "offense",
+    "ability": "nilari_frenzy_circuit_unit_item",
+    "item_ai_valuation": 500.0
+}

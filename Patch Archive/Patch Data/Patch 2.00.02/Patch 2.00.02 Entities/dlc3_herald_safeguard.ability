@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_safeguard",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_safeguard_on_self"
+    },
+	"gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.purge_to_armor_rate",
+                "value_id": "safeguard_armor_restored_amount",
+				"value_float_format": "percentage_one_decimal_place",
+				"value_color": "positive"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.minimum_corruption_required",
+                "value_id": "safeguard_minimum_corruption_trigger_amount",
+				"value_color": "negative"
+            }]
+        }]
+    }
+}

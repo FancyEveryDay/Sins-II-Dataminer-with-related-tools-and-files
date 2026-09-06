@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_adaptation",
+    "field_coord": [1, 0],
+    "research_time": 50.0,
+    "price":
+    {
+        "credits": 400.0,
+        "metal": 75.0,
+        "crystal": 75.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_population_commerce_0"]
+    ],
+    "name": "dlc3_herald_unlock_power_broker_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_power_broker_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_power_broker_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_power_broker_unit_item_tooltip_picture"
+}

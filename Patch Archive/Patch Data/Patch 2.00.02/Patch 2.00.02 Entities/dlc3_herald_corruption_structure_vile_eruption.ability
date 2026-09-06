@@ -1,0 +1,113 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_corruption_structure_vile_eruption",
+    "active_actions":
+    {
+        "cooldown_time": "vile_eruption_cooldown_time",
+        "antimatter_cost": "vile_eruption_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_corruption_structure_vile_eruption_on_self"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_corruption_structure_vile_eruption_activation"
+                    }
+                },
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "vile_eruption_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "has_enemy_units_in_gravity_well",
+                    "gravity_well_reference_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "vile_eruption_auto_cast_enemy_target_filter"
+                },
+                {
+                    "constraint_type": "has_valid_targets_in_radius",
+                    "radius_origin_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "vile_eruption_auto_cast_target_filter",
+                    "radius_value": "vile_eruption_range_value",
+                    "target_count_value": "vile_eruption_autocast_min_target_count"
+                }]
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_corruption_structure_vile_eruption_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_corruption_structure_vile_eruption_ability_tooltip_picture",
+        "name": "dlc3_herald_corruption_structure_vile_eruption_ability_name",
+        "description": "dlc3_herald_corruption_structure_vile_eruption_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "vile_eruption_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "vile_eruption_range_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_gain",
+                "value_id": "vile_eruption_corruption_amount",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.has_corruption_medium",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_gain",
+                "value_id": "vile_eruption_corruption_corrupted_amount",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

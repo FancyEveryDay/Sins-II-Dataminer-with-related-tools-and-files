@@ -1,0 +1,165 @@
+{
+    "version": 0,
+    "active_duration": "overpower_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {           
+			"actions": [
+			{
+				"constraint":
+				{
+					"constraint_type": "composite_and",
+					"constraints": [
+					{
+						"constraint_type": "value_comparison",
+						"value_a": "uniforms_current_spawner_current_shields",
+						"comparison_type": "greater_than",
+						"value_b": "fixed_zero"
+					},
+					{
+						"constraint_type": "composite_not",
+						"constraint":
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "current_spawner"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_buff",
+								"buff": "dlc3_herald_titan_overpower_shield_regen",
+								"include_pending_buffs": true
+							}
+						}
+					}]
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_overpower_shield_regen"
+                }]
+			},
+            {
+                "constraint":
+				{
+					"constraint_type": "composite_and",
+					"constraints": [
+					{
+						"constraint_type": "value_comparison",
+						"value_a": "uniforms_current_spawner_current_shields",
+						"comparison_type": "equal_to",
+						"value_b": "fixed_zero"
+					},
+					{
+						"constraint_type": "value_comparison",
+						"value_a": "overpower_current_curruption",
+						"comparison_type": "greater_than_equal_to",
+						"value_b": "overpower_corruption_consumption_per_tick"
+					},
+					{
+						"constraint_type": "composite_not",
+						"constraint":
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "current_spawner"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_buff",
+								"buff": "dlc3_herald_titan_overpower_armor_regen",
+								"include_pending_buffs": true
+							}
+						}
+					}]
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_overpower_armor_regen"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_titan_overpower_duration"
+                }
+            },
+			{
+				"constraint":
+				{			
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.5
+                    }
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_overpower_corruption_on_self"
+                }]
+			}]
+        }
+    }],
+	"weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "overpower_weapon_damage_buff_scalar_modifier"
+    }],
+	"gui":
+    {
+        "hud_icon": "overpower_hud_icon",
+        "name": "dlc3_herald_titan_overpower_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "overpower_weapon_damage_buff_scalar_modifier"
+            }]
+        }]
+    }
+}

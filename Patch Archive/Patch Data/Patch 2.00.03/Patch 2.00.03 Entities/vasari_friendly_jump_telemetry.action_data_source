@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "friendly_planet",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "hyperspace_speed_scalar",
+        "action_value":
+        {
+            "values": [1.8]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "vasari_friendly_jump_telemetry_hyperspace_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hyperspace_speed",
+            "value_behavior": "scalar",
+            "value_id": "hyperspace_speed_scalar"
+        }
+    }]
+}

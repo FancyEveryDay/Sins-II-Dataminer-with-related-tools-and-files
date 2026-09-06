@@ -1,0 +1,37 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "vasari_corruption_penalty_hyperspace_charge_time_value",
+        "action_value":
+        {
+            "values": [0.12]
+        }
+    },
+    {
+        "action_value_id": "vasari_corruption_penalty_hyperspace_speed_value",
+        "action_value":
+        {
+            "values": [-0.12]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "vasari_corruption_penalty_hyperspace_charge_time_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hyperspace_charge_time",
+            "value_behavior": "scalar",
+            "value_id": "vasari_corruption_penalty_hyperspace_charge_time_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "vasari_corruption_penalty_hyperspace_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hyperspace_speed",
+            "value_behavior": "scalar",
+            "value_id": "vasari_corruption_penalty_hyperspace_speed_value"
+        }
+    }]
+}

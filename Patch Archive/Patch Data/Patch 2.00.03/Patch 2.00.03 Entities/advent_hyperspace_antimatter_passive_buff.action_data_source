@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "antimatter_restored",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    }]
+}

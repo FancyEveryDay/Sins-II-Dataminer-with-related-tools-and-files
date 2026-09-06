@@ -1,0 +1,228 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "repair_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify",
+                    "include_pending_buffs": true
+                }
+            },
+			{
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify_corruption",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "repair_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify",
+                    "include_pending_buffs": true
+                }
+            },
+			{
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify_corruption",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "repair_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "antimatter_cost_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+	{
+        "action_value_id": "revivify_beam_duration_value",
+        "action_value":
+        {
+            "values": [1.5]
+        }
+    },
+	{
+        "action_value_id": "revivify_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "auto_cast_armor_threshold_value",
+        "action_value":
+        {
+            "values": [250.0]
+        }
+    },
+    {
+        "action_value_id": "auto_cast_shield_threshold_value",
+        "action_value":
+        {
+            "values": [250.0]
+        }
+    },
+	{
+        "action_value_id": "auto_cast_armor_corruption_threshold_value",
+        "action_value":
+        {
+            "values": [350.0]
+        }
+    },
+    {
+        "action_value_id": "auto_cast_shield_corruption_threshold_value",
+        "action_value":
+        {
+            "values": [350.0]
+        }
+    },
+    {
+        "action_value_id": "cooldown_time_value",
+        "action_value":
+        {
+            "values": [6.0]
+        }
+    },
+    {
+        "action_value_id": "execution_interval_count_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "repair_rate_value",
+        "action_value":
+        {
+            "values": [25.0]
+        }
+    },
+	{
+        "action_value_id": "repair_rate_corruption_value",
+        "action_value":
+        {
+            "values": [35.0]
+        }
+    },
+    {
+        "action_value_id": "range_value",
+        "action_value":
+        {
+            "values": [12000.0]
+        }
+    },
+    {
+        "action_value_id": "target_missing_armor_value",
+        "action_value":
+        {
+            "transform_type": "per_missing_armor_points",
+            "transform_unit":
+            {
+                "unit_type": "target"
+            },
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "target_missing_shield_value",
+        "action_value":
+        {
+            "transform_type": "per_missing_shield_points",
+            "transform_unit":
+            {
+                "unit_type": "target"
+            },
+            "values": [1.0]
+        }
+    }]
+}

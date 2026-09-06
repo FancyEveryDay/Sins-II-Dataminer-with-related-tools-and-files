@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 3,
+    "field": "military_arrival",
+    "field_coord": [7, 5],
+    "research_time": 260.0,
+    "price":
+    {
+        "credits": 1450.0,
+        "metal": 650.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_defiler_cruiser"]
+    ],
+    "name": "dlc3_herald_unlock_defiler_cruiser_calcify_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_defiler_cruiser_calcify_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_defiler_cruiser_calcify_ability_hud_icon",
+    "tooltip_picture": "dlc3_herald_defiler_cruiser_calcify_ability_tooltip_picture"
+}

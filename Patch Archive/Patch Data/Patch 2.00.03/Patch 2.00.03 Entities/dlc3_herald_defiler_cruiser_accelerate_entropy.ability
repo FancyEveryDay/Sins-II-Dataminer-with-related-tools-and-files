@@ -1,0 +1,123 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_defiler_cruiser_accelerate_entropy",
+    "active_actions":
+    {
+        "cooldown_time": "accelerate_entropy_cooldown_value",
+        "antimatter_cost": "accelerate_entropy_antimatter_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_defiler_cruiser_accelerate_entropy_on_target"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "accelerate_entropy_activation_corruption_gain_value"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_defiler_cruiser_accelerate_entropy_activation"
+                    }
+                }]
+            }]
+        },
+		"targeting_type": "unit_targeted",
+        "target_filters": [
+            "accelerate_entropy_target_filter"
+        ],
+        "range": "accelerate_entropy_range",        
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+				"unit":
+				{
+					"unit_type": "current_spawner"
+				},
+				"unit_constraint":
+				{
+					"constraint_type": "weapon_has_target"
+				}
+            },
+			"target_definitions": [
+            {
+                "target_filter": "accelerate_entropy_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "accelerate_entropy_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_tooltip_picture",
+        "name": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_name",
+        "description": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_description",
+		"targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "accelerate_entropy_range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "accelerate_entropy_armor_strength_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "accelerate_entropy_linear_speed_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "accelerate_entropy_duration",
+                "value_suffix": "seconds"
+            }]
+        },
+		{
+			"header_text": "tooltip.ability.on_target_corruption_medium_header",
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_rate",
+                "value_id": "accelerate_entropy_damage_per_tick_amount",
+                "value_suffix": "per_second"
+            },
+			{
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "accelerate_entropy_damage_pierce"
+            }]
+		}]
+    }
+}

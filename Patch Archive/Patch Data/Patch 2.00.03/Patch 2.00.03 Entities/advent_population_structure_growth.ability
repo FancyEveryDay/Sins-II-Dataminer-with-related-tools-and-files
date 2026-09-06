@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "action_data_source": "advent_population_structure_growth",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["advent_unlock_population_growth_ability"]
+        ]
+    ],
+    "passive_actions":
+    {
+        "persistant_buff": "advent_population_structure_growth_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "advent_population_structure_growth_ability_hud_icon",
+        "tooltip_picture": "advent_population_structure_growth_ability_tooltip_picture",
+        "name": "advent_population_structure_growth_ability_name",
+        "description": "advent_population_structure_growth_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "growth_max_population_modifier"
+            },
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "growth_population_assimilation_rate_modifier"
+            }]
+        }]
+    }
+}

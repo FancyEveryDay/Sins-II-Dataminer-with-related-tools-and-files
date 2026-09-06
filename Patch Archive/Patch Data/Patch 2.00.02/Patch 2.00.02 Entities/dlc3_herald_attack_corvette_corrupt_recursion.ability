@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_attack_corvette_corrupt_recursion",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_attack_corvette_corrupt_recursion_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_attack_corvette_corrupt_recursion_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_attack_corvette_corrupt_recursion_ability_tooltip_picture",
+        "name": "dlc3_herald_attack_corvette_corrupt_recursion_ability_name",
+        "description": "dlc3_herald_attack_corvette_corrupt_recursion_ability_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.effect_on_death",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.phase_echo_duration",
+                "value_id": "corrupt_recursion_invulnerable_duration_value",
+                "value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_high"
+            },
+			{
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "corrupt_recursion_high_corruption_damage_bonus_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "version": 0,
+	"make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+		"execution_interval_count_value": "consumption_matrix_execution_count",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "consumption_matrix_radius",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "composite_and",
+						"constraints": [
+						{
+							"constraint_type": "unit_passes_target_filter",
+							"unit":
+							{
+								"unit_type": "operand_destination"
+							},
+							"target_filter_id": "consumption_matrix_target_filter"
+						},
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "operand_destination"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "can_purge_corruption",
+								"minimum_purge_amount": 1.0
+							}
+						}]
+					},
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_starbase_consumption_matrix_on_target"
+                }]
+            },
+			{                
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "total_corruption_consumed_potential",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "consumption_matrix_target_count"
+                }]
+            }]
+        }
+    }],
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_starbase_consumption_matrix__duration"
+                }
+            }]
+        }
+    }],
+	"gui":
+    {
+        "hud_icon": "dlc3_herald_starbase_consumption_matrix_unit_item_hud_icon",
+        "name": "dlc3_herald_starbase_consumption_matrix_unit_item_name",
+		"visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+			"lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_consumed",
+                "value_id": "consumption_matrix_current_potential",
+				"value_color": "positive",
+				"value_suffix": "per_second",
+				"is_resolved_value": true
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_or_shields_per_corruption_consumed",
+                "value_id": "consumption_matrix_current_potential",
+				"value_color": "positive",
+				"value_suffix": "per_second",
+				"is_resolved_value": true
+            }]
+        }]
+    }
+}

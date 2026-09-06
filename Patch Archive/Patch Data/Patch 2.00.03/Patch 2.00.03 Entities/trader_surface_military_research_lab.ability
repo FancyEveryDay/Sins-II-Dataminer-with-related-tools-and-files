@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "trader_surface_military_research_lab",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "trader_surface_military_research_lab"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.bonus_per_planet_current_research_track_level_header",
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "surface_military_research_lab_factory_unit_build_time_modifier"
+            }]
+        }]
+    }
+}

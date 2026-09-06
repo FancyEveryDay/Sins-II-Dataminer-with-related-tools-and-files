@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "active_duration": "corrupt_recursion_invulnerable_duration_value",
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "corrupt_recursion_high_corruption_damage_bonus_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_attack_corvette_corrupt_recursion_ability_hud_icon",
+        "name": "dlc3_herald_attack_corvette_corrupt_recursion_ability_name",
+        "visibility_scope": "positive",
+		"tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "corrupt_recursion_high_corruption_damage_bonus_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "version": 0,
+    "action_data_source": "advent_laser_defense_kinetic_blast",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["advent_unlock_laser_defense_blast_ability"]
+        ]
+    ],
+    "active_actions":
+    {
+        "cooldown_time": "kinetic_blast_cooldown_time_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "kinetic_blast_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "advent_laser_defense_kinetic_blast_on_self"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "kinetic_blast_target_filter"
+        ],
+        "range": "kinetic_blast_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 45.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "kinetic_blast_auto_cast_target_filter"
+            }],
+            "caster_constraint":
+            {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "target_filter_id": "kinetic_blast_auto_cast_target_filter",
+                "radius_value": "kinetic_blast_auto_cast_radius_value",
+                "target_count_value": "kinetic_blast_auto_cast_target_count_value"
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "advent_laser_defense_kinetic_blast_ability_hud_icon",
+        "tooltip_picture": "advent_laser_defense_kinetic_blast_ability_tooltip_picture",
+        "name": "advent_laser_defense_kinetic_blast_ability_name",
+        "description": "advent_laser_defense_kinetic_blast_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "kinetic_blast_range_value",
+                "radius": "kinetic_blast_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "kinetic_blast_radius_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "kinetic_blast_damage_value",
+                "value_color": "negative"
+            },
+            {
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "kinetic_blast_penetration_value"
+            }]
+        }]
+    }
+}

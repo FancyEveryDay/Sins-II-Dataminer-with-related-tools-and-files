@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 4,
+    "field": "military_consolidation",
+    "field_coord": [8, 1],
+    "research_time": 330.0,
+    "price":
+    {
+        "credits": 1800.0,
+        "metal": 850.0,
+        "crystal": 850.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_starbase"]
+    ],
+    "name": "dlc3_herald_unlock_starbase_corruption_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_starbase_corruption_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_starbase_corruption_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_starbase_corruption_unit_item_tooltip_picture"
+}

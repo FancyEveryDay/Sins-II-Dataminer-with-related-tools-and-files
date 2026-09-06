@@ -1,0 +1,158 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 33868.018075,
+        "min_camera_distance": 697.043946,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_support_defense_structure_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_support_defense_structure_main_view_icon",
+            "hud_picture": "dlc3_herald_support_defense_structure_hud_picture",
+            "tooltip_picture": "dlc3_herald_support_defense_structure_tooltip_picture",
+            "name": "dlc3_herald_support_defense_structure_name",
+            "description": "dlc3_herald_support_defense_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_support_defense_structure",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "dlc3_herald_support_defense_structure_component_hangar",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_defense_structure_component_hangar",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_large_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_large_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_large_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_large_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "dlc3_herald_support_defense_structure_main_view_icon",
+            "selected_icon": "dlc3_herald_support_defense_structure_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_support_defense_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "effect_alias_bindings": [
+            {
+                "alias_name": "dlc3_herald_carrier_capital_ship_point_defense_shock_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_physical_pointdefense_hithull",
+                        "weapon_impact_physical_pointdefense_hithull_01",
+                        "weapon_impact_physical_pointdefense_hithull_02",
+                        "weapon_impact_physical_pointdefense_hithull_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_carrier_capital_ship_point_defense_shock_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_generic_pointdefense_hitshields",
+                        "weapon_impact_generic_pointdefense_hitshields_01",
+                        "weapon_impact_generic_pointdefense_hitshields_02",
+                        "weapon_impact_generic_pointdefense_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_carrier_capital_ship_point_defense_shock_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_tech_pointdefense_autocannon",
+                        "weapon_muzzle_tech_pointdefense_autocannon_01",
+                        "weapon_muzzle_tech_pointdefense_autocannon_02",
+                        "weapon_muzzle_tech_pointdefense_autocannon_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_carrier_capital_ship_point_defense_shock_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_travel"
+                }
+            },
+            {
+                "alias_name": "trader_hangar_defense_enhanced_production_effect_on_self",
+                "alias_binding":
+                {
+                    "particle_effect": "tec_enhanced_fabrication_status"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_defense_structure_revivify_activation",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_defense_structure_revivify_activation",
+                    "sounds": [
+                        "ability_loop_phase_nanite_hullrepair"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_defense_structure_revivify_on_target_large",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_defense_structure_revivify_on_target_large"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_defense_structure_revivify_on_target_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_defense_structure_revivify_on_target_medium"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_defense_structure_revivify_on_target_small",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_defense_structure_revivify_on_target_small"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_defense_structure_revivify_beam",
+                "alias_binding":
+                {
+                    "beam": "dlc3_herald_support_defense_structure_revivify_beam"
+                }
+            }],
+            "shield_effect": "dlc3_herald_support_defense_structure"
+        },
+        "death_sequence_group": "planetmodulesmall"
+    }]
+}

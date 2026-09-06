@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "tooltip_icon": "utility_exotic_tooltip_icon",
+    "small_icon": "utility_exotic_small_icon",
+    "large_icon": "utility_exotic_large_icon",
+    "picture": "utility_exotic_picture",
+    "name": "exotic.utility.name",
+    "description": "exotic.utility.description",
+    "pip_color": "#0AC6EF",
+    "insufficient_exotics_player_sound_id": "insufficient_utility_exotics",
+    "ai_trade_value": 1000
+}

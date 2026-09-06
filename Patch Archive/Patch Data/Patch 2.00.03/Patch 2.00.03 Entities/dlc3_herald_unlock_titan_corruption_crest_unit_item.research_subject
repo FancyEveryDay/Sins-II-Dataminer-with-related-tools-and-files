@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 4,
+    "field": "military_awakening",
+    "field_coord": [9, 3],
+    "research_time": 360.0,
+    "price":
+    {
+        "credits": 1850.0,
+        "metal": 900.0,
+        "crystal": 900.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_titan"]
+    ],
+    "name": "dlc3_herald_unlock_titan_corruption_crest_unit_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_titan_corruption_crest_unit_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_titan_crest_corruption_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_titan_crest_corruption_unit_item_tooltip_picture"
+}

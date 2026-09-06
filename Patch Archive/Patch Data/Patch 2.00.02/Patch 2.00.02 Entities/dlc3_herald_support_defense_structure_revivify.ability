@@ -1,0 +1,289 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_support_defense_structure_revivify",
+    "active_actions":
+    {
+        "cooldown_time": "cooldown_time_value",
+        "antimatter_cost": "antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "repair_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "range_value": "range_value",
+				"operators_constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.5
+                    }
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify_corruption"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effects":
+                    {
+                        "beam_effect": "dlc3_herald_support_defense_structure_revivify_beam"
+                    },
+                    "beam_duration": "revivify_beam_duration_value"
+                }],
+				"constraint_not_satisified_operators": [
+                {
+					"operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_defense_structure_revivify"
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_support_defense_structure_revivify_activation"
+                    }
+                },
+				{
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "revivify_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "repair_target_filter"
+        ],
+        "range": "range_value",
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "repair_auto_cast_high_priority_target_filter",
+                "target_constraint":
+                {
+                    "constraint_type": "composite_or",
+					"constraints" : [
+					{
+						"constraint_type": "composite_and",
+						"constraints": [
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "current_spawner"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_corruption_at_or_above_threshold",
+								"threshold": 0.5
+							}
+						},
+						{
+							"constraint_type": "composite_or",
+							"constraints": [
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_armor_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_armor_corruption_threshold_value"
+							},
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_shield_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_shield_corruption_threshold_value"
+							}]
+						}]
+					},
+					{
+						"constraint_type": "composite_and",
+						"constraints": [
+						{
+							"constraint_type": "composite_not",
+							"constraint":
+							{
+								"constraint_type": "unit_passes_unit_constraint",
+								"unit":
+								{
+									"unit_type": "current_spawner"
+								},
+								"unit_constraint":
+								{
+									"constraint_type": "has_corruption_at_or_above_threshold",
+									"threshold": 0.5
+								}
+							}
+						},
+						{
+							"constraint_type": "composite_or",
+							"constraints": [
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_armor_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_armor_corruption_threshold_value"
+							},
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_shield_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_shield_corruption_threshold_value"
+							}]
+						}]
+					}]
+                }
+            },
+            {
+                "target_filter": "repair_auto_cast_low_priority_target_filter",
+                "target_constraint":
+                {
+                    "constraint_type": "composite_or",
+					"constraints" : [
+					{
+						"constraint_type": "composite_and",
+						"constraints": [
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "current_spawner"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_corruption_at_or_above_threshold",
+								"threshold": 0.5
+							}
+						},
+						{
+							"constraint_type": "composite_or",
+							"constraints": [
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_armor_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_armor_corruption_threshold_value"
+							},
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_shield_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_shield_corruption_threshold_value"
+							}]
+						}]
+					},
+					{
+						"constraint_type": "composite_and",
+						"constraints": [
+						{
+							"constraint_type": "composite_not",
+							"constraint":
+							{
+								"constraint_type": "unit_passes_unit_constraint",
+								"unit":
+								{
+									"unit_type": "current_spawner"
+								},
+								"unit_constraint":
+								{
+									"constraint_type": "has_corruption_at_or_above_threshold",
+									"threshold": 0.5
+								}
+							}
+						},
+						{
+							"constraint_type": "composite_or",
+							"constraints": [
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_armor_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_armor_corruption_threshold_value"
+							},
+							{
+								"constraint_type": "value_comparison",
+								"value_a": "target_missing_shield_value",
+								"comparison_type": "greater_than_equal_to",
+								"value_b": "auto_cast_shield_corruption_threshold_value"
+							}]
+						}]
+					}]
+                }
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_support_defense_structure_revivify_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_support_defense_structure_revivify_ability_tooltip_picture",
+        "name": "dlc3_herald_support_defense_structure_revivify_ability_name",
+        "description": "dlc3_herald_support_defense_structure_revivify_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_and_shield_restore_rate",
+                "value_id": "repair_rate_value",
+                "value_color": "positive",
+                "value_suffix": "per_second"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "execution_interval_count_value",
+                "value_suffix": "seconds"
+            }]
+        },
+		{
+			"header_text": "tooltip.ability.has_corruption_medium",
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_and_shield_restore_rate",
+                "value_id": "repair_rate_corruption_value",
+                "value_color": "positive",
+                "value_suffix": "per_second"
+            }]
+		}]
+    }
+}

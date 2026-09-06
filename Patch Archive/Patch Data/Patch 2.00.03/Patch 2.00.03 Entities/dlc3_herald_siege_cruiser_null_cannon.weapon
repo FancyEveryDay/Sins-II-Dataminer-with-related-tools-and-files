@@ -1,0 +1,43 @@
+{
+    "version": 0,
+    "name": "weapon_name.phase_cannon",
+    "pitch_speed": 1.5,
+    "yaw_speed": 1.5,
+    "pitch_firing_tolerance": 3.0,
+    "yaw_firing_tolerance": 3.0,
+    "range": 5000.0,
+    "cooldown_duration": 20.0,
+    "uniforms_target_filter_id": "common_weapon",
+    "attack_target_type_groups": [
+        "capital_supercapital",
+        "defense_civilian",
+        "heavy",
+        "antistructure",
+        "carrier_support",
+        "light"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 250.0,
+    "penetration": 1000.0,
+    "tags": [
+        "null_cannon",
+        "energy"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.5,
+    "firing":
+    {
+        "firing_type": "projectile",
+        "travel_speed": 3000.0,
+        "bypass_shields_chance": 0.4
+    },
+    "effects":
+    {
+        "muzzle_effect": "dlc3_herald_siege_cruiser_null_cannon_weapon_muzzle",
+        "projectile_travel_effect": "dlc3_herald_siege_cruiser_null_cannon_weapon_projectile_travel",
+        "hit_hull_effect": "dlc3_herald_siege_cruiser_null_cannon_weapon_hit_hull",
+        "hit_shield_effect": "dlc3_herald_siege_cruiser_null_cannon_weapon_hit_shield",
+        "hit_shield_impact_radius_t": 1.0
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "charged_salvo_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "charged_salvo_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "charged_salvo_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "charged_salvo_armor_penetration_value",
+        "action_value":
+        {
+            "values": [1000.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_bypass_shields_chance_value",
+        "action_value":
+        {
+            "values": [0.9]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_cooldown_time_value",
+        "action_value":
+        {
+            "values": [90.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_charge_value",
+        "action_value":
+        {
+            "values": [6.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_damage_value",
+        "action_value":
+        {
+            "values": [180.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_range_value",
+        "action_value":
+        {
+            "values": [36000.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_torpedoes_per_interval_value",
+        "action_value":
+        {
+            "values": [2.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_interval_count_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_torpedo_count_value",
+        "action_value":
+        {
+            "values": [40.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_interval_value",
+        "action_value":
+        {
+            "values": [0.12]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_torpedo_lifetime_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "charged_salvo_torpedo_steering_distance_radius_scalar_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "vasari_starbase_charged_salvo_chargeup",
+        "alias_binding":
+        {
+            "particle_effect": "charged_phase_missile_ability_large_charge"
+        }
+    }]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_continuance",
+    "field_coord": [6, 3],
+    "research_time": 235.0,
+    "price":
+    {
+        "credits": 1400.0,
+        "metal": 600.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_shield_burst_restore",
+        "dlc3_herald_upgrade_antimatter_points_1"]
+    ],
+    "name": "dlc3_herald_unlock_energized_lattice_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_energized_lattice_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_energized_lattice_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_energized_lattice_unit_item_tooltip_picture"
+}

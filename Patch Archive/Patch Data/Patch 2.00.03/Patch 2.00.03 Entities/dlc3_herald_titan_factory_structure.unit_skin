@@ -1,0 +1,232 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 103043.489318,
+        "min_camera_distance": 837.852021,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_titan_factory_structure_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_titan_factory_structure_main_view_icon",
+            "hud_picture": "dlc3_herald_titan_factory_structure_hud_picture",
+            "tooltip_picture": "dlc3_herald_titan_factory_structure_tooltip_picture",
+            "name": "dlc3_herald_titan_factory_structure_name",
+            "description": "dlc3_herald_titan_factory_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_titan_factory_structure",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_1",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_1",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_2",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_2",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_3",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_3",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_4",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_4",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_5",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_5",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_6",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_6",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_7",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_7",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_top",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_top",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_titan_factory_structure_prong_bottom",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_titan_factory_structure_prong_bottom",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "dlc3_herald_titan_factory_structure_main_view_icon",
+            "selected_icon": "dlc3_herald_titan_factory_structure_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_titan_factory_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 20,
+                "damage_effects": [
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "damage_air_decompression",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "tec_damage_plasma_sparks",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_1"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_3"
+                },
+                {
+                    "max_count": 3,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.42,
+                    "particle_effect": "tec_damage_escaping_gas",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity",
+                    "sound": "ambient_loop_electrical_damage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.38,
+                    "particle_effect": "tec_damage_embers",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 6.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "damage_fire",
+                    "sound": "hyperspace_chargeup"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.3,
+                    "particle_effect": "damage_fire_pillar",
+                    "sound": "hyperspace_chargeup"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "dlc3_heavy_factory_idle_flair",
+                "constraint": "is_unit_factory_idle"
+            },
+            {
+                "mesh_point_name": "ship_build",
+                "particle_effect": "dlc3_factory_portal_medium",
+                "constraint": "is_unit_factory_busy",
+                "build_kind": "capital_ship"
+            },
+            {
+                "mesh_point_name": "ship_build",
+                "particle_effect": "dlc3_factory_portal_medium",
+                "constraint": "is_unit_factory_busy",
+                "build_kind": "super_capital_ship"
+            },
+            {
+                "mesh_point_name": "ship_build",
+                "particle_effect": "dlc3_factory_portal_titan",
+                "constraint": "is_unit_factory_busy",
+                "build_kind": "titan"
+            }]
+        },
+        "death_sequence_group": "planetmodulelarge"
+    }]
+}

@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_nanotech",
+    "field_coord": [8, 6],
+    "research_time": 525.0,
+    "price":
+    {
+        "metal": 810.0,
+        "crystal": 900.0,
+        "credits": 0.0
+    },
+    "prerequisites": [
+        ["vasari_upgrade_structure_build_time"]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "factory_unit_build_price",
+        "value_behavior": "scalar",
+        "value": -0.24
+    },
+    {
+        "modifier_type": "structure_build_price",
+        "value_behavior": "scalar",
+        "value": -0.24
+    }],
+    "name": "vasari_construction_price_decrease_research_subject_name",
+    "name_uppercase": "vasari_construction_price_decrease_research_subject_name_uppercase",
+    "description": "vasari_construction_price_decrease_research_subject_description",
+    "hud_icon": "vasari_construction_price_decrease_research_subject_hud_icon",
+    "tooltip_picture": "vasari_construction_price_decrease_research_subject_tooltip_picture"
+}

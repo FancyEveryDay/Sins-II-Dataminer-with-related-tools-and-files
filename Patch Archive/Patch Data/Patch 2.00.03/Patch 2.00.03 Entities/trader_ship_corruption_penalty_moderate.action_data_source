@@ -1,0 +1,54 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "trader_corruption_penalty_weapon_range_value",
+        "action_value":
+        {
+            "values": [-0.1]
+        }
+    },
+    {
+        "action_value_id": "trader_corruption_penalty_ability_range_value",
+        "action_value":
+        {
+            "values": [-0.1]
+        }
+    },
+    {
+        "action_value_id": "trader_corruption_penalty_detection_range_value",
+        "action_value":
+        {
+            "values": [-0.1]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "trader_corruption_penalty_weapon_range_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "range",
+            "value_behavior": "scalar",
+            "value_id": "trader_corruption_penalty_weapon_range_value"
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "trader_corruption_penalty_ability_range_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "ability_range",
+            "value_behavior": "scalar",
+            "value_id": "trader_corruption_penalty_ability_range_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "trader_corruption_penalty_detection_range_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "detection_range",
+            "value_behavior": "scalar",
+            "value_id": "trader_corruption_penalty_detection_range_value"
+        }
+    }]
+}

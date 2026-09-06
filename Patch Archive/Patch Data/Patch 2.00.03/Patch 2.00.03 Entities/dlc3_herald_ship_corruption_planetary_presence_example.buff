@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "restart_other_stacked_buffs_when_started": false,
+    "time_actions": [
+    {
+        "execution_interval_value": "dlc3_herald_ship_corruption_planetary_presence_interval_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_add_planetary_presence_corruption"
+            }]
+        }
+    }]
+}

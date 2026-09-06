@@ -1,0 +1,267 @@
+{
+    "torpedo_target_filter":
+    {
+        "unit_types": [
+            "capital_ship",
+            "corvette",
+            "cruiser",
+            "frigate",
+            "starbase",
+            "structure",
+            "super_capital_ship",
+            "titan"
+        ],
+        "ownerships": [
+            "enemy"
+        ],
+        "constraints": [],
+        "exemptions": [
+            "is_dead"]
+    },
+    "common_target_filters": [
+    {
+        "target_filter_id": "common_weapon",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "common_weapon_no_corvette_weapon",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "common_and_strikecraft_weapon",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "strikecraft",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "strikecraft_and_torpedo_weapon",
+        "target_filter":
+        {
+            "unit_types": [
+                "strikecraft",
+                "torpedo"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "common_and_strikecraft_and_torpedo_weapon",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "strikecraft",
+                "structure",
+                "super_capital_ship",
+                "titan",
+                "torpedo"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "strikecraft_and_torpedo_units",
+        "target_filter":
+        {
+            "unit_types": [
+                "strikecraft",
+                "torpedo"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "common_planet_any_owner",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet",
+                "uncolonizable"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "common_planet_bombing",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "uniforms_detected_planets_any_owner",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet",
+                "uncolonizable"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_detected"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "uniforms_colonizable_planets",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_colonizable_planet"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "uniforms_friendly_planets",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "ally",
+                "self"
+            ],
+            "constraints": []
+        }
+    },
+    {
+        "target_filter_id": "uniforms_owned_planets",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    },
+    {
+        "target_filter_id": "uniforms_npc_raid_targets",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "enemy"
+            ]
+        }
+    },
+    {
+        "target_filter_id": "constructor_ship_target",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "is_fully_built"
+                    }
+                },
+                {
+                    "constraint_type": "composite_not",
+                    "constraint":
+                    {
+                        "constraint_type": "is_structure_plate_spin_changing"
+                    }
+                }]
+            }],
+            "exemptions": [
+                "is_fully_unbuilt"]
+        }
+    }],
+    "in_phase_space_mutation": "in_phase_space"
+}

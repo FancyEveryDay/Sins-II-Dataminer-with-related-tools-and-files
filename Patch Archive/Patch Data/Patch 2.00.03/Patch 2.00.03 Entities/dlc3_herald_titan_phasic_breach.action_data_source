@@ -1,0 +1,286 @@
+{
+    "version": 0,
+	"level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "phasic_breach_autocast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+				"structure",
+				"super_capital_ship",
+				"titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"				
+			}]
+        }
+    },
+    {
+        "target_filter_id": "phasic_breach_autocast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"							
+			}]
+        }
+    },
+    {
+        "target_filter_id": "phasic_breach_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+				"corvette",
+                "frigate",
+				"starbase",
+                "structure",
+				"super_capital_ship",
+				"titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "phasic_breach_antimatter_cost",
+        "action_value":
+        {
+            "values": [200.0, 200.0, 200.0, 200.0, 200.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "phasic_breach_cooldown_time",
+        "action_value":
+        {
+            "values": [120.0, 120.0, 120.0, 120.0, 120.0]
+        }
+    },
+    {
+        "action_value_id": "phasic_breach_primary_range",
+        "action_value":
+        {
+            "values": [8000.0, 8000.0, 8000.0, 8000.0, 8000.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_primary_aoe_radius",
+        "action_value":
+        {
+            "values": [5000.0, 5000.0, 5000.0, 5000.0, 5000.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_travel_speed",
+        "action_value":
+        {
+            "values": [3000.0, 3000.0, 3000.0, 3000.0, 3000.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_autocast_min_target_count",
+        "action_value":
+        {
+            "values": [3.0, 3.0, 3.0, 3.0, 3.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_secondary_aoe_radius",
+        "action_value":
+        {
+            "values": [2000.0, 2000.0, 2000.0, 2000.0, 2000.0]
+        }
+    },
+	{
+        "action_value_id": "phasic_breach_duration",
+        "action_value":
+        {
+            "values": [30.0, 30.0, 30.0, 30.0, 30.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_stacking_limit",
+        "action_value":
+        {
+            "values": [1000.0, 1000.0, 1000.0, 1000.0, 1000.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_initial_delay",
+        "action_value":
+        {
+            "values": [1.5, 1.5, 1.5, 1.5, 1.5]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_excursion_interval_count",
+        "action_value":
+        {
+            "values": [15.0, 15.0, 15.0, 15.0, 15.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_excursion_execution_interval",
+        "action_value":
+        {
+            "values": [2.0, 2.0, 2.0, 2.0, 2.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_excursion_duration",
+        "action_value":
+        {
+            "values": [2.0, 2.0, 2.0, 2.0, 2.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_excursion_beam_duration",
+        "action_value":
+        {
+            "values": [2.5, 2.5, 2.5, 2.5, 2.5]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_damage_amount",
+        "action_value":
+        {
+            "values": [20.0, 30.0, 40.0, 50.0, 60.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_damage_pierce",
+        "action_value":
+        {
+            "values": [400.0, 500.0, 600.0, 700.0, 800.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_corruption_amount",
+        "action_value":
+        {
+            "values": [10.0, 15.0, 20.0, 25.0, 30.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_target_limit",
+        "action_value":
+        {
+            "values": [5.0, 6.0, 7.0, 9.0, 12.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_primary_corruption_debuff_duration",
+        "action_value":
+        {
+            "values": [10.0, 10.0, 10.0, 10.0, 10.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_secondary_damage_amount",
+        "action_value":
+        {
+            "values": [10.0, 15.0, 20.0, 25.0, 30.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_secondary_damage_pierce",
+        "action_value":
+        {
+            "values": [200.0, 250.0, 300.0, 350.0, 400.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_secondary_target_limit",
+        "action_value":
+        {
+            "values": [1.0, 2.0, 3.0, 4.0, 5.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_antimatter_regen_debuff_scalar_value",
+        "action_value":
+        {
+            "values": [-0.3, -0.4, -0.5, -0.7, -1.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_ability_cooldown_debuff_scalar_value",
+        "action_value":
+        {
+            "values": [0.2, 0.3, 0.4, 0.65, 1.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_weapon_cooldown_debuff_scalar_value",
+        "action_value":
+        {
+            "values": [0.2, 0.25, 0.35, 0.4, 0.5]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_auto_cast_radius_value",
+        "action_value":
+        {
+            "values": [10000.0, 10000.0, 10000.0, 10000.0, 10000.0]
+		}
+    },
+	{
+        "action_value_id": "phasic_breach_auto_cast_target_count_value",
+        "action_value":
+        {
+            "values": [15.0, 15.0, 15.0, 15.0, 15.0]
+		}
+    }],
+	"buff_unit_modifiers": [
+	{
+        "buff_unit_modifier_id": "phasic_breach_antimatter_regen_debuff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "antimatter_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "phasic_breach_antimatter_regen_debuff_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "phasic_breach_ability_cooldown_debuff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "ability_cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "phasic_breach_ability_cooldown_debuff_scalar_value"
+        }
+    }],
+	"buff_weapon_modifiers": [
+	{
+        "buff_weapon_modifier_id": "phasic_breach_weapon_cooldown_debuff_scalar_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "phasic_breach_weapon_cooldown_debuff_scalar_value"
+        }
+    }]
+}

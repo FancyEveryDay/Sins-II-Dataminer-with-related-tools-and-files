@@ -1,0 +1,130 @@
+{
+    "version": 0,
+	"active_duration": "infusion_strike_duration_value",
+    "make_dead_on_current_spawner_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_siege_capital_ship_infusion_strike_duration"
+                }
+            }]
+        }
+    },
+	{
+        "trigger_event_type": "on_current_spawner_augment_pending_damage_as_source",
+        "action_group":
+        {
+            "constraint":
+            {
+				"constraint_type": "damage_has_damage_source",
+				"damage_source": "weapon"
+            },
+            "actions": [
+            {
+				"constraint":
+				{					
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "trigger_event_source"
+					},
+					"unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.9
+                    }
+				},
+				"action_type": "augment_damage",
+				"bonus_damage_value": "infustion_strike_high_corruption_bonus_damage_value"
+            },
+			{
+				"constraint":
+				{
+					"constraint_type": "composite_and",
+					"constraints": [
+					{
+						"constraint_type": "composite_not",
+						"constraint": {
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "trigger_event_source"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_corruption_at_or_above_threshold",
+								"threshold": 0.9
+							}
+						}
+					},
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "trigger_event_source"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_corruption_at_or_above_threshold",
+							"threshold": 0.5
+						}
+					}]				
+				},
+				"action_type": "augment_damage",
+				"bonus_damage_value": "infustion_strike_medium_corruption_bonus_damage_value"
+            },
+			{
+				"constraint":
+				{
+					"constraint_type": "composite_and",
+					"constraints": [
+					{
+						"constraint_type": "composite_not",
+						"constraint": {
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "trigger_event_source"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_corruption_at_or_above_threshold",
+								"threshold": 0.5
+							}
+						}
+					},
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "trigger_event_source"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_corruption_at_or_above_threshold",
+							"threshold": 0.1
+						}
+					}]					
+				},
+				"action_type": "augment_damage",
+				"bonus_damage_value": "infustion_strike_low_corruption_bonus_damage_value"
+            }]
+        }
+    }]
+}

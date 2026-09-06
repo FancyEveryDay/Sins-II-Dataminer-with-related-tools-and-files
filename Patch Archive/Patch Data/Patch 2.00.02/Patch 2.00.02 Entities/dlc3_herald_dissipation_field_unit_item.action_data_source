@@ -1,0 +1,60 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "dissipation_field_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_purge_corruption",
+                "minimum_purge_amount": 0.0
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "dissipation_field_remove_value",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [0.01]
+        }
+    },
+    {
+        "action_value_id": "dissipation_field_cooldown_time_value",
+        "action_value":
+        {
+            "values": [200.0]
+        }
+    },
+    {
+        "action_value_id": "dissipation_field_duration_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+    {
+        "action_value_id": "dissipation_field_radius_value",
+        "action_value":
+        {
+            "values": [10000.0]
+        }
+    }]
+}

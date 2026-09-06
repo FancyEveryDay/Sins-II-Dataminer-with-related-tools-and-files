@@ -1,0 +1,110 @@
+{
+    "version": 0,
+	"make_dead_on_parent_buff_made_dead": true,
+	"make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "consumption_matrix_radius"
+    },
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {            
+			"actions": [
+			{
+				"constraint":
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "consumption_matrix_target_corruption_current",
+					"comparison_type": "equal_to",
+					"value_b": "fixed_zero"
+				},
+				"action_type": "make_buff_dead"
+			},
+			{                
+                "constraint":
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "consumption_matrix_target_corruption_current",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+				},
+				"action_type": "change_buff_memory_float_value",
+                "float_variable": "corruption_consumed",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "consumption_matrix_target_corruption_current"
+                },
+                {
+                    "operator_type": "min",
+                    "operand_value": "consumption_matrix_max_corruption_consumption_per_tick"
+                }]
+            },
+			{
+                "constraint":
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "consumption_matrix_target_corruption_current",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "consumption_matrix_max_corruption_consumption_per_tick",
+                    "actual_removed_corruption_float_variable": "corruption_consumed"
+                }]
+            },
+			{
+                "constraint":
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "consumption_matrix_target_corruption_current",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_and_shields_only",
+                    "repair_value": "consumption_matrix_repair_amount"
+                }]
+            }]
+        }
+    }],
+	"gui":
+    {
+        "hud_icon": "dlc3_herald_starbase_consumption_matrix_unit_item_hud_icon",
+        "name": "dlc3_herald_starbase_consumption_matrix_unit_item_name",
+		"visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+			"lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_consumed",
+                "value_id": "consumption_matrix_max_corruption_consumption_per_tick",
+				"value_color": "negative",
+				"value_suffix": "per_second"
+            }]
+        }]
+    }
+}

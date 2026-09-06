@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "active_duration": "cloaking_weapon_damage_boost_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": false,
+    "weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "cloaking_weapon_damage_boost_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_decloak_ability_hud_icon",
+        "name": "tooltip.ability.cloak_damage_bonus",
+        "visibility_scope": "positive",
+        "is_visible_within_unit_tooltip": true,
+		"tooltip_line_groups": [
+		{
+			"lines": [
+            {
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "cloaking_weapon_damage_boost_modifier"
+            }]
+		}]
+    }
+}

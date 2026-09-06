@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_policy",
+    "field_coord": [9, 1],
+    "research_time": 600.0,
+    "price":
+    {
+        "credits": 2250.0,
+        "metal": 425.0,
+        "crystal": 750.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "planet_corruption_debuff_strength",
+        "value_behavior": "scalar",
+        "value": -0.5
+    },
+    {
+        "modifier_type": "ignore_shroud_limit",
+        "value_behavior": "additive",
+        "value": 4.0
+    }],
+    "name": "dlc3_trader_shroud_mitigation_research_subject_name",
+    "name_uppercase": "dlc3_trader_shroud_mitigation_research_subject_name_uppercase",
+    "description": "dlc3_trader_shroud_mitigation_research_subject_description",
+    "hud_icon": "dlc3_trader_shroud_mitigation_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_trader_shroud_mitigation_research_subject_tooltip_picture"
+}

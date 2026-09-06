@@ -1,0 +1,631 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "starbase"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 173021.083081,
+        "min_camera_distance": 4959.36369,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_starbase_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_starbase_main_view_icon",
+            "hud_picture": "dlc3_herald_starbase_hud_picture",
+            "tooltip_picture": "dlc3_herald_starbase_tooltip_picture",
+            "name": "dlc3_herald_starbase_name",
+            "description": ""
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_starbase",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "beamturret_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "trader_starbase_beamturret_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "beamturret_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "trader_starbase_beamturret_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_armor_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_armor_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_armor_1",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_armor_1",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_crown",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_crown",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_crown_cap",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_crown_cap",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_hangar",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_hangar",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_inhibitor",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_inhibitor",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_missile",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_missile",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_shield",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_shield",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_starbase_component_stablizer",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_component_stablizer",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_2_heavy_starbase_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_2_heavy_starbase_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_2_heavy_starbase_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_2_heavy_starbase_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_2_medium_starbase_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_phase_dart_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_2_medium_starbase_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_starbase_phase_dart_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_4_heavy_starbase_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_4_heavy_starbase_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_4_heavy_starbase_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_4_heavy_starbase_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_starbase_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_starbase_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_starbase_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_starbase_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_8_heavy_starbase_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_8_heavy_starbase_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_8_heavy_starbase_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_8_heavy_starbase_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "starbase",
+            "icon": "dlc3_herald_starbase_main_view_icon",
+            "selected_icon": "dlc3_herald_starbase_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_starbase_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 72,
+                "damage_effects": [
+                {
+                    "max_count": 8,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.33,
+                    "particle_effect": "dlc3_herald_damage_stage3"
+                },
+                {
+                    "max_count": 24,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "dlc3_herald_damage_stage3"
+                },
+                {
+                    "max_count": 12,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.55,
+                    "particle_effect": "dlc3_herald_damage_stage2"
+                },
+                {
+                    "max_count": 8,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.67,
+                    "particle_effect": "dlc3_herald_damage_stage2"
+                },
+                {
+                    "max_count": 20,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.8,
+                    "particle_effect": "dlc3_herald_damage_stage1"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "above",
+                "particle_effect": "dlc3_corruptor_starbase_crown_flair",
+                "constraint": "has_unit_item",
+                "unit_item": "dlc3_herald_starbase_corruption"
+            },
+            {
+                "particle_effect": "dlc3_factory_portal_large_starbase",
+                "constraint": "is_building"
+            }],
+            "shield_effect": "dlc3_herald_starbase",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "dlc3_herald_starbase_beam_weapon_beam",
+                "alias_binding":
+                {
+                    "beam": "dlc3_heavy_beam_previs_beam",
+                    "sounds": [
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_0",
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_1",
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_2"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_beam_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_impact",
+                    "sounds": [
+                        "weapon_impact_energy_heavy_hithull",
+                        "weapon_impact_energy_heavy_hithull_01",
+                        "weapon_impact_energy_heavy_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_beam_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_impact",
+                    "sounds": [
+                        "weapon_impact_generic_heavy_hitshields",
+                        "weapon_impact_generic_heavy_hitshields_01",
+                        "weapon_impact_generic_heavy_hitshields_02",
+                        "weapon_impact_generic_heavy_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_beam_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_muzzle"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_null_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_impact",
+                    "sounds": [
+                        "weapon_impact_energy_medium_hithull",
+                        "weapon_impact_energy_medium_hithull_01",
+                        "weapon_impact_energy_medium_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_null_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_impact",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_null_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_medium_nullcannon",
+                        "weapon_muzzle_dlc3_medium_nullcannon_01",
+                        "weapon_muzzle_dlc3_medium_nullcannon_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_null_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_phase_dart_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_phase_dart_defense_impact",
+                    "sounds": [
+                        "weapon_impact_physical_medium_hithull",
+                        "weapon_impact_physical_medium_hithull_01",
+                        "weapon_impact_physical_medium_hithull_02",
+                        "weapon_impact_physical_medium_hithull_03",
+                        "weapon_impact_physical_medium_hithull_04"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_phase_dart_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_phase_dart_defense_impact",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_phase_dart_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_phase_dart_defense_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_phase_dart",
+                        "weapon_muzzle_dlc3_phase_dart_01",
+                        "weapon_muzzle_dlc3_phase_dart_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_phase_dart_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_phase_dart_defense_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_point_defense_shock_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_energy_pointdefense_hithull",
+                        "weapon_impact_energy_pointdefense_hithull_01",
+                        "weapon_impact_energy_pointdefense_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_point_defense_shock_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_generic_pointdefense_hitshields",
+                        "weapon_impact_generic_pointdefense_hitshields_01",
+                        "weapon_impact_generic_pointdefense_hitshields_02",
+                        "weapon_impact_generic_pointdefense_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_point_defense_shock_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_pd_shockcannon",
+                        "weapon_muzzle_dlc3_pd_shockcannon_01",
+                        "weapon_muzzle_dlc3_pd_shockcannon_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_point_defense_shock_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_shock_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_medium_impact",
+                    "sounds": [
+                        "weapon_impact_energy_medium_hithull",
+                        "weapon_impact_energy_medium_hithull_01",
+                        "weapon_impact_energy_medium_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_shock_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_medium_impact",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_shock_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_medium_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_shockcannon",
+                        "weapon_muzzle_dlc3_shockcannon_01",
+                        "weapon_muzzle_dlc3_shockcannon_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_shock_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_medium_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_starbase_void_missile_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_torpedo_muzzle_medium",
+                    "sounds": [
+                        "weapon_muzzle_tech_medium_missile_capship",
+                        "weapon_muzzle_tech_medium_missile_capship_01",
+                        "weapon_muzzle_tech_medium_missile_capship_02",
+                        "weapon_muzzle_tech_medium_missile_capship_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "trader_support_magnetic_singularity_buff_on_spawner",
+                "alias_binding":
+                {
+                    "particle_effect": "hyperspace_tech_capital_chargeup_interstellar"
+                }
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "spawned":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_spawned_neutral_0"]
+                },
+                "selected":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_selected_neutral_0",
+                        "dlc3_herald_starbase_selected_neutral_1",
+                        "dlc3_herald_starbase_selected_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_selected_scared_0",
+                        "dlc3_herald_starbase_selected_scared_1",
+                        "dlc3_herald_starbase_selected_scared_2"
+                    ]
+                },
+                "order_issued":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_order_issued_neutral_0",
+                        "dlc3_herald_starbase_order_issued_neutral_1",
+                        "dlc3_herald_starbase_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_order_issued_scared_0",
+                        "dlc3_herald_starbase_order_issued_scared_1",
+                        "dlc3_herald_starbase_order_issued_scared_2"
+                    ]
+                },
+                "attack_order_issued":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_attack_order_issued_neutral_0",
+                        "dlc3_herald_starbase_attack_order_issued_neutral_1",
+                        "dlc3_herald_starbase_attack_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_attack_order_issued_scared_0",
+                        "dlc3_herald_starbase_attack_order_issued_scared_1",
+                        "dlc3_herald_starbase_attack_order_issued_scared_2"
+                    ],
+                    "smug": [
+                        "dlc3_herald_starbase_attack_order_issued_smug_0",
+                        "dlc3_herald_starbase_attack_order_issued_smug_1",
+                        "dlc3_herald_starbase_attack_order_issued_smug_2"
+                    ]
+                },
+                "shields_down":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_shields_down_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_shields_down_scared_0"]
+                },
+                "armor_down":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_armor_down_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_armor_down_scared_0"]
+                },
+                "became_crippled":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_became_crippled_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_became_crippled_scared_0"]
+                },
+                "destroyed":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_destroyed_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_destroyed_scared_0"]
+                },
+                "ship_component_finished_building":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_component_finished_building_neutral_0"]
+                },
+                "ability_cooldown_is_not_completed":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_ability_cooldown_is_not_completed_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_ability_cooldown_is_not_completed_scared_0"
+                    ]
+                },
+                "insufficient_antimatter":
+                {
+                    "neutral": [
+                        "dlc3_herald_starbase_insufficient_antimatter_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_starbase_insufficient_antimatter_scared_0"]
+                }
+            }
+        },
+        "death_sequence_group": "dlc3_starbase0"
+    }]
+}

@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "was_invulnerable"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "corrupt_recursion_invulnerable_duration_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "corrupt_recursion_was_invulnerable_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "was_invulnerable",
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "corrupt_recursion_high_corruption_damage_bonus_value",
+        "action_value":
+        {
+            "values": [0.3]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "corrupt_recursion_high_corruption_damage_bonus_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "corrupt_recursion_high_corruption_damage_bonus_value"
+        }
+    }]
+}

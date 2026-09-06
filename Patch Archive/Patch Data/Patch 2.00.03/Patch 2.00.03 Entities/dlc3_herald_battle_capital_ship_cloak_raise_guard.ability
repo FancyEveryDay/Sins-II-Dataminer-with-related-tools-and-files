@@ -1,0 +1,14 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_cloak_raise_guard",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_battle_capital_ship_cloak_raise_guard_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_battle_capital_ship_adaptive_force_field_ability_hud_icon",
+        "tooltip_icon": "trader_battle_capital_ship_adaptive_force_field_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_cloak_ability_name"
+    }
+}

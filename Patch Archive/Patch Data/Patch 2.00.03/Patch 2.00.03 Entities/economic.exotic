@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "tooltip_icon": "economic_exotic_tooltip_icon",
+    "small_icon": "economic_exotic_small_icon",
+    "large_icon": "economic_exotic_large_icon",
+    "picture": "economic_exotic_picture",
+    "name": "exotic.economic.name",
+    "description": "exotic.economic.description",
+    "pip_color": "#FFB801",
+    "insufficient_exotics_player_sound_id": "insufficient_economic_exotics",
+    "ai_trade_value": 1000
+}

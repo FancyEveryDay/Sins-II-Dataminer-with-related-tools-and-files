@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "advent_corruption_benefit_spell_power_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "advent_corruption_benefit_spell_power_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "spell_power",
+            "value_behavior": "additive",
+            "value_id": "advent_corruption_benefit_spell_power_value"
+        }
+    }]
+}

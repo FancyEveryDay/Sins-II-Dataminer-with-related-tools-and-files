@@ -1,0 +1,47 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_persistence",
+    "is_ultimate_ability": true,
+    "level_source": "internal_level",
+    "min_required_unit_levels": [5, 9],
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_battle_capital_ship_persistence_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "persistence_hud_icon",
+        "tooltip_picture": "persistence_tooltip_picture",
+        "name": "dlc3_herald_battle_capital_ship_persistence_ability_name",
+        "description": "dlc3_herald_battle_capital_ship_persistence_ability_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.passive_effect",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "persistence_hull_crippled_percentage_modifier"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.enable_can_use_abilities_when_crippled",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.enable_can_use_weapons_when_crippled",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.effect_on_death",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.phase_echo_duration",
+                "value_id": "persistence_invulnerable_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

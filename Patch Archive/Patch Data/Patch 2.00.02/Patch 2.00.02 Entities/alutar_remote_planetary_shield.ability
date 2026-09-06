@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "action_data_source": "alutar_remote_planetary_shield",
+    "active_actions":
+    {
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "alutar_remote_planetary_shield"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "targeting_ui": "pick_gravity_well",
+        "target_alert": "targeted_by_ability",
+        "target_filters": [
+            "alutar_remote_planetary_shield_target_filter"]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 3,
+    "field": "military_consolidation",
+    "field_coord": [7, 1],
+    "research_time": 260.0,
+    "price":
+    {
+        "credits": 1450.0,
+        "metal": 650.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_starbase"]
+    ],
+    "name": "dlc3_herald_unlock_starbase_consumption_matrix_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_starbase_consumption_matrix_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_starbase_consumption_matrix_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_starbase_consumption_matrix_unit_item_tooltip_picture"
+}

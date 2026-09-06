@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_arc_of_unit",
+                "arc_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "arc_direction":
+                {
+                    "direction_type": "unit_forward",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                },
+                "arc_radius_value": "flechette_blast_arc_radius_value",
+                "arc_angle_value": "flechette_blast_arc_angle_value",
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "flechette_blast_travel_speed_value"
+                },
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "flechette_blast_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "flechette_blast_damage_value",
+                    "penetration_value": "flechette_blast_penetration_value",
+                    "weapon_tags": [
+                        "physical"
+                    ]
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "weapon.0",
+                    "effects":
+                    {
+                        "projectile_travel_effect": "trader_autocannon_defense_flechette_blast_travel",
+                        "hit_hull_effect": "trader_autocannon_defense_flechette_blast_hit",
+                        "hit_shield_effect": "trader_autocannon_defense_flechette_blast_hit",
+                        "hit_shield_impact_radius_t": 1.0,
+                        "muzzle_picking_behavior": "random"
+                    }
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "active_duration": "pillage_lockout_duration",
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "gui":
+    {
+        "hud_icon": "dlc2_trader_rebel_super_modular_overdrive_hud_icon",
+        "name": "pirate_king_capital_ship_pillage_ability_name",
+        "visibility_scope": "negative"
+    }
+}

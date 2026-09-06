@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 83936.929735,
+        "min_camera_distance": 696.077932,
+        "unit_mesh":
+        {
+            "mesh": "debrisphasecapitalshipcolony",
+            "is_shadow_blocker": true
+        }
+    }]
+}

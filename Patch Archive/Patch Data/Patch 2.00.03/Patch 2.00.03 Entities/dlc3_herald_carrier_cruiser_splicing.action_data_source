@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "splicing_corruption_cost",
+        "action_value":
+        {
+            "values": [150.0]
+        }
+    },
+    {
+        "action_value_id": "splicing_cooldown_time",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "splicing_duration",
+        "action_value":
+        {
+            "values": [45.0]
+        }
+    },
+	{
+        "action_value_id": "splicing_strikecraft_construction_speed_scalar_value",
+        "action_value":
+        {
+            "values": [-0.5]
+        }
+    }],
+	"buff_unit_modifiers": [
+	{
+        "buff_unit_modifier_id": "splicing_strikecraft_construction_speed_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "strikecraft_build_time",
+            "value_behavior": "scalar",
+            "value_id": "splicing_strikecraft_construction_speed_scalar_value"
+        }
+    }]
+}

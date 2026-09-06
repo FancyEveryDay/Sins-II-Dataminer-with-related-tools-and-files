@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_arrival",
+    "field_coord": [7, 0],
+    "research_time": 330.0,
+    "price":
+    {
+        "credits": 1800.0,
+        "metal": 850.0,
+        "crystal": 850.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["dlc3_herald_max_supply_3"]
+    ],
+    "name": "dlc3_herald_max_supply_4_research_subject_name",
+    "name_uppercase": "dlc3_herald_max_supply_4_research_subject_name_uppercase",
+    "description": "dlc3_herald_max_supply_4_research_subject_description",
+    "hud_icon": "dlc3_herald_max_supply_4_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_max_supply_4_research_subject_tooltip_picture"
+}

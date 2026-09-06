@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["vasari_unlock_missile_defense_disruptor_nanites_ability"]
+        ]
+    ],
+    "action_data_source": "vasari_missile_defense_disruptor_nanites",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_missile_defense_disruptor_nanites_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_missile_defense_disruptor_nanites_hud_icon",
+        "tooltip_picture": "vasari_missile_defense_disruptor_nanites_tooltip_picture",
+        "name": "vasari_missile_defense_disruptor_nanites_ability_name",
+        "description": "vasari_missile_defense_disruptor_nanites_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "disruptor_nanites_duration_value",
+                "value_suffix": "seconds"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_shields",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_armor",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_hull",
+                "value_color": "negative"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_antimatter",
+                "value_color": "negative"
+            }]
+        }]
+    }
+}

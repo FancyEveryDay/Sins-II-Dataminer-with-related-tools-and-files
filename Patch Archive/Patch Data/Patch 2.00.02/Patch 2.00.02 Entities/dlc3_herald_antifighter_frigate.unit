@@ -1,0 +1,294 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 44.423168,
+        "box":
+        {
+            "center": [2e-06, 0.0, -2e-06],
+            "extents": [27.187323, 11.874136, 36.496704]
+        },
+        "collision_rank": 1
+    },
+    "physics":
+    {
+        "can_move_linear": true,
+        "max_linear_speed": 800.0,
+        "time_to_max_linear_speed": 5.0,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [0.75, 1.25],
+        "can_move_angular": true,
+        "max_angular_speed": 20.0,
+        "time_to_max_angular_speed": 2.0,
+        "max_bank_angle": 35.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 200.0,
+        "time_to_strafe_max_linear_speed": 10.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 10.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace":
+    {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move":
+    {
+        "follow_distance": 180.240097
+    },
+    "attack":
+    {
+        "attack_pattern":
+        {
+            "type": "stop_and_fire"
+        }
+    },
+    "ai":
+    {
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft"
+        ],
+        "auto_follow_target_priority": 4.0,
+        "pursuit":
+        {
+            "min_target_speed": 100.0,
+            "min_distance_to_target": 4500.0
+        },
+        "attack_target_type_range_scalar": 2.0
+    },
+    "ai_attack_target":
+    {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "flak"
+    },
+    "player_ai":
+    {
+        "max_empire_owned_count_percentage": 0.2,
+        "max_count_to_fleet_supply_ratio": 40,
+        "attack_ship_weight_scalar": 0.25
+    },
+    "user_interface":
+    {
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons":
+    {
+        "weapons": [
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_0",
+            "weapon_position": [-0.002219, 4.952206, 1.702535],
+            "forward": [-0.0, -0.305909, 0.952061],
+            "up": [0.0, 0.952061, 0.305909],
+            "yaw_arc":
+            {
+                "min_angle": -100.0,
+                "max_angle": 100.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": -5.0
+            }
+        },
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_1",
+            "weapon_position": [23.948099, 8.667151, -34.645527],
+            "forward": [0.324137, -0.076636, -0.942901],
+            "up": [0.622034, 0.768214, 0.151396],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": 5.0
+            }
+        },
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_2",
+            "weapon_position": [-23.933029, 8.667151, -34.645531],
+            "forward": [-0.324135, -0.076636, -0.942901],
+            "up": [-0.622035, 0.768214, 0.151395],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": 5.0
+            }
+        },
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_3",
+            "weapon_position": [-0.002219, 2.434515, -31.466595],
+            "forward": [0.0, 0.466585, -0.884476],
+            "up": [-0.0, -0.884476, -0.466585],
+            "yaw_arc":
+            {
+                "min_angle": -100.0,
+                "max_angle": 100.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": 0.0
+            }
+        },
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_4",
+            "weapon_position": [17.41885, -11.47898, 34.143211],
+            "forward": [0.212155, 0.027094, 0.97686],
+            "up": [0.0, -0.999616, 0.027725],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": 5.0
+            }
+        },
+        {
+            "weapon": "dlc3_herald_antifighter_frigate_point_defense_shock_cannon",
+            "mesh_point": "child.dlc3_herald_type_5_pd_mount_5",
+            "weapon_position": [-17.41885, -11.47898, 34.504711],
+            "forward": [-0.212155, 0.027094, 0.97686],
+            "up": [-0.0, -0.999616, 0.027725],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -70.0,
+                "max_angle": 5.0
+            }
+        }],
+        "max_range_weapon_index": 0
+    },
+    "formation":
+    {
+        "leader_priority": 1,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 2,
+                "group": 0
+            }
+        }
+    },
+    "spawn_debris":
+    {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts":
+        {
+            "small_debris": [3, 4]
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.8,
+        "durability": 200.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+        {
+            "max_hull_points": 300.0,
+            "hull_point_restore_rate": 1.5,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "max_armor_points": 550.0,
+            "armor_point_restore_rate": 2.25,
+            "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "armor_strength": 60.0,
+            "max_shield_points": 900.0,
+            "shield_point_restore_rate": 3.0,
+            "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+            "shield_burst_restore":
+            {
+                "cooldown_duration": 30.0,
+                "restore_percentage": 0.5
+            },
+            "experience_given_on_death": 32.0
+        }]
+    },
+    "corruption":
+    {
+        "max_corruption": 500.0,
+        "corruption_decay_rate": 10.0,
+        "corruption_decay_delay_duration_after_gain": 60.0,
+        "corruption_thresholds": [0.1, 0.5, 0.9],
+        "positive_corruption_buffs": [
+            "dlc3_herald_ship_corruption_benefit_mild",
+            "dlc3_herald_ship_corruption_benefit_moderate",
+            "dlc3_herald_ship_corruption_benefit_extreme"
+        ]
+    },
+    "build":
+    {
+        "build_time": 27.0,
+        "build_point_offset": [0.0, 0.0, 37.83548],
+        "price":
+        {
+            "credits": 300.0,
+            "metal": 50.0,
+            "crystal": 40.0
+        },
+        "prerequisites": [
+            ["dlc3_herald_unlock_antifighter_frigate"]
+        ],
+        "build_kind": "frigate",
+        "supply_cost": 5,
+        "build_group_id": "frigate"
+    },
+    "target_filter_unit_type": "frigate",
+    "tags": [
+        "frigate"
+    ],
+	"abilities": [
+    {
+        "abilities": [
+            "dlc3_herald_ability_defiance"]
+    }],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+    {
+        "skins": [
+            "dlc3_herald_antifighter_frigate"]
+    }],
+    "action_effect_size": "small_unit",
+    "can_join_fleet": true
+}

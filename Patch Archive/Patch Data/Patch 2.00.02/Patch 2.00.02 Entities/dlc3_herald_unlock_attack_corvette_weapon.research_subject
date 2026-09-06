@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_arrival",
+    "field_coord": [3, 5],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_attack_corvette"]
+    ],
+    "name": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_name_uppercase",
+    "description": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_description",
+    "hud_icon": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_tooltip_picture"
+}

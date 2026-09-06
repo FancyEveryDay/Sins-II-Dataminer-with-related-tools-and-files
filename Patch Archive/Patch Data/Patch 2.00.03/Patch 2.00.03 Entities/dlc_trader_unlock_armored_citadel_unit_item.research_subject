@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_engineering",
+    "field_coord": [5, 4],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["trader_max_hull_points_1"]
+    ],
+    "name": "dlc_trader_unlock_armored_citadel_unit_item_research_subject_name",
+    "name_uppercase": "dlc_trader_unlock_armored_citadel_unit_item_research_subject_name_uppercase",
+    "hud_icon": "pranast_armored_citadel_hud_icon",
+    "extra_text_filter_strings": [
+        "research_text_filter_defense"]
+}

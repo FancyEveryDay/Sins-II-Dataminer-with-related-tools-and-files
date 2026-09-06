@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "antimatter_restored",
+        "action_value":
+        {
+            "values": [200.0]
+        }
+    },
+    {
+        "action_value_id": "cooldown_time",
+        "action_value":
+        {
+            "values": [180.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "antimatter_engine_activate",
+        "alias_binding":
+        {
+            "particle_effect": "antimatter_engine"
+        }
+    }]
+}

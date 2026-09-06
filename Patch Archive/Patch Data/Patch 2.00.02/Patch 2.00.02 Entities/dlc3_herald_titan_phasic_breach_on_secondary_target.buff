@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "active_duration": "phasic_breach_excursion_beam_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "phasic_breach_stacking_limit",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "per_source_ability",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+	{
+		"execution_interval_value": "fixed_one",
+		"execution_interval_count_value": "phasic_breach_excursion_duration",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "source_unit":
+                {
+                    "unit_type": "first_spawner"
+                },
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "phasic_breach_secondary_damage_amount",
+                    "penetration_value": "phasic_breach_primary_damage_pierce"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "source_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effects":
+                    {
+						"beam_effect": "dlc3_herald_titan_phasic_breach_excursion_beam",
+                        "hit_hull_effect": "dlc3_herald_titan_phasic_breach_excursion_hit_hull",
+                        "hit_shield_effect": "dlc3_herald_titan_phasic_breach_excursion_hit_shield"
+                    },
+                    "beam_duration": "phasic_breach_excursion_beam_duration"
+                }]
+            }]
+        }
+    }]
+}

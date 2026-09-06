@@ -1,0 +1,41 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_siege_capital_ship_bane",
+	"is_ultimate_ability": true,
+    "level_source": "internal_level",
+    "min_required_unit_levels": [5, 9],
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_siege_capital_ship_bane_on_self"
+    },    
+    "gui":
+    {
+        "hud_icon": "bane_hud_icon",
+        "tooltip_picture": "bane_tooltip_picture",
+        "name": "dlc3_herald_siege_capital_ship_bane_ability_name",
+        "description": "dlc3_herald_siege_capital_ship_bane_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "bane_aoe_radius"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.weapon_cooldown_percentage_per_corruption_value",
+                "value_id": "bane_weapon_cooldown_debuff_tooltip_scalar_value",
+				"value_color": "negative",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.weapon_tracking_percentage_per_corruption_value",
+                "value_id": "bane_weapon_tracking_tooltip_debuff_scalar_value",
+				"value_color": "negative",
+				"value_float_format": "percentage_two_decimal_place_with_sign"
+            }]
+        }]
+    }
+}

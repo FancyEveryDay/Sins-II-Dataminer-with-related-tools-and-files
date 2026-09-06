@@ -1,0 +1,73 @@
+{
+    "version": 0,
+    "action_data_source": "trader_colony_capital_ship_armistice",
+    "is_ultimate_ability": true,
+    "level_source": "internal_level",
+    "min_required_unit_levels": [5],
+    "active_actions":
+    {
+        "cooldown_time": "armistice_cooldown_time_value",
+        "antimatter_cost": "armistice_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_colony_capital_ship_armistice_on_spawner"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "has_missing_hull",
+                    "percentage_missing_threshold": 0.75
+                }
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_colony_capital_ship_armistice_ability_hud_icon",
+        "name": "trader_colony_capital_ship_armistice_ability_name",
+        "description": "trader_colony_capital_ship_armistice_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "armistice_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "armistice_radius_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "armistice_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

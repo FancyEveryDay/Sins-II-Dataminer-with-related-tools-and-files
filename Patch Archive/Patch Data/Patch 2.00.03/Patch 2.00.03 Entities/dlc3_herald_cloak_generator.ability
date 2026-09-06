@@ -1,0 +1,66 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_cloak",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "execute_time": 0.0,
+        "stop_time": 0.0,
+        "cooldown_time": "cooldown_time_value",
+        "cooldown_reset_type": "on_start_use_ability",
+        "stop_use_type": "on_stop_time_elapsed",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_cloak"
+                }]
+            }]
+        },
+        "ai_only_auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "is_cloaked"
+                        }
+                    }
+                },
+                {
+                    "constraint_type": "has_enemy_units_in_gravity_well",
+                    "gravity_well_reference_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "dlc3_herald_cloak_auto_cast_enemy_target_filter"
+                }]
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_battle_capital_ship_adaptive_force_field_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_cloak_ability_name"
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "target_filters": [
+    {
+        "target_filter_id": "madness_shroud_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_berserk_vulnerable"
+            },
+            {
+                "constraint_type": "has_corruption_at_or_above_threshold",
+                "threshold": 0.5
+            }]
+        }
+    },
+    {
+        "target_filter_id": "madness_shroud_auto_cast_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_berserk_vulnerable"
+            },
+            {
+                "constraint_type": "has_corruption_at_or_above_threshold",
+                "threshold": 0.5
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "madness_shroud_auto_cast_target_count_value",
+        "action_value":
+        {
+            "values": [25.0, 25.0]
+        }
+    },
+    {
+        "action_value_id": "madness_shroud_cooldown_time_value",
+        "action_value":
+        {
+            "values": [300.0, 300.0]
+        }
+    },
+    {
+        "action_value_id": "madness_shroud_duration_value",
+        "action_value":
+        {
+            "values": [40.0, 40.0]
+        }
+    },
+    {
+        "action_value_id": "madness_shroud_berserk_value",
+        "action_value":
+        {
+            "values": [1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "madness_shroud_radius_value",
+        "action_value":
+        {
+            "values": [10000.0, 15000.0]
+        }
+    },
+	{
+        "action_value_id": "madness_shroud_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "madness_shroud_berserk_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "berserk",
+            "value_behavior": "additive",
+            "value_id": "madness_shroud_berserk_value"
+        }
+    }]
+}

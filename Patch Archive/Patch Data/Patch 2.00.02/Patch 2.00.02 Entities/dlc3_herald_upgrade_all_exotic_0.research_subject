@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_exploitation",
+    "field_coord": [5, 2],
+    "research_time": 175.0,
+    "price":
+    {
+        "credits": 1050.0,
+        "metal": 400.0,
+        "crystal": 400.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_exotic_factory_structure"]
+    ],
+    "exotic_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.1,
+        "exotic_types": [
+            "defense",
+            "economic",
+            "offense",
+            "utility"]
+    }],
+    "name": "dlc3_herald_upgrade_all_exotic_0_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_all_exotic_0_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_all_exotic_0_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_all_exotic_0_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_all_exotic_0_research_subject_tooltip_picture"
+}

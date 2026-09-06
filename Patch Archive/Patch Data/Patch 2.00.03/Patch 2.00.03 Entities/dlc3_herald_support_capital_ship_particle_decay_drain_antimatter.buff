@@ -1,0 +1,71 @@
+{
+    "version": 0,
+	"make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+				"action_type": "use_unit_operators_on_single_unit",
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_antimatter",
+                    "antimatter_remove_value": "particle_decay_high_corruption_antimatter_drain_value"
+                }]
+            }]
+        }
+    }],
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+			{
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_small",
+                        "medium_unit": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_medium",
+                        "large_unit": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "particle_decay_hud_icon",
+        "name": "dlc3_herald_support_capital_ship_particle_decay_ability_name",
+        "visibility_scope": "negative",
+		"tooltip_line_groups": [
+		{
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.antimatter_removed",
+                "value_id": "particle_decay_high_corruption_antimatter_drain_value",
+				"value_color": "negative",
+				"value_float_format": "two_decimal_place",
+				"value_suffix": "per_second"
+            }]
+		}]
+    }
+}

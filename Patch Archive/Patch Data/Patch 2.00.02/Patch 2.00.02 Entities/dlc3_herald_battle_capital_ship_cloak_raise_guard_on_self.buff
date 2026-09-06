@@ -1,0 +1,63 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "is_using_ability",
+                        "ability": "dlc3_herald_battle_capital_ship_cloak"
+                    }
+                },
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "is_channeling_ability",
+                            "ability": "dlc3_herald_battle_capital_ship_cloak"
+                        }
+                    }
+                }]
+            },
+            "actions": [
+            {
+                "action_type": "stop_ability",
+                "ability":
+                {
+                    "ability_type": "ability_at_index",
+                    "ability_index": 0,
+                    "unit_with_abilities":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                }
+            }]
+        }
+    }]
+}

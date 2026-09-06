@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_tooltip_picture",
+    "name": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_name",
+    "description": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_description",
+    "build_time": 120.0,
+    "price":
+    {},
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 3
+    },
+    {
+        "exotic_type": "ultimate",
+        "count": 1
+    }],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        ["dlc3_herald_unlock_starbase_phase_jump_inhibitor_item"]
+    ],
+    "build_group_id": "utility"
+}

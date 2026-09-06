@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+    {
+        "action_value_id": "null_weapons_corruption_conversion_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.1, 0.2, 0.35]
+        }
+    }]
+}

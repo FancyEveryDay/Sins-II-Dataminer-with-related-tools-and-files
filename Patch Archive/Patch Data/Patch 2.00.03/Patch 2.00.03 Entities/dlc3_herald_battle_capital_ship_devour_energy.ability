@@ -1,0 +1,103 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_devour_energy",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "devour_energy_cooldown_time_value",
+        "antimatter_cost": "devour_energy_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_battle_capital_ship_devour_energy_activate"
+                    }
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_devour_energy_on_self"
+                },
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "devour_energy_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "devour_energy_target_filter"
+        ],
+        "range": "devour_energy_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 180.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "devour_energy_auto_cast_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_devour_energy_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_battle_capital_ship_devour_energy_ability_tooltip_picture",
+        "name": "dlc3_herald_battle_capital_ship_devour_energy_ability_name",
+        "description": "dlc3_herald_battle_capital_ship_devour_energy_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "devour_energy_range_value",
+                "radius": "devour_energy_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.shield_points_restored_per_damage",
+                "value_id": "devour_energy_shield_restore_value",
+                "value_float_format": "percentage",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.max_targets",
+                "value_id": "devour_energy_max_target_count_display_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "devour_energy_radius_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "devour_energy_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

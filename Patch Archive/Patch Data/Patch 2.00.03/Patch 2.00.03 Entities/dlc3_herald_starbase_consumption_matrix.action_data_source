@@ -1,0 +1,128 @@
+{
+    "version": 0,
+	"target_filters": [
+	{
+        "target_filter_id": "consumption_matrix_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy",
+				"friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+			{
+                "constraint_type": "not_self"
+            }]
+        }
+    }],
+	"per_buff_memory_declaration":
+	{
+        "float_variable_ids": [
+            "corruption_consumed",
+			"total_corruption_consumed_potential"]
+    },
+    "action_values": [
+	{
+        "action_value_id": "consumption_matrix_cooldown_time",
+        "action_value":
+        {
+            "values": [90.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_radius",
+        "action_value":
+        {
+            "values": [10000.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_execution_count",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_autocast_min_target_count",
+        "action_value":
+        {
+            "values": [3.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_max_corruption_consumption_per_tick",
+        "action_value":
+        {
+            "values": [2.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_target_corruption_current",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_repair_amount",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+			"values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_target_count",
+        "action_value":
+        {
+            "transform_type": "active_child_buff_count",
+			"values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "consumption_matrix_current_potential",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "total_corruption_consumed_potential",
+			"values": [2.0]
+        }
+    }],
+	"effect_alias_bindings": [
+    {
+        "alias_name": "dlc3_herald_starbase_consumption_matrix_activation",
+        "alias_binding":
+        {
+            "particle_effect": "final_judgement_activation_effect",
+            "sounds": [
+                "vasari_rebel_titan_dissever_activate"]
+        }
+    },
+	{
+        "alias_name": "dlc3_herald_starbase_consumption_matrix__duration",
+        "alias_binding":
+        {
+            "particle_effect": "final_judgement_meteors_on_target_large"
+        }
+    }]
+}

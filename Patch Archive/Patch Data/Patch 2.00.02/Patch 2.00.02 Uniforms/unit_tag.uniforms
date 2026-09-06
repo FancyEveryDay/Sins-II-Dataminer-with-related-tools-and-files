@@ -1,0 +1,75 @@
+{
+    "unit_tags": [
+    {
+        "name": "capital_ship",
+        "localized_name": "unit_tag_name.capital_ship"
+    },
+    {
+        "name": "frigate",
+        "localized_name": "unit_tag_name.frigate"
+    },
+    {
+        "name": "cruiser",
+        "localized_name": "unit_tag_name.cruiser"
+    },
+    {
+        "name": "strikecraft",
+        "localized_name": "unit_tag_name.strikecraft"
+    },
+    {
+        "name": "structure",
+        "localized_name": "unit_tag_name.structure"
+    },
+    {
+        "name": "titan",
+        "localized_name": "unit_tag_name.titan"
+    },
+    {
+        "name": "starbase",
+        "localized_name": "unit_tag_name.starbase"
+    },
+    {
+        "name": "corvette",
+        "localized_name": "unit_tag_name.corvette"
+    },
+    {
+        "name": "dlc_ancient_starbase",
+        "localized_name": "unit_tag_name.dlc_ancient_starbase"
+    },
+    {
+        "name": "superweapon",
+        "localized_name": "unit_tag_name.superweapon"
+    },
+    {
+        "name": "super_capital_ship",
+        "localized_name": "unit_tag_name.super_capital_ship"
+    },
+    {
+        "name": "torpedo",
+        "localized_name": "unit_tag_name.torpedo"
+    },
+    {
+        "name": "dlc3_herald_cloak_loadout_host",
+        "localized_name": "unit_tag_name.dlc3_herald_cloak_loadout_host"
+    },
+    {
+        "name": "dlc3_herald_cloak_detector_loadout_host",
+        "localized_name": "unit_tag_name.dlc3_herald_cloak_detector_loadout_host"
+    }],
+    "item_access_tags": [
+        "trader_loyalist_titan",
+        "trader_loyalist_super_capital_ship",
+        "trader_rebel_titan",
+        "trader_rebel_super_capital_ship",
+        "vasari_loyalist_titan",
+        "vasari_loyalist_super_capital_ship",
+        "vasari_rebel_titan",
+        "vasari_rebel_super_capital_ship",
+        "advent_loyalist_titan",
+        "advent_loyalist_super_capital_ship",
+        "advent_rebel_titan",
+        "advent_rebel_super_capital_ship",
+        "dlc3_herald_titan",
+        "dlc3_herald_super_capital_ship"
+    ]
+}

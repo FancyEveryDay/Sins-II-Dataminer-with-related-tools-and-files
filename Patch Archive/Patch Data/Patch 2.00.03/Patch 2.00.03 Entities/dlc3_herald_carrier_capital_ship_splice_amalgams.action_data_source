@@ -1,0 +1,90 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "splice_amalgams_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_missing_strikecraft",
+                    "amount_missing_threshold": 5
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_carrier_capital_ship_splice_amalgams",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "splice_amalgams_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "splice_amalgams_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [25.0, 30.0, 35.0, 40.0, 50.0]
+        }
+    },
+    {
+        "action_value_id": "splice_amalgams_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "splice_amalgams_cooldown_time_value",
+        "action_value":
+        {
+            "values": [25.0, 22.0, 19.0, 16.0, 10.0]
+        }
+    },
+    {
+        "action_value_id": "splice_amalgams_range_value",
+        "action_value":
+        {
+            "values": [9000.0, 9000.0, 9000.0, 9000.0, 9000.0]
+        }
+    },
+    {
+        "action_value_id": "splice_amalgams_build_strikecraft_count",
+        "action_value":
+        {
+            "values": [3.0, 4.0, 5.0, 6.0, 8.0]
+        }
+    }]
+}

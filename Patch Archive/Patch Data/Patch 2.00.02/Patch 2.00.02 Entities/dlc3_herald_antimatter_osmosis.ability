@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_antimatter_osmosis",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_antimatter_osmosis_on_self"
+    },
+	"gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "antimatter_osmosis_radius"
+            }
+        },
+		"tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "antimatter_osmosis_radius"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.remaining_antimatter_harvested",
+                "value_id": "antimatter_osmosis_antimatter_harvested",
+				"value_float_format": "percentage_one_decimal_place",
+				"value_color": "positive"
+            }]
+        }]
+    }
+}

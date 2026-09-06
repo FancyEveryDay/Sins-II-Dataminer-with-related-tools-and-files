@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 703.818359,
+        "box":
+        {
+            "center": [58.189789, -24.755005, -35.974548],
+            "extents": [506.164459, 380.543823, 640.878174]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true,
+        "has_sub_selection_grouping": true
+    },
+    "asteroid":
+    {
+        "asset_type": "metal",
+        "extraction_rate_scalar": 1.0,
+        "placement_radius": 1037.057251,
+        "attached_structure_offset": [-23.614113, 365.065552, -13.708919]
+    },
+    "target_filter_unit_type": "asteroid",
+    "skin_groups": [
+    {
+        "skins": [
+            "metal_asteroid"]
+    }],
+    "action_effect_size": "small_unit"
+}

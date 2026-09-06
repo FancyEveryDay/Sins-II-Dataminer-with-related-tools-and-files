@@ -1,0 +1,94 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 6449.93639,
+        "min_camera_distance": 248.439477,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_constructor_ship_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_constructor_ship_main_view_icon",
+            "hud_picture": "dlc3_herald_constructor_ship_hud_picture",
+            "tooltip_picture": "dlc3_herald_constructor_ship_tooltip_picture",
+            "name": "dlc3_herald_constructor_ship_name",
+            "description": "dlc3_herald_constructor_ship_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_constructor_ship",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "ship",
+            "icon": "dlc3_herald_constructor_ship_main_view_icon",
+            "selected_icon": "dlc3_herald_constructor_ship_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_constructor_ship_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "exhaust_effects":
+            {
+                "particle_effects": [
+                {
+                    "particle_effect": "dlc3_small_exhaust_shrink"
+                }]
+            },
+            "damage_effects":
+            {
+                "max_damage_effect_count": 5,
+                "damage_effects": [
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.33,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.55,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.67,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.8,
+                    "particle_effect": "dlc3_herald_damage_stage1_small"
+                }]
+            },
+            "effect_alias_bindings": [
+            {
+                "alias_name": "dlc3_herald_constructor_ship_build_structure_on_self",
+                "alias_binding":
+                {
+                    "particle_effect": "vasari_construction",
+                    "sounds": [
+                        "ability_loop_phase_constructionfrigate"]
+                }
+            }]
+        },
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "ambient_loop_eidolon_frigateengine",
+                "hyperspace_travel": "dlc3_hyperspace_travel"
+            }
+        },
+        "death_sequence_group": "dlc3_frigate0"
+    }]
+}

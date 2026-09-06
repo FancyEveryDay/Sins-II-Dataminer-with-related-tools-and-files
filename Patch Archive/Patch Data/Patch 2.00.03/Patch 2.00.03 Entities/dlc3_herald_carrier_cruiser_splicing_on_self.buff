@@ -1,0 +1,46 @@
+{
+    "version": 0,
+	"active_duration": "splicing_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_carrier_cruiser_splicing_duration"
+                }
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "splicing_strikecraft_construction_speed_scalar_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_carrier_cruiser_splicing_ability_hud_icon",
+        "name": "dlc3_herald_carrier_cruiser_splicing_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "splicing_strikecraft_construction_speed_scalar_modifier"
+            }]
+        }]
+    }
+}

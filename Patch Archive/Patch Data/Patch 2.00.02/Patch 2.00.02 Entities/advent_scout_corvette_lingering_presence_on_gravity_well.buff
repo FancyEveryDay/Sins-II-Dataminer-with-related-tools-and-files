@@ -1,0 +1,7 @@
+{
+    "version": 0,
+    "active_duration": "buff_duration",
+    "stacking_ownership_type": "per_source_ability",
+    "restart_other_stacked_buffs_when_started": true,
+    "provides_detection": true
+}

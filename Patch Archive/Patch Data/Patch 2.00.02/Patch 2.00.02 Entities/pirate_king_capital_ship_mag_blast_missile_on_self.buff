@@ -1,0 +1,99 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_spawned_torpedo",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "has_definition",
+                    "unit_definition": "pirate_large_torpedo_ability"
+                }
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "pirate_king_capital_ship_mag_blast_missile_on_torpedo"
+                }]
+            }]
+        }
+    }],
+    "time_actions": [
+    {
+        "execution_interval_value": "mag_blast_missile_execution_interval_value",
+        "execution_interval_count_value": "mag_blast_missile_torpedo_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_position_operators_on_single_position",
+                "position":
+                {
+                    "position_type": "ability_position",
+                    "ability":
+                    {
+                        "ability_type": "source_ability"
+                    },
+                    "ability_position_picking_type": "next_sequential"
+                },
+                "position_operators": [
+                {
+                    "operator_type": "create_torpedo",
+                    "torpedo_to_create": "pirate_large_torpedo_ability",
+                    "torpedo_forward":
+                    {
+                        "direction_type": "operand_position_forward"
+                    },
+                    "torpedo_source_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "torpedo_enable_steering_distance_as_radius_scalar_value": "mag_blast_missile_torpedo_steering_distance_radius_scalar_value",
+                    "torpedo_target_unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "damage_affect_type": "shields_only",
+                    "damage_value": "mag_blast_missile_damage_value",
+                    "penetration_value": "mag_blast_missile_armor_penetration_value",
+                    "duration_value": "mag_blast_missile_torpedo_lifetime_value"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "pirate_king_capital_ship_mag_blast_missile_muzzle"
+                    },
+                    "effect_destination_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "effect_forward":
+                    {
+                        "direction_type": "operand_position_forward"
+                    }
+                }]
+            }]
+        }
+    }]
+}

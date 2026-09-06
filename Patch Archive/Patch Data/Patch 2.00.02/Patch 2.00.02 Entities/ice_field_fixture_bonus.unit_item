@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "ice_field_fixture_bonus_hud_icon",
+    "tooltip_icon": "ice_field_fixture_bonus_hud_icon",
+	"tooltip_picture": "ice_field_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.ice_field.name",
+    "description": "planet_bonus.ice_field.desc",
+    "ability": "ice_field_fixture_bonus"
+}

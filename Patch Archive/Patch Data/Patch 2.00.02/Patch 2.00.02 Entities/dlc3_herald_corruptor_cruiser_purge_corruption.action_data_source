@@ -1,0 +1,219 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "purged_corruption"]
+    },
+    "target_filters": [
+    {
+        "target_filter_id": "purge_corruption_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_purge_corruption",
+                "minimum_purge_amount": 0.0
+            },
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_corruptor_cruiser_purge_corruption",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "purge_corruption_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_missing_hull",
+                "percentage_missing_threshold": 0.25
+            },
+            {
+                "constraint_type": "can_purge_corruption",
+                "minimum_purge_amount": 500.0
+            },
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_corruptor_cruiser_purge_corruption",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "purge_corruption_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_missing_hull",
+                "percentage_missing_threshold": 0.25
+            },
+            {
+                "constraint_type": "can_purge_corruption",
+                "minimum_purge_amount": 200.0
+            },
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_corruptor_cruiser_purge_corruption",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "purge_corruption_auto_cast_out_of_combat_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_purge_corruption",
+                "minimum_purge_amount": 50.0
+            },
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_corruptor_cruiser_purge_corruption",
+                    "include_pending_buffs": true
+                }
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_recently_fired_weapon"
+                }
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "purge_corruption_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_cooldown_time_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_execution_interval_count_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_repair_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "purged_corruption",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_remove_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+    {
+        "action_value_id": "purge_corruption_range_value",
+        "action_value":
+        {
+            "values": [9000.0]
+        }
+    }]
+}

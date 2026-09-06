@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "impassable_well_fixture_bonus_hud_icon",
+    "tooltip_icon": "impassable_well_fixture_bonus_hud_icon",
+	"tooltip_picture": "impassable_well_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.impassable_well.name",
+    "description": "planet_bonus.impassable_well.desc",
+    "ability": "impassable_well_fixture_bonus"
+}

@@ -1,0 +1,158 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2370.31877,
+        "min_camera_distance": 43.726557,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_bomber_strikecraft_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_bomber_strikecraft_main_view_icon",
+            "hud_picture": "trader_bomber_strikecraft_hud_picture",
+            "tooltip_picture": "dlc3_herald_bomber_strikecraft_tooltip_picture",
+            "name": "dlc3_herald_gunship_strikecraft_name",
+            "description": ""
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_bomber_strikecraft",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "ship",
+            "icon": "dlc3_herald_bomber_strikecraft_main_view_icon",
+            "selected_icon": "dlc3_herald_bomber_strikecraft_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_bomber_strikecraft_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "exhaust_effects":
+            {
+                "particle_effects": [
+                {
+                    "particle_effect": "dlc3_tiny_exhaust_shrink"
+                }],
+                "trail_effects": [
+                {
+                    "trail_effect": "fighterdlc3combat"
+                }]
+            },
+            "effect_alias_bindings": [
+            {
+                "alias_name": "dlc3_herald_bomber_strikecraft_phase_dart_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "light_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_physical_light_hithull",
+                        "weapon_impact_physical_light_hithull_01",
+                        "weapon_impact_physical_light_hithull_02",
+                        "weapon_impact_physical_light_hithull_03",
+                        "weapon_impact_physical_light_hithull_04"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_bomber_strikecraft_phase_dart_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "light_autocannon_impact",
+                    "sounds": [
+                        "weapon_impact_generic_light_hitshields"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_bomber_strikecraft_phase_dart_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_light_autocannon_weapon_muzzle",
+                    "sounds": [
+                        "weapon_techsupportautocannonlight_muzzle",
+                        "weapon_techsupportautocannonlight_muzzle_alt1",
+                        "weapon_techsupportautocannonlight_muzzle_alt2"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_bomber_strikecraft_phase_dart_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_light_autocannon_weapon_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_bomber_strikecraft_void_missile_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "vasari_torpedo_muzzle_small",
+                    "sounds": [
+                        "weapon_muzzle_phase_medium_missile",
+                        "weapon_muzzle_phase_medium_missile_01",
+                        "weapon_muzzle_phase_medium_missile_02",
+                        "weapon_muzzle_phase_medium_missile_03"
+                    ]
+                }
+            }]
+        },
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "ambient_loop_eidolon_strikecraftengine"
+            },
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "trader_bomber_strikecraft_selected_neutral_0",
+                        "trader_bomber_strikecraft_selected_neutral_1",
+                        "trader_bomber_strikecraft_selected_neutral_2"
+                    ],
+                    "scared": [
+                        "trader_bomber_strikecraft_selected_scared_0_placeholder",
+                        "trader_bomber_strikecraft_selected_scared_1_placeholder",
+                        "trader_bomber_strikecraft_selected_scared_2_placeholder"
+                    ]
+                },
+                "order_issued":
+                {
+                    "neutral": [
+                        "trader_bomber_strikecraft_order_issued_neutral_0",
+                        "trader_bomber_strikecraft_order_issued_neutral_1",
+                        "trader_bomber_strikecraft_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "trader_bomber_strikecraft_order_issued_scared_0_placeholder",
+                        "trader_bomber_strikecraft_order_issued_scared_1_placeholder",
+                        "trader_bomber_strikecraft_order_issued_scared_2_placeholder"
+                    ]
+                },
+                "attack_order_issued":
+                {
+                    "neutral": [
+                        "trader_bomber_strikecraft_attack_order_issued_neutral_0",
+                        "trader_bomber_strikecraft_attack_order_issued_neutral_1",
+                        "trader_bomber_strikecraft_attack_order_issued_neutral_2",
+                        "trader_bomber_strikecraft_attack_order_issued_neutral_3"
+                    ],
+                    "scared": [
+                        "trader_bomber_strikecraft_attack_order_issued_scared_0_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_scared_1_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_scared_2_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_scared_3_placeholder"
+                    ],
+                    "smug": [
+                        "trader_bomber_strikecraft_attack_order_issued_smug_0_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_smug_1_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_smug_2_placeholder",
+                        "trader_bomber_strikecraft_attack_order_issued_smug_3_placeholder"
+                    ]
+                }
+            }
+        },
+        "death_sequence_group": "dlc3_strikecraft0"
+    }]
+}

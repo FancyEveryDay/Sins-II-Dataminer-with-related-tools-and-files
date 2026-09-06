@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true
+    },
+    "fleet":
+    {
+        "icons": [
+            "trader_black_fleet_icon",
+            "trader_blue1_fleet_icon",
+            "trader_red1_fleet_icon",
+            "trader_green1_fleet_icon",
+            "trader_bronze_fleet_icon",
+            "trader_gold_fleet_icon",
+            "trader_grey1_fleet_icon",
+            "trader_green3_fleet_icon",
+            "trader_pink1_fleet_icon",
+            "trader_pink2_fleet_icon",
+            "trader_purple_fleet_icon",
+            "trader_green2_fleet_icon",
+            "trader_grey2_fleet_icon",
+            "trader_red2_fleet_icon",
+            "trader_yellow_fleet_icon",
+            "trader_pony_fleet_icon"
+        ]
+    }
+}

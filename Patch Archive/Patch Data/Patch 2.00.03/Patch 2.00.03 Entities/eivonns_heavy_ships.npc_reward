@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "trader_medium_cruiser_hud_icon",
+        "name": "npc_reward.eivonns_heavy_ships.name",
+        "description": "npc_reward.eivonns_heavy_ships.description"
+    },
+    "type": "ability",
+    "ability": "eivonns_heavy_ships"
+}

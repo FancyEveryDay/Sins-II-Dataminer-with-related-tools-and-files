@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_eradication",
+    "field_coord": [7, 4],
+    "research_time": 260.0,
+    "price":
+    {
+        "credits": 1450.0,
+        "metal": 650.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_null_cannon_weapon_damage_2"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "beam"]
+    }],
+    "name": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_tooltip_picture"
+}

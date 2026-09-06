@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_continuance",
+    "field_coord": [4, 7],
+    "research_time": 155.0,
+    "price":
+    {
+        "credits": 1000.0,
+        "metal": 350.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_armor_points_1"]
+    ],
+    "name": "dlc3_herald_unlock_metamorphic_structure_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_metamorphic_structure_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_metamorphic_structure_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_metamorphic_structure_unit_item_tooltip_picture"
+}

@@ -1,0 +1,73 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "active_duration": "persistence_invulnerable_duration_value",
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"unit_mutations": [
+        "invulnerable",
+        "disable_can_have_hull_restored",
+        "disable_can_hyperspace"
+    ],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+			{
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_battle_capital_ship_persistence_invulnerable_buff"
+                }
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "persistence_activation_corruption_gain_value"
+                }]
+            }]
+        }
+    }],  
+	"time_actions": [
+    {
+        "first_action_delay_time_value": "fixed_one",		
+		"execution_interval_value": "fixed_one",
+		"execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+				"buff": "parent_buff",
+                "float_variable": "was_invulnerable",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "fixed_one"
+                }]
+            }]
+        }
+    }],  
+    "gui":
+    {
+        "hud_icon": "persistence_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_persistence_ability_buff_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive"
+    }
+}

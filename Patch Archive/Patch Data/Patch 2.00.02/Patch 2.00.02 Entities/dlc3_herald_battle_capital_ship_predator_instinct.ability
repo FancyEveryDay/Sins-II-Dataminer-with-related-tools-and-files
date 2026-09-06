@@ -1,0 +1,111 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_predator_instinct",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "predator_instinct_cooldown_time_value",
+        "antimatter_cost": "predator_instinct_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_predator_instinct_on_self"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_battle_capital_ship_predator_instinct_buff_start"
+                    }
+                },
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "predator_instinct_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_predator_instinct_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_battle_capital_ship_predator_instinct_ability_tooltip_picture",
+        "name": "dlc3_herald_battle_capital_ship_predator_instinct_ability_name",
+        "description": "dlc3_herald_battle_capital_ship_predator_instinct_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.target_hull_below",
+                "value_id": "predator_instinct_target_hull_below_value",
+                "value_float_format": "percentage"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.or"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.target_corruption_above",
+                "value_id": "predator_instinct_target_corruption_above_value",
+                "value_float_format": "percentage"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "predator_instinct_damage_value",
+                "value_float_format": "percentage_with_sign",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.empowered_bonus",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "predator_instinct_max_linear_speed_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "predator_instinct_max_angular_speed_modifier"
+            }]
+        },
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "predator_instinct_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

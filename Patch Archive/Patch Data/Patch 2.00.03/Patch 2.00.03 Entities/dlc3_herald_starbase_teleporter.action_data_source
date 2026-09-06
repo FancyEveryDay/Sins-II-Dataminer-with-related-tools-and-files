@@ -1,0 +1,95 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "starbase_teleport_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet",
+                "uncolonizable"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "target_gravity_well_has_available_unit_limit"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "starbase_teleport_cooldown_time_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_teleport_damage_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_teleport_radius_value",
+        "action_value":
+        {
+            "values": [4800.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_teleport_range_value",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_teleport_charge_up_duration_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "starbase_teleport_charge_down_duration_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "starbase_teleport_charge_up",
+        "alias_binding":
+        {
+            "particle_effect": "dlc3_herald_starbase_teleport_charge"
+        }
+    },
+    {
+        "alias_name": "starbase_teleport_charge_departure",
+        "alias_binding":
+        {
+            "particle_effect": "dlc3_herald_starbase_teleport"
+        }
+    },
+    {
+        "alias_name": "starbase_teleport_charge_arrival",
+        "alias_binding":
+        {
+            "particle_effect": "dlc3_herald_starbase_teleport_in"
+        }
+    },
+    {
+        "alias_name": "starbase_teleport_charge_charge_down",
+        "alias_binding":
+        {
+            "particle_effect": "dlc3_herald_starbase_teleport_charge"
+        }
+    }]
+}

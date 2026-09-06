@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "action_values": [
+	{
+        "action_value_id": "missile_speed_boost_linear_speed_scalar_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    },
+	{
+        "action_value_id": "missile_speed_boost_linear_accel_scalar_value",
+        "action_value":
+        {
+            "values": [0.35]
+        }
+    },
+	{
+        "action_value_id": "missile_speed_boost_angular_speed_scalar_value",
+        "action_value":
+        {
+            "values": [0.35]
+        }
+    }],
+	"buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "missile_speed_boost_linear_speed_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "missile_speed_boost_linear_speed_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "missile_speed_boost_linear_accel_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_acceleration",
+            "value_behavior": "scalar",
+            "value_id": "missile_speed_boost_linear_accel_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "missile_speed_boost_angular_speed_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_angular_speed",
+            "value_behavior": "scalar",
+            "value_id": "missile_speed_boost_angular_speed_scalar_value"
+        }
+    }]
+}

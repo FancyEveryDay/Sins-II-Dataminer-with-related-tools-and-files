@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "action_values": [
+    {
+        "action_value_id": "spread_corruption_interval_value",
+        "action_value":
+        {
+            "values": [10.0, 10.0, 10.0, 10.0, 10.0]
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_radius_value",
+        "action_value":
+        {
+            "values": [2500000.0, 5000000.0, 7500000.0, 10000000.0, 15000000.0]
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_strength_value",
+        "action_value":
+        {
+            "values": [0.01, 0.015, 0.02, 0.025, 0.03]
+        }
+    }]
+}

@@ -1,0 +1,135 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 26292.236783,
+        "min_camera_distance": 1064.6327,
+        "gui":
+        {
+            "hud_icon": "vasari_repair_platform_structure_hud_icon",
+            "hud_monochrome_icon": "vasari_repair_platform_structure_main_view_icon",
+            "hud_picture": "vasari_repair_platform_structure_hud_picture",
+            "tooltip_picture": "vasari_repair_platform_structure_tooltip_picture",
+            "name": "vasari_repair_platform_structure_name",
+            "description": "vasari_repair_platform_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "vasari_repair_platform_structure",
+            "shader": "ship",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "vasari_repair_platform_structure_main_view_icon",
+            "selected_icon": "vasari_repair_platform_structure_main_view_icon_selected",
+            "sub_selected_icon": "vasari_repair_platform_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 10,
+                "damage_effects": [
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_clouds"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.5,
+                    "particle_effect": "vasari_damage_plasma_sparks"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_1"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "damage_smoke_3"
+                },
+                {
+                    "max_count": 3,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.42,
+                    "particle_effect": "vasari_damage_escaping_gas",
+                    "sound": "ambient_loop_tech_escaping_gas"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity",
+                    "sound": "ambient_loop_electrical_damage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.38,
+                    "particle_effect": "vasari_damage_embers"
+                },
+                {
+                    "max_count": 7,
+                    "weight": 6.0,
+                    "hull_percentage_threshold": 0.35,
+                    "particle_effect": "vasari_damage_fire",
+                    "sound": "ambient_loop_firedamage"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.3,
+                    "particle_effect": "vasari_damage_fire_pillar",
+                    "sound": "ambient_loop_firepillar_damage"
+                }]
+            },
+            "effect_alias_bindings": [
+            {
+                "alias_name": "vasari_repair_platform_structure_repair_activate",
+                "alias_binding":
+                {
+                    "particle_effect": "vasari_repair_platform_nanite_repair_start",
+                    "sounds": [
+                        "ability_loop_phase_nanite_hullrepair"]
+                }
+            }]
+        },
+        "sounds":
+        {
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "planetmodule_phaseorbitalrepairplatform_onselection_0"
+                    ],
+                    "scared": [
+                        "planetmodule_phaseorbitalrepairplatform_onselection_0"]
+                }
+            }
+        },
+        "death_sequence_group": "vasari_planetmodulesmall"
+    }]
+}

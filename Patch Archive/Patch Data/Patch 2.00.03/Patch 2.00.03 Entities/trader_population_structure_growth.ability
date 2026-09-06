@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "action_data_source": "trader_population_structure_growth",
+    "level_source": "research_prerequisites_per_level",
+    "level_prerequisites": [
+        [
+            ["trader_unlock_population_growth_ability"]
+        ]
+    ],
+    "passive_actions":
+    {
+        "persistant_buff": "trader_population_structure_growth_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_population_structure_growth_ability_hud_icon",
+        "tooltip_picture": "trader_population_structure_growth_ability_tooltip_picture",
+        "name": "trader_population_structure_growth_ability_name",
+        "description": "trader_population_structure_growth_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "growth_credit_income_rate_modifier"
+            }]
+        }]
+    }
+}

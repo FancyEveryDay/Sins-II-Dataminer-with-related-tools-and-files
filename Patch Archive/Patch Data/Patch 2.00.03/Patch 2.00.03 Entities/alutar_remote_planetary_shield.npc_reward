@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "advent_starbase_planetary_shield_array_unit_item_hud_icon",
+        "name": "alutar_remote_planetary_shield_name",
+        "description": "alutar_remote_planetary_shield_description"
+    },
+    "type": "ability",
+    "ability": "alutar_remote_planetary_shield"
+}

@@ -1,0 +1,126 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "empowering_sacrifice_planet_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self"
+            ]
+        }
+    },
+    {
+        "target_filter_id": "empowering_sacrifice_ship_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "allied_population_amount"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "empowering_sacrifice_duration",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "empowering_sacrifice_population_culled_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "empowering_sacrifice_ability_cooldown_duration_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "allied_population_amount",
+            "values": [-0.001]
+        }
+    },
+    {
+        "action_value_id": "empowering_sacrifice_weapon_damage_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "allied_population_amount",
+            "values": [0.001]
+        }
+    },
+    {
+        "action_value_id": "empowering_sacrifice_owner_allied_population_points_value",
+        "action_value":
+        {
+            "transform_type": "per_planet_owner_allied_population_points",
+            "transform_unit":
+            {
+                "unit_type": "previous_spawner"
+            },
+            "values": [1.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "empowering_sacrifice_ability_cooldown_duration_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "ability_cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "empowering_sacrifice_ability_cooldown_duration_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "empowering_sacrifice_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "empowering_sacrifice_weapon_damage_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "empowering_sacrifice_activation_large",
+        "alias_binding":
+        {
+            "particle_effect": "wail_of_the_sacrificed_large"
+        }
+    },
+    {
+        "alias_name": "empowering_sacrifice_activation_medium",
+        "alias_binding":
+        {
+            "particle_effect": "wail_of_the_sacrificed_large"
+        }
+    },
+    {
+        "alias_name": "empowering_sacrifice_activation_small",
+        "alias_binding":
+        {
+            "particle_effect": "wail_of_the_sacrificed_large"
+        }
+    }]
+}

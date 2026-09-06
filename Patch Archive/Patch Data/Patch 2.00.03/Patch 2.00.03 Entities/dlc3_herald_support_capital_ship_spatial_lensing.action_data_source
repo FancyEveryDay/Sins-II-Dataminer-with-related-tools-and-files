@@ -1,0 +1,110 @@
+{
+    "version": 0,
+	"level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "spacial_lensing_target_filter",
+        "target_filter":
+        {
+            "unit_types": [                
+                "strikecraft",
+				"torpedo"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+	}],
+    "action_values": [    
+    {
+        "action_value_id": "spacial_lensing_cooldown_time",
+        "action_value":
+        {
+            "values": [90.0, 90.0, 90.0, 90.0, 90.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_antimatter_cost",
+        "action_value":
+        {
+            "values": [60.0, 60.0, 60.0, 60.0, 60.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_autocast_min_target_count",
+        "action_value":
+        {
+            "values": [5.0, 5.0, 5.0, 5.0, 5.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_radius",
+        "action_value":
+        {
+            "values": [8000.0, 8500.0, 9000.0, 10000.0, 12000.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_duration",
+        "action_value":
+        {
+            "values": [30.0, 40.0, 50.0, 60.0, 75.0]
+        }
+    },
+    {
+        "action_value_id": "spacial_lensing_linear_speed_debuff_value",
+        "action_value":
+        {
+            "values": [-0.4, -0.5, -0.6, -0.8, -1.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_angular_speed_debuff_value",
+        "action_value":
+        {
+            "values": [-0.4, -0.5, -0.6, -0.8, -1.0]
+        }
+    },
+	{
+        "action_value_id": "spacial_lensing_increased_damage_taken_value",
+        "action_value":
+        {
+            "values": [0.2, 0.25, 0.3, 0.4, 0.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "spacial_lensing_linear_speed_debuff_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "spacial_lensing_linear_speed_debuff_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "spacial_lensing_angular_speed_debuff_modifer",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_angular_speed",
+            "value_behavior": "scalar",
+            "value_id": "spacial_lensing_angular_speed_debuff_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "spacial_lensing_increased_damage_taken_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "spacial_lensing_increased_damage_taken_value"
+        }
+    }]
+}

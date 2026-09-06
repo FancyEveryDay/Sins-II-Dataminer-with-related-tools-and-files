@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_armament",
+    "field_coord": [3, 3],
+    "research_time": 150.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "name": "trader_unlock_autocannon_defense_flechette_blast_ability_research_subject_name",
+    "name_uppercase": "trader_unlock_autocannon_defense_flechette_blast_ability_research_subject_name_uppercase",
+    "hud_icon": "trader_autocannon_defense_flechette_blast_ability_hud_icon",
+    "tooltip_picture": "trader_autocannon_defense_flechette_blast_ability_tooltip_picture"
+}

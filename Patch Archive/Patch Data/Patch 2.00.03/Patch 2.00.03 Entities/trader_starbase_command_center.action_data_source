@@ -1,0 +1,91 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "command_center_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon",
+                "weapon_type": "normal"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "trader_starbase_command_center_on_self"
+                }
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "command_center_damage_taken_value",
+        "action_value":
+        {
+            "values": [-0.1]
+        }
+    },
+    {
+        "action_value_id": "command_center_weapon_range_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    },
+    {
+        "action_value_id": "command_center_weapon_damage_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "command_center_damage_taken_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "command_center_damage_taken_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "command_center_weapon_range_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "range",
+            "value_behavior": "scalar",
+            "value_id": "command_center_weapon_range_value"
+        }
+    },
+    {
+        "buff_weapon_modifier_id": "command_center_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "command_center_weapon_damage_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "tec_starbase_command_center_passive",
+        "alias_binding":
+        {
+            "particle_effect": "tec_defense_grid_command"
+        }
+    }]
+}

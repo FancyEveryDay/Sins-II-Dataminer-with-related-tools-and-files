@@ -1,0 +1,123 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "target_filters": [
+    {
+        "target_filter_id": "dlc3_herald_cloak_auto_cast_enemy_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy"
+            ]
+        }
+    }],
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "cloak_quality_memory"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time_value",
+        "action_value":
+        {
+            "values": [60.0, 60.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_alpha_value",
+        "action_value":
+        {
+            "values": [0.3, 0.3]
+        }
+    },
+    {
+        "action_value_id": "cloak_fade_duration_value",
+        "action_value":
+        {
+            "values": [3.0, 3.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_quality_value",
+        "action_value":
+        {
+            "values": [2.0, 3.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_quality_from_memory_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "cloak_quality_memory",
+            "values": [1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "offensive_action_cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-5.0, -5.0]
+        }
+    },
+    {
+        "action_value_id": "offensive_action_cloak_quality_degrade_duration_value",
+        "action_value":
+        {
+            "values": [20.0, 20.0]
+        }
+    },
+    {
+        "action_value_id": "damage_taken_cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-1.0, -1.0]
+        }
+    },
+    {
+        "action_value_id": "damage_taken_cloak_quality_degrade_duration_value",
+        "action_value":
+        {
+            "values": [20.0, 20.0]
+        }
+    },
+    {
+        "action_value_id": "hyperspace_cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-1.0, -1.0]
+        }
+    },
+    {
+        "action_value_id": "hyperspace_cloak_quality_degrade_duration_value",
+        "action_value":
+        {
+            "values": [20.0, 20.0]
+        }
+    },
+    {
+        "action_value_id": "cloaking_weapon_damage_boost_duration_value",
+        "action_value":
+        {
+            "values": [20.0, 20.0]
+        }
+    },
+    {
+        "action_value_id": "cloaking_weapon_damage_boost_value",
+        "action_value":
+        {
+            "values": [0.25, 0.25]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "cloaking_weapon_damage_boost_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "cloaking_weapon_damage_boost_value"
+        }
+    }]
+}

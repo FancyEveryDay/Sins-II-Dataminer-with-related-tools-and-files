@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_armament",
+    "field_coord": [4, 3],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 200.0,
+        "crystal": 300.0
+    },
+    "name": "trader_unlock_gauss_defense_meson_bolt_ability_research_subject_name",
+    "name_uppercase": "trader_unlock_gauss_defense_meson_bolt_ability_research_subject_name_uppercase",
+    "hud_icon": "trader_gauss_defense_meson_bolt_hud_icon",
+    "tooltip_picture": "trader_gauss_defense_meson_bolt_tooltip_picture"
+}

@@ -1,0 +1,48 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_shrouding",
+    "field_coord": [6, 2],
+    "research_time": 235.0,
+    "price":
+    {
+        "credits": 1400.0,
+        "metal": 600.0,
+        "crystal": 600.0
+    },
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "is_structure_builder"
+                }
+            }]
+        },
+        "extra_level_prerequisites": [
+            [
+                ["dlc3_herald_upgrade_afterimage"]
+            ]
+        ],
+        "action_data_source": "dlc3_herald_unlock_afterimage",
+        "buff": "dlc3_herald_unlock_afterimage_on_self"
+    }],
+    "name": "dlc3_herald_unlock_afterimage_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_afterimage_research_subject_name_uppercase",
+    "description": "dlc3_herald_unlock_afterimage_research_subject_description",
+    "hud_icon": "dlc3_herald_unlock_afterimage_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_unlock_afterimage_research_subject_tooltip_picture"
+}

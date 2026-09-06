@@ -1,0 +1,48 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "empowered_anima_damage_bonus_value",
+        "action_value":
+        {
+            "values": [0.2],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [0.001]
+            }
+        }
+    },
+    {
+        "action_value_id": "empowered_anima_shield_points_bonus_value",
+        "action_value":
+        {
+            "values": [20.0],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [0.2]
+            }
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "empowered_anima_shield_points_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "additive",
+            "value_id": "empowered_anima_shield_points_bonus_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "empowered_anima_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "empowered_anima_damage_bonus_value"
+        }
+    }]
+}

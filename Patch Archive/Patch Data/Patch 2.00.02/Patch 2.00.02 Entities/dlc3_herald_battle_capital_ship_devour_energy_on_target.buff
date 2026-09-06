@@ -1,0 +1,108 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "dlc3_herald_battle_capital_ship_devour_energy_buff_small",
+                        "medium_unit": "dlc3_herald_battle_capital_ship_devour_energy_buff_medium",
+                        "large_unit": "dlc3_herald_battle_capital_ship_devour_energy_buff_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "damage_has_damage_source",
+                    "damage_source": "weapon"
+                },
+				{
+					"constraint_type": "composite_or",
+                    "constraints": [
+				    {
+					    "constraint_type": "damage_has_weapon_tag",
+					    "weapon_tag": "shock_cannon"
+				    },
+				    {
+					    "constraint_type": "damage_has_weapon_tag",
+					    "weapon_tag": "null_cannon"
+				    },
+				    {
+					    "constraint_type": "damage_has_weapon_tag",
+					    "weapon_tag": "phase_cannon"
+				    },
+				    {
+					    "constraint_type": "damage_has_weapon_tag",
+					    "weapon_tag": "beam"
+				    }]
+				}]
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "shields_only",
+                    "repair_value": "devour_energy_shield_restore_value",
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "devour_energy_repair_target_filter"
+                    }
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_devour_energy_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_devour_energy_ability_name",
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.shield_points_restored_per_damage",
+                "value_id": "devour_energy_shield_restore_value",
+                "value_float_format": "percentage",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

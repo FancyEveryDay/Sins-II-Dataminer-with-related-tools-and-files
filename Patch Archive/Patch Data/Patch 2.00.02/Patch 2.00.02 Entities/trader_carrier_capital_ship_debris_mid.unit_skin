@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 50508.691012,
+        "min_camera_distance": 874.817127,
+        "unit_mesh":
+        {
+            "mesh": "trader_carrier_capital_ship_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "trader_carrier_capital_debris_mid_damage"
+            },
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "corpses"
+            }]
+        }
+    }]
+}

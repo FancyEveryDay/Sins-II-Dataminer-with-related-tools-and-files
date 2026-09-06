@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_eradication",
+    "field_coord": [6, 7],
+    "research_time": 235.0,
+    "price":
+    {
+        "credits": 1400.0,
+        "metal": 600.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_void_missile_weapon_damage_1"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon",
+                "tag": "void_missile"
+            }]
+        },
+        "action_data_source": "dlc3_herald_upgrade_void_missile_weapon_targeting",
+        "buff": "dlc3_herald_upgrade_void_missile_weapon_targeting"
+    }],
+    "name": "dlc3_herald_upgrade_void_missile_weapon_targeting_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_void_missile_weapon_targeting_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_void_missile_weapon_targeting_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_void_missile_weapon_targeting_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_void_missile_weapon_targeting_tooltip_picture"
+}

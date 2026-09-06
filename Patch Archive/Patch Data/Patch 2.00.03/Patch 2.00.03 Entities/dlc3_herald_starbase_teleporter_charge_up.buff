@@ -1,0 +1,88 @@
+{
+    "version": 0,
+    "active_duration": "starbase_teleport_charge_up_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "first_action_delay_time_value": "starbase_teleport_charge_up_duration_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "target_gravity_well_has_available_unit_limit"
+                    }
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "teleport_to_gravity_well",
+                    "destination_reference_unit":
+                    {
+                        "unit_type": "target"
+                    }
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_starbase_teleporter_charge_down"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "action_data_source",
+                        "mesh_point": "center",
+                        "effect": "starbase_teleport_charge_departure"
+                    }
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect": "starbase_teleport_charge_up"
+                }
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "disable_can_update_ability_cooldown_progress",
+        "disable_can_use_weapons"
+    ],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_starbase_teleporter_unit_item_hud_icon",
+        "name": "dlc3_herald_starbase_teleporter_unit_item_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive"
+    }
+}

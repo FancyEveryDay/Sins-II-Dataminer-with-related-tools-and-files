@@ -1,0 +1,125 @@
+{
+    "version": 0,
+	"target_filters": [
+	{
+        "target_filter_id": "movemment_boost_field_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly",
+				"self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+			{
+				"constraint_type": "can_ever_move"
+			}]
+        }
+    }],	
+	"per_buff_memory_declaration":
+	{
+        "float_variable_ids": [
+            "corruption_consumed"]
+    },
+    "action_values": [
+	{
+        "action_value_id": "movemment_boost_field_cooldown",
+        "action_value":
+        {
+			"values": [60.0]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_duration",
+        "action_value":
+        {
+			"values": [60.0]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_radius",
+        "action_value":
+        {
+			"values": [5000.0]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_corruption_consumed_on_tick_base",
+        "action_value":
+        {
+			"values": [5.0]
+        }
+    },
+    {
+        "action_value_id": "movemment_boost_field_corruption_consumed_on_tick_used",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+			"values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_corruption_available",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_linear_speed_buff_scalar_value",
+        "action_value":
+        {
+			"values": [0.15]
+        }
+    },
+	{
+        "action_value_id": "movemment_boost_field_linear_accel_buff_scalar_value",
+        "action_value":
+        {
+			"values": [0.15]
+        }
+    }],
+	"buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "movemment_boost_field_linear_speed_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "movemment_boost_field_linear_speed_buff_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "movemment_boost_field_linear_accel_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_acceleration",
+            "value_behavior": "scalar",
+            "value_id": "movemment_boost_field_linear_accel_buff_scalar_value"
+        }
+    }],
+	"effect_alias_bindings": [
+	{
+		"alias_name": "movemment_boost_field_active",
+		"alias_binding":
+		{
+			"particle_effect": "advent_temple_of_renewal_recharge_antimatter_activate"
+		}
+	}]
+}

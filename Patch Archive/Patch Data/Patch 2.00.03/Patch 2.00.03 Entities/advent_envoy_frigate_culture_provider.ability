@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "action_data_source": "advent_envoy_frigate_culture_provider",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_envoy_frigate_culture_provider_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "advent_envoy_frigate_culture_provider_ability_hud_icon",
+        "name": "advent_envoy_frigate_culture_provider_ability_name",
+        "description": "advent_envoy_frigate_culture_provider_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.culture_rate",
+                "value_id": "culture_rate_value",
+                "value_float_format": "one_decimal_place",
+                "is_culture_rate": true
+            }]
+        }]
+    }
+}

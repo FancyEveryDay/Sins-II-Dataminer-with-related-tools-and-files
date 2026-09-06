@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_phase_mastery",
+    "field_coord": [4, 1],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 0.0,
+        "metal": 420.0,
+        "crystal": 420.0
+    },
+    "name": "vasari_wormhole_travel_research_subject_name",
+    "name_uppercase": "vasari_wormhole_travel_research_subject_name_uppercase",
+    "description": "vasari_wormhole_travel_research_subject_description",
+    "hud_icon": "vasari_unlock_wormhole_travel_research_subject_hud_icon",
+    "tooltip_picture": "vasari_unlock_wormhole_travel_research_subject_tooltip_picture"
+}

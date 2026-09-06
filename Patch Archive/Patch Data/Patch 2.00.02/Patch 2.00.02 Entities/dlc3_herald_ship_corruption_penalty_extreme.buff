@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_mutations": [
+        "disable_can_have_hull_restored",
+        "disable_can_have_armor_restored",
+        "disable_can_have_shields_restored",
+        "disable_can_passively_regenerate_hull",
+        "disable_can_passively_regenerate_armor",
+        "disable_can_passively_regenerate_shields"
+    ],
+    "are_mutations_finite": false,
+    "gui":
+    {
+        "hud_icon": "advent_unity_cleanse_ability_hud_icon",
+        "tooltip_icon": "advent_unity_cleanse_ability_hud_icon",
+        "name": "dlc3_herald_ship_corruption_penalty_extreme_buff_name",
+        "description": "dlc3_herald_ship_corruption_penalty_extreme_buff_description",
+        "visibility_scope": "negative",
+        "is_expire_time_suppressed": true,
+        "show_duplicate_buffs": false
+    }
+}

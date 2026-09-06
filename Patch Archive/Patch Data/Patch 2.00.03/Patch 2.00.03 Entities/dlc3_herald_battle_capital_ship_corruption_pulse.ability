@@ -1,0 +1,107 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_corruption_pulse",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4],
+    "active_actions":
+    {
+        "cooldown_time": "dlc3_herald_battle_capital_ship_corruption_pulse_cooldown_time_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+                "radius_value": "dlc3_herald_battle_capital_ship_corruption_pulse_radius_value",
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "dlc3_herald_ship_corruption_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "dlc3_herald_battle_capital_ship_corruption_pulse_gain_value"
+                },
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_ship_corruption_penalty_on_target"
+                }]
+            },
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.75
+                    }
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+                "radius_value": "dlc3_herald_battle_capital_ship_corruption_pulse_radius_value",
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "dlc3_herald_ship_corruption_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "dlc3_herald_battle_capital_ship_corruption_pulse_threshold_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "target_filter_id": "dlc3_herald_ship_corruption_auto_cast_target_filter",
+                "radius_value": "dlc3_herald_battle_capital_ship_corruption_pulse_radius_value",
+                "target_count_value": "dlc3_herald_battle_capital_ship_corruption_pulse_auto_cast_target_count_value"
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "advent_unity_cleanse_ability_hud_icon",
+        "tooltip_icon": "advent_unity_cleanse_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_corruption_pulse_ability_name",
+        "description": "dlc3_herald_battle_capital_ship_corruption_pulse_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "dlc3_herald_battle_capital_ship_corruption_pulse_radius_value"
+            }
+        }
+    }
+}

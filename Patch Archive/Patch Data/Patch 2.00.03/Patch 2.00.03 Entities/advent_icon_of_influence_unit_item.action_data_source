@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "icon_of_influence_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_definition",
+                "unit_definition": "advent_culture_center_structure"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "icon_of_influence_recharge_rate_bonus",
+        "action_value":
+        {
+            "values": [0.05]
+        }
+    }],
+    "buff_empire_modifiers": [
+    {
+        "buff_empire_modifier_id": "advent_icon_of_influence_recharge_rate_modifier",
+        "buff_empire_modifier":
+        {
+            "modifier_type": "influence_points_recharge_rate",
+            "value_behavior": "scalar",
+            "value_id": "icon_of_influence_recharge_rate_bonus"
+        }
+    }]
+}

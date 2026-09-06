@@ -1,0 +1,135 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "first_action_delay_time_value": "advent_faction_victory_stage_one_delay_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_gravity_wells",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "max_jump_distance_value": "advent_faction_victory_stage_one_phase_lane_distance_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "target_filter_id": "advent_faction_victory_conversion_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc2_advent_faction_victory_on_target_fixture",
+                    "destination_unit":
+                    {
+                        "unit_type": "operand_destination",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    }
+                }]
+            }]
+        }
+    },
+    {
+        "first_action_delay_time_value": "advent_faction_victory_stage_two_delay_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_gravity_wells",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "max_jump_distance_value": "advent_faction_victory_stage_two_phase_lane_distance_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "target_filter_id": "advent_faction_victory_conversion_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc2_advent_faction_victory_on_target_fixture",
+                    "destination_unit":
+                    {
+                        "unit_type": "operand_destination",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    }
+                }]
+            }]
+        }
+    },
+    {
+        "first_action_delay_time_value": "advent_faction_victory_stage_three_delay_value",
+        "execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_gravity_wells",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner",
+                    "redirection": "current_gravity_well_primary_fixture"
+                },
+                "max_jump_distance_value": "advent_faction_victory_stage_three_phase_lane_distance_value",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "target_filter_id": "advent_faction_victory_conversion_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc2_advent_faction_victory_on_target_fixture",
+                    "destination_unit":
+                    {
+                        "unit_type": "operand_destination",
+                        "redirection": "current_gravity_well_primary_fixture"
+                    }
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_made_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            }]
+        }
+    }]
+}

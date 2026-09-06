@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+	"stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "missile_speed_boost_linear_speed_scalar_modifier"
+    },
+	{
+        "buff_unit_modifier_id": "missile_speed_boost_linear_accel_scalar_modifier"
+    },
+	{
+        "buff_unit_modifier_id": "missile_speed_boost_angular_speed_scalar_modifier"
+    }],
+	"gui":
+    {
+        "hud_icon": "dlc3_herald_missile_frigate_missile_speed_boost_ability_hud_icon",
+        "name": "dlc3_herald_missile_frigate_missile_speed_boost_ability_name",
+		"visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+			"lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "missile_speed_boost_linear_speed_scalar_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "missile_speed_boost_linear_accel_scalar_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "missile_speed_boost_angular_speed_scalar_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "spread_corruption_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "none",
+                "self",
+                "ally",
+                "enemy"
+            ],
+            "exemptions": [
+                "is_not_explored"],
+            "respect_can_be_targeted_permissions": false
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "spread_corruption_link_apply_interval_value",
+        "action_value":
+        {
+            "values": [10.0, 10.0, 10.0, 10.0, 10.0]
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_interval_value",
+        "action_value":
+        {
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_radius_value",
+        "action_value":
+        {
+            "values": [2500000.0, 3750000.0, 5000000.0, 6250000.0, 7500000.0]
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_speed_value",
+        "action_value":
+        {
+            "values": [50000.0, 50000.0, 50000.0, 50000.0, 50000.0],
+            "scales_with_corruption_mode_effectiveness": true
+        }
+    },
+    {
+        "action_value_id": "spread_corruption_strength_value",
+        "action_value":
+        {
+            "values": [0.001, 0.0015, 0.002, 0.0025, 0.003],
+            "scales_with_corruption_mode_effectiveness": true
+        }
+    }]
+}

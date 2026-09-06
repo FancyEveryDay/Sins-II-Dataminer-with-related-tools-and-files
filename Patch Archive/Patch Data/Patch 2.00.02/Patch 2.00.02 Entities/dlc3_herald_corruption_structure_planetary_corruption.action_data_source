@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "planetary_corruption_planet_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "planet"
+            ],
+            "ownerships": [
+                "self",
+                "none",
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "planetary_corruption_planet_corruption_interval_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "planetary_corruption_planet_corruption_gain_value",
+        "action_value":
+        {
+            "values": [0.02]
+        }
+    }]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "action_data_source": "advent_culture_center_structure_culture_provider",
+    "passive_actions":
+    {
+        "persistant_buff": "advent_culture_center_structure_culture_provider_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "advent_culture_center_structure_culture_provider_ability_hud_icon",
+        "name": "advent_culture_center_structure_culture_provider_ability_name",
+        "description": "advent_culture_center_structure_culture_provider_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "culture_provider_culture_rate_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,156 @@
+{
+    "version": 0,
+    "level_count": 5,
+	"per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "corruption_consumed"]
+    },
+    "action_values": [    	
+	{
+        "action_value_id": "overpower_cooldown_time",
+        "action_value":
+        {
+            "values": [120.0, 105.0, 90.0, 75.0, 60.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_antimatter_cost",
+        "action_value":
+        {
+            "values": [100.0, 100.0, 100.0, 100.0, 100.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_duration",
+        "action_value":
+        {
+            "values": [30.0, 35.0, 40.0, 50.0, 60.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_corruption_gain_per_tick",
+        "action_value":
+        {
+            "values": [5.0, 7.5, 10.0, 15.0, 20.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_corruption_consumption_per_tick",
+        "action_value":
+        {
+            "values": [10.0, 15.0, 20.0, 30.0, 40.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_current_curruption",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "overpoer_corruption_consumed",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_weapon_damage_buff_scalar_value",
+        "action_value":
+        {
+            "values": [0.2, 0.3, 0.4, 0.55, 0.75]
+        }
+    },
+	{
+        "action_value_id": "overpower_shield_regeneration_buff_scalar_value",
+        "action_value":
+        {
+            "values": [0.5, 0.75, 1.0, 1.4, 2.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_armor_regeneration_buff_scalar_value",
+        "action_value":
+        {
+            "values": [0.5, 0.75, 1.0, 1.4, 2.0]
+        }
+    },
+	{
+        "action_value_id": "overpower_linear_speed_buff_scalar_value",
+        "action_value":
+        {
+            "values": [0.15, 0.15, 0.15, 0.15, 0.15]
+        }
+    },
+	{
+        "action_value_id": "overpower_angular_speed_buff_scalar_value",
+        "action_value":
+        {
+            "values": [0.15, 0.15, 0.15, 0.15, 0.15]
+        }
+    }],
+	"buff_unit_modifiers": [
+	{
+        "buff_unit_modifier_id": "overpower_shield_regeneration_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "shield_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "overpower_shield_regeneration_buff_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "overpower_armor_regeneration_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "overpower_armor_regeneration_buff_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "overpower_linear_speed_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "overpower_linear_speed_buff_scalar_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "overpower_angular_speed_buff_scalar_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_angular_speed",
+            "value_behavior": "scalar",
+            "value_id": "overpower_angular_speed_buff_scalar_value"
+        }
+    }],
+	"buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "overpower_weapon_damage_buff_scalar_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "overpower_weapon_damage_buff_scalar_value"
+        }
+    }]
+}

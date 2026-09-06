@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_material",
+    "field_coord": [6, 1],
+    "research_time": 360.0,
+    "price":
+    {
+        "credits": 1100.0,
+        "metal": 425.0,
+        "crystal": 900.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 2
+    }],
+    "prerequisites": [
+        ["advent_commerce_1"]
+    ],
+    "name": "advent_commerce_2_research_subject_name",
+    "name_uppercase": "advent_commerce_2_research_subject_name_uppercase",
+    "description": "advent_commerce_2_research_subject_description",
+    "hud_icon": "advent_commerce_2_research_subject_hud_icon",
+    "tooltip_picture": "advent_commerce_2_research_subject_tooltip_picture"
+}

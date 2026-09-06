@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "tooltip_icon": "defense_exotic_tooltip_icon",
+    "small_icon": "defense_exotic_small_icon",
+    "large_icon": "defense_exotic_large_icon",
+    "picture": "defense_exotic_picture",
+    "name": "exotic.defense.name",
+    "description": "exotic.defense.description",
+    "pip_color": "#9AB1C6",
+    "insufficient_exotics_player_sound_id": "insufficient_defense_exotics",
+    "ai_trade_value": 1000
+}

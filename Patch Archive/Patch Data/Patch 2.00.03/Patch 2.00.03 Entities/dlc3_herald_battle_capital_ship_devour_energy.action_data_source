@@ -1,0 +1,145 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "devour_energy_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_devour_energy_on_target",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "devour_energy_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_devour_energy_on_target",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "devour_energy_repair_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_health"
+            }]
+        }        
+    }],
+    "action_values": [
+    {
+        "action_value_id": "devour_energy_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [100.0, 100.0, 100.0, 100.0, 100.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_cooldown_time_value",
+        "action_value":
+        {
+            "values": [120.0, 115.0, 110.0, 105.0, 95.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_max_target_count_value",
+        "action_value":
+        {
+            "values": [24.0, 24.0, 24.0, 24.0, 24.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_max_target_count_display_value",
+        "action_value":
+        {
+            "values": [25.0, 25.0, 25.0, 25.0, 25.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_duration_value",
+        "action_value":
+        {
+            "values": [60.0, 60.0, 60.0, 60.0, 60.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_radius_value",
+        "action_value":
+        {
+            "values": [2500.0, 2500.0, 2500.0, 2500.0, 2500.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_range_value",
+        "action_value":
+        {
+            "values": [9000.0, 9000.0, 9000.0, 9000.0, 9000.0]
+        }
+    },
+    {
+        "action_value_id": "devour_energy_shield_restore_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.75, 0.9, 1.05, 1.2, 1.5]
+        }
+    }]
+}

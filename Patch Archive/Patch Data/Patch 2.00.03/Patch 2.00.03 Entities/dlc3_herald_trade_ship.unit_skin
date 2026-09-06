@@ -1,0 +1,99 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 13058.839797,
+        "min_camera_distance": 364.70177,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_trade_ship_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_trade_ship_main_view_icon",
+            "hud_picture": "dlc3_herald_trade_ship_hud_picture",
+            "tooltip_picture": "dlc3_herald_trade_ship_tooltip_picture",
+            "name": "trader_trade_ship_name",
+            "description": "trader_trade_ship_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_trade_ship",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "ship",
+            "icon": "dlc3_herald_trade_ship_main_view_icon",
+            "selected_icon": "dlc3_herald_trade_ship_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_trade_ship_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "exhaust_effects":
+            {
+                "particle_effects": [
+                {
+                    "particle_effect": "dlc3_tiny_exhaust_shrink"
+                }]
+            },
+            "hyperspace_effects":
+            {
+                "charge_effect": "dlc3_hyperspace_portal_charge_tiny",
+                "charge_effect_between_stars": "dlc3_hyperspace_portal_charge_tiny",
+                "charge_effect_destabilized": "dlc3_hyperspace_portal_charge_tiny",
+                "travel_effect": "dlc3_hyperspace_travel_tiny",
+                "travel_effect_between_stars": "dlc3_hyperspace_travel_tiny",
+                "travel_effect_destabilized": "dlc3_hyperspace_travel_tiny",
+                "exit_effect": "dlc3_hyperspace_portal_exit_tiny",
+                "charge_sound": "dlc3_hyperspace_chargeup",
+                "enter_sound": "dlc3_hyperspace_entry",
+                "exit_sound": "dlc3_hyperspace_exit"
+            },
+            "damage_effects":
+            {
+                "max_damage_effect_count": 3,
+                "damage_effects": [
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.99,
+                    "particle_effect": "tec_damage_embers"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.99,
+                    "particle_effect": "damage_smoke_1"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.75,
+                    "particle_effect": "tec_damage_plasma_sparks"
+                },
+                {
+                    "max_count": 1,
+                    "hull_percentage_threshold": 0.75,
+                    "particle_effect": "damage_electricity_2",
+                    "sound": "ambient_loop_electrical_damage_01"
+                }]
+            }
+        },
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "ambient_loop_eidolon_frigateengine",
+                "hyperspace_travel": "dlc3_hyperspace_travel"
+            },
+            "dialogue":
+            {
+                "selected":
+                {
+                    "neutral": [
+                        "trader_trade_ship_selected_neutral_0"]
+                }
+            }
+        },
+        "death_sequence_group": "tradeship"
+    }]
+}

@@ -1,0 +1,77 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "purge_corruption_execution_interval_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "purge_corruption_remove_value",
+                    "actual_removed_corruption_float_variable": "purged_corruption"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "hull_only",
+                    "repair_value": "purge_corruption_repair_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "dlc3_herald_corruptor_cruiser_purge_corruption_buff_on_target_small",
+                        "medium_unit": "dlc3_herald_corruptor_cruiser_purge_corruption_buff_on_target_medium",
+                        "large_unit": "dlc3_herald_corruptor_cruiser_purge_corruption_buff_on_target_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_hud_icon",
+        "name": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.hull_restore_rate",
+                "value_id": "purge_corruption_remove_value",
+                "value_color": "positive",
+                "value_suffix": "per_second"
+            }]
+        }]
+    }
+}

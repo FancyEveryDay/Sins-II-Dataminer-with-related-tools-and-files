@@ -1,0 +1,145 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "immolate_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"
+			},
+			{
+				"constraint_type": "can_purge_corruption",
+				"minimum_purge_amount": 450.0
+			}]
+        }
+    },
+    {
+        "target_filter_id": "immolate_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "is_always_a_threat"
+			},
+			{
+				"constraint_type": "can_purge_corruption",
+				"minimum_purge_amount": 450.0
+			}]
+        }
+    },
+    {
+        "target_filter_id": "immolate_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+	"per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "corruption_consumed"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "immolate_antimatter_cost",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+	{
+        "action_value_id": "immolate_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "immolate_cooldown_time",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "immolate_range",
+        "action_value":
+        {
+            "values": [12000.0]
+        }
+    },
+	{
+        "action_value_id": "immolate_damage_amount",
+        "action_value":
+        {
+            "values": [450.0]
+        }
+    },
+	{
+        "action_value_id": "immolate_damage_pierce_amount",
+        "action_value":
+        {
+            "values": [250.0]
+        }
+    },
+    {
+        "action_value_id": "immolate_travel_speed",
+        "action_value":
+        {
+            "values": [6000.0]
+        }
+    },
+	{
+        "action_value_id": "immolate_target_current_curruption",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "immolate_corruption_consumed",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+            "values": [1.0]
+        }
+    }]
+}

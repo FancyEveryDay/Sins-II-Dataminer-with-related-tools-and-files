@@ -1,0 +1,84 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 43581.991361,
+        "min_camera_distance": 1825.762365,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_military_research_lab_structure_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_military_research_lab_structure_main_view_icon",
+            "hud_picture": "dlc3_herald_military_research_lab_structure_hud_picture",
+            "tooltip_picture": "dlc3_herald_military_research_lab_structure_tooltip_picture",
+            "name": "dlc3_herald_military_research_lab_structure_name",
+            "description": "dlc3_herald_military_research_lab_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_military_research_lab_structure",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "dlc3_herald_military_research_lab_structure_main_view_icon",
+            "selected_icon": "dlc3_herald_military_research_lab_structure_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_military_research_lab_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 3,
+                "damage_effects": [
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.33,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.55,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.67,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.8,
+                    "particle_effect": "dlc3_herald_damage_stage1_small"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "dlc3_military_research_ambient"
+            }],
+            "effect_alias_bindings": [
+            {
+                "alias_name": "trader_research_lab_structure_phase_lane_detector_buff_on_self",
+                "alias_binding":
+                {
+                    "particle_effect": "trader_research_lab_structure_phase_lane_detector_buff_on_self"
+                }
+            }],
+            "shield_effect": "dlc3_herald_military_research_lab_structure"
+        },
+        "death_sequence_group": "dlc3_planetmodulesmall"
+    }]
+}

@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_metal_portal_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_metal_portal_unit_item_on_planet"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "header_text": "dlc3_herald_metal_portal_unit_item_header",
+            "lines": [
+            {
+                "rendering_type": "buff_planet_modifier",
+                "planet_modifier_id": "metal_portal_metal_income_rate_modifier"
+            }]
+        }]
+    }
+}

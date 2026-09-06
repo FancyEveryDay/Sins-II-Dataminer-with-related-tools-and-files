@@ -1,0 +1,14 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "metal_market_monopolization_npc_reward_hud_icon",
+        "tooltip_icon": "metal_market_monopolization_npc_reward_tooltip_icon",
+        "name": "npc_reward.raid_immunity.name",
+        "description": "npc_reward.metal_market_monopolization.description"
+    },
+    "type": "raid_immunity",
+    "raid_immunity": {
+          "duration_in_minutes": 10
+      }
+}

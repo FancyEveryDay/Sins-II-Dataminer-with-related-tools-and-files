@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+    {
+        "action_value_id": "unity_meditation_unity_points_bonus_value",
+        "action_value":
+        {
+            "values": [1.0, 2.0, 3.0]
+        }
+    },
+    {
+        "action_value_id": "unity_meditation_max_mana_points_bonus_value",
+        "action_value":
+        {
+            "values": [25.0, 50.0, 75.0]
+        }
+    },
+    {
+        "action_value_id": "unity_meditation_mana_restore_rate_bonus_value",
+        "action_value":
+        {
+            "values": [0.1, 0.2, 0.3]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "unity_meditation_unity_points_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "unity_points",
+            "value_behavior": "additive",
+            "value_id": "unity_meditation_unity_points_bonus_value"
+        }
+    }],
+    "buff_empire_modifiers": [
+    {
+        "buff_empire_modifier_id": "unity_meditation_max_mana_points_modifier",
+        "buff_empire_modifier":
+        {
+            "modifier_type": "unity_max_mana_points",
+            "value_behavior": "additive",
+            "value_id": "unity_meditation_max_mana_points_bonus_value"
+        }
+    },
+    {
+        "buff_empire_modifier_id": "unity_meditation_mana_restore_rate_modifier",
+        "buff_empire_modifier":
+        {
+            "modifier_type": "unity_mana_restore_rate",
+            "value_behavior": "additive",
+            "value_id": "unity_meditation_mana_restore_rate_bonus_value"
+        }
+    }]
+}

@@ -1,0 +1,83 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "per_player",
+    "restart_other_stacked_buffs_when_started": false,
+    "time_actions": [
+    {
+        "execution_interval_value": "spread_corruption_link_apply_interval_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_planets_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+                "radius_value": "spread_corruption_radius_value",
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "spread_corruption_speed_value",
+                    "travel_speed_planet_modifier_type": "planet_corruption_speed",
+                    "travel_speed_planet_modifier_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    }
+                },
+                "operators_constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "operand_destination"
+                    },
+                    "target_filter_id": "spread_corruption_target_filter"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_planet_corruption_spread_link",
+                    "skip_if_existing_buff_from_current_spawner": true
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "phase_resonance_track_header_icon_movement",
+        "tooltip_icon": "phase_resonance_track_header_icon_movement",
+        "name": "corruption_mode.spread.name",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "corruption_mode.spread.tooltip.radius",
+                "value_id": "spread_corruption_radius_value",
+                "value_float_format": "one_decimal_place",
+                "value_suffix": "gravity_well_distance"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "corruption_mode.spread.tooltip.speed",
+                "value_id": "spread_corruption_speed_value",
+                "value_float_format": "one_decimal_place",
+                "value_suffix": "gravity_well_distance_per_second"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "corruption_mode.spread.tooltip.strength",
+                "value_id": "spread_corruption_strength_value",
+                "value_float_format": "two_decimal_place",
+                "is_corruption_value": true
+            }]
+        }]
+    }
+}

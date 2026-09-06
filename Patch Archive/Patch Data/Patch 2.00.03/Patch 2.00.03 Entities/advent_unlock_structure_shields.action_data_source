@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "max_shield_points",
+        "action_value":
+        {
+            "values": [500.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "advent_unlock_structure_shields_max_shields_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "additive",
+            "value_id": "max_shield_points"
+        }
+    }]
+}

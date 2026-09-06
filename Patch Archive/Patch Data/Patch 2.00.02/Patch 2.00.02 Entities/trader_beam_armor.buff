@@ -1,0 +1,70 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+					"constraint_type": "value_comparison",
+					"value_a": "damage_event_value",
+					"comparison_type": "greater_than_equal_to",
+					"value_b": "uniforms_current_spawner_current_shields"
+                },
+                    {
+					"constraint_type": "value_comparison",
+					"value_a": "uniforms_current_spawner_current_armor",
+					"comparison_type": "greater_than_equal_to",
+					"value_b": "fixed_zero"
+                },
+                {
+                    "constraint_type": "weapon_has_weapon_tag",
+                    "weapon": "trigger_event_weapon",
+                    "any_weapon_tags": [
+                        "beam"]
+                }]
+            },
+            "actions": [
+            {
+				"action_type": "change_buff_memory_float_value",
+				"float_variable": "damage_past_shields",
+				"math_operators": [
+				{
+					"operator_type": "assign",
+					"operand_value": "damage_event_value"
+				},
+				{
+					"operator_type": "subtract",
+					"operand_value": "uniforms_current_spawner_current_shields"
+				},
+				{
+                    "operator_type": "max",
+                    "operand_value": "fixed_zero"
+                }]
+			},
+			{
+				"constraint":
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "damage_prevented_value",
+					"comparison_type": "greater_than_equal_to",
+					"value_b": "fixed_zero"
+				},
+                "action_type": "prevent_damage",
+                "damage_prevented_value": "damage_prevented_value"
+            }]
+        }
+    }]
+}

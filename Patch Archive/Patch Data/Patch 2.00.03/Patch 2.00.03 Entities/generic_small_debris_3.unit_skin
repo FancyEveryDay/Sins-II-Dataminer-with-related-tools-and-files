@@ -1,0 +1,13 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1972.622095,
+        "min_camera_distance": 46.970387,
+        "unit_mesh":
+        {
+            "mesh": "trader_generic_small_debris_3",
+            "is_shadow_blocker": true
+        }
+    }]
+}

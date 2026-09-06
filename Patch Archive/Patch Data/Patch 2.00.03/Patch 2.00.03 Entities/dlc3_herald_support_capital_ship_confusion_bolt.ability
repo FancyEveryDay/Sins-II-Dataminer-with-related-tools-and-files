@@ -1,0 +1,112 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_support_capital_ship_confusion_bolt",
+    "is_ultimate_ability": true,
+    "level_source": "internal_level",
+    "min_required_unit_levels": [5, 9],
+    "active_actions":
+    {
+        "cooldown_time": "confusion_bolt_cooldown_time",
+        "antimatter_cost": "confusion_bolt_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+				"destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "confusion_bolt_travel_speed"
+                },
+				"operators": [                
+				{
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "bomb",
+                    "effects":
+                    {
+                        "muzzle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_muzzle",
+                        "projectile_travel_effect": "dlc3_herald_support_capital_ship_confusion_bolt_projectile_travel"
+                    }
+                },
+				{
+					"operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_capital_ship_confusion_bolt_on_target"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "confusion_bolt_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "confusion_bolt_target_filter"
+        ],
+        "range": "confusion_bolt_range",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 10.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "confusion_bolt_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "confusion_bolt_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "confusion_bolt_hud_icons",
+        "tooltip_picture": "confusion_bolt_icon_tooltip_picture",
+        "name": "dlc3_herald_support_capital_ship_confusion_bolt_ability_name",
+        "description": "dlc3_herald_support_capital_ship_confusion_bolt_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "confusion_bolt_range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "confusion_bolt_duration",
+                "value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_medium"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "confusion_bolt_aoe_radius"
+            }]
+        }]
+    }
+}

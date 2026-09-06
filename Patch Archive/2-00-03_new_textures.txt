@@ -1,0 +1,7 @@
+________________________________________
+     New Textures for Patch 2-00-03     
+________________________________________
+
+advent_focus_conversion_1_research_subject_hud_icon.png
+advent_focus_conversion_1_research_subject_hud_icon150.png
+advent_focus_conversion_1_research_subject_hud_icon200.png

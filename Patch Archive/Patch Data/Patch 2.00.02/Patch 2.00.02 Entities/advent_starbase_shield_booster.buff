@@ -1,0 +1,77 @@
+{
+    "version": 0,
+    "active_duration": "shield_booster_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect": "advent_starbase_shield_booster_effect_on_self"
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "has_missing_shields",
+                        "percentage_missing_threshold": 1.0
+                    }
+                }
+            },
+            "actions": [
+            {
+                "action_type": "prevent_damage",
+                "damage_prevented_value": "shield_booster_damage_prevented_value"
+            }]
+        }
+    }],
+    "unit_mutations": [
+        "disable_can_have_shields_bypassed"
+    ],
+    "gui":
+    {
+        "hud_icon": "advent_starbase_shield_booster_unit_item_hud_icon",
+        "name": "advent_starbase_shield_booster_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "shield_booster_damage_prevented_value",
+                "value_float_format": "percentage_with_sign",
+                "ratio_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            }]
+        }]
+    }
+}

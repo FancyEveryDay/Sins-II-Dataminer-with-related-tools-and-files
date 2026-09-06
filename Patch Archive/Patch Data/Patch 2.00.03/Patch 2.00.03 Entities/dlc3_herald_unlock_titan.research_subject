@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_awakening",
+    "field_coord": [8, 3],
+    "research_time": 330.0,
+    "price":
+    {
+        "credits": 1800.0,
+        "metal": 850.0,
+        "crystal": 850.0
+    },
+    "name": "dlc3_herald_unlock_titan_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_titan_research_subject_name_uppercase",
+    "hud_icon": "dlc3_titan_hud_icon",
+    "tooltip_picture": "dlc3_titan_tooltip_picture"
+}

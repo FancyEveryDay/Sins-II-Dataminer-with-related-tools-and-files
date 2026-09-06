@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "execution_interval_count_value": "dissipation_field_duration_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "dissipation_field_remove_value"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_dissipation_field_unit_item_hud_icon",
+        "name": "dlc3_herald_dissipation_field_unit_item_name",
+        "visibility_scope": "positive"
+    }
+}

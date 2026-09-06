@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_planet_bombed_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "give_assets",
+                "asset_type": "credits",
+                "give_amount_id": "credits_gained_per_damage_dealt"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,37 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_policy",
+    "field_coord": [1, 2],
+    "research_time": 75.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "windfall":
+    {
+        "units_given":
+        {
+            "required_units": [
+            {
+                "unit": "trader_scout_corvette",
+                "count": [4, 4]
+            }]
+        }
+    },
+    "name": "trader_find_npc_explore_research_subject_name",
+    "name_uppercase": "trader_find_npc_explore_research_subject_name_uppercase",
+    "description": "trader_find_npc_explore_research_subject_description",
+    "hud_icon": "trader_find_npc_explore_research_subject_hud_icon",
+    "tooltip_picture": "trader_find_npc_explore_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_windfall"
+    ],
+    "arbitary_research_line":
+    {
+        "unlock_label": "tooltip.research_subject.arbitary_unlock_label.trader_find_npc_explore"
+    }
+}

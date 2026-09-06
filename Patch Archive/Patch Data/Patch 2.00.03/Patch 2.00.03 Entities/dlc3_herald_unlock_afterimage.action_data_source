@@ -1,0 +1,51 @@
+{
+    "version": 0,
+	"level_count": 2,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "was_invulnerable",
+			"proc_chance"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "afterimage_invulnerable_duration_value",
+        "action_value":
+        {
+            "values": [30.0, 60.0]
+        }
+    },
+	{
+        "action_value_id": "afterimage_phase_echo_chance",
+        "action_value":
+        {
+            "values": [0.05, 0.15]
+        }
+    },
+    {
+        "action_value_id": "afterimage_was_invulnerable_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "was_invulnerable",
+            "values": [1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "afterimage_proc_chance_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "proc_chance",
+            "values": [1.0, 1.0]
+        }
+    }],
+	"effect_alias_bindings": [
+    {
+        "alias_name": "dlc3_herald_afterimage_invulnerable_buff",
+        "alias_binding":
+        {
+            "particle_effect": "unyielding_will"
+        }
+    }]
+}

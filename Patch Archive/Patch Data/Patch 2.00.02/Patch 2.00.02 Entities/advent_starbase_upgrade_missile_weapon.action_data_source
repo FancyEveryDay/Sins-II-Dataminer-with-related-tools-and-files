@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "splash_damage_splash_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "upgrade_missile_splash_radius_value",
+        "action_value":
+        {
+            "values": [750.0]
+        }
+    },
+    {
+        "action_value_id": "upgrade_missile_splash_damage_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.25],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [0.005]
+            }
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_starbase_upgrade_missile_weapon_on_hit",
+        "alias_binding":
+        {
+            "particle_effect": "advent_torpedo_large_splash_damage"
+        }
+    }]
+}

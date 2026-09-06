@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "credits_stockpile_npc_reward_0_hud_icon",
+        "tooltip_icon": "credits_stockpile_npc_reward_tooltip_icon",
+        "name": "npc_reward.credits_stockpile.name",
+        "description": "npc_reward.credits_stockpile.description"
+    },
+    "type": "assets",
+    "assets":
+    {
+        "credits": 1500.0
+    }
+}

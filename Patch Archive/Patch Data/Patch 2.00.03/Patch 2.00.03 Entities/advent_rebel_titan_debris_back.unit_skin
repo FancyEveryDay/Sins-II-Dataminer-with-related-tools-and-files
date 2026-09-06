@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 2000000,
+        "min_camera_distance": 1564.583511,
+        "unit_mesh":
+        {
+            "mesh": "advent_rebel_titan_debris_back",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "advent_rebel_titan_back_debris_damage"
+            }]
+        }
+    }]
+}

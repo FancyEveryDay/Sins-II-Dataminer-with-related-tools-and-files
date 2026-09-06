@@ -1,0 +1,75 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 6.811654,
+        "box":
+        {
+            "center": [-0.001338, -0.059697, -3.221769],
+            "extents": [1.047001, 1.01027, 3.578582]
+        },
+        "can_displace_target_on_collision": false,
+        "can_be_displaced_on_collision": false
+    },
+    "physics":
+    {
+        "can_move_linear": true,
+        "max_linear_speed": 1800.0,
+        "time_to_max_linear_speed": 0.25,
+        "arrival_tolerance_spatial_radius_scalar": 2.0,
+        "death_linear_speed_range": [1.0, 2.0],
+        "can_move_angular": true,
+        "max_angular_speed": 109.544502,
+        "time_to_max_angular_speed": 2.19089,
+        "max_bank_angle": 89.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 180.0,
+        "linear_speed_floor_to_brake_for_turn": 500.0,
+        "disable_goal_tracking_on_death": false
+    },
+    "user_interface":
+    {
+        "can_be_controlled": false,
+        "can_ever_be_selected": true,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "torpedo",
+        "can_show_distance_to_plane_line": true
+    },
+    "formation":
+    {
+        "leader_priority": 0,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 1,
+                "group": 1
+            }
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "levels": [
+        {
+            "max_hull_points": 90.0,
+            "hull_point_restore_rate": 0.1,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "hull_crippled_percentage": 0.2,
+            "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "shield_point_restore_rate": 1.9,
+            "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+            "shield_burst_restore":
+            {
+                "cooldown_duration": 60.0,
+                "restore_percentage": 0.5
+            }
+        }]
+    },
+    "skin_groups": [
+    {
+        "skins": [
+            "concussion_charge_shell"]
+    }],
+    "action_effect_size": "small_unit"
+}

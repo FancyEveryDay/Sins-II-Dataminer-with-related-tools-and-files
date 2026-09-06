@@ -1,0 +1,149 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_titan_oblation",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "oblation_cooldown_time",
+		"antimatter_cost": "oblation_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_oblation_on_self"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_titan_oblation_activation"
+                    }
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "oblation_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+				"constraint_type": "composite_and",
+				"constraints": [
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "weapon_has_target"
+					}
+				},
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_missing_shields",
+						"percentage_missing_threshold": 0.1
+					}
+				},
+				{
+                    "constraint_type": "has_valid_targets_in_radius",
+                    "radius_origin_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "oblation_auto_cast_target_filter",
+                    "radius_value": "oblation_radius",
+                    "target_count_value": "oblation_autocast_min_target_count"
+                }]
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "oblation_hud_icon",
+        "tooltip_picture": "oblation_tooltip_picture",
+        "name": "dlc3_herald_titan_oblation_ability_name",
+        "description": "dlc3_herald_titan_oblation_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "oblation_radius"
+            }
+        },
+		"tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_redirected",
+                "value_id": "oblation_damage_redirection_amount",
+                "value_color": "positive",
+                "value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "oblation_radius"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "oblation_duration",
+				"value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_medium"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_redirected_reduced_by",
+                "value_id": "oblation_corruption_medium_damage_per_redirection_target_amount_tooltip",
+                "value_color": "positive",
+                "value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_high"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_redirected_reduced_by",
+                "value_id": "oblation_corruption_high_damage_per_redirection_target_amount_tooltip",
+                "value_color": "positive",
+                "value_float_format": "percentage_one_decimal_place"
+            }]
+        }]
+    }
+}

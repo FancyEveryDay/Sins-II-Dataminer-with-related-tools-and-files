@@ -1,0 +1,66 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "planet",
+        "lowercase_group": "planet_lowercase"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 1639534.537472,
+        "min_camera_distance": 18510.658849,
+        "gui":
+        {
+            "hud_icon": "tec_city_planet_0_shrouded_hud_icon",
+            "hud_picture": "planet_city_shrouded_hud_picture",
+            "tooltip_icon": "tec_city_planet_0_shrouded_tooltip_icon",
+            "name": "city_planet_shrouded_name",
+            "description": ""
+        },
+        "planet_mesh":
+        {
+            "mesh": "city_planet_shrouded_0",
+            "city":
+            {
+                "shader": "planet_city",
+                "city_material": "planet_city_shrouded_0_city",
+                "min_city_level": 1.0
+            }
+        },
+        "main_view_icon":
+        {
+            "group": "fixture",
+            "icon": "tec_city_planet_0_shrouded_main_view_icon",
+            "has_rotation": false,
+            "use_owner_player_color": false
+        },
+        "effects":
+        {
+            "shrouding_effects":
+            {
+                "shrouding_end_effect": "dlc3_planet_shroud_planet_shrouding_end",
+                "shrouding_end_sound": "dlc3_planet_shroud_planet_shrouding_end"
+            },
+			"shield_effect": "city_planet_shield",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "destroy_planet",
+                "alias_binding":
+                {
+                    "particle_effect": "planet_explosion",
+                    "sounds": [
+                        "effect_strippedtothecore"]
+                }
+            }]
+        },
+        "light":
+        {
+            "type": "point_infinite",
+            "color": "8fcceaff",
+            "intensity": 0.37
+        }
+    }],
+    "gravity_well_props": [
+        "sparse_asteroids",
+        "sparse_clouds"]
+}

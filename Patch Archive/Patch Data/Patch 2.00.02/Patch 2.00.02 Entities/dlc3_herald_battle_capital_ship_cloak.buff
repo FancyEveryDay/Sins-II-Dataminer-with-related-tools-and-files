@@ -1,0 +1,121 @@
+{
+    "version": 0,
+    "provides_cloak": true,
+    "required_product": "dlc_Herald",
+    "cloak_alpha_value": "cloak_alpha_value",
+    "cloak_fade_duration_value": "cloak_fade_duration_value",
+    "unit_modifiers": [
+    {
+        "modifier_type": "cloak_quality",
+        "value_behavior": "additive",
+        "value_id": "cloak_quality_from_memory_value"
+    }],
+    "unit_mutations": [
+        "disable_can_auto_acquire_weapon_targets"],
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "cloak_quality_memory",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "cloak_quality_value"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_hyperspace_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_cloak_hyperspace_degrade"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_cloak_damage_degrade"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_cloak_damage_degrade"
+                }]
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_unit_planet_bombed_by_current_spawner",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_cloak_bombing_degrade"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_battle_capital_ship_adaptive_force_field_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_cloak_ability_name",
+        "visibility_scope": "positive"
+    }
+}

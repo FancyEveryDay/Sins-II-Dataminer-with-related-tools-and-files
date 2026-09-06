@@ -1,0 +1,5 @@
+{
+    "version": 0,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": false
+}

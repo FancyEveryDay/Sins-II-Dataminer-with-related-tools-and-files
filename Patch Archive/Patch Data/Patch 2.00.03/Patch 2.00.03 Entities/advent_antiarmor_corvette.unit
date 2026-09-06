@@ -1,0 +1,215 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 62.223034,
+        "box":
+        {
+            "center": [-2e-06, -0.420959, -25.789911],
+            "extents": [20.224335, 6.046798, 35.708298]
+        },
+        "collision_rank": 1
+    },
+    "physics":
+    {
+        "can_move_linear": true,
+        "max_linear_speed": 1100.0,
+        "time_to_max_linear_speed": 2.75,
+        "arrival_tolerance_spatial_radius_scalar": 1.5,
+        "death_linear_speed_range": [0.75, 1.25],
+        "can_move_angular": true,
+        "max_angular_speed": 100.0,
+        "time_to_max_angular_speed": 2.0,
+        "max_bank_angle": 60.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 180.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 400.0,
+        "time_to_strafe_max_linear_speed": 7.5,
+        "strafe_max_linear_distance_spatial_radius_scalar": 10.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace":
+    {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move":
+    {
+        "follow_distance": 248.201538
+    },
+    "attack":
+    {
+        "attack_pattern":
+        {
+            "type": "circle_strafe",
+            "angle_range_off_gravity_well_plane": [-45.0, 45.0]
+        }
+    },
+    "ai":
+    {
+        "attack_target_type_groups": [
+            "heavy_capital",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft"
+        ],
+        "attack_target_type_groups_matching_weapon": "advent_antiarmor_corvette_plasma",
+        "auto_follow_target_priority": 2.0,
+        "pursuit":
+        {
+            "min_target_speed": 500.0,
+            "min_distance_to_target": 1500.0
+        },
+        "attack_target_type_range_scalar": 2.0
+    },
+    "ai_attack_target":
+    {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "corvette"
+    },
+    "player_ai":
+    {
+        "max_count_to_fleet_supply_ratio": 75
+    },
+    "user_interface":
+    {
+        "pip_type": "strikecraft",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons":
+    {
+        "weapons": [
+        {
+            "weapon": "advent_antiarmor_corvette_plasma",
+            "mesh_point": "child.advent_asset_medplasma_mount_0",
+            "weapon_position": [-0.100098, 5.418242, -1.411857],
+            "forward": [-0.026522, 0.009943, 0.999599],
+            "up": [-0.02763, 0.999561, -0.010675],
+            "yaw_arc":
+            {
+                "min_angle": -180.0,
+                "max_angle": 180.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -85.0,
+                "max_angle": 3.0
+            }
+        },
+        {
+            "weapon": "advent_antiarmor_corvette_plasma",
+            "mesh_point": "child.advent_asset_medplasma_mount_1",
+            "weapon_position": [-0.007981, -6.218437, -4.845362],
+            "forward": [0.02652, -0.047824, 0.998504],
+            "up": [0.027631, -0.998438, -0.048555],
+            "yaw_arc":
+            {
+                "min_angle": -210.0,
+                "max_angle": 15.0
+            },
+            "pitch_arc":
+            {
+                "min_angle": -85.0,
+                "max_angle": 3.0
+            }
+        }],
+        "max_range_weapon_index": 0
+    },
+    "formation":
+    {
+        "leader_priority": 1,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 2,
+                "group": 0
+            }
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.8,
+        "can_ever_be_resurrected": true,
+        "levels": [
+        {
+            "max_hull_points": 450.0,
+            "hull_point_restore_rate": 1.0,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "max_shield_points": 400.0,
+            "shield_point_restore_rate": 2.0,
+            "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+            "shield_burst_restore":
+            {
+                "cooldown_duration": 20.0,
+                "restore_percentage": 0.5
+            },
+            "experience_given_on_death": 25.0
+        }]
+    },
+    "corruption":
+    {
+        "max_corruption": 250.0,
+        "corruption_decay_rate": 5.0,
+        "corruption_decay_delay_duration_after_gain": 60.0,
+        "corruption_thresholds": [0.1, 0.5, 0.9],
+        "negative_corruption_buffs": [
+            "advent_ship_corruption_penalty_mild",
+            "advent_ship_corruption_penalty_moderate",
+            "advent_ship_corruption_penalty_extreme"
+        ],
+        "positive_corruption_buffs": [
+            "advent_ship_corruption_benefit_mild",
+            "advent_ship_corruption_benefit_moderate",
+            "advent_ship_corruption_benefit_extreme"
+        ]
+    },
+    "build":
+    {
+        "build_time": 21.0,
+        "price":
+        {
+            "credits": 125.0,
+            "metal": 40.0,
+            "crystal": 45.0
+        },
+        "prerequisites": [
+            ["advent_unlock_antiarmor_corvette"]
+        ],
+        "build_kind": "corvette",
+        "supply_cost": 4,
+        "build_group_id": "corvette"
+    },
+    "target_filter_unit_type": "corvette",
+    "tags": [
+        "corvette"
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+    {
+        "skins": [
+            "advent_antiarmor_corvette"]
+    }],
+    "action_effect_size": "small_unit",
+    "can_join_fleet": true
+}

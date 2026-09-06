@@ -1,0 +1,83 @@
+{
+    "version": 0,
+    "active_duration": "accelerate_entropy_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+			{
+				"constraint":
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_corruption_at_or_above_threshold",
+						"threshold": 0.5
+					}
+				},
+				"action_type": "use_unit_operators_on_single_unit",
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_defiler_cruiser_accelerate_entropy_on_target_damage"
+                }]
+            },
+			{
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "dlc3_herald_defiler_cruiser_accelerate_entropy_on_target_small",
+                        "medium_unit": "dlc3_herald_defiler_cruiser_accelerate_entropy_on_target_medium",
+                        "large_unit": "dlc3_herald_defiler_cruiser_accelerate_entropy_on_target_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "accelerate_entropy_armor_strength_debuff_scalar_modifier"
+    },
+	{
+        "buff_unit_modifier_id": "accelerate_entropy_linear_speed_debuff_scalar_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_hud_icon",
+        "name": "dlc3_herald_defiler_cruiser_accelerate_entropy_ability_name",
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "accelerate_entropy_armor_strength_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "accelerate_entropy_linear_speed_debuff_scalar_modifier"
+            }]
+        }]
+    }
+}

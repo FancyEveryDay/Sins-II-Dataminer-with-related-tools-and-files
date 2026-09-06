@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "make_current_spawner_dead_on_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "active_duration": "afterimage_invulnerable_duration_value",
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_mutations": [
+        "invulnerable",
+        "disable_can_have_hull_restored",
+        "disable_can_hyperspace"
+    ],  
+	"time_actions": [
+    {
+        "first_action_delay_time_value": "fixed_one",		
+		"execution_interval_value": "fixed_one",
+		"execution_interval_count_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+				"buff": "parent_buff",
+                "float_variable": "was_invulnerable",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "fixed_one"
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_unlock_afterimage_research_subject_hud_icon",
+        "name": "dlc3_herald_afterimage_ability_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive"
+    }
+}

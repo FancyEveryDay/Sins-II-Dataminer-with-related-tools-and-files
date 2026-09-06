@@ -1,0 +1,99 @@
+{
+    "version": 0,
+    "level_count": 1,
+    "target_filters": [
+    {
+        "target_filter_id": "dlc3_herald_cloak_auto_cast_enemy_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy"
+            ]
+        }
+    }],
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "cloak_quality_memory"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "cooldown_time_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_alpha_value",
+        "action_value":
+        {
+            "values": [0.4]
+        }
+    },
+    {
+        "action_value_id": "cloak_fade_duration_value",
+        "action_value":
+        {
+            "values": [4.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_quality_value",
+        "action_value":
+        {
+            "values": [2.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_quality_from_memory_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "cloak_quality_memory",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-3.0]
+        }
+    },
+    {
+        "action_value_id": "duration_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "hyperspace_cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-1.0]
+        }
+    },
+    {
+        "action_value_id": "hyperspace_cloak_quality_degrade_duration_value",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    },
+    {
+        "action_value_id": "bombing_cloak_quality_degrade_modifier_value",
+        "action_value":
+        {
+            "values": [-1.0]
+        }
+    },
+    {
+        "action_value_id": "bombing_cloak_quality_degrade_duration_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    }]
+}

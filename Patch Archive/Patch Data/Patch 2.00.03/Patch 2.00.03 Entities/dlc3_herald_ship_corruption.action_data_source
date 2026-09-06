@@ -1,0 +1,250 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "corruption_percent",
+            "purged_corruption"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_current_corruption_percent_value",
+        "action_value":
+        {
+            "transform_type": "per_percent_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_percent_mirror_interval_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_baseline_ability_use_corruption_gain_value",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_weapon_damage_scalar_mild_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percent",
+            "values": [0.05]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_weapon_damage_scalar_moderate_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percent",
+            "values": [0.15]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_weapon_damage_scalar_extreme_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percent",
+            "values": [0.3]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_repair_rate_penalty_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percent",
+            "values": [-0.5]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_purge_amount_value",
+        "action_value":
+        {
+            "values": [25.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_purge_hull_repair_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "purged_corruption",
+            "values": [0.5]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_ship_corruption_purge_duration_value",
+        "action_value":
+        {
+            "values": [0.1]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_ship_corruption_purge_cooldown_time_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_ship_corruption_planetary_presence_interval_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_ship_corruption_planetary_presence_gain_value",
+        "action_value":
+        {
+            "values": [0.01]
+        }
+    }],
+    "buff_actions": [
+    {
+        "action_id": "dlc3_herald_ship_corruption_mirror_current_percent",
+        "action":
+        {
+            "action_type": "change_buff_memory_float_value",
+            "float_variable": "corruption_percent",
+            "math_operators": [
+            {
+                "operator_type": "assign",
+                "operand_value": "dlc3_herald_current_corruption_percent_value"
+            }]
+        }
+    },
+    {
+        "action_id": "dlc3_herald_ship_corruption_add_baseline_ability_use_corruption",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "operators": [
+            {
+                "operator_type": "add_corruption",
+                "corruption_add_value": "dlc3_herald_baseline_ability_use_corruption_gain_value"
+            }]
+        }
+    },
+    {
+        "action_id": "dlc3_herald_ship_corruption_purge_and_repair",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "operators": [
+            {
+                "operator_type": "remove_corruption",
+                "corruption_remove_value": "dlc3_herald_purge_amount_value",
+                "actual_removed_corruption_float_variable": "purged_corruption"
+            },
+            {
+                "operator_type": "repair_damage",
+                "affect_type": "hull_only",
+                "repair_value": "dlc3_herald_purge_hull_repair_value"
+            }]
+        }
+    },
+    {
+        "action_id": "dlc3_herald_ship_corruption_add_planetary_presence_corruption",
+        "action":
+        {
+            "action_type": "use_unit_operators_on_single_unit",
+            "source_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "destination_unit":
+            {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well_primary_fixture"
+            },
+            "operators": [
+            {
+                "operator_type": "add_corruption",
+                "corruption_add_value": "dlc3_herald_ship_corruption_planetary_presence_gain_value",
+                "planet_corruption_strength_unit_modifier_type": "planet_corruption_strength",
+                "planet_corruption_strength_unit_modifier_unit":
+                {
+                    "unit_type": "current_spawner"
+                }
+            }]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "dlc3_herald_corruption_weapon_damage_scalar_mild",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_weapon_damage_scalar_mild_value"
+        }
+    },
+    {
+        "buff_weapon_modifier_id": "dlc3_herald_corruption_weapon_damage_scalar_moderate",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_weapon_damage_scalar_moderate_value"
+        }
+    },
+    {
+        "buff_weapon_modifier_id": "dlc3_herald_corruption_weapon_damage_scalar_extreme",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_weapon_damage_scalar_extreme_value"
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_hull_restore_rate_penalty",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hull_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_repair_rate_penalty_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_armor_restore_rate_penalty",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_repair_rate_penalty_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_shield_restore_rate_penalty",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "shield_point_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_repair_rate_penalty_value"
+        }
+    }]
+}

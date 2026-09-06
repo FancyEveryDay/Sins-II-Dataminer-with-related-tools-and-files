@@ -1,0 +1,113 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "inspiring_broadcast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "inspiring_broadcast_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "trader_colony_capital_ship_inspiring_broadcast_on_target",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "inspiring_broadcast_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [100.0, 100.0, 100.0]
+        }
+    },
+    {
+        "action_value_id": "inspiring_broadcast_cooldown_time_value",
+        "action_value":
+        {
+            "values": [90.0, 90.0, 90.0]
+        }
+    },
+    {
+        "action_value_id": "inspiring_broadcast_duration_value",
+        "action_value":
+        {
+            "values": [60.0, 60.0, 60.0]
+        }
+    },
+    {
+        "action_value_id": "inspiring_broadcast_radius_value",
+        "action_value":
+        {
+            "values": [5000.0, 6500.0, 8000.0]
+        }
+    },
+    {
+        "action_value_id": "inspiring_broadcast_weapon_cooldown_duration_bonus_value",
+        "action_value":
+        {
+            "values": [-0.1, -0.2, -0.3]
+        }
+    },
+    {
+        "action_value_id": "inspiring_broadcast_auto_cast_target_count_value",
+        "action_value":
+        {
+            "values": [5.0, 5.0, 5.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "cooldown_duration",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "inspiring_broadcast_weapon_cooldown_duration_bonus_value"
+        }
+    }]
+}

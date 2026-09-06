@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 1,
+    "field": "military_arrival",
+    "field_coord": [3, 1],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_corruptor_cruiser"]
+    ],
+    "name": "dlc3_herald_unlock_corruptor_cruiser_purge_ability_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_corruptor_cruiser_purge_ability_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_hud_icon",
+    "tooltip_picture": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_tooltip_picture"
+}

@@ -1,0 +1,103 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_siege_capital_ship_hateful_onslaught",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "hateful_onslaught_cooldown_time_value",
+        "stop_use_type": "on_spawned_buff_removed",
+        "antimatter_cost": "hateful_onslaught_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "hateful_onslaught_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_siege_capital_ship_hateful_onslaught_on_self"
+                },
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "hateful_onslaught_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "hateful_onslaught_target_filter"
+        ],
+        "range": "hateful_onslaught_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 5.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "is_bombing_planet"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "hateful_onslaught_target_filter"
+            }]
+        },
+        "watched_buff": "dlc3_herald_siege_capital_ship_hateful_onslaught_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "hateful_onslaught_hud_icon",
+        "tooltip_picture": "hateful_onslaught_tooltip_picture",
+        "name": "dlc3_herald_siege_capital_ship_hateful_onslaught_ability_name",
+        "description": "dlc3_herald_siege_capital_ship_hateful_onslaught_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "hateful_onslaught_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.planet_bombing_damage",
+                "value_id": "hateful_onslaught_bombing_damage_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.planet_bombing_volleys",
+                "value_id": "hateful_onslaught_execution_count_value"
+            }]
+        }]
+    }
+}

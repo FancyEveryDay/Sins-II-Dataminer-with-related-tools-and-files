@@ -1,0 +1,68 @@
+{
+    "version": 0,
+	"target_filters": [
+    {
+        "target_filter_id": "detection_droids_auto_cast_enemy_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy"
+            ]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "detection_droids_cooldown_value",
+        "action_value":
+        {
+            "values": [120.0]
+        }
+    },
+	{
+        "action_value_id": "detection_droids_antimatter_value",
+        "action_value":
+        {
+            "values": [30.0]
+        }
+    },
+	{
+        "action_value_id": "detection_droids_duration",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+	{
+        "action_value_id": "detection_droids_detection_quality_value",
+        "action_value":
+        {
+            "values": [4.0]
+        }
+    },
+	{
+        "action_value_id": "detection_droids_detection_range_value",
+        "action_value":
+        {
+            "values": [7500.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "detection_droids_detection_quality_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "detection_quality",
+            "value_behavior": "additive",
+            "value_id": "detection_droids_detection_quality_value"
+        }
+    },
+	{
+        "buff_unit_modifier_id": "detection_droids_detection_range_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "detection_range",
+            "value_behavior": "additive",
+            "value_id": "detection_droids_detection_range_value"
+        }
+    }]
+}

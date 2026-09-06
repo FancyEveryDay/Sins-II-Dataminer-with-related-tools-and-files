@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": false,
+    "gui":
+    {
+        "hud_icon": "corruption_planet_track_icon",
+        "tooltip_icon": "corruption_planet_track_tooltip_icon",
+        "name": "planetary_corruption_debuff_buff_name",
+        "description": "planetary_corruption_debuff_buff_description",
+        "visibility_scope": "negative",
+        "is_visible_within_unit_tooltip": true,
+        "is_expire_time_suppressed": true,
+        "show_duplicate_buffs": false
+    }
+}

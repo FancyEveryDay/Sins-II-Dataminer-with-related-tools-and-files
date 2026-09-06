@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "rapid_manufacturing_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [150.0]
+        }
+    },
+    {
+        "action_value_id": "rapid_manufacturing_cooldown_time_value",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "rapid_manufacturing_duration_value",
+        "action_value":
+        {
+            "values": [180.0]
+        }
+    },
+    {
+        "action_value_id": "rapid_manufacturing_strikecraft_count_value",
+        "action_value":
+        {
+            "values": [25.0]
+        }
+    }]
+}

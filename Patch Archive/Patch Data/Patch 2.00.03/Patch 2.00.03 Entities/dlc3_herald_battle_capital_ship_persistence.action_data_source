@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "was_invulnerable"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "persistence_invulnerable_duration_value",
+        "action_value":
+        {
+            "values": [45.0, 135.0]
+        }
+    },
+    {
+        "action_value_id": "persistence_hull_crippled_percentage_value",
+        "action_value":
+        {
+            "values": [0.25, 0.75]
+        }
+    },
+    {
+        "action_value_id": "persistence_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "per_max_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "persistence_was_invulnerable_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "was_invulnerable",
+            "values": [1.0, 1.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "persistence_hull_crippled_percentage_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "hull_crippled_percentage",
+            "value_behavior": "scalar",
+            "value_id": "persistence_hull_crippled_percentage_value"
+        }
+    }]
+}

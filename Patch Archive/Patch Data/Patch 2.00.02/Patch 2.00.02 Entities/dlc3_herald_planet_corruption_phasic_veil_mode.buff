@@ -1,0 +1,108 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "per_player",
+    "restart_other_stacked_buffs_when_started": false,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "phasic_veil_enemy_phase_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_planet_corruption_phasic_veil_charge_slow",
+                    "skip_if_existing_buff_from_current_spawner": true
+                },
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "phasic_veil_enemy_phase_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_planet_corruption_phasic_veil_exposure",
+                    "skip_if_existing_buff_from_current_spawner": true
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_units_in_phase_lanes",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "traveling_to_gravity_well_origin": true,
+                "traveling_from_gravity_well_origin": true,
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "phasic_veil_enemy_phase_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_planet_corruption_phasic_veil_travel_slow",
+                    "skip_if_existing_buff_from_current_spawner": true
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead",
+                "buff": "all_child_buffs"
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "phase_resonance_icon",
+        "tooltip_icon": "phase_resonance_icon",
+        "name": "corruption_mode.phasic_veil.name",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "phasic_veil_hyperspace_charge_time_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "phasic_veil_hyperspace_speed_modifier"
+            }]
+        }]
+    }
+}

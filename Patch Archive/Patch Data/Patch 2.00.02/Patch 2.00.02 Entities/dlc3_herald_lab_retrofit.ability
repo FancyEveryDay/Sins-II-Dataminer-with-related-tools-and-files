@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_lab_retrofit",
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_lab_retrofit_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_lab_retrofit_ability_tooltip_picture",
+        "name": "dlc3_herald_lab_retrofit_ability_name",
+        "description": "dlc3_herald_lab_retrofit_ability_description"
+    }
+}

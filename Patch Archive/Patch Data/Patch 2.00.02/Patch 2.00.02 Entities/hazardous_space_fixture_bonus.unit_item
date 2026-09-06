@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "hazardous_space_fixture_bonus_hud_icon",
+    "tooltip_icon": "hazardous_space_fixture_bonus_hud_icon",
+	"tooltip_picture": "hazardous_space_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.hazardous_space.name",
+    "description": "planet_bonus.hazardous_space.desc",
+    "ability": "hazardous_space_fixture_bonus"
+}

@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "impassable_well_fixture_bonus_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "strikecraft",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy",
+                "friendly",
+                "none"]
+        }
+    }]
+}

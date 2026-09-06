@@ -1,0 +1,663 @@
+{
+    "version": 0,
+    "name":
+    {
+        "group": "capital_ship"
+    },
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 29140.051569,
+        "min_camera_distance": 782.129988,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_support_capital_ship_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_support_capital_ship_main_view_icon",
+            "hud_picture": "dlc3_herald_support_capital_ship_hud_picture",
+            "tooltip_picture": "dlc3_herald_support_capital_ship_tooltip_picture",
+            "name": "dlc3_herald_support_capital_ship_name",
+            "description": "dlc3_herald_support_capital_ship_description",
+            "hud_selection_window_icon_offet": [-10, 0]
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_support_capital_ship",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_1",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_1",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_2",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_2",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_3",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_3",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_4",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_4",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_support_capital_ship_component_prong_5",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_support_capital_ship_component_prong_5",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_1_light_small_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_1_light_small_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_1_light_small_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_1_light_small_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_1_med_beam_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_1_med_beam_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_1_med_beam_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_1_med_beam_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_large_barrel_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_large_barrel_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_type_5_pd_large_mount_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_type_5_pd_large_mount_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "capital_ship",
+            "icon": "dlc3_herald_support_capital_ship_main_view_icon",
+            "selected_icon": "dlc3_herald_support_capital_ship_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_support_capital_ship_main_view_icon_sub_selected"
+        },
+        "effects":
+        {
+            "exhaust_effects":
+            {
+                "particle_effects": [
+                {
+                    "particle_effect": "dlc3_medium_exhaust_shrink"
+                }]
+            },
+            "hyperspace_effects":
+            {
+                "charge_effect": "dlc3_hyperspace_portal_charge_medium",
+                "charge_effect_between_stars": "dlc3_hyperspace_portal_charge_medium",
+                "charge_effect_destabilized": "dlc3_hyperspace_portal_charge_medium",
+                "travel_effect": "dlc3_phase_travel_medium",
+                "travel_effect_between_stars": "dlc3_phase_travel_medium",
+                "travel_effect_destabilized": "dlc3_phase_travel_medium",
+                "exit_effect": "dlc3_phase_portal_exit_medium",
+                "charge_sound": "dlc3_hyperspace_chargeup",
+                "enter_sound": "dlc3_hyperspace_entry",
+                "exit_sound": "dlc3_hyperspace_exit"
+            },
+            "damage_effects":
+            {
+                "max_damage_effect_count": 15,
+                "damage_effects": [
+                {
+                    "max_count": 6,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.4,
+                    "particle_effect": "dlc3_herald_damage_stage3"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.7,
+                    "particle_effect": "dlc3_herald_damage_stage3"
+                },
+                {
+                    "max_count": 4,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.55,
+                    "particle_effect": "dlc3_herald_damage_stage2"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.8,
+                    "particle_effect": "dlc3_herald_damage_stage2"
+                },
+                {
+                    "max_count": 5,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.95,
+                    "particle_effect": "dlc3_herald_damage_stage1"
+                }]
+            },
+            "level_up_effect": "capitalship_levelup",
+            "level_up_sound": "capitalship_levelup",
+            "shield_effect": "dlc3_herald_support_capital_ship",
+            "effect_alias_bindings": [
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_beam_weapon_beam",
+                "alias_binding":
+                {
+                    "beam": "dlc3_heavy_beam_previs_beam",
+                    "sounds": [
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_0",
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_1",
+                        "weapon_loop_eidolon_energy_heavy_nullbeam_2"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_beam_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_impact",
+                    "sounds": [
+                        "weapon_impact_energy_heavy_hithull",
+                        "weapon_impact_energy_heavy_hithull_01",
+                        "weapon_impact_energy_heavy_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_beam_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_impact",
+                    "sounds": [
+                        "weapon_impact_generic_heavy_hitshields",
+                        "weapon_impact_generic_heavy_hitshields_01",
+                        "weapon_impact_generic_heavy_hitshields_02",
+                        "weapon_impact_generic_heavy_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_beam_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_heavy_beam_previs_muzzle"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_confusion_bolt_buff_large",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_buff_large",
+                    "sounds": [
+                        "ambient_loop_psi_reverie"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_confusion_bolt_buff_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_buff_medium",
+                    "sounds": [
+                        "ambient_loop_psi_reverie"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_confusion_bolt_buff_small",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_buff_small",
+                    "sounds": [
+                        "ambient_loop_psi_reverie"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_confusion_bolt_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_muzzle",
+                    "sounds": [
+                        "ability_muzzle_tech_empcharge"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_confusion_bolt_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_confusion_bolt_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_mirror_field_activation",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_mirror_field_on_target_activation",
+                    "sounds": [
+                        "ability_activate_psi_vengeance"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_mirror_field_on_target_large",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_mirror_field_on_target_large",
+                    "sounds": [
+                        "ambient_loop_psi_vengeance"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_mirror_field_on_target_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_mirror_field_on_target_medium",
+                    "sounds": [
+                        "ambient_loop_psi_vengeance"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_mirror_field_on_target_small",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_mirror_field_on_target_small",
+                    "sounds": [
+                        "ambient_loop_psi_vengeance"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_null_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_impact",
+                    "sounds": [
+                        "weapon_impact_energy_medium_hithull",
+                        "weapon_impact_energy_medium_hithull_01",
+                        "weapon_impact_energy_medium_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_null_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_impact",
+                    "sounds": [
+                        "weapon_impact_generic_medium_hitshields",
+                        "weapon_impact_generic_medium_hitshields_01",
+                        "weapon_impact_generic_medium_hitshields_02",
+                        "weapon_impact_generic_medium_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_null_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_medium_nullcannon",
+                        "weapon_muzzle_dlc3_medium_nullcannon_01",
+                        "weapon_muzzle_dlc3_medium_nullcannon_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_null_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_medium_projectile_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_large",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_large",
+                    "sounds": [
+                        "ability_loop_phase_nanite_hullrepair"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_medium",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_medium",
+                    "sounds": [
+                        "ability_loop_phase_nanite_hullrepair"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_small",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_particle_decay_antimatter_drain_small",
+                    "sounds": [
+                        "ability_loop_phase_nanite_hullrepair"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_planet_bombing_weapon_beam",
+                "alias_binding":
+                {
+                    "beam": "dlc3_bombardment_beam",
+                    "sounds": [
+                        "weapon_loop_phase_energy_planetbomb"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_planet_bombing_weapon_charge",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_bombardment_muzzle_charge",
+                    "sounds": [
+                        "weapon_muzzle_phase_medium_wavecannon_charge",
+                        "weapon_muzzle_phase_medium_wavecannon_charge_01"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_planet_bombing_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_bombardment_impact",
+                    "sounds": [
+                        "weapon_impact_phase_energy_planetbomb_hithull"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_planet_bombing_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_bombardment_impact",
+                    "sounds": [
+                        "weapon_impact_generic_heavy_hitshields",
+                        "weapon_impact_generic_heavy_hitshields_01",
+                        "weapon_impact_generic_heavy_hitshields_02",
+                        "weapon_impact_generic_heavy_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_planet_bombing_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_bombardment_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_phase_energy_planetbomb"]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_point_defense_shock_cannon_weapon_hit_hull",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_energy_pointdefense_hithull",
+                        "weapon_impact_energy_pointdefense_hithull_01",
+                        "weapon_impact_energy_pointdefense_hithull_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_point_defense_shock_cannon_weapon_hit_shield",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_impact",
+                    "sounds": [
+                        "weapon_impact_generic_pointdefense_hitshields",
+                        "weapon_impact_generic_pointdefense_hitshields_01",
+                        "weapon_impact_generic_pointdefense_hitshields_02",
+                        "weapon_impact_generic_pointdefense_hitshields_03"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_point_defense_shock_cannon_weapon_muzzle",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_muzzle",
+                    "sounds": [
+                        "weapon_muzzle_dlc3_pd_shockcannon",
+                        "weapon_muzzle_dlc3_pd_shockcannon_01",
+                        "weapon_muzzle_dlc3_pd_shockcannon_02"
+                    ]
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_point_defense_shock_cannon_weapon_projectile_travel",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_shock_cannon_pd_travel"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_spatial_lensing_activation",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_spatial_lensing_activation"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_ship_spatial_lensing_duration",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_herald_support_capital_ship_spatial_lensing_duration"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_cloaking_start",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_support_capital_cloaking_start"
+                }
+            },
+            {
+                "alias_name": "dlc3_herald_support_capital_cloaking_end",
+                "alias_binding":
+                {
+                    "particle_effect": "dlc3_support_capital_cloaking_end"
+                }
+            }]
+        },
+        "sounds":
+        {
+            "move_sounds":
+            {
+                "engine": "ambient_loop_eidolon_capengine",
+                "hyperspace_travel": "dlc3_hyperspace_travel"
+            },
+            "dialogue":
+            {
+                "spawned":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_spawned_neutral_0"]
+                },
+                "selected":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_selected_neutral_0",
+                        "dlc3_herald_support_capital_ship_selected_neutral_1",
+                        "dlc3_herald_support_capital_ship_selected_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_selected_scared_0",
+                        "dlc3_herald_support_capital_ship_selected_scared_1",
+                        "dlc3_herald_support_capital_ship_selected_scared_2"
+                    ]
+                },
+                "order_issued":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_order_issued_neutral_0",
+                        "dlc3_herald_support_capital_ship_order_issued_neutral_1",
+                        "dlc3_herald_support_capital_ship_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_order_issued_scared_0",
+                        "dlc3_herald_support_capital_ship_order_issued_scared_1",
+                        "dlc3_herald_support_capital_ship_order_issued_scared_2"
+                    ]
+                },
+                "attack_order_issued":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_attack_order_issued_neutral_0",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_neutral_1",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_neutral_2"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_attack_order_issued_scared_0",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_scared_1",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_scared_2"
+                    ],
+                    "smug": [
+                        "dlc3_herald_support_capital_ship_attack_order_issued_smug_0",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_smug_1",
+                        "dlc3_herald_support_capital_ship_attack_order_issued_smug_2"
+                    ]
+                },
+                "retreat":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_retreat_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_retreat_scared_0"]
+                },
+                "hyperspace_charge_started":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_hyperspace_charge_started_neutral_0"]
+                },
+                "cannot_hyperspace":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_cannot_hyperspace_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_cannot_hyperspace_scared_0"]
+                },
+                "shields_down":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_shields_down_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_shields_down_scared_0"]
+                },
+                "armor_down":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_armor_down_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_armor_down_scared_0"]
+                },
+                "became_crippled":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_became_crippled_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_became_crippled_scared_0"]
+                },
+                "destroyed":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_destroyed_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_destroyed_scared_0"]
+                },
+                "ship_component_finished_building":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_component_finished_building_neutral_0"
+                    ]
+                },
+                "ability_cooldown_is_not_completed":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_ability_cooldown_is_not_completed_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_ability_cooldown_is_not_completed_scared_0"
+                    ]
+                },
+                "insufficient_antimatter":
+                {
+                    "neutral": [
+                        "dlc3_herald_support_capital_ship_insufficient_antimatter_neutral_0"
+                    ],
+                    "scared": [
+                        "dlc3_herald_support_capital_ship_insufficient_antimatter_scared_0"]
+                }
+            }
+        },
+        "death_sequence_group": "dlc3_capitalship0_0"
+    }]
+}

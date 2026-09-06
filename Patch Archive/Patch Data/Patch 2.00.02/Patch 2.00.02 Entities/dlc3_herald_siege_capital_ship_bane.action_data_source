@@ -1,0 +1,123 @@
+{
+    "version": 0,
+    "level_count": 2,
+	"target_filters": [
+	{
+        "target_filter_id": "bane_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            }]
+        }
+    }],
+	"per_buff_memory_declaration":
+	{
+        "float_variable_ids": [
+            "corruption_percentage"]
+    },
+    "action_values": [
+	{
+        "action_value_id": "bane_aoe_radius",
+        "action_value":
+        {
+            "values": [2500.0, 3500.0]
+        }
+    },
+	{
+        "action_value_id": "bane_debuff_duration",
+        "action_value":
+        {
+            "values": [20.0, 30.0]
+        }
+    },
+	{
+        "action_value_id": "bane_target_corruption_max",
+        "action_value":
+        {
+            "transform_type": "per_max_corruption",
+            "transform_unit":
+            {
+                "unit_type": "trigger_event_destination"
+            },
+            "values": [1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "bane_target_corruption_current",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "trigger_event_destination"
+            },
+            "values": [1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "bane_weapon_cooldown_debuff_scalar_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percentage",
+			"values": [0.5, 0.9]
+        }
+    },
+	{
+        "action_value_id": "bane_weapon_tracking_debuff_scalar_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percentage",
+			"values": [0.75, 1.25]
+        }
+    },
+	{
+        "action_value_id": "bane_weapon_cooldown_debuff_tooltip_scalar_value",
+        "action_value":
+        {
+            "values": [0.005, 0.009]
+        }
+    },
+	{
+        "action_value_id": "bane_weapon_tracking_tooltip_debuff_scalar_value",
+        "action_value":
+        {
+            "values": [-0.0075, -0.0125]
+        }
+    }],
+	"buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "bane_weapon_cooldown_debuff_scalar_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "bane_weapon_cooldown_debuff_scalar_value"
+        }
+    },
+	{
+        "buff_weapon_modifier_id": "bane_weapon_tracking_debuff_scalar_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "tracking_speed",
+            "value_behavior": "scalar",
+            "value_id": "bane_weapon_tracking_debuff_scalar_value"
+        }
+    }]
+}

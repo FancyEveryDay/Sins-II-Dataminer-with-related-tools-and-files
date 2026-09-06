@@ -1,0 +1,143 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 635.171814,
+        "box":
+        {
+            "center": [-0.0, 151.90303, -26.755524],
+            "extents": [187.619934, 476.992981, 176.630768]
+        },
+        "can_be_displaced_on_collision": false
+    },
+    "physics":
+    {},
+    "ai":
+    {
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft"]
+    },
+    "ai_attack_target":
+    {
+        "attack_priority": 25.0,
+        "is_always_a_threat": false,
+        "attack_target_type": "civilian"
+    },
+    "user_interface":
+    {
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 100,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "civilian_structure"
+    },
+    "structure":
+    {
+        "slot_type": "civilian",
+        "slots_required": 1,
+        "roles": [],
+        "build_group_id": "civilian"
+    },
+    "formation":
+    {
+        "leader_priority": 3,
+        "offsets_per_formation_type":
+        {
+            "ships_and_structures":
+            {
+                "rank": 4,
+                "group": 5
+            }
+        }
+    },
+    "spawn_debris":
+    {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts":
+        {
+            "small_debris": [14, 18],
+            "large_debris": [3, 5]
+        }
+    },
+    "health":
+    {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 3.8,
+        "durability": 500.0,
+        "levels": [
+        {
+            "max_hull_points": 1000.0,
+            "hull_point_restore_rate": 3.0,
+            "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "max_armor_points": 1400.0,
+            "armor_point_restore_rate": 4.0,
+            "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+            "armor_strength": 40.0,
+            "max_shield_points": 2000.0,
+            "shield_point_restore_rate": 5.0,
+            "shield_point_restore_cooldown_duration_after_damage_taken": 20.0,
+            "shield_burst_restore":
+            {
+                "cooldown_duration": 60.0,
+                "restore_percentage": 0.5
+            },
+            "experience_given_on_death": 25.0
+        }]
+    },
+    "corruption":
+    {
+        "max_corruption": 1000.0,
+        "corruption_decay_rate": 12.5,
+        "corruption_decay_delay_duration_after_gain": 60.0,
+        "corruption_thresholds": [0.1, 0.5, 0.9]
+    },
+    "build":
+    {
+        "build_time": 50.0,
+        "price":
+        {
+            "credits": 500.0,
+            "metal": 75.0,
+            "crystal": 75.0
+        },
+        "build_kind": "structure",
+        "build_radius": 357.681335
+    },
+    "ship_component_shop":
+    {},
+    "unit_modifiers": [
+    {
+        "modifier_type": "detection_quality",
+        "value_behavior": "additive",
+        "value": 3.0
+    },
+    {
+        "modifier_type": "detection_range",
+        "value_behavior": "additive",
+        "value": 10000.0
+    }],
+    "research_provider":
+    {
+        "provided_research_points":
+        {
+            "military": 1.0
+        }
+    },
+    "target_filter_unit_type": "structure",
+    "tags": [
+        "structure"
+    ],
+    "virtual_supply_cost": 10,
+    "abilities": [
+    {
+        "abilities": [
+            "dlc3_herald_lab_retrofit"]
+    }],
+    "skin_groups": [
+    {
+        "skins": [
+            "dlc3_herald_military_research_lab_structure"]
+    }],
+    "action_effect_size": "medium_unit"
+}

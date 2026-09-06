@@ -1,0 +1,151 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_support_capital_ship_spatial_lensing",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "spacial_lensing_cooldown_time",
+        "antimatter_cost": "spacial_lensing_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+				"operators_constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+                    {
+                        "constraint_type": "has_corruption_at_or_above_threshold",
+                        "threshold": 0.5
+                    }
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_capital_ship_spatial_lensing_corruption_on_self"
+                }],
+				"constraint_not_satisified_operators": [
+                {
+					"operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_capital_ship_spatial_lensing_on_self"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_support_capital_ship_spatial_lensing_activation"
+                    }
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "spacial_lensing_corruption_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+				"constraints": [
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "weapon_has_target"
+					}
+				},
+				{
+					"constraint_type": "has_valid_targets_in_radius",
+					"radius_origin_unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"target_filter_id": "spacial_lensing_target_filter",
+					"radius_value": "spacial_lensing_radius",
+					"target_count_value": "spacial_lensing_autocast_min_target_count"
+				}]
+            }
+        }
+    },
+	"gui":
+    {
+        "hud_icon": "spatial_lensing_hud_icons",
+        "tooltip_picture": "spatial_lensing_tooltip_picture",
+        "name": "dlc3_herald_support_capital_ship_spatial_lensing_ability_name",
+        "description": "dlc3_herald_support_capital_ship_spatial_lensing_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "spacial_lensing_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.on_hostile_strikecraft_and_missiles_subheader",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "spacial_lensing_radius"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "spacial_lensing_linear_speed_debuff_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "spacial_lensing_angular_speed_debuff_modifer"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "spacial_lensing_duration",
+				"value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_medium"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "spacial_lensing_increased_damage_taken_modifier"
+            }]
+        }]
+    }
+}

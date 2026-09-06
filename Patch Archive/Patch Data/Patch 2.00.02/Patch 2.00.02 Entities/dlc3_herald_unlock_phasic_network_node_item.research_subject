@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_coercion",
+    "field_coord": [2, 1],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 150.0,
+        "crystal": 150.0
+    },
+    "name": "dlc3_herald_unlock_phasic_network_node_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_phasic_network_node_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_phasic_network_node_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_phasic_network_node_unit_item_tooltip_picture"
+}

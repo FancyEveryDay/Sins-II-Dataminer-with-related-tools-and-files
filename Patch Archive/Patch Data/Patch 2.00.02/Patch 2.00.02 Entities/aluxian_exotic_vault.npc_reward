@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "aluxian_exotic_vault_hud_icon",
+        "name": "npc_reward.aluxian_exotic_vault.name",
+        "description": "npc_reward.aluxian_exotic_vault.description"
+    },
+    "type": "random_exotics",
+    "random_exotics":
+    {
+        "count": [6,8],
+        "exotics": ["offense", "defense", "utility", "economic"]
+    }
+}

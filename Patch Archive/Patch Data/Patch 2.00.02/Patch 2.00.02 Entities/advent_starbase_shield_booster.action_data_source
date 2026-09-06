@@ -1,0 +1,44 @@
+{
+    "version": 0,
+	"per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "current_shields"]
+    },
+    "action_values": [
+{
+        "action_value_id": "shield_booster_damage_prevented_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [-0.1],
+            "ratio":
+            {
+                "ratio_type": "per_spell_power",
+                "ratio_values": [-0.001]
+            }
+        }
+    },
+    {
+        "action_value_id": "shield_booster_cooldown_time_value",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "shield_booster_duration_value",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_starbase_shield_booster_effect_on_self",
+        "alias_binding":
+        {
+            "particle_effect": "advent_psi_shield_boost"
+        }
+    }]
+}

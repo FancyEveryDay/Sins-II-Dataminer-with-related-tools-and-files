@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_ascension",
+    "field_coord": [4, 9],
+    "research_time": 225.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 250.0,
+        "crystal": 600.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_spell_power_0"]
+    ],
+    "name": "advent_unlock_beam_defense_ward_ability_research_subject_name",
+    "name_uppercase": "advent_unlock_beam_defense_ward_ability_research_subject_name_uppercase",
+    "hud_icon": "advent_beam_defense_synergetic_ward_hud_icon",
+    "tooltip_picture": "advent_beam_defense_synergetic_ward_tooltip_picture"
+}

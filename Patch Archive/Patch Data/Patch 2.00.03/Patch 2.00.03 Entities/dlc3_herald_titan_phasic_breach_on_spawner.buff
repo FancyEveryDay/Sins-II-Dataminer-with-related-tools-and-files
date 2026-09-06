@@ -1,0 +1,114 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+		"first_action_delay_time_value": "phasic_breach_initial_delay",
+		"execution_interval_value": "fixed_one",
+		"execution_interval_count_value": "phasic_breach_duration",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+				"radius_value": "phasic_breach_primary_aoe_radius",
+                "include_y_axis_in_radius_check": true,
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "phasic_breach_target_filter"
+                    },               
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_phasic_breach_target_debuff"
+                }]
+            }]
+        }
+    },
+	{
+		"first_action_delay_time_value": "phasic_breach_initial_delay",
+		"execution_interval_value": "phasic_breach_excursion_execution_interval",
+		"execution_interval_count_value": "phasic_breach_primary_excursion_interval_count",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+				"radius_value": "phasic_breach_primary_aoe_radius",
+                "include_y_axis_in_radius_check": true,
+				"max_target_count_value": "phasic_breach_primary_target_limit",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "phasic_breach_target_filter"
+                    },               
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_phasic_breach_on_primary_target"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_titan_phasic_breach_detonation_effect"
+                    }
+					
+                }]
+            },
+			{
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_titan_phasic_breach_duration"
+                }
+            }]
+        }
+    }]
+}

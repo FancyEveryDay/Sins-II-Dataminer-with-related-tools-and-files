@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "active_duration": "dlc3_herald_ship_corruption_purge_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "can_purge_corruption",
+                    "minimum_purge_amount": 0.0
+                }
+            },
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_purge_and_repair"
+            }]
+        }
+    }]
+}

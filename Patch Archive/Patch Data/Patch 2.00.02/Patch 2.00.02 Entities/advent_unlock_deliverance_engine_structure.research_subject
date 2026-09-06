@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_evangelism",
+    "field_coord": [6, 5],
+    "research_time": 360.0,
+    "price":
+    {
+        "credits": 1100.0,
+        "metal": 425.0,
+        "crystal": 900.0
+    },
+    "prerequisites": [
+        ["advent_upgrade_culture_rate_2"]
+    ],
+    "name": "advent_unlock_deliverance_engine_structure_research_subject_name",
+    "name_uppercase": "advent_unlock_deliverance_engine_structure_research_subject_name_uppercase",
+    "hud_icon": "advent_deliverance_engine_structure_hud_icon",
+    "tooltip_picture": "advent_deliverance_engine_structure_tooltip_picture"
+}

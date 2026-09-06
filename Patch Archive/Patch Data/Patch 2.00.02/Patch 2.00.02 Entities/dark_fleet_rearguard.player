@@ -1,0 +1,121 @@
+{
+    "version": 0,
+    "race": "vasari",
+    "home_planet":
+    {},
+    "starting_units_in_gravity_well":
+    {
+        "random_units": [
+        {
+            "unit": "vasari_light_frigate",
+            "weight": 1.0
+        }]
+    },
+    "unit_limits":
+    {},
+    "corruption_thresholds": [
+        0.1,
+        0.5,
+        0.9
+    ],
+    "negative_corruption_buffs": [
+        "vasari_ship_corruption_penalty_mild",
+        "vasari_ship_corruption_penalty_moderate",
+        "vasari_ship_corruption_penalty_extreme"
+    ],
+    "npc":
+    {
+        "visuals": [
+        {
+            "name": "npc_player_name.dark_fleet_rearguard",
+            "icon": "faction_0",
+            "color_group": "dark_fleet_rearguard"
+        }],
+        "start_allied_to_playable_players": false,
+        "start_allied_to_other_npc_players": false,
+        "start_allied_to_militia_npc_players": true,
+        "can_survey_planets": false,
+        "militia":
+        {
+            "militia_spawn_units": [
+            {
+                "spawned_units":
+                {
+                    "required_units": [
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [2, 2]
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "count": [1, 2]
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "count": [1, 2]
+                    }],
+                    "random_units": [
+                    {
+                        "unit": "vasari_light_frigate",
+                        "weight": 3.0
+                    },
+                    {
+                        "unit": "vasari_long_range_frigate",
+                        "weight": 2.0
+                    },
+                    {
+                        "unit": "vasari_anticorvette_corvette",
+                        "weight": 1.0
+                    }]
+                },
+                "supply_threshold": 25
+            },
+            {
+                "spawned_units":
+                {
+                    "required_units": [
+                    {
+                        "unit": "vasari_light_frigate",
+                        "count": [1, 1]
+                    }],
+                    "random_units": [
+                    {
+                        "unit": "vasari_light_frigate",
+                        "weight": 1.0
+                    }]
+                },
+                "supply_threshold": 0
+            }]
+        },
+        "simple_planet_tracks":
+        {
+            "defense":
+            {
+                "max_health_points": 2000.0,
+                "health_points_restore_rate": 1.0
+            },
+            "logistics":
+            {},
+            "commerce":
+            {},
+            "mining":
+            {},
+            "research":
+            {},
+            "corruption":
+            {},
+            "industry":
+            {},
+            "influence":
+            {},
+            "culture":
+            {},
+            "population":
+            {},
+            "surveying":
+            {},
+            "focus":
+            {}
+        }
+    }
+}

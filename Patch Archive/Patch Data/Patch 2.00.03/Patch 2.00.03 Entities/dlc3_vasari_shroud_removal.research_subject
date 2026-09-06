@@ -1,0 +1,36 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_phase_mastery",
+    "field_coord": [7, 6],
+    "research_time": 420.0,
+    "price":
+    {
+        "metal": 630.0,
+        "crystal": 720.0,
+        "credits": 0.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 3
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "planet_corruption_debuff_strength",
+        "value_behavior": "scalar",
+        "value": -0.5
+    },
+    {
+        "modifier_type": "ignore_shroud_limit",
+        "value_behavior": "additive",
+        "value": 4.0
+    }],
+    "name": "dlc3_vasari_shroud_removal_research_subject_name",
+    "name_uppercase": "dlc3_vasari_shroud_removal_research_subject_name_uppercase",
+    "description": "dlc3_vasari_shroud_removal_research_subject_description",
+    "hud_icon": "dlc3_vasari_shroud_removal_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_vasari_shroud_removal_research_subject_tooltip_picture"
+}

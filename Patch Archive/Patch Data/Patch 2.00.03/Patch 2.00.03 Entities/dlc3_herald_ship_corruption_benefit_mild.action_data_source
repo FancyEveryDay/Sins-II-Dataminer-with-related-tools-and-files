@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_corruption_weapon_damage_value",
+        "action_value":
+        {
+            "values": [0.1]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "dlc3_herald_corruption_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_weapon_damage_value"
+        }
+    }]
+}

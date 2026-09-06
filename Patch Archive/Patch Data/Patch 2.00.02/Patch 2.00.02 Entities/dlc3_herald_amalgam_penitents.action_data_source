@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "amalgam_penitents_duration",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "amalgam_penitents_strikecraft_count",
+        "action_value":
+        {
+            "values": [10.0]
+        }
+    }],
+	"effect_alias_bindings": [
+    {
+        "alias_name": "amalgam_penitents_buff_start",
+		"alias_binding":
+		{
+			"particle_effect": "sova_rapid_manufacturing_activate",
+			"sounds": [
+				"ability_rapid_manufacturing_effect"]
+		}
+    }]          
+}

@@ -1,0 +1,98 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "upgrade_wave_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "upgrade_wave_linear_speed_value",
+        "action_value":
+        {
+            "values": [-0.3]
+        }
+    },
+    {
+        "action_value_id": "upgrade_wave_chance_value",
+        "action_value":
+        {
+            "values": [0.24]
+        }
+    },
+    {
+        "action_value_id": "upgrade_wave_splash_radius_value",
+        "action_value":
+        {
+            "values": [600.0]
+        }
+    },
+    {
+        "action_value_id": "upgrade_wave_splash_damage_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.3]
+        }
+    },
+    {
+        "action_value_id": "upgrade_wave_duration_value",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "upgrade_wave_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "upgrade_wave_linear_speed_value"
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "vasari_starbase_upgrade_wave_radius",
+        "alias_binding":
+        {
+            "particle_effect": "wave_augment_radius"
+        }
+    },
+    {
+        "alias_name": "vasari_starbase_upgrade_wave_effect_on_target_large",
+        "alias_binding":
+        {
+            "particle_effect": "wave_augment_status_large"
+        }
+    },
+    {
+        "alias_name": "vasari_starbase_upgrade_wave_effect_on_target_medium",
+        "alias_binding":
+        {
+            "particle_effect": "wave_augment_status_medium"
+        }
+    },
+    {
+        "alias_name": "vasari_starbase_upgrade_wave_effect_on_target_small",
+        "alias_binding":
+        {
+            "particle_effect": "wave_augment_status_small"
+        }
+    }]
+}

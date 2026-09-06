@@ -1,0 +1,108 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_support_capital_ship_particle_decay",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "particle_decay_cooldown_value",
+        "antimatter_cost": "particle_decay_antimatter_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_support_capital_ship_particle_decay_on_target"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "particle_decay_activation_corruption_gain_value"
+                }]
+            }]
+        },
+		"targeting_type": "unit_targeted",
+        "target_filters": [
+            "particle_decay_target_filter"
+        ],
+        "range": "particle_decay_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 15.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+				"unit":
+				{
+					"unit_type": "current_spawner"
+				},
+				"unit_constraint":
+				{
+					"constraint_type": "weapon_has_target"
+				}
+            },
+			"target_definitions": [
+            {
+                "target_filter": "particle_decay_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "particle_decay_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "particle_decay_hud_icon",
+        "tooltip_picture": "particle_decay_tooltip_picture",
+        "name": "dlc3_herald_support_capital_ship_particle_decay_ability_name",
+        "description": "dlc3_herald_support_capital_ship_particle_decay_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_line",
+                "label_text": "unit_mutation.disable_can_passively_regenerate_antimatter",
+				"value_color": "negative"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "particle_decay_duration_value",
+				"value_suffix": "seconds"
+            }]
+        },
+		{
+			"header_text": "tooltip.ability.on_target_corruption_high_header",
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.antimatter_removed",
+                "value_id": "particle_decay_high_corruption_antimatter_drain_value",
+				"value_color": "negative",
+				"value_float_format": "two_decimal_place",
+				"value_suffix": "per_second"
+            }]
+		}]
+    }
+}

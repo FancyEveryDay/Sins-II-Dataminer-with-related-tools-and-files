@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true
+    },
+    "fleet":
+    {
+        "icons": [
+            "vasari_black_fleet_icon",
+            "vasari_blue1_fleet_icon",
+            "vasari_red1_fleet_icon",
+            "vasari_green1_fleet_icon",
+            "vasari_bronze_fleet_icon",
+            "vasari_gold_fleet_icon",
+            "vasari_grey1_fleet_icon",
+            "vasari_green3_fleet_icon",
+            "vasari_pink1_fleet_icon",
+            "vasari_pink2_fleet_icon",
+            "vasari_purple_fleet_icon",
+            "vasari_green2_fleet_icon",
+            "vasari_grey2_fleet_icon",
+            "vasari_red2_fleet_icon",
+            "vasari_yellow_fleet_icon",
+            "vasari_pony_fleet_icon"
+        ]
+    }
+}

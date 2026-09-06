@@ -1,0 +1,50 @@
+{
+    "version": 0,
+    "make_dead_when_no_child_buffs_exist": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "source_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "radiation_bomb_travel_speed_value"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_radiation_bomb_unit_item_on_spawner"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "action_data_source",
+                    "mesh_point": "bomb",
+                    "effects":
+                    {
+                        "muzzle_effect": "trader_radiation_bomb_unit_item_muzzle",
+                        "projectile_travel_effect": "trader_radiation_bomb_unit_item_projectile_travel"
+                    }
+                }]
+            }]
+        }
+    }]
+}

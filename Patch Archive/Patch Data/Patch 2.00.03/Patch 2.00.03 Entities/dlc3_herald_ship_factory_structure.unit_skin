@@ -1,0 +1,143 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 64027.920909,
+        "min_camera_distance": 1078.921431,
+        "gui":
+        {
+            "hud_icon": "dlc3_herald_ship_factory_structure_hud_icon",
+            "hud_monochrome_icon": "dlc3_herald_ship_factory_structure_main_view_icon",
+            "hud_picture": "dlc3_herald_ship_factory_structure_hud_picture",
+            "tooltip_picture": "dlc3_herald_ship_factory_structure_tooltip_picture",
+            "name": "dlc3_herald_ship_factory_structure_name",
+            "description": "dlc3_herald_ship_factory_structure_description"
+        },
+        "unit_mesh":
+        {
+            "mesh": "dlc3_herald_ship_factory_structure",
+            "shader": "dlc3",
+            "is_shadow_blocker": true
+        },
+        "child_mesh_alias_bindings":
+        {
+            "map": [
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_0",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_0",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_1",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_1",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_2",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_2",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_3",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_3",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_4",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_4",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_prong_5",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_prong_5",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            },
+            {
+                "mesh_alias_name": "dlc3_herald_ship_factory_structure_top",
+                "mesh_definition":
+                {
+                    "mesh": "dlc3_herald_ship_factory_structure_top",
+                    "shader": "dlc3",
+                    "is_shadow_blocker": true
+                }
+            }]
+        },
+        "main_view_icon":
+        {
+            "group": "structure",
+            "icon": "dlc3_herald_ship_factory_structure_main_view_icon",
+            "selected_icon": "dlc3_herald_ship_factory_structure_main_view_icon_selected",
+            "sub_selected_icon": "dlc3_herald_ship_factory_structure_main_view_icon_sub_selected",
+            "has_rotation": false
+        },
+        "effects":
+        {
+            "damage_effects":
+            {
+                "max_damage_effect_count": 3,
+                "damage_effects": [
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.33,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 2,
+                    "weight": 4.0,
+                    "hull_percentage_threshold": 0.45,
+                    "particle_effect": "dlc3_herald_damage_stage3_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.55,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 3.0,
+                    "hull_percentage_threshold": 0.67,
+                    "particle_effect": "dlc3_herald_damage_stage2_small"
+                },
+                {
+                    "max_count": 1,
+                    "weight": 2.0,
+                    "hull_percentage_threshold": 0.8,
+                    "particle_effect": "dlc3_herald_damage_stage1_small"
+                }]
+            },
+            "flair_effects": [
+            {
+                "mesh_point_name": "ship_build",
+                "particle_effect": "dlc3_factory_portal_small",
+                "constraint": "is_unit_factory_busy"
+            }]
+        },
+        "death_sequence_group": "dlc3_planetmodulesmall"
+    }]
+}

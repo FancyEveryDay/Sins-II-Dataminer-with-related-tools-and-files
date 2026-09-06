@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_shrouding",
+    "field_coord": [2, 0],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 600.0,
+        "metal": 150.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_corruption_track_0"]
+    ],
+    "name": "dlc3_herald_upgrade_corruption_track_1_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_corruption_track_1_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_corruption_track_1_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_corruption_track_1_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_corruption_track_1_research_subject_tooltip_picture"
+}

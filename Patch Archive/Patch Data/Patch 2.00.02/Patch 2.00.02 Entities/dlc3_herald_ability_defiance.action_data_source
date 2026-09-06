@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "defiance_corruption_cost",
+        "action_value":
+        {
+            "values": [200.0]
+        }
+    },
+    {
+        "action_value_id": "defiance_cooldown_time",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "defiance_armor_restored_amount",
+        "action_value":
+        {
+            "values": [400.0]
+        }
+    }]
+}

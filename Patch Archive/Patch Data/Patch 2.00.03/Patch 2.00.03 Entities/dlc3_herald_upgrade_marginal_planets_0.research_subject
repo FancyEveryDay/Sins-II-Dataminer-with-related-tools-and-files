@@ -1,0 +1,35 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_subjugation",
+    "field_coord": [3, 7],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_crystalline_biosphere",
+        "dlc3_herald_unlock_ferrous_biosphere",
+            "dlc3_herald_unlock_swamp_biosphere"
+        ]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "max_civilian_structure_slots",
+        "value_behavior": "additive",
+        "value": 2.0,
+        "planet_types": [
+            "crystalline",
+            "ferrous",
+            "swamp"]
+    }],
+    "name": "dlc3_herald_upgrade_marginal_planets_0_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_marginal_planets_0_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_marginal_planets_0_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_marginal_planets_0_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_marginal_planets_0_research_subject_tooltip_picture"
+}

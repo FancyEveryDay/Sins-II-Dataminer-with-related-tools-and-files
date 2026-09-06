@@ -1,0 +1,54 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_corruption_weapon_damage_value",
+        "action_value":
+        {
+            "values": [0.3]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_shield_point_restore_scalar_after_damage_taken_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_antimatter_restore_rate_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_shield_point_restore_scalar_after_damage_taken_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "shield_point_restore_scalar_after_damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_shield_point_restore_scalar_after_damage_taken_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_antimatter_restore_rate_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "antimatter_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_antimatter_restore_rate_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "dlc3_herald_corruption_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "dlc3_herald_corruption_weapon_damage_value"
+        }
+    }]
+}

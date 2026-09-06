@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "name": "weapon_name.phase_dart",
+    "pitch_speed": 0.0,
+    "yaw_speed": 0.0,
+    "range": 12000.0,
+    "cooldown_duration": 18.0,
+    "uniforms_target_filter_id": "common_weapon_no_corvette_weapon",
+    "attack_target_type_groups": [
+        "capital_supercapital_heavy",
+        "antistructure_antiarmor",
+        "defense_civilian"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 1500.0,
+    "penetration": 750.0,
+    "tags": [
+        "phase_dart",
+        "physical"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 1.0,
+    "firing":
+    {
+        "firing_type": "projectile",
+        "travel_speed": 4500.0,
+        "bypass_shields_chance": 0.4
+    },
+    "burst_pattern": [0.0, 0.08, 0.16, 0.24, 0.32, 0.4],
+    "effects":
+    {
+        "muzzle_picking_behavior": "sequential",
+        "muzzle_effect": "dlc3_herald_titan_phase_dart_weapon_muzzle",
+        "projectile_travel_effect": "dlc3_herald_titan_phase_dart_weapon_projectile_travel",
+        "hit_hull_effect": "dlc3_herald_titan_phase_dart_weapon_hit_hull",
+        "hit_shield_effect": "dlc3_herald_titan_phase_dart_weapon_hit_shield",
+        "hit_shield_impact_radius_t": 1.0
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "vile_eruption_auto_cast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy",
+				"friendly",
+				"self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            },
+			{
+				"constraint_type": "composite_not",
+				"constraint":
+				{
+					"constraint_type": "has_corruption_at_or_above_threshold",
+					"threshold": 0.75
+				}
+			}]
+        }
+    },
+    {
+        "target_filter_id": "vile_eruption_auto_cast_enemy_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "has_weapon"
+			}]
+        }
+    },
+    {
+        "target_filter_id": "vile_eruption_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [                
+				"enemy",
+				"friendly",
+				"self"
+				
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "not_self"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "vile_eruption_antimatter_cost",
+        "action_value":
+        {
+            "values": [50.0]
+        }
+    },
+	{
+        "action_value_id": "vile_eruption_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "vile_eruption_cooldown_time",
+        "action_value":
+        {
+            "values": [75.0]
+        }
+    },
+    {
+        "action_value_id": "vile_eruption_corruption_amount",
+        "action_value":
+        {
+            "values": [600.0]
+        }
+    },
+	{
+        "action_value_id": "vile_eruption_corruption_corrupted_amount",
+        "action_value":
+        {
+            "values": [1000.0]
+        }
+    },
+    {
+        "action_value_id": "vile_eruption_range_value",
+        "action_value":
+        {
+            "values": [15000.0]
+        }
+    },
+	{
+        "action_value_id": "vile_eruption_autocast_min_target_count",
+        "action_value":
+        {
+            "values": [5.0]
+        }
+    }]
+}

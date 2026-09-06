@@ -1,0 +1,99 @@
+{
+    "version": 0,
+    "action_data_source": "trader_robotics_cruiser_detection_droids",
+    "active_actions":
+    {
+        "cooldown_time": "detection_droids_cooldown_value",
+        "antimatter_cost": "detection_droids_antimatter_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "trader_robotics_cruiser_detection_droids_on_self"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "above",
+                        "effect": "trader_robotics_cruiser_detection_droids_activation"
+                    }
+                }]
+            }]
+        },       
+        "ai_only_auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "is_cloaked"
+                        }
+                    }
+                },
+                {
+                    "constraint_type": "has_enemy_units_in_gravity_well",
+                    "gravity_well_reference_unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "target_filter_id": "detection_droids_auto_cast_enemy_target_filter"
+                }]
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "trader_unlock_phase_lane_detector_research_subject_hud_icon",
+        "tooltip_picture": "trader_unlock_phase_lane_detector_research_subject_tooltip_picture",
+        "name": "trader_robotics_cruiser_detection_droids_ability_name",
+        "description": "trader_robotics_cruiser_detection_droids_ability_description",
+		"targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "detection_droids_detection_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "detection_droids_detection_quality_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "detection_droids_detection_range_modifier"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "detection_droids_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

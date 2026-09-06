@@ -1,0 +1,68 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "corruption_percent"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "dlc3_herald_current_corruption_percent_value",
+        "action_value":
+        {
+            "transform_type": "per_percent_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "dlc3_herald_corruption_percent_mirror_interval_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    },
+    {
+        "action_value_id": "infused_reactor_antimatter_restore_rate_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_percent",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "infused_reactor_antimatter_restore_rate_display_value",
+        "action_value":
+        {
+            "values": [0.01]
+        }
+    }],
+    "buff_actions": [
+    {
+        "action_id": "dlc3_herald_ship_corruption_mirror_current_percent",
+        "action":
+        {
+            "action_type": "change_buff_memory_float_value",
+            "float_variable": "corruption_percent",
+            "math_operators": [
+            {
+                "operator_type": "assign",
+                "operand_value": "dlc3_herald_current_corruption_percent_value"
+            }]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "infused_reactor_antimatter_restore_rate_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "antimatter_restore_rate",
+            "value_behavior": "scalar",
+            "value_id": "infused_reactor_antimatter_restore_rate_value"
+        }
+    }]
+}

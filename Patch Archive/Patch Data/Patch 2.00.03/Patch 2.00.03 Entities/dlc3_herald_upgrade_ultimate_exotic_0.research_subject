@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_exploitation",
+    "field_coord": [8, 1],
+    "research_time": 330.0,
+    "price":
+    {
+        "credits": 1800.0,
+        "metal": 850.0,
+        "crystal": 850.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_build_ultimate_exotic"]
+    ],
+    "exotic_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.25,
+        "exotic_types": [
+            "ultimate"]
+    }],
+    "name": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_tooltip_picture"
+}

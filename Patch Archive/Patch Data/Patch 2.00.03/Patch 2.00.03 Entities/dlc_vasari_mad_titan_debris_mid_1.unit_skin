@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 280520.251569,
+        "min_camera_distance": 1596.701593,
+        "unit_mesh":
+        {
+            "mesh": "vasari_loyalist_titan_debris_mid_1",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "mad_vasari_loyalist_titan_mid_1_damage_debris"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_consolidation",
+    "field_coord": [0, 0],
+    "research_time": 40.0,
+    "price":
+    {
+        "credits": 350.0,
+        "metal": 50.0,
+        "crystal": 50.0
+    },
+    "name": "dlc3_herald_unlock_light_defense_structure_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_light_defense_structure_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_light_defense_structure_hud_icon",
+    "tooltip_picture": "dlc3_herald_light_defense_structure_tooltip_picture"
+}

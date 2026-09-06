@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "active_duration": "offensive_action_cloak_quality_degrade_duration_value",
+    "unit_modifiers": [
+    {
+        "modifier_type": "cloak_quality",
+        "value_behavior": "additive",
+        "value_id": "offensive_action_cloak_quality_degrade_modifier_value"
+    }],
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": false,
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_decloak_ability_hud_icon",
+        "name": "tooltip.ability.cloak_degrade_damage_dealt",
+        "visibility_scope": "negative",
+        "is_visible_within_unit_tooltip": true,
+		"tooltip_line_groups": [
+		{
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.cloak_quality",
+                "value_id": "offensive_action_cloak_quality_degrade_modifier_value",
+				"value_color": "negative"
+            }]
+		}]
+    }
+}

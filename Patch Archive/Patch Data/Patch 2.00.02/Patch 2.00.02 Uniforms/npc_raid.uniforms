@@ -1,0 +1,6 @@
+{
+    "notification_warning_time": [30.0, 60.0],
+    "raid_fleet_return_delay": 5.0,
+    "capability_check_interval": 10.0,
+    "minimum_fleet_strength_ratio": 0.1
+}

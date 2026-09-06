@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "hateful_onslaught_execution_interval_value",
+        "execution_interval_count_value": "hateful_onslaught_execution_count_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "hateful_onslaught_travel_speed_value"
+                },
+                "operators": [
+                {
+                    "operator_type": "bomb_planet",
+                    "damage_source": "ability",
+                    "bombing_damage_value": "hateful_onslaught_bombing_damage_value",
+                    "bombing_population_damage_value": "hateful_onslaught_bombing_population_damage_value"
+                },
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "hateful_onslaught_corruption_gain_value"
+                },
+                {
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "weapon.0",
+                    "effects":
+                    {
+                        "muzzle_picking_behavior": "sequential",
+                        "muzzle_effect": "dlc3_herald_hateful_onslaught_muzzle",
+                        "projectile_travel_effect": "dlc3_herald_hateful_onslaught_travel",
+                        "hit_hull_effect": "dlc3_herald_hateful_onslaught_hit_surface",
+                        "hit_shield_effect": "dlc3_herald_hateful_onslaught_hit_surface"
+                    }
+                }]
+            }]
+        }
+    }]
+}

@@ -1,0 +1,76 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "constraint":
+			{
+				"constraint_type": "composite_and",
+				"constraints": [
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "uniforms_current_spawner_current_armor",
+					"comparison_type": "equal_to",
+					"value_b": "fixed_zero"
+				},
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "safeguard_corruption_available",
+					"comparison_type": "greater_than_equal_to",
+					"value_b": "safeguard_minimum_corruption_trigger_amount"
+				}]
+			},
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "corruption_consumed",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "safeguard_corruption_available"
+                },
+				{
+                    "operator_type": "min",
+                    "operand_value": "safeguard_armor_restored_maximum"
+                }]
+            },
+			{
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_only",
+                    "repair_value": "safeguard_armor_restored_amount"
+                },
+				{
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "safeguard_corruption_consumed",
+                    "actual_removed_corruption_float_variable": "corruption_consumed"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "action_data_source",
+                        "mesh_point": "center",
+                        "effect": "safeguard_buff_activation"
+                    }
+                }]
+			}]
+        }
+    }]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_awakening",
+    "field_coord": [8, 0],
+    "research_time": 330.0,
+    "price":
+    {
+        "credits": 1800.0,
+        "metal": 850.0,
+        "crystal": 850.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_starting_experience_1"]
+    ],
+    "name": "dlc3_herald_starting_experience_2_research_subject_name",
+    "name_uppercase": "dlc3_herald_starting_experience_2_research_subject_name_uppercase",
+    "description": "dlc3_herald_starting_experience_2_research_subject_description",
+    "hud_icon": "dlc3_herald_starting_experience_2_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_starting_experience_2_research_subject_tooltip_picture"
+}

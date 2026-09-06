@@ -1,0 +1,58 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "defense",
+    "hud_icon": "dlc3_herald_defense_interlink_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_defense_interlink_unit_item_tooltip_picture",
+    "name": "dlc3_herald_defense_interlink_unit_item_name",
+    "description": "dlc3_herald_defense_interlink_unit_item_description",
+    "build_time": 75.0,
+    "max_count_on_unit": 1,
+    "required_planet_level": 5,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 150.0,
+        "crystal": 150.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "defense",
+        "count": 1
+    }],
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "irradiated",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["dlc3_herald_unlock_defense_interlink_unit_item"]
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "max_military_structure_slots",
+        "value_behavior": "additive",
+        "values": [5.0]
+    }],
+    "ability": "dlc3_herald_defense_interlink"
+}

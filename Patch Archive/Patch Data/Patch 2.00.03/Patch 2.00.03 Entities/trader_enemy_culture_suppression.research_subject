@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_policy",
+    "field_coord": [1, 3],
+    "research_time": 75.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "planet_modifiers": [
+    {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "additive",
+        "value": 0.02
+    }],
+    "name": "trader_enemy_culture_suppression_research_subject_name",
+    "name_uppercase": "trader_enemy_culture_suppression_research_subject_name_uppercase",
+    "description": "trader_enemy_culture_suppression_research_subject_description",
+    "hud_icon": "trader_enemy_culture_suppression_research_subject_hud_icon",
+    "tooltip_picture": "trader_enemy_culture_suppression_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_faction",
+        "research_text_filter_rebel"]
+}

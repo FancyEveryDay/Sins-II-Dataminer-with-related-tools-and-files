@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "distant_deliverance_research_subject_hud_icon",
+        "name": "nilari_empowering_sacrifice_name",
+        "description": "nilari_empowering_sacrifice_description"
+    },
+    "type": "ability",
+    "ability": "nilari_empowering_sacrifice"
+}

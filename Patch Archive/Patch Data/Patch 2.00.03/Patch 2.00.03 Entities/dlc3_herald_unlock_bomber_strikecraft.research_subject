@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_arrival",
+    "field_coord": [4, 1],
+    "research_time": 155.0,
+    "price":
+    {
+        "credits": 1000.0,
+        "metal": 350.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_carrier_cruiser"]
+    ],
+    "name": "dlc3_herald_unlock_bomber_strikecraft_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_bomber_strikecraft_research_subject_name_uppercase",
+    "description": "dlc3_herald_unlock_bomber_strikecraft_research_subject_description",
+    "hud_icon": "dlc3_herald_bomber_strikecraft_hud_icon",
+    "tooltip_picture": "dlc3_herald_bomber_strikecraft_tooltip_picture"
+}

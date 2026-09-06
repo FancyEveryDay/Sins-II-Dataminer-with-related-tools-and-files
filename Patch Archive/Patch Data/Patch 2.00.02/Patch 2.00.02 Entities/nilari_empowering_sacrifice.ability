@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "action_data_source": "nilari_empowering_sacrifice",
+    "active_actions":
+    {
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "nilari_empowering_sacrifice_on_target"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "targeting_ui": "pick_gravity_well",
+        "target_alert": "targeted_by_ability",
+        "target_filters": [
+            "empowering_sacrifice_planet_target_filter"]
+    },
+    "gui":
+    {
+        "hud_icon": "distant_deliverance_research_subject_hud_icon",
+        "name": "nilari_empowering_sacrifice_name",
+        "description": "nilari_empowering_sacrifice_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.on_target_planet_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.allied_population_sacrificed",
+                "value_id": "empowering_sacrifice_population_culled_value",
+                "value_float_format": "percentage",
+                "ratio_float_format": "percentage_with_sign",
+                "value_color": "negative"
+            }]
+        },
+        {
+            "header_text": "tooltip.on_owned_units_tooltip_lines_sub_header_label",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "nilari_empowering_sacrifice_bonus_ability_cooldown",
+                "value_id": "empowering_sacrifice_ability_cooldown_duration_value",
+                "value_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "nilari_empowering_sacrifice_bonus_weapon_damage",
+                "value_id": "empowering_sacrifice_weapon_damage_value",
+                "value_float_format": "percentage_one_decimal_place_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "empowering_sacrifice_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

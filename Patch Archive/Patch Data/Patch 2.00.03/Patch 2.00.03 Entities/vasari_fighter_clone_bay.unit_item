@@ -1,0 +1,43 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "vasari_fighter_clone_bay_unit_item_hud_icon",
+    "tooltip_picture": "vasari_fighter_clone_bay_unit_item_tooltip_picture",
+    "name": "vasari_fighter_clone_bay_unit_item_name",
+    "description": "vasari_fighter_clone_bay_unit_item_description",
+    "build_time": 30.0,
+    "price":
+    {
+        "metal": 275.0,
+        "crystal": 375.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "owner_constraint": 
+    {
+        "constraint_type": "is_carrier"
+    },
+    "max_count_on_unit": 1,
+    "build_group_id": "offense",
+    "unit_modifiers": [
+    {
+        "modifier_type": "max_squadron_capacity_per_kind",
+        "value_behavior": "additive",
+        "values": [1.0],
+        "value_filter_key": "interceptor",
+        "value_name": "strikecraft_kind_name.interceptor"
+    },
+    {
+        "modifier_type": "strikecraft_build_time",
+        "value_behavior": "scalar",
+        "values": [-0.48]
+    }]
+}

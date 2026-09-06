@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 3,
+    "field": "military_eradication",
+    "field_coord": [7, 3],
+    "research_time": 260.0,
+    "price":
+    {
+        "credits": 1450.0,
+        "metal": 650.0,
+        "crystal": 650.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_unlock_null_weapons_corruption"]
+    ],
+    "name": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_tooltip_picture",
+    "arbitary_research_line":
+    {
+        "before_after_heading": "tooltip.ability.self_corruption_per_damage",
+        "before_number": 0.1,
+        "after_number": 0.2,
+        "float_format": "percentage"
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_siege_capital_ship_infusion_strike",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_siege_capital_ship_infusion_strike_on_self"
+    },
+    "active_actions":
+    {
+        "cooldown_time": "infusion_strike_cooldown_value",
+        "antimatter_cost": "infusion_strike_antimatter_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_siege_capital_ship_infusion_strike_on_weapons"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_siege_capital_ship_infusion_strike_activation"
+                    }
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "infusion_strike_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+				"unit":
+				{
+					"unit_type": "current_spawner"
+				},
+				"unit_constraint":
+				{
+					"constraint_type": "weapon_has_target"
+				}
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "infusion_strike_hud_icon",
+        "tooltip_picture": "infusion_strike_tooltip_picture",
+        "name": "dlc3_herald_siege_capital_ship_infusion_strike_ability_name",
+        "description": "dlc3_herald_siege_capital_ship_infusion_strike_ability_description",
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.on_target_damaged_by_weapons",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_converted_to_corruption",
+                "value_id": "weapons_corruption_gain_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            }]
+        },
+        {
+            "header_text": "tooltip.ability.on_activation",
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.on_target_corruption_low_damage",
+                "value_id": "infustion_strike_low_corruption_bonus_damage_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.on_target_corruption_medium_damage",
+                "value_id": "infustion_strike_medium_corruption_bonus_damage_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.on_target_corruption_high_damage",
+                "value_id": "infustion_strike_high_corruption_bonus_damage_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "infusion_strike_duration_value",
+				"value_suffix": "seconds"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 3,
+    "field": "military_awakening",
+    "field_coord": [6, 3],
+    "research_time": 235.0,
+    "price":
+    {
+        "credits": 1400.0,
+        "metal": 600.0,
+        "crystal": 600.0
+    },
+    "name": "dlc3_herald_unlock_safeguard_item_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_safeguard_item_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_safeguard_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_safeguard_unit_item_tooltip_picture"
+}

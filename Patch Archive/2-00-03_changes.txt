@@ -1,0 +1,264 @@
+________________________________________
+    Entity Changes for Patch 2-00-03    
+________________________________________
+
+
+
+# Advent Changes
+
+## Research_subject Changes
+
+**advent_focus_conversion_0**
+	empire_modifiers
+		additive
+			value : 1.0 -> 0.1
+
+**advent_focus_conversion_1**
+	empire_modifiers
+		additive
+			value : 1.0 -> 0.15
+
+
+# TEC Changes
+
+## Buff Changes
+
+**Ablative Armor**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+**Reactive Plating**
+	trigger_event_actions
+		on_try_prevent_damage
+			action_group
+				constraint
+					constraints
+						weapon_has_weapon_tag
+							[NEW] weapon : trigger_event_weapon
+							[REMOVED] weapon : trigger_event_weapon
+
+
+# Vasari Changes
+
+
+# Dlc3_herald Changes
+
+## Unit_item Changes
+
+**Amalgam Grafting Bay**
+	[NEW] owner_constraint : {'constraint_type': 'is_carrier'}
+
+## Action_data_source Changes
+
+**Corrupt Recursion**
+	action_values
+		corrupt_recursion_invulnerable_duration_value
+			action_value
+				values : 30.0 -> 15.0
+
+**dlc3_herald_unlock_afterimage**
+	action_values
+		afterimage_invulnerable_duration_value
+			action_value
+				values
+					0 : 60.0 -> 30.0
+					1 : 90.0 -> 60.0
+
+## Unit Changes
+
+**Azithel Mote**
+	weapons
+		weapons
+			dlc3_herald_attack_corvette_void_missile
+				void_missile
+					cooldown_duration : 15.0 -> 20.0
+					dps : 9.0 -> 6.75
+
+**Iskazhar Epitaph**
+	weapons
+		weapons
+			dlc3_herald_starbase_null_beam
+				super_heavy_null_beam
+					name : weapon_name.super_heavy_null_cannon -> weapon_name.super_heavy_null_beam
+
+**Large Void Missile**
+	health
+		levels
+			max_hull_points : 5.0 -> 10.0
+			max_armor_points : 10.0 -> 80.0
+			armor_strength : 25.0 -> 40.0
+
+**Light Void Missile**
+	health
+		levels
+			max_hull_points : 5.0 -> 1.0
+			max_armor_points : 10.0 -> 15.0
+			armor_strength : 25.0 -> 20.0
+
+**Medium Void Missile**
+	health
+		levels
+			max_hull_points : 5.0 -> 1.0
+			max_armor_points : 10.0 -> 40.0
+			armor_strength : 25.0 -> 20.0
+
+**Sythren Onslaught**
+	weapons
+		max_range_weapon_index : 0 -> 1
+
+**Very Light Void Missile**
+	health
+		levels
+			max_hull_points : 5.0 -> 1.0
+			[REMOVED] max_armor_points : 10.0
+			[REMOVED] armor_strength : 25.0
+
+**Void Blast Charge**
+	health
+		levels
+			max_hull_points : 5.0 -> 1.0
+			max_armor_points : 10.0 -> 5.0
+			armor_strength : 25.0 -> 20.0
+
+**Vortex Missile**
+	health
+		levels
+			max_hull_points : 5.0 -> 1.0
+			max_armor_points : 10.0 -> 15.0
+			armor_strength : 25.0 -> 20.0
+
+## Research_subject Changes
+
+**dlc3_herald_unlock_attack_corvette_weapon**
+	tier : 1 -> 2
+	field_coord
+		0 : 3 -> 4
+	research_time : 105.0 -> 155.0
+	price
+		credits : 650.0 -> 1000.0
+		metal : 200.0 -> 350.0
+		crystal : 200.0 -> 350.0
+
+**dlc3_herald_unlock_heavy_frigate_weapon**
+	tier : 2 -> 1
+	field_coord
+		0 : 4 -> 3
+	research_time : 155.0 -> 105.0
+	price
+		credits : 1000.0 -> 650.0
+		metal : 350.0 -> 200.0
+		crystal : 350.0 -> 200.0
+
+
+# Viturak Changes
+
+## Player Changes
+
+**viturak_cabal_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] vasari_ship_corruption_penalty_mild
+		[NEW] vasari_ship_corruption_penalty_moderate
+		[NEW] vasari_ship_corruption_penalty_extreme
+
+
+# Pirate Changes
+
+## Player Changes
+
+**pirate_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] trader_ship_corruption_penalty_mild
+		[NEW] trader_ship_corruption_penalty_moderate
+		[NEW] trader_ship_corruption_penalty_extreme
+
+
+# Pranast Changes
+
+## Player Changes
+
+**pranast_united_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] trader_ship_corruption_penalty_mild
+		[NEW] trader_ship_corruption_penalty_moderate
+		[NEW] trader_ship_corruption_penalty_extreme
+
+
+# Jiskun Changes
+
+## Player Changes
+
+**jiskun_force_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] vasari_ship_corruption_penalty_mild
+		[NEW] vasari_ship_corruption_penalty_moderate
+		[NEW] vasari_ship_corruption_penalty_extreme
+
+
+# Eivonns Changes
+
+## Player Changes
+
+**eivonns_frigates_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] trader_ship_corruption_penalty_mild
+		[NEW] trader_ship_corruption_penalty_moderate
+		[NEW] trader_ship_corruption_penalty_extreme
+
+
+# Aluxian Changes
+
+## Player Changes
+
+**aluxian_resurgence_npc**
+	corruption_thresholds
+		0 : 0.5 -> 0.1
+		1 : 0.75 -> 0.5
+	negative_corruption_buffs
+		[REMOVED] dlc3_herald_ship_corruption_penalty_mild
+		[REMOVED] dlc3_herald_ship_corruption_penalty_moderate
+		[REMOVED] dlc3_herald_ship_corruption_penalty_extreme
+		[NEW] trader_ship_corruption_penalty_mild
+		[NEW] trader_ship_corruption_penalty_moderate
+		[NEW] trader_ship_corruption_penalty_extreme
+
+
+# Ancient Changes
+
+
+# Artifact Changes

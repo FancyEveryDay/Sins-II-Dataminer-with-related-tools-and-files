@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_material",
+    "field_coord": [2, 10],
+    "research_time": 120.0,
+    "price":
+    {
+        "credits": 500.0,
+        "metal": 125.0,
+        "crystal": 300.0
+    },
+    "empire_modifiers": [
+    {
+        "value_behavior": "additive",
+        "modifier_type": "unity_mana_use_base_asset_conversion_rates",
+        "value": 1.0
+    }],
+    "name": "advent_focus_conversion_0_research_subject_name",
+    "name_uppercase": "advent_focus_conversion_0_research_subject_name_uppercase",
+    "description": "advent_focus_conversion_0_research_subject_description",
+    "hud_icon": "advent_focus_conversion_0_research_subject_hud_icon",
+    "tooltip_picture": "advent_focus_conversion_0_research_subject_tooltip_picture"
+}

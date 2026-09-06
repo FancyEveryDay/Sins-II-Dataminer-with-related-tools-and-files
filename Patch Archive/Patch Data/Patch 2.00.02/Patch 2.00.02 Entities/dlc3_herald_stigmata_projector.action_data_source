@@ -1,0 +1,214 @@
+{
+    "version": 0,
+	"target_filters": [
+	{
+        "target_filter_id": "stigmata_projector_autocast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",                
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+                "constraint_type": "is_fully_built"
+            },
+			{
+				"constraint_type": "composite_not",
+				"constraint":
+				{
+					"constraint_type": "has_buff",
+					"buff": "dlc3_herald_stigmata_projector_on_target",
+					"include_pending_buffs": true
+				}
+			}]
+        }
+    },
+	{
+        "target_filter_id": "stigmata_projector_autocast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "corvette",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+                "constraint_type": "is_fully_built"
+            },
+			{
+				"constraint_type": "composite_not",
+				"constraint":
+				{
+					"constraint_type": "has_buff",
+					"buff": "dlc3_herald_stigmata_projector_on_target",
+					"include_pending_buffs": true
+				}
+			}]
+        }
+    },
+	{
+        "target_filter_id": "stigmata_projector_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+				"starbase",
+				"structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            }]
+        }
+    }],	
+	"per_buff_memory_declaration":
+	{
+        "float_variable_ids": [
+            "corruption_consumed",
+			"damage_redirected"]
+    },
+    "action_values": [
+	{
+        "action_value_id": "stigmata_projector_cooldown",
+        "action_value":
+        {
+			"values": [180.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_anitmatter_cost",
+        "action_value":
+        {
+			"values": [50.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_duration",
+        "action_value":
+        {
+			"values": [45.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_range",
+        "action_value":
+        {
+			"values": [6000.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_corruption_per_damage_redirected_ratio",
+        "action_value":
+        {
+			"values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_corruption_available",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_damage_event_value",
+        "action_value":
+        {
+			"transform_type": "per_raw_damage_dealt",
+			"values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "stigmata_projector_corruption_consumed_for_event",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+			"values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "stigmata_projector_damage_redirected_for_event",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "damage_redirected",
+			"values": [1.0]
+        }
+    }],
+	"effect_alias_bindings": [
+	{
+		"alias_name": "stigmata_projector_duration_on_self_large",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_self_large"
+		}
+	},
+	{
+		"alias_name": "stigmata_projector_duration_on_self_medium",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_self_medium"
+		}
+	},
+	{
+		"alias_name": "stigmata_projector_duration_on_self_small",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_self_small"
+		}
+	},
+	{
+		"alias_name": "stigmata_projector_duration_on_target_large",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_target_large"
+		}
+	},
+	{
+		"alias_name": "stigmata_projector_duration_on_target_medium",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_target_medium"
+		}
+	},
+	{
+		"alias_name": "stigmata_projector_duration_on_target_small",
+		"alias_binding":
+		{
+			"particle_effect": "stigmata_projector_duration_on_target_small"
+		}
+	}]
+}

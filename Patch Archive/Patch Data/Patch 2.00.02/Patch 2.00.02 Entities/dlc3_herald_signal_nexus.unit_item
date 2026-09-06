@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "utility",
+    "hud_icon": "dlc3_herald_unlock_signal_nexus_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_unlock_signal_nexus_research_subject_tooltip_picture",
+    "name": "dlc3_herald_signal_nexus_unit_item_name",
+    "description": "dlc3_herald_signal_nexus_unit_item_description",
+    "build_time": 50.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 75.0,
+        "crystal": 100.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice_asteroid",
+            "ice",
+            "ice_moon",
+            "irradiated",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["dlc3_herald_unlock_signal_nexus_item"]
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "values": [0.1]
+    },
+    {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "additive",
+        "values": [0.01]
+    }]
+}

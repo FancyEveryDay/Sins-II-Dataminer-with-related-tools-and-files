@@ -1,0 +1,21 @@
+{
+    "version": 0,
+    "skin_stages": [
+    {
+        "is_main_view_icon_visible_camera_distance": 82006.048391,
+        "min_camera_distance": 693.732138,
+        "unit_mesh":
+        {
+            "mesh": "vasari_colony_capital_debris_mid",
+            "is_shadow_blocker": true
+        },
+        "effects":
+        {
+            "flair_effects": [
+            {
+                "mesh_point_name": "center",
+                "particle_effect": "vasari_colony_capital_mid_damage_debris"
+            }]
+        }
+    }]
+}

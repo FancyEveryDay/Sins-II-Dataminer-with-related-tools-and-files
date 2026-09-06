@@ -1,0 +1,100 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_cloak_frigate_shadow_bolt",
+    "active_actions":
+    {
+        "cooldown_time": "shadow_bolt_cooldown_time",
+        "corruption_cost": "shadow_bolt_corruption_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+				"destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "travel_time":
+                {
+                    "travel_time_source": "speed_and_distance",
+                    "travel_speed_value": "shadow_bolt_travel_speed"
+                },
+				"operators": [                
+				{
+                    "operator_type": "play_weapon_effects",
+                    "effect_alias_binding": "unit_skin",
+                    "mesh_point": "weapon.0",
+                    "effects":
+                    {
+                        "muzzle_effect": "dlc3_herald_cloak_frigate_shadow_bolt_muzzle",
+                        "projectile_travel_effect": "dlc3_herald_cloak_frigate_shadow_bolt_projectile_travel",
+                        "hit_hull_effect": "dlc3_herald_cloak_frigate_shadow_bolt_hit_hull",
+                        "hit_shield_effect": "dlc3_herald_cloak_frigate_shadow_bolt_hit_shield",
+                        "hit_shield_impact_radius_t": 1.0
+                    }
+                },
+				{
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "shadow_bolt_damage_amount",
+                    "penetration_value": "shadow_bolt_damage_pierce_amount"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "shadow_bolt_target_filter"
+        ],
+        "range": "shadow_bolt_range",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 10.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "shadow_bolt_auto_cast_high_priority_target_filter"
+            },
+            {
+                "target_filter": "shadow_bolt_auto_cast_low_priority_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_cloak_frigate_shadow_bolt_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_cloak_frigate_shadow_bolt_ability_tooltip_picture",
+        "name": "dlc3_herald_cloak_frigate_shadow_bolt_ability_name",
+        "description": "dlc3_herald_cloak_frigate_shadow_bolt_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "shadow_bolt_range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "shadow_bolt_damage_amount",
+				"value_color": "negative"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "shadow_bolt_damage_pierce_amount",
+				"value_color": "negative"
+            }]
+        }]
+    }
+}

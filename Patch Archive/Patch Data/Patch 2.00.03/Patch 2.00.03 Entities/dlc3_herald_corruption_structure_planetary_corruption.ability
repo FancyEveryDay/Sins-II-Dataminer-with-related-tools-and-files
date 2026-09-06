@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_corruption_structure_planetary_corruption",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_corruption_structure_planetary_corruption_on_spawner"
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_corruption_structure_planetary_corruption_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_corruption_structure_planetary_corruption_ability_tooltip_picture",
+        "name": "dlc3_herald_corruption_structure_planetary_corruption_ability_name",
+        "description": "dlc3_herald_corruption_structure_planetary_corruption_ability_description"
+    }
+}

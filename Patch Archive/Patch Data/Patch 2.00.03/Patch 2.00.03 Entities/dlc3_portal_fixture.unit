@@ -1,0 +1,61 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "radius": 3260.284863,
+        "surface_radius": 4955.87207,
+        "line_of_sight_radius": 4955.87207,
+        "box":
+        {
+            "center": [0.002441, 0.0, -0.002441],
+            "extents": [2973.520313, 1173.518848, 2967.653613]
+        },
+        "can_collide": false
+    },
+    "gravity_well_fixture":
+    {
+        "inner_move_distance": 12000.0,
+        "axis_rotation_speed": [0.0, 0.0],
+        "axis_tilt_angle": [0.0, 0.0],
+        "is_portal": true,
+        "portal_open_delay": 1.0,
+        "portal_open_duration": 2.0,
+        "portal_beam_delay": 6.0,
+        "portal_beam_duration": 5.0,
+        "portal_beam_source_offset": 3200.0,
+        "portal_corruption_fill_duration": 0.0,
+        "portal_close_duration": 2.0,
+        "portal_close_delay": 3.0,
+        "portal_closes_after_delivery": true,
+        "portal_shrouds_primary_planet_on_open": true,
+        "portal_colonizes_primary_planet_on_open": true
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true,
+        "can_be_controlled_by_selected_planet": true,
+        "selection_priority": 100,
+        "under_cursor_type": "sphere_box"
+    },
+    "unit_factory":
+    {
+        "build_kinds": [
+            "capital_ship"],
+        "default_rally_point_offset": [0.0, 0.0, 20000.0],
+        "only_builds_free_units": true,
+        "base_build_point":
+        {
+            "position": [0.0, 0.0, 0.0],
+            "rotation": [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        }
+    },
+    "items":
+    {},
+    "target_filter_unit_type": "uncolonizable",
+    "skin_groups": [
+    {
+        "skins": [
+            "dlc3_portal_fixture_0"]
+    }],
+    "action_effect_size": "medium_unit"
+}

@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "action_values": [
+    {
+        "action_value_id": "build_structure_range",
+        "action_value":
+        {
+            "values": [500.0]
+        }
+    }]
+}

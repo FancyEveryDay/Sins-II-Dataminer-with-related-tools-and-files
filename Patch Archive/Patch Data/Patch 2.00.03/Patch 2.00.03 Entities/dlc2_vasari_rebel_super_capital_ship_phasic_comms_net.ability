@@ -1,0 +1,20 @@
+{
+    "version": 0,
+    "action_data_source": "dlc2_vasari_rebel_super_capital_ship_phasic_comms_net",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc2_vasari_rebel_super_capital_ship_phasic_comms_net"
+    },
+    "gui":
+    {
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "phasic_comms_net_culture_rate_modifier"
+        }]
+        }]
+    }
+}

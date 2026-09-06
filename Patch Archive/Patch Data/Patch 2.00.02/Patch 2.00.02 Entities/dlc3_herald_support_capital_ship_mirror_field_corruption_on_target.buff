@@ -1,0 +1,97 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+	"make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "mirror_field_aoe_radius"
+    },
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "dlc3_herald_support_capital_ship_mirror_field_on_target_small",
+                        "medium_unit": "dlc3_herald_support_capital_ship_mirror_field_on_target_medium",
+                        "large_unit": "dlc3_herald_support_capital_ship_mirror_field_on_target_large"
+                    }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_damaged",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "damage_can_be_propagated"
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_source"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "mirror_field_damage_reflection_amount",
+                    "penetration_value": "uniforms_damage_event_penetration_value",
+                    "can_damage_be_propagated": false,
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "mirror_field_damage_reflection_target_filter"
+                    }
+                }]
+            }]
+        }
+    }],
+	"unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "mirror_field_damage_reduction_scalar_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "mirror_field_hud_icons",
+        "name": "dlc3_herald_support_capital_ship_mirror_field_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "mirror_field_damage_reduction_scalar_modifier"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_reflected",
+                "value_id": "mirror_field_damage_reflection_amount",
+                "value_float_format": "one_decimal_place"
+            }]
+        }]
+    }
+}

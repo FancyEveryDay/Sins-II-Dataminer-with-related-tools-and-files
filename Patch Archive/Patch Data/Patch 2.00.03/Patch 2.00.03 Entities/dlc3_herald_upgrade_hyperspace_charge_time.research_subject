@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_traversal",
+    "field_coord": [3, 1],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "hyperspace_charge_time",
+        "value_behavior": "scalar",
+        "value": -0.75
+    }],
+    "name": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_tooltip_picture"
+}

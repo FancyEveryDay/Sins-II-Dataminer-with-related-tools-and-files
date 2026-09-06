@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "toggle_npc_markets_window_button_icon",
+        "name": "npc_reward.pranast_metal_market_boost.name",
+        "description": "npc_reward.pranast_metal_market_boost.description"
+    },
+    "type": "player_modifiers",
+    "player_modifiers":
+    {
+        "duration_in_minutes": 2,
+        "player_modifiers":
+        {
+            "npc_modifiers": [
+            {
+                "modifier_type": "buy_metal_credits_cost",
+                "value_behavior": "scalar",
+                "value": -0.35
+            }]
+        }
+    }
+}

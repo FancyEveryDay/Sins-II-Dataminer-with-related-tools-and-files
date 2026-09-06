@@ -1,0 +1,58 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "any_unit_with_weapon",
+        "target_filter":
+        {
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "modifier_buff_duration",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    },
+    {
+        "action_value_id": "weapon_cooldown_duration_bonus",
+        "action_value":
+        {
+            "values": [-0.15]
+        }
+    },
+    {
+        "action_value_id": "weapon_damage_scalar",
+        "action_value":
+        {
+            "values": [0.15]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "savage_thrill_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "weapon_damage_scalar"
+        }
+    },
+    {
+        "buff_weapon_modifier_id": "savage_thrill_weapon_cooldown_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "weapon_cooldown_duration_bonus"
+        }
+    }]
+}

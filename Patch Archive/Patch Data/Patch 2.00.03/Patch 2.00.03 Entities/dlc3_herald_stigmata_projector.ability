@@ -1,0 +1,132 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_stigmata_projector",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "stigmata_projector_cooldown",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_stigmata_projector_on_target"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "stigmata_projector_corruption_gain_value"
+                }]
+            }]
+        },
+		"targeting_type": "unit_targeted",
+        "target_filters": [
+            "stigmata_projector_target_filter"
+        ],
+        "range": "stigmata_projector_range",
+		"auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_corruption_at_or_above_threshold",
+						"threshold": 0.5
+					}
+				},
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "weapon_has_target"
+					}
+				},
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "current_spawner"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_buff",
+							"buff": "dlc3_herald_stigmata_projector_on_self",
+							"include_pending_buffs": true
+						}
+					}
+				}]
+            },
+			"target_definitions": [
+            {
+                "target_filter": "stigmata_projector_autocast_high_priority_target_filter"
+            },
+			{
+                "target_filter": "stigmata_projector_autocast_low_priority_target_filter"
+            }]
+        }
+    },	
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "stigmata_projector_range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_reflected",
+                "value_id": "stigmata_projector_damage_event_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_consumed_per_damage_redirected",
+                "value_id": "stigmata_projector_corruption_per_damage_redirected_ratio",
+				"value_color": "negative",
+				"value_float_format": "percentage_one_decimal_place"
+            },            
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "stigmata_projector_duration"
+            }]
+        }]
+    }
+}

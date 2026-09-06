@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 1,
+    "field": "military_consolidation",
+    "field_coord": [3, 3],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "name": "dlc3_herald_scatter_field_research_subject_name",
+    "name_uppercase": "dlc3_herald_scatter_field_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_scatter_field_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_scatter_field_unit_item_tooltip_picture"
+}

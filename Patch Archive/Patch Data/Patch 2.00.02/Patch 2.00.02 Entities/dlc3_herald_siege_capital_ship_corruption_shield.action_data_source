@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "level_count": 5,
+	"per_buff_memory_declaration":
+	{
+        "float_variable_ids": [
+            "corruption_consumed"]
+    },
+    "action_values": [    
+	{
+        "action_value_id": "corruption_shield_cooldown_value",
+        "action_value":
+        {
+            "values": [120.0, 115.0, 110.0, 100.0, 90.0]
+        }
+    },
+	{
+        "action_value_id": "corruption_shield_execution_count_value",
+        "action_value":
+        {
+            "values": [50.0, 50.0, 50.0, 50.0, 50.0]
+        }
+    },
+	{
+        "action_value_id": "corruption_shield_current_curruption",
+        "action_value":
+        {
+            "transform_type": "per_current_corruption",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0, 1.0, 1.0, 1.0, 1.0]
+        }
+    },
+	{
+        "action_value_id": "corruption_shield_max_corruption_consumed_per_tick",
+        "action_value":
+        {
+            "values": [2.0, 2.5, 3.0, 3.5, 4.0]
+        }
+    },
+	{
+        "action_value_id": "corruption_shield_shields_restored_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "corruption_consumed",
+            "values": [12.0, 14.0, 16.0, 18.0, 20.0]
+        }
+    }]
+}

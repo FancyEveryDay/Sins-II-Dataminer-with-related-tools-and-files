@@ -1,0 +1,205 @@
+{
+    "version": 0,
+    "active_duration": "oblation_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {           
+			"actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+				"radius_value": "oblation_radius",				
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "oblation_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_titan_oblation_on_target"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect": "dlc3_herald_titan_oblation_duration"
+                }
+            }]
+        }
+    },
+	{
+        "trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+				"constraints": [
+				{
+					"constraint_type": "damage_can_be_propagated"
+				},
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "oblation_damage_redirection_target_count",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+				}]
+            },
+            "actions": [
+            {
+                "action_type": "prevent_damage",
+                "damage_prevented_value": "oblation_damage_redirection_amount"
+            },
+			{
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "damage_per_target",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "oblation_damage_redirection_amount"
+                },
+				{
+                    "operator_type": "divide",
+                    "operand_value": "oblation_damage_redirection_target_count"
+                }]
+            },
+			{
+                "constraint":
+				{			
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_corruption_at_or_above_threshold",
+						"threshold": 0.9
+					}
+				},
+				"action_type": "change_buff_memory_float_value",
+                "float_variable": "damage_per_target",
+                "math_operators": [
+                {                   
+                    "operator_type": "multiply",
+                    "operand_value": "oblation_corruption_high_damage_per_redirection_target_modifier"
+                }]
+            },
+			{
+                "constraint":
+				{			
+					"constraint_type": "composite_and",
+					"constraints": [
+					{
+						"constraint_type": "composite_not",
+						"constraint":
+						{
+							"constraint_type": "unit_passes_unit_constraint",
+							"unit":
+							{
+								"unit_type": "current_spawner"
+							},
+							"unit_constraint":
+							{
+								"constraint_type": "has_corruption_at_or_above_threshold",
+								"threshold": 0.9
+							}
+						}
+					},
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "current_spawner"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_corruption_at_or_above_threshold",
+							"threshold": 0.5
+						}
+					}]
+				},
+				"action_type": "change_buff_memory_float_value",
+                "float_variable": "damage_per_target",
+                "math_operators": [
+                {
+					"operator_type": "multiply",
+                    "operand_value": "oblation_corruption_medium_damage_per_redirection_target_modifier"
+                }]
+            },
+			{
+				"action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "include_radius_origin_unit": false,
+				"radius_value": "oblation_radius",				
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "oblation_target_filter"
+                    },
+					"operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "oblation_damage_per_redirection_target_amount",
+                    "penetration_value": "uniforms_damage_event_penetration_value",
+                    "can_damage_be_propagated": false
+                }]
+            }]
+        }
+    }],
+	"gui":
+    {
+        "hud_icon": "oblation_hud_icon",
+        "name": "dlc3_herald_titan_oblation_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_redirected",
+                "value_id": "oblation_damage_redirection_amount",
+                "value_color": "positive",
+                "value_float_format": "percentage"
+            }]
+        }]
+    }
+}

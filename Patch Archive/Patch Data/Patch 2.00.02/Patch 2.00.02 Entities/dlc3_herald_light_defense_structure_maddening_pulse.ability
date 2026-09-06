@@ -1,0 +1,96 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_light_defense_structure_maddening_pulse",
+    "active_actions":
+    {
+        "cooldown_time": "maddening_pulse_cooldown_time",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "maddening_pulse_radius",
+                "operators": [
+                {
+                    "constraint":
+                    {
+						"constraint_type": "unit_passes_target_filter",
+						"unit":
+						{
+							"unit_type": "operand_destination"
+						},
+						"target_filter_id": "maddening_pulse_target_filter"
+					},
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_light_defense_structure_maddening_pulse_on_target"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_light_defense_structure_maddening_pulse_activate"
+                    }
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "target_filter_id": "maddening_pulse_auto_cast_target_filter",
+                "radius_value": "maddening_pulse_auto_cast_radius",
+                "target_count_value": "maddening_pulse_auto_cast_min_target_count"
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_light_defense_structure_maddening_pulse_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_light_defense_structure_maddening_pulse_ability_tooltip_picture",
+        "name": "dlc3_herald_light_defense_structure_maddening_pulse_ability_name",
+        "description": "dlc3_herald_light_defense_structure_maddening_pulse_ability_description",
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "maddening_pulse_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "maddening_pulse_radius"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "maddening_pulse_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

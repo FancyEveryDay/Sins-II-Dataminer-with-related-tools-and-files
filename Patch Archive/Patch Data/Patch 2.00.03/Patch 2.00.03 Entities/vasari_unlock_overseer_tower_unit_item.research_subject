@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_remnants",
+    "field_coord": [4, 3],
+    "research_time": 225.0,
+    "price":
+    {
+        "metal": 420.0,
+        "crystal": 420.0,
+        "credits": 0.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["vasari_unlock_overseer_cruiser"]
+    ],
+    "name": "vasari_unlock_overseer_tower_unit_item_research_subject_name",
+    "name_uppercase": "vasari_unlock_overseer_tower_unit_item_research_subject_name_uppercase",
+    "hud_icon": "vasari_unlock_overseer_tower_unit_item_research_subject_hud_icon"
+}

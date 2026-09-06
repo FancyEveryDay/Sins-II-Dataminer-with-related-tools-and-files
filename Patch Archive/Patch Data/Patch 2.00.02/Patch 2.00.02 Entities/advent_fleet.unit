@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "spatial":
+    {
+        "can_collide": false
+    },
+    "user_interface":
+    {
+        "can_ever_be_selected": true
+    },
+    "fleet":
+    {
+        "icons": [
+            "advent_black_fleet_icon",
+            "advent_blue1_fleet_icon",
+            "advent_red1_fleet_icon",
+            "advent_green1_fleet_icon",
+            "advent_bronze_fleet_icon",
+            "advent_gold_fleet_icon",
+            "advent_grey1_fleet_icon",
+            "advent_green3_fleet_icon",
+            "advent_pink1_fleet_icon",
+            "advent_pink2_fleet_icon",
+            "advent_purple_fleet_icon",
+            "advent_green2_fleet_icon",
+            "advent_grey2_fleet_icon",
+            "advent_red2_fleet_icon",
+            "advent_yellow_fleet_icon",
+            "advent_pony_fleet_icon"
+        ]
+    }
+}

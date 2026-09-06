@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "track_count"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "defense_track_level_count",
+        "action_value":
+        {
+            "transform_type": "per_planet_current_defense_track_level",
+            "transform_unit":
+            {
+                "unit_type": "current_spawner"
+            },
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "scatter_field_bombing_damage_taken_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "track_count",
+            "values": [-0.05]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "scatter_field_bombing_damage_taken_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "bombing_damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "scatter_field_bombing_damage_taken_value"
+        }
+    }]
+}

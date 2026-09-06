@@ -1,0 +1,129 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_movement_boost_field",
+    "level_source": "unit_item",
+    "active_actions":
+    {
+        "cooldown_time": "movemment_boost_field_cooldown",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_movement_boost_field_on_self"
+                }]
+            }]
+        },
+		"auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "can_purge_corruption",
+						"minimum_purge_amount": 150.0
+					}
+				},
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_orders"
+					}
+				},
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "current_spawner"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "weapon_has_target"
+						}
+					}
+				},
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "unit_passes_unit_constraint",
+						"unit":
+						{
+							"unit_type": "current_spawner"
+						},
+						"unit_constraint":
+						{
+							"constraint_type": "has_buff",
+							"buff": "dlc3_herald_movement_boost_field_on_target",
+							"include_pending_buffs": true
+						}
+					}
+				}]
+            }
+        }
+    },	
+    "gui":
+    {
+        "targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "movemment_boost_field_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_consumed",
+                "value_id": "movemment_boost_field_corruption_consumed_on_tick_base",
+				"value_color": "negative",
+				"value_suffix": "per_second"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "movemment_boost_field_radius"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "movemment_boost_field_linear_speed_buff_scalar_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "movemment_boost_field_linear_accel_buff_scalar_modifier"
+			},
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "movemment_boost_field_duration"
+            }]
+        }]
+    }
+}

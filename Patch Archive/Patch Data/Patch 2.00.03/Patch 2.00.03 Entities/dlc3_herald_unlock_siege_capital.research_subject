@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_awakening",
+    "field_coord": [5, 3],
+    "research_time": 175.0,
+    "price":
+    {
+        "credits": 1050.0,
+        "metal": 400.0,
+        "crystal": 400.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "offense",
+        "count": 1
+    }],
+    "name": "dlc3_herald_unlock_siege_capital_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_siege_capital_research_subject_name_uppercase",
+    "hud_icon": "dlc3_herald_siege_capital_ship_main_view_icon",
+    "tooltip_picture": "dlc3_herald_siege_capital_ship_main_view_icon"
+}

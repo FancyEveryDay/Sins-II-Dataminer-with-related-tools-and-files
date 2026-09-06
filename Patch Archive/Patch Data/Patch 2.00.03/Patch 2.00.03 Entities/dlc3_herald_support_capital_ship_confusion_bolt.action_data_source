@@ -1,0 +1,161 @@
+{
+    "version": 0,
+	"level_count": 2,
+    "target_filters": [
+    {
+        "target_filter_id": "confusion_bolt_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "composite_and",
+                "constraints": [
+				{
+					"constraint_type": "is_always_a_threat"
+				},
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "has_buff",
+						"buff": "dlc3_herald_support_capital_ship_confusion_bolt_on_target",
+						"include_pending_buffs": true
+					}
+				}]
+			}]
+        }
+    },
+    {
+        "target_filter_id": "confusion_bolt_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate",
+				"structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+			{
+				"constraint_type": "composite_and",
+                "constraints": [
+				{
+					"constraint_type": "is_always_a_threat"
+				},
+				{
+					"constraint_type": "composite_not",
+					"constraint":
+					{
+						"constraint_type": "has_buff",
+						"buff": "dlc3_herald_support_capital_ship_confusion_bolt_on_target",
+						"include_pending_buffs": true
+					}
+				}]
+			}]
+        }
+    },
+    {
+        "target_filter_id": "confusion_bolt_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    },
+	 {
+        "target_filter_id": "confusion_bolt_secondary_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+				"corvette",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "confusion_bolt_antimatter_cost",
+        "action_value":
+        {
+            "values": [100.0, 100.0]
+        }
+    },
+	{
+        "action_value_id": "confusion_bolt_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "confusion_bolt_cooldown_time",
+        "action_value":
+        {
+            "values": [90.0, 60.0]
+        }
+    },
+    {
+        "action_value_id": "confusion_bolt_range",
+        "action_value":
+        {
+            "values": [8000.0, 8000.0]
+        }
+    },
+	{
+        "action_value_id": "confusion_bolt_duration",
+        "action_value":
+        {
+            "values": [20.0, 30.0]
+        }
+    },
+	{
+        "action_value_id": "confusion_bolt_aoe_radius",
+        "action_value":
+        {
+            "values": [3000.0, 4000.0]
+        }
+    },
+    {
+        "action_value_id": "confusion_bolt_travel_speed",
+        "action_value":
+        {
+            "values": [2000.0, 2000.0]
+        }
+    },
+	{
+        "action_value_id": "confusion_bolt_enabled_value",
+        "action_value":
+        {
+            "values": [1.0, 1.0]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "confusion_bolt_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "berserk",
+            "value_behavior": "additive",
+            "value_id": "confusion_bolt_enabled_value"
+        }
+    }]
+}

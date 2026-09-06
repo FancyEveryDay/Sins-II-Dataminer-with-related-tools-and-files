@@ -1,0 +1,46 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_titan_crest_corruption",
+	"level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_titan_crest_corruption_on_self"
+    },    
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_titan_crest_corruption_unit_item_hud_icon",
+        "name": "dlc3_herald_titan_crest_corruption_unit_item_name",
+        "description": "dlc3_herald_titan_crest_corruption_unit_item_description",
+		"targeting":
+        {
+            "targeting_type": "radius",
+            "values":
+            {
+                "radius": "oblivion_silo_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.aura_tooltip_lines_sub_header_label",
+			"lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "oblivion_silo_radius"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_gain",
+                "value_id": "oblivion_silo_corruption_per_tick",
+				"value_color": "positive",
+				"value_suffix": "per_second"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.maximum_corruption_amount",
+                "value_id": "oblivion_silo_max_corruption_percentage",
+				"value_float_format": "percentage_one_decimal_place"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "version": 0,
+    "make_dead_on_current_spawner_made_dead": false,
+    "active_duration": "boarding_crew_duration_value",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "boarding_crew_target_filter"
+                    },
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_only",
+                    "damage_value": "boarding_crew_damage_rate_value",
+                    "penetration_value": "boarding_crew_penetration_value"
+                }]
+            }]
+        }
+    }],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "above",
+                        "effect_by_size":
+                        {
+                            "small_unit": "pirate_boarding_crew_status_on_target_small",
+                            "medium_unit": "pirate_boarding_crew_status_on_target_medium",
+                            "large_unit": "pirate_boarding_crew_status_on_target_large"
+                        }
+                }
+            }]
+        }
+    },
+    {
+        "trigger_event_type": "on_current_spawner_try_make_dead",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "abort_make_dead"
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "change_owner_player",
+                    "new_owner_player":
+                    {
+                        "player_type": "unit_owner",
+                        "owned_unit":
+                        {
+                            "unit_type": "first_spawner"
+                        }
+                    }
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "hull_only",
+                    "repair_value": "boarding_crew_hull_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_only",
+                    "repair_value": "boarding_crew_armor_restore_value"
+                },
+                {
+                    "operator_type": "repair_damage",
+                    "affect_type": "shields_only",
+                    "repair_value": "boarding_crew_shield_restore_value"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "action_data_source",
+                        "mesh_point": "above",
+                        "effect_by_size":
+                        {
+                            "small_unit": "pirate_boarding_crew_activate_on_target_small",
+                            "medium_unit": "pirate_boarding_crew_activate_on_target_medium",
+                            "large_unit": "pirate_boarding_crew_activate_on_target_large"
+                        }
+                    }
+                }]
+            },
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "trader_pirate_raid_supply_research_subject_hud_icon",
+        "name": "pirate_king_capital_ship_pillage_ability_name",
+        "visibility_scope": "negative"
+    }
+}

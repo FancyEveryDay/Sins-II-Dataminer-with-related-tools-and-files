@@ -1,0 +1,92 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_made_dead_by_current_spawner",
+        "action_group":
+        {
+            "constraint":
+			{
+				"constraint_type": "value_comparison",
+                "value_a": "bane_target_corruption_max",
+                "comparison_type": "greater_than",
+                "value_b": "fixed_zero"
+			},
+			"actions": [
+            {                
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "corruption_percentage",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "bane_target_corruption_current"
+                },
+                {
+                    "operator_type": "divide",
+                    "operand_value": "bane_target_corruption_max"
+                }]
+            },
+            {
+                "constraint":
+                {
+					"constraint_type": "value_comparison",
+					"value_a": "bane_weapon_cooldown_debuff_scalar_value",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+                },
+                "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                "radius_origin_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "radius_value": "bane_aoe_radius",
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "bane_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_siege_capital_ship_bane_on_target",
+					"copy_parent_buff_memory_values": true
+                }]
+            },
+			{
+                "constraint":
+                {
+					"constraint_type": "value_comparison",
+					"value_a": "bane_weapon_cooldown_debuff_scalar_value",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+                },
+				"action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "operators": [
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_siege_capital_ship_bane_blast"
+                    }
+                }]
+            }]
+        }
+    }]
+}

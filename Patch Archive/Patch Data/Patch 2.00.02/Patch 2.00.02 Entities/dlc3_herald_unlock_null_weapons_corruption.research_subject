@@ -1,0 +1,74 @@
+{
+    "version": 0,
+    "required_product": "dlc_Herald",
+    "domain": "military",
+    "tier": 1,
+    "field": "military_eradication",
+    "field_coord": [3, 3],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_null_cannon_weapon_damage_0"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_or",
+                "constraints": [
+                {
+                    "constraint_type": "has_weapon",
+                    "weapon_type": "normal",
+                    "tag": "null_cannon"
+                },
+                {
+                    "constraint_type": "has_weapon",
+                    "weapon_type": "normal",
+                    "tag": "beam"
+                }]
+            }]
+        },
+        "extra_level_prerequisites": [
+            [
+                ["dlc3_herald_upgrade_null_weapons_corruption_0"]
+            ],
+            [
+                ["dlc3_herald_upgrade_null_weapons_corruption_1"]
+            ]
+        ],
+        "action_data_source": "dlc3_herald_unlock_null_weapons_corruption",
+        "buff": "dlc3_herald_unlock_null_weapons_corruption"
+    }],
+    "name": "dlc3_herald_unlock_null_weapons_corruption_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_null_weapons_corruption_research_subject_name_uppercase",
+    "description": "dlc3_herald_unlock_null_weapons_corruption_research_subject_description",
+    "hud_icon": "dlc3_herald_unlock_null_weapons_corruption_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_unlock_null_weapons_corruption_research_subject_tooltip_picture",
+    "arbitary_research_line":
+    {
+        "before_after_heading": "tooltip.ability.self_corruption_per_damage",
+        "after_number": 0.1,
+        "float_format": "percentage"
+    }
+}

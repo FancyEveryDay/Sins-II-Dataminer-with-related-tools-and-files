@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "vasari_corruption_penalty_hyperspace_charge_time_modifier"
+    },
+    {
+        "buff_unit_modifier_id": "vasari_corruption_penalty_hyperspace_speed_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_corruption_structure_planetary_corruption_ability_hud_icon",
+        "name": "vasari_ship_corruption_penalty_moderate_buff_name",
+        "description": "vasari_ship_corruption_penalty_moderate_buff_description",
+        "visibility_scope": "negative",
+        "is_visible_within_unit_tooltip": true,
+        "show_duplicate_buffs": false,
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "vasari_corruption_penalty_hyperspace_charge_time_modifier"
+            },
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "vasari_corruption_penalty_hyperspace_speed_modifier"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_null_catalyst_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "dlc3_herald_null_catalyst_unit_item"
+    }
+}

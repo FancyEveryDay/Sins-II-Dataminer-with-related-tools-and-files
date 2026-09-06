@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_exploitation",
+    "field_coord": [3, 0],
+    "research_time": 105.0,
+    "price":
+    {
+        "credits": 650.0,
+        "metal": 200.0,
+        "crystal": 200.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_mining_0"]
+    ],
+    "planet_modifiers": [
+    {
+        "modifier_type": "mining_track_metal_income_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+    },
+    {
+        "modifier_type": "mining_track_crystal_income_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+    }],
+    "name": "dlc3_herald_upgrade_mining_1_research_subject_name",
+    "name_uppercase": "dlc3_herald_upgrade_mining_1_research_subject_name_uppercase",
+    "description": "dlc3_herald_upgrade_mining_1_research_subject_description",
+    "hud_icon": "dlc3_herald_upgrade_mining_1_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_upgrade_mining_1_research_subject_tooltip_picture"
+}

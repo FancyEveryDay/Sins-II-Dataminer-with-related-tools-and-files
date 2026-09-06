@@ -1,0 +1,192 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_titan_phasic_breach",
+	"level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "phasic_breach_cooldown_time",
+        "antimatter_cost": "phasic_breach_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_position_operators_on_single_position",
+                "position":
+                {
+                    "position_type": "target_position"
+                },
+                "position_operators": [
+                {
+                    "operator_type": "create_buff_agent",
+                    "buff_on_agent": "dlc3_herald_titan_phasic_breach_create_spawner"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "phasic_breach_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "position_targeted",
+        "range": "phasic_breach_primary_range",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 10.0,
+        "auto_cast":
+        {
+			"enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "target_filter_id": "phasic_breach_target_filter",
+                "radius_value": "phasic_breach_primary_range",
+                "target_count_value": "phasic_breach_auto_cast_target_count_value"
+            },
+			"target_definitions": [
+            {
+                "target_filter": "phasic_breach_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "phasic_breach_hud_icon",
+        "tooltip_picture": "phasic_breach_tooltip_picture",
+        "name": "dlc3_herald_titan_phasic_breach_ability_name",
+        "description": "dlc3_herald_titan_phasic_breach_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "phasic_breach_primary_range",
+				"radius": "phasic_breach_primary_aoe_radius"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [			
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "phasic_breach_antimatter_regen_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "phasic_breach_ability_cooldown_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "phasic_breach_duration",
+                "value_suffix": "seconds"
+            }]
+		},
+		{
+			"header_text": "tooltip.ability.on_primary_targets",
+			"lines": [	
+			{
+				"rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "phasic_breach_primary_aoe_radius"
+			},
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.max_targets",
+                "value_id": "phasic_breach_primary_target_limit"
+            },
+            {
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.salvo_properties"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_applied",
+                "value_id": "phasic_breach_primary_corruption_amount",
+				"value_color": "negative",
+				"value_suffix": "per_second"
+            },
+			{
+				"rendering_type": "single_value",
+				"label_text": "tooltip.ability.damage_rate",
+				"value_id": "phasic_breach_primary_damage_amount",
+				"value_color": "negative",
+				"value_suffix": "per_second"
+			},
+			{
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "phasic_breach_primary_damage_pierce"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "phasic_breach_excursion_duration",
+                "value_suffix": "seconds"
+            },
+			{
+                "rendering_type": "single_line",
+                "label_text": "tooltip.ability.has_corruption_medium"
+            },
+			{
+                "rendering_type": "buff_weapon_modifier",
+                "weapon_modifier_id": "phasic_breach_weapon_cooldown_debuff_scalar_modifier"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "phasic_breach_primary_corruption_debuff_duration",
+                "value_suffix": "seconds"
+            }]
+        },
+		{
+			"header_text": "tooltip.ability.on_secondary_targets",
+			"lines": [	
+			{
+				"rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "phasic_breach_secondary_aoe_radius"
+			},
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.max_targets",
+                "value_id": "phasic_breach_secondary_target_limit"
+            },
+			{
+				"rendering_type": "single_value",
+				"label_text": "tooltip.ability.damage_rate",
+				"value_color": "negative",
+				"value_id": "phasic_breach_secondary_damage_amount",
+				"value_suffix": "per_second"
+			},
+			{
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "phasic_breach_secondary_damage_pierce"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "phasic_breach_excursion_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "version": 0,
+	"make_dead_on_parent_buff_made_dead": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "stigmata_projector_duration_on_self_small",
+                        "medium_unit": "stigmata_projector_duration_on_self_medium",
+                        "large_unit": "stigmata_projector_duration_on_self_large"
+                    }
+                }
+            }]
+        }        
+    },
+	{
+		"trigger_event_type": "on_try_prevent_damage",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "composite_and",
+				"constraints": [
+				{
+					"constraint_type": "damage_can_be_propagated"
+				},
+				{
+					"constraint_type": "value_comparison",
+					"value_a": "stigmata_projector_corruption_available",
+					"comparison_type": "greater_than",
+					"value_b": "fixed_zero"
+				}]
+            },
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "corruption_consumed",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "stigmata_projector_damage_event_value"
+                },
+				{
+                    "operator_type": "multiply",
+                    "operand_value": "stigmata_projector_corruption_per_damage_redirected_ratio"
+                },
+				{
+                    "operator_type": "min",
+                    "operand_value": "stigmata_projector_corruption_available"
+                }]
+            },
+			{
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "damage_redirected",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "stigmata_projector_corruption_consumed_for_event"
+                },
+				{
+                    "operator_type": "divide",
+                    "operand_value": "stigmata_projector_corruption_per_damage_redirected_ratio"
+                }]
+            },
+			{
+				"action_type": "prevent_damage",
+				"damage_prevented_value": "stigmata_projector_damage_redirected_for_event"
+			},
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "previous_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "stigmata_projector_damage_redirected_for_event",
+                    "penetration_value": "uniforms_damage_event_penetration_value",
+                    "can_damage_be_propagated": false
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "stigmata_projector_corruption_consumed_for_event",
+                    "actual_removed_corruption_float_variable": "corruption_consumed"
+                }]
+            }]
+        }
+	}],
+	"gui":
+    {
+        "hud_icon": "dlc3_herald_stigmata_projector_unit_item_hud_icon",
+        "name": "dlc3_herald_stigmata_projector_unit_item_name",
+		"visibility_scope": "positive",
+		"tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_reflected",
+                "value_id": "stigmata_projector_damage_event_value",
+				"value_color": "positive",
+				"value_float_format": "percentage_one_decimal_place"
+            },
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_consumed_per_damage_redirected",
+                "value_id": "stigmata_projector_corruption_per_damage_redirected_ratio",
+				"value_color": "negative",
+				"value_float_format": "percentage_one_decimal_place"
+            }]
+        }]
+    }
+}

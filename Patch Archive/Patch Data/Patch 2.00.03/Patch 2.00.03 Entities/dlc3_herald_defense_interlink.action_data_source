@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "defense_interlink_structure_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "friendly"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "has_weapon"
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "defense_interlink_shield_point_restore_scalar_after_damage_taken_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    },
+    {
+        "action_value_id": "defense_interlink_armor_point_restore_scalar_after_damage_taken_value",
+        "action_value":
+        {
+            "values": [0.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "defense_interlink_shield_point_restore_scalar_after_damage_taken_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "shield_point_restore_scalar_after_damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "defense_interlink_shield_point_restore_scalar_after_damage_taken_value"
+        }
+    },
+    {
+        "buff_unit_modifier_id": "defense_interlink_armor_point_restore_scalar_after_damage_taken_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "armor_point_restore_scalar_after_damage_taken",
+            "value_behavior": "scalar",
+            "value_id": "defense_interlink_armor_point_restore_scalar_after_damage_taken_value"
+        }
+    }]
+}

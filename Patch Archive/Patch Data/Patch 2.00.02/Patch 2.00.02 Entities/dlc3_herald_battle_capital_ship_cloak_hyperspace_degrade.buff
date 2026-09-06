@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "active_duration": "hyperspace_cloak_quality_degrade_duration_value",
+    "unit_modifiers": [
+    {
+        "modifier_type": "cloak_quality",
+        "value_behavior": "additive",
+        "value_id": "hyperspace_cloak_quality_degrade_modifier_value"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_decloak_ability_hud_icon",
+        "name": "dlc3_herald_battle_capital_ship_cloak_hyperspace_degrade_name",
+        "visibility_scope": "negative",
+        "is_visible_within_unit_tooltip": true
+    },
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": false
+}

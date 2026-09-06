@@ -1,0 +1,185 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "mag_blast_missile_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "starbase",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "has_shields"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "mag_blast_missile_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "has_shields"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "stun_torpedo_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "stun_torpedo_armor_penetration_value",
+        "action_value":
+        {
+            "values": [1000.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_cooldown_time_value",
+        "action_value":
+        {
+            "values": [150.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_damage_value",
+        "action_value":
+        {
+            "values": [300.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_range_value",
+        "action_value":
+        {
+            "values": [25000.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_disable_duration_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_splash_radius_value",
+        "action_value":
+        {
+            "values": [750.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_count_value",
+        "action_value":
+        {
+            "values": [20.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_execution_interval_value",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_lifetime_value",
+        "action_value":
+        {
+            "values": [60.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_steering_distance_radius_scalar_value",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_speed_value",
+        "action_value":
+        {
+            "values": [1250.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_hull_value",
+        "action_value":
+        {
+            "values": [15.0]
+        }
+    },
+    {
+        "action_value_id": "stun_torpedo_torpedo_armor_value",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "trader_starbase_stun_torpedo_muzzle",
+        "alias_binding":
+        {
+            "particle_effect": "tec_ion_missile_barrage_muzzle"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_stun_torpedo_buff_on_target_large",
+        "alias_binding":
+        {
+            "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_large"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_stun_torpedo_buff_on_target_medium",
+        "alias_binding":
+        {
+            "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_medium"
+        }
+    },
+    {
+        "alias_name": "trader_starbase_stun_torpedo_buff_on_target_small",
+        "alias_binding":
+        {
+            "particle_effect": "pirate_king_capital_ship_ion_bolt_buff_on_target_small"
+        }
+    }]
+}

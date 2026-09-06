@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "research",
+    "hud_icon": "dlc3_herald_dual_research_lab_1_unit_item_hud_icon",
+    "tooltip_picture": "dlc3_herald_dual_research_lab_1_unit_item_tooltip_picture",
+    "name": "dlc3_herald_dual_research_lab_1_unit_item_name",
+    "description": "dlc3_herald_dual_research_lab_1_unit_item_description",
+    "build_time": 100.0,
+    "price":
+    {
+        "credits": 800.0,
+        "metal": 120.0,
+        "crystal": 240.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "magnetic"]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "civilian_research_points",
+        "value_behavior": "additive",
+        "values": [2.0]
+    },
+    {
+        "modifier_type": "military_research_points",
+        "value_behavior": "additive",
+        "values": [2.0]
+    }]
+}

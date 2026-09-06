@@ -1,0 +1,146 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_battle_capital_ship_dark_shell",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 2, 4, 6, 8],
+    "active_actions":
+    {
+        "cooldown_time": "dark_shell_cooldown_time_value",
+        "antimatter_cost": "dark_shell_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_battle_capital_ship_dark_shell"
+                },
+                {
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect_by_size":
+                        {
+                            "small_unit": "dlc3_herald_battle_capital_ship_dark_shell_activate_small",
+                            "medium_unit": "dlc3_herald_battle_capital_ship_dark_shell_activate_medium",
+                            "large_unit": "dlc3_herald_battle_capital_ship_dark_shell_activate_large"
+                        }
+                    }
+                }]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "add_corruption",
+                    "corruption_add_value": "dark_shell_activation_corruption_gain_value"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "dark_shell_target_filter"
+        ],
+        "range": "dark_shell_range_value",
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "dark_shell_auto_cast_target_filter"
+            }]
+        },
+        "ai_only_auto_cast":
+        {
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "dark_shell_ai_only_auto_cast_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_battle_capital_ship_dark_shell_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_battle_capital_ship_dark_shell_ability_tooltip_picture",
+        "name": "dlc3_herald_battle_capital_ship_dark_shell_ability_name",
+        "description": "dlc3_herald_battle_capital_ship_dark_shell_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "dark_shell_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "header_text": "tooltip.ability.effect_on_target",
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "dark_shell_max_shield_modifier"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage_prevented",
+                "value_id": "dark_shell_damage_prevented_value",
+                "value_float_format": "percentage",
+                "ratio_float_format": "percentage_with_sign",
+                "value_color": "positive"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.corruption_per_damage_prevented",
+                "value_id": "fixed_one",
+                "value_float_format": "percentage",
+                "ratio_float_format": "percentage_with_sign",
+                "value_color": "positive"
+            }]
+        },
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "dark_shell_duration_value",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

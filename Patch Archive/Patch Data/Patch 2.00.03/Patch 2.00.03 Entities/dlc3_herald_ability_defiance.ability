@@ -1,0 +1,84 @@
+{
+    "version": 0,
+    "action_data_source": "dlc3_herald_ability_defiance",
+    "active_actions":
+    {
+        "cooldown_time": "defiance_cooldown_time",
+        "corruption_cost": "defiance_corruption_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+				"operators": [   
+				{
+                    "operator_type": "repair_damage",
+                    "affect_type": "armor_only",
+                    "repair_value": "defiance_armor_restored_amount"
+                },
+				{
+                    "operator_type": "play_point_effect",
+                    "effect_definition":
+                    {
+                        "binding": "unit_skin",
+                        "mesh_point": "center",
+                        "effect": "dlc3_herald_ability_defiance_activation"
+                    }
+                }]
+            }]
+        },
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "composite_and",
+                "constraints": [
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "has_missing_armor",
+						"amount_missing_threshold": 400.0
+					}
+				},
+				{
+					"constraint_type": "unit_passes_unit_constraint",
+					"unit":
+					{
+						"unit_type": "current_spawner"
+					},
+					"unit_constraint":
+					{
+						"constraint_type": "weapon_has_target"
+					}
+				}]
+            }
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_ability_defiance_ability_hud_icon",
+        "tooltip_picture": "dlc3_herald_ability_defiance_ability_tooltip_picture",
+        "name": "dlc3_herald_ability_defiance_ability_name",
+        "description": "dlc3_herald_ability_defiance_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+			{
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_restore",
+                "value_id": "defiance_armor_restored_amount",
+				"value_color": "positive"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "loadouts": [
+    {
+        "name": "default",
+        "ability_picking_order": [0, 1, 2, 0, 1, 2, 0, 1, 2, 0],
+        "required_items": [
+        {
+            "slot_index": 0,
+            "candidates": [
+            {
+                "item": "dlc3_herald_cloak_generator",
+                "priority": 10
+            }]
+        }]
+    },
+    {
+        "name": "cloak_detector_response",
+        "ability_picking_order": [0, 1, 2, 0, 1, 2, 0, 1, 2, 0],
+        "required_items": [
+        {
+            "slot_index": 0,
+            "candidates": [
+            {
+                "item": "dlc3_herald_cloak_generator",
+                "priority": 10
+            }]
+        },
+        {
+            "slot_index": 1,
+            "candidates": [
+            {
+                "item": "dlc3_herald_cloak_detector_array",
+                "priority": 10
+            }]
+        }]
+    }],
+    "required_loadouts": [
+    {
+        "loadout": "default",
+        "priority": 5,
+        "target_count_in_empire": 1
+    },
+    {
+        "loadout": "cloak_detector_response",
+        "priority": 10,
+        "target_count_in_empire": 1,
+        "requires_enemy_cloak_observed": true
+    }],
+    "weighted_random_loadouts": [
+    {
+        "loadout": "default",
+        "weight": 1.0
+    }]
+}

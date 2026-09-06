@@ -1,0 +1,62 @@
+{
+    "version": 0,
+	"make_dead_on_source_ability_released": true,
+	"active_duration": "stigmata_projector_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "first_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "dlc3_herald_stigmata_projector_on_self"
+                }]
+            },
+			{
+                "action_type": "start_buff_effect",
+                "effect_definition":
+                {
+                    "binding": "action_data_source",
+                    "mesh_point": "center",
+                    "effect_by_size":
+                    {
+                        "small_unit": "stigmata_projector_duration_on_target_small",
+                        "medium_unit": "stigmata_projector_duration_on_target_medium",
+                        "large_unit": "stigmata_projector_duration_on_target_large"
+                    }
+                }
+            }]
+        }
+    },
+	{
+        "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_type": "make_buff_dead"
+            }]
+        }
+    }],
+	"gui":
+    {
+        "hud_icon": "dlc3_herald_stigmata_projector_unit_item_hud_icon",
+        "name": "dlc3_herald_stigmata_projector_unit_item_name",
+		"visibility_scope": "negative"
+    }
+}

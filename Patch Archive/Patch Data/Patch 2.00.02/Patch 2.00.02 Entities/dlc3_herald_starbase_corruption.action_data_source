@@ -1,0 +1,65 @@
+{
+    "version": 0,
+	"target_filters": [
+	{
+        "target_filter_id": "oblivion_silo_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+			{
+				"constraint_type": "composite_not",
+				"constraint":
+				{
+					"constraint_type": "has_corruption_at_or_above_threshold",
+					"threshold": 0.25
+				}
+			}]
+        }
+    }],
+    "action_values": [
+	{
+        "action_value_id": "oblivion_silo_radius",
+        "action_value":
+        {
+            "values": [10000.0]
+        }
+    },
+	{
+        "action_value_id": "oblivion_silo_corruption_per_tick",
+        "action_value":
+        {
+            "values": [1.0]
+        }
+    },
+	{
+        "action_value_id": "oblivion_silo_max_corruption_percentage",
+        "action_value":
+        {
+            "values": [0.25]
+        }
+    }],
+	"effect_alias_bindings": [
+	{
+		"alias_name": "oblivion_silo_buff_active",
+		"alias_binding":
+		{
+			"particle_effect": "advent_temple_of_renewal_recharge_antimatter_activate"
+		}
+	}]
+}

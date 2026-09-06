@@ -1,0 +1,61 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_mutations": [
+        "disable_can_passively_regenerate_hull"
+    ],
+    "are_mutations_finite": false,
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "has_hull_above_floor",
+                    "floor_percentage": 0.25
+                }
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_only",
+                    "damage_value": "dlc3_herald_self_corruption_hull_drain_rate_value",
+                    "penetration_value": "dlc3_herald_self_corruption_zero_penetration_value",
+                    "can_damage_be_propagated": false
+                }]
+            }]
+        }
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_corruption_structure_planetary_corruption_ability_hud_icon",
+        "name": "dlc3_herald_ship_corruption_self_penalty_extreme_buff_name",
+        "description": "dlc3_herald_ship_corruption_self_penalty_extreme_buff_description",
+        "visibility_scope": "negative",
+        "is_visible_within_unit_tooltip": true,
+        "is_expire_time_suppressed": true,
+        "show_duplicate_buffs": false
+    }
+}

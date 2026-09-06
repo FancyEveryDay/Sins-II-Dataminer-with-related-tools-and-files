@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "make_dead_on_source_ability_released": true,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_mirror_current_percent"
+            }]
+        }
+    }],
+    "time_actions": [
+    {
+        "execution_interval_value": "dlc3_herald_corruption_percent_mirror_interval_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_mirror_current_percent"
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "infused_reactor_antimatter_restore_rate_modifier"
+    }],
+    "gui":
+    {
+        "hud_icon": "dlc3_herald_infused_reactor_unit_item_hud_icon",
+        "name": "dlc3_herald_infused_reactor_unit_item_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "infused_reactor_antimatter_restore_rate_modifier",
+                "is_resolved_value": true
+            }]
+        }]
+    }
+}

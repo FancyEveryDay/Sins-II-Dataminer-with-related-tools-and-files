@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_mirror_current_percent"
+            }]
+        }
+    }],
+    "time_actions": [
+    {
+        "execution_interval_value": "dlc3_herald_corruption_percent_mirror_interval_value",
+        "action_group":
+        {
+            "actions": [
+            {
+                "action_id": "dlc3_herald_ship_corruption_mirror_current_percent"
+            }]
+        }
+    }],
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_hull_restore_rate_penalty"
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_armor_restore_rate_penalty"
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_shield_restore_rate_penalty"
+    }]
+}

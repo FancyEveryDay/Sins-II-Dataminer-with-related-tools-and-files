@@ -1,0 +1,55 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+	"trigger_event_actions": [
+    {
+        "trigger_event_type": "on_buff_started",
+        "action_group":
+        {	
+			"actions": [
+			{
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "corruption_consumed",
+                "math_operators": [
+                {
+                    "operator_type": "assign",
+                    "operand_value": "immolate_damage_amount"
+                },
+				{
+                    "operator_type": "min",
+                    "operand_value": "immolate_target_current_curruption"
+                }]
+            },
+			{
+                "action_type": "use_unit_operators_on_single_unit",
+                "source_unit":
+                {
+                    "unit_type": "first_spawner"
+                },
+				"destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+				{
+                    "operator_type": "remove_corruption",
+                    "corruption_remove_value": "immolate_damage_amount",
+                    "actual_removed_corruption_float_variable": "corruption_consumed"
+                },
+				{
+                    "operator_type": "apply_damage",
+                    "damage_source": "ability",
+                    "damage_affect_type": "hull_and_armor_and_shields",
+                    "damage_value": "immolate_corruption_consumed",
+                    "penetration_value": "immolate_damage_pierce_amount"
+                }]
+            }]
+        }
+    }]
+}

@@ -1,0 +1,63 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "population_portal_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_or",
+                "constraints": [
+                {
+                    "constraint_type": "has_definition",
+                    "unit_definition": "dlc3_herald_ship_factory_structure"
+                },
+                {
+                    "constraint_type": "has_definition",
+                    "unit_definition": "dlc3_herald_titan_factory_structure"
+                }]
+            }]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "population_portal_max_population_value",
+        "action_value":
+        {
+            "values": [0.05]
+        }
+    },
+    {
+        "action_value_id": "population_portal_population_growth_rate_value",
+        "action_value":
+        {
+            "values": [0.1]
+        }
+    }],
+    "buff_planet_modifiers": [
+    {
+        "buff_planet_modifier_id": "population_portal_max_population_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "max_population_points",
+            "value_behavior": "scalar",
+            "value_id": "population_portal_max_population_value"
+        }
+    },
+    {
+        "buff_planet_modifier_id": "population_portal_population_growth_rate_modifier",
+        "buff_planet_modifier":
+        {
+            "modifier_type": "population_growth_rate",
+            "value_behavior": "scalar",
+            "value_id": "population_portal_population_growth_rate_value"
+        }
+    }]
+}

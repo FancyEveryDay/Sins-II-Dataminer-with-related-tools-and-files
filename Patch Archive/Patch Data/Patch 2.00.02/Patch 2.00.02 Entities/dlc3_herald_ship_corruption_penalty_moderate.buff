@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_hull_restore_slow"
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_armor_restore_slow"
+    },
+    {
+        "buff_unit_modifier_id": "dlc3_herald_corruption_penalty_shield_restore_slow"
+    }],
+    "gui":
+    {
+        "hud_icon": "advent_unity_cleanse_ability_hud_icon",
+        "tooltip_icon": "advent_unity_cleanse_ability_hud_icon",
+        "name": "dlc3_herald_ship_corruption_penalty_moderate_buff_name",
+        "description": "dlc3_herald_ship_corruption_penalty_moderate_buff_description",
+        "visibility_scope": "negative",
+        "is_expire_time_suppressed": true,
+        "show_duplicate_buffs": false
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "version": 0,
+    "gui":
+    {
+        "hud_icon": "aluxian_governor_scion_hud_icon",
+        "name": "npc_reward.aluxian_governor_scion.name",
+        "description": "npc_reward.aluxian_governor_scion.description"
+    },
+    "type": "planet_component",
+    "item": "aluxian_governor_scion"
+}

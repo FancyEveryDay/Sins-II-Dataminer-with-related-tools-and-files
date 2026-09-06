@@ -1,0 +1,149 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "area_shield_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "structure"
+            ],
+            "ownerships": [
+                "self"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_fully_built"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "advent_starbase_area_shield_on_target"
+                }
+            }]
+        }
+    }],
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "last_sent_effect_time",
+            "time_since_sent_effect",
+            "total_damage"]
+    },
+    "action_values": [
+    {
+        "action_value_id": "area_shield_last_sent_effect_time_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "last_sent_effect_time",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "area_shield_total_damage_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "total_damage",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "area_shield_time_since_sent_effect_value",
+        "action_value":
+        {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "time_since_sent_effect",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "area_shield_total_damage_threshold_value",
+        "action_value":
+        {
+            "values": [100.0]
+        }
+    },
+    {
+        "action_value_id": "area_shield_min_time_between_effects_value",
+        "action_value":
+        {
+            "values": [1.5]
+        }
+    },
+    {
+        "action_value_id": "area_shield_damage_sent_effect_duration",
+        "action_value":
+        {
+            "values": [0.75]
+        }
+    },
+    {
+        "action_value_id": "area_shield_damage_prevented_value",
+        "action_value":
+        {
+            "transform_type": "per_raw_damage_dealt",
+            "values": [0.9]
+        }
+    },
+    {
+        "action_value_id": "area_shield_radius_value",
+        "action_value":
+        {
+            "values": [7500.0]
+        }
+    }],
+    "effect_alias_bindings": [
+    {
+        "alias_name": "advent_starbase_area_shield_passive",
+        "alias_binding":
+        {
+            "particle_effect": "advent_starbase_shield_projection"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_beam",
+        "alias_binding":
+        {
+            "beam": "advent_shield_projection"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_beam_hit_hull",
+        "alias_binding":
+        {
+            "particle_effect": "projection_beam_impact"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_beam_hit_shield",
+        "alias_binding":
+        {
+            "particle_effect": "projection_beam_impact"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_on_target_small",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_projection_small"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_on_target_medium",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_projection_medium"
+        }
+    },
+    {
+        "alias_name": "advent_starbase_area_shield_on_target_large",
+        "alias_binding":
+        {
+            "particle_effect": "advent_shield_projection_large"
+        }
+    }]
+}

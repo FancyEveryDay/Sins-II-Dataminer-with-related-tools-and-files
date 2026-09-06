@@ -1,0 +1,80 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "target_filters": [
+    {
+        "target_filter_id": "awaken_amalgams_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "strikecraft"
+            ],
+            "ownerships": [
+                "self"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "awaken_amalgams_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [100.0, 150.0]
+        }
+    },
+    {
+        "action_value_id": "awaken_amalgams_activation_corruption_gain_value",
+        "action_value":
+        {
+            "transform_type": "source_ability_antimatter_cost",
+            "values": [1.0, 1.0]
+        }
+    },
+    {
+        "action_value_id": "awaken_amalgams_cooldown_time_value",
+        "action_value":
+        {
+            "values": [300.0, 300.0]
+        }
+    },
+    {
+        "action_value_id": "awaken_amalgams_duration_value",
+        "action_value":
+        {
+            "values": [150.0, 150.0]
+        }
+    },
+    {
+        "action_value_id": "awaken_amalgams_max_linear_speed_value",
+        "action_value":
+        {
+            "values": [0.5, 1.5]
+        }
+    },
+    {
+        "action_value_id": "awaken_amalgams_weapon_damage_value",
+        "action_value":
+        {
+            "values": [0.5, 1.5]
+        }
+    }],
+    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "awaken_amalgams_max_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "awaken_amalgams_max_linear_speed_value"
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "awaken_amalgams_weapon_damage_modifier",
+        "buff_weapon_modifier":
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "awaken_amalgams_weapon_damage_value"
+        }
+    }]
+}

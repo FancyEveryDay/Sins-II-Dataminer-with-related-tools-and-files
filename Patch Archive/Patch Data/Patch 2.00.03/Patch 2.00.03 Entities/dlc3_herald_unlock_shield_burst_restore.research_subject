@@ -1,0 +1,43 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_continuance",
+    "field_coord": [4, 2],
+    "research_time": 155.0,
+    "price":
+    {
+        "credits": 1000.0,
+        "metal": 350.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["dlc3_herald_upgrade_shield_combat_regen_0"]
+    ],
+    "buff_providers": [
+    {
+        "scope": "all_owned_units",
+        "all_owned_units_target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "self"]
+        },
+        "action_data_source": "dlc3_herald_unlock_shield_burst_restore",
+        "buff": "dlc3_herald_unlock_shield_burst_restore"
+    }],
+    "name": "dlc3_herald_unlock_shield_burst_restore_research_subject_name",
+    "name_uppercase": "dlc3_herald_unlock_shield_burst_restore_research_subject_name_uppercase",
+    "description": "dlc3_herald_unlock_shield_burst_restore_research_subject_description",
+    "hud_icon": "dlc3_herald_unlock_shield_burst_restore_research_subject_hud_icon",
+    "tooltip_picture": "dlc3_herald_unlock_shield_burst_restore_research_subject_tooltip_picture"
+}

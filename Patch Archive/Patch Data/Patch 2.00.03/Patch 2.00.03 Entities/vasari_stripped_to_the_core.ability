@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "action_data_source": "vasari_stripped_to_the_core",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "vasari_stripped_to_the_core_trigger"
+    },
+    "gui":
+    {
+        "hud_icon": "vasari_stripped_to_the_core_unit_item_hud_icon",
+        "name": "vasari_stripped_to_the_core_unit_item_name",
+        "description": "vasari_stripped_to_the_core_unit_item_description"
+    }
+}

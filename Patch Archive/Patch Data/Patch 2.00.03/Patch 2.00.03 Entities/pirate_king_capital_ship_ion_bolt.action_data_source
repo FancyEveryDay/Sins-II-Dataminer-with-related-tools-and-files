@@ -1,0 +1,112 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "target_filters": [
+    {
+        "target_filter_id": "ion_bolt_auto_cast_high_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "super_capital_ship",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "pirate_king_capital_ship_ion_bolt",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "ion_bolt_auto_cast_low_priority_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "cruiser",
+                "frigate",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "is_always_a_threat"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "pirate_king_capital_ship_ion_bolt",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "ion_bolt_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "super_capital_ship",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "ion_bolt_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [75.0, 80.0, 85.0, 90.0, 100.0]
+        }
+    },
+    {
+        "action_value_id": "ion_bolt_cooldown_time_value",
+        "action_value":
+        {
+            "values": [25.0, 21.0, 17.0, 13.0, 5.0]
+        }
+    },
+    {
+        "action_value_id": "ion_bolt_disable_duration_value",
+        "action_value":
+        {
+            "values": [4.0, 6.0, 8.0, 10.0, 14.0]
+        }
+    },
+    {
+        "action_value_id": "ion_bolt_range_value",
+        "action_value":
+        {
+            "values": [12000.0, 12000.0, 12000.0, 12000.0, 12000.0]
+        }
+    },
+    {
+        "action_value_id": "ion_bolt_travel_speed_value",
+        "action_value":
+        {
+            "values": [6000.0, 6000.0, 6000.0, 6000.0, 6000.0]
+        }
+    }]
+}

@@ -1,0 +1,17 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_ascension",
+    "field_coord": [8, 4],
+    "research_time": 525.0,
+    "price":
+    {
+        "credits": 1400.0,
+        "metal": 600.0,
+        "crystal": 1200.0
+    },
+    "name": "advent_unlock_altar_of_sacrifice_unit_item_research_subject_name",
+    "name_uppercase": "advent_unlock_altar_of_sacrifice_unit_item_research_subject_name_uppercase",
+    "hud_icon": "advent_unlock_altar_of_sacrifice_unit_item_research_subject_hud_icon"
+}

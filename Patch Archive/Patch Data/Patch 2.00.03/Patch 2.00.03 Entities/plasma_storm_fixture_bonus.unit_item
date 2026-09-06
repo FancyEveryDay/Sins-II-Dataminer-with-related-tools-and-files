@@ -1,0 +1,10 @@
+{
+    "version": 0,
+    "item_type": "planet_bonus",
+    "hud_icon": "plasma_storm_fixture_bonus_hud_icon",
+    "tooltip_icon": "plasma_storm_fixture_bonus_hud_icon",
+	"tooltip_picture": "plasma_storm_fixture_bonus_tooltip_picture",
+    "name": "planet_bonus.plasma_storm.name",
+    "description": "planet_bonus.plasma_storm.desc",
+    "ability": "plasma_storm_fixture_bonus"
+}
