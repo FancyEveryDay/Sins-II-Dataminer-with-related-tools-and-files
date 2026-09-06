@@ -79,7 +79,8 @@ def formatPlanetItemEntries(planetDict : dict, outputFile = WIKIFILES_DIR / "Wik
 
         if prerequisites != None:
 
-            itemPrerequisites = (LOCALIZED_TEXT.get(prerequisites[0][0] + "_research_subject_name", prerequisites[0][0]))
+            prereq = getFile(prerequisites[0][0])       
+            itemPrerequisites = (LOCALIZED_TEXT.get(prereq.get('name', None), prerequisites[0][0]))
 
         else: itemPrerequisites = None
 
