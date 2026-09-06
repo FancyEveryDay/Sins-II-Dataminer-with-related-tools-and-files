@@ -40,7 +40,7 @@ def getUnitName(unitName):
 
     return outputName
 
-def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs):
+def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs, weaponResearchPrereqs):
 
     if len(weaponCollection) == 0:
         return None
@@ -53,6 +53,7 @@ def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs):
         weaponName = weaponName.replace("_", " ")
         
         weaponPrereq = LOCALIZED_TEXT.get(f"{weaponPrereqs.get(weapon)}_unit_item_name", None)
+        weaponResearchPrereq = LOCALIZED_TEXT.get(f"{weaponResearchPrereqs.get(weapon)}_research_subject_name", None)
 
         weapon = weaponDict[weapon]
 
@@ -62,6 +63,7 @@ def createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs):
 
         unitWeapon["name"] = weaponName
         unitWeapon["required_unit_item"] = weaponPrereq
+        unitWeapon["required_research"] = weaponResearchPrereq
         unitWeapon["weapon_type"] = weapon.get("weapon_type", None)
         unitWeapon["burst_count"] = len(weapon.get("burst_pattern")) if weapon.get("burst_pattern", False) else None
         unitWeapon["burst_duration"] = weapon.get("burst_pattern")[-1] if weapon.get("burst_pattern", False) else None
@@ -111,7 +113,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
 
         print(f"Processing {outputName}...") # Print the name of the unit being processed after filtering
 
-        # Ship Cost Block
+        # Unit Cost Block
 
         try: unitBuildTime = unitDict["build"]["build_time"]
         except KeyError: 
@@ -134,7 +136,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         try: exoticPrice : list = unitDict["build"]["exotic_price"]
         except KeyError: exoticPrice = []
 
-        #Ship Durability Block
+        # Unit Physics Block
         try: unitMoveSpeed = int(unitDict["physics"]["max_linear_speed"])
         except KeyError: unitMoveSpeed = None
 
@@ -147,7 +149,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         try: unitTurnSpeed = unitDict["physics"]["max_angular_speed"]
         except KeyError: unitTurnSpeed = None
 
-        # Ship Stat Block
+        # Unit Stat Block
 
         try: unitDurability = int(unitDict["health"]["durability"])
         except KeyError: unitDurability = 0
@@ -234,6 +236,11 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
 
         unitDescription = LOCALIZED_TEXT.get(unitName + "_description", None)
 
+        # Capture weight for ships
+
+        try: unitCaptureWeight = unitDict["capture_points"]
+        except KeyError: unitCaptureWeight = None
+
         # Slot Block for structures
         try:
             slot_type = unitDict["structure"]["slot_type"]
@@ -248,6 +255,21 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         except KeyError:
             military_slots = None
             civilian_slots = None
+
+        # Unit Corruption Block
+        try: 
+            unitCorruption = unitDict["corruption"]
+
+            unitCorruptionMax = unitCorruption.get("max_corruption", None)
+            unitCorruptionThresholds = unitCorruption.get("corruption_thresholds", [.1, .5, .9])
+
+            calculatedThresholds = []
+            for t in unitCorruptionThresholds:
+                calculatedThresholds.append( t * unitCorruptionMax )
+
+            unitCorruption["corruption_thresholds"] = calculatedThresholds
+
+        except KeyError: unitCorruption = None
         
         # Levels block for leveling ships
         if len(unitDict["health"]["levels"]) > 1:
@@ -310,20 +332,26 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         if unitWeaponsBlock is not False:
             weaponCollection = {}
             weaponPrereqs = {}
+            weaponResearchPrereqs = {}
+
             for weapon in unitWeaponsBlock:           
 
                 weaponName = weapon['weapon']
                 num = 2
-                while weaponName in weaponCollection:
-                    if unitWeaponsBlock [weaponName]["damage"] == weapon["damage"] and weaponCollection[weaponName]["pen"] == weapon["pen"]:
-                        weaponCollection[weaponName] += 1
-                    else:
-                        weaponName = f"{weapon['weapon']}{num}"
-                        num += 1
+                # while weaponName in weaponCollection:
+                    # if unitWeaponsBlock[weaponName]["damage"] == weapon["damage"] and weaponCollection[weaponName]["pen"] == weapon["pen"]:
+                    #     weaponCollection[weaponName] += 1
+                    # else:
+                    #     weaponName = f"{weapon['weapon']}{num}"
+                    #     num += 1
                 
                 if weaponName not in weaponCollection:
                     weaponCollection[weaponName] = 1
                     weaponPrereqs[weaponName] = weapon.get('required_unit_item', None)
+                    try: weaponResearchPrereqs[weaponName] = weapon["required_research_prerequisites"][0][0] 
+                    except KeyError: weaponResearchPrereqs[weaponName] = None
+                else:
+                    weaponCollection[weaponName] += 1
 
         #Ship Carrier Block
         try: 
@@ -414,6 +442,10 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
         outputEntry["antimatter_points"] = unitAntimatterAmt
         outputEntry["antimatter_regen"] = unitAntimatterRegen
 
+        outputEntry["corruption"] = unitCorruption
+
+        outputEntry["capture_weight"] = unitCaptureWeight
+
         outputEntry["description"] = unitDescription
 
         outputEntry["squadron_size"] = unitSquadronSize
@@ -425,7 +457,7 @@ def FormatUnitEntries(UnitList, weaponDict, filter = AlwaysContains, outputFile 
 
         outputEntry["levels"] = unitHealthLevels
 
-        outputEntry["weapons"] = createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs)
+        outputEntry["weapons"] = createWeaponBlock(weaponCollection, weaponDict, weaponPrereqs, weaponResearchPrereqs)
 
 
 
