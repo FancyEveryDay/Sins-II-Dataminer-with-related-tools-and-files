@@ -20,7 +20,7 @@ UNIFORMS = SINS_DIRECTORY / 'uniforms'
 
 WIKIFILES_DIR = TOP_DIR / 'Strategy Wiki' / 'WikiFiles'
 
-SOURCES = {"DLC" : "Paths to Power", "DLC2" : "Reinforcements"}
+SOURCES = {"DLC" : "Paths to Power", "DLC2" : "Reinforcements", "DLC3" : "Harbinger"}
 
 with open(UNIFORMS / "gui.uniforms", 'r', encoding='utf-8') as file:
     UNIT_MODIFIERS = json.load(file)
