@@ -10,6 +10,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "advent_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Additional Armor Blueprint"
@@ -339,6 +342,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "advent_loyalist_titan"
+  ],
   "max_count_on_unit": 1,
   "build_group_id": "offense",
   "id": "advent_loyalist_titan_unlock_beam_weapon.unit_item",
@@ -459,6 +465,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "advent_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_group_id": "offense",
   "id": "advent_rebel_titan_unlock_plasma_weapon.unit_item",
@@ -485,6 +494,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "advent_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -832,6 +844,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "advent_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
    "mutually_exclusive_items": [
@@ -917,6 +932,9 @@
   ],
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "advent_rebel_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -1288,6 +1306,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "advent_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
    "mutually_exclusive_items": [
@@ -1357,6 +1378,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "advent_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -2473,6 +2497,1397 @@
   "quarnium": null,
   "unit_modifiers": null
  },
+ "Eidolon Additional Armor I": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_armor_0_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_armor_0_unit_item_tooltip_picture",
+  "name": "Additional Armor I",
+  "description": "Increases the Titan's defensive attributes.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "unit_modifiers": [
+   "Max. Armor Points +20.0%",
+   "Armor Regeneration In Combat +0.2",
+   "Armor Strength +20.0"
+  ],
+  "id": "dlc3_herald_titan_armor_0.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 300.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Additional Armor II": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_armor_1_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_armor_1_unit_item_tooltip_picture",
+  "name": "Additional Armor II",
+  "description": "Increases the Titan's defensive attributes.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_titan_armor_0"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Armor Points +30.0%",
+   "Armor Regeneration In Combat +0.3",
+   "Armor Strength +30.0"
+  ],
+  "id": "dlc3_herald_titan_armor_1.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 400.0,
+  "crystal": 300.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Amalgam Grafting Bay": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_amalgam_grafter_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_amalgam_grafter_unit_item_tooltip_picture",
+  "name": "Amalgam Grafting Bay",
+  "description": "This cyber-medical facility allows synthetic neural material to be grafted into amalgams during creation or maintenance, ensuring that even the weakest of minds can become advanced amalgam craft.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "economic",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "owner_constraint": {
+   "constraint_type": "is_carrier"
+  },
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_modifiers": [
+   "Max. Squadron Slots +1.0",
+   "Max. Squadron Slots Per Kind +2.0"
+  ],
+  "id": "dlc3_herald_amalgam_grafter.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 100.0,
+  "andvar": 1,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Amalgam Penitents": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_amalgam_penitents_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_amalgam_penitents_unit_item_tooltip_picture",
+  "name": "Amalgam Penitents",
+  "description": "Additional amalgam squadron is temporarily added to the ship as excess crew members are quickly pressed into amalgam platforms. They don't live long.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "owner_constraint": {
+   "constraint_type": "is_carrier"
+  },
+  "consumable_stack_count": [
+   1
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "consumable",
+  "ability": "Dlc3 Herald Amalgam Penitents",
+  "id": "dlc3_herald_amalgam_penitents.unit_item",
+  "race": "Eidolon",
+  "credits": 500.0,
+  "metal": 100.0,
+  "crystal": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Antimatter Osmosis": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_antimatter_osmosis_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_antimatter_osmosis_unit_item_tooltip_picture",
+  "name": "Antimatter Osmosis",
+  "description": "Harvests a portion of the antimatter on nearby friendly units when they are destroyed and adds it to the antimatter reservoir of this ship.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Antimatter Osmosis Device Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Antimatter Osmosis",
+  "id": "dlc3_herald_antimatter_osmosis.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 1,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Armor Upgrade I": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_structural_integrity_0_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_structural_integrity_0_unit_item_tooltip_picture",
+  "name": "Armor Upgrade I",
+  "description": "Increases the starbase's defensive attributes.",
+  "build_time": 60.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "unit_modifiers": [
+   "Max. Hull Points +2000.0",
+   "Hull Regeneration +1.5",
+   "Max. Armor Points +500.0",
+   "Armor Regeneration +2.0",
+   "Armor Strength +5.0",
+   "Max. Shield Points +2500.0",
+   "Shield Regeneration +2.5",
+   "Shield Burst Restore Cooldown -5.0"
+  ],
+  "id": "dlc3_herald_starbase_structural_integrity_0.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 320.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Armor Upgrade II": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_structural_integrity_1_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_structural_integrity_1_unit_item_tooltip_picture",
+  "name": "Armor Upgrade II",
+  "description": "Increases the starbase's defensive attributes.",
+  "build_time": 90.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_starbase_structural_integrity_0"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Hull Points +4000.0",
+   "Hull Regeneration +3.0",
+   "Max. Armor Points +1000.0",
+   "Armor Regeneration +4.0",
+   "Armor Strength +10.0",
+   "Max. Shield Points +5000.0",
+   "Shield Regeneration +5.0",
+   "Shield Burst Restore Cooldown -10.0"
+  ],
+  "id": "dlc3_herald_starbase_structural_integrity_1.unit_item",
+  "race": "Eidolon",
+  "credits": 1200.0,
+  "metal": 480.0,
+  "crystal": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Armor Upgrade III": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_structural_integrity_2_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_structural_integrity_2_unit_item_tooltip_picture",
+  "name": "Armor Upgrade III",
+  "description": "Increases the starbase's defensive attributes.",
+  "build_time": 120.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_starbase_structural_integrity_1"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Hull Points +6000.0",
+   "Hull Regeneration +4.5",
+   "Max. Armor Points +1500.0",
+   "Armor Regeneration +6.0",
+   "Armor Strength +15.0",
+   "Max. Shield Points +7500.0",
+   "Shield Regeneration +7.5",
+   "Shield Burst Restore Cooldown -15.0"
+  ],
+  "id": "dlc3_herald_starbase_structural_integrity_2.unit_item",
+  "race": "Eidolon",
+  "credits": 1500.0,
+  "metal": 640.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Celerity Catalyzer": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_movement_boost_field_unit_icon_hud_icon",
+  "tooltip_picture": "dlc3_herald_movement_boost_field_unit_icon_tooltip_picture",
+  "name": "Celerity Catalyzer",
+  "description": "Slowly consumes corruption from the ship to generate a field that increases the travelling speed of all ships within it.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "economic",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Celerity Catalyzer Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Movement Boost Field",
+  "id": "dlc3_herald_movement_boost_field.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": 1,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Cloak Detector Array": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_cloak_detector_array_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_cloak_detector_array_unit_item_tooltip_picture",
+  "name": "Cloak Detector Array",
+  "description": "Improves this ship's ability to detect cloaked enemy units in the same gravity well.",
+  "build_time": 20.0,
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "unit_modifiers": [
+   "Detection Quality +5.0",
+   "Detection Range +10000.0"
+  ],
+  "id": "dlc3_herald_cloak_detector_array.unit_item",
+  "race": "Eidolon",
+  "credits": 500.0,
+  "metal": 75.0,
+  "crystal": 125.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Cloak Generator": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_crest_cloaking_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_crest_cloaking_unit_item_tooltip_picture",
+  "name": "Cloak Generator",
+  "description": "Allows the Titan to cloak.",
+  "build_time": 60.0,
+  "exotic_price": [
+   {
+    "exotic_type": "ultimate",
+    "count": 3
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "other_item_requirements": {
+   "mutually_exclusive_items": [
+    "dlc3_herald_titan_crest_corruption"
+   ]
+  },
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Cloak Generator Design"
+  ],
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Titan Crest Cloaking",
+  "id": "dlc3_herald_titan_crest_cloaking.unit_item",
+  "race": "Eidolon",
+  "credits": 2000.0,
+  "metal": 250.0,
+  "crystal": 500.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": 3,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Consumption Matrix": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_consumption_matrix_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_consumption_matrix_unit_item_tooltip_picture",
+  "name": "Consumption Matrix",
+  "description": "Harvests corruption from all nearby units to restore the armor and shields of the starbase.",
+  "build_time": 120.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Consumption Matrix Design"
+  ],
+  "build_group_id": "defense",
+  "ability": "Dlc3 Herald Starbase Consumption Matrix",
+  "id": "dlc3_herald_starbase_consumption_matrix.unit_item",
+  "race": "Eidolon",
+  "credits": 1200.0,
+  "metal": 240.0,
+  "crystal": 240.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Dimensional Shifter": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_teleporter_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_teleporter_unit_item_tooltip_picture",
+  "name": "Dimensional Shifter",
+  "description": "Temporarily shifts the starbase into a deep phase space layer in order to relocate it to the target planet.",
+  "build_time": 120.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Dimensional Shifter Design"
+  ],
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Starbase Teleporter",
+  "id": "dlc3_herald_starbase_teleporter.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 180.0,
+  "crystal": 180.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Dissipation field": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_dissipation_field_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_dissipation_field_unit_item_tooltip_picture",
+  "name": "Dissipation field",
+  "description": "Activate to remove corruption from all nearby units over time.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Dissipation Field Unit Item",
+  "id": "dlc3_herald_dissipation_field.unit_item",
+  "race": "Eidolon",
+  "credits": 550.0,
+  "metal": 150.0,
+  "crystal": 125.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Energized Lattice": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_energized_lattice_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_energized_lattice_unit_item_tooltip_picture",
+  "name": "Energized Lattice",
+  "description": "Elements of hull structure are incorporated into the energy distribution network of the ship, enhancing shield and reactor output.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Energized Lattice Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "unit_modifiers": [
+   "Max. Shield Points +50.0%",
+   "Shield Regeneration +25.0%",
+   "Max. Antimatter +25.0%",
+   "Antimatter Regeneration +25.0%"
+  ],
+  "id": "dlc3_herald_energized_lattice.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 75.0,
+  "crystal": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 1,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Enhanced Shield Generator I": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_shield_0_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_shield_0_unit_item_tooltip_picture",
+  "name": "Enhanced Shield Generator I",
+  "description": "Increases the Titan's defensive attributes.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "unit_modifiers": [
+   "Max. Shield Points +20.0%",
+   "Shield Regeneration In Combat +20.0%",
+   "Shield Burst Restore Points +20.0%"
+  ],
+  "id": "dlc3_herald_titan_shield_0.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 200.0,
+  "crystal": 300.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 1,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Enhanced Shield Generator II": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_shield_1_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_shield_1_unit_item_tooltip_picture",
+  "name": "Enhanced Shield Generator II",
+  "description": "Increases the Titan's defensive attributes.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_titan_shield_0"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Shield Points +30.0%",
+   "Shield Regeneration In Combat +30.0%",
+   "Shield Burst Restore Points +30.0%"
+  ],
+  "id": "dlc3_herald_titan_shield_1.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 300.0,
+  "crystal": 400.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 1,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Gunship Hangar": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "trader_starbase_hangar_0_unit_item_hud_icon",
+  "tooltip_icon": "trader_starbase_hangar_0_unit_item_hud_icon",
+  "tooltip_picture": "trader_starbase_hangar_0_unit_item_tooltip_picture",
+  "name": "Gunship Hangar",
+  "description": "Adds additional strikecraft capacity to the Akeniel Geist and unlocks Gunship squadrons.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "cruiser"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_modifiers": [
+   "Max. Squadron Slots +3.0",
+   "Max. Squadron Slots Per Kind +2.0"
+  ],
+  "id": "dlc3_herald_carrier_cruiser_hangar.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Hangar Expansion": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_hangar_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_hangar_unit_item_tooltip_picture",
+  "name": "Hangar Expansion",
+  "description": "Increases the number of strikecraft squadrons available to the Anathema Titan.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_modifiers": [
+   "Max. Squadron Slots +15.0"
+  ],
+  "id": "dlc3_herald_titan_hangar.unit_item",
+  "race": "Eidolon",
+  "credits": 500.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Hangar Upgrade I": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_hangar_0_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_hangar_0_unit_item_tooltip_picture",
+  "name": "Hangar Upgrade I",
+  "description": "Increases available strikecraft squadrons.",
+  "build_time": 60.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_modifiers": [
+   "Max. Squadron Slots +6.0"
+  ],
+  "id": "dlc3_herald_starbase_hangar_0.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 320.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Hangar Upgrade II": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_hangar_1_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_hangar_1_unit_item_tooltip_picture",
+  "name": "Hangar Upgrade II",
+  "description": "Increases available strikecraft squadrons.",
+  "build_time": 60.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_starbase_hangar_0"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Squadron Slots +6.0"
+  ],
+  "id": "dlc3_herald_starbase_hangar_1.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 320.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Hangar Upgrade III": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_hangar_2_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_hangar_2_unit_item_tooltip_picture",
+  "name": "Hangar Upgrade III",
+  "description": "Increases available strikecraft squadrons.",
+  "build_time": 60.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "other_item_requirements": {
+   "needed_items": [
+    "dlc3_herald_starbase_hangar_1"
+   ]
+  },
+  "unit_modifiers": [
+   "Max. Squadron Slots +8.0"
+  ],
+  "id": "dlc3_herald_starbase_hangar_2.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 320.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Immolation Beam": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_immolation_beam_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_immolation_beam_unit_item_tooltip_picture",
+  "name": "Immolation Beam",
+  "description": "Beams ignite and consume corruption on targets, dealing increased damage while there is corruption present to consume.",
+  "item_level_count": 2,
+  "item_level_source": "research_prerequisites_per_level",
+  "item_level_prerequisites": [
+   [
+    "Immolation Efficiency"
+   ]
+  ],
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "offense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Immolation Beams"
+  ],
+  "other_item_requirements": {
+   "mutually_exclusive_items": [
+    "dlc3_herald_null_catalyst"
+   ]
+  },
+  "owner_constraint": {
+   "constraint_type": "has_weapon",
+   "weapon_tag": "beam"
+  },
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "ability": "Dlc3 Herald Immolation Beam",
+  "id": "dlc3_herald_immolation_beam.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": 1,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Infused Armor": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_infused_armor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_infused_armor_unit_item_tooltip_picture",
+  "name": "Infused Armor",
+  "description": "Increases armor strength based on corruption.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Infused Armor Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "ability": "Dlc3 Herald Infused Armor Unit Item",
+  "id": "dlc3_herald_infused_armor.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 150.0,
+  "crystal": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Infused Reactor": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_infused_reactor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_infused_reactor_unit_item_tooltip_picture",
+  "name": "Infused Reactor",
+  "description": "Increases antimatter regeneration based on corruption.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Infused Reactor Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Infused Reactor Unit Item",
+  "id": "dlc3_herald_infused_reactor.unit_item",
+  "race": "Eidolon",
+  "credits": 500.0,
+  "metal": 100.0,
+  "crystal": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 1,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Metamorphic Hardening": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_metamorphic_structure_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_metamorphic_structure_unit_item_tooltip_picture",
+  "name": "Metamorphic Hardening",
+  "description": "Critical structural components of the ship undergo dynamic metamorphic processes to adapt to incoming weapons fire.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Metamorphic Hardening Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "unit_modifiers": [
+   "Max. Armor Points +25.0%",
+   "Armor Regeneration +50.0%",
+   "Max. Hull Points +25.0%",
+   "Hull Regeneration +50.0%"
+  ],
+  "id": "dlc3_herald_metamorphic_structure.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 150.0,
+  "crystal": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
+ },
+ "Eidolon Null Catalyst": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_null_catalyst_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_null_catalyst_unit_item_tooltip_picture",
+  "name": "Null Catalyst",
+  "description": "Null weapons will inflict corruption on enemies on hit.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "offense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Null Catalyst Design"
+  ],
+  "other_item_requirements": {
+   "mutually_exclusive_items": [
+    "dlc3_herald_immolation_beam"
+   ]
+  },
+  "owner_constraint": {
+   "constraint_type": "has_weapon",
+   "weapon_tag": "beam"
+  },
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "weapon_modifiers": [
+   "Weapon Reload -20.0%"
+  ],
+  "ability": "Dlc3 Herald Null Catalyst Unit Item",
+  "id": "dlc3_herald_null_catalyst.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": 1,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Oblivion Silo": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_crest_corruption_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_crest_corruption_unit_item_tooltip_picture",
+  "name": "Oblivion Silo",
+  "description": "Generates and radiates corruption out to all owned units within the area of effect.  While the effect is continuous, it may only corrupt the unit to a limited degree.",
+  "build_time": 60.0,
+  "exotic_price": [
+   {
+    "exotic_type": "economic",
+    "count": 3
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "other_item_requirements": {
+   "mutually_exclusive_items": [
+    "dlc3_herald_titan_crest_cloaking"
+   ]
+  },
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Anathema Oblivion Silo Design"
+  ],
+  "build_group_id": "utility",
+  "ability": "Dlc3 Herald Titan Crest Corruption",
+  "id": "dlc3_herald_titan_crest_corruption.unit_item",
+  "race": "Eidolon",
+  "credits": 1500.0,
+  "metal": 200.0,
+  "crystal": 350.0,
+  "andvar": 3,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Phase Cannon Array": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_unlock_phase_cannon_weapon_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_unlock_phase_cannon_weapon_unit_item_tooltip_picture",
+  "name": "Phase Cannon Array",
+  "description": "Adds an array of devastating phase cannon weapons to the Anathema Titan.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "ultimate",
+    "count": 3
+   }
+  ],
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Anathema Phase Cannon Array Design"
+  ],
+  "build_group_id": "offense",
+  "id": "dlc3_herald_titan_unlock_phase_cannon_weapon.unit_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": 3,
+  "ability": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Phase Destablizer": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_tooltip_picture",
+  "name": "Phase Destablizer",
+  "description": "Interferes with the phase drives of enemy ships within the gravity well.",
+  "build_time": 120.0,
+  "exotic_price": [
+   {
+    "exotic_type": "utility",
+    "count": 3
+   },
+   {
+    "exotic_type": "ultimate",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Phase Destabilizer Design"
+  ],
+  "build_group_id": "utility",
+  "id": "dlc3_herald_starbase_phase_jump_inhibitor.unit_item",
+  "race": "Eidolon",
+  "credits": 0,
+  "metal": 0,
+  "crystal": 0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": 3,
+  "quarnium": 1,
+  "ability": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Planetary Shield": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_planetary_shield_array_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_planetary_shield_array_unit_item_tooltip_picture",
+  "name": "Planetary Shield",
+  "description": "Projects a defensive shield around the gravity well's planet, preventing damage to the surface while the shield is active.",
+  "build_time": 120.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_prerequisites": [
+   "Planetary Shield Design"
+  ],
+  "build_group_id": "defense",
+  "ability": "Dlc3 Herald Starbase Planetary Shield Array",
+  "will_make_planet_invulnerable": true,
+  "id": "dlc3_herald_starbase_planetary_shield_array.unit_item",
+  "race": "Eidolon",
+  "credits": 900.0,
+  "metal": 180.0,
+  "crystal": 180.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Retributive Capacitive Shield": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_retributive_capacitive_shield_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_retributive_capacitive_shield_unit_item_tooltip_picture",
+  "name": "Retributive Capacitive Shield",
+  "description": "Once installed, the shields on this ship store a portion of the energy from enemy fire impacts. Once the magnitude of the stored energy reaches the requisite level, it is released in a destructive burst that damages enemy ships nearby.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "ultimate",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Retributive Capacitive Shield Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "ability": "Dlc3 Herald Retributive Capacitive Shield",
+  "id": "dlc3_herald_retributive_capacitive_shield.unit_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 200.0,
+  "crystal": 250.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": 1,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Safeguard Device": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_safeguard_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_safeguard_unit_item_tooltip_picture",
+  "name": "Safeguard Device",
+  "description": "In the event of armor failure on this ship, the safeguard device immediately consumes most or all current corruption to instantly restore armor.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Safeguard Device Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "ability": "Dlc3 Herald Safeguard",
+  "id": "dlc3_herald_safeguard.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Starbase Null Beams": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_unlock_phase_cannon_weapon_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_unlock_phase_cannon_weapon_unit_item_tooltip_picture",
+  "name": "Starbase Null Beams",
+  "description": "Adds a full array of null beams to this starbase.",
+  "build_time": 90.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "id": "dlc3_herald_starbase_unlock_phase_cannon_weapon.unit_item",
+  "race": "Eidolon",
+  "credits": 1200.0,
+  "metal": 480.0,
+  "crystal": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Starbase Void Missiles": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_starbase_unlock_torpedo_weapon_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_unlock_torpedo_weapon_unit_item_tooltip_picture",
+  "name": "Starbase Void Missiles",
+  "description": "Adds a full array of void missile launchers to this starbase.",
+  "build_time": 120.0,
+  "required_unit_tags": [
+   "starbase"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "id": "dlc3_herald_starbase_unlock_torpedo_weapon.unit_item",
+  "race": "Eidolon",
+  "credits": 1500.0,
+  "metal": 640.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Stigmata Projector": {
+  "version": 0,
+  "required_product": "dlc_Herald",
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_stigmata_projector_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_stigmata_projector_unit_item_tooltip_picture",
+  "name": "Stigmata Projector",
+  "description": "While active, damage done to this vessel is instead applied to the targeted enemy unit.  Corruption is required and consumed to fuel the redirection of each transfer.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "defense",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "build_prerequisites": [
+   "Stigmata Projector Design"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "defense",
+  "ability": "Dlc3 Herald Stigmata Projector",
+  "id": "dlc3_herald_stigmata_projector.unit_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 125.0,
+  "crystal": 200.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
+ "Eidolon Void Missile Silos": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "dlc3_herald_titan_unlock_missile_weapon_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_unlock_missile_weapon_unit_item_tooltip_picture",
+  "name": "Void Missile Silos",
+  "description": "Adds a full array of void missile weapons to the Anathema Titan.",
+  "build_time": 30.0,
+  "required_unit_tags": [
+   "titan"
+  ],
+  "required_item_access_tags": [
+   "dlc3_herald_titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "id": "dlc3_herald_titan_unlock_missile_weapon.unit_item",
+  "race": "Eidolon",
+  "credits": 750.0,
+  "metal": 250.0,
+  "crystal": 250.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null,
+  "unit_modifiers": null
+ },
  "Jiskun Force Colony Seed Nanites": {
   "version": 0,
   "item_type": "ship_component",
@@ -2760,6 +4175,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "trader_loyalist_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
    "mutually_exclusive_items": [
@@ -2793,6 +4211,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "trader_loyalist_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Ankylon Beam Turrets Blueprint"
@@ -2822,6 +4243,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -2854,6 +4278,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -2894,6 +4321,9 @@
   ],
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -3265,6 +4695,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
    "mutually_exclusive_items": [
@@ -3299,6 +4732,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -3335,6 +4771,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -3774,6 +5213,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "trader_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Extra Armor Plating I Blueprint"
@@ -3807,6 +5249,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -3846,6 +5291,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -3962,6 +5410,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -4202,6 +5653,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
    "mutually_exclusive_items": [
@@ -4236,6 +5690,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -4272,6 +5729,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -4310,6 +5770,9 @@
   "build_time": 60.0,
   "required_unit_tags": [
    "super_capital_ship"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_super_capital_ship"
   ],
   "max_count_on_unit": 1,
   "other_item_requirements": {
@@ -4382,7 +5845,7 @@
   "hud_icon": "trader_orbital_extraction_metal_rate_1_research_subject_hud_icon",
   "tooltip_picture": "trader_orbital_extraction_metal_rate_1_research_subject_tooltip_picture",
   "name": "Planet Cracker Warheads",
-  "description": "This supremely powerful Novalith warhead is optimised to drill through a planetary crust before detonating a massive antimatter warhead. The resultant chain reaction rapidly and violently destroys the planet. \\n\\nConstruct Planet Cracker Warheads on a Novalith Cannon, then destroy planets with it to prove the destructiveness of the weapon. The planet must be brought to zero health by the Planet Cracker Warhead to be destroyed. \\n\\nSuccessfully destroying five planets and keeping the Planet Cracker Warhead equipped Novalith alive will result in victory!",
+  "description": "This supremely powerful Novalith warhead is optimized to drill through a planetary crust before detonating a massive antimatter warhead. The resultant chain reaction rapidly and violently destroys the planet. \\n\\nConstruct Planet Cracker Warheads on a Novalith Cannon, then destroy planets with it to prove the destructiveness of the weapon. The planet must be brought to zero health by the Planet Cracker Warhead to be destroyed. \\n\\nSuccessfully destroying five planets and keeping the Planet Cracker Warhead equipped Novalith alive will result in victory!",
   "build_time": 300.0,
   "exotic_price": [
    {
@@ -4485,6 +5948,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "trader_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Ragnarov Hangar Blueprint"
@@ -4517,6 +5983,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "trader_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Ragnarov Missile Launchers Blueprint"
@@ -4546,6 +6015,9 @@
   "build_time": 30.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "trader_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -5529,6 +7001,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Enhanced Nano Emitters Blueprint"
@@ -5611,6 +7086,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -5868,6 +7346,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Kultorask Hangar Restoration"
@@ -5900,6 +7381,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -5936,6 +7420,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -5983,6 +7470,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Phase Cannon Restoration"
@@ -6013,6 +7503,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Phase Missile Restoration"
@@ -6042,6 +7535,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -6429,6 +7925,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "build_group_id": "utility",
   "player_modifiers": {
@@ -6647,6 +8146,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "build_group_id": "utility",
   "ability": "Dlc2 Vasari Rebel Super Capital Ship Phase Gate",
@@ -6755,6 +8257,9 @@
   "required_unit_tags": [
    "super_capital_ship"
   ],
+  "required_item_access_tags": [
+   "vasari_rebel_super_capital_ship"
+  ],
   "max_count_on_unit": 1,
   "build_group_id": "utility",
   "ability": "Dlc2 Vasari Rebel Super Capital Ship Phasic Comms Net",
@@ -6770,6 +8275,47 @@
   "quarnium": null,
   "weapon_modifiers": null,
   "unit_modifiers": null
+ },
+ "Vasari Pilot Cloning Bay": {
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "vasari_fighter_clone_bay_unit_item_hud_icon",
+  "tooltip_picture": "vasari_fighter_clone_bay_unit_item_tooltip_picture",
+  "name": "Pilot Cloning Bay",
+  "description": "This dedicated cloning bay uses a wide variety of nanites and cognitive programming to rapidly duplicate the best pilots aboard the ship.\\n\\nIncreases {color:highlighted_value}Heavy Fighter{color:/} capacity.",
+  "build_time": 30.0,
+  "exotic_price": [
+   {
+    "exotic_type": "economic",
+    "count": 1
+   }
+  ],
+  "required_unit_tags": [
+   "capital_ship",
+   "super_capital_ship",
+   "titan"
+  ],
+  "owner_constraint": {
+   "constraint_type": "is_carrier"
+  },
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_modifiers": [
+   "Max. Squadron Slots Per Kind +1.0",
+   "Strikecraft Build Time -48.0%"
+  ],
+  "id": "vasari_fighter_clone_bay.unit_item",
+  "race": "Vasari",
+  "credits": 0,
+  "metal": 275.0,
+  "crystal": 375.0,
+  "andvar": 1,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "ability": null,
+  "weapon_modifiers": null
  },
  "Vasari Planetary Shield Array": {
   "version": 0,
@@ -6935,6 +8481,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "The Maw Enhancer Blueprint"
@@ -7068,6 +8617,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Vorastra Hangar Restoration"
@@ -7099,6 +8651,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -7134,6 +8689,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -7174,6 +8732,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
@@ -7220,6 +8781,9 @@
   "required_unit_tags": [
    "titan"
   ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
+  ],
   "max_count_on_unit": 1,
   "build_prerequisites": [
    "Phase Cannon Restoration"
@@ -7249,6 +8813,9 @@
   "build_time": 120.0,
   "required_unit_tags": [
    "titan"
+  ],
+  "required_item_access_tags": [
+   "vasari_loyalist_titan"
   ],
   "max_count_on_unit": 1,
   "build_prerequisites": [

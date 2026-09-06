@@ -33,6 +33,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "An array of beam weapons defend nearby structures and the planet from hostile ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -45,6 +56,7 @@
    {
     "name": "Heavy Beam",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -96,6 +108,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Crystal mining rate.\\n\\nMust be constructed on an available crystal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -138,6 +161,17 @@
   "xp": 250,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": "A potent device capable of projecting the Unity's presence to distant worlds.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -185,7 +219,71 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Produces exotic materials by refining raw materials.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Advent Grand Factory": {
+  "source": "Base Game",
+  "race": "Advent",
+  "name": "Grand Factory",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 3,
+  "militaryslots": null,
+  "credits": 2000,
+  "metal": 500,
+  "crystal": 600,
+  "buildtime": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 750,
+  "armorstr": 50,
+  "hull_points": 7500,
+  "hull_regen": 6.0,
+  "armor_points": 1000,
+  "armor_regen": 8.0,
+  "shield_points": 6000,
+  "shield_regen": 10.0,
+  "shield_burst_cooldown": 90,
+  "shield_burst_amount": "50%",
+  "xp": 75,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows construction of faction specific titans and command ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -227,7 +325,18 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
-  "description": "Allows for the construction of cruisers and capital ships. Build multiple factories to construct more ships at the same time.",
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows for the construction of cruisers and capital ships.\\n\\nBuild multiple factories to construct more ships at the same time.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -246,7 +355,7 @@
   "civilianslots": null,
   "militaryslots": 3,
   "credits": 600,
-  "metal": 300,
+  "metal": 200,
   "crystal": 150,
   "buildtime": 75.0,
   "andvar": null,
@@ -258,7 +367,7 @@
   "time_to_max_linear_speed": null,
   "acceleration": null,
   "max_angular_speed": null,
-  "durability": 500,
+  "durability": 600,
   "armorstr": 50,
   "hull_points": 3750,
   "hull_regen": 3.0,
@@ -271,6 +380,17 @@
   "xp": 100,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Squadrons of strikecraft defend nearby structures and the planet from hostile forces.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -315,6 +435,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Laser turrets defend nearby structures and the planet from hostile ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -327,6 +458,7 @@
    {
     "name": "Heavy Laser",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -378,7 +510,18 @@
   "xp": 25,
   "antimatter_points": 350.0,
   "antimatter_regen": 1.0,
-  "description": "Allows for the construction of corvettes and frigates. Build multiple factories to construct more ships at the same time.",
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows for the construction of corvettes and frigates.\\n\\nBuild multiple factories to construct more ships at the same time.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -422,6 +565,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Metal mining rate.\\n\\nMust be constructed on an available metal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -458,12 +612,23 @@
   "armor_points": 1000,
   "armor_regen": 4.0,
   "shield_points": null,
-  "shield_regen": null,
-  "shield_burst_cooldown": null,
-  "shield_burst_amount": null,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 500.0,
+   "corruption_decay_delay_duration_after_gain": 0.0,
+   "corruption_thresholds": [
+    5000.0,
+    7000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Prevents enemy ships from phase jumping away from this gravity well.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -508,6 +673,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Spreads the cultural influence of your empire to nearby planets.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -552,6 +728,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases planetary population growth rate.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -596,6 +783,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your Harmony Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -638,6 +836,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your Hostility Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -680,6 +889,17 @@
   "xp": 25,
   "antimatter_points": 300.0,
   "antimatter_regen": 1.0,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Restores antimatter to friendly ships in orbit over time.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -725,49 +945,18 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Provides Unity to unlock and improve Advent global abilities.",
-  "squadron_size": null,
-  "strike_craft_kind": null,
-  "carrier_capacity": null,
-  "abilities": null,
-  "levels": null,
-  "weapons": null
- },
- "Advent Titan Foundry": {
-  "source": "Base Game",
-  "race": "Advent",
-  "name": "Titan Foundry",
-  "type": "Structure",
-  "supply": null,
-  "civilianslots": 3,
-  "militaryslots": null,
-  "credits": 2000,
-  "metal": 500,
-  "crystal": 600,
-  "buildtime": 150.0,
-  "andvar": null,
-  "tauranite": null,
-  "indurium": null,
-  "kalanide": null,
-  "quarnium": null,
-  "speed": null,
-  "time_to_max_linear_speed": null,
-  "acceleration": null,
-  "max_angular_speed": null,
-  "durability": 750,
-  "armorstr": 50,
-  "hull_points": 7500,
-  "hull_regen": 6.0,
-  "armor_points": 1000,
-  "armor_regen": 8.0,
-  "shield_points": 6000,
-  "shield_regen": 10.0,
-  "shield_burst_cooldown": 90,
-  "shield_burst_amount": "50%",
-  "xp": 75,
-  "antimatter_points": null,
-  "antimatter_regen": null,
-  "description": "Allows construction of faction specific titans and command ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -809,6 +998,18 @@
   "xp": 2000,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ],
+   "show_main_view_icon_alert_fill": true
+  },
+  "capture_weight": null,
   "description": null,
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -821,6 +1022,7 @@
    {
     "name": "Medium Laser",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -839,6 +1041,7 @@
    {
     "name": "Heavy Plasma",
     "required_unit_item": "Starbase Plasma",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -857,6 +1060,7 @@
    {
     "name": "PD Laser",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -875,6 +1079,7 @@
    {
     "name": "Heavy Missile",
     "required_unit_item": "Starbase Swarm Missiles",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 12,
     "burst_duration": 2.2,
@@ -892,9 +1097,9 @@
    }
   ]
  },
- "Ancient Starbase": {
+ "Ancient Ancient Starbase": {
   "source": "Paths to Power",
-  "race": "",
+  "race": "Ancient",
   "name": "Ancient Starbase",
   "type": "Starbase",
   "supply": null,
@@ -926,6 +1131,17 @@
   "xp": 2000,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 500.0,
+   "corruption_decay_delay_duration_after_gain": 0.0,
+   "corruption_thresholds": [
+    5000.0,
+    7000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": null,
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -936,6 +1152,7 @@
    {
     "name": "Tachyon Lance",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -954,6 +1171,7 @@
    {
     "name": "Phase Cannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -972,6 +1190,7 @@
    {
     "name": "Heavy Particle Cannon",
     "required_unit_item": "Light Weapon Reconstruction",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -990,6 +1209,7 @@
    {
     "name": "PD Beam",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1008,6 +1228,7 @@
    {
     "name": "Heavy Missile",
     "required_unit_item": "Missile Reconstruction",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 3,
     "burst_duration": 2.0,
@@ -1019,8 +1240,907 @@
     "range": 15000,
     "count": 4,
     "firing_type": "spawn_torpedo",
-    "spawned_unit": "Ancient Large Torpedo",
+    "spawned_unit": "Ancient Ancient Large Torpedo",
     "missile_duration": 25.0,
+    "bypass_shields_chance": null
+   }
+  ]
+ },
+ "Eidolon Azhelrien Dominion Lab": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Azhelrien Dominion Lab",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 1,
+  "militaryslots": null,
+  "credits": 500,
+  "metal": 75,
+  "crystal": 75,
+  "buildtime": 50.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 500,
+  "armorstr": 40,
+  "hull_points": 1000,
+  "hull_regen": 3.0,
+  "armor_points": 1400,
+  "armor_regen": 4.0,
+  "shield_points": 2000,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 25,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Increases your Dominion Research Points.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Communications Node": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Communications Node",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 2,
+  "militaryslots": null,
+  "credits": 800,
+  "metal": 150,
+  "crystal": 150,
+  "buildtime": 60.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 500,
+  "armorstr": 40,
+  "hull_points": 1500,
+  "hull_regen": 3.0,
+  "armor_points": 1800,
+  "armor_regen": 4.0,
+  "shield_points": 2500,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 50,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Spreads the Culture of your empire to nearby planets.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": [
+   "Broadcast"
+  ],
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Corruption Reservoir": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Corruption Reservoir",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 1,
+  "militaryslots": null,
+  "credits": 800,
+  "metal": 100,
+  "crystal": 200,
+  "buildtime": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 500,
+  "armorstr": 60,
+  "hull_points": 2000,
+  "hull_regen": 3.0,
+  "armor_points": 2200,
+  "armor_regen": 4.0,
+  "shield_points": 3500,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 25,
+  "antimatter_points": 200.0,
+  "antimatter_regen": 1.0,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Build Corruption Reservoirs to corrupt the local planet. Additional Corruption Reservoirs can offset the corruption upkeep costs imposed by Shroud Modes.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": [
+   "Planetary Corruption",
+   "Vile Eruption"
+  ],
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Crystal Extractor": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Crystal Extractor",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 1,
+  "militaryslots": null,
+  "credits": 200,
+  "metal": 25,
+  "crystal": null,
+  "buildtime": 40.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 400,
+  "armorstr": 40,
+  "hull_points": 750,
+  "hull_regen": 3.0,
+  "armor_points": 900,
+  "armor_regen": 4.0,
+  "shield_points": 1250,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 45,
+  "shield_burst_amount": "50%",
+  "xp": 25,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Increases Crystal mining rate.\\n\\nMust be constructed on an available crystal asteroid.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Exotic Refinery": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Exotic Refinery",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 3,
+  "militaryslots": null,
+  "credits": 1000,
+  "metal": 400,
+  "crystal": 400,
+  "buildtime": 100.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 500,
+  "armorstr": 60,
+  "hull_points": 4000,
+  "hull_regen": 6.0,
+  "armor_points": 3500,
+  "armor_regen": 8.0,
+  "shield_points": 6000,
+  "shield_regen": 10.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 75,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Produces Exotic materials by refining more common raw materials.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Iskaniel Vanguard Lab": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Iskaniel Vanguard Lab",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 1,
+  "militaryslots": null,
+  "credits": 500,
+  "metal": 75,
+  "crystal": 75,
+  "buildtime": 50.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 500,
+  "armorstr": 40,
+  "hull_points": 1000,
+  "hull_regen": 3.0,
+  "armor_points": 1400,
+  "armor_regen": 4.0,
+  "shield_points": 2000,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 25,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Increases your Vanguard Research Points.\\n\\nProvides {color:highlighted_value}Retrofit{color:/}, allowing nearby friendly ships to construct items at full speed.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": [
+   "Retrofit"
+  ],
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Iskazhar Epitaph": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Iskazhar Epitaph",
+  "type": "Starbase",
+  "supply": null,
+  "civilianslots": null,
+  "militaryslots": null,
+  "credits": 2500,
+  "metal": 750,
+  "crystal": 900,
+  "buildtime": 270.0,
+  "andvar": 1,
+  "tauranite": 1,
+  "indurium": 1,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": 0.5,
+  "durability": 1000,
+  "armorstr": 150,
+  "hull_points": 6000,
+  "hull_regen": 9.0,
+  "armor_points": 6000,
+  "armor_regen": 12.0,
+  "shield_points": 10000,
+  "shield_regen": 15.0,
+  "shield_burst_cooldown": 120,
+  "shield_burst_amount": "50%",
+  "xp": 3000,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ],
+   "positive_corruption_buffs": [
+    "dlc3_herald_ship_corruption_benefit_mild",
+    "dlc3_herald_ship_corruption_benefit_moderate",
+    "dlc3_herald_ship_corruption_benefit_extreme"
+   ]
+  },
+  "capture_weight": null,
+  "description": "{color:highlighted_value}Starbase{color:/}",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": 0,
+  "abilities": null,
+  "levels": null,
+  "weapons": [
+   {
+    "name": "Super Heavy Null Beam",
+    "required_unit_item": "Starbase Null Beams",
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 40.0,
+    "damage": 600,
+    "bombing_damage": 0,
+    "penetration": 600,
+    "cooldown_duration": 15.0,
+    "range": 10000,
+    "count": 6,
+    "firing_type": "beam",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": null
+   },
+   {
+    "name": "Void Missile",
+    "required_unit_item": "Starbase Void Missiles",
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": 8,
+    "burst_duration": 1.75,
+    "dps": 140.0,
+    "damage": 1050,
+    "bombing_damage": 0,
+    "penetration": 750,
+    "cooldown_duration": 7.5,
+    "range": 10000,
+    "count": 3,
+    "firing_type": "spawn_torpedo",
+    "spawned_unit": "Eidolon Large Void Missile",
+    "missile_duration": 30.0,
+    "bypass_shields_chance": null
+   },
+   {
+    "name": "Phase Dart",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 25.0,
+    "damage": 200,
+    "bombing_damage": 0,
+    "penetration": 750,
+    "cooldown_duration": 8.0,
+    "range": 10000,
+    "count": 6,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": 0.2
+   },
+   {
+    "name": "Heavy Null Cannon",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 8.333333333333334,
+    "damage": 50,
+    "bombing_damage": 0,
+    "penetration": 400,
+    "cooldown_duration": 6.0,
+    "range": 10000,
+    "count": 27,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": null
+   },
+   {
+    "name": "Medium Shock Cannon",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 6.666666666666667,
+    "damage": 10,
+    "bombing_damage": 0,
+    "penetration": 50,
+    "cooldown_duration": 1.5,
+    "range": 10000,
+    "count": 18,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": null
+   },
+   {
+    "name": "PD Shock Cannon",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 7.5,
+    "damage": 15,
+    "bombing_damage": 0,
+    "penetration": 0,
+    "cooldown_duration": 2.0,
+    "range": 6000,
+    "count": 24,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": null
+   }
+  ]
+ },
+ "Eidolon Major Portal": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Major Portal",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 3,
+  "militaryslots": null,
+  "credits": 2000,
+  "metal": 400,
+  "crystal": 400,
+  "buildtime": 150.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 600,
+  "armorstr": 60,
+  "hull_points": 4000,
+  "hull_regen": 6.0,
+  "armor_points": 4000,
+  "armor_regen": 8.0,
+  "shield_points": null,
+  "shield_regen": 10.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 75,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows the construction of capital ships, command ships and titans.\\n\\nBuild multiple factories to construct more ships at the same time.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Metal Extractor": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Metal Extractor",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 1,
+  "militaryslots": null,
+  "credits": 200,
+  "metal": null,
+  "crystal": 20,
+  "buildtime": 40.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 400,
+  "armorstr": 40,
+  "hull_points": 750,
+  "hull_regen": 3.0,
+  "armor_points": 900,
+  "armor_regen": 4.0,
+  "shield_points": 1250,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 45,
+  "shield_burst_amount": "50%",
+  "xp": 25,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Increases Metal mining rate.\\n\\nMust be constructed on an available metal asteroid.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Minor Portal": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Minor Portal",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": 2,
+  "militaryslots": null,
+  "credits": 800,
+  "metal": 200,
+  "crystal": 125,
+  "buildtime": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 600,
+  "armorstr": 60,
+  "hull_points": 3000,
+  "hull_regen": 6.0,
+  "armor_points": 3500,
+  "armor_regen": 8.0,
+  "shield_points": null,
+  "shield_regen": 10.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 50,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows for the construction of frigates, cruisers and corvettes.\\n\\nBuild multiple factories to construct more ships at the same time.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": null
+ },
+ "Eidolon Phase Dart Defense Platform": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Phase Dart Defense Platform",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": null,
+  "militaryslots": 2,
+  "credits": 500,
+  "metal": 175,
+  "crystal": 150,
+  "buildtime": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": 8.0,
+  "durability": 600,
+  "armorstr": 80,
+  "hull_points": 1250,
+  "hull_regen": 3.0,
+  "armor_points": 1400,
+  "armor_regen": 4.0,
+  "shield_points": 2500,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 50,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "A platform equipped with a powerful phase dart weapon defends nearby structures and the planet from hostile cruisers and capital ships.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": null,
+  "levels": null,
+  "weapons": [
+   {
+    "name": "Phase Dart",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 25.0,
+    "damage": 250,
+    "bombing_damage": 0,
+    "penetration": 750,
+    "cooldown_duration": 10.0,
+    "range": 10000,
+    "count": 1,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": 0.4
+   },
+   {
+    "name": "Void Missile",
+    "required_unit_item": null,
+    "required_research": "Phase Dart Platform Weapon Refit",
+    "weapon_type": "normal",
+    "burst_count": 3,
+    "burst_duration": 0.5,
+    "dps": 15.0,
+    "damage": 300,
+    "bombing_damage": 0,
+    "penetration": 600,
+    "cooldown_duration": 20.0,
+    "range": 10000,
+    "count": 1,
+    "firing_type": "spawn_torpedo",
+    "spawned_unit": "Eidolon Medium Void Missile",
+    "missile_duration": 25.0,
+    "bypass_shields_chance": null
+   }
+  ]
+ },
+ "Eidolon Shock Cannon Defense Platform": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Shock Cannon Defense Platform",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": null,
+  "militaryslots": 1,
+  "credits": 400,
+  "metal": 150,
+  "crystal": 100,
+  "buildtime": 50.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": 8.0,
+  "durability": 600,
+  "armorstr": 80,
+  "hull_points": 1000,
+  "hull_regen": 3.0,
+  "armor_points": 1100,
+  "armor_regen": 4.0,
+  "shield_points": 2000,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 50,
+  "antimatter_points": null,
+  "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Shock cannon turrets defend nearby structures and the planet from hostile frigates and corvettes.",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": null,
+  "abilities": [
+   "Maddening Pulse"
+  ],
+  "levels": null,
+  "weapons": [
+   {
+    "name": "Heavy Shock Cannon",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 9.0,
+    "damage": 45,
+    "bombing_damage": 0,
+    "penetration": 300,
+    "cooldown_duration": 5.0,
+    "range": 10000,
+    "count": 4,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
+    "bypass_shields_chance": null
+   }
+  ]
+ },
+ "Eidolon Support Defense Platform": {
+  "source": "Harbinger",
+  "race": "Eidolon",
+  "name": "Support Defense Platform",
+  "type": "Structure",
+  "supply": null,
+  "civilianslots": null,
+  "militaryslots": 2,
+  "credits": 400,
+  "metal": 125,
+  "crystal": 125,
+  "buildtime": 75.0,
+  "andvar": null,
+  "tauranite": null,
+  "indurium": null,
+  "kalanide": null,
+  "quarnium": null,
+  "speed": null,
+  "time_to_max_linear_speed": null,
+  "acceleration": null,
+  "max_angular_speed": null,
+  "durability": 600,
+  "armorstr": 60,
+  "hull_points": 1500,
+  "hull_regen": 3.0,
+  "armor_points": 2000,
+  "armor_regen": 4.0,
+  "shield_points": 3250,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
+  "xp": 75,
+  "antimatter_points": 300.0,
+  "antimatter_regen": 1.0,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "",
+  "squadron_size": null,
+  "strike_craft_kind": null,
+  "carrier_capacity": 0,
+  "abilities": [
+   "Revivify"
+  ],
+  "levels": null,
+  "weapons": [
+   {
+    "name": "PD Shock Cannon",
+    "required_unit_item": null,
+    "required_research": null,
+    "weapon_type": "normal",
+    "burst_count": null,
+    "burst_duration": null,
+    "dps": 5.0,
+    "damage": 10,
+    "bombing_damage": 0,
+    "penetration": 0,
+    "cooldown_duration": 2.0,
+    "range": 6000,
+    "count": 2,
+    "firing_type": "projectile",
+    "spawned_unit": null,
+    "missile_duration": null,
     "bypass_shields_chance": null
    }
   ]
@@ -1059,6 +2179,18 @@
   "xp": 2000,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ],
+   "show_main_view_icon_alert_fill": true
+  },
+  "capture_weight": null,
   "description": null,
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1071,6 +2203,7 @@
    {
     "name": "Medium Autocannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1089,6 +2222,7 @@
    {
     "name": "Light Autocannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1107,6 +2241,7 @@
    {
     "name": "PD Autocannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1125,6 +2260,7 @@
    {
     "name": "Heavy Beam",
     "required_unit_item": "Starbase Beams",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1143,6 +2279,7 @@
    {
     "name": "Super Heavy Missile",
     "required_unit_item": "Starbase Missile Launchers",
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 7,
     "burst_duration": 3.0,
@@ -1194,6 +2331,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "An array of heavy autocannons defends nearby structures and the planet from low durability hostile ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1206,6 +2354,7 @@
    {
     "name": "Heavy Autocannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1257,6 +2406,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Spreads the Culture of your empire to nearby planets.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1301,6 +2461,22 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 500.0,
+   "corruption_decay_rate": 10.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    50.0,
+    250.0,
+    450.0
+   ],
+   "negative_corruption_buffs": [
+    "trader_ship_corruption_penalty_mild",
+    "trader_ship_corruption_penalty_moderate",
+    "trader_ship_corruption_penalty_extreme"
+   ]
+  },
+  "capture_weight": null,
   "description": null,
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1345,6 +2521,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your Civilian Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1389,6 +2576,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Crystal mining rate.\\n\\nMust be constructed on an available crystal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1431,6 +2629,17 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Produces Exotic materials by refining more common raw materials.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1467,12 +2676,23 @@
   "armor_points": 1750,
   "armor_regen": 4.0,
   "shield_points": null,
-  "shield_regen": null,
-  "shield_burst_cooldown": null,
-  "shield_burst_amount": null,
+  "shield_regen": 5.0,
+  "shield_burst_cooldown": 60,
+  "shield_burst_amount": "50%",
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Triple Gauss cannons defend nearby structures and the planet from hostile cruisers and capital ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1485,6 +2705,7 @@
    {
     "name": "Gauss Cannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1511,7 +2732,7 @@
   "civilianslots": null,
   "militaryslots": 2,
   "credits": 500,
-  "metal": 200,
+  "metal": 100,
   "crystal": 75,
   "buildtime": 50.0,
   "andvar": null,
@@ -1523,7 +2744,7 @@
   "time_to_max_linear_speed": null,
   "acceleration": null,
   "max_angular_speed": null,
-  "durability": 500,
+  "durability": 600,
   "armorstr": 40,
   "hull_points": 4000,
   "hull_regen": 3.0,
@@ -1536,6 +2757,17 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Squadrons of strikecraft defend nearby structures and the planet from hostile forces.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1548,6 +2780,7 @@
    {
     "name": "PD Autocannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -1599,7 +2832,18 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
-  "description": "Allows the construction of cruisers and capital ships. Build multiple factories to construct more ships at the same time.",
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows the construction of cruisers and capital ships.\\n\\nBuild multiple factories to construct more ships at the same time.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -1641,7 +2885,18 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
-  "description": "Allows for the construction of frigates and corvettes. Build multiple factories to construct more ships at the same time.",
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows for the construction of frigates and corvettes.\\n\\nBuild multiple factories to construct more ships at the same time.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -1683,6 +2938,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Metal mining rate.\\n\\nMust be constructed on an available metal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1725,6 +2991,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your Military Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1769,6 +3046,17 @@
   "xp": 250,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": "A weapon of immense power, it is capable of bombarding planets from nearby gravity wells.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1814,6 +3102,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases planetary population growth rate.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1858,6 +3157,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 500.0,
+   "corruption_decay_delay_duration_after_gain": 0.0,
+   "corruption_thresholds": [
+    5000.0,
+    7000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Prevents enemy ships from phase jumping away from this gravity well.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1902,6 +3212,17 @@
   "xp": 25,
   "antimatter_points": 300.0,
   "antimatter_regen": 1.0,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1947,6 +3268,17 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Allows construction of faction specific titans and command ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -1989,6 +3321,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Build Trade Ports to increase global Export Points and Export types. Allocate Export Points between Export types to customize your economy. Goods increase credit income while metal and crystal increase resource income.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2031,6 +3374,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Crystal mining rate.\\n\\nMust be constructed on an available crystal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2073,6 +3427,17 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Produces exotic materials by refining common raw materials.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2115,7 +3480,18 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
-  "description": "Summons stray capital ships to rejoin your fleet. With the appropriate research the beacon can be upgraded to summon an ancient titan from the depths of deep space.",
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Summons stray capital ships to rejoin your fleet. With the appropriate research the beacon can be upgraded to summon an ancient command ship or titan from the depths of deep space.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -2157,6 +3533,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases planetary population growth rate.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2201,6 +3588,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your warfare Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2243,6 +3641,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases Metal mining rate.\\n\\nMust be constructed on an available metal asteroid.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2285,7 +3694,18 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
-  "description": "Allows for the construction of ships. Build multiple factories to construct more ships at the same time.",
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
+  "description": "Allows for the construction of frigates, cruisers and corvettes.\\n\\nBuild multiple factories to construct more ships at the same time.",
   "squadron_size": null,
   "strike_craft_kind": null,
   "carrier_capacity": null,
@@ -2329,6 +3749,18 @@
   "xp": 2000,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 50.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    1000.0,
+    5000.0,
+    9000.0
+   ],
+   "show_main_view_icon_alert_fill": true
+  },
+  "capture_weight": null,
   "description": null,
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2341,6 +3773,7 @@
    {
     "name": "Heavy Pulse Gun",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -2359,6 +3792,7 @@
    {
     "name": "Heavy Wave Cannon",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -2377,6 +3811,7 @@
    {
     "name": "Heavy Phase Missile",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 5,
     "burst_duration": 2.4,
@@ -2395,6 +3830,7 @@
    {
     "name": "Heavy Phase Missile",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 3,
     "burst_duration": 1.2,
@@ -2413,6 +3849,7 @@
    {
     "name": "Heavy Beam",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -2431,6 +3868,7 @@
    {
     "name": "PD Pulse Gun",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -2482,6 +3920,17 @@
   "xp": 75,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Creates a Phase Gate which allows your empire's ships to travel directly between this planet and any other Phase Gate in the star system.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2526,6 +3975,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 10000.0,
+   "corruption_decay_rate": 500.0,
+   "corruption_decay_delay_duration_after_gain": 0.0,
+   "corruption_thresholds": [
+    5000.0,
+    7000.0,
+    9000.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Prevents enemy ships from phase jumping away from this gravity well.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2570,6 +4030,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Heavy phase missile launchers defend nearby structures and the planet from hostile cruisers and capital ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2582,6 +4053,7 @@
    {
     "name": "Heavy Phase Missile",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": 6,
     "burst_duration": 3.0,
@@ -2633,6 +4105,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 3000.0,
+   "corruption_decay_rate": 25.0,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    300.0,
+    1500.0,
+    2700.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Build Phase Resonators to increase global Resonance Points. Allocate Resonance Points between mobility, combat and utility to customize transient improvements to your units when they exit phase space.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2667,7 +4150,7 @@
   "hull_points": 2100,
   "hull_regen": 3.0,
   "armor_points": 1140,
-  "armor_regen": 3.0,
+  "armor_regen": 4.0,
   "shield_points": null,
   "shield_regen": null,
   "shield_burst_cooldown": null,
@@ -2675,6 +4158,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Heavy pulse gun turrets defend nearby structures and the planet from less durable hostile ships.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2687,6 +4181,7 @@
    {
     "name": "Heavy Pulse Gun",
     "required_unit_item": null,
+    "required_research": null,
     "weapon_type": "normal",
     "burst_count": null,
     "burst_duration": null,
@@ -2738,6 +4233,17 @@
   "xp": 25,
   "antimatter_points": 300.0,
   "antimatter_regen": 1.0,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Repairs nearby friendly ships over time.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2782,6 +4288,17 @@
   "xp": 25,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Increases your empire Research Points.",
   "squadron_size": null,
   "strike_craft_kind": null,
@@ -2824,6 +4341,17 @@
   "xp": 50,
   "antimatter_points": null,
   "antimatter_regen": null,
+  "corruption": {
+   "max_corruption": 1000.0,
+   "corruption_decay_rate": 12.5,
+   "corruption_decay_delay_duration_after_gain": 60.0,
+   "corruption_thresholds": [
+    100.0,
+    500.0,
+    900.0
+   ]
+  },
+  "capture_weight": null,
   "description": "Specialists from the days of the empire revive their expertise in interspecies persuasion and indoctrination.",
   "squadron_size": null,
   "strike_craft_kind": null,

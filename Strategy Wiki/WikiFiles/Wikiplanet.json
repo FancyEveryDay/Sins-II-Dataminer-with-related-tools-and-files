@@ -2,15 +2,19 @@
  "Asteroid": {
   "name": "asteroid",
   "localized_name": "planet_type_name.asteroid",
+  "max_corruption": 0.2,
+  "shrouding_duration": 300.0,
   "can_have_planet_elevators": false,
   "population": {
    "starting_population": [
-    0,
-    15
+    20,
+    30
    ],
    "population_maximum": 40,
    "growth_rate": 0.015,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -47,6 +51,14 @@
   "quality": "Poor (12 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -148,7 +160,191 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.18,
+      " Base Metal Income": 0.24,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.42,
+      " Base Metal Income": 0.56,
+      "Maximum Health": 500
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -246,6 +442,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -329,15 +533,19 @@
  "Frozen asteroid": {
   "name": "ice_asteroid",
   "localized_name": "planet_type_name.ice_asteroid",
+  "max_corruption": 0.2,
+  "shrouding_duration": 300.0,
   "can_have_planet_elevators": false,
   "population": {
    "starting_population": [
-    0,
-    20
+    25,
+    35
    ],
    "population_maximum": 50,
    "growth_rate": 0.015,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -374,6 +582,14 @@
   "quality": "Poor (12 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -471,7 +687,187 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.36,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.84,
+      "Maximum Health": 500
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -565,6 +961,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -644,6 +1048,8 @@
  "Hive asteroid": {
   "name": "hive_asteroid",
   "localized_name": "planet_type_name.hive_asteroid",
+  "max_corruption": 0.2,
+  "shrouding_duration": 300.0,
   "can_have_planet_elevators": false,
   "population": {
    "starting_population": [
@@ -652,7 +1058,9 @@
    ],
    "population_maximum": 120,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -690,6 +1098,14 @@
   "quality": "Poor (17 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -812,7 +1228,326 @@
      {}
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "culture": 1,
+     "industry": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 4,
+      "Maximum Health": 750
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "culture": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.15
+       }
+      ]
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -952,6 +1687,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -1074,6 +1817,8 @@
  "Barren planet": {
   "name": "barren",
   "localized_name": "planet_type_name.barren",
+  "max_corruption": 0.5,
+  "shrouding_duration": 450.0,
   "population": {
    "starting_population": [
     30,
@@ -1081,7 +1826,9 @@
    ],
    "population_maximum": 125,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -1126,6 +1873,14 @@
   "quality": "Fair (23 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -1329,7 +2084,249 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "commerce": 1,
+     "mining": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "commerce": [
+     {},
+     {
+      "Base Credit Income": 1.0,
+      "Maximum Health": 250
+     },
+     {
+      "Base Credit Income": 2.2,
+      "Maximum Health": 500
+     },
+     {
+      "Base Credit Income": 3.6,
+      "Maximum Health": 750
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.18,
+      " Base Metal Income": 0.18,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.42,
+      " Base Metal Income": 0.42,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.72,
+      " Base Metal Income": 0.72,
+      "Maximum Health": 750
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -1523,6 +2520,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -1659,6 +2664,8 @@
  "City planet": {
   "name": "city",
   "localized_name": "planet_type_name.city",
+  "max_corruption": 2.5,
+  "shrouding_duration": 900.0,
   "can_have_planet_elevators": false,
   "population": {
    "starting_population": [
@@ -1667,7 +2674,9 @@
    ],
    "population_maximum": 1000,
    "growth_rate": 0.05,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -1730,6 +2739,14 @@
   "quality": "Super Rich (37 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -1932,7 +2949,430 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "industry": 1,
+     "influence": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 12.0,
+      "Max. Shields": 0,
+      "Maximum Health": 10500.0,
+      "Military Orbit Slots": 75,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 2,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 6,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 14,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 18,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     },
+     {
+      "Civilian Orbit Slots": 21,
+      "Constructors": 6,
+      "Maximum Health": 1250
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 70.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 120.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 180.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0015,
+      " Metal / 100 Pop {icon:population}": 0.0015,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 250.0,
+      "Maximum Health": 1250,
+      "Population Growth": 0.025
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.25
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.5
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.5
+       }
+      ]
+     }
+    ],
+    "influence": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 1.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.15
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 1.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 2.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.25
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -2132,6 +3572,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -2290,7 +3738,9 @@
    ],
    "population_maximum": 210,
    "growth_rate": 0.025,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -2351,6 +3801,14 @@
       "advent_unlock_crystalline_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -2541,12 +3999,268 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_crystalline_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.36,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.84,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 1.44,
+      "Maximum Health": 750
+     },
+     {
+      " Base Crystal Income": 2.16,
+      "Maximum Health": 1000
+     },
+     {
+      " Base Crystal Income": 3.0,
+      "Maximum Health": 1250
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     },
+     {
+      "Civilian Research Rate": 0.5,
+      "Maximum Health": 1000,
+      "Military Research Rate": 0.5
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_crystalline_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -2734,6 +4448,14 @@
       "vasari_unlock_crystalline_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -2874,7 +4596,9 @@
    ],
    "population_maximum": 350,
    "growth_rate": 0.03,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -2960,6 +4684,14 @@
   "quality": "Rich (30 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -3180,12 +4912,351 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_desert_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "culture": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 140.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.18,
+      " Base Metal Income": 0.18,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.42,
+      " Base Metal Income": 0.42,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.72,
+      " Base Metal Income": 0.72,
+      "Maximum Health": 750
+     },
+     {
+      " Base Crystal Income": 1.08,
+      " Base Metal Income": 1.08,
+      "Maximum Health": 1000
+     }
+    ],
+    "culture": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.15
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.2
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_desert_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -3388,6 +5459,14 @@
       "vasari_unlock_desert_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -3535,7 +5614,9 @@
    ],
    "population_maximum": 240,
    "growth_rate": 0.025,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -3595,6 +5676,14 @@
       "advent_unlock_ferrous_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -3779,12 +5868,319 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_ferrous_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "industry": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.01
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.006,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.01
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Metal Income": 0.27,
+      "Maximum Health": 250
+     },
+     {
+      " Base Metal Income": 0.63,
+      "Maximum Health": 500
+     },
+     {
+      " Base Metal Income": 1.08,
+      "Maximum Health": 750
+     },
+     {
+      " Base Metal Income": 1.62,
+      "Maximum Health": 1000
+     },
+     {
+      " Base Metal Income": 2.25,
+      "Maximum Health": 1250
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_ferrous_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -3979,6 +6375,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -4129,6 +6533,8 @@
  "Gas giant planet": {
   "name": "gas_giant",
   "localized_name": "planet_type_name.gas_giant",
+  "max_corruption": 2.5,
+  "shrouding_duration": 900.0,
   "population": {
    "starting_population": [
     0,
@@ -4136,7 +6542,9 @@
    ],
    "population_maximum": 600,
    "growth_rate": 0.025,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -4217,6 +6625,14 @@
       "advent_unlock_gas_giant_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 0,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -4434,12 +6850,388 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_gas_giant_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "industry": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 2500.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 4000.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 12.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7000.0,
+      "Military Orbit Slots": 75,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 14,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 18,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     },
+     {
+      "Civilian Orbit Slots": 21,
+      "Constructors": 6,
+      "Maximum Health": 1250
+     }
+    ],
+    "population": [
+     {
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 60.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 130.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 210.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 300.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 400.0,
+      "Maximum Health": 1250,
+      "Population Growth": 0.03
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.25
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.5
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.5
+       }
+      ]
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     },
+     {
+      "Civilian Research Rate": 0.5,
+      "Maximum Health": 1000,
+      "Military Research Rate": 0.5
+     },
+     {
+      "Civilian Research Rate": 0.75,
+      "Maximum Health": 1250,
+      "Military Research Rate": 0.75
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_gas_giant_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 0,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -4660,6 +7452,14 @@
       "vasari_unlock_gas_giant_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -4847,6 +7647,8 @@
  "Ice planet": {
   "name": "ice",
   "localized_name": "planet_type_name.ice",
+  "max_corruption": 0.5,
+  "shrouding_duration": 450.0,
   "population": {
    "starting_population": [
     20,
@@ -4854,7 +7656,9 @@
    ],
    "population_maximum": 100,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -4905,6 +7709,14 @@
       "advent_unlock_ice_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -5082,12 +7894,270 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_ice_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "influence": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 9,
+      "Constructors": 4,
+      "Maximum Health": 750
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.24,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.56,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.96,
+      "Maximum Health": 750
+     }
+    ],
+    "influence": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 1.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.15
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_ice_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -5263,6 +8333,14 @@
       "vasari_unlock_ice_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -5393,7 +8471,9 @@
    ],
    "population_maximum": 80,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -5469,6 +8549,14 @@
       "advent_unlock_irradiated_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -5699,12 +8787,267 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_irradiated_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0048,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.24,
+      " Base Metal Income": 0.24,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.56,
+      " Base Metal Income": 0.56,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.96,
+      " Base Metal Income": 0.96,
+      "Maximum Health": 750
+     },
+     {
+      " Base Crystal Income": 1.44,
+      " Base Metal Income": 1.44,
+      "Maximum Health": 1000
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_irradiated_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -5917,6 +9260,14 @@
       "vasari_unlock_irradiated_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -6089,12 +9440,14 @@
   "localized_name": "planet_type_name.magnetic",
   "population": {
    "starting_population": [
-    25,
-    100
+    60,
+    125
    ],
    "population_maximum": 250,
    "growth_rate": 0.025,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -6172,6 +9525,14 @@
       "advent_unlock_magnetic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -6426,12 +9787,359 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "culture": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 2,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 6,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 14,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 18,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     },
+     {
+      "Civilian Orbit Slots": 21,
+      "Constructors": 6,
+      "Maximum Health": 1250
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 140.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 200.0,
+      "Maximum Health": 1250,
+      "Population Growth": 0.03
+     }
+    ],
+    "culture": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.15
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.2
+       }
+      ]
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     },
+     {
+      "Civilian Research Rate": 0.5,
+      "Maximum Health": 1000,
+      "Military Research Rate": 0.5
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_magnetic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -6668,6 +10376,14 @@
       "vasari_unlock_magnetic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -6842,6 +10558,8 @@
  "Moon": {
   "name": "moon",
   "localized_name": "planet_type_name.moon",
+  "max_corruption": 0.25,
+  "shrouding_duration": 300.0,
   "can_have_planet_elevators": false,
   "population": {
    "starting_population": [
@@ -6850,7 +10568,9 @@
    ],
    "population_maximum": 90,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -6888,6 +10608,14 @@
   "quality": "Poor (18 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -7068,7 +10796,233 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "commerce": 1,
+     "mining": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 4,
+      "Maximum Health": 750
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0024,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "commerce": [
+     {},
+     {
+      "Base Credit Income": 1.0,
+      "Maximum Health": 250
+     },
+     {
+      "Base Credit Income": 2.2,
+      "Maximum Health": 500
+     },
+     {
+      "Base Credit Income": 3.6,
+      "Maximum Health": 750
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.18,
+      " Base Metal Income": 0.18,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.42,
+      " Base Metal Income": 0.42,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.72,
+      " Base Metal Income": 0.72,
+      "Maximum Health": 750
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -7246,6 +11200,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -7366,6 +11328,8 @@
  "Ice moon": {
   "name": "ice_moon",
   "localized_name": "planet_type_name.ice_moon",
+  "max_corruption": 0.25,
+  "shrouding_duration": 300.0,
   "population": {
    "starting_population": [
     0,
@@ -7373,7 +11337,9 @@
    ],
    "population_maximum": 70,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "can_have_planet_elevators": false,
   "surveying_track_levels": [
@@ -7412,6 +11378,14 @@
   "quality": "Poor (19 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -7573,7 +11547,249 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_ice_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "influence": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0042,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Crystal Income": 0.24,
+      "Maximum Health": 250
+     },
+     {
+      " Base Crystal Income": 0.56,
+      "Maximum Health": 500
+     },
+     {
+      " Base Crystal Income": 0.96,
+      "Maximum Health": 750
+     }
+    ],
+    "influence": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 1.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.15
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -7728,6 +11944,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -7835,6 +12059,8 @@
  "Volcanic moon": {
   "name": "volcanic_moon",
   "localized_name": "planet_type_name.volcanic_moon",
+  "max_corruption": 0.25,
+  "shrouding_duration": 300.0,
   "population": {
    "starting_population": [
     0,
@@ -7842,7 +12068,9 @@
    ],
    "population_maximum": 60,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "can_have_planet_elevators": false,
   "surveying_track_levels": [
@@ -7881,6 +12109,14 @@
   "quality": "Poor (19 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -8037,7 +12273,222 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_volcanic_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 70.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.01
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Metal Income": 0.27,
+      "Maximum Health": 250
+     },
+     {
+      " Base Metal Income": 0.63,
+      "Maximum Health": 500
+     },
+     {
+      " Base Metal Income": 1.08,
+      "Maximum Health": 750
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -8192,6 +12643,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -8304,6 +12763,7 @@
  "Oceanic planet": {
   "name": "oceanic",
   "localized_name": "planet_type_name.oceanic",
+  "max_corruption": 2.0,
   "population": {
    "starting_population": [
     100,
@@ -8311,7 +12771,9 @@
    ],
    "population_maximum": 300,
    "growth_rate": 0.03,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -8390,6 +12852,14 @@
       "advent_unlock_oceanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -8574,12 +13044,394 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_oceanic_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "culture": 1,
+     "influence": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 140.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0018,
+      " Metal / 100 Pop {icon:population}": 0.0018,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 200.0,
+      "Maximum Health": 1250,
+      "Population Growth": 0.03
+     }
+    ],
+    "culture": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.15
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value": 0.5
+       },
+       {
+        "modifier_type": "culture_resistance_rate",
+        "value_behavior": "scalar",
+        "value": 0.5
+       },
+       {
+        "modifier_type": "max_allied_population_factor",
+        "value_behavior": "additive",
+        "value": 0.25
+       }
+      ]
+     }
+    ],
+    "influence": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.05
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.15
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_influence_points",
+        "value_behavior": "additive",
+        "value": 1.0
+       },
+       {
+        "modifier_type": "influence_points_recharge_rate",
+        "value_behavior": "scalar",
+        "value": 0.3
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_oceanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -8780,6 +13632,14 @@
       "vasari_unlock_oceanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -8913,6 +13773,8 @@
  "Ship graveyard": {
   "name": "ship_graveyard",
   "localized_name": "planet_type_name.ship_graveyard",
+  "max_corruption": 0.2,
+  "shrouding_duration": 300.0,
   "population": {
    "starting_population": [
     25,
@@ -8920,7 +13782,9 @@
    ],
    "population_maximum": 75,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -8958,6 +13822,14 @@
   "quality": "Poor (15 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -9070,7 +13942,243 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "industry": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0038,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0036,
+      " Metal / 100 Pop {icon:population}": 0.0038,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -9192,6 +14300,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -9286,6 +14402,8 @@
  "Primordial planet": {
   "name": "swamp",
   "localized_name": "planet_type_name.swamp",
+  "max_corruption": 0.5,
+  "shrouding_duration": 450.0,
   "population": {
    "starting_population": [
     30,
@@ -9293,7 +14411,9 @@
    ],
    "population_maximum": 200,
    "growth_rate": 0.025,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -9345,6 +14465,14 @@
       "advent_unlock_swamp_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -9532,12 +14660,283 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_swamp_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "commerce": 1,
+     "industry": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 9,
+      "Constructors": 4,
+      "Maximum Health": 750
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0012,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0012,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0012,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 70.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.0012,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 120.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     }
+    ],
+    "commerce": [
+     {},
+     {
+      "Base Credit Income": 1.0,
+      "Maximum Health": 250
+     },
+     {
+      "Base Credit Income": 2.2,
+      "Maximum Health": 500
+     },
+     {
+      "Base Credit Income": 3.6,
+      "Maximum Health": 750
+     },
+     {
+      "Base Credit Income": 5.2,
+      "Maximum Health": 1000
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_swamp_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -9730,6 +15129,14 @@
       "vasari_unlock_swamp_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -9856,6 +15263,7 @@
  "Terran planet": {
   "name": "terran",
   "localized_name": "planet_type_name.terran",
+  "max_corruption": 2.0,
   "population": {
    "starting_population": [
     150,
@@ -9863,7 +15271,9 @@
    ],
    "population_maximum": 500,
    "growth_rate": 0.03,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -9926,6 +15336,14 @@
   "quality": "Rich (29 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -10110,7 +15528,354 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_terran_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "industry": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 7500.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 10,
+      "Constructors": 4,
+      "Maximum Health": 750
+     },
+     {
+      "Civilian Orbit Slots": 12,
+      "Constructors": 5,
+      "Maximum Health": 1000
+     }
+    ],
+    "population": [
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 90.0,
+      "Maximum Health": 750,
+      "Population Growth": 0.02
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 140.0,
+      "Maximum Health": 1000,
+      "Population Growth": 0.025
+     },
+     {
+      " Crystal / 100 Pop {icon:population}": 0.0024,
+      " Metal / 100 Pop {icon:population}": 0.003,
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 200.0,
+      "Maximum Health": 1250,
+      "Population Growth": 0.03
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.4
+       }
+      ]
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     },
+     {
+      "Civilian Research Rate": 0.5,
+      "Maximum Health": 1000,
+      "Military Research Rate": 0.5
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -10299,6 +16064,14 @@
       "vasari_unlock_terran_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -10432,6 +16205,8 @@
  "Volcanic planet": {
   "name": "volcanic",
   "localized_name": "planet_type_name.volcanic",
+  "max_corruption": 0.5,
+  "shrouding_duration": 450.0,
   "population": {
    "starting_population": [
     15,
@@ -10439,7 +16214,9 @@
    ],
    "population_maximum": 90,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -10490,6 +16267,14 @@
       "advent_unlock_volcanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -10662,12 +16447,243 @@
      }
     ]
    },
+   "Eidolon": {
+    "colonization_research_prerequisites": [
+     [
+      "dlc3_herald_unlock_volcanic_biosphere"
+     ]
+    ],
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "mining": 1,
+     "research": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 500,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 3000.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 5000.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 4,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 7,
+      "Constructors": 3,
+      "Maximum Health": 500
+     },
+     {
+      "Civilian Orbit Slots": 9,
+      "Constructors": 4,
+      "Maximum Health": 750
+     }
+    ],
+    "population": [
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 30.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      " Metal / 100 Pop {icon:population}": 0.0048,
+      "Credit Income per 100 Population": 2.5,
+      "Max. Population": 70.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.01
+     }
+    ],
+    "mining": [
+     {},
+     {
+      " Base Metal Income": 0.27,
+      "Maximum Health": 250
+     },
+     {
+      " Base Metal Income": 0.63,
+      "Maximum Health": 500
+     },
+     {
+      " Base Metal Income": 1.08,
+      "Maximum Health": 750
+     }
+    ],
+    "research": [
+     {},
+     {
+      "Civilian Research Rate": 0.05,
+      "Maximum Health": 250,
+      "Military Research Rate": 0.05
+     },
+     {
+      "Civilian Research Rate": 0.15,
+      "Maximum Health": 500,
+      "Military Research Rate": 0.15
+     },
+     {
+      "Civilian Research Rate": 0.3,
+      "Maximum Health": 750,
+      "Military Research Rate": 0.3
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
     "colonization_research_prerequisites": [
      [
       "trader_unlock_volcanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -10843,6 +16859,14 @@
       "vasari_unlock_volcanic_biosphere"
      ]
     ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 1,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -10971,6 +16995,8 @@
  "Pirate base": {
   "name": "pirate_base",
   "localized_name": "planet_type_name.pirate_base",
+  "max_corruption": 0.2,
+  "shrouding_duration": 300.0,
   "population": {
    "starting_population": [
     40,
@@ -10978,7 +17004,9 @@
    ],
    "population_maximum": 80,
    "growth_rate": 0.02,
-   "growth_rate_if_above_max_population": -0.4
+   "growth_rate_if_above_max_population": -0.4,
+   "bombing_damage_resist_max": 0.9,
+   "bombing_damage_resist_exponent": 2.0
   },
   "surveying_track_levels": [
    {
@@ -11019,6 +17047,14 @@
   "quality": "Poor (14 Quality Points)",
   "tracks": {
    "Advent": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 1
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,
@@ -11128,7 +17164,277 @@
      }
     ]
    },
+   "Eidolon": {
+    "show_all_modified_values_in_tooltip": [
+     "population",
+     "corruption"
+    ],
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "population": 1,
+     "commerce": 1,
+     "industry": 1,
+     "corruption": 0
+    },
+    "defense": [
+     {
+      "Health Regen Rate": 2.0,
+      "Max. Shields": 0,
+      "Maximum Health": 250,
+      "Military Orbit Slots": 0,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 4.0,
+      "Max. Shields": 0,
+      "Maximum Health": 750.0,
+      "Military Orbit Slots": 5,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 6.0,
+      "Max. Shields": 0,
+      "Maximum Health": 1500.0,
+      "Military Orbit Slots": 15,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 8.0,
+      "Max. Shields": 0,
+      "Maximum Health": 2500.0,
+      "Military Orbit Slots": 30,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     },
+     {
+      "Health Regen Rate": 10.0,
+      "Max. Shields": 0,
+      "Maximum Health": 4000.0,
+      "Military Orbit Slots": 50,
+      "planet_shield_burst_restore": {
+       "cooldown_duration": 30.0,
+       "restore_percentage": 1.0
+      },
+      "shield_points_restore_rate": 0.0
+     }
+    ],
+    "logistics": [
+     {
+      "Civilian Orbit Slots": 1,
+      "Constructors": 1
+     },
+     {
+      "Civilian Orbit Slots": 3,
+      "Constructors": 2,
+      "Maximum Health": 250
+     },
+     {
+      "Civilian Orbit Slots": 5,
+      "Constructors": 3,
+      "Maximum Health": 500
+     }
+    ],
+    "population": [
+     {
+      "Credit Income per 100 Population": 4.0
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 20.0,
+      "Maximum Health": 250,
+      "Population Growth": 0.01
+     },
+     {
+      "Credit Income per 100 Population": 4.0,
+      "Max. Population": 50.0,
+      "Maximum Health": 500,
+      "Population Growth": 0.015
+     }
+    ],
+    "commerce": [
+     {},
+     {
+      "Base Credit Income": 1.0,
+      "Maximum Health": 250
+     },
+     {
+      "Base Credit Income": 2.2,
+      "Maximum Health": 500
+     }
+    ],
+    "industry": [
+     {},
+     {
+      "Maximum Health": 250,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.05
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.1
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.2
+       }
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "planet_modifiers": [
+       {
+        "modifier_type": "factory_unit_build_time",
+        "value_behavior": "scalar",
+        "value": -0.15
+       },
+       {
+        "modifier_type": "factory_exotic_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       },
+       {
+        "modifier_type": "structure_build_time",
+        "value_behavior": "scalar",
+        "value": -0.3
+       }
+      ]
+     }
+    ],
+    "corruption": [
+     {
+      "max_corruption_structure_count": 5
+     },
+     {
+      "Maximum Health": 250,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.1
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 1.0
+       }
+      ]
+     },
+     {
+      "Maximum Health": 500,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.2
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 2.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_0"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 750,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.3
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 3.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_1"
+       ]
+      ]
+     },
+     {
+      "Maximum Health": 1000,
+      "max_corruption_structure_count": 5,
+      "planet_modifiers": [
+       {
+        "modifier_type": "max_corruption",
+        "value_behavior": "additive",
+        "value": 0.4
+       },
+       {
+        "modifier_type": "corruption_mode_level",
+        "value_behavior": "additive",
+        "value": 4.0
+       }
+      ],
+      "prerequisites": [
+       [
+        "dlc3_herald_upgrade_corruption_track_2"
+       ]
+      ]
+     }
+    ]
+   },
    "TEC": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 1,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "trade_capacity_levels": [
      {
       "import_points": 1,
@@ -11239,6 +17545,14 @@
     ]
    },
    "Vasari": {
+    "shroud_restricted_max_track_levels": {
+     "defense": 1,
+     "logistics": 1,
+     "commerce": 0,
+     "mining": 1,
+     "research": 0,
+     "focus": 0
+    },
     "defense": [
      {
       "Health Regen Rate": 2.0,

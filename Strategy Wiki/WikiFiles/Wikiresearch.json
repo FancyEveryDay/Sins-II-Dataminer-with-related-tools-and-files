@@ -7,7 +7,7 @@
    2,
    1
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Subliminal Manipulation"
@@ -173,7 +173,7 @@
    2,
    7
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Zealous Worship"
@@ -291,14 +291,6 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Fortress of Faith"
-   },
-   {
-    "research_subject": "Advent Sanctify"
-   }
-  ],
   "image": "Advent Wall of Faith"
  },
  "Advent Fortress of Faith": {
@@ -312,7 +304,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "Advent Wall of Faith"
+    "advent_enemy_culture_suppression_0"
    ]
   ],
   "planet_modifiers": [
@@ -328,6 +320,62 @@
   "metal": 450.0,
   "crystal": 950.0,
   "image": "Advent Fortress of Faith"
+ },
+ "Advent Material Communion": {
+  "domain": "Harmony",
+  "tier": "Harmony II",
+  "field": "Material",
+  "field_coord": [
+   2,
+   10
+  ],
+  "research_time": 120.0,
+  "empire_modifiers": [
+   "Focus Conversion Rates +0.1"
+  ],
+  "description": "By turning the collective will of the Unity upon the mundane, the Advent learn to translate raw Focus directly into credits, metal, and crystal, allowing psionic surplus to cover material shortfalls when making purchases.",
+  "hud_icon": "advent_focus_conversion_0_research_subject_hud_icon",
+  "tooltip_picture": "advent_focus_conversion_0_research_subject_tooltip_picture",
+  "name": "Material Communion",
+  "id": "advent_focus_conversion_0",
+  "race": "Advent",
+  "credits": 500.0,
+  "metal": 125.0,
+  "crystal": 300.0,
+  "unlocks": [
+   {
+    "research_subject": "Advent Greater Material Communion"
+   }
+  ],
+  "image": "Advent Material Communion"
+ },
+ "Advent Greater Material Communion": {
+  "domain": "Harmony",
+  "tier": "Harmony III",
+  "field": "Material",
+  "field_coord": [
+   4,
+   10
+  ],
+  "research_time": 225.0,
+  "prerequisites": [
+   [
+    "Advent Material Communion"
+   ]
+  ],
+  "empire_modifiers": [
+   "Improved Focus Conversion Rates +0.15"
+  ],
+  "description": "Deeper communion with the Unity sharpens the translation of Focus into material wealth, yielding greater quantities of credits, metal, and crystal for each point of Focus spent on a purchase.",
+  "hud_icon": "advent_focus_conversion_1_research_subject_hud_icon",
+  "tooltip_picture": "advent_focus_conversion_1_research_subject_tooltip_picture",
+  "name": "Greater Material Communion",
+  "id": "advent_focus_conversion_1",
+  "race": "Advent",
+  "credits": 800.0,
+  "metal": 250.0,
+  "crystal": 600.0,
+  "image": "Advent Greater Material Communion"
  },
  "Advent High Efficiency Jumps": {
   "domain": "Hostility",
@@ -373,11 +421,6 @@
   "credits": 1100.0,
   "metal": 425.0,
   "crystal": 900.0,
-  "unlocks": [
-   {
-    "unit_item": "Advent Antimatter Phase Jump Panels"
-   }
-  ],
   "image": "Advent High Efficiency Jumps"
  },
  "Advent Improved Meteoroid Control": {
@@ -514,7 +557,7 @@
    2,
    0
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Subliminal Manipulation"
@@ -647,9 +690,6 @@
   "metal": 450.0,
   "crystal": 950.0,
   "unlocks": [
-   {
-    "unit_item": "Advent Final Judgment"
-   },
    {
     "unit_item": "Advent Meteor Storm"
    },
@@ -856,7 +896,7 @@
    2,
    0
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "description": "When the last enemy ship in your planet's gravity well leaves or is destroyed, that planet receives a bonus to tax income and Culture generation.",
   "hud_icon": "advent_reimagine_explusion_research_subject_hud_icon",
   "name": "Expulsion",
@@ -1166,7 +1206,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "Advent Temple of Unity Blueprint"
+    "advent_unlock_unity_structure"
    ]
   ],
   "empire_modifiers": [
@@ -1181,11 +1221,6 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Unity Unleashed"
-   }
-  ],
   "image": "Advent Unity Ascendant"
  },
  "Advent Unity Unleashed": {
@@ -1199,7 +1234,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Advent Unity Ascendant"
+    "advent_unity_points_0"
    ]
   ],
   "empire_modifiers": [
@@ -1262,12 +1297,31 @@
   "race": "Advent",
   "credits": 1400.0,
   "metal": 600.0,
-  "crystal": 1200.0,
+  "crystal": 1200.0
+ },
+ "Advent Vespa Blueprint": {
+  "domain": "Hostility",
+  "tier": "Hostility I",
+  "field": "Ascension",
+  "field_coord": [
+   1,
+   3
+  ],
+  "research_time": 75.0,
+  "hud_icon": "advent_antiarmor_corvette_hud_icon",
+  "tooltip_picture": "advent_antiarmor_corvette_tooltip_picture",
+  "name": "Vespa Blueprint",
+  "id": "advent_unlock_antiarmor_corvette",
+  "race": "Advent",
+  "credits": 300.0,
+  "metal": 50.0,
+  "crystal": 100.0,
   "unlocks": [
    {
-    "unit_item": "Advent Altar of Sacrifice"
+    "unit": "Advent Vespa Corvette"
    }
-  ]
+  ],
+  "image": "Advent Vespa Corvette"
  },
  "Advent Atmospheric Shield Dome Blueprint": {
   "domain": "Harmony",
@@ -1363,7 +1417,7 @@
    2,
    4
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "hud_icon": "advent_carrier_cruiser_hud_icon",
   "tooltip_picture": "advent_carrier_cruiser_tooltip_picture",
   "name": "Aeria Blueprint",
@@ -1426,11 +1480,6 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Crystalline Development"
-   }
-  ],
   "image": "Advent Crystalline Embrace"
  },
  "Advent Crystal Enrichment Center Blueprint": {
@@ -1441,7 +1490,7 @@
    2,
    9
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Selective Harvesting"
@@ -1500,7 +1549,7 @@
    2,
    3
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Zealous Worship"
@@ -1530,7 +1579,7 @@
    2,
    8
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Zealous Worship"
@@ -1794,12 +1843,7 @@
   "race": "Advent",
   "credits": 800.0,
   "metal": 250.0,
-  "crystal": 600.0,
-  "unlocks": [
-   {
-    "unit_item": "Advent Devotion Harvester"
-   }
-  ]
+  "crystal": 600.0
  },
  "Advent Empyrean City Blueprint": {
   "domain": "Harmony",
@@ -1838,7 +1882,7 @@
    2,
    6
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Refined Laser Cannons"
@@ -1877,12 +1921,7 @@
   "race": "Advent",
   "credits": 300.0,
   "metal": 50.0,
-  "crystal": 100.0,
-  "unlocks": [
-   {
-    "unit": "Advent Herald Envoy"
-   }
-  ]
+  "crystal": 100.0
  },
  "Advent Sanctify": {
   "domain": "Harmony",
@@ -1895,7 +1934,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Advent Wall of Faith"
+    "advent_enemy_culture_suppression_0"
    ]
   ],
   "description": "Grants the Sanctify ability to Herald Envoy frigate, allowing them to increase culture resistance for a moderate duration.",
@@ -1923,7 +1962,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Irradiated Embrace"
+    "advent_unlock_irradiated_biosphere"
    ]
   ],
   "hud_icon": "advent_epitaph_of_the_lost_unit_item_hud_icon",
@@ -2009,7 +2048,7 @@
    2,
    6
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "description": "Allows the colonization of ferrous planets.",
   "hud_icon": "advent_unlock_ferrous_biosphere_research_subject_hud_icon",
   "tooltip_picture": "advent_unlock_ferrous_biosphere_research_subject_tooltip_picture",
@@ -2019,11 +2058,6 @@
   "credits": 500.0,
   "metal": 125.0,
   "crystal": 300.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Ferrous Development"
-   }
-  ],
   "image": "Advent Ferrous Embrace"
  },
  "Advent Brilliance Array Blueprint": {
@@ -2063,7 +2097,7 @@
    2,
    7
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Novice Psi Training"
@@ -2190,9 +2224,6 @@
    },
    {
     "research_subject": "Advent Mend"
-   },
-   {
-    "research_subject": "Advent Will of the Unity"
    }
   ],
   "image": "Advent Iconus Guardian"
@@ -2237,7 +2268,8 @@
   "research_time": 525.0,
   "prerequisites": [
    [
-    "Advent Guardian Blueprint"
+    "advent_unlock_guardian_cruiser",
+    "advent_upgrade_spell_power_2"
    ]
   ],
   "description": "Grants the Will of the Unity ability to Iconus Guardians, allowing them to grant a Unity bonus to friendly ships.",
@@ -2315,7 +2347,7 @@
    2,
    7
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Hangar Defense Blueprint"
@@ -2409,11 +2441,6 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
-  "unlocks": [
-   {
-    "unit_item": "Advent Haven Dome"
-   }
-  ],
   "image": "Advent Haven Dome"
  },
  "Advent Heathen Quarter Blueprint": {
@@ -2575,9 +2602,6 @@
   "unlocks": [
    {
     "research_subject": "Advent Thermal Shield Dome Blueprint"
-   },
-   {
-    "research_subject": "Advent Arctic Development"
    }
   ],
   "image": "Advent Arctic Embrace"
@@ -2632,9 +2656,6 @@
   "crystal": 350.0,
   "unlocks": [
    {
-    "research_subject": "Advent Epitaph of the Lost Blueprint"
-   },
-   {
     "research_subject": "Advent Radiation Shield Dome Blueprint"
    },
    {
@@ -2675,7 +2696,7 @@
    2,
    8
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Novice Psi Training"
@@ -2736,7 +2757,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "hud_icon": "advent_loyalist_titan_hud_icon",
@@ -2821,7 +2842,7 @@
    2,
    8
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "description": "Allows the colonization of geomagnetic planets.",
   "hud_icon": "advent_unlock_magnetic_biosphere_research_subject_hud_icon",
   "tooltip_picture": "advent_unlock_magnetic_biosphere_research_subject_tooltip_picture",
@@ -2833,16 +2854,34 @@
   "crystal": 300.0,
   "unlocks": [
    {
-    "research_subject": "Advent Prescience Filter Blueprint"
-   },
-   {
-    "research_subject": "Advent Starlight Augury Blueprint"
-   },
-   {
     "research_subject": "Advent Geomagnetic Specialization"
    }
   ],
   "image": "Advent Geomagnetic Embrace"
+ },
+ "Advent Prisma Blueprint": {
+  "domain": "Hostility",
+  "tier": "Hostility III",
+  "field": "Ascension",
+  "field_coord": [
+   5,
+   4
+  ],
+  "research_time": 270.0,
+  "hud_icon": "advent_medium_cruiser_hud_icon",
+  "tooltip_picture": "advent_medium_cruiser_tooltip_picture",
+  "name": "Prisma Blueprint",
+  "id": "advent_unlock_medium_cruiser",
+  "race": "Advent",
+  "credits": 850.0,
+  "metal": 275.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "unit": "Advent Prisma Witness"
+   }
+  ],
+  "image": "Advent Prisma Witness"
  },
  "Advent Coward's Submission": {
   "domain": "Hostility",
@@ -2924,7 +2963,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Primordial Embrace"
+    "advent_unlock_swamp_biosphere"
    ]
   ],
   "hud_icon": "advent_neuropsion_purifier_unit_item_hud_icon",
@@ -2958,12 +2997,6 @@
   "unlocks": [
    {
     "research_subject": "Advent Hydrostatic Shield Dome Blueprint"
-   },
-   {
-    "research_subject": "Advent Pelagic Interface Relay Blueprint"
-   },
-   {
-    "research_subject": "Advent Oceanic Development"
    }
   ],
   "image": "Advent Oceanic Embrace"
@@ -2979,7 +3012,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Oceanic Embrace"
+    "advent_unlock_oceanic_biosphere"
    ]
   ],
   "hud_icon": "advent_pelagic_interface_relay_unit_item_hud_icon",
@@ -3109,7 +3142,7 @@
    2,
    11
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Orbital Congregation"
@@ -3168,7 +3201,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Advent Geomagnetic Embrace"
+    "advent_unlock_magnetic_biosphere"
    ]
   ],
   "hud_icon": "advent_prescience_filter_unit_item_hud_icon",
@@ -3189,7 +3222,7 @@
    2,
    2
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Commerce Integration"
@@ -3218,7 +3251,7 @@
    2,
    5
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Novice Psi Training"
@@ -3279,7 +3312,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "hud_icon": "advent_rebel_titan_hud_icon",
@@ -3408,12 +3441,7 @@
   "race": "Advent",
   "credits": 850.0,
   "metal": 275.0,
-  "crystal": 650.0,
-  "unlocks": [
-   {
-    "unit_item": "Advent School of Evangelists"
-   }
-  ]
+  "crystal": 650.0
  },
  "Advent Lingering Presence": {
   "domain": "Hostility",
@@ -3447,7 +3475,7 @@
    2,
    1
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Basic Shield Projection"
@@ -3502,7 +3530,7 @@
    2,
    5
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "hud_icon": "advent_ship_factory_structure_repair_ability_hud_icon",
   "tooltip_picture": "advent_ship_factory_structure_repair_ability_tooltip_picture",
   "name": "Factories Repair",
@@ -3526,7 +3554,7 @@
    2,
    3
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "hud_icon": "advent_siege_frigate_hud_icon",
   "tooltip_picture": "advent_siege_frigate_tooltip_picture",
   "name": "Purge Blueprint",
@@ -3553,7 +3581,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "Advent Rich Ore Scrying"
+    "advent_upgrade_metal_extraction_0"
    ]
   ],
   "hud_icon": "advent_silent_monastery_unit_item_hud_icon",
@@ -3601,12 +3629,6 @@
    },
    {
     "research_subject": "Advent Psionic Shield Blueprint"
-   },
-   {
-    "research_subject": "Advent Starbase Missile Launchers"
-   },
-   {
-    "research_subject": "Advent Starbase Plasma"
    },
    {
     "research_subject": "Advent Kinetic Surge Missile Blueprint"
@@ -3807,7 +3829,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Advent Transcencia Blueprint"
+    "advent_unlock_starbase"
    ]
   ],
   "hud_icon": "advent_starbase_unlock_missile_weapon_unit_item_hud_icon",
@@ -3831,7 +3853,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Transcencia Blueprint"
+    "advent_unlock_starbase"
    ]
   ],
   "hud_icon": "advent_starbase_unlock_plasma_weapon_unit_item_hud_icon",
@@ -3913,7 +3935,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Geomagnetic Embrace"
+    "advent_unlock_magnetic_biosphere"
    ]
   ],
   "hud_icon": "advent_starlight_augury_unit_item_hud_icon",
@@ -3966,7 +3988,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "Advent Rotating Shield Frequencies"
+    "advent_upgrade_shield_points_2"
    ]
   ],
   "buff_providers": [
@@ -4022,9 +4044,6 @@
    },
    {
     "research_subject": "Advent Nullify"
-   },
-   {
-    "research_subject": "Advent Repulsion Field"
    }
   ],
   "image": "Advent Domina Subjugator"
@@ -4070,7 +4089,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Domina Blueprint"
+    "advent_unlock_subjugator_cruiser"
    ]
   ],
   "description": "Grants the Repulsion Field ability to Dominus Subjugators, allowing them to slow enemy corvettes, strikecraft, and torpedoes within range.",
@@ -4106,9 +4125,6 @@
   "metal": 50.0,
   "crystal": 100.0,
   "unlocks": [
-   {
-    "research_subject": "Advent NeuroPsion Purifier Blueprint"
-   },
    {
     "research_subject": "Advent Primordial Specialization"
    }
@@ -4155,7 +4171,7 @@
    2,
    1
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Empathic Projection"
@@ -4259,7 +4275,7 @@
    2,
    9
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "hud_icon": "advent_temple_of_renewal_structure_hud_icon",
   "tooltip_picture": "advent_temple_of_renewal_structure_tooltip_picture",
   "name": "Temple of Renewal Blueprint",
@@ -4364,7 +4380,7 @@
   ],
   "image": "Advent Thermal Shield Dome"
  },
- "Advent Titan Foundry Blueprint": {
+ "Advent Grand Factory Blueprint": {
   "domain": "Hostility",
   "tier": "Hostility IV",
   "field": "Ascension",
@@ -4375,7 +4391,7 @@
   "research_time": 360.0,
   "hud_icon": "advent_titan_factory_hud_icon",
   "tooltip_picture": "advent_titan_factory_tooltip_picture",
-  "name": "Titan Foundry Blueprint",
+  "name": "Grand Factory Blueprint",
   "id": "advent_unlock_titan_factory",
   "race": "Advent",
   "credits": 1100.0,
@@ -4383,7 +4399,7 @@
   "crystal": 900.0,
   "unlocks": [
    {
-    "unit": "Advent Titan Foundry"
+    "unit": "Advent Grand Factory"
    },
    {
     "research_subject": "Advent Coronata Blueprint"
@@ -4449,11 +4465,6 @@
   "credits": 800.0,
   "metal": 250.0,
   "crystal": 600.0,
-  "unlocks": [
-   {
-    "unit_item": "Advent Tranquil Refuge"
-   }
-  ],
   "image": "Advent Tranquil Refuge"
  },
  "Advent Unity Protectorate Blueprint": {
@@ -4510,9 +4521,6 @@
     "research_subject": "Advent Unity Awakened"
    },
    {
-    "research_subject": "Advent Unity Ascendant"
-   },
-   {
     "research_subject": "Advent Cynosural Reservoir Blueprint"
    }
   ],
@@ -4536,11 +4544,6 @@
   "credits": 300.0,
   "metal": 50.0,
   "crystal": 100.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Volcanic Development"
-   }
-  ],
   "image": "Advent Volcanic Embrace"
  },
  "Advent Wormhole Passage": {
@@ -4781,7 +4784,7 @@
    2,
    7
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "planet_modifiers": [
    "Barren Planet Extra Civilian Orbit Slots +2",
    "Barren Planet Planet Item Slots +1"
@@ -4942,7 +4945,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Crystalline Embrace"
+    "advent_unlock_crystalline_biosphere"
    ]
   ],
   "description": "Allows further development of crystalline planets.",
@@ -4987,6 +4990,9 @@
   "unlocks": [
    {
     "research_subject": "Advent Crystal Enrichment Center Blueprint"
+   },
+   {
+    "research_subject": "Advent Telekinetic Stasis"
    }
   ],
   "image": "Advent Selective Harvesting"
@@ -5002,7 +5008,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Uniform Cultivation"
+    "Advent Selective Harvesting"
    ]
   ],
   "planet_modifiers": [
@@ -5195,7 +5201,7 @@
    2,
    5
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Zealous Worship"
@@ -5367,7 +5373,7 @@
    2,
    1
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Homeworld Prophecy"
@@ -5473,7 +5479,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "Advent Ferrous Embrace"
+    "advent_unlock_ferrous_biosphere"
    ]
   ],
   "description": "Allows further development of ferrous planets.",
@@ -5520,7 +5526,7 @@
    2,
    2
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "unit_modifiers": [
    "Max. Hull Points +10%",
    "Hull Regeneration +10%"
@@ -5646,10 +5652,10 @@
    2,
    2
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
-    "Advent Arctic Embrace"
+    "advent_unlock_ice_biosphere"
    ]
   ],
   "description": "Allows further development of ice planets.",
@@ -5875,7 +5881,7 @@
    2,
    5
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Refined Laser Cannons"
@@ -5969,7 +5975,7 @@
    2,
    6
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Orbital Extraction"
@@ -5990,9 +5996,6 @@
   "metal": 125.0,
   "crystal": 300.0,
   "unlocks": [
-   {
-    "research_subject": "Advent Silent Monastery Blueprint"
-   },
    {
     "research_subject": "Advent Telekinetic Extraction"
    }
@@ -6059,11 +6062,6 @@
    [
     "Advent Telekinetic Extraction"
    ]
-  ],
-  "unlocks": [
-   {
-    "research_subject": "Advent Anima Integration"
-   }
   ],
   "image": "Advent Telekinetic Fracturing"
  },
@@ -6167,7 +6165,7 @@
    2,
    1
   ],
-  "research_time": 135.0,
+  "research_time": 120.0,
   "prerequisites": [
    [
     "Advent Refined Warheads"
@@ -6223,7 +6221,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Oceanic Embrace"
+    "advent_unlock_oceanic_biosphere"
    ]
   ],
   "description": "Allows further development of oceanic planets.",
@@ -6258,11 +6256,6 @@
   "credits": 550.0,
   "metal": 150.0,
   "crystal": 350.0,
-  "unlocks": [
-   {
-    "research_subject": "Advent Telekinetic Stasis"
-   }
-  ],
   "image": "Advent Uniform Cultivation"
  },
  "Advent Anima Integration": {
@@ -6276,7 +6269,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Advent Telekinetic Fracturing"
+    "advent_upgrade_orbital_extraction_metal_0"
    ]
   ],
   "planet_modifiers": [
@@ -6676,9 +6669,6 @@
   "metal": 275.0,
   "crystal": 650.0,
   "unlocks": [
-   {
-    "research_subject": "Advent Structural Shielding"
-   },
    {
     "research_subject": "Advent Raised Shield Harmonics"
    },
@@ -7117,7 +7107,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "Advent Volcanic Embrace"
+    "advent_unlock_volcanic_biosphere"
    ]
   ],
   "description": "Allows further development of volcanic planets.",
@@ -7168,7 +7158,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "hud_icon": "advent_loyalist_super_capital_hud_icon",
@@ -7200,7 +7190,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "hud_icon": "advent_rebel_super_capital_hud_icon",
@@ -7862,6 +7852,5112 @@
   "quarnium": 2,
   "image": "Vasari dlc2_vasari_upgrade_rebel_super_limit_1_tooltip_picture"
  },
+ "Advent Shrouded Embrace": {
+  "required_product": "dlc_Herald",
+  "domain": "Harmony",
+  "tier": "Harmony III",
+  "field": "Reclamation",
+  "field_coord": [
+   5,
+   5
+  ],
+  "research_time": 270.0,
+  "planet_modifiers": [
+   "Planetary Corruption Debuff Strength -50%",
+   "Shroud Restriction Reduction +4"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_advent_rebel_shroud_removal_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_advent_rebel_shroud_removal_research_subject_tooltip_picture",
+  "name": "Shrouded Embrace",
+  "id": "dlc3_advent_loyalist_shroud_mitigation",
+  "race": "Advent",
+  "credits": 850.0,
+  "metal": 275.0,
+  "crystal": 650.0,
+  "image": "Advent Planetary Purging"
+ },
+ "Advent Planetary Purging": {
+  "required_product": "dlc_Herald",
+  "domain": "Harmony",
+  "tier": "Harmony IV",
+  "field": "Reclamation",
+  "field_coord": [
+   7,
+   2
+  ],
+  "research_time": 420.0,
+  "planet_modifiers": [
+   "Planetary Corruption Debuff Strength -100%",
+   "Shroud Restriction Reduction +4"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_advent_rebel_shroud_removal_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_advent_rebel_shroud_removal_research_subject_tooltip_picture",
+  "name": "Planetary Purging",
+  "id": "dlc3_advent_rebel_shroud_removal",
+  "race": "Advent",
+  "credits": 1150.0,
+  "metal": 450.0,
+  "crystal": 950.0,
+  "andvar": 1,
+  "image": "Advent Planetary Purging"
+ },
+ "Eidolon Distributed Purging": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "description": "Excess corrupting energy is siphoned through ship communications arrays into dedicated sub-channels.",
+  "hud_icon": "dlc3_herald_culture_hull_restore_rate_0_hud_icon",
+  "tooltip_picture": "dlc3_herald_culture_hull_restore_rate_0_tooltip_picture",
+  "name": "Distributed Purging",
+  "id": "dlc3_herald_culture_hull_restore_rate_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Phasic Sub-Channels"
+   }
+  ],
+  "image": "Eidolon dlc3_herald_culture_hull_restore_rate_0_tooltip_picture"
+ },
+ "Eidolon Phasic Sub-Channels": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Coercion",
+  "field_coord": [
+   5,
+   4
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Distributed Purging"
+   ]
+  ],
+  "description": "The communications network is expanded into additional phase space layers, improving passive purging bandwidth.",
+  "hud_icon": "dlc3_herald_culture_hull_restore_rate_1_hud_icon",
+  "tooltip_picture": "dlc3_herald_culture_hull_restore_rate_1_tooltip_picture",
+  "name": "Phasic Sub-Channels",
+  "id": "dlc3_herald_culture_hull_restore_rate_1",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon dlc3_herald_culture_hull_restore_rate_1_tooltip_picture"
+ },
+ "Eidolon Pursuit Provisioning": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Arrival",
+  "field_coord": [
+   0,
+   0
+  ],
+  "research_time": 40.0,
+  "description": "Increases the maximum fleet capacity your empire is able to sustain at once.",
+  "hud_icon": "dlc3_herald_max_supply_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_0_research_subject_tooltip_picture",
+  "name": "Pursuit Provisioning",
+  "id": "dlc3_herald_max_supply_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Arrival Logistics"
+   }
+  ],
+  "image": "Eidolon Pursuit Provisioning"
+ },
+ "Eidolon Arrival Logistics": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Pursuit Provisioning"
+   ]
+  ],
+  "description": "Increases the maximum fleet capacity your empire is able to sustain at once.",
+  "hud_icon": "dlc3_herald_max_supply_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_1_research_subject_tooltip_picture",
+  "name": "Arrival Logistics",
+  "id": "dlc3_herald_max_supply_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Clandestine Caches"
+   }
+  ],
+  "image": "Eidolon Arrival Logistics"
+ },
+ "Eidolon Clandestine Caches": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   3,
+   0
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Arrival Logistics"
+   ]
+  ],
+  "description": "Increases the maximum fleet capacity your empire is able to sustain at once.",
+  "hud_icon": "dlc3_herald_max_supply_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_2_research_subject_tooltip_picture",
+  "name": "Clandestine Caches",
+  "id": "dlc3_herald_max_supply_2",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Siphoned Industry"
+   }
+  ],
+  "image": "Eidolon Clandestine Caches"
+ },
+ "Eidolon Siphoned Industry": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   5,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Clandestine Caches"
+   ]
+  ],
+  "description": "Increases the maximum fleet capacity your empire is able to sustain at once.",
+  "hud_icon": "dlc3_herald_max_supply_3_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_3_research_subject_tooltip_picture",
+  "name": "Siphoned Industry",
+  "id": "dlc3_herald_max_supply_3",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "kalanide": 1,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Vanguard Coordination"
+   }
+  ],
+  "image": "Eidolon Siphoned Industry"
+ },
+ "Eidolon Vanguard Coordination": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Arrival",
+  "field_coord": [
+   7,
+   0
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Siphoned Industry"
+   ]
+  ],
+  "description": "Increases the maximum fleet capacity your empire is able to sustain at once.",
+  "hud_icon": "dlc3_herald_max_supply_4_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_4_research_subject_tooltip_picture",
+  "name": "Vanguard Coordination",
+  "id": "dlc3_herald_max_supply_4",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "quarnium": 1,
+  "image": "Eidolon Vanguard Coordination"
+ },
+ "Eidolon Ancient Prowess": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Awakening",
+  "field_coord": [
+   3,
+   0
+  ],
+  "research_time": 105.0,
+  "description": "Ancient veterans are raised from pursuit-stasis to take command of newly summoned capital ships, command ships and titans, allowing them to start with more experience.",
+  "hud_icon": "dlc3_herald_starting_experience_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_starting_experience_0_research_subject_tooltip_picture",
+  "name": "Ancient Prowess",
+  "id": "dlc3_herald_starting_experience_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Integrated Tactics"
+   }
+  ],
+  "image": "Eidolon Ancient Prowess"
+ },
+ "Eidolon Integrated Tactics": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Awakening",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Ancient Prowess"
+   ]
+  ],
+  "description": "Tactical records are incorporated into the neural interlinks of newly awakened captains, allowing capital ships, command ships, and titans to start with more experience.",
+  "hud_icon": "dlc3_herald_starting_experience_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_starting_experience_1_research_subject_tooltip_picture",
+  "name": "Integrated Tactics",
+  "id": "dlc3_herald_starting_experience_1",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Arcane Knowledge"
+   }
+  ],
+  "image": "Eidolon Integrated Tactics"
+ },
+ "Eidolon Arcane Knowledge": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   8,
+   0
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Integrated Tactics"
+   ]
+  ],
+  "description": "Phasic networking grants awakened crew members an instinctual understanding of advanced ship systems, allowing capital ships, command ships and titans to start with more experience.",
+  "hud_icon": "dlc3_herald_starting_experience_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_starting_experience_2_research_subject_tooltip_picture",
+  "name": "Arcane Knowledge",
+  "id": "dlc3_herald_starting_experience_2",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Arcane Knowledge"
+ },
+ "Eidolon Afterimage": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Shrouding",
+  "field_coord": [
+   6,
+   2
+  ],
+  "research_time": 235.0,
+  "buff_providers": [
+   {
+    "scope": "all_owned_units",
+    "all_owned_units_target_filter": {
+     "unit_types": [
+      "cruiser",
+      "frigate"
+     ],
+     "ownerships": [
+      "self"
+     ],
+     "constraints": [
+      {
+       "constraint_type": "composite_not",
+       "constraint": {
+        "constraint_type": "is_structure_builder"
+       }
+      }
+     ]
+    },
+    "extra_level_prerequisites": [
+     [
+      [
+       "dlc3_herald_upgrade_afterimage"
+      ]
+     ]
+    ],
+    "action_data_source": "dlc3_herald_unlock_afterimage",
+    "buff": "dlc3_herald_unlock_afterimage_on_self"
+   }
+  ],
+  "description": "Frigates and cruisers belonging to your empire that are destroyed while in orbit of a planet you control have a small chance to become a Phase Echo for a short time.",
+  "hud_icon": "dlc3_herald_unlock_afterimage_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_afterimage_research_subject_tooltip_picture",
+  "name": "Afterimage",
+  "id": "dlc3_herald_unlock_afterimage",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Persistent Afterimage"
+   }
+  ],
+  "image": "Eidolon Afterimage"
+ },
+ "Eidolon Azgerin Suppressor Summoning": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Arrival",
+  "field_coord": [
+   1,
+   3
+  ],
+  "research_time": 50.0,
+  "hud_icon": "dlc3_herald_antifighter_frigate_hud_icon",
+  "tooltip_picture": "dlc3_herald_antifighter_frigate_tooltip_picture",
+  "name": "Azgerin Suppressor Summoning",
+  "id": "dlc3_herald_unlock_antifighter_frigate",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Azgerin Suppressor"
+   }
+  ],
+  "image": "Eidolon Azgerin Suppressor"
+ },
+ "Eidolon Antimatter Osmosis Device Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Awakening",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "hud_icon": "dlc3_herald_antimatter_osmosis_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_antimatter_osmosis_unit_item_tooltip_picture",
+  "name": "Antimatter Osmosis Device Design",
+  "id": "dlc3_herald_unlock_antimatter_osmosis_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Antimatter Osmosis"
+   }
+  ],
+  "image": "Eidolon Antimatter Osmosis"
+ },
+ "Eidolon Azithel Mote Summoning": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Arrival",
+  "field_coord": [
+   1,
+   5
+  ],
+  "research_time": 50.0,
+  "hud_icon": "dlc3_herald_attack_corvette_hud_icon",
+  "tooltip_picture": "dlc3_herald_attack_corvette_tooltip_picture",
+  "name": "Azithel Mote Summoning",
+  "id": "dlc3_herald_unlock_attack_corvette",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Azithel Mote"
+   },
+   {
+    "research_subject": "Eidolon Azithel Mote Weapon Refit"
+   }
+  ],
+  "image": "Eidolon Azithel Mote"
+ },
+ "Eidolon Azithel Mote Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   4,
+   5
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Azithel Mote Summoning"
+   ]
+  ],
+  "description": "Adds light void missiles to the Azithel Mote, making them more effective vs cruisers.",
+  "hud_icon": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_attack_corvette_weapon_research_subject_tooltip_picture",
+  "name": "Azithel Mote Weapon Refit",
+  "id": "dlc3_herald_unlock_attack_corvette_weapon",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Azithel Mote Weapon Refit"
+ },
+ "Eidolon Thalkerin Revenant Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Awakening",
+  "field_coord": [
+   7,
+   2
+  ],
+  "research_time": 260.0,
+  "description": "Adds heavy void missiles to the Thalkerin Revenant, making them more effective vs capital ships.",
+  "hud_icon": "dlc3_herald_unlock_battle_capital_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_battle_capital_weapon_research_subject_tooltip_picture",
+  "name": "Thalkerin Revenant Weapon Refit",
+  "id": "dlc3_herald_unlock_battle_capital_weapon",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Thalkerin Revenant Weapon Refit"
+ },
+ "Eidolon Amalgam Bomber Strikecraft Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   4,
+   1
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Akeniel Geist Summoning"
+   ]
+  ],
+  "description": "Allows amalgam bomber strikecraft squadrons for carriers, starbases and hangars.",
+  "hud_icon": "dlc3_herald_bomber_strikecraft_hud_icon",
+  "tooltip_picture": "dlc3_herald_bomber_strikecraft_tooltip_picture",
+  "name": "Amalgam Bomber Strikecraft Design",
+  "id": "dlc3_herald_unlock_bomber_strikecraft",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Amalgam Bomber"
+ },
+ "Eidolon Quarnium Forging": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Exploitation",
+  "field_coord": [
+   6,
+   1
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Exotic Refinery Blueprint"
+   ]
+  ],
+  "windfall": [
+   "Exotics given: 1 Quarnium"
+  ],
+  "description": "Makes it possible to forge Quarnium from the Exotic Refinery.",
+  "hud_icon": "dlc3_herald_unlock_build_ultimate_exotic_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_build_ultimate_exotic_research_subject_tooltip_picture",
+  "name": "Quarnium Forging",
+  "id": "dlc3_herald_unlock_build_ultimate_exotic",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Charged Quarnium"
+   }
+  ],
+  "image": "Eidolon Quarnium Forging"
+ },
+ "Eidolon Lakhaziel Archon Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Awakening",
+  "field_coord": [
+   5,
+   2
+  ],
+  "research_time": 175.0,
+  "description": "Adds heavy void missiles to the Lakhaziel Archon, making them more effective vs capital ships.",
+  "hud_icon": "dlc3_herald_unlock_carrier_capital_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_carrier_capital_weapon_research_subject_tooltip_picture",
+  "name": "Lakhaziel Archon Weapon Refit",
+  "id": "dlc3_herald_unlock_carrier_capital_weapon",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon Lakhaziel Archon Weapon Refit"
+ },
+ "Eidolon Akeniel Geist Summoning": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   3,
+   2
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_carrier_cruiser_hud_icon",
+  "tooltip_picture": "dlc3_herald_carrier_cruiser_tooltip_picture",
+  "name": "Akeniel Geist Summoning",
+  "id": "dlc3_herald_unlock_carrier_cruiser",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Akeniel Geist"
+   },
+   {
+    "research_subject": "Eidolon Amalgam Bomber Strikecraft Design"
+   },
+   {
+    "research_subject": "Eidolon Akeniel Geist Weapon Refit"
+   }
+  ],
+  "image": "Eidolon Akeniel Geist"
+ },
+ "Eidolon Akeniel Geist Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   5,
+   2
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Akeniel Geist Summoning"
+   ]
+  ],
+  "description": "Adds medium void missiles to the Akeniel Geist, making them more effective vs cruisers and capital ships.",
+  "hud_icon": "dlc3_herald_unlock_carrier_cruiser_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_carrier_cruiser_weapon_research_subject_tooltip_picture",
+  "name": "Akeniel Geist Weapon Refit",
+  "id": "dlc3_herald_unlock_carrier_cruiser_weapon",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon Akeniel Geist Weapon Refit"
+ },
+ "Eidolon Kaziel Shade Summoning": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   2,
+   7
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_cloak_frigate_hud_icon",
+  "tooltip_picture": "dlc3_herald_cloak_frigate_tooltip_picture",
+  "name": "Kaziel Shade Summoning",
+  "id": "dlc3_herald_unlock_cloak_frigate",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Kaziel Shade"
+   },
+   {
+    "research_subject": "Eidolon Improved Cloaking"
+   }
+  ],
+  "image": "Eidolon Kaziel Shade"
+ },
+ "Eidolon Corruption Reservoir Blueprint": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Shrouding",
+  "field_coord": [
+   3,
+   1
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_corruption_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_corruption_structure_tooltip_picture",
+  "name": "Corruption Reservoir Blueprint",
+  "id": "dlc3_herald_unlock_corruption_structure",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Corruption Reservoir"
+   }
+  ],
+  "image": "Eidolon Corruption Reservoir"
+ },
+ "Eidolon Anzarien Corruptor Summoning": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Arrival",
+  "field_coord": [
+   1,
+   1
+  ],
+  "research_time": 50.0,
+  "hud_icon": "dlc3_herald_corruptor_cruiser_hud_icon",
+  "tooltip_picture": "dlc3_herald_corruptor_cruiser_tooltip_picture",
+  "name": "Anzarien Corruptor Summoning",
+  "id": "dlc3_herald_unlock_corruptor_cruiser",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Anzarien Corruptor"
+   },
+   {
+    "research_subject": "Eidolon Purging"
+   }
+  ],
+  "image": "Eidolon Anzarien Corruptor"
+ },
+ "Eidolon Purging": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   3,
+   1
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Anzarien Corruptor Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_hud_icon",
+  "tooltip_picture": "dlc3_herald_corruptor_cruiser_purge_corruption_ability_tooltip_picture",
+  "name": "Purging",
+  "id": "dlc3_herald_unlock_corruptor_cruiser_purge_ability",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "ability": "Eidolon Purge Corruption"
+   }
+  ],
+  "image": "Eidolon Purge Corruption"
+ },
+ "Eidolon Crystalline Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   2,
+   6
+  ],
+  "research_time": 90.0,
+  "description": "Allows the colonization of crystalline planets and other similar environments.",
+  "hud_icon": "trader_unlock_crystalline_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_crystalline_biosphere_research_subject_tooltip_picture",
+  "name": "Crystalline Subjugation",
+  "id": "dlc3_herald_unlock_crystalline_biosphere",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Marginal Environment Intensification"
+   }
+  ],
+  "image": "Eidolon Crystalline Colonization"
+ },
+ "Eidolon Crystal Portal Design": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_crystal_portal_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_crystal_portal_unit_item_tooltip_picture",
+  "name": "Crystal Portal Design",
+  "id": "dlc3_herald_unlock_crystal_portal_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Crystal Portal"
+   }
+  ],
+  "image": "Eidolon Crystal Portal"
+ },
+ "Eidolon Communications Node Blueprint": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   2,
+   3
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_culture_center_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_culture_center_structure_tooltip_picture",
+  "name": "Communications Node Blueprint",
+  "id": "dlc3_herald_unlock_culture_center",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Communications Node"
+   },
+   {
+    "research_subject": "Eidolon Distributed Purging"
+   },
+   {
+    "research_subject": "Eidolon Signal Nexus Unlock"
+   },
+   {
+    "research_subject": "Eidolon Coerced Hopelessness"
+   }
+  ],
+  "image": "Eidolon Communications Node"
+ },
+ "Eidolon Defense Interlink Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Consolidation",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "hud_icon": "dlc3_herald_defense_interlink_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_defense_interlink_unit_item_tooltip_picture",
+  "name": "Defense Interlink Design",
+  "id": "dlc3_herald_unlock_defense_interlink_unit_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Defense Interlink"
+   }
+  ],
+  "image": "Eidolon Defense Interlink"
+ },
+ "Eidolon Nalazhin Defiler Summoning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   5,
+   5
+  ],
+  "research_time": 175.0,
+  "hud_icon": "dlc3_herald_defiler_cruiser_hud_icon",
+  "tooltip_picture": "dlc3_herald_defiler_cruiser_tooltip_picture",
+  "name": "Nalazhin Defiler Summoning",
+  "id": "dlc3_herald_unlock_defiler_cruiser",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Nalazhin Defiler"
+   },
+   {
+    "research_subject": "Eidolon Calcification"
+   }
+  ],
+  "image": "Eidolon Nalazhin Defiler"
+ },
+ "Eidolon Calcification": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Arrival",
+  "field_coord": [
+   7,
+   5
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Nalazhin Defiler Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_defiler_cruiser_calcify_ability_hud_icon",
+  "tooltip_picture": "dlc3_herald_defiler_cruiser_calcify_ability_tooltip_picture",
+  "name": "Calcification",
+  "id": "dlc3_herald_unlock_defiler_cruiser_calcify",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "ability": "Eidolon Calcify"
+   }
+  ],
+  "image": "Eidolon Calcify"
+ },
+ "Eidolon Desert Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   3,
+   2
+  ],
+  "research_time": 105.0,
+  "description": "Allows the colonization of desert planets and other similar environments.",
+  "hud_icon": "trader_unlock_desert_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_desert_biosphere_research_subject_tooltip_picture",
+  "name": "Desert Subjugation",
+  "id": "dlc3_herald_unlock_desert_biosphere",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Variable Environment Intensification"
+   }
+  ],
+  "image": "Eidolon Desert Colonization"
+ },
+ "Eidolon Dimensional Observatory Unlock": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Adaptation",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_dimensional_observatory_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_dimensional_observatory_unit_item_tooltip_picture",
+  "name": "Dimensional Observatory Unlock",
+  "id": "dlc3_herald_unlock_dimensional_observatory_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Dimensional Observatory"
+   }
+  ],
+  "image": "Eidolon Dimensional Observatory"
+ },
+ "Eidolon Energized Lattice Design": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   6,
+   3
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Forced Generator Cycling"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_energized_lattice_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_energized_lattice_unit_item_tooltip_picture",
+  "name": "Energized Lattice Design",
+  "id": "dlc3_herald_unlock_energized_lattice_item",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Energized Lattice"
+   }
+  ],
+  "image": "Eidolon Energized Lattice"
+ },
+ "Eidolon Exotic Refinery Blueprint": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Exploitation",
+  "field_coord": [
+   4,
+   1
+  ],
+  "research_time": 155.0,
+  "hud_icon": "dlc3_herald_exotic_factory_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_exotic_factory_structure_tooltip_picture",
+  "name": "Exotic Refinery Blueprint",
+  "id": "dlc3_herald_unlock_exotic_factory_structure",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Exotic Refinery"
+   },
+   {
+    "research_subject": "Eidolon Quarnium Forging"
+   },
+   {
+    "research_subject": "Eidolon Infused Exotics"
+   }
+  ],
+  "image": "Eidolon Exotic Refinery"
+ },
+ "Eidolon Ferrous Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   2,
+   7
+  ],
+  "research_time": 90.0,
+  "description": "Allows the colonization of ferrous planets.",
+  "hud_icon": "trader_unlock_ferrous_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_ferrous_biosphere_research_subject_tooltip_picture",
+  "name": "Ferrous Subjugation",
+  "id": "dlc3_herald_unlock_ferrous_biosphere",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "image": "Eidolon Ferrous Colonization"
+ },
+ "Eidolon Gas Giant Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Subjugation",
+  "field_coord": [
+   5,
+   0
+  ],
+  "research_time": 175.0,
+  "description": "Allows the colonization of gas giants.",
+  "hud_icon": "trader_unlock_gas_giant_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_gas_giant_biosphere_research_subject_tooltip_picture",
+  "name": "Gas Giant Subjugation",
+  "id": "dlc3_herald_unlock_gas_giant_biosphere",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon Gas Giant Colonization"
+ },
+ "Eidolon Phase Dart Defense Platform Design": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Consolidation",
+  "field_coord": [
+   1,
+   1
+  ],
+  "research_time": 50.0,
+  "hud_icon": "dlc3_herald_heavy_defense_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_heavy_defense_structure_tooltip_picture",
+  "name": "Phase Dart Defense Platform Design",
+  "id": "dlc3_herald_unlock_heavy_defense_structure",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Phase Dart Defense Platform"
+   },
+   {
+    "research_subject": "Eidolon Phase Dart Platform Weapon Refit"
+   }
+  ],
+  "image": "Eidolon Phase Dart Defense Platform"
+ },
+ "Eidolon Phase Dart Platform Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Consolidation",
+  "field_coord": [
+   4,
+   1
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Phase Dart Defense Platform Design"
+   ]
+  ],
+  "description": "Adds heavy void missiles to the Phase Dart Defense Platform, making them more effective vs capital ships.",
+  "hud_icon": "dlc3_herald_unlock_heavy_defense_structure_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_heavy_defense_structure_weapon_research_subject_tooltip_picture",
+  "name": "Phase Dart Platform Weapon Refit",
+  "id": "dlc3_herald_unlock_heavy_defense_structure_weapon",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Phase Dart Platform Weapon Refit"
+ },
+ "Eidolon Nethril Husk Summoning": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Arrival",
+  "field_coord": [
+   0,
+   2
+  ],
+  "research_time": 40.0,
+  "hud_icon": "dlc3_herald_heavy_frigate_hud_icon",
+  "tooltip_picture": "dlc3_herald_heavy_frigate_tooltip_picture",
+  "name": "Nethril Husk Summoning",
+  "id": "dlc3_herald_unlock_heavy_frigate",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "image": "Eidolon Nethril Husk"
+ },
+ "Eidolon Nethril Husk Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "description": "Adds light shock cannons to the Nethril Husk, making them more effective vs corvettes.",
+  "hud_icon": "dlc3_herald_unlock_heavy_frigate_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_heavy_frigate_weapon_research_subject_tooltip_picture",
+  "name": "Nethril Husk Weapon Refit",
+  "id": "dlc3_herald_unlock_heavy_frigate_weapon",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "image": "Eidolon Nethril Husk Weapon Refit"
+ },
+ "Eidolon Long Range Jumps": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Traversal",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "description": "Phase drive isolators are tuned to keep corruption at safe levels during phase jumps to distant star systems.",
+  "hud_icon": "trader_unlock_hyperspace_between_stars_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_hyperspace_between_stars_research_subject_tooltip_picture",
+  "name": "Long Range Jumps",
+  "id": "dlc3_herald_unlock_hyperspace_between_stars",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "image": "Eidolon Long Range Jumps"
+ },
+ "Eidolon Arctic Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Subjugation",
+  "field_coord": [
+   1,
+   0
+  ],
+  "research_time": 50.0,
+  "description": "Allows the colonization of ice planets and other similar environments.",
+  "hud_icon": "trader_unlock_ice_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_ice_biosphere_research_subject_tooltip_picture",
+  "name": "Arctic Subjugation",
+  "id": "dlc3_herald_unlock_ice_biosphere",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Extreme Environment Intensification"
+   }
+  ],
+  "image": "Eidolon Arctic Colonization"
+ },
+ "Eidolon Immolation Beams": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   5,
+   5
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "description": "Allows beam weapons to burn corruption off of targets, increasing their damage.",
+  "hud_icon": "dlc3_herald_immolation_beam_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_immolation_beam_unit_item_tooltip_picture",
+  "name": "Immolation Beams",
+  "id": "dlc3_herald_unlock_immolation_beam",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Immolation Beam"
+   },
+   {
+    "research_subject": "Eidolon Immolation Efficiency"
+   }
+  ],
+  "image": "Eidolon Immolation Beam"
+ },
+ "Eidolon Infused Armor Design": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Awakening",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_infused_armor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_infused_armor_unit_item_tooltip_picture",
+  "name": "Infused Armor Design",
+  "id": "dlc3_herald_unlock_infused_armor_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Infused Armor"
+   },
+   {
+    "research_subject": "Eidolon Infused Reactor Design"
+   }
+  ],
+  "image": "Eidolon Infused Armor"
+ },
+ "Eidolon Infused Reactor Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Awakening",
+  "field_coord": [
+   4,
+   4
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Infused Armor Design"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_infused_reactor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_infused_reactor_unit_item_tooltip_picture",
+  "name": "Infused Reactor Design",
+  "id": "dlc3_herald_unlock_infused_reactor_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Infused Reactor"
+   }
+  ],
+  "image": "Eidolon Infused Reactor"
+ },
+ "Eidolon Irradiated Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Subjugation",
+  "field_coord": [
+   1,
+   1
+  ],
+  "research_time": 50.0,
+  "description": "Allows the colonization of irradiated planets and other similar environments.",
+  "hud_icon": "trader_unlock_irradiated_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_irradiated_biosphere_research_subject_tooltip_picture",
+  "name": "Irradiated Subjugation",
+  "id": "dlc3_herald_unlock_irradiated_biosphere",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "image": "Eidolon Irradiated Colonization"
+ },
+ "Eidolon Shock Cannon Defense Platform Design": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Consolidation",
+  "field_coord": [
+   0,
+   0
+  ],
+  "research_time": 40.0,
+  "hud_icon": "dlc3_herald_light_defense_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_light_defense_structure_tooltip_picture",
+  "name": "Shock Cannon Defense Platform Design",
+  "id": "dlc3_herald_unlock_light_defense_structure",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "image": "Eidolon Shock Cannon Defense Platform"
+ },
+ "Eidolon Israthil Silencer Summoning": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Arrival",
+  "field_coord": [
+   6,
+   4
+  ],
+  "research_time": 235.0,
+  "hud_icon": "dlc3_herald_long_range_cruiser_hud_icon",
+  "tooltip_picture": "dlc3_herald_long_range_cruiser_tooltip_picture",
+  "name": "Israthil Silencer Summoning",
+  "id": "dlc3_herald_unlock_long_range_cruiser",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Israthil Silencer"
+   }
+  ],
+  "image": "Eidolon Israthil Silencer"
+ },
+ "Eidolon Geomagnetic Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Subjugation",
+  "field_coord": [
+   7,
+   0
+  ],
+  "research_time": 260.0,
+  "description": "Allows the colonization of geomagnetic planets and other similar environments.",
+  "hud_icon": "trader_unlock_magnetic_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_magnetic_biosphere_research_subject_tooltip_picture",
+  "name": "Geomagnetic Subjugation",
+  "id": "dlc3_herald_unlock_magnetic_biosphere",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Geomagnetic Colonization"
+ },
+ "Eidolon Matter Infuser Design": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Exploitation",
+  "field_coord": [
+   4,
+   4
+  ],
+  "research_time": 155.0,
+  "hud_icon": "dlc3_herald_matter_infuser_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_matter_infuser_unit_item_tooltip_picture",
+  "name": "Matter Infuser Design",
+  "id": "dlc3_herald_unlock_matter_infuser_unit_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Matter Infuser"
+   }
+  ],
+  "image": "Eidolon Matter Infuser"
+ },
+ "Eidolon Metal Portal Design": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   2,
+   4
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_metal_portal_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_metal_portal_unit_item_tooltip_picture",
+  "name": "Metal Portal Design",
+  "id": "dlc3_herald_unlock_metal_portal_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Metal Portal"
+   }
+  ],
+  "image": "Eidolon Metal Portal"
+ },
+ "Eidolon Metamorphic Hardening Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   4,
+   7
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Fused Plating"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_metamorphic_structure_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_metamorphic_structure_unit_item_tooltip_picture",
+  "name": "Metamorphic Hardening Design",
+  "id": "dlc3_herald_unlock_metamorphic_structure_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Metamorphic Hardening"
+   }
+  ],
+  "image": "Eidolon Metamorphic Hardening"
+ },
+ "Eidolon Sythren Onslaught Summoning": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Arrival",
+  "field_coord": [
+   3,
+   6
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_missile_frigate_hud_icon",
+  "tooltip_picture": "dlc3_herald_missile_frigate_tooltip_picture",
+  "name": "Sythren Onslaught Summoning",
+  "id": "dlc3_herald_unlock_missile_frigate",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Sythren Onslaught"
+   }
+  ],
+  "image": "Eidolon Sythren Onslaught"
+ },
+ "Eidolon Celerity Catalyzer Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Traversal",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "hud_icon": "dlc3_herald_movement_boost_field_unit_icon_hud_icon",
+  "tooltip_picture": "dlc3_herald_movement_boost_field_unit_icon_tooltip_picture",
+  "name": "Celerity Catalyzer Design",
+  "id": "dlc3_herald_unlock_movement_boost_field_item",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Celerity Catalyzer"
+   }
+  ],
+  "image": "Eidolon dlc3_herald_movement_boost_field_unit_icon_tooltip_picture"
+ },
+ "Eidolon Null Catalyst Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   4,
+   2
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Corrupted Null Bolts"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_null_catalyst_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_null_catalyst_unit_item_tooltip_picture",
+  "name": "Null Catalyst Design",
+  "id": "dlc3_herald_unlock_null_catalyst_item",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Null Catalyst"
+   }
+  ],
+  "image": "Eidolon Null Catalyst"
+ },
+ "Eidolon Corrupted Null Bolts": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Eradication",
+  "field_coord": [
+   3,
+   3
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "buff_providers": [
+   {
+    "scope": "all_owned_units",
+    "all_owned_units_target_filter": {
+     "unit_types": [
+      "capital_ship",
+      "corvette",
+      "cruiser",
+      "frigate",
+      "starbase",
+      "structure",
+      "super_capital_ship",
+      "titan"
+     ],
+     "ownerships": [
+      "self"
+     ],
+     "constraints": [
+      {
+       "constraint_type": "composite_or",
+       "constraints": [
+        {
+         "constraint_type": "has_weapon",
+         "weapon_type": "normal",
+         "tag": "null_cannon"
+        },
+        {
+         "constraint_type": "has_weapon",
+         "weapon_type": "normal",
+         "tag": "beam"
+        }
+       ]
+      }
+     ]
+    },
+    "extra_level_prerequisites": [
+     [
+      [
+       "dlc3_herald_upgrade_null_weapons_corruption_0"
+      ]
+     ],
+     [
+      [
+       "dlc3_herald_upgrade_null_weapons_corruption_1"
+      ]
+     ]
+    ],
+    "action_data_source": "dlc3_herald_unlock_null_weapons_corruption",
+    "buff": "dlc3_herald_unlock_null_weapons_corruption"
+   }
+  ],
+  "description": "Allows Null Cannons and Null Beams to generate corruption for the firer based on the amount of damage they deal.",
+  "hud_icon": "dlc3_herald_unlock_null_weapons_corruption_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_null_weapons_corruption_research_subject_tooltip_picture",
+  "name": "Corrupted Null Bolts",
+  "id": "dlc3_herald_unlock_null_weapons_corruption",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Null Catalyst Design"
+   },
+   {
+    "research_subject": "Eidolon Exposed Null Cores"
+   }
+  ],
+  "image": "Eidolon Corrupted Null Bolts"
+ },
+ "Eidolon Oceanic Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   3,
+   3
+  ],
+  "research_time": 105.0,
+  "description": "Allows the colonization of oceanic planets.",
+  "hud_icon": "trader_unlock_oceanic_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_oceanic_biosphere_research_subject_tooltip_picture",
+  "name": "Oceanic Subjugation",
+  "id": "dlc3_herald_unlock_oceanic_biosphere",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "image": "Eidolon Oceanic Colonization"
+ },
+ "Eidolon Phasic Network Node Design": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   2,
+   1
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_phasic_network_node_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_phasic_network_node_unit_item_tooltip_picture",
+  "name": "Phasic Network Node Design",
+  "id": "dlc3_herald_unlock_phasic_network_node_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Phasic Network Node"
+   }
+  ],
+  "image": "Eidolon Phasic Network Node"
+ },
+ "Eidolon Migration Portal Design": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Adaptation",
+  "field_coord": [
+   3,
+   0
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_population_portal_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_population_portal_unit_item_tooltip_picture",
+  "name": "Migration Portal Design",
+  "id": "dlc3_herald_unlock_population_portal_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Migration Portal"
+   }
+  ],
+  "image": "Eidolon Migration Portal"
+ },
+ "Eidolon Power Broker Design": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Adaptation",
+  "field_coord": [
+   1,
+   0
+  ],
+  "research_time": 50.0,
+  "prerequisites": [
+   [
+    "Eidolon Commercial Infiltration"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_power_broker_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_power_broker_unit_item_tooltip_picture",
+  "name": "Power Broker Design",
+  "id": "dlc3_herald_unlock_power_broker_item",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Power Brokerage"
+   }
+  ],
+  "image": "Eidolon Power Brokerage"
+ },
+ "Eidolon Orbital Extraction": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Exploitation",
+  "field_coord": [
+   0,
+   3
+  ],
+  "research_time": 40.0,
+  "description": "Extractors augment planetary mining by gathering resources from available asteroids.",
+  "hud_icon": "dlc3_herald_metal_extractor_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_metal_extractor_structure_tooltip_picture",
+  "name": "Orbital Extraction",
+  "id": "dlc3_herald_unlock_resource_extractor_structures",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Crystal Extractor"
+   },
+   {
+    "unit": "Eidolon Metal Extractor"
+   },
+   {
+    "research_subject": "Eidolon EM Deposit Mapping"
+   }
+  ],
+  "image": "Eidolon Metal Extractor"
+ },
+ "Eidolon Retributive Capacitive Shield Design": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Awakening",
+  "field_coord": [
+   7,
+   4
+  ],
+  "research_time": 175.0,
+  "hud_icon": "dlc3_herald_retributive_capacitive_shield_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_retributive_capacitive_shield_unit_item_tooltip_picture",
+  "name": "Retributive Capacitive Shield Design",
+  "id": "dlc3_herald_unlock_retributive_capacitive_field_item",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Retributive Capacitive Shield"
+   }
+  ],
+  "image": "Eidolon Retributive Capacitive Shield"
+ },
+ "Eidolon Safeguard Device Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Awakening",
+  "field_coord": [
+   6,
+   3
+  ],
+  "research_time": 235.0,
+  "hud_icon": "dlc3_herald_safeguard_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_safeguard_unit_item_tooltip_picture",
+  "name": "Safeguard Device Design",
+  "id": "dlc3_herald_unlock_safeguard_item",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Safeguard Device"
+   }
+  ],
+  "image": "Eidolon Safeguard Device"
+ },
+ "Eidolon Scatter Field Design": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Consolidation",
+  "field_coord": [
+   3,
+   3
+  ],
+  "research_time": 105.0,
+  "hud_icon": "dlc3_herald_scatter_field_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_scatter_field_unit_item_tooltip_picture",
+  "name": "Scatter Field Design",
+  "id": "dlc3_herald_unlock_scatter_field_unit_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Scatter Field"
+   }
+  ],
+  "image": "Eidolon Scatter Field"
+ },
+ "Eidolon Jump Inhibition Immunity": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Traversal",
+  "field_coord": [
+   7,
+   2
+  ],
+  "research_time": 260.0,
+  "description": "Makes Scout Corvettes ignore the effect of Phase Jump Inhibitors.",
+  "hud_icon": "dlc3_herald_scout_corvette_unstoppable_phase_jump_ability_hud_icon",
+  "tooltip_picture": "dlc3_herald_scout_corvette_unstoppable_phase_jump_ability_tooltip_picture",
+  "name": "Jump Inhibition Immunity",
+  "id": "dlc3_herald_unlock_scout_unstoppable_phase_jump",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "ability": "Eidolon Jump Inhibition Immunity"
+   }
+  ],
+  "image": "Eidolon Jump Inhibition Immunity"
+ },
+ "Eidolon Forced Generator Cycling": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   4,
+   2
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Dynamic Shield Charging"
+   ]
+  ],
+  "buff_providers": [
+   {
+    "scope": "all_owned_units",
+    "all_owned_units_target_filter": {
+     "unit_types": [
+      "capital_ship",
+      "corvette",
+      "cruiser",
+      "frigate",
+      "starbase",
+      "structure",
+      "super_capital_ship",
+      "titan"
+     ],
+     "ownerships": [
+      "self"
+     ]
+    },
+    "action_data_source": "dlc3_herald_unlock_shield_burst_restore",
+    "buff": "dlc3_herald_unlock_shield_burst_restore"
+   }
+  ],
+  "description": "Grants access to shield burst restoration. When shield points reach zero, they will automatically be restored to a significant percentage of their maximum points after a short charging time.",
+  "hud_icon": "dlc3_herald_unlock_shield_burst_restore_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_shield_burst_restore_research_subject_tooltip_picture",
+  "name": "Forced Generator Cycling",
+  "id": "dlc3_herald_unlock_shield_burst_restore",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Energized Lattice Design"
+   },
+   {
+    "research_subject": "Eidolon Superior Generator Cycling"
+   }
+  ],
+  "image": "Eidolon Forced Generator Cycling"
+ },
+ "Eidolon Sazhirel Annihilator Summoning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Awakening",
+  "field_coord": [
+   5,
+   3
+  ],
+  "research_time": 175.0,
+  "hud_icon": "dlc3_herald_siege_capital_ship_main_view_icon",
+  "tooltip_picture": "dlc3_herald_siege_capital_ship_main_view_icon",
+  "name": "Sazhirel Annihilator Summoning",
+  "id": "dlc3_herald_unlock_siege_capital",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "tauranite": 1,
+  "image": "Eidolon dlc3_herald_siege_capital_ship_main_view_icon"
+ },
+ "Eidolon Sazhirel Annihilator Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   8,
+   1
+  ],
+  "research_time": 330.0,
+  "description": "Adds a phase cannon to the Sazhirel Annihilator, making them more effective vs starbases and titans.",
+  "hud_icon": "dlc3_herald_unlock_siege_capital_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_siege_capital_weapon_research_subject_tooltip_picture",
+  "name": "Sazhirel Annihilator Weapon Refit",
+  "id": "dlc3_herald_unlock_siege_capital_weapon",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Sazhirel Annihilator Weapon Refit"
+ },
+ "Eidolon Sirathaz Scourge Summoning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "hud_icon": "dlc3_herald_siege_cruiser_hud_icon",
+  "tooltip_picture": "dlc3_herald_siege_cruiser_tooltip_picture",
+  "name": "Sirathaz Scourge Summoning",
+  "id": "dlc3_herald_unlock_siege_cruiser",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Sirathaz Scourge"
+   },
+   {
+    "research_subject": "Eidolon Sirathaz Scourge Weapon Refit"
+   }
+  ],
+  "image": "Eidolon Sirathaz Scourge"
+ },
+ "Eidolon Sirathaz Scourge Weapon Refit": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Arrival",
+  "field_coord": [
+   7,
+   3
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Sirathaz Scourge Summoning"
+   ]
+  ],
+  "description": "Adds a super heavy phase dart to Scourge assault cruisers, making them more effective vs starbases and titans.",
+  "hud_icon": "dlc3_herald_unlock_siege_cruiser_weapon_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_siege_cruiser_weapon_research_subject_tooltip_picture",
+  "name": "Sirathaz Scourge Weapon Refit",
+  "id": "dlc3_herald_unlock_siege_cruiser_weapon",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Sirathaz Scourge Weapon Refit"
+ },
+ "Eidolon Signal Nexus Unlock": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   3,
+   2
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_unlock_signal_nexus_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_signal_nexus_research_subject_tooltip_picture",
+  "name": "Signal Nexus Unlock",
+  "id": "dlc3_herald_unlock_signal_nexus_item",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Signal Nexus"
+   },
+   {
+    "research_subject": "Eidolon Thought Harvester Unlock"
+   }
+  ],
+  "image": "Eidolon Signal Nexus Unlock"
+ },
+ "Eidolon Iskazhar Epitaph Summoning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Consolidation",
+  "field_coord": [
+   5,
+   2
+  ],
+  "research_time": 175.0,
+  "hud_icon": "dlc3_herald_starbase_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_tooltip_picture",
+  "name": "Iskazhar Epitaph Summoning",
+  "id": "dlc3_herald_unlock_starbase",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Iskazhar Epitaph"
+   },
+   {
+    "research_subject": "Eidolon Consumption Matrix Design"
+   },
+   {
+    "research_subject": "Eidolon Epitaph Oblivion Silo Design"
+   },
+   {
+    "research_subject": "Eidolon Planetary Shield Design"
+   },
+   {
+    "research_subject": "Eidolon Dimensional Shifter Design"
+   }
+  ],
+  "image": "Eidolon Iskazhar Epitaph"
+ },
+ "Eidolon Consumption Matrix Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Consolidation",
+  "field_coord": [
+   7,
+   1
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_starbase_consumption_matrix_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_consumption_matrix_unit_item_tooltip_picture",
+  "name": "Consumption Matrix Design",
+  "id": "dlc3_herald_unlock_starbase_consumption_matrix_item",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Consumption Matrix"
+   }
+  ],
+  "image": "Eidolon Consumption Matrix"
+ },
+ "Eidolon Epitaph Oblivion Silo Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Consolidation",
+  "field_coord": [
+   8,
+   1
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_starbase_corruption_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_corruption_unit_item_tooltip_picture",
+  "name": "Epitaph Oblivion Silo Design",
+  "id": "dlc3_herald_unlock_starbase_corruption_item",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Oblivion Silo"
+ },
+ "Eidolon Phase Destabilizer Design": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Consolidation",
+  "field_coord": [
+   6,
+   3
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "dlc3_herald_unlock_starbase"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_phase_jump_inhibitor_unit_item_tooltip_picture",
+  "name": "Phase Destabilizer Design",
+  "id": "dlc3_herald_unlock_starbase_phase_jump_inhibitor_item",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Phase Destablizer"
+ },
+ "Eidolon Planetary Shield Design": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Consolidation",
+  "field_coord": [
+   5,
+   0
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_starbase_planetary_shield_array_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_planetary_shield_array_unit_item_tooltip_picture",
+  "name": "Planetary Shield Design",
+  "id": "dlc3_herald_unlock_starbase_planetary_shield_item",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Planetary Shield"
+   }
+  ],
+  "image": "Eidolon Planetary Shield"
+ },
+ "Eidolon Dimensional Shifter Design": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Consolidation",
+  "field_coord": [
+   9,
+   2
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_starbase_teleporter_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_starbase_teleporter_unit_item_tooltip_picture",
+  "name": "Dimensional Shifter Design",
+  "id": "dlc3_herald_unlock_starbase_teleporter_item",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Dimensional Shifter"
+   }
+  ],
+  "image": "Eidolon Dimensional Shifter"
+ },
+ "Eidolon Stigmata Projector Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Awakening",
+  "field_coord": [
+   2,
+   3
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_stigmata_projector_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_stigmata_projector_unit_item_tooltip_picture",
+  "name": "Stigmata Projector Design",
+  "id": "dlc3_herald_unlock_stigmata_projector_item",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Stigmata Projector"
+   }
+  ],
+  "image": "Eidolon Stigmata Projector"
+ },
+ "Eidolon Command Ship Blueprint": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Awakening",
+  "field_coord": [
+   7,
+   1
+  ],
+  "research_time": 260.0,
+  "hud_icon": "dlc3_herald_max_supply_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_max_supply_0_research_subject_tooltip_picture",
+  "name": "Command Ship Blueprint",
+  "id": "dlc3_herald_unlock_super_capital_ship",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Pursuit Provisioning"
+ },
+ "Eidolon Kalizaeth Profaner Summoning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Awakening",
+  "field_coord": [
+   5,
+   4
+  ],
+  "research_time": 175.0,
+  "hud_icon": "dlc3_herald_support_capital_ship_main_view_icon",
+  "tooltip_picture": "dlc3_herald_support_capital_ship_main_view_icon",
+  "name": "Kalizaeth Profaner Summoning",
+  "id": "dlc3_herald_unlock_support_capital",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "kalanide": 1,
+  "image": "Eidolon dlc3_herald_support_capital_ship_main_view_icon"
+ },
+ "Eidolon Support Defense Platform Design": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Consolidation",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "hud_icon": "dlc3_herald_support_defense_structure_hud_icon",
+  "tooltip_picture": "dlc3_herald_support_defense_structure_tooltip_picture",
+  "name": "Support Defense Platform Design",
+  "id": "dlc3_herald_unlock_support_defense_structure",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Support Defense Platform"
+   },
+   {
+    "research_subject": "Eidolon Support Defense Platform Hangar Refit"
+   }
+  ],
+  "image": "Eidolon Support Defense Platform"
+ },
+ "Eidolon Support Defense Platform Hangar Refit": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Consolidation",
+  "field_coord": [
+   4,
+   0
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Support Defense Platform Design"
+   ]
+  ],
+  "description": "Adds Amalgam strikecraft hangars to support defense platforms, allowing them to protect a much wider area of space.",
+  "hud_icon": "dlc3_herald_unlock_support_defense_structure_hangar_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_support_defense_structure_hangar_research_subject_tooltip_picture",
+  "name": "Support Defense Platform Hangar Refit",
+  "id": "dlc3_herald_unlock_support_defense_structure_hangar",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Support Defense Platform Hangar Refit"
+ },
+ "Eidolon Primordial Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   2,
+   8
+  ],
+  "research_time": 90.0,
+  "description": "Allows the colonization of primordial planets and other similar environments.",
+  "hud_icon": "trader_unlock_swamp_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_swamp_biosphere_research_subject_tooltip_picture",
+  "name": "Primordial Subjugation",
+  "id": "dlc3_herald_unlock_swamp_biosphere",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "image": "Eidolon Primordial Colonization"
+ },
+ "Eidolon Terran Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "description": "Allows the colonization of terran planets.",
+  "hud_icon": "vasari_unlock_terran_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "vasari_unlock_terran_biosphere_research_subject_tooltip_picture",
+  "name": "Terran Subjugation",
+  "id": "dlc3_herald_unlock_terran_biosphere",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "image": "Eidolon Terran Occupation"
+ },
+ "Eidolon Thought Harvester Unlock": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Coercion",
+  "field_coord": [
+   6,
+   2
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Signal Nexus Unlock"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_unlock_thought_harvester_item_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_unlock_thought_harvester_item_research_subject_tooltip_picture",
+  "name": "Thought Harvester Unlock",
+  "id": "dlc3_herald_unlock_thought_harvester_item",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Thought Harvester"
+   }
+  ],
+  "image": "Eidolon Thought Harvester Unlock"
+ },
+ "Eidolon Zhaltharien Anathema Summoning": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   8,
+   3
+  ],
+  "research_time": 330.0,
+  "hud_icon": "dlc3_titan_hud_icon",
+  "tooltip_picture": "dlc3_titan_tooltip_picture",
+  "name": "Zhaltharien Anathema Summoning",
+  "id": "dlc3_herald_unlock_titan",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "unlocks": [
+   {
+    "unit": "Eidolon Zhaltharien Anathema"
+   },
+   {
+    "research_subject": "Eidolon Cloak Generator Design"
+   },
+   {
+    "research_subject": "Eidolon Anathema Oblivion Silo Design"
+   },
+   {
+    "research_subject": "Eidolon Anathema Phase Cannon Array Design"
+   }
+  ],
+  "image": "Eidolon dlc3_titan_tooltip_picture"
+ },
+ "Eidolon Cloak Generator Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   9,
+   4
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_titan_crest_cloaking_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_crest_cloaking_unit_item_tooltip_picture",
+  "name": "Cloak Generator Design",
+  "id": "dlc3_herald_unlock_titan_cloaking_crest_unit_item",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Cloak Generator"
+   }
+  ],
+  "image": "Eidolon Cloak Generator"
+ },
+ "Eidolon Anathema Oblivion Silo Design": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   9,
+   3
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_titan_crest_corruption_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_crest_corruption_unit_item_tooltip_picture",
+  "name": "Anathema Oblivion Silo Design",
+  "id": "dlc3_herald_unlock_titan_corruption_crest_unit_item",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Oblivion Silo"
+   }
+  ],
+  "image": "Eidolon Oblivion Silo"
+ },
+ "Eidolon Anathema Phase Cannon Array Design": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Awakening",
+  "field_coord": [
+   9,
+   2
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "hud_icon": "dlc3_herald_titan_unlock_phase_cannon_weapon_unit_item_hud_icon",
+  "tooltip_picture": "dlc3_herald_titan_unlock_phase_cannon_weapon_unit_item_tooltip_picture",
+  "name": "Anathema Phase Cannon Array Design",
+  "id": "dlc3_herald_unlock_titan_phase_cannon_unit_item",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "unlocks": [
+   {
+    "unit_item": "Eidolon Phase Cannon Array"
+   }
+  ],
+  "image": "Eidolon Phase Cannon Array"
+ },
+ "Eidolon Volcanic Subjugation": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Subjugation",
+  "field_coord": [
+   1,
+   2
+  ],
+  "research_time": 50.0,
+  "description": "Allows the colonization of volcanic planets.",
+  "hud_icon": "trader_unlock_volcanic_biosphere_research_subject_hud_icon",
+  "tooltip_picture": "trader_unlock_volcanic_biosphere_research_subject_tooltip_picture",
+  "name": "Volcanic Subjugation",
+  "id": "dlc3_herald_unlock_volcanic_biosphere",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "image": "Eidolon Volcanic Colonization"
+ },
+ "Eidolon Wormhole Navigation": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Traversal",
+  "field_coord": [
+   5,
+   0
+  ],
+  "research_time": 175.0,
+  "description": "Phase navigation sensors are adjusted to account for spatial distortions, allowing ships to safely traverse through wormholes.",
+  "hud_icon": "trader_wormhole_travel_research_subject_hud_icon",
+  "tooltip_picture": "trader_wormhole_travel_research_subject_tooltip_picture",
+  "name": "Wormhole Navigation",
+  "id": "dlc3_herald_unlock_wormhole_travel",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon Wormhole Navigation"
+ },
+ "Eidolon Persistent Afterimage": {
+  "domain": "Civilian",
+  "tier": "Civilian V",
+  "field": "Shrouding",
+  "field_coord": [
+   9,
+   2
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Afterimage"
+   ]
+  ],
+  "description": "Improves the Afterimage chance of becoming a Phase Echo and the duration for your cruisers and frigates.",
+  "hud_icon": "dlc3_herald_upgrade_afterimage_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_afterimage_research_subject_tooltip_picture",
+  "name": "Persistent Afterimage",
+  "id": "dlc3_herald_upgrade_afterimage",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Persistent Afterimage"
+ },
+ "Eidolon Infused Exotics": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Exploitation",
+  "field_coord": [
+   5,
+   2
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Exotic Refinery Blueprint"
+   ]
+  ],
+  "exotic_factory_modifiers": [
+   "Decreases Indurium, Andvar, Tauranite, Kalanide Exotic Build Time by 10%"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_all_exotic_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_all_exotic_0_research_subject_tooltip_picture",
+  "name": "Infused Exotics",
+  "id": "dlc3_herald_upgrade_all_exotic_0",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Saturated Exotics"
+   }
+  ],
+  "image": "Eidolon Infused Exotics"
+ },
+ "Eidolon Saturated Exotics": {
+  "domain": "Civilian",
+  "tier": "Civilian V",
+  "field": "Exploitation",
+  "field_coord": [
+   9,
+   2
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Infused Exotics"
+   ]
+  ],
+  "exotic_factory_modifiers": [
+   "Decreases Indurium, Andvar, Tauranite, Kalanide Exotic Build Time by 15%"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_all_exotic_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_all_exotic_1_research_subject_tooltip_picture",
+  "name": "Saturated Exotics",
+  "id": "dlc3_herald_upgrade_all_exotic_1",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Saturated Exotics"
+ },
+ "Eidolon Isolation Reactors": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   3,
+   4
+  ],
+  "research_time": 105.0,
+  "unit_modifiers": [
+   "Max. Antimatter +20%"
+  ],
+  "description": "Increases maximum antimatter points.",
+  "hud_icon": "dlc3_herald_upgrade_antimatter_points_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_antimatter_points_0_research_subject_tooltip_picture",
+  "name": "Isolation Reactors",
+  "id": "dlc3_herald_upgrade_antimatter_points_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Antiparticle Harvesting"
+   }
+  ],
+  "image": "Eidolon Isolation Reactors"
+ },
+ "Eidolon Antiparticle Harvesting": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   4,
+   4
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Isolation Reactors"
+   ]
+  ],
+  "unit_modifiers": [
+   "Antimatter Regeneration +20%"
+  ],
+  "description": "Increases antimatter regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_antimatter_points_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_antimatter_points_1_research_subject_tooltip_picture",
+  "name": "Antiparticle Harvesting",
+  "id": "dlc3_herald_upgrade_antimatter_points_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Active Reaction Chaining"
+   }
+  ],
+  "image": "Eidolon Antiparticle Harvesting"
+ },
+ "Eidolon Active Reaction Chaining": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   7,
+   4
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Antiparticle Harvesting"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Antimatter +15%",
+   "Antimatter Regeneration +15%"
+  ],
+  "description": "Further increases maximum antimatter points and antimatter regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_antimatter_points_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_antimatter_points_2_research_subject_tooltip_picture",
+  "name": "Active Reaction Chaining",
+  "id": "dlc3_herald_upgrade_antimatter_points_2",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Active Reaction Chaining"
+ },
+ "Eidolon Lithic Armor Retention": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   2,
+   5
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Crystalline Armor"
+   ]
+  ],
+  "unit_modifiers": [
+   "Armor Regeneration In Combat +0.2"
+  ],
+  "description": "Improves armor regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_armor_combat_regen_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_combat_regen_0_research_subject_tooltip_picture",
+  "name": "Lithic Armor Retention",
+  "id": "dlc3_herald_upgrade_armor_combat_regen_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Subductive Regeneration"
+   }
+  ],
+  "image": "Eidolon Lithic Armor Retention"
+ },
+ "Eidolon Subductive Regeneration": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   6,
+   5
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Lithic Armor Retention"
+   ]
+  ],
+  "unit_modifiers": [
+   "Armor Regeneration In Combat +0.3"
+  ],
+  "description": "Improves armor regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_armor_combat_regen_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_combat_regen_1_research_subject_tooltip_picture",
+  "name": "Subductive Regeneration",
+  "id": "dlc3_herald_upgrade_armor_combat_regen_1",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Continuous Renewal"
+   }
+  ],
+  "image": "Eidolon Subductive Regeneration"
+ },
+ "Eidolon Continuous Renewal": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Continuance",
+  "field_coord": [
+   9,
+   5
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Subductive Regeneration"
+   ]
+  ],
+  "unit_modifiers": [
+   "Armor Regeneration In Combat +0.5"
+  ],
+  "description": "Improves armor regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_armor_combat_regen_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_combat_regen_2_research_subject_tooltip_picture",
+  "name": "Continuous Renewal",
+  "id": "dlc3_herald_upgrade_armor_combat_regen_2",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Continuous Renewal"
+ },
+ "Eidolon Crystalline Armor": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Continuance",
+  "field_coord": [
+   1,
+   6
+  ],
+  "research_time": 50.0,
+  "unit_modifiers": [
+   "Max. Armor Points +5%",
+   "Armor Regeneration +5%"
+  ],
+  "description": "Increases maximum armor points and armor regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_armor_points_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_points_0_research_subject_tooltip_picture",
+  "name": "Crystalline Armor",
+  "id": "dlc3_herald_upgrade_armor_points_0",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Lithic Armor Retention"
+   },
+   {
+    "research_subject": "Eidolon Fused Plating"
+   }
+  ],
+  "image": "Eidolon Crystalline Armor"
+ },
+ "Eidolon Fused Plating": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   3,
+   6
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Crystalline Armor"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Armor Points +5%",
+   "Armor Regeneration +5%"
+  ],
+  "description": "Further increases maximum armor points and armor regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_armor_points_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_points_1_research_subject_tooltip_picture",
+  "name": "Fused Plating",
+  "id": "dlc3_herald_upgrade_armor_points_1",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Metamorphic Hardening Design"
+   },
+   {
+    "research_subject": "Eidolon Refractive Materials"
+   }
+  ],
+  "image": "Eidolon Fused Plating"
+ },
+ "Eidolon Refractive Materials": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   5,
+   6
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Fused Plating"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Armor Points +10%",
+   "Armor Regeneration +10%"
+  ],
+  "description": "Further increases maximum armor points and armor regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_armor_points_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_points_2_research_subject_tooltip_picture",
+  "name": "Refractive Materials",
+  "id": "dlc3_herald_upgrade_armor_points_2",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Metamaterial Armor"
+   },
+   {
+    "research_subject": "Eidolon Vitrified Plating"
+   }
+  ],
+  "image": "Eidolon Refractive Materials"
+ },
+ "Eidolon Metamaterial Armor": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   7,
+   6
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Refractive Materials"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Armor Points +10%",
+   "Armor Regeneration +10%"
+  ],
+  "description": "Greatly increases maximum armor points and armor regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_armor_points_3_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_points_3_research_subject_tooltip_picture",
+  "name": "Metamaterial Armor",
+  "id": "dlc3_herald_upgrade_armor_points_3",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Metamaterial Armor"
+ },
+ "Eidolon Vitrified Plating": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   6,
+   7
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Refractive Materials"
+   ]
+  ],
+  "unit_modifiers": [
+   "Armor Strength +10"
+  ],
+  "description": "Increases maximum armor damage resistance.",
+  "hud_icon": "dlc3_herald_upgrade_armor_strength_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_strength_0_research_subject_tooltip_picture",
+  "name": "Vitrified Plating",
+  "id": "dlc3_herald_upgrade_armor_strength_0",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Assimilative Layering"
+   }
+  ],
+  "image": "Eidolon Vitrified Plating"
+ },
+ "Eidolon Assimilative Layering": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Continuance",
+  "field_coord": [
+   8,
+   7
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Vitrified Plating"
+   ]
+  ],
+  "unit_modifiers": [
+   "Armor Strength +10"
+  ],
+  "description": "Increases maximum armor damage resistance.",
+  "hud_icon": "dlc3_herald_upgrade_armor_strength_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_armor_strength_1_research_subject_tooltip_picture",
+  "name": "Assimilative Layering",
+  "id": "dlc3_herald_upgrade_armor_strength_1",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Assimilative Layering"
+ },
+ "Eidolon Improved Cloaking": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Arrival",
+  "field_coord": [
+   5,
+   7
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Kaziel Shade Summoning"
+   ]
+  ],
+  "description": "Improves the Cloak Frigate's cloak quality.",
+  "hud_icon": "dlc3_herald_upgrade_cloak_frigate_cloak_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_cloak_frigate_cloak_0_research_subject_tooltip_picture",
+  "name": "Improved Cloaking",
+  "id": "dlc3_herald_upgrade_cloak_frigate_cloak_0",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "ability_upgrade": "dlc3_herald_cloak_frigate_cloak"
+   },
+   {
+    "ability_upgrade": "dlc3_herald_support_capital_ship_cloak"
+   }
+  ],
+  "image": "Eidolon Improved Cloaking"
+ },
+ "Eidolon Financial Seizure": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   3,
+   2
+  ],
+  "research_time": 105.0,
+  "planet_modifiers": [
+   "{icon:credits} Income Rate +10%"
+  ],
+  "description": "Increases credit income.",
+  "hud_icon": "dlc3_herald_upgrade_commerce_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_commerce_0_research_subject_tooltip_picture",
+  "name": "Financial Seizure",
+  "id": "dlc3_herald_upgrade_commerce_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "image": "Eidolon Financial Seizure"
+ },
+ "Eidolon Shroud Augmentation": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Shrouding",
+  "field_coord": [
+   1,
+   0
+  ],
+  "research_time": 50.0,
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_corruption_track_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_corruption_track_0_research_subject_tooltip_picture",
+  "name": "Shroud Augmentation",
+  "id": "dlc3_herald_upgrade_corruption_track_0",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Shroud Magnification"
+   }
+  ],
+  "image": "Eidolon Shroud Augmentation"
+ },
+ "Eidolon Shroud Magnification": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Shrouding",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Shroud Augmentation"
+   ]
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_corruption_track_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_corruption_track_1_research_subject_tooltip_picture",
+  "name": "Shroud Magnification",
+  "id": "dlc3_herald_upgrade_corruption_track_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Shroud Saturation"
+   }
+  ],
+  "image": "Eidolon Shroud Magnification"
+ },
+ "Eidolon Shroud Saturation": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Shrouding",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Shroud Magnification"
+   ]
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_corruption_track_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_corruption_track_2_research_subject_tooltip_picture",
+  "name": "Shroud Saturation",
+  "id": "dlc3_herald_upgrade_corruption_track_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Shroud Saturation"
+ },
+ "Eidolon Coerced Hopelessness": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   3,
+   3
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "planet_modifiers": [
+   "Culture Rate +10%",
+   "{icon:population} Max Allegiance +0.1"
+  ],
+  "description": "Threats of reprisal are mixed with promises of mercy and temptations of power, fragmenting and isolating communities under Eidolon influence.",
+  "hud_icon": "dlc3_herald_upgrade_culture_rate_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_culture_rate_0_research_subject_tooltip_picture",
+  "name": "Coerced Hopelessness",
+  "id": "dlc3_herald_upgrade_culture_rate_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Fatalist Sentiment"
+   }
+  ],
+  "image": "Eidolon Coerced Hopelessness"
+ },
+ "Eidolon Fatalist Sentiment": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Coercion",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Coerced Hopelessness"
+   ]
+  ],
+  "planet_modifiers": [
+   "Culture Rate +10%",
+   "{icon:population} Max Allegiance +0.1"
+  ],
+  "description": "Messages of human powerlessness and the futility of resistance are encouraged, subduing resistance and enhancing compliance.",
+  "hud_icon": "dlc3_herald_upgrade_culture_rate_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_culture_rate_1_research_subject_tooltip_picture",
+  "name": "Fatalist Sentiment",
+  "id": "dlc3_herald_upgrade_culture_rate_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Resigned Acceptance"
+   }
+  ],
+  "image": "Eidolon Fatalist Sentiment"
+ },
+ "Eidolon Resigned Acceptance": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Coercion",
+  "field_coord": [
+   7,
+   3
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Fatalist Sentiment"
+   ]
+  ],
+  "planet_modifiers": [
+   "Culture Rate +20%",
+   "{icon:population} Max Allegiance +0.2"
+  ],
+  "description": "The population accepts the new reality of their existence, upholding stability on Eidolon worlds - if only to avoid reprisal.",
+  "hud_icon": "dlc3_herald_upgrade_culture_rate_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_culture_rate_2_research_subject_tooltip_picture",
+  "name": "Resigned Acceptance",
+  "id": "dlc3_herald_upgrade_culture_rate_2",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Resigned Acceptance"
+ },
+ "Eidolon EM Deposit Mapping": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Exploitation",
+  "field_coord": [
+   1,
+   3
+  ],
+  "research_time": 50.0,
+  "prerequisites": [
+   [
+    "Eidolon Orbital Extraction"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Orbital Extraction Rate +10%",
+   "{icon:crystal} Orbital Extraction Rate +10%"
+  ],
+  "description": "Detailed electromagnetic scans generate precise maps of the valuable metal and crystal deposits contained within asteroids.",
+  "hud_icon": "dlc3_herald_upgrade_extraction_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_extraction_0_research_subject_tooltip_picture",
+  "name": "EM Deposit Mapping",
+  "id": "dlc3_herald_upgrade_extraction_0",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Null Field Excavation"
+   }
+  ],
+  "image": "Eidolon EM Deposit Mapping"
+ },
+ "Eidolon Null Field Excavation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   2,
+   3
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon EM Deposit Mapping"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Orbital Extraction Rate +15%",
+   "{icon:crystal} Orbital Extraction Rate +15%"
+  ],
+  "description": "Modulated null fields disintegrate worthless rocky material without damaging the valuable metal or crystal it surrounds.",
+  "hud_icon": "dlc3_herald_upgrade_extraction_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_extraction_1_research_subject_tooltip_picture",
+  "name": "Null Field Excavation",
+  "id": "dlc3_herald_upgrade_extraction_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Phasic Extraction"
+   }
+  ],
+  "image": "Eidolon Null Field Excavation"
+ },
+ "Eidolon Phasic Extraction": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Exploitation",
+  "field_coord": [
+   5,
+   3
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Null Field Excavation"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Orbital Extraction Rate +25%",
+   "{icon:crystal} Orbital Extraction Rate +25%"
+  ],
+  "description": "Remote partial phasing allows otherwise inaccessible deposits of valuable metal or crystal to be retrieved.",
+  "hud_icon": "dlc3_herald_upgrade_extraction_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_extraction_2_research_subject_tooltip_picture",
+  "name": "Phasic Extraction",
+  "id": "dlc3_herald_upgrade_extraction_2",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "image": "Eidolon Phasic Extraction"
+ },
+ "Eidolon Extreme Environment Intensification": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   2,
+   1
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Arctic Subjugation"
+   ]
+  ],
+  "planet_modifiers": [
+   "Ice, Ice Moon, Irradiated, Volcanic, and Volcanic Moon Extra Civilian Orbit Slots +3"
+  ],
+  "description": "Eidolon pioneers classify planets with surface conditions that do not naturally support life as 'extreme'. These planets make ideal orbital logistics hubs.",
+  "hud_icon": "dlc3_herald_upgrade_extreme_planets_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_extreme_planets_0_research_subject_tooltip_picture",
+  "name": "Extreme Environment Intensification",
+  "id": "dlc3_herald_upgrade_extreme_planets_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Extreme Environment Mastery"
+   }
+  ],
+  "image": "Eidolon Extreme Environment Intensification"
+ },
+ "Eidolon Extreme Environment Mastery": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Subjugation",
+  "field_coord": [
+   4,
+   1
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Extreme Environment Intensification"
+   ]
+  ],
+  "planet_modifiers": [
+   "Ice, Ice Moon, Irradiated, Volcanic, and Volcanic Moon Planet Item Slots +1"
+  ],
+  "description": "Extremes of planetary temperature and atmospheric toxicity pose little challenge to the life-sustaining implants of an Eidolon.",
+  "hud_icon": "dlc3_herald_upgrade_extreme_planets_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_extreme_planets_1_research_subject_tooltip_picture",
+  "name": "Extreme Environment Mastery",
+  "id": "dlc3_herald_upgrade_extreme_planets_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "indurium": 1,
+  "image": "Eidolon Extreme Environment Mastery"
+ },
+ "Eidolon Hull Restoration Menials": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Continuance",
+  "field_coord": [
+   0,
+   3
+  ],
+  "research_time": 40.0,
+  "unit_modifiers": [
+   "Max. Hull Points +5%",
+   "Hull Regeneration +25%"
+  ],
+  "description": "Low ranking Eidolon menials are tasked with maintenance and restoration of critical systems, increasing maximum hull points and hull regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_hull_points_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_hull_points_0_research_subject_tooltip_picture",
+  "name": "Hull Restoration Menials",
+  "id": "dlc3_herald_upgrade_hull_points_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Damage Control Thralls"
+   }
+  ],
+  "image": "Eidolon Hull Restoration Menials"
+ },
+ "Eidolon Damage Control Thralls": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   2,
+   3
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Hull Restoration Menials"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Hull Points +5%",
+   "Hull Regeneration +25%"
+  ],
+  "description": "Expendable thrall crew of all species are pressed into service on damage control teams. They spend their inevitably short lives repairing the terrifying effects of corruption on Eidolon ship systems.",
+  "hud_icon": "dlc3_herald_upgrade_hull_points_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_hull_points_1_research_subject_tooltip_picture",
+  "name": "Damage Control Thralls",
+  "id": "dlc3_herald_upgrade_hull_points_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Enhanced System Integrity"
+   }
+  ],
+  "image": "Eidolon Damage Control Thralls"
+ },
+ "Eidolon Enhanced System Integrity": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Damage Control Thralls"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Hull Points +10%",
+   "Hull Regeneration +50%"
+  ],
+  "description": "Internal ship systems are redesigned with greater redundancy, ensuring improved resilience against both enemy fire and internal corruption.",
+  "hud_icon": "dlc3_herald_upgrade_hull_points_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_hull_points_2_research_subject_tooltip_picture",
+  "name": "Enhanced System Integrity",
+  "id": "dlc3_herald_upgrade_hull_points_2",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Enhanced System Integrity"
+ },
+ "Eidolon Rapid Phase Descent": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Traversal",
+  "field_coord": [
+   3,
+   1
+  ],
+  "research_time": 105.0,
+  "unit_modifiers": [
+   "Phase Jump Charge Time -75%"
+  ],
+  "description": "Improves phase jump charge up rate.",
+  "hud_icon": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_hyperspace_charge_time_research_subject_tooltip_picture",
+  "name": "Rapid Phase Descent",
+  "id": "dlc3_herald_upgrade_hyperspace_charge_time",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Deep Phase Transit"
+   }
+  ],
+  "image": "Eidolon Rapid Phase Descent"
+ },
+ "Eidolon Deep Phase Transit": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Traversal",
+  "field_coord": [
+   8,
+   1
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Rapid Phase Descent"
+   ]
+  ],
+  "unit_modifiers": [
+   "Phase Jump Speed +25%"
+  ],
+  "description": "Improves phase travel speed.",
+  "hud_icon": "dlc3_herald_upgrade_hyperspace_speed_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_hyperspace_speed_research_subject_tooltip_picture",
+  "name": "Deep Phase Transit",
+  "id": "dlc3_herald_upgrade_hyperspace_speed",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Deep Phase Transit"
+ },
+ "Eidolon Immolation Efficiency": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   7,
+   5
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Immolation Beams"
+   ]
+  ],
+  "description": "Improves the efficiency of converting raw corruption into augmented beam damage, providing a small maximum damage rate increase but a significant increase in the total amount of damage that can be generated from a given amount of corruption.",
+  "hud_icon": "dlc3_herald_upgrade_immolation_beam_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_immolation_beam_research_subject_tooltip_picture",
+  "name": "Immolation Efficiency",
+  "id": "dlc3_herald_upgrade_immolation_beam",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Immolation Efficiency"
+ },
+ "Eidolon Promise of Mercy": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Coercion",
+  "field_coord": [
+   0,
+   0
+  ],
+  "research_time": 40.0,
+  "empire_modifiers": [
+   "Influence Points +2"
+  ],
+  "windfall": [
+   "Influence Points Given: 1"
+  ],
+  "description": "Grants Influence for use interacting with minor factions.",
+  "hud_icon": "dlc3_herald_upgrade_influence_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_influence_0_research_subject_tooltip_picture",
+  "name": "Promise of Mercy",
+  "id": "dlc3_herald_upgrade_influence_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Promise of Power"
+   }
+  ],
+  "image": "Eidolon Promise of Mercy"
+ },
+ "Eidolon Promise of Power": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Coercion",
+  "field_coord": [
+   3,
+   0
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Promise of Mercy"
+   ]
+  ],
+  "empire_modifiers": [
+   "Influence Points +3"
+  ],
+  "windfall": [
+   "Influence Points Given: 2"
+  ],
+  "description": "Increases Influence capacity for use interacting with minor factions.",
+  "hud_icon": "dlc3_herald_upgrade_influence_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_influence_1_research_subject_tooltip_picture",
+  "name": "Promise of Power",
+  "id": "dlc3_herald_upgrade_influence_1",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Promise of Salvation"
+   }
+  ],
+  "image": "Eidolon Promise of Power"
+ },
+ "Eidolon Promise of Salvation": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Coercion",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Promise of Power"
+   ]
+  ],
+  "empire_modifiers": [
+   "Influence Points +4"
+  ],
+  "windfall": [
+   "Influence Points Given: 3"
+  ],
+  "description": "Increases Influence capacity for use interacting with minor factions.",
+  "hud_icon": "dlc3_herald_upgrade_influence_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_influence_2_research_subject_tooltip_picture",
+  "name": "Promise of Salvation",
+  "id": "dlc3_herald_upgrade_influence_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Promise of Salvation"
+ },
+ "Eidolon Geomagnetic Environment Intensification": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Subjugation",
+  "field_coord": [
+   0,
+   5
+  ],
+  "research_time": 40.0,
+  "planet_modifiers": [
+   "Geomagnetic Planet Extra Civilian Orbit Slots +3"
+  ],
+  "description": "The orbital space around Geomagnetic planets is thick with unusual energy currents that can be used to fuel Eidolon orbital structures.",
+  "hud_icon": "dlc3_herald_upgrade_magnetic_planets_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_magnetic_planets_0_research_subject_tooltip_picture",
+  "name": "Geomagnetic Environment Intensification",
+  "id": "dlc3_herald_upgrade_magnetic_planets_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Geomagnetic Environment Mastery"
+   }
+  ],
+  "image": "Eidolon Geomagnetic Environment Intensification"
+ },
+ "Eidolon Geomagnetic Environment Mastery": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   2,
+   5
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Geomagnetic Environment Intensification"
+   ]
+  ],
+  "planet_modifiers": [
+   "Geomagnetic Planet Planet Item Slots +1"
+  ],
+  "description": "The exotic energy conditions of the Geomagnetic planet naturally resonate with Eidolon neural interlink technology, granting them heightened power and a rare degree of comfort.",
+  "hud_icon": "dlc3_herald_upgrade_magnetic_planets_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_magnetic_planets_1_research_subject_tooltip_picture",
+  "name": "Geomagnetic Environment Mastery",
+  "id": "dlc3_herald_upgrade_magnetic_planets_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "image": "Eidolon Geomagnetic Environment Mastery"
+ },
+ "Eidolon Marginal Environment Intensification": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Subjugation",
+  "field_coord": [
+   3,
+   7
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Crystalline Subjugation"
+   ]
+  ],
+  "planet_modifiers": [
+   "Crystalline, Ferrous, and Primordial Planet Extra Civilian Orbit Slots +2"
+  ],
+  "description": "Planets that support only simple or unusual forms of native life are classified by Eidolon pioneers as 'marginal.' These worlds often possess other traits that justify orbital intensification.",
+  "hud_icon": "dlc3_herald_upgrade_marginal_planets_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_marginal_planets_0_research_subject_tooltip_picture",
+  "name": "Marginal Environment Intensification",
+  "id": "dlc3_herald_upgrade_marginal_planets_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Marginal Environment Mastery"
+   }
+  ],
+  "image": "Eidolon Marginal Environment Intensification"
+ },
+ "Eidolon Marginal Environment Mastery": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Subjugation",
+  "field_coord": [
+   5,
+   7
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Marginal Environment Intensification"
+   ]
+  ],
+  "planet_modifiers": [
+   "Crystalline, Ferrous, and Primordial Planet Planet Item Slots +1"
+  ],
+  "description": "The limited but unusual life forms found on marginal worlds are easily twisted into useful tools for the Eidolons.",
+  "hud_icon": "dlc3_herald_upgrade_marginal_planets_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_marginal_planets_1_research_subject_tooltip_picture",
+  "name": "Marginal Environment Mastery",
+  "id": "dlc3_herald_upgrade_marginal_planets_1",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "andvar": 1,
+  "image": "Eidolon Marginal Environment Mastery"
+ },
+ "Eidolon Lithic Reprocessing": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "planet_modifiers": [
+   "{icon:metal} Surface Mining Rate +10%",
+   "{icon:crystal} Surface Mining Rate +10%"
+  ],
+  "description": "Increases metal and crystal income.",
+  "hud_icon": "dlc3_herald_upgrade_mining_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_mining_0_research_subject_tooltip_picture",
+  "name": "Lithic Reprocessing",
+  "id": "dlc3_herald_upgrade_mining_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Esoteric Alloying"
+   }
+  ],
+  "image": "Eidolon Lithic Reprocessing"
+ },
+ "Eidolon Esoteric Alloying": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Exploitation",
+  "field_coord": [
+   3,
+   0
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Lithic Reprocessing"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Surface Mining Rate +10%",
+   "{icon:crystal} Surface Mining Rate +10%"
+  ],
+  "description": "Further increases metal and crystal income.",
+  "hud_icon": "dlc3_herald_upgrade_mining_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_mining_1_research_subject_tooltip_picture",
+  "name": "Esoteric Alloying",
+  "id": "dlc3_herald_upgrade_mining_1",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Dark Energy Forging"
+   }
+  ],
+  "image": "Eidolon Esoteric Alloying"
+ },
+ "Eidolon Dark Energy Forging": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Exploitation",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Esoteric Alloying"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Surface Mining Rate +10%",
+   "{icon:crystal} Surface Mining Rate +10%"
+  ],
+  "description": "Further increases metal and crystal income.",
+  "hud_icon": "dlc3_herald_upgrade_mining_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_mining_2_research_subject_tooltip_picture",
+  "name": "Dark Energy Forging",
+  "id": "dlc3_herald_upgrade_mining_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Dark Energy Forging"
+ },
+ "Eidolon Dark Energy Channelling": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   7,
+   4
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Dispersed Disintegration"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Beam Weapon Damage +10%"
+  ],
+  "description": "Increases the fire rate of null beam weapons.",
+  "hud_icon": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0_research_subject_tooltip_picture",
+  "name": "Dark Energy Channelling",
+  "id": "dlc3_herald_upgrade_null_beam_weapon_cooldown_0",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "image": "Eidolon Dark Energy Channelling"
+ },
+ "Eidolon Null Field Density": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Eradication",
+  "field_coord": [
+   2,
+   4
+  ],
+  "research_time": 90.0,
+  "weapon_modifiers": [
+   "Beam Weapon Damage +10%",
+   "Null Cannon Weapon Damage +10%"
+  ],
+  "description": "Increases the damage of all null weapons.",
+  "hud_icon": "dlc3_herald_upgrade_null_cannon_weapon_damage_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_cannon_weapon_damage_0_research_subject_tooltip_picture",
+  "name": "Null Field Density",
+  "id": "dlc3_herald_upgrade_null_cannon_weapon_damage_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Immolation Beams"
+   },
+   {
+    "research_subject": "Eidolon Corrupted Null Bolts"
+   },
+   {
+    "research_subject": "Eidolon Rapid Decoherence"
+   }
+  ],
+  "image": "Eidolon Null Field Density"
+ },
+ "Eidolon Rapid Decoherence": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   4,
+   4
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Beam Weapon Damage +10%",
+   "Null Cannon Weapon Damage +10%"
+  ],
+  "description": "Further increases the damage of all null weapons.",
+  "hud_icon": "dlc3_herald_upgrade_null_cannon_weapon_damage_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_cannon_weapon_damage_1_research_subject_tooltip_picture",
+  "name": "Rapid Decoherence",
+  "id": "dlc3_herald_upgrade_null_cannon_weapon_damage_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Dispersed Disintegration"
+   }
+  ],
+  "image": "Eidolon Rapid Decoherence"
+ },
+ "Eidolon Dispersed Disintegration": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   6,
+   4
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Rapid Decoherence"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Beam Weapon Damage +10%",
+   "Null Cannon Weapon Damage +10%"
+  ],
+  "description": "Further increases the damage of all null weapons.",
+  "hud_icon": "dlc3_herald_upgrade_null_cannon_weapon_damage_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_cannon_weapon_damage_2_research_subject_tooltip_picture",
+  "name": "Dispersed Disintegration",
+  "id": "dlc3_herald_upgrade_null_cannon_weapon_damage_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Dark Energy Channelling"
+   }
+  ],
+  "image": "Eidolon Dispersed Disintegration"
+ },
+ "Eidolon Exposed Null Cores": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   7,
+   3
+  ],
+  "research_time": 260.0,
+  "prerequisites": [
+   [
+    "Eidolon Corrupted Null Bolts"
+   ]
+  ],
+  "description": "Improves the damage to corruption conversion rate for Null Cannons and Null Beams.",
+  "hud_icon": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_weapons_corruption_0_research_subject_tooltip_picture",
+  "name": "Exposed Null Cores",
+  "id": "dlc3_herald_upgrade_null_weapons_corruption_0",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Null Core Overload"
+   }
+  ],
+  "image": "Eidolon Exposed Null Cores"
+ },
+ "Eidolon Null Core Overload": {
+  "required_product": "dlc_Herald",
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Eradication",
+  "field_coord": [
+   9,
+   3
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Exposed Null Cores"
+   ]
+  ],
+  "description": "Improves the damage to corruption conversion rate for Null Cannons and Null Beams.",
+  "hud_icon": "dlc3_herald_upgrade_null_weapons_corruption_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_null_weapons_corruption_1_research_subject_tooltip_picture",
+  "name": "Null Core Overload",
+  "id": "dlc3_herald_upgrade_null_weapons_corruption_1",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Null Core Overload"
+ },
+ "Eidolon Predictive Monitoring": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   5,
+   1
+  ],
+  "research_time": 175.0,
+  "weapon_modifiers": [
+   "Phase Dart Bypass Shields Chance +10%",
+   "Phase Dart Weapon Range +10%"
+  ],
+  "description": "Advanced sensors continually monitor the current and potential positional data of enemy vessels, improving the chance that a phase dart shot will be timed to successfully bypass shields.",
+  "hud_icon": "dlc3_herald_upgrade_phase_dart_weapon_bypass_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_phase_dart_weapon_bypass_0_research_subject_tooltip_picture",
+  "name": "Predictive Monitoring",
+  "id": "dlc3_herald_upgrade_phase_dart_weapon_bypass_0",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Prescient Targeting"
+   }
+  ],
+  "image": "Eidolon Predictive Monitoring"
+ },
+ "Eidolon Prescient Targeting": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   6,
+   1
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Predictive Monitoring"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Phase Dart Bypass Shields Chance +10%",
+   "Phase Dart Weapon Range +10%"
+  ],
+  "description": "Awakened captains are trained to make use of their limited psionic scrying capabilities when preparing a phase dart shot, increasing the chance of a successful shield bypass.",
+  "hud_icon": "dlc3_herald_upgrade_phase_dart_weapon_bypass_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_phase_dart_weapon_bypass_1_research_subject_tooltip_picture",
+  "name": "Prescient Targeting",
+  "id": "dlc3_herald_upgrade_phase_dart_weapon_bypass_1",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Dynamic Trajectories"
+   }
+  ],
+  "image": "Eidolon Prescient Targeting"
+ },
+ "Eidolon Dynamic Trajectories": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Eradication",
+  "field_coord": [
+   8,
+   1
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Prescient Targeting"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Phase Dart Bypass Shields Chance +10%",
+   "Phase Dart Weapon Range +10%"
+  ],
+  "description": "Maneuvering thrusters are installed on phase darts, allowing them to adjust their vector or velocity mid-flight in response to enemy countermeasures.",
+  "hud_icon": "dlc3_herald_upgrade_phase_dart_weapon_bypass_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_phase_dart_weapon_bypass_2_research_subject_tooltip_picture",
+  "name": "Dynamic Trajectories",
+  "id": "dlc3_herald_upgrade_phase_dart_weapon_bypass_2",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Rapid Programming"
+   }
+  ],
+  "image": "Eidolon Dynamic Trajectories"
+ },
+ "Eidolon Rapid Programming": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Eradication",
+  "field_coord": [
+   9,
+   2
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Dynamic Trajectories"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Phase Dart Weapon Reload -20%"
+  ],
+  "description": "Improved neural interlink technology allows phase darts to be more rapidly prepared for firing by an awakened Eidolon.",
+  "hud_icon": "dlc3_herald_upgrade_phase_dart_weapon_cooldown_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_phase_dart_weapon_cooldown_0_research_subject_tooltip_picture",
+  "name": "Rapid Programming",
+  "id": "dlc3_herald_upgrade_phase_dart_weapon_cooldown_0",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Rapid Programming"
+ },
+ "Eidolon Commercial Infiltration": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Adaptation",
+  "field_coord": [
+   0,
+   1
+  ],
+  "research_time": 40.0,
+  "planet_modifiers": [
+   "{icon:credits} Income Rate / Pop +10%"
+  ],
+  "description": "The Eidolon organize their economy around the acquisition of raw materials for use in portal maintenance. Any means of acquiring such raw material is considered valid, including the use of local currency based economies, which are quickly subverted into Eidolon service.",
+  "hud_icon": "dlc3_herald_upgrade_population_commerce_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_commerce_0_research_subject_tooltip_picture",
+  "name": "Commercial Infiltration",
+  "id": "dlc3_herald_upgrade_population_commerce_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Power Broker Design"
+   },
+   {
+    "research_subject": "Eidolon Mercantile Exploitation"
+   }
+  ],
+  "image": "Eidolon Commercial Infiltration"
+ },
+ "Eidolon Mercantile Exploitation": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Adaptation",
+  "field_coord": [
+   4,
+   1
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Commercial Infiltration"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:credits} Income Rate / Pop +10%"
+  ],
+  "description": "The Eidolon take any chance to corrupt a system towards their benefit, including currency based economies. By encouraging extreme market conditions and creating artificial monopolies they turn functional economies into sources of power.",
+  "hud_icon": "dlc3_herald_upgrade_population_commerce_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_commerce_1_research_subject_tooltip_picture",
+  "name": "Mercantile Exploitation",
+  "id": "dlc3_herald_upgrade_population_commerce_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Quantification Of Power"
+   }
+  ],
+  "image": "Eidolon Mercantile Exploitation"
+ },
+ "Eidolon Quantification Of Power": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Adaptation",
+  "field_coord": [
+   6,
+   1
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Mercantile Exploitation"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:credits} Income Rate / Pop +20%"
+  ],
+  "description": "Eidolon ambition recognizes any source of power as valuable. The accumulation of massive amounts of currency has proven to be a novel and effective path to power, and has consequently been assimilated into the Eidolon economy.",
+  "hud_icon": "dlc3_herald_upgrade_population_commerce_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_commerce_2_research_subject_tooltip_picture",
+  "name": "Quantification Of Power",
+  "id": "dlc3_herald_upgrade_population_commerce_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Quantification Of Power"
+ },
+ "Eidolon Harvesting Menials": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Adaptation",
+  "field_coord": [
+   2,
+   3
+  ],
+  "research_time": 90.0,
+  "planet_modifiers": [
+   "{icon:crystal} Surface Mining Rate / Pop +5%"
+  ],
+  "description": "Increases crystal income from population.",
+  "hud_icon": "dlc3_herald_upgrade_population_crystal_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_crystal_0_research_subject_tooltip_picture",
+  "name": "Harvesting Menials",
+  "id": "dlc3_herald_upgrade_population_crystal_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Cultivation Menials"
+   }
+  ],
+  "image": "Eidolon Harvesting Menials"
+ },
+ "Eidolon Cultivation Menials": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Adaptation",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Harvesting Menials"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:crystal} Surface Mining Rate / Pop +10%"
+  ],
+  "description": "Further increases crystal income from population.",
+  "hud_icon": "dlc3_herald_upgrade_population_crystal_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_crystal_1_research_subject_tooltip_picture",
+  "name": "Cultivation Menials",
+  "id": "dlc3_herald_upgrade_population_crystal_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Cultivation Menials"
+ },
+ "Eidolon Mining Thralls": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Adaptation",
+  "field_coord": [
+   1,
+   2
+  ],
+  "research_time": 50.0,
+  "planet_modifiers": [
+   "{icon:metal} Surface Mining Rate / Pop +5%"
+  ],
+  "description": "Increases metal income from population.",
+  "hud_icon": "dlc3_herald_upgrade_population_metal_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_metal_0_research_subject_tooltip_picture",
+  "name": "Mining Thralls",
+  "id": "dlc3_herald_upgrade_population_metal_0",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Thrall Augmentation"
+   }
+  ],
+  "image": "Eidolon Mining Thralls"
+ },
+ "Eidolon Thrall Augmentation": {
+  "domain": "Civilian",
+  "tier": "Civilian II",
+  "field": "Adaptation",
+  "field_coord": [
+   3,
+   2
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Mining Thralls"
+   ]
+  ],
+  "planet_modifiers": [
+   "{icon:metal} Surface Mining Rate / Pop +10%"
+  ],
+  "description": "Further increases metal income from population.",
+  "hud_icon": "dlc3_herald_upgrade_population_metal_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_population_metal_1_research_subject_tooltip_picture",
+  "name": "Thrall Augmentation",
+  "id": "dlc3_herald_upgrade_population_metal_1",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "image": "Eidolon Thrall Augmentation"
+ },
+ "Eidolon Superior Generator Cycling": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   6,
+   2
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Forced Generator Cycling"
+   ]
+  ],
+  "unit_modifiers": [
+   "Shield Burst Restore Points +20%",
+   "Shield Burst Restore Cooldown -20%"
+  ],
+  "description": "Reduces shield burst charge time and increases shield burst magnitude.",
+  "hud_icon": "dlc3_herald_upgrade_shield_burst_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_burst_0_research_subject_tooltip_picture",
+  "name": "Superior Generator Cycling",
+  "id": "dlc3_herald_upgrade_shield_burst_0",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon Superior Generator Cycling"
+ },
+ "Eidolon Dynamic Shield Charging": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   3,
+   1
+  ],
+  "research_time": 105.0,
+  "prerequisites": [
+   [
+    "Eidolon Versatile Shield Arrays"
+   ]
+  ],
+  "unit_modifiers": [
+   "Shield Regeneration In Combat +0.2"
+  ],
+  "description": "Improves shield regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_shield_combat_regen_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_combat_regen_0_research_subject_tooltip_picture",
+  "name": "Dynamic Shield Charging",
+  "id": "dlc3_herald_upgrade_shield_combat_regen_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Forced Generator Cycling"
+   },
+   {
+    "research_subject": "Eidolon Active Shield Tuning"
+   }
+  ],
+  "image": "Eidolon Dynamic Shield Charging"
+ },
+ "Eidolon Active Shield Tuning": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   5,
+   1
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Dynamic Shield Charging"
+   ]
+  ],
+  "unit_modifiers": [
+   "Shield Regeneration In Combat +0.3"
+  ],
+  "description": "Improves shield regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_shield_combat_regen_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_combat_regen_1_research_subject_tooltip_picture",
+  "name": "Active Shield Tuning",
+  "id": "dlc3_herald_upgrade_shield_combat_regen_1",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Prescient Shield Modulation"
+   }
+  ],
+  "image": "Eidolon Active Shield Tuning"
+ },
+ "Eidolon Prescient Shield Modulation": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Continuance",
+  "field_coord": [
+   9,
+   1
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Eidolon Active Shield Tuning"
+   ]
+  ],
+  "unit_modifiers": [
+   "Shield Regeneration In Combat +0.5"
+  ],
+  "description": "Improves shield regeneration rate in combat.",
+  "hud_icon": "dlc3_herald_upgrade_shield_combat_regen_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_combat_regen_2_research_subject_tooltip_picture",
+  "name": "Prescient Shield Modulation",
+  "id": "dlc3_herald_upgrade_shield_combat_regen_2",
+  "race": "Eidolon",
+  "credits": 1850.0,
+  "metal": 900.0,
+  "crystal": 900.0,
+  "image": "Eidolon Prescient Shield Modulation"
+ },
+ "Eidolon Versatile Shield Arrays": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Continuance",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "unit_modifiers": [
+   "Max. Shield Points +5%",
+   "Shield Regeneration +5%"
+  ],
+  "description": "Increases maximum shield points and shield regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_shield_points_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_points_0_research_subject_tooltip_picture",
+  "name": "Versatile Shield Arrays",
+  "id": "dlc3_herald_upgrade_shield_points_0",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Dynamic Shield Charging"
+   },
+   {
+    "research_subject": "Eidolon Conformal Shield Generation"
+   }
+  ],
+  "image": "Eidolon Versatile Shield Arrays"
+ },
+ "Eidolon Conformal Shield Generation": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Continuance",
+  "field_coord": [
+   4,
+   0
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Versatile Shield Arrays"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Shield Points +10%",
+   "Shield Regeneration +10%"
+  ],
+  "description": "Further increases maximum shield points and shield regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_shield_points_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_points_1_research_subject_tooltip_picture",
+  "name": "Conformal Shield Generation",
+  "id": "dlc3_herald_upgrade_shield_points_1",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Heavy Shield Arrays"
+   }
+  ],
+  "image": "Eidolon Conformal Shield Generation"
+ },
+ "Eidolon Heavy Shield Arrays": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Continuance",
+  "field_coord": [
+   6,
+   0
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Conformal Shield Generation"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Shield Points +10%",
+   "Shield Regeneration +10%"
+  ],
+  "description": "Further increases maximum shield points and shield regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_shield_points_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_points_2_research_subject_tooltip_picture",
+  "name": "Heavy Shield Arrays",
+  "id": "dlc3_herald_upgrade_shield_points_2",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Overcharged Shield Emitters"
+   }
+  ],
+  "image": "Eidolon Heavy Shield Arrays"
+ },
+ "Eidolon Overcharged Shield Emitters": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Continuance",
+  "field_coord": [
+   8,
+   0
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Heavy Shield Arrays"
+   ]
+  ],
+  "unit_modifiers": [
+   "Max. Shield Points +15%",
+   "Shield Regeneration +15%"
+  ],
+  "description": "Greatly increases maximum shield points and shield regeneration rate.",
+  "hud_icon": "dlc3_herald_upgrade_shield_points_3_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shield_points_3_research_subject_tooltip_picture",
+  "name": "Overcharged Shield Emitters",
+  "id": "dlc3_herald_upgrade_shield_points_3",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Overcharged Shield Emitters"
+ },
+ "Eidolon Particle Pre-Charging": {
+  "domain": "Military",
+  "tier": "Military I",
+  "field": "Eradication",
+  "field_coord": [
+   1,
+   0
+  ],
+  "research_time": 50.0,
+  "weapon_modifiers": [
+   "Shock Cannon Weapon Damage +10%"
+  ],
+  "description": "Shock cannons are modified to maintain a higher base charge for their ammunition, increasing the potential energy output during firing.",
+  "hud_icon": "dlc3_herald_upgrade_shock_cannon_weapon_damage_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shock_cannon_weapon_damage_0_research_subject_tooltip_picture",
+  "name": "Particle Pre-Charging",
+  "id": "dlc3_herald_upgrade_shock_cannon_weapon_damage_0",
+  "race": "Eidolon",
+  "credits": 400.0,
+  "metal": 75.0,
+  "crystal": 75.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Shock Supercharging"
+   }
+  ],
+  "image": "Eidolon Particle Pre-Charging"
+ },
+ "Eidolon Shock Supercharging": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Eradication",
+  "field_coord": [
+   2,
+   0
+  ],
+  "research_time": 90.0,
+  "prerequisites": [
+   [
+    "Eidolon Particle Pre-Charging"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Shock Cannon Weapon Damage +10%"
+  ],
+  "description": "Shock cannon field limiters are disabled to allow the firing of more damaging bolts.",
+  "hud_icon": "dlc3_herald_upgrade_shock_cannon_weapon_damage_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shock_cannon_weapon_damage_1_research_subject_tooltip_picture",
+  "name": "Shock Supercharging",
+  "id": "dlc3_herald_upgrade_shock_cannon_weapon_damage_1",
+  "race": "Eidolon",
+  "credits": 600.0,
+  "metal": 150.0,
+  "crystal": 150.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Charged Plasma Injectors"
+   }
+  ],
+  "image": "Eidolon Shock Supercharging"
+ },
+ "Eidolon Charged Plasma Injectors": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   4,
+   0
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Shock Supercharging"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Shock Cannon Weapon Damage +10%"
+  ],
+  "description": "High energy plasma packets are injected into shock cannon bolts as they are fired, increasing thermal yield.",
+  "hud_icon": "dlc3_herald_upgrade_shock_cannon_weapon_damage_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_shock_cannon_weapon_damage_2_research_subject_tooltip_picture",
+  "name": "Charged Plasma Injectors",
+  "id": "dlc3_herald_upgrade_shock_cannon_weapon_damage_2",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "image": "Eidolon Charged Plasma Injectors"
+ },
+ "Eidolon Hardened Structures": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Consolidation",
+  "field_coord": [
+   7,
+   0
+  ],
+  "research_time": 260.0,
+  "unit_modifiers": [
+   "Structure Max. Armor Points +20%",
+   "Structure Max. Shield Points +20%"
+  ],
+  "description": "Increases defense structure hitpoints.",
+  "hud_icon": "dlc3_herald_upgrade_structure_defense_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_structure_defense_0_research_subject_tooltip_picture",
+  "name": "Hardened Structures",
+  "id": "dlc3_herald_upgrade_structure_defense_0",
+  "race": "Eidolon",
+  "credits": 1450.0,
+  "metal": 650.0,
+  "crystal": 650.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Obdurate Structures"
+   }
+  ],
+  "image": "Eidolon Hardened Structures"
+ },
+ "Eidolon Obdurate Structures": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Consolidation",
+  "field_coord": [
+   8,
+   0
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Hardened Structures"
+   ]
+  ],
+  "unit_modifiers": [
+   "Structure Max. Armor Points +30%",
+   "Structure Max. Shield Points +30%"
+  ],
+  "description": "Further increases defense structure hitpoints.",
+  "hud_icon": "dlc3_herald_upgrade_structure_defense_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_structure_defense_1_research_subject_tooltip_picture",
+  "name": "Obdurate Structures",
+  "id": "dlc3_herald_upgrade_structure_defense_1",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "indurium": 1,
+  "image": "Eidolon Obdurate Structures"
+ },
+ "Eidolon Pioneer Amalgams": {
+  "domain": "Civilian",
+  "tier": "Civilian I",
+  "field": "Exploitation",
+  "field_coord": [
+   0,
+   1
+  ],
+  "research_time": 40.0,
+  "planet_modifiers": [
+   "Surveying Time -10%"
+  ],
+  "empire_modifiers": [
+   "Survey Exotic Chance Bonus +0.1"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_survey_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_survey_0_research_subject_tooltip_picture",
+  "name": "Pioneer Amalgams",
+  "id": "dlc3_herald_upgrade_survey_0",
+  "race": "Eidolon",
+  "credits": 350.0,
+  "metal": 50.0,
+  "crystal": 50.0,
+  "image": "Eidolon Pioneer Amalgams"
+ },
+ "Eidolon Charged Quarnium": {
+  "domain": "Civilian",
+  "tier": "Civilian V",
+  "field": "Exploitation",
+  "field_coord": [
+   8,
+   1
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Quarnium Forging"
+   ]
+  ],
+  "exotic_factory_modifiers": [
+   "Decreases Quarnium Exotic Build Time by 25%"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_ultimate_exotic_0_research_subject_tooltip_picture",
+  "name": "Charged Quarnium",
+  "id": "dlc3_herald_upgrade_ultimate_exotic_0",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Charged Quarnium"
+ },
+ "Eidolon Variable Environment Intensification": {
+  "domain": "Civilian",
+  "tier": "Civilian III",
+  "field": "Subjugation",
+  "field_coord": [
+   4,
+   3
+  ],
+  "research_time": 155.0,
+  "prerequisites": [
+   [
+    "Eidolon Desert Subjugation"
+   ]
+  ],
+  "planet_modifiers": [
+   "Desert, Oceanic, and Terran Planet Extra Civilian Orbit Slots +2"
+  ],
+  "description": "Planets capable of supporting abundant life without the need for external support are classified as 'variable' by Eidolon pioneers. The exploitation of plentiful organic resource justifies construction of additional orbital structures on these planet types.",
+  "hud_icon": "dlc3_herald_upgrade_variable_planets_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_variable_planets_0_research_subject_tooltip_picture",
+  "name": "Variable Environment Intensification",
+  "id": "dlc3_herald_upgrade_variable_planets_0",
+  "race": "Eidolon",
+  "credits": 1000.0,
+  "metal": 350.0,
+  "crystal": 350.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Variable Environment Mastery"
+   }
+  ],
+  "image": "Eidolon Variable Environment Intensification"
+ },
+ "Eidolon Variable Environment Mastery": {
+  "domain": "Civilian",
+  "tier": "Civilian IV",
+  "field": "Subjugation",
+  "field_coord": [
+   6,
+   3
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Variable Environment Intensification"
+   ]
+  ],
+  "planet_modifiers": [
+   "Desert, Oceanic, and Terran Planet Planet Item Slots +1"
+  ],
+  "description": "Even the most robust and abundant forms of flora and fauna can be shaped or cleared as needed to support Eidolon infrastructure.",
+  "hud_icon": "dlc3_herald_upgrade_variable_planets_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_variable_planets_1_research_subject_tooltip_picture",
+  "name": "Variable Environment Mastery",
+  "id": "dlc3_herald_upgrade_variable_planets_1",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "kalanide": 1,
+  "image": "Eidolon Variable Environment Mastery"
+ },
+ "Eidolon Implosive Warheads": {
+  "domain": "Military",
+  "tier": "Military II",
+  "field": "Eradication",
+  "field_coord": [
+   3,
+   6
+  ],
+  "research_time": 105.0,
+  "weapon_modifiers": [
+   "Void Missile Weapon Damage +10%"
+  ],
+  "description": "Increases the damage of void missile weapons.",
+  "hud_icon": "dlc3_herald_upgrade_void_missile_weapon_damage_0_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_void_missile_weapon_damage_0_research_subject_tooltip_picture",
+  "name": "Implosive Warheads",
+  "id": "dlc3_herald_upgrade_void_missile_weapon_damage_0",
+  "race": "Eidolon",
+  "credits": 650.0,
+  "metal": 200.0,
+  "crystal": 200.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Phasic Guidance"
+   }
+  ],
+  "image": "Eidolon Implosive Warheads"
+ },
+ "Eidolon Phasic Guidance": {
+  "domain": "Military",
+  "tier": "Military III",
+  "field": "Eradication",
+  "field_coord": [
+   5,
+   6
+  ],
+  "research_time": 175.0,
+  "prerequisites": [
+   [
+    "Eidolon Implosive Warheads"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Void Missile Weapon Damage +10%"
+  ],
+  "description": "Further increases the damage of void missile weapons.",
+  "hud_icon": "dlc3_herald_upgrade_void_missile_weapon_damage_1_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_void_missile_weapon_damage_1_research_subject_tooltip_picture",
+  "name": "Phasic Guidance",
+  "id": "dlc3_herald_upgrade_void_missile_weapon_damage_1",
+  "race": "Eidolon",
+  "credits": 1050.0,
+  "metal": 400.0,
+  "crystal": 400.0,
+  "unlocks": [
+   {
+    "research_subject": "Eidolon Singularity Warheads"
+   },
+   {
+    "research_subject": "Eidolon Remote Interlinking"
+   }
+  ],
+  "image": "Eidolon Phasic Guidance"
+ },
+ "Eidolon Singularity Warheads": {
+  "domain": "Military",
+  "tier": "Military V",
+  "field": "Eradication",
+  "field_coord": [
+   8,
+   6
+  ],
+  "research_time": 330.0,
+  "prerequisites": [
+   [
+    "Eidolon Phasic Guidance"
+   ]
+  ],
+  "weapon_modifiers": [
+   "Void Missile Weapon Damage +10%"
+  ],
+  "description": "Further increases the damage of void missile weapons.",
+  "hud_icon": "dlc3_herald_upgrade_void_missile_weapon_damage_2_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_void_missile_weapon_damage_2_research_subject_tooltip_picture",
+  "name": "Singularity Warheads",
+  "id": "dlc3_herald_upgrade_void_missile_weapon_damage_2",
+  "race": "Eidolon",
+  "credits": 1800.0,
+  "metal": 850.0,
+  "crystal": 850.0,
+  "image": "Eidolon Singularity Warheads"
+ },
+ "Eidolon Remote Interlinking": {
+  "domain": "Military",
+  "tier": "Military IV",
+  "field": "Eradication",
+  "field_coord": [
+   6,
+   7
+  ],
+  "research_time": 235.0,
+  "prerequisites": [
+   [
+    "Eidolon Phasic Guidance"
+   ]
+  ],
+  "buff_providers": [
+   {
+    "scope": "all_owned_units",
+    "all_owned_units_target_filter": {
+     "unit_types": [
+      "capital_ship",
+      "corvette",
+      "cruiser",
+      "frigate",
+      "starbase",
+      "structure",
+      "super_capital_ship",
+      "titan"
+     ],
+     "ownerships": [
+      "self"
+     ],
+     "constraints": [
+      {
+       "constraint_type": "has_weapon",
+       "tag": "void_missile"
+      }
+     ]
+    },
+    "action_data_source": "dlc3_herald_upgrade_void_missile_weapon_targeting",
+    "buff": "dlc3_herald_upgrade_void_missile_weapon_targeting"
+   }
+  ],
+  "description": "Phasic guidance signals allow awakened Eidolon captains to remotely interlink with the missiles they fire to provide new target data when necessary.",
+  "hud_icon": "dlc3_herald_upgrade_void_missile_weapon_targeting_hud_icon",
+  "tooltip_picture": "dlc3_herald_upgrade_void_missile_weapon_targeting_tooltip_picture",
+  "name": "Remote Interlinking",
+  "id": "dlc3_herald_upgrade_void_missile_weapon_targeting",
+  "race": "Eidolon",
+  "credits": 1400.0,
+  "metal": 600.0,
+  "crystal": 600.0,
+  "image": "Eidolon dlc3_herald_upgrade_void_missile_weapon_targeting_tooltip_picture"
+ },
+ "TEC Phasic Catastrophe Mitigation": {
+  "required_product": "dlc_Herald",
+  "domain": "Civilian",
+  "tier": "Civilian V",
+  "field": "Policy",
+  "field_coord": [
+   9,
+   1
+  ],
+  "research_time": 600.0,
+  "planet_modifiers": [
+   "Planetary Corruption Debuff Strength -50%",
+   "Shroud Restriction Reduction +4"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_trader_shroud_mitigation_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_trader_shroud_mitigation_research_subject_tooltip_picture",
+  "name": "Phasic Catastrophe Mitigation",
+  "id": "dlc3_trader_shroud_mitigation",
+  "race": "TEC",
+  "credits": 2250.0,
+  "metal": 425.0,
+  "crystal": 750.0,
+  "quarnium": 1,
+  "image": "TEC Phasic Catastrophe Mitigation"
+ },
+ "Vasari Phasic Energy Suppression": {
+  "required_product": "dlc_Herald",
+  "domain": "Empire",
+  "tier": "Empire IV",
+  "field": "Phase",
+  "field_coord": [
+   7,
+   6
+  ],
+  "research_time": 420.0,
+  "planet_modifiers": [
+   "Planetary Corruption Debuff Strength -50%",
+   "Shroud Restriction Reduction +4"
+  ],
+  "description": "",
+  "hud_icon": "dlc3_vasari_shroud_removal_research_subject_hud_icon",
+  "tooltip_picture": "dlc3_vasari_shroud_removal_research_subject_tooltip_picture",
+  "name": "Phasic Energy Suppression",
+  "id": "dlc3_vasari_shroud_removal",
+  "race": "Vasari",
+  "credits": 0.0,
+  "metal": 630.0,
+  "crystal": 720.0,
+  "andvar": 3,
+  "image": "Vasari Phasic Energy Suppression"
+ },
  "TEC Triple Fortress": {
   "domain": "Military",
   "tier": "Military V",
@@ -8484,9 +13580,6 @@
    },
    {
     "research_subject": "TEC Trade Port Culture"
-   },
-   {
-    "research_subject": "TEC Interstellar Commerce"
    }
   ],
   "image": "TEC Addictive Consumerism"
@@ -8659,7 +13752,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "TEC Neruda Blueprint"
+    "trader_unlock_envoy_frigate"
    ]
   ],
   "description": "Improves the Neruda Envoy's ability to acquire favor with minor factions.",
@@ -9138,9 +14231,6 @@
    },
    {
     "research_subject": "TEC Expert Damage Control"
-   },
-   {
-    "research_subject": "TEC Unbreachable Hull"
    }
   ],
   "image": "TEC Fortified Superstructure"
@@ -9488,9 +14578,6 @@
    },
    {
     "research_subject": "TEC Novalith Blueprint"
-   },
-   {
-    "research_subject": "TEC Starbase Missile Launchers"
    }
   ],
   "image": "TEC Refined Missile Avionics"
@@ -10230,9 +15317,6 @@
     "research_subject": "TEC Superior Shield Emitters"
    },
    {
-    "research_subject": "trader_shield_burst_restore"
-   },
-   {
     "research_subject": "TEC Backup Shield Generator Blueprint"
    }
   ],
@@ -10878,7 +15962,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "TEC Oceanic Colonization"
+    "trader_unlock_oceanic_biosphere"
    ]
   ],
   "hud_icon": "trader_aquaculture_harvester_unit_item_hud_icon",
@@ -10902,7 +15986,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "TEC Desert Colonization"
+    "trader_unlock_desert_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_archaeology_center_unit_item_research_subject_hud_icon",
@@ -11112,7 +16196,7 @@
   "research_time": 75.0,
   "prerequisites": [
    [
-    "TEC Primordial Colonization"
+    "trader_unlock_swamp_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_chemical_plant_unit_item_research_subject_hud_icon",
@@ -11257,9 +16341,6 @@
   "crystal": 150.0,
   "unlocks": [
    {
-    "research_subject": "TEC Harvesting Crawler Blueprint"
-   },
-   {
     "research_subject": "TEC Crystalline Mercantile Mandate"
    }
   ],
@@ -11344,7 +16425,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "TEC Coalition Association"
+    "trader_upgrade_influence_2"
    ]
   ],
   "description": "Provides benefits to any market where you have established dominant Culture. The Culture rate provided will be scaled based on active trade ships.",
@@ -11369,7 +16450,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "TEC Addictive Consumerism"
+    "trader_culture_rate_0"
    ]
   ],
   "description": "Provides a bonus to planet credit income where you have dominant Culture.",
@@ -11494,11 +16575,6 @@
   "credits": 400.0,
   "metal": 25.0,
   "crystal": 50.0,
-  "unlocks": [
-   {
-    "unit_item": "TEC Derelict Specialist Team"
-   }
-  ],
   "image": "TEC Derelict Specialists"
  },
  "TEC Desert Colonization": {
@@ -11521,9 +16597,6 @@
   "crystal": 125.0,
   "unlocks": [
    {
-    "research_subject": "TEC Archaeology Center Blueprint"
-   },
-   {
     "research_subject": "TEC Desert Development"
    }
   ],
@@ -11544,15 +16617,7 @@
   "race": "TEC",
   "credits": 700.0,
   "metal": 100.0,
-  "crystal": 125.0,
-  "unlocks": [
-   {
-    "unit": "TEC Neruda Envoy Frigate"
-   },
-   {
-    "research_subject": "TEC Neruda Envoy Upgrade"
-   }
-  ]
+  "crystal": 125.0
  },
  "TEC Exotic Refinery Blueprint": {
   "domain": "Civilian",
@@ -11592,7 +16657,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "TEC Ferrous Colonization"
+    "trader_unlock_ferrous_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_ferric_mining_rig_unit_item_research_subject_hud_icon",
@@ -11625,9 +16690,6 @@
   "crystal": 150.0,
   "unlocks": [
    {
-    "research_subject": "TEC Ferric Mining Rig Blueprint"
-   },
-   {
     "research_subject": "TEC Ferrous Mercantile Mandate"
    }
   ],
@@ -11644,7 +16706,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "TEC Irradiated Colonization"
+    "trader_unlock_irradiated_biosphere"
    ]
   ],
   "hud_icon": "trader_fissile_plant_unit_item_hud_icon",
@@ -11861,7 +16923,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "TEC Hangar Defense Blueprint"
+    "trader_unlock_hangar_defense_structure"
    ]
   ],
   "description": "Grants flak turrets to Hangar Defense structures, allowing them to provide point defense coverage within a moderate range.",
@@ -11926,9 +16988,6 @@
     "unit": "TEC Hangar Defense"
    },
    {
-    "research_subject": "TEC Hangar Flak Turrets"
-   },
-   {
     "research_subject": "TEC Enhanced Production"
    }
   ],
@@ -11945,7 +17004,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "TEC Crystalline Colonization"
+    "trader_unlock_crystalline_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_harvesting_crawler_unit_item_research_subject_hud_icon",
@@ -12009,9 +17068,6 @@
     "unit": "TEC Harcka Heavy Cruiser"
    },
    {
-    "research_subject": "TEC Intercept"
-   },
-   {
     "research_subject": "TEC Heavy Trade Escorts"
    }
   ],
@@ -12028,7 +17084,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "TEC Harcka Blueprint"
+    "trader_unlock_heavy_cruiser"
    ]
   ],
   "description": "Grants the Intercept ability to Harcka heavy cruisers, allowing them to gain a brief burst of speed and improved weapon tracking.",
@@ -12241,9 +17297,6 @@
   "crystal": 75.0,
   "unlocks": [
    {
-    "research_subject": "TEC Ice Processing Facility Blueprint"
-   },
-   {
     "research_subject": "TEC Ice Mercantile Mandate"
    }
   ],
@@ -12260,7 +17313,7 @@
   "research_time": 120.0,
   "prerequisites": [
    [
-    "TEC Arctic Colonization"
+    "trader_unlock_ice_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_ice_processor_unit_item_research_subject_hud_icon",
@@ -12321,9 +17374,6 @@
   "metal": 125.0,
   "crystal": 150.0,
   "unlocks": [
-   {
-    "research_subject": "TEC Fissile Enrichment Plant Blueprint"
-   },
    {
     "research_subject": "TEC Irradiated Mercantile Mandate"
    }
@@ -12703,7 +17753,7 @@
   "research_time": 120.0,
   "prerequisites": [
    [
-    "TEC Volcanic Colonization"
+    "trader_unlock_volcanic_biosphere"
    ]
   ],
   "hud_icon": "trader_unlock_metal_smelting_plant_unit_item_research_subject_hud_icon",
@@ -12840,13 +17890,7 @@
   "crystal": 75.0,
   "unlocks": [
    {
-    "research_subject": "TEC Aquaculture Harvester Blueprint"
-   },
-   {
     "research_subject": "TEC High Pressure Domes"
-   },
-   {
-    "research_subject": "TEC Resort Complex Blueprint"
    },
    {
     "research_subject": "TEC Oceanic Development"
@@ -13345,7 +18389,7 @@
   "research_time": 150.0,
   "prerequisites": [
    [
-    "TEC Oceanic Colonization"
+    "trader_unlock_oceanic_biosphere"
    ]
   ],
   "hud_icon": "trader_resort_complex_unit_item_hud_icon",
@@ -13377,12 +18421,6 @@
   "metal": 25.0,
   "crystal": 50.0,
   "unlocks": [
-   {
-    "unit": "trader_capturable_crystal_extractor_structure"
-   },
-   {
-    "unit": "trader_capturable_metal_extractor_structure"
-   },
    {
     "unit": "TEC Crystal Extractor"
    },
@@ -13463,9 +18501,6 @@
    },
    {
     "research_subject": "TEC Recharger Droids Blueprint"
-   },
-   {
-    "research_subject": "TEC EMP Droids Blueprint"
    }
   ],
   "image": "TEC Hoshiko Robotics Cruiser"
@@ -13511,7 +18546,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "TEC Hoshiko Blueprint"
+    "trader_unlock_robotics_cruiser"
    ]
   ],
   "description": "Grants the EMP Droids ability to Hoshiko robotics cruisers.",
@@ -13632,9 +18667,6 @@
    },
    {
     "research_subject": "TEC Remote Construction"
-   },
-   {
-    "research_subject": "TEC Starbase Beams"
    }
   ],
   "image": "TEC Argonev Starbase"
@@ -13850,7 +18882,8 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "TEC Fortified Superstructure"
+    "trader_max_hull_points_1",
+    "trader_unlock_starbase"
    ]
   ],
   "description": "A design revision allows for the installation of additional hull plating, granting Argonev starbases increased hull strength and armor.",
@@ -13965,7 +18998,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "TEC Argonev Blueprint"
+    "trader_unlock_starbase"
    ]
   ],
   "hud_icon": "trader_starbase_unlock_beam_weapon_unit_item_hud_icon",
@@ -13989,7 +19022,8 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "TEC Refined Missile Avionics"
+    "trader_missile_weapon_damage_0",
+    "trader_unlock_starbase"
    ]
   ],
   "hud_icon": "trader_starbase_unlock_torpedo_weapon_unit_item_hud_icon",
@@ -14022,9 +19056,6 @@
   "crystal": 50.0,
   "unlocks": [
    {
-    "research_subject": "TEC Chemical Plant Blueprint"
-   },
-   {
     "research_subject": "TEC Primordial Development"
    }
   ],
@@ -14047,11 +19078,6 @@
   "credits": 1700.0,
   "metal": 300.0,
   "crystal": 500.0,
-  "unlocks": [
-   {
-    "unit_item": "TEC Tactical Analyst"
-   }
-  ],
   "image": "TEC Tactical Analyst Training"
  },
  "TEC Targeting Array Blueprint": {
@@ -14328,9 +19354,6 @@
   "metal": 50.0,
   "crystal": 75.0,
   "unlocks": [
-   {
-    "research_subject": "TEC Geothermal Smelter Blueprint"
-   },
    {
     "research_subject": "TEC Volcanic Mercantile Mandate"
    }
@@ -14940,11 +19963,6 @@
   "metal": 300.0,
   "crystal": 500.0,
   "andvar": 1,
-  "unlocks": [
-   {
-    "research_subject": "TEC Cultural Market Bonus"
-   }
-  ],
   "image": "TEC Coalition Association"
  },
  "TEC Ostentatious Displays": {
@@ -16981,7 +21999,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Vasari Phase Resonator"
+    "vasari_unlock_phase_synchronizer_structure"
    ]
   ],
   "hud_icon": "vasari_deploy_phase_synchronizer_unit_item_hud_icon",
@@ -16990,12 +22008,7 @@
   "race": "Vasari",
   "credits": 0.0,
   "metal": 600.0,
-  "crystal": 660.0,
-  "unlocks": [
-   {
-    "unit_item": "Vasari Deploy Phase Resonator"
-   }
-  ]
+  "crystal": 660.0
  },
  "Vasari Deploy Orkulus Blueprint": {
   "domain": "Warfare",
@@ -17152,12 +22165,7 @@
   "race": "Vasari",
   "credits": 0.0,
   "metal": 150.0,
-  "crystal": 90.0,
-  "unlocks": [
-   {
-    "unit_item": "Vasari Vask Tacticians"
-   }
-  ]
+  "crystal": 90.0
  },
  "Vasari Jusotra Blueprint": {
   "domain": "Warfare",
@@ -17591,9 +22599,6 @@
   "quarnium": 1,
   "unlocks": [
    {
-    "unit": "dlc_vasari_mad_titan"
-   },
-   {
     "unit": "Vasari Vorastra Titan"
    },
    {
@@ -17604,9 +22609,6 @@
    },
    {
     "research_subject": "Vasari The Maw Enhancer Blueprint"
-   },
-   {
-    "research_subject": "Vasari Vorastra Rulership"
    },
    {
     "research_subject": "Vasari Wave Cannon Restoration"
@@ -17848,7 +22850,7 @@
   "research_time": 525.0,
   "prerequisites": [
    [
-    "Vasari Vorastra Blueprint"
+    "vasari_unlock_loyalist_titan"
    ]
   ],
   "description": "Your rulers relocate to your titan, preventing you from being defeated so long as your titan or Capital Planet remain intact.",
@@ -18169,9 +23171,6 @@
   "crystal": 420.0,
   "unlocks": [
    {
-    "research_subject": "Vasari Ocean Floor Miner Blueprint"
-   },
-   {
     "research_subject": "Vasari Self Constructing Domes"
    }
   ],
@@ -18188,7 +23187,8 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Vasari Oceanic Occupation"
+    "vasari_unlock_oceanic_biosphere",
+    "vasari_unlock_terran_biosphere"
    ]
   ],
   "hud_icon": "vasari_unlock_ocean_floor_miner_unit_item_research_subject_hud_icon",
@@ -18251,9 +23251,6 @@
    },
    {
     "research_subject": "Vasari Mobile Phase Detection"
-   },
-   {
-    "research_subject": "Vasari Overseer Tower Blueprint"
    }
   ],
   "image": "Vasari Serevun Overseer"
@@ -18302,7 +23299,7 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Vasari Serevun Blueprint"
+    "vasari_unlock_overseer_cruiser"
    ]
   ],
   "hud_icon": "vasari_unlock_overseer_tower_unit_item_research_subject_hud_icon",
@@ -18312,12 +23309,7 @@
   "credits": 0.0,
   "metal": 420.0,
   "crystal": 420.0,
-  "kalanide": 1,
-  "unlocks": [
-   {
-    "unit_item": "Vasari Overseer Tower"
-   }
-  ]
+  "kalanide": 1
  },
  "Vasari Phase Gate Blueprint": {
   "domain": "Empire",
@@ -18499,8 +23491,8 @@
     "Vasari Bifurcative Shielding"
    ]
   ],
-  "hud_icon": "vasari_unlock_phase_shield_unit_item_research_subject_hud_icon",
-  "tooltip_picture": "vasari_unlock_phase_shield_unit_item_research_subject_tooltip_picture",
+  "hud_icon": "vasari_phase_shield_unit_item_hud_icon",
+  "tooltip_picture": "vasari_phase_shield_unit_item_tooltip_picture",
   "name": "Phase Attenuated Shield Blueprint",
   "id": "vasari_unlock_phase_shield_unit_item",
   "race": "Vasari",
@@ -18512,7 +23504,7 @@
     "unit_item": "Vasari Phase Attenuated Shield"
    }
   ],
-  "image": "Vasari Phase Attenuated Shield Blueprint"
+  "image": "Vasari Phase Attenuated Shield"
  },
  "Vasari Phase Resonator": {
   "domain": "Empire",
@@ -18534,9 +23526,6 @@
   "unlocks": [
    {
     "unit": "Vasari Phase Resonator"
-   },
-   {
-    "research_subject": "Vasari Deploy Phase Resonator Blueprint"
    },
    {
     "research_subject": "Vasari Resonance Amplifier Blueprint"
@@ -18679,6 +23668,36 @@
    }
   ],
   "image": "Vasari Tosurak Raider"
+ },
+ "Vasari Combat Phase Cloaks": {
+  "required_product": "dlc_Herald",
+  "domain": "Empire",
+  "tier": "Empire IV",
+  "field": "Phase",
+  "field_coord": [
+   6,
+   7
+  ],
+  "research_time": 360.0,
+  "prerequisites": [
+   [
+    "Vasari Phase Cloaks"
+   ]
+  ],
+  "hud_icon": "vasari_unlock_raider_corvette_cloak_research_subject_hud_icon",
+  "tooltip_picture": "vasari_unlock_raider_corvette_cloak_research_subject_tooltip_picture",
+  "name": "Combat Phase Cloaks",
+  "id": "vasari_unlock_raider_corvette_cloak",
+  "race": "Vasari",
+  "credits": 0.0,
+  "metal": 600.0,
+  "crystal": 660.0,
+  "unlocks": [
+   {
+    "ability": "Vasari Combat Phase Cloak"
+   }
+  ],
+  "image": "Vasari Combat Phase Cloaks"
  },
  "Vasari Kultorask Blueprint": {
   "domain": "Warfare",
@@ -18933,6 +23952,34 @@
    }
   ],
   "image": "Vasari Metal Extractor"
+ },
+ "Vasari Phase Cloaks": {
+  "required_product": "dlc_Herald",
+  "domain": "Empire",
+  "tier": "Empire II",
+  "field": "Phase",
+  "field_coord": [
+   2,
+   7
+  ],
+  "research_time": 120.0,
+  "hud_icon": "vasari_unlock_scout_corvette_cloak_research_subject_hud_icon",
+  "tooltip_picture": "vasari_unlock_scout_corvette_cloak_research_subject_tooltip_picture",
+  "name": "Phase Cloaks",
+  "id": "vasari_unlock_scout_corvette_cloak",
+  "race": "Vasari",
+  "credits": 0.0,
+  "metal": 240.0,
+  "crystal": 210.0,
+  "unlocks": [
+   {
+    "ability": "Vasari Phase Cloak"
+   },
+   {
+    "research_subject": "Vasari Combat Phase Cloaks"
+   }
+  ],
+  "image": "Vasari Phase Cloaks"
  },
  "Vasari Self-Repairing Armor Blueprint": {
   "domain": "Warfare",
@@ -19410,9 +24457,6 @@
   "crystal": 480.0,
   "unlocks": [
    {
-    "research_subject": "Vasari Organic Reclamation Nanites Blueprint"
-   },
-   {
     "research_subject": "Vasari Civic Repurposing"
    }
   ],
@@ -19429,7 +24473,8 @@
   "research_time": 225.0,
   "prerequisites": [
    [
-    "Vasari Terran Occupation"
+    "vasari_unlock_terran_biosphere",
+    "vasari_upgrade_swamp_biosphere_0"
    ]
   ],
   "hud_icon": "vasari_unlock_terran_mining_booster_unit_item_research_subject_hud_icon",
@@ -19815,11 +24860,6 @@
   "credits": 0.0,
   "metal": 270.0,
   "crystal": 240.0,
-  "unlocks": [
-   {
-    "research_subject": "Vasari Localized Phasing"
-   }
-  ],
   "image": "Vasari Silicate Adaptation"
  },
  "Vasari Localized Phasing": {
@@ -19833,7 +24873,7 @@
   "research_time": 270.0,
   "prerequisites": [
    [
-    "Vasari Silicate Adaptation"
+    "vasari_upgrade_crystalline_biosphere_0"
    ]
   ],
   "description": "The unusually abundant resources of crystalline worlds are used to power small scale phase shifting devices, allowing local populations to improve their research efforts and survive attack more effectively.",
@@ -19898,11 +24938,6 @@
   "credits": 0.0,
   "metal": 420.0,
   "crystal": 420.0,
-  "unlocks": [
-   {
-    "research_subject": "Vasari Hygroscopic Nanites"
-   }
-  ],
   "image": "Vasari Anhydrobiosis"
  },
  "Vasari Hygroscopic Nanites": {
@@ -19916,7 +24951,7 @@
   "research_time": 420.0,
   "prerequisites": [
    [
-    "Vasari Anhydrobiosis"
+    "vasari_upgrade_desert_biosphere_0"
    ]
   ],
   "description": "Specialized nanites bred to aggressively locate and reclaim water are deployed in arid environments, preventing wastage and allowing mining operations to be established in the deep desert.",
@@ -20850,11 +25885,6 @@
   "credits": 0.0,
   "metal": 600.0,
   "crystal": 660.0,
-  "unlocks": [
-   {
-    "research_subject": "Vasari Nano Algae Reactors"
-   }
-  ],
   "image": "Vasari Self Constructing Domes"
  },
  "Vasari Nano Algae Reactors": {
@@ -20868,7 +25898,7 @@
   "research_time": 360.0,
   "prerequisites": [
    [
-    "Vasari Self Constructing Domes"
+    "vasari_upgrade_oceanic_biosphere_0"
    ]
   ],
   "description": "Reactors with specialized nanites evolved to support algae growth are deployed to all major population centers. While not popular as a food source, it does sustain a much larger mining workforce.",

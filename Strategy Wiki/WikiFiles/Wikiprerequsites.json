@@ -1,10 +1,5 @@
 {
  "unit_item": {
-  "Advent Altar of Sacrifice": [
-   [
-    "Advent Altar of Sacrifice Blueprint"
-   ]
-  ],
   "Advent Atmospheric Shield Dome": [
    [
     "Advent Atmospheric Shield Dome Blueprint"
@@ -28,11 +23,6 @@
   "Advent Deploy Transcencia Starbase": [
    [
     "Advent Deploy Transcencia Blueprint"
-   ]
-  ],
-  "Advent Devotion Harvester": [
-   [
-    "Advent Devotion Harvester Blueprint"
    ]
   ],
   "Advent Empyrean City": [
@@ -80,11 +70,6 @@
     "Advent Harmony Circuit Blueprint"
    ]
   ],
-  "Advent Haven Dome": [
-   [
-    "Advent Haven Dome Blueprint"
-   ]
-  ],
   "Advent Heathen Quarter": [
    [
     "Advent Heathen Quarter Blueprint"
@@ -93,11 +78,6 @@
   "Advent Hydrostatic Shield Dome": [
    [
     "Advent Hydrostatic Shield Dome Blueprint"
-   ]
-  ],
-  "Advent Antimatter Phase Jump Panels": [
-   [
-    "Advent High Efficiency Jumps"
    ]
   ],
   "Advent Laminate Forge": [
@@ -160,11 +140,6 @@
     "Advent Sanctuary Spire Blueprint"
    ]
   ],
-  "Advent School of Evangelists": [
-   [
-    "Advent School of Evangelists Blueprint"
-   ]
-  ],
   "Advent Synchronous Shield": [
    [
     "Advent Synchronous Shield Blueprint"
@@ -183,11 +158,6 @@
   "Advent Evangelization Nodes": [
    [
     "Advent Evangelization Nodes Blueprint"
-   ]
-  ],
-  "Advent Final Judgment": [
-   [
-    "Advent Meteoroid Control"
    ]
   ],
   "Advent Meteor Storm": [
@@ -260,11 +230,6 @@
     "Advent Tithe Sanctum Blueprint"
    ]
   ],
-  "Advent Tranquil Refuge": [
-   [
-    "Advent Tranquil Refuge Blueprint"
-   ]
-  ],
   "Advent Unity Protectorate": [
    [
     "Advent Unity Protectorate Blueprint"
@@ -283,6 +248,146 @@
   "Vasari Departure Supplies": [
    [
     "Vasari Departure Planning"
+   ]
+  ],
+  "Eidolon Antimatter Osmosis": [
+   [
+    "Eidolon Antimatter Osmosis Device Design"
+   ]
+  ],
+  "Eidolon Crystal Portal": [
+   [
+    "Eidolon Crystal Portal Design"
+   ]
+  ],
+  "Eidolon Defense Interlink": [
+   [
+    "Eidolon Defense Interlink Design"
+   ]
+  ],
+  "Eidolon Dimensional Observatory": [
+   [
+    "Eidolon Dimensional Observatory Unlock"
+   ]
+  ],
+  "Eidolon Energized Lattice": [
+   [
+    "Eidolon Energized Lattice Design"
+   ]
+  ],
+  "Eidolon Immolation Beam": [
+   [
+    "Eidolon Immolation Beams"
+   ]
+  ],
+  "Eidolon Infused Armor": [
+   [
+    "Eidolon Infused Armor Design"
+   ]
+  ],
+  "Eidolon Infused Reactor": [
+   [
+    "Eidolon Infused Reactor Design"
+   ]
+  ],
+  "Eidolon Matter Infuser": [
+   [
+    "Eidolon Matter Infuser Design"
+   ]
+  ],
+  "Eidolon Metal Portal": [
+   [
+    "Eidolon Metal Portal Design"
+   ]
+  ],
+  "Eidolon Metamorphic Hardening": [
+   [
+    "Eidolon Metamorphic Hardening Design"
+   ]
+  ],
+  "Eidolon Celerity Catalyzer": [
+   [
+    "Eidolon Celerity Catalyzer Design"
+   ]
+  ],
+  "Eidolon Null Catalyst": [
+   [
+    "Eidolon Null Catalyst Design"
+   ]
+  ],
+  "Eidolon Phasic Network Node": [
+   [
+    "Eidolon Phasic Network Node Design"
+   ]
+  ],
+  "Eidolon Migration Portal": [
+   [
+    "Eidolon Migration Portal Design"
+   ]
+  ],
+  "Eidolon Power Brokerage": [
+   [
+    "Eidolon Power Broker Design"
+   ]
+  ],
+  "Eidolon Retributive Capacitive Shield": [
+   [
+    "Eidolon Retributive Capacitive Shield Design"
+   ]
+  ],
+  "Eidolon Safeguard Device": [
+   [
+    "Eidolon Safeguard Device Design"
+   ]
+  ],
+  "Eidolon Scatter Field": [
+   [
+    "Eidolon Scatter Field Design"
+   ]
+  ],
+  "Eidolon Signal Nexus": [
+   [
+    "Eidolon Signal Nexus Unlock"
+   ]
+  ],
+  "Eidolon Consumption Matrix": [
+   [
+    "Eidolon Consumption Matrix Design"
+   ]
+  ],
+  "Eidolon Oblivion Silo": [
+   [
+    "Eidolon Anathema Oblivion Silo Design"
+   ]
+  ],
+  "Eidolon Planetary Shield": [
+   [
+    "Eidolon Planetary Shield Design"
+   ]
+  ],
+  "Eidolon Dimensional Shifter": [
+   [
+    "Eidolon Dimensional Shifter Design"
+   ]
+  ],
+  "Eidolon Stigmata Projector": [
+   [
+    "Eidolon Stigmata Projector Design"
+   ]
+  ],
+  "Eidolon Thought Harvester": [
+   [
+    "Eidolon Thought Harvester Unlock"
+   ]
+  ],
+  "Eidolon Cloak Generator": [
+   [
+    "Eidolon Cloak Generator Design"
+   ]
+  ],
+  "Eidolon Phase Cannon Array": [
+   [
+    "Eidolon Anathema Phase Cannon Array Design"
    ]
   ],
   "TEC Armored Citadel": [
@@ -353,11 +458,6 @@
   "TEC Deploy Argonev Starbase": [
    [
     "TEC Deploy Argonev Blueprint"
-   ]
-  ],
-  "TEC Derelict Specialist Team": [
-   [
-    "TEC Derelict Specialists"
    ]
   ],
   "TEC Flak Burst": [
@@ -560,11 +660,6 @@
     "TEC Remote Construction"
    ]
   ],
-  "TEC Tactical Analyst": [
-   [
-    "TEC Tactical Analyst Training"
-   ]
-  ],
   "TEC Targeting Array": [
    [
     "TEC Targeting Array Blueprint"
@@ -625,11 +720,6 @@
     "Vasari Mobile Phase Gate Blueprint"
    ]
   ],
-  "Vasari Deploy Phase Resonator": [
-   [
-    "Vasari Deploy Phase Resonator Blueprint"
-   ]
-  ],
   "Vasari Deploy Orkulus Starbase": [
    [
     "Vasari Deploy Orkulus Blueprint"
@@ -643,11 +733,6 @@
   "Vasari Exodus Xeno Embassy": [
    [
     "Vasari Exodus Xeno Embassy Blueprint"
-   ]
-  ],
-  "Vasari Vask Tacticians": [
-   [
-    "Vasari Vask Tacticians Unlock"
    ]
   ],
   "Vasari Crystallizing Gas Refinery": [
@@ -753,11 +838,6 @@
   "Vasari Administrative Uplink": [
    [
     "Vasari Administrative Uplink Blueprint"
-   ]
-  ],
-  "Vasari Overseer Tower": [
-   [
-    "Vasari Overseer Tower Blueprint"
    ]
   ],
   "Vasari Phase Missile Augments": [
@@ -992,6 +1072,33 @@
     "Advent Recharge Shields"
    ]
   ],
+  "dlc3_herald_cloak_frigate_cloak": [
+   [],
+   [
+    "Eidolon Improved Cloaking"
+   ]
+  ],
+  "Eidolon Purge Corruption": [
+   [
+    "Eidolon Purging"
+   ]
+  ],
+  "Eidolon Calcify": [
+   [
+    "Eidolon Calcification"
+   ]
+  ],
+  "Eidolon Jump Inhibition Immunity": [
+   [
+    "Eidolon Jump Inhibition Immunity"
+   ]
+  ],
+  "dlc3_herald_support_capital_ship_cloak": [
+   [],
+   [
+    "Eidolon Improved Cloaking"
+   ]
+  ],
   "TEC Coil Shock": [
    [
     "TEC Coil Shock"
@@ -1121,10 +1228,20 @@
     "Vasari Phasic Trap"
    ]
   ],
+  "Vasari Combat Phase Cloak": [
+   [
+    "Vasari Combat Phase Cloaks"
+   ]
+  ],
   "Vasari Repair": [
    [],
    [
     "Vasari Improved Regeneration Bay"
+   ]
+  ],
+  "Vasari Phase Cloak": [
+   [
+    "Vasari Phase Cloaks"
    ]
   ],
   "Vasari Jump Inhibition Immunity": [
@@ -1135,8 +1252,12 @@
  },
  "action_data_source": {},
  "buff": {},
- "loadout": {},
  "unit": {
+  "Advent Vespa Corvette": [
+   [
+    "Advent Vespa Blueprint"
+   ]
+  ],
   "Advent Aeria Drone Host": [
    [
     "Advent Aeria Blueprint"
@@ -1160,11 +1281,6 @@
   "Advent Deliverance Engine": [
    [
     "Advent Deliverance Engine Blueprint"
-   ]
-  ],
-  "Advent Herald Envoy": [
-   [
-    "Advent Herald Blueprint"
    ]
   ],
   "Advent Exotic Refinery": [
@@ -1202,9 +1318,14 @@
     "Advent Coronata Blueprint"
    ]
   ],
-  "Advent Titan Foundry": [
+  "Advent Grand Factory": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
+   ]
+  ],
+  "Advent Prisma Witness": [
+   [
+    "Advent Prisma Blueprint"
    ]
   ],
   "Advent Metal Extractor": [
@@ -1287,9 +1408,94 @@
     "Vasari Sularkon Blueprint"
    ]
   ],
-  "dlc_vasari_mad_titan": [
+  "Eidolon Azgerin Suppressor": [
    [
-    "Vasari Vorastra Blueprint"
+    "Eidolon Azgerin Suppressor Summoning"
+   ]
+  ],
+  "Eidolon Azithel Mote": [
+   [
+    "Eidolon Azithel Mote Summoning"
+   ]
+  ],
+  "Eidolon Akeniel Geist": [
+   [
+    "Eidolon Akeniel Geist Summoning"
+   ]
+  ],
+  "Eidolon Kaziel Shade": [
+   [
+    "Eidolon Kaziel Shade Summoning"
+   ]
+  ],
+  "Eidolon Corruption Reservoir": [
+   [
+    "Eidolon Corruption Reservoir Blueprint"
+   ]
+  ],
+  "Eidolon Anzarien Corruptor": [
+   [
+    "Eidolon Anzarien Corruptor Summoning"
+   ]
+  ],
+  "Eidolon Crystal Extractor": [
+   [
+    "Eidolon Orbital Extraction"
+   ]
+  ],
+  "Eidolon Communications Node": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "Eidolon Nalazhin Defiler": [
+   [
+    "Eidolon Nalazhin Defiler Summoning"
+   ]
+  ],
+  "Eidolon Exotic Refinery": [
+   [
+    "Eidolon Exotic Refinery Blueprint"
+   ]
+  ],
+  "Eidolon Phase Dart Defense Platform": [
+   [
+    "Eidolon Phase Dart Defense Platform Design"
+   ]
+  ],
+  "Eidolon Israthil Silencer": [
+   [
+    "Eidolon Israthil Silencer Summoning"
+   ]
+  ],
+  "Eidolon Metal Extractor": [
+   [
+    "Eidolon Orbital Extraction"
+   ]
+  ],
+  "Eidolon Sythren Onslaught": [
+   [
+    "Eidolon Sythren Onslaught Summoning"
+   ]
+  ],
+  "Eidolon Sirathaz Scourge": [
+   [
+    "Eidolon Sirathaz Scourge Summoning"
+   ]
+  ],
+  "Eidolon Iskazhar Epitaph": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "Eidolon Support Defense Platform": [
+   [
+    "Eidolon Support Defense Platform Design"
+   ]
+  ],
+  "Eidolon Zhaltharien Anathema": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
    ]
   ],
   "TEC Kalev Gauss Frigate": [
@@ -1300,16 +1506,6 @@
   "TEC Garda Flak Frigate": [
    [
     "TEC Garda Blueprint"
-   ]
-  ],
-  "trader_capturable_crystal_extractor_structure": [
-   [
-    "TEC Orbital Extraction"
-   ]
-  ],
-  "trader_capturable_metal_extractor_structure": [
-   [
-    "TEC Orbital Extraction"
    ]
   ],
   "TEC Percheron Carrier Cruiser": [
@@ -1325,11 +1521,6 @@
   "TEC Broadcast Center": [
    [
     "TEC Interstellar Networks"
-   ]
-  ],
-  "TEC Neruda Envoy Frigate": [
-   [
-    "TEC Neruda Blueprint"
    ]
   ],
   "TEC Exotic Refinery": [
@@ -1535,6 +1726,7 @@
  },
  "unit_skin": {},
  "weapon": {},
+ "loadout": {},
  "research_subject": {
   "Advent Ritualized Instruction": [
    [
@@ -1571,14 +1763,9 @@
     "Advent Exotic Refinery Blueprint"
    ]
   ],
-  "Advent Wall of Faith": [
+  "Advent Greater Material Communion": [
    [
-    "Advent Unwavering Belief"
-   ]
-  ],
-  "Advent Fortress of Faith": [
-   [
-    "Advent Wall of Faith"
+    "Advent Material Communion"
    ]
   ],
   "Advent Improved Meteoroid Control": [
@@ -1636,6 +1823,11 @@
     "Advent Total Assimilation"
    ]
   ],
+  "Advent Wall of Faith": [
+   [
+    "Advent Unwavering Belief"
+   ]
+  ],
   "Advent Soul Reclamation": [
    [
     "Advent Accumulated Will"
@@ -1664,16 +1856,6 @@
   "Advent Singular Resolve": [
    [
     "Advent Collective Focus"
-   ]
-  ],
-  "Advent Unity Ascendant": [
-   [
-    "Advent Temple of Unity Blueprint"
-   ]
-  ],
-  "Advent Unity Unleashed": [
-   [
-    "Advent Unity Ascendant"
    ]
   ],
   "Advent False Belief Monitoring": [
@@ -1761,16 +1943,6 @@
     "Advent Refined Laser Cannons"
    ]
   ],
-  "Advent Sanctify": [
-   [
-    "Advent Wall of Faith"
-   ]
-  ],
-  "Advent Epitaph of the Lost Blueprint": [
-   [
-    "Advent Irradiated Embrace"
-   ]
-  ],
   "Advent Essence Reservoir Blueprint": [
    [
     "Advent Adept Psi Training"
@@ -1797,11 +1969,6 @@
    ]
   ],
   "Advent Mend": [
-   [
-    "Advent Guardian Blueprint"
-   ]
-  ],
-  "Advent Will of the Unity": [
    [
     "Advent Guardian Blueprint"
    ]
@@ -1853,7 +2020,7 @@
   ],
   "Advent Coronata Blueprint": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "Advent Additional Armor Blueprint": [
@@ -1864,16 +2031,6 @@
   "Advent Shield Booster Blueprint": [
    [
     "Advent Eradica Blueprint"
-   ]
-  ],
-  "Advent NeuroPsion Purifier Blueprint": [
-   [
-    "Advent Primordial Embrace"
-   ]
-  ],
-  "Advent Pelagic Interface Relay Blueprint": [
-   [
-    "Advent Oceanic Embrace"
    ]
   ],
   "Advent Plasma Agitator Blueprint": [
@@ -1889,11 +2046,6 @@
   "Advent Orbital Habitation Blueprint": [
    [
     "Advent Orbital Congregation"
-   ]
-  ],
-  "Advent Prescience Filter Blueprint": [
-   [
-    "Advent Geomagnetic Embrace"
    ]
   ],
   "Advent PsiCredit Mint Blueprint": [
@@ -1913,7 +2065,7 @@
   ],
   "Advent Eradica Blueprint": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "Advent Eradica Swarm Missiles Blueprint": [
@@ -1924,11 +2076,6 @@
   "Advent Secondary Shield Generators": [
    [
     "Advent Basic Shield Projection"
-   ]
-  ],
-  "Advent Silent Monastery Blueprint": [
-   [
-    "Advent Rich Ore Scrying"
    ]
   ],
   "Advent Area Shield Blueprint": [
@@ -1961,16 +2108,6 @@
     "Advent Transcencia Blueprint"
    ]
   ],
-  "Advent Starbase Missile Launchers": [
-   [
-    "Advent Transcencia Blueprint"
-   ]
-  ],
-  "Advent Starbase Plasma": [
-   [
-    "Advent Transcencia Blueprint"
-   ]
-  ],
   "Advent Kinetic Surge Missile Blueprint": [
    [
     "Advent Transcencia Blueprint"
@@ -1981,27 +2118,12 @@
     "Advent Transcencia Blueprint"
    ]
   ],
-  "Advent Starlight Augury Blueprint": [
-   [
-    "Advent Geomagnetic Embrace"
-   ]
-  ],
   "Advent Structural Force Fields Blueprint": [
    [
     "Advent Refined Frameworks"
    ]
   ],
-  "Advent Structural Shielding": [
-   [
-    "Advent Rotating Shield Frequencies"
-   ]
-  ],
   "Advent Nullify": [
-   [
-    "Advent Domina Blueprint"
-   ]
-  ],
-  "Advent Repulsion Field": [
    [
     "Advent Domina Blueprint"
    ]
@@ -2081,11 +2203,6 @@
     "Advent Beam Amplification"
    ]
   ],
-  "Advent Crystalline Development": [
-   [
-    "Advent Crystalline Embrace"
-   ]
-  ],
   "Advent Selective Harvesting": [
    [
     "Advent Orbital Extraction"
@@ -2093,7 +2210,7 @@
   ],
   "Advent Telekinetic Stasis": [
    [
-    "Advent Uniform Cultivation"
+    "Advent Selective Harvesting"
    ]
   ],
   "Advent Telekinetic Separation": [
@@ -2156,11 +2273,6 @@
     "Advent Energy Accelerator Blueprint"
    ]
   ],
-  "Advent Ferrous Development": [
-   [
-    "Advent Ferrous Embrace"
-   ]
-  ],
   "Advent Elegant Hull Design": [
    [
     "Advent Refined Frameworks"
@@ -2174,11 +2286,6 @@
   "Advent Kinetic Dampening": [
    [
     "Advent Hydrostatic Shield Dome Blueprint"
-   ]
-  ],
-  "Advent Arctic Development": [
-   [
-    "Advent Arctic Embrace"
    ]
   ],
   "Advent Empathic Alignment": [
@@ -2244,16 +2351,6 @@
   "Advent Anima Redirection": [
    [
     "Advent Refined Warheads"
-   ]
-  ],
-  "Advent Oceanic Development": [
-   [
-    "Advent Oceanic Embrace"
-   ]
-  ],
-  "Advent Anima Integration": [
-   [
-    "Advent Telekinetic Fracturing"
    ]
   ],
   "Advent Hardened Cities": [
@@ -2356,19 +2453,14 @@
     "Advent Willing Donations"
    ]
   ],
-  "Advent Volcanic Development": [
-   [
-    "Advent Volcanic Embrace"
-   ]
-  ],
   "Advent Oblivia Blueprint": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "Advent Justicia Blueprint": [
    [
-    "Advent Titan Foundry Blueprint"
+    "Advent Grand Factory Blueprint"
    ]
   ],
   "Advent Conceptual Duality": [
@@ -2451,6 +2543,491 @@
     "Vasari Symbols Of Authority"
    ]
   ],
+  "Eidolon Distributed Purging": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "Eidolon Phasic Sub-Channels": [
+   [
+    "Eidolon Distributed Purging"
+   ]
+  ],
+  "Eidolon Arrival Logistics": [
+   [
+    "Eidolon Pursuit Provisioning"
+   ]
+  ],
+  "Eidolon Clandestine Caches": [
+   [
+    "Eidolon Arrival Logistics"
+   ]
+  ],
+  "Eidolon Siphoned Industry": [
+   [
+    "Eidolon Clandestine Caches"
+   ]
+  ],
+  "Eidolon Vanguard Coordination": [
+   [
+    "Eidolon Siphoned Industry"
+   ]
+  ],
+  "Eidolon Integrated Tactics": [
+   [
+    "Eidolon Ancient Prowess"
+   ]
+  ],
+  "Eidolon Arcane Knowledge": [
+   [
+    "Eidolon Integrated Tactics"
+   ]
+  ],
+  "Eidolon Azithel Mote Weapon Refit": [
+   [
+    "Eidolon Azithel Mote Summoning"
+   ]
+  ],
+  "Eidolon Amalgam Bomber Strikecraft Design": [
+   [
+    "Eidolon Akeniel Geist Summoning"
+   ]
+  ],
+  "Eidolon Quarnium Forging": [
+   [
+    "Eidolon Exotic Refinery Blueprint"
+   ]
+  ],
+  "Eidolon Akeniel Geist Weapon Refit": [
+   [
+    "Eidolon Akeniel Geist Summoning"
+   ]
+  ],
+  "Eidolon Purging": [
+   [
+    "Eidolon Anzarien Corruptor Summoning"
+   ]
+  ],
+  "Eidolon Calcification": [
+   [
+    "Eidolon Nalazhin Defiler Summoning"
+   ]
+  ],
+  "Eidolon Energized Lattice Design": [
+   [
+    "Eidolon Forced Generator Cycling"
+   ]
+  ],
+  "Eidolon Phase Dart Platform Weapon Refit": [
+   [
+    "Eidolon Phase Dart Defense Platform Design"
+   ]
+  ],
+  "Eidolon Immolation Beams": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "Eidolon Infused Reactor Design": [
+   [
+    "Eidolon Infused Armor Design"
+   ]
+  ],
+  "Eidolon Metamorphic Hardening Design": [
+   [
+    "Eidolon Fused Plating"
+   ]
+  ],
+  "Eidolon Null Catalyst Design": [
+   [
+    "Eidolon Corrupted Null Bolts"
+   ]
+  ],
+  "Eidolon Corrupted Null Bolts": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "Eidolon Power Broker Design": [
+   [
+    "Eidolon Commercial Infiltration"
+   ]
+  ],
+  "Eidolon Forced Generator Cycling": [
+   [
+    "Eidolon Dynamic Shield Charging"
+   ]
+  ],
+  "Eidolon Sirathaz Scourge Weapon Refit": [
+   [
+    "Eidolon Sirathaz Scourge Summoning"
+   ]
+  ],
+  "Eidolon Signal Nexus Unlock": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "Eidolon Consumption Matrix Design": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "Eidolon Epitaph Oblivion Silo Design": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "Eidolon Planetary Shield Design": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "Eidolon Dimensional Shifter Design": [
+   [
+    "Eidolon Iskazhar Epitaph Summoning"
+   ]
+  ],
+  "Eidolon Support Defense Platform Hangar Refit": [
+   [
+    "Eidolon Support Defense Platform Design"
+   ]
+  ],
+  "Eidolon Thought Harvester Unlock": [
+   [
+    "Eidolon Signal Nexus Unlock"
+   ]
+  ],
+  "Eidolon Cloak Generator Design": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "Eidolon Anathema Oblivion Silo Design": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "Eidolon Anathema Phase Cannon Array Design": [
+   [
+    "Eidolon Zhaltharien Anathema Summoning"
+   ]
+  ],
+  "Eidolon Persistent Afterimage": [
+   [
+    "Eidolon Afterimage"
+   ]
+  ],
+  "Eidolon Infused Exotics": [
+   [
+    "Eidolon Exotic Refinery Blueprint"
+   ]
+  ],
+  "Eidolon Saturated Exotics": [
+   [
+    "Eidolon Infused Exotics"
+   ]
+  ],
+  "Eidolon Antiparticle Harvesting": [
+   [
+    "Eidolon Isolation Reactors"
+   ]
+  ],
+  "Eidolon Active Reaction Chaining": [
+   [
+    "Eidolon Antiparticle Harvesting"
+   ]
+  ],
+  "Eidolon Lithic Armor Retention": [
+   [
+    "Eidolon Crystalline Armor"
+   ]
+  ],
+  "Eidolon Subductive Regeneration": [
+   [
+    "Eidolon Lithic Armor Retention"
+   ]
+  ],
+  "Eidolon Continuous Renewal": [
+   [
+    "Eidolon Subductive Regeneration"
+   ]
+  ],
+  "Eidolon Fused Plating": [
+   [
+    "Eidolon Crystalline Armor"
+   ]
+  ],
+  "Eidolon Refractive Materials": [
+   [
+    "Eidolon Fused Plating"
+   ]
+  ],
+  "Eidolon Metamaterial Armor": [
+   [
+    "Eidolon Refractive Materials"
+   ]
+  ],
+  "Eidolon Vitrified Plating": [
+   [
+    "Eidolon Refractive Materials"
+   ]
+  ],
+  "Eidolon Assimilative Layering": [
+   [
+    "Eidolon Vitrified Plating"
+   ]
+  ],
+  "Eidolon Improved Cloaking": [
+   [
+    "Eidolon Kaziel Shade Summoning"
+   ]
+  ],
+  "Eidolon Shroud Magnification": [
+   [
+    "Eidolon Shroud Augmentation"
+   ]
+  ],
+  "Eidolon Shroud Saturation": [
+   [
+    "Eidolon Shroud Magnification"
+   ]
+  ],
+  "Eidolon Coerced Hopelessness": [
+   [
+    "Eidolon Communications Node Blueprint"
+   ]
+  ],
+  "Eidolon Fatalist Sentiment": [
+   [
+    "Eidolon Coerced Hopelessness"
+   ]
+  ],
+  "Eidolon Resigned Acceptance": [
+   [
+    "Eidolon Fatalist Sentiment"
+   ]
+  ],
+  "Eidolon EM Deposit Mapping": [
+   [
+    "Eidolon Orbital Extraction"
+   ]
+  ],
+  "Eidolon Null Field Excavation": [
+   [
+    "Eidolon EM Deposit Mapping"
+   ]
+  ],
+  "Eidolon Phasic Extraction": [
+   [
+    "Eidolon Null Field Excavation"
+   ]
+  ],
+  "Eidolon Extreme Environment Intensification": [
+   [
+    "Eidolon Arctic Subjugation"
+   ]
+  ],
+  "Eidolon Extreme Environment Mastery": [
+   [
+    "Eidolon Extreme Environment Intensification"
+   ]
+  ],
+  "Eidolon Damage Control Thralls": [
+   [
+    "Eidolon Hull Restoration Menials"
+   ]
+  ],
+  "Eidolon Enhanced System Integrity": [
+   [
+    "Eidolon Damage Control Thralls"
+   ]
+  ],
+  "Eidolon Deep Phase Transit": [
+   [
+    "Eidolon Rapid Phase Descent"
+   ]
+  ],
+  "Eidolon Immolation Efficiency": [
+   [
+    "Eidolon Immolation Beams"
+   ]
+  ],
+  "Eidolon Promise of Power": [
+   [
+    "Eidolon Promise of Mercy"
+   ]
+  ],
+  "Eidolon Promise of Salvation": [
+   [
+    "Eidolon Promise of Power"
+   ]
+  ],
+  "Eidolon Geomagnetic Environment Mastery": [
+   [
+    "Eidolon Geomagnetic Environment Intensification"
+   ]
+  ],
+  "Eidolon Marginal Environment Intensification": [
+   [
+    "Eidolon Crystalline Subjugation"
+   ]
+  ],
+  "Eidolon Marginal Environment Mastery": [
+   [
+    "Eidolon Marginal Environment Intensification"
+   ]
+  ],
+  "Eidolon Esoteric Alloying": [
+   [
+    "Eidolon Lithic Reprocessing"
+   ]
+  ],
+  "Eidolon Dark Energy Forging": [
+   [
+    "Eidolon Esoteric Alloying"
+   ]
+  ],
+  "Eidolon Dark Energy Channelling": [
+   [
+    "Eidolon Dispersed Disintegration"
+   ]
+  ],
+  "Eidolon Rapid Decoherence": [
+   [
+    "Eidolon Null Field Density"
+   ]
+  ],
+  "Eidolon Dispersed Disintegration": [
+   [
+    "Eidolon Rapid Decoherence"
+   ]
+  ],
+  "Eidolon Exposed Null Cores": [
+   [
+    "Eidolon Corrupted Null Bolts"
+   ]
+  ],
+  "Eidolon Null Core Overload": [
+   [
+    "Eidolon Exposed Null Cores"
+   ]
+  ],
+  "Eidolon Prescient Targeting": [
+   [
+    "Eidolon Predictive Monitoring"
+   ]
+  ],
+  "Eidolon Dynamic Trajectories": [
+   [
+    "Eidolon Prescient Targeting"
+   ]
+  ],
+  "Eidolon Rapid Programming": [
+   [
+    "Eidolon Dynamic Trajectories"
+   ]
+  ],
+  "Eidolon Mercantile Exploitation": [
+   [
+    "Eidolon Commercial Infiltration"
+   ]
+  ],
+  "Eidolon Quantification Of Power": [
+   [
+    "Eidolon Mercantile Exploitation"
+   ]
+  ],
+  "Eidolon Cultivation Menials": [
+   [
+    "Eidolon Harvesting Menials"
+   ]
+  ],
+  "Eidolon Thrall Augmentation": [
+   [
+    "Eidolon Mining Thralls"
+   ]
+  ],
+  "Eidolon Superior Generator Cycling": [
+   [
+    "Eidolon Forced Generator Cycling"
+   ]
+  ],
+  "Eidolon Dynamic Shield Charging": [
+   [
+    "Eidolon Versatile Shield Arrays"
+   ]
+  ],
+  "Eidolon Active Shield Tuning": [
+   [
+    "Eidolon Dynamic Shield Charging"
+   ]
+  ],
+  "Eidolon Prescient Shield Modulation": [
+   [
+    "Eidolon Active Shield Tuning"
+   ]
+  ],
+  "Eidolon Conformal Shield Generation": [
+   [
+    "Eidolon Versatile Shield Arrays"
+   ]
+  ],
+  "Eidolon Heavy Shield Arrays": [
+   [
+    "Eidolon Conformal Shield Generation"
+   ]
+  ],
+  "Eidolon Overcharged Shield Emitters": [
+   [
+    "Eidolon Heavy Shield Arrays"
+   ]
+  ],
+  "Eidolon Shock Supercharging": [
+   [
+    "Eidolon Particle Pre-Charging"
+   ]
+  ],
+  "Eidolon Charged Plasma Injectors": [
+   [
+    "Eidolon Shock Supercharging"
+   ]
+  ],
+  "Eidolon Obdurate Structures": [
+   [
+    "Eidolon Hardened Structures"
+   ]
+  ],
+  "Eidolon Charged Quarnium": [
+   [
+    "Eidolon Quarnium Forging"
+   ]
+  ],
+  "Eidolon Variable Environment Intensification": [
+   [
+    "Eidolon Desert Subjugation"
+   ]
+  ],
+  "Eidolon Variable Environment Mastery": [
+   [
+    "Eidolon Variable Environment Intensification"
+   ]
+  ],
+  "Eidolon Phasic Guidance": [
+   [
+    "Eidolon Implosive Warheads"
+   ]
+  ],
+  "Eidolon Singularity Warheads": [
+   [
+    "Eidolon Phasic Guidance"
+   ]
+  ],
+  "Eidolon Remote Interlinking": [
+   [
+    "Eidolon Phasic Guidance"
+   ]
+  ],
   "TEC Triple Fortress": [
    [
     "TEC Compartmentalization"
@@ -2524,11 +3101,6 @@
   "TEC Cultural Monopolization": [
    [
     "TEC Addictive Consumerism"
-   ]
-  ],
-  "TEC Neruda Envoy Upgrade": [
-   [
-    "TEC Neruda Blueprint"
    ]
   ],
   "TEC Garrison Expansion": [
@@ -2691,11 +3263,6 @@
     "TEC Improved Shield Arrays"
    ]
   ],
-  "trader_shield_burst_restore": [
-   [
-    "TEC Improved Shield Arrays"
-   ]
-  ],
   "TEC Compartmentalization": [
    [
     "TEC Argonev Blueprint"
@@ -2756,16 +3323,6 @@
     "TEC Efficient Generators"
    ]
   ],
-  "TEC Aquaculture Harvester Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
-  "TEC Archaeology Center Blueprint": [
-   [
-    "TEC Desert Colonization"
-   ]
-  ],
   "TEC Auxiliary Supply Depot Blueprint": [
    [
     "TEC Prestigious Investments"
@@ -2786,11 +3343,6 @@
     "TEC Exotic Refinery Blueprint"
    ]
   ],
-  "TEC Chemical Plant Blueprint": [
-   [
-    "TEC Primordial Colonization"
-   ]
-  ],
   "TEC Combat Repair System Blueprint": [
    [
     "TEC Repair Droid Blueprint"
@@ -2804,16 +3356,6 @@
   "TEC Synthetic Crystal Farm Blueprint": [
    [
     "TEC Orbital Commerce"
-   ]
-  ],
-  "TEC Cultural Market Bonus": [
-   [
-    "TEC Coalition Association"
-   ]
-  ],
-  "TEC Interstellar Commerce": [
-   [
-    "TEC Addictive Consumerism"
    ]
   ],
   "TEC Familiar Territory": [
@@ -2831,16 +3373,6 @@
     "TEC Argonev Blueprint"
    ]
   ],
-  "TEC Ferric Mining Rig Blueprint": [
-   [
-    "TEC Ferrous Colonization"
-   ]
-  ],
-  "TEC Fissile Enrichment Plant Blueprint": [
-   [
-    "TEC Irradiated Colonization"
-   ]
-  ],
   "TEC Fulfillment Warehouse Blueprint": [
    [
     "TEC Immense Cargo Holds"
@@ -2856,29 +3388,14 @@
     "TEC Gas Giant Colonization"
    ]
   ],
-  "TEC Hangar Flak Turrets": [
-   [
-    "TEC Hangar Defense Blueprint"
-   ]
-  ],
   "TEC Enhanced Production": [
    [
     "TEC Hangar Defense Blueprint"
    ]
   ],
-  "TEC Harvesting Crawler Blueprint": [
-   [
-    "TEC Crystalline Colonization"
-   ]
-  ],
   "TEC Core Systems Armor Blueprint": [
    [
     "TEC Advanced Metallurgy"
-   ]
-  ],
-  "TEC Intercept": [
-   [
-    "TEC Harcka Blueprint"
    ]
   ],
   "TEC Heavy Garrison": [
@@ -2894,11 +3411,6 @@
   "TEC High Yield Warheads Blueprint": [
    [
     "TEC Submission Warheads"
-   ]
-  ],
-  "TEC Ice Processing Facility Blueprint": [
-   [
-    "TEC Arctic Colonization"
    ]
   ],
   "TEC Industrial District Blueprint": [
@@ -2954,11 +3466,6 @@
   "TEC Media Conglomerate Blueprint": [
    [
     "TEC Interstellar Networks"
-   ]
-  ],
-  "TEC Geothermal Smelter Blueprint": [
-   [
-    "TEC Volcanic Colonization"
    ]
   ],
   "TEC Reactive Plating Blueprint": [
@@ -3021,22 +3528,12 @@
     "TEC Orbital Extraction"
    ]
   ],
-  "TEC Resort Complex Blueprint": [
-   [
-    "TEC Oceanic Colonization"
-   ]
-  ],
   "TEC Hoshiko Blueprint": [
    [
     "TEC Repair Droid Blueprint"
    ]
   ],
   "TEC Recharger Droids Blueprint": [
-   [
-    "TEC Hoshiko Blueprint"
-   ]
-  ],
-  "TEC EMP Droids Blueprint": [
    [
     "TEC Hoshiko Blueprint"
    ]
@@ -3076,11 +3573,6 @@
     "TEC Argonev Blueprint"
    ]
   ],
-  "TEC Unbreachable Hull": [
-   [
-    "TEC Fortified Superstructure"
-   ]
-  ],
   "TEC Ion Torpedo Blueprint": [
    [
     "TEC Argonev Blueprint"
@@ -3094,16 +3586,6 @@
   "TEC Remote Construction": [
    [
     "TEC Argonev Blueprint"
-   ]
-  ],
-  "TEC Starbase Beams": [
-   [
-    "TEC Argonev Blueprint"
-   ]
-  ],
-  "TEC Starbase Missile Launchers": [
-   [
-    "TEC Refined Missile Avionics"
    ]
   ],
   "TEC Torpedo Targeting Override": [
@@ -3451,11 +3933,6 @@
     "Vasari Phase Gate Blueprint"
    ]
   ],
-  "Vasari Deploy Phase Resonator Blueprint": [
-   [
-    "Vasari Phase Resonator"
-   ]
-  ],
   "Vasari Deploy Orkulus Blueprint": [
    [
     "Vasari Orkulus Blueprint"
@@ -3531,11 +4008,6 @@
     "Vasari Kultorask Blueprint"
    ]
   ],
-  "Vasari Vorastra Rulership": [
-   [
-    "Vasari Vorastra Blueprint"
-   ]
-  ],
   "Vasari Wave Cannon Restoration": [
    [
     "Vasari Vorastra Blueprint"
@@ -3556,17 +4028,7 @@
     "Vasari Resonance Mastery"
    ]
   ],
-  "Vasari Ocean Floor Miner Blueprint": [
-   [
-    "Vasari Oceanic Occupation"
-   ]
-  ],
   "Vasari Mobile Phase Detection": [
-   [
-    "Vasari Serevun Blueprint"
-   ]
-  ],
-  "Vasari Overseer Tower Blueprint": [
    [
     "Vasari Serevun Blueprint"
    ]
@@ -3589,6 +4051,11 @@
   "Vasari Orbital Labor Allocation": [
    [
     "Vasari Labor Distribution"
+   ]
+  ],
+  "Vasari Combat Phase Cloaks": [
+   [
+    "Vasari Phase Cloaks"
    ]
   ],
   "Vasari Kultorask Hangar Restoration": [
@@ -3676,11 +4143,6 @@
     "Vasari Atomic Engineering"
    ]
   ],
-  "Vasari Organic Reclamation Nanites Blueprint": [
-   [
-    "Vasari Terran Occupation"
-   ]
-  ],
   "Vasari Wave Modulator Blueprint": [
    [
     "Vasari Wave Densification"
@@ -3731,11 +4193,6 @@
     "Vasari Crystalline Occupation"
    ]
   ],
-  "Vasari Localized Phasing": [
-   [
-    "Vasari Silicate Adaptation"
-   ]
-  ],
   "Vasari Dark Fleet Tower Upgrade": [
    [
     "Vasari Dark Fleet Tower Blueprint"
@@ -3744,11 +4201,6 @@
   "Vasari Anhydrobiosis": [
    [
     "Vasari Desert Occupation"
-   ]
-  ],
-  "Vasari Hygroscopic Nanites": [
-   [
-    "Vasari Anhydrobiosis"
    ]
   ],
   "Vasari Improved Debris Reclamation": [
@@ -3859,11 +4311,6 @@
   "Vasari Self Constructing Domes": [
    [
     "Vasari Oceanic Occupation"
-   ]
-  ],
-  "Vasari Nano Algae Reactors": [
-   [
-    "Vasari Self Constructing Domes"
    ]
   ],
   "Vasari Administrative Specialists": [
